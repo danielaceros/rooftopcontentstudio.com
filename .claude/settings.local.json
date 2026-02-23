@@ -4,7 +4,11 @@
       "Bash(npx skills add:*)",
       "Bash(npx -y skills add:*)",
       "WebFetch(domain:olmo-studio.vercel.app)",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(cp:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
     ]
   }
 }

@@ -1,0 +1,61 @@
+import type { Metadata } from "next";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "./constants";
+
+export const siteMetadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} — Estudio de Grabación de Contenido en Madrid`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "estudio de grabación Madrid",
+    "content studio Madrid",
+    "grabar contenido Madrid",
+    "estudio de contenido",
+    "grabación de reels Madrid",
+    "estudio podcast Madrid",
+    "producción de contenido Madrid",
+    "rooftop Madrid",
+    "estudio de vídeo Madrid",
+    "creador de contenido Madrid",
+  ],
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — Graba Meses de Contenido en Una Sola Mañana`,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} — Estudio de grabación de contenido en Madrid`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — Estudio de Grabación de Contenido en Madrid`,
+    description: SITE_DESCRIPTION,
+    images: ["/images/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
+};

@@ -1,0 +1,20 @@
+{
+  "node": {
+    "60317f3b62df972fb266cf29b03f70097aefeaec6d": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "submitContact",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      },
+      "exportedName": "submitContact",
+      "filename": "src/lib/actions.ts"
+    }
+  },
+  "edge": {}
+}

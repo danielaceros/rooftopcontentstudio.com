@@ -6,6 +6,11 @@
       "sourceType": "github",
       "computedHash": "8e8d3042a04e6494e6d02b67eb9a97e76cdd63533c24ab507c9bf618a752e985"
     },
+    "ffmpeg": {
+      "source": "digitalsamba/claude-code-video-toolkit",
+      "sourceType": "github",
+      "computedHash": "51fa05bc18bb2691e622aefd1d8ec6d4d96a9e9c44cdf599003c9d6003d11a07"
+    },
     "frontend-design": {
       "source": "anthropics/skills",
       "sourceType": "github",
