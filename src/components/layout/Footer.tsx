@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CONTACT_INFO, NAV_LINKS } from "@/lib/constants";
 
 export default function Footer() {
@@ -5,10 +6,17 @@ export default function Footer() {
 
   return (
     <footer className="px-8 pb-12 pt-24 lg:px-12">
-      {/* Big footer logo */}
       <div className="mx-auto max-w-7xl">
-        <div className="font-heading text-[clamp(4rem,12vw,14rem)] uppercase leading-[0.8] text-foreground/[0.06]">
-          Rooftop
+        {/* Big footer logo */}
+        <div className="flex justify-center opacity-[0.06]">
+          <Image
+            src="/optimized/logo.webp"
+            alt=""
+            width={400}
+            height={400}
+            className="h-48 w-auto lg:h-64"
+            aria-hidden="true"
+          />
         </div>
 
         <div className="mt-16 grid gap-12 border-t border-foreground/10 pt-12 md:grid-cols-3">

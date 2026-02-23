@@ -88,12 +88,12 @@ const SITE_NAME = "Rooftop Content Studio";
 const SITE_DESCRIPTION = "Estudio de grabación de contenido premium en Madrid. Graba meses de contenido en una sola mañana con un equipo profesional en una localización exclusiva.";
 const NAV_LINKS = [
     {
-        label: "Qué es",
+        label: "Estudio",
         href: "#que-es"
     },
     {
-        label: "Beneficios",
-        href: "#beneficios"
+        label: "Galería",
+        href: "#galeria"
     },
     {
         label: "Proceso",
@@ -102,10 +102,6 @@ const NAV_LINKS = [
     {
         label: "Tarifas",
         href: "#tarifas"
-    },
-    {
-        label: "Ubicación",
-        href: "#ubicacion"
     },
     {
         label: "FAQ",
@@ -242,7 +238,7 @@ const FAQS = [
 ];
 const CONTACT_INFO = {
     email: "hola@therooftopcontentstudio.com",
-    phone: "+34 600 000 000",
+    phone: "+34 711 25 54 96",
     address: "Centro de Madrid, España",
     city: "Madrid",
     postalCode: "28001",
@@ -293,7 +289,7 @@ const siteMetadata = {
         description: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_DESCRIPTION"],
         images: [
             {
-                url: "/images/og-image.jpg",
+                url: "/optimized/og-image.webp",
                 width: 1200,
                 height: 630,
                 alt: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_NAME"]} — Estudio de grabación de contenido en Madrid`
@@ -305,7 +301,7 @@ const siteMetadata = {
         title: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_NAME"]} — Estudio de Grabación de Contenido en Madrid`,
         description: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_DESCRIPTION"],
         images: [
-            "/images/og-image.jpg"
+            "/optimized/og-image.webp"
         ]
     },
     robots: {
@@ -357,7 +353,7 @@ function getLocalBusinessSchema() {
             latitude: 40.4168,
             longitude: -3.7038
         },
-        image: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_URL"]}/images/og-image.jpg`,
+        image: `${__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$constants$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["SITE_URL"]}/optimized/og-image.webp`,
         priceRange: "€€",
         openingHoursSpecification: [
             {

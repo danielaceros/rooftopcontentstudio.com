@@ -17,22 +17,83 @@ export default function Beneficios() {
           </h2>
         </ScrollReveal>
 
-        <div className="mt-24 grid gap-0 border-t border-foreground/10 md:grid-cols-2 lg:grid-cols-3">
-          {BENEFICIOS.map((beneficio, index) => (
-            <ScrollReveal key={beneficio.title} delay={index * 0.08}>
-              <div className="group border-b border-foreground/10 p-10 transition-colors duration-500 hover:bg-foreground/[0.03] md:border-r md:border-foreground/10 lg:[&:nth-child(3n)]:border-r-0 md:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r">
-                <span className="font-heading text-6xl text-foreground/10">
-                  0{index + 1}
+        {/* Alternating layout: large feature left + two stacked right, then flip */}
+        <div className="mt-24 flex flex-col gap-20">
+          {/* Row 1: big left + 2 stacked right */}
+          <div className="grid gap-8 lg:grid-cols-5">
+            <ScrollReveal delay={0.1} className="lg:col-span-3">
+              <div className="group relative flex h-full flex-col justify-end overflow-hidden bg-foreground/[0.04] p-10 lg:p-14">
+                <span className="absolute right-8 top-6 font-heading text-[8rem] leading-none text-foreground/[0.04] lg:text-[12rem]">
+                  01
                 </span>
-                <h3 className="mt-6 font-heading text-[clamp(1.4rem,2vw,1.8rem)] uppercase tracking-wide text-foreground">
-                  {beneficio.title}
-                </h3>
-                <p className="mt-4 leading-relaxed text-muted">
-                  {beneficio.description}
-                </p>
+                <div className="relative">
+                  <span className="mb-4 inline-block h-px w-12 bg-amber" />
+                  <h3 className="font-heading text-[clamp(1.8rem,3vw,2.8rem)] uppercase tracking-wide text-foreground">
+                    {BENEFICIOS[0].title}
+                  </h3>
+                  <p className="mt-4 max-w-md text-[1.05rem] leading-relaxed text-muted">
+                    {BENEFICIOS[0].description}
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
-          ))}
+
+            <div className="flex flex-col gap-8 lg:col-span-2">
+              {BENEFICIOS.slice(1, 3).map((b, i) => (
+                <ScrollReveal key={b.title} delay={0.15 + i * 0.1} className="flex-1">
+                  <div className="group flex h-full flex-col justify-end border border-foreground/10 p-8 transition-colors duration-500 hover:border-amber/20">
+                    <span className="mb-6 font-heading text-5xl text-foreground/[0.06]">
+                      0{i + 2}
+                    </span>
+                    <h3 className="font-heading text-[clamp(1.3rem,2vw,1.6rem)] uppercase tracking-wide text-foreground">
+                      {b.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted">
+                      {b.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+
+          {/* Row 2: 2 stacked left + big right (flipped) */}
+          <div className="grid gap-8 lg:grid-cols-5">
+            <div className="flex flex-col gap-8 lg:col-span-2">
+              {BENEFICIOS.slice(3, 5).map((b, i) => (
+                <ScrollReveal key={b.title} delay={0.1 + i * 0.1} className="flex-1">
+                  <div className="group flex h-full flex-col justify-end border border-foreground/10 p-8 transition-colors duration-500 hover:border-amber/20">
+                    <span className="mb-6 font-heading text-5xl text-foreground/[0.06]">
+                      0{i + 4}
+                    </span>
+                    <h3 className="font-heading text-[clamp(1.3rem,2vw,1.6rem)] uppercase tracking-wide text-foreground">
+                      {b.title}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted">
+                      {b.description}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <ScrollReveal delay={0.15} className="lg:col-span-3">
+              <div className="group relative flex h-full flex-col justify-end overflow-hidden bg-foreground/[0.04] p-10 lg:p-14">
+                <span className="absolute right-8 top-6 font-heading text-[8rem] leading-none text-foreground/[0.04] lg:text-[12rem]">
+                  06
+                </span>
+                <div className="relative">
+                  <span className="mb-4 inline-block h-px w-12 bg-amber" />
+                  <h3 className="font-heading text-[clamp(1.8rem,3vw,2.8rem)] uppercase tracking-wide text-foreground">
+                    {BENEFICIOS[5].title}
+                  </h3>
+                  <p className="mt-4 max-w-md text-[1.05rem] leading-relaxed text-muted">
+                    {BENEFICIOS[5].description}
+                  </p>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
         </div>
       </div>
     </section>

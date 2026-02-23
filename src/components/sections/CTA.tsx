@@ -32,11 +32,11 @@ export default function CTA() {
                 hola@therooftopcontentstudio.com
               </a>
               <a
-                href="tel:+34600000000"
+                href="tel:+34711255496"
                 className="flex items-center gap-5 text-[1.05rem] text-foreground transition-colors hover:text-amber"
               >
                 <span className="h-px w-8 bg-amber" aria-hidden="true" />
-                +34 600 000 000
+                +34 711 25 54 96
               </a>
             </div>
           </ScrollReveal>

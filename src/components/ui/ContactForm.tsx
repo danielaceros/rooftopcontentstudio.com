@@ -46,7 +46,7 @@ export default function ContactForm() {
           id="phone"
           name="phone"
           className="w-full border-0 border-b border-foreground/20 bg-transparent px-0 py-4 text-lg text-foreground placeholder:text-foreground/20 focus:border-foreground focus:outline-none"
-          placeholder="+34 600 000 000"
+          placeholder="+34 711 25 54 96"
         />
       </div>
 

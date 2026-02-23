@@ -4,11 +4,10 @@ export const SITE_DESCRIPTION =
   "Estudio de grabación de contenido premium en Madrid. Graba meses de contenido en una sola mañana con un equipo profesional en una localización exclusiva.";
 
 export const NAV_LINKS = [
-  { label: "Qué es", href: "#que-es" },
-  { label: "Beneficios", href: "#beneficios" },
+  { label: "Estudio", href: "#que-es" },
+  { label: "Galería", href: "#galeria" },
   { label: "Proceso", href: "#proceso" },
   { label: "Tarifas", href: "#tarifas" },
-  { label: "Ubicación", href: "#ubicacion" },
   { label: "FAQ", href: "#faq" },
 ] as const;
 
@@ -164,7 +163,7 @@ export const FAQS = [
 
 export const CONTACT_INFO = {
   email: "hola@therooftopcontentstudio.com",
-  phone: "+34 600 000 000",
+  phone: "+34 711 25 54 96",
   address: "Centro de Madrid, España",
   city: "Madrid",
   postalCode: "28001",

@@ -22,7 +22,7 @@ export function getLocalBusinessSchema() {
       latitude: 40.4168,
       longitude: -3.7038,
     },
-    image: `${SITE_URL}/images/og-image.jpg`,
+    image: `${SITE_URL}/optimized/og-image.webp`,
     priceRange: "€€",
     openingHoursSpecification: [
       {

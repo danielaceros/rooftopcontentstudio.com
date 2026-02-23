@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Ubicacion() {
@@ -45,12 +46,12 @@ export default function Ubicacion() {
               className="group relative block aspect-[4/3] overflow-hidden"
               aria-label="Ver ubicación en Google Maps"
             >
-              <div
-                className="h-full w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                style={{
-                  backgroundImage:
-                    "url('https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80')",
-                }}
+              <Image
+                src="/optimized/studio-space.webp"
+                alt="Interior del estudio Rooftop Content Studio en Madrid"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-background/20 transition-colors duration-500 group-hover:bg-transparent" />
               <div className="absolute bottom-8 left-8">

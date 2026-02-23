@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FORMATOS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -5,7 +6,6 @@ export default function QueEs() {
   return (
     <section id="que-es" className="px-8 py-40 lg:px-12">
       <div className="mx-auto max-w-7xl">
-        {/* Big editorial intro */}
         <ScrollReveal>
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
             ( Qué es )
@@ -30,20 +30,32 @@ export default function QueEs() {
               todo: equipo, iluminación, dirección y edición. Sales con semanas
               de contenido listo para publicar.
             </p>
+
+            <div className="mt-12">
+              <p className="mb-8 text-xs font-semibold uppercase tracking-[0.4em] text-muted">
+                Formatos que producimos
+              </p>
+              <ul className="flex flex-col gap-5">
+                {FORMATOS.map((formato) => (
+                  <li key={formato} className="flex items-center gap-5 text-[1.1rem] text-foreground">
+                    <span className="h-px w-8 bg-amber" aria-hidden="true" />
+                    {formato}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <p className="mb-8 text-xs font-semibold uppercase tracking-[0.4em] text-muted">
-              Formatos que producimos
-            </p>
-            <ul className="flex flex-col gap-5">
-              {FORMATOS.map((formato) => (
-                <li key={formato} className="flex items-center gap-5 text-[1.1rem] text-foreground">
-                  <span className="h-px w-8 bg-amber" aria-hidden="true" />
-                  {formato}
-                </li>
-              ))}
-            </ul>
+            <div className="relative aspect-[3/4] overflow-hidden">
+              <Image
+                src="/optimized/studio-recording.webp"
+                alt="Sesión de grabación con teleprompter y equipamiento profesional"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
           </ScrollReveal>
         </div>
       </div>

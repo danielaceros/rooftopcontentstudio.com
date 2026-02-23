@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import QueEs from "@/components/sections/QueEs";
+import Galeria from "@/components/sections/Galeria";
 import Beneficios from "@/components/sections/Beneficios";
 import Proceso from "@/components/sections/Proceso";
 import Tarifas from "@/components/sections/Tarifas";
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <QueEs />
+        <Galeria />
         <Beneficios />
         <Proceso />
         <Tarifas />
