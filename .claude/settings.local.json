@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx skills add:*)",
+      "Bash(npx -y skills add:*)",
+      "WebFetch(domain:olmo-studio.vercel.app)",
+      "Bash(head:*)"
+    ]
+  }
+}
