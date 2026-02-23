@@ -13,7 +13,11 @@
       "Bash(echo ffmpeg not installed:*)",
       "Bash(tail:*)",
       "Bash(which cwebp:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(lsof:*)",
+      "Bash(kill:*)",
+      "Bash(curl:*)",
+      "Bash(grep tubes:*)"
     ]
   }
 }

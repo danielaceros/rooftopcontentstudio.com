@@ -81,7 +81,9 @@ __turbopack_context__.s([
     "SITE_URL",
     ()=>SITE_URL,
     "TARIFAS",
-    ()=>TARIFAS
+    ()=>TARIFAS,
+    "TARIFAS_INCLUYE",
+    ()=>TARIFAS_INCLUYE
 ]);
 const SITE_URL = "https://therooftopcontentstudio.com";
 const SITE_NAME = "Rooftop Content Studio";
@@ -174,37 +176,22 @@ const TARIFAS = [
     {
         name: "Media Jornada",
         price: "600€",
-        duration: "4 horas de grabación",
-        features: [
-            "Hasta 10 piezas de contenido",
-            "1 cambio de escenario",
-            "Iluminación profesional",
-            "Sonido profesional",
-            "Dirección creativa",
-            "Teleprompter",
-            "Maquillaje básico",
-            "Entrega en 5 días laborables"
-        ],
+        duration: "4 horas",
+        description: "Ideal para grabar entre 10 y 20 piezas de contenido corto o módulos específicos.",
         highlighted: false
     },
     {
         name: "Jornada Completa",
         price: "1.000€",
-        duration: "8 horas de grabación",
-        features: [
-            "Hasta 25 piezas de contenido",
-            "3 cambios de escenario",
-            "Iluminación profesional",
-            "Sonido profesional",
-            "Dirección creativa",
-            "Teleprompter",
-            "Maquillaje completo",
-            "Entrega en 5 días laborables",
-            "Sesión de fotos incluida",
-            "Asistente de producción"
-        ],
+        duration: "8 horas",
+        description: "Perfecta para formaciones completas, podcast o producción intensiva.",
         highlighted: true
     }
+];
+const TARIFAS_INCLUYE = [
+    "Espacio",
+    "Filmmaker",
+    "Equipo técnico"
 ];
 const FAQS = [
     {

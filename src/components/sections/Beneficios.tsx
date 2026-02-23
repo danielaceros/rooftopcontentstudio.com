@@ -1,5 +1,6 @@
 import { BENEFICIOS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import DitherCard from "@/components/ui/DitherCard";
 
 export default function Beneficios() {
   return (
@@ -22,7 +23,7 @@ export default function Beneficios() {
           {/* Row 1: big left + 2 stacked right */}
           <div className="grid gap-8 lg:grid-cols-5">
             <ScrollReveal delay={0.1} className="lg:col-span-3">
-              <div className="group relative flex h-full flex-col justify-end overflow-hidden bg-foreground/[0.04] p-10 lg:p-14">
+              <DitherCard className="flex h-full flex-col justify-end bg-foreground/[0.04] p-10 lg:p-14">
                 <span className="absolute right-8 top-6 font-heading text-[8rem] leading-none text-foreground/[0.04] lg:text-[12rem]">
                   01
                 </span>
@@ -35,13 +36,13 @@ export default function Beneficios() {
                     {BENEFICIOS[0].description}
                   </p>
                 </div>
-              </div>
+              </DitherCard>
             </ScrollReveal>
 
             <div className="flex flex-col gap-8 lg:col-span-2">
               {BENEFICIOS.slice(1, 3).map((b, i) => (
                 <ScrollReveal key={b.title} delay={0.15 + i * 0.1} className="flex-1">
-                  <div className="group flex h-full flex-col justify-end border border-foreground/10 p-8 transition-colors duration-500 hover:border-amber/20">
+                  <DitherCard className="flex h-full flex-col justify-end border border-foreground/10 p-8 transition-colors duration-500 hover:border-amber/20">
                     <span className="mb-6 font-heading text-5xl text-foreground/[0.06]">
                       0{i + 2}
                     </span>
@@ -51,7 +52,7 @@ export default function Beneficios() {
                     <p className="mt-3 text-sm leading-relaxed text-muted">
                       {b.description}
                     </p>
-                  </div>
+                  </DitherCard>
                 </ScrollReveal>
               ))}
             </div>
@@ -62,7 +63,7 @@ export default function Beneficios() {
             <div className="flex flex-col gap-8 lg:col-span-2">
               {BENEFICIOS.slice(3, 5).map((b, i) => (
                 <ScrollReveal key={b.title} delay={0.1 + i * 0.1} className="flex-1">
-                  <div className="group flex h-full flex-col justify-end border border-foreground/10 p-8 transition-colors duration-500 hover:border-amber/20">
+                  <DitherCard className="flex h-full flex-col justify-end border border-foreground/10 p-8 transition-colors duration-500 hover:border-amber/20">
                     <span className="mb-6 font-heading text-5xl text-foreground/[0.06]">
                       0{i + 4}
                     </span>
@@ -72,13 +73,13 @@ export default function Beneficios() {
                     <p className="mt-3 text-sm leading-relaxed text-muted">
                       {b.description}
                     </p>
-                  </div>
+                  </DitherCard>
                 </ScrollReveal>
               ))}
             </div>
 
             <ScrollReveal delay={0.15} className="lg:col-span-3">
-              <div className="group relative flex h-full flex-col justify-end overflow-hidden bg-foreground/[0.04] p-10 lg:p-14">
+              <DitherCard className="flex h-full flex-col justify-end bg-foreground/[0.04] p-10 lg:p-14">
                 <span className="absolute right-8 top-6 font-heading text-[8rem] leading-none text-foreground/[0.04] lg:text-[12rem]">
                   06
                 </span>
@@ -91,7 +92,7 @@ export default function Beneficios() {
                     {BENEFICIOS[5].description}
                   </p>
                 </div>
-              </div>
+              </DitherCard>
             </ScrollReveal>
           </div>
         </div>

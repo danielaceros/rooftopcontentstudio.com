@@ -1,4 +1,4 @@
-import { TARIFAS } from "@/lib/constants";
+import { TARIFAS, TARIFAS_INCLUYE } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Tarifas() {
@@ -43,23 +43,16 @@ export default function Tarifas() {
                   {tarifa.name}
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 flex items-baseline gap-3">
                   <span className="font-heading text-[clamp(4rem,8vw,8rem)] leading-none text-foreground">
                     {tarifa.price}
                   </span>
+                  <span className="text-lg text-muted">/ {tarifa.duration}</span>
                 </div>
-                <p className="mt-4 text-muted">{tarifa.duration}</p>
 
-                <div className="mt-10 h-px w-full bg-foreground/10" />
-
-                <ul className="mt-10 flex flex-1 flex-col gap-5">
-                  {tarifa.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-4">
-                      <span className="mt-1.5 h-px w-5 shrink-0 bg-amber" aria-hidden="true" />
-                      <span className="text-[1.05rem] text-muted">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-muted">
+                  {tarifa.description}
+                </p>
 
                 <div className="mt-14">
                   <a
@@ -77,6 +70,26 @@ export default function Tarifas() {
             </ScrollReveal>
           ))}
         </div>
+
+        {/* Incluye */}
+        <ScrollReveal delay={0.2}>
+          <div className="mt-16 border-t border-foreground/10 pt-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
+              Incluye
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              {TARIFAS_INCLUYE.map((item) => (
+                <span
+                  key={item}
+                  className="flex items-center gap-3 text-[1.05rem] text-foreground"
+                >
+                  <span className="h-px w-5 bg-amber" aria-hidden="true" />
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
