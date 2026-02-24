@@ -1,4 +1,4 @@
-export const SITE_URL = "https://therooftopcontentstudio.com";
+export const SITE_URL = "https://rooftopcontentstudio.com";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
   "Estudio de grabación de contenido premium en Madrid. Graba meses de contenido en una sola mañana con un equipo profesional en una localización exclusiva.";
@@ -150,7 +150,7 @@ export const FAQS = [
 ] as const;
 
 export const CONTACT_INFO = {
-  email: "hola@therooftopcontentstudio.es",
+  email: "hola@rooftopcontentstudio.es",
   phone: "+34 711 25 54 96",
   address: "Centro de Madrid, España",
   city: "Madrid",
