@@ -1,11 +1,7 @@
-"use client";
-
-import { useState } from "react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import Script from "next/script";
 
 export default function CTA() {
-  const [showForm, setShowForm] = useState(false);
-
   return (
     <section id="contacto" className="px-8 py-40 lg:px-12">
       <div className="mx-auto max-w-7xl">
@@ -46,27 +42,24 @@ export default function CTA() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            {showForm ? (
-              <iframe
-                src="https://api.fitnesslaunch.es/widget/form/sxDYj1gBgfvDh9PI9Jte"
-                title="Formulario de contacto Rooftop Content Studio"
-                loading="lazy"
-                className="h-[620px] w-full border-0"
-              />
-            ) : (
-              <div className="flex min-h-[620px] flex-col items-center justify-center border border-foreground/15 bg-foreground/[0.02] px-8 text-center">
-                <p className="max-w-md text-sm uppercase tracking-[0.18em] text-muted">
-                  Carga el formulario cuando quieras continuar.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => setShowForm(true)}
-                  className="mt-6 rounded-full border border-foreground/60 px-8 py-3 font-heading text-lg uppercase tracking-[0.12em] text-foreground transition-all hover:bg-foreground hover:text-background"
-                >
-                  Abrir formulario
-                </button>
-              </div>
-            )}
+            <iframe
+              src="https://api.fitnesslaunch.es/widget/form/sxDYj1gBgfvDh9PI9Jte"
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: 0 }}
+              id="inline-sxDYj1gBgfvDh9PI9Jte"
+              data-layout='{"id":"INLINE"}'
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Form - The Rooftop Content Studio"
+              data-height="undefined"
+              data-layout-iframe-id="inline-sxDYj1gBgfvDh9PI9Jte"
+              data-form-id="sxDYj1gBgfvDh9PI9Jte"
+              title="Form - The Rooftop Content Studio"
+            />
+            <Script src="https://api.fitnesslaunch.es/js/form_embed.js" strategy="lazyOnload" />
           </ScrollReveal>
         </div>
       </div>
