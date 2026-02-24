@@ -177,7 +177,7 @@
     --default-mono-font-family: var(--font-mono);
     --color-background: #0a0a0a;
     --color-foreground: #ededed;
-    --color-muted: #71717a;
+    --color-muted: #a1a1aa;
     --color-border: #1e1e1e;
     --color-amber: #f59e0b;
     --font-heading: var(--font-bebas-neue);
@@ -584,10 +584,6 @@
     margin-top: calc(var(--spacing) * -5);
   }
 
-  .mt-1\.5 {
-    margin-top: calc(var(--spacing) * 1.5);
-  }
-
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -602,10 +598,6 @@
 
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
-  }
-
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
   }
 
   .mt-12 {
@@ -709,10 +701,6 @@
     height: calc(var(--spacing) * 36);
   }
 
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
-
   .h-48 {
     height: calc(var(--spacing) * 48);
   }
@@ -739,10 +727,6 @@
 
   .min-h-\[400px\] {
     min-height: 400px;
-  }
-
-  .min-h-\[600px\] {
-    min-height: 600px;
   }
 
   .min-h-svh {
@@ -885,10 +869,6 @@
 
   .items-end {
     align-items: flex-end;
-  }
-
-  .items-start {
-    align-items: flex-start;
   }
 
   .justify-between {
@@ -1097,16 +1077,6 @@
 
   .bg-foreground {
     background-color: var(--color-foreground);
-  }
-
-  .bg-foreground\/10 {
-    background-color: #ededed1a;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .bg-foreground\/10 {
-      background-color: color-mix(in oklab, var(--color-foreground) 10%, transparent);
-    }
   }
 
   .bg-foreground\/\[0\.04\] {
