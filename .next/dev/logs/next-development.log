@@ -35,3 +35,5 @@
 [19:47:57.339] Server  LOG     ✓ Compiled in 50ms
 [19:47:57.343] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
 [19:47:57.795] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[19:51:36.395] Server  LOG     ✓ Compiled in 18ms
+[19:51:40.350] Server  LOG     ✓ Compiled in 17ms

@@ -25,11 +25,11 @@ export default function CTA() {
             </p>
             <div className="mt-12 flex flex-col gap-5">
               <a
-                href="mailto:hola@therooftopcontentstudio.com"
+                href="mailto:hola@therooftopcontentstudio.es"
                 className="flex items-center gap-5 text-[1.05rem] text-foreground transition-colors hover:text-amber"
               >
                 <span className="h-px w-8 bg-amber" aria-hidden="true" />
-                hola@therooftopcontentstudio.com
+                hola@therooftopcontentstudio.es
               </a>
               <a
                 href="tel:+34711255496"

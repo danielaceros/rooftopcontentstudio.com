@@ -150,7 +150,7 @@ export const FAQS = [
 ] as const;
 
 export const CONTACT_INFO = {
-  email: "hola@therooftopcontentstudio.com",
+  email: "hola@therooftopcontentstudio.es",
   phone: "+34 711 25 54 96",
   address: "Centro de Madrid, España",
   city: "Madrid",
