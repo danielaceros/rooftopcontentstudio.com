@@ -28,3 +28,9 @@ pnpm-debug.log*
 
 # TypeScript incremental build info
 *.tsbuildinfo
+
+# Vercel local project linkage
+.vercel/
+
+# Local Claude/Cursor machine permissions
+.claude/settings.local.json
