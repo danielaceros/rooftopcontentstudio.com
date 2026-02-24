@@ -745,6 +745,10 @@
     min-height: 600px;
   }
 
+  .min-h-svh {
+    min-height: 100svh;
+  }
+
   .w-0 {
     width: calc(var(--spacing) * 0);
   }
@@ -1368,6 +1372,10 @@
     padding-bottom: calc(var(--spacing) * 24);
   }
 
+  .text-center {
+    text-align: center;
+  }
+
   .text-left {
     text-align: left;
   }
@@ -1461,6 +1469,10 @@
 
   .text-\[clamp\(3rem\,7vw\,7rem\)\] {
     font-size: clamp(3rem, 7vw, 7rem);
+  }
+
+  .text-\[clamp\(3rem\,8vw\,7rem\)\] {
+    font-size: clamp(3rem, 8vw, 7rem);
   }
 
   .text-\[clamp\(4rem\,8vw\,8rem\)\] {

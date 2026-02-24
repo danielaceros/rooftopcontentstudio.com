@@ -1,5 +1,5 @@
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import ContactForm from "@/components/ui/ContactForm";
+import Script from "next/script";
 
 export default function CTA() {
   return (
@@ -42,7 +42,24 @@ export default function CTA() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <ContactForm />
+            <iframe
+              src="https://api.fitnesslaunch.es/widget/form/sxDYj1gBgfvDh9PI9Jte"
+              style={{ width: "100%", height: "100%", border: "none", borderRadius: 0 }}
+              id="inline-sxDYj1gBgfvDh9PI9Jte"
+              data-layout='{"id":"INLINE"}'
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Form - The Rooftop Content Studio"
+              data-height="undefined"
+              data-layout-iframe-id="inline-sxDYj1gBgfvDh9PI9Jte"
+              data-form-id="sxDYj1gBgfvDh9PI9Jte"
+              title="Form - The Rooftop Content Studio"
+            />
+            <Script src="https://api.fitnesslaunch.es/js/form_embed.js" strategy="lazyOnload" />
           </ScrollReveal>
         </div>
       </div>

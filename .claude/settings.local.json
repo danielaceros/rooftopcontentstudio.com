@@ -17,7 +17,14 @@
       "Bash(lsof:*)",
       "Bash(kill:*)",
       "Bash(curl:*)",
-      "Bash(grep tubes:*)"
+      "Bash(grep tubes:*)",
+      "WebSearch",
+      "WebFetch(domain:help.gohighlevel.com)",
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:consultevo.com)",
+      "WebFetch(domain:www.freedomboundbusiness.com)",
+      "WebFetch(domain:supplygem.com)",
+      "WebFetch(domain:howtohighlevel.com)"
     ]
   }
 }
