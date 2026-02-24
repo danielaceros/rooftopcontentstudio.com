@@ -1,12 +1,10 @@
-"use client";
-
 import Image from "next/image";
 
 export default function VideoBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden">
       <Image
-        src="/optimized/studio-equipment.webp"
+        src="/optimized/hero-bg.webp"
         alt="Estudio de grabación profesional con vistas al atardecer de Madrid"
         fill
         priority

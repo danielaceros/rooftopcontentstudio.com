@@ -28,9 +28,11 @@ export default function Galeria() {
               muted
               loop
               playsInline
+              preload="metadata"
+              poster="/optimized/studio-space.webp"
               className="h-full w-full object-cover"
             >
-              <source src="/optimized/BROLL.mp4" type="video/mp4" />
+              <source src="/optimized/banner.mp4" type="video/mp4" />
             </video>
             <div className="absolute inset-0 bg-background/10 transition-colors duration-500 hover:bg-transparent" />
           </div>

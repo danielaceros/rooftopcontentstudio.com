@@ -26,11 +26,16 @@ export default function Ubicacion() {
             </p>
             <div className="mt-12 flex flex-col gap-6">
               {[
-                "Centro de Madrid, España",
+                "Calle Ronda de Atocha, 16, Madrid",
                 "Metro a menos de 5 minutos",
                 "Parking público a 2 minutos",
-              ].map((item) => (
-                <div key={item} className="flex items-center gap-5 text-[1.05rem] text-foreground">
+              ].map((item, index) => (
+                <div
+                  key={item}
+                  className={`flex items-center gap-5 text-foreground ${
+                    index === 0 ? "text-[1.2rem] font-semibold" : "text-[1.05rem]"
+                  }`}
+                >
                   <span className="h-px w-8 bg-amber" aria-hidden="true" />
                   {item}
                 </div>
@@ -40,7 +45,7 @@ export default function Ubicacion() {
 
           <ScrollReveal delay={0.3}>
             <a
-              href="https://maps.google.com/?q=Madrid,Spain"
+              href="https://maps.google.com/?q=Calle+Ronda+de+Atocha,+16,+Madrid"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative block aspect-[4/3] overflow-hidden"
