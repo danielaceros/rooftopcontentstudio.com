@@ -32,6 +32,17 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+@media (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 110px;
+  }
 }
 
 ::selection {
@@ -47,6 +58,12 @@ body {
 
 .animate-ken-burns {
   animation: ken-burns 25s ease-in-out infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .animate-ken-burns {
+    animation: none;
+  }
 }
 
 /* Marquee */

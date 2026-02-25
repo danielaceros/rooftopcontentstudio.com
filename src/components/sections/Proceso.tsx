@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Proceso() {
   return (
-    <section id="proceso" className="px-8 py-40 lg:px-12">
+    <section id="proceso" className="px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
@@ -12,12 +12,12 @@ export default function Proceso() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <h2 className="mt-8 max-w-4xl font-heading text-[clamp(3rem,7vw,7rem)] uppercase leading-[0.85] text-foreground">
+          <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
             Cómo Trabajamos.
           </h2>
         </ScrollReveal>
 
-        <div className="mt-24 flex flex-col">
+        <div className="mt-14 flex flex-col sm:mt-16 lg:mt-24">
           {PROCESO.map((paso, index) => (
             <ScrollReveal key={paso.step} delay={index * 0.1}>
               <div className="group grid border-t border-foreground/10 py-12 md:grid-cols-12 md:gap-8 md:py-16">
@@ -32,7 +32,7 @@ export default function Proceso() {
                   </h3>
                 </div>
                 <div className="mt-4 md:col-span-6 md:col-start-7 md:mt-2">
-                  <p className="max-w-lg text-[1.05rem] leading-[1.8] text-muted">
+                  <p className="max-w-lg text-base sm:text-[1.05rem] leading-[1.8] text-muted">
                     {paso.description}
                   </p>
                 </div>

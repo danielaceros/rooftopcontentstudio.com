@@ -3,21 +3,23 @@ import Marquee from "@/components/ui/Marquee";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden" aria-label="Hero">
+    <section className="relative min-h-screen overflow-hidden" aria-label="Hero">
       <VideoBackground />
 
       {/* Headline anchored to bottom-left — OLMO style */}
-      <div className="relative z-10 flex h-full flex-col justify-end px-8 pb-24 lg:px-12 lg:pb-28">
-        <h1 className="mb-3 font-body text-sm uppercase tracking-[0.25em] text-white/80 drop-shadow-md lg:text-base">
-          Estudio de Grabación en Madrid
-        </h1>
-        <p className="max-w-[90vw] font-heading text-[clamp(3.5rem,11vw,12rem)] uppercase leading-[0.85] tracking-tight text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.7)]">
-          Graba Meses
-          <br />
-          de Contenido
-          <br />
-          en Una Mañana
-        </p>
+      <div className="relative z-10 flex min-h-screen px-5 pb-20 sm:px-8 sm:pb-24 lg:px-12 lg:pb-28">
+        <div className="mx-auto flex w-full max-w-7xl flex-col justify-end">
+          <h1 className="mb-3 font-body text-[11px] uppercase tracking-[0.2em] text-white/80 drop-shadow-md sm:text-sm sm:tracking-[0.25em] lg:text-base">
+            Estudio de Grabación en Madrid
+          </h1>
+          <p className="max-w-[1100px] font-heading text-[clamp(2.8rem,13.2vw,10rem)] uppercase leading-[0.88] tracking-tight text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:leading-[0.85]">
+            Graba Meses
+            <br />
+            de Contenido
+            <br />
+            en Una Mañana
+          </p>
+        </div>
       </div>
 
       {/* Marquee at the very bottom */}

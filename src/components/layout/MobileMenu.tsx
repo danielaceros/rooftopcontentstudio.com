@@ -35,13 +35,13 @@ export default function MobileMenu() {
 
       {isOpen && (
         <div className="fixed inset-0 z-40 bg-background/98 backdrop-blur-md">
-          <nav className="flex h-full flex-col items-center justify-center gap-6">
+          <nav className="flex h-full flex-col items-center justify-center gap-5 px-6 text-center">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="font-heading text-5xl uppercase tracking-wider text-foreground transition-colors hover:text-amber"
+                className="font-heading text-4xl uppercase tracking-[0.06em] text-foreground transition-colors hover:text-amber sm:text-5xl"
               >
                 {link.label}
               </a>
@@ -49,7 +49,7 @@ export default function MobileMenu() {
             <a
               href="#contacto"
               onClick={() => setIsOpen(false)}
-              className="mt-6 rounded-full border border-foreground/60 px-10 py-4 font-heading text-2xl uppercase tracking-wider text-foreground transition-all hover:bg-foreground hover:text-background"
+              className="mt-4 rounded-full border border-foreground/60 px-8 py-3 font-heading text-xl uppercase tracking-[0.08em] text-foreground transition-all hover:bg-foreground hover:text-background sm:mt-6 sm:px-10 sm:py-4 sm:text-2xl"
             >
               Hablemos
             </a>

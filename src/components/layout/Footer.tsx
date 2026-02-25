@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <NeonFlow className="min-h-[400px]">
-      <footer className="px-8 pb-12 pt-24 lg:px-12">
+      <footer className="px-5 pb-12 pt-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           {/* Big footer logo */}
           <div className="flex justify-center opacity-[0.06]">
@@ -16,12 +16,12 @@ export default function Footer() {
               alt=""
               width={400}
               height={400}
-              className="h-48 w-auto lg:h-64"
+              className="h-36 w-auto sm:h-48 lg:h-64"
               aria-hidden="true"
             />
           </div>
 
-          <div className="mt-16 grid gap-12 border-t border-foreground/10 pt-12 md:grid-cols-3">
+          <div className="mt-12 grid gap-10 border-t border-foreground/10 pt-10 md:mt-16 md:grid-cols-3 md:gap-12 md:pt-12">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
                 Navegación
@@ -46,7 +46,7 @@ export default function Footer() {
               <div className="mt-6 flex flex-col gap-3 text-sm text-foreground/60">
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
-                  className="transition-colors hover:text-foreground"
+                  className="break-all transition-colors hover:text-foreground"
                 >
                   {CONTACT_INFO.email}
                 </a>

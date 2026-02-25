@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Tarifas() {
   return (
-    <section id="tarifas" className="px-8 py-40 lg:px-12">
+    <section id="tarifas" className="px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
@@ -12,22 +12,22 @@ export default function Tarifas() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <h2 className="mt-8 max-w-4xl font-heading text-[clamp(3rem,7vw,7rem)] uppercase leading-[0.85] text-foreground">
+          <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
             Elige tu Plan.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.15}>
-          <p className="mt-8 max-w-xl text-[1.15rem] leading-[1.8] text-muted">
+          <p className="mt-8 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
             Todo incluido. Sin sorpresas. Sin costes ocultos.
           </p>
         </ScrollReveal>
 
-        <div className="mt-24 grid gap-8 lg:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:mt-16 sm:gap-8 lg:mt-24 lg:grid-cols-2">
           {TARIFAS.map((tarifa, index) => (
             <ScrollReveal key={tarifa.name} delay={index * 0.15}>
               <div
-                className={`group relative flex h-full flex-col p-10 transition-colors duration-500 lg:p-14 ${
+                className={`group relative flex h-full flex-col p-7 sm:p-10 transition-colors duration-500 lg:p-14 ${
                   tarifa.highlighted
                     ? "bg-foreground/[0.05]"
                     : "bg-transparent"
@@ -50,14 +50,14 @@ export default function Tarifas() {
                   <span className="text-lg text-muted">/ {tarifa.duration}</span>
                 </div>
 
-                <p className="mt-6 max-w-md text-[1.05rem] leading-relaxed text-muted">
+                <p className="mt-6 max-w-md text-base sm:text-[1.05rem] leading-relaxed text-muted">
                   {tarifa.description}
                 </p>
 
                 <div className="mt-14">
                   <a
                     href="#contacto"
-                    className={`inline-block rounded-full px-10 py-4 font-heading text-lg uppercase tracking-[0.15em] transition-all ${
+                    className={`inline-block rounded-full px-8 py-3 font-heading text-base uppercase tracking-[0.12em] transition-all sm:px-10 sm:py-4 sm:text-lg sm:tracking-[0.15em] ${
                       tarifa.highlighted
                         ? "bg-foreground text-background hover:bg-amber"
                         : "border border-foreground/30 text-foreground hover:border-foreground hover:bg-foreground hover:text-background"
@@ -81,7 +81,7 @@ export default function Tarifas() {
               {TARIFAS_INCLUYE.map((item) => (
                 <span
                   key={item}
-                  className="flex items-center gap-3 text-[1.05rem] text-foreground"
+                  className="flex items-center gap-3 text-base text-foreground sm:text-[1.05rem]"
                 >
                   <span className="h-px w-5 bg-amber" aria-hidden="true" />
                   {item}
