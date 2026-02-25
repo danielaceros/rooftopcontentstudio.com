@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans } from "next/font/google";
+import Script from "next/script";
 import { siteMetadata } from "@/lib/metadata";
 import { getLocalBusinessSchema, getFAQSchema } from "@/lib/structured-data";
 import "./globals.css";
@@ -27,6 +28,18 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${bebasNeue.variable} ${dmSans.variable}`}>
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17976589112"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17976589112');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
