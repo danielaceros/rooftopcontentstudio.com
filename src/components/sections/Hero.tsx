@@ -8,7 +8,7 @@ export default function Hero() {
 
       {/* Headline anchored to bottom-left — OLMO style */}
       <div className="relative z-10 flex min-h-screen px-5 pb-20 sm:px-8 sm:pb-24 lg:px-12 lg:pb-28">
-        <div className="mx-auto flex w-full max-w-7xl flex-col justify-end">
+        <div className="relative mx-auto flex w-full max-w-7xl flex-col justify-end">
           <h1 className="mb-3 font-body text-[11px] uppercase tracking-[0.2em] text-white/80 drop-shadow-md sm:text-sm sm:tracking-[0.25em] lg:text-base">
             Estudio de Grabación en Madrid
           </h1>
@@ -19,6 +19,12 @@ export default function Hero() {
             <br />
             en Una Mañana
           </p>
+          <a
+            href="#contacto"
+            className="absolute bottom-6 right-0 hidden rounded-full border border-white/80 px-8 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white drop-shadow-sm backdrop-blur-[2px] transition-all hover:border-white hover:bg-white hover:text-background lg:inline-flex"
+          >
+            Pide Presupuesto
+          </a>
         </div>
       </div>
 
