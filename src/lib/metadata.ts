@@ -7,19 +7,8 @@ export const siteMetadata: Metadata = {
     default: `${SITE_NAME} — Estudio de Grabación de Contenido en Madrid`,
     template: `%s | ${SITE_NAME}`,
   },
-  description: SITE_DESCRIPTION,
-  keywords: [
-    "estudio de grabación Madrid",
-    "content studio Madrid",
-    "grabar contenido Madrid",
-    "estudio de contenido",
-    "grabación de reels Madrid",
-    "estudio podcast Madrid",
-    "producción de contenido Madrid",
-    "rooftop Madrid",
-    "estudio de vídeo Madrid",
-    "creador de contenido Madrid",
-  ],
+  description:
+    "Estudio de grabación de contenido en Madrid. Graba hasta 24 reels o 12 vídeos de YouTube en una sola sesión. Equipo profesional, rooftop privado y edición incluida. Reserva tu día.",
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {

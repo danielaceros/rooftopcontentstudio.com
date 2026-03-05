@@ -8,8 +8,8 @@ export default function ContactFormEmbed() {
   return (
     <div className="relative">
       {!loaded && (
-        <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-card">
-          <div className="h-8 w-8 animate-spin rounded-full border-2 border-foreground/20 border-t-amber" />
+        <div className="absolute inset-0 flex h-[680px] items-center justify-center rounded-lg bg-foreground/[0.03]">
+          <span className="h-8 w-8 animate-spin rounded-full border border-foreground/20 border-t-foreground/60" />
         </div>
       )}
       <iframe

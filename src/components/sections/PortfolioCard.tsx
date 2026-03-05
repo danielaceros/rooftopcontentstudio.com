@@ -97,7 +97,7 @@ export default function PortfolioCard({
         muted
         loop
         playsInline
-        preload={index < 2 ? "metadata" : "none"}
+        preload={index < 2 && canAutoplay ? "metadata" : "none"}
         onCanPlay={() => setVideoReady(true)}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035]"
       >
