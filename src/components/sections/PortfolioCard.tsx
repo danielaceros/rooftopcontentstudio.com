@@ -6,6 +6,7 @@ import { createPortal } from "react-dom"
 type Props = {
   title: string
   video: string
+  cover?: string
   index?: number
   openInModal?: boolean
   hideOverlayTitle?: boolean
@@ -19,6 +20,7 @@ type NavigatorConnection = {
 export default function PortfolioCard({
   title,
   video,
+  cover,
   index = 0,
   openInModal = false,
   hideOverlayTitle = false,
@@ -35,6 +37,7 @@ export default function PortfolioCard({
     return !(isDataSaver || isSlowNetwork)
   })
   const [shouldLoadVideo, setShouldLoadVideo] = useState(false)
+  const [videoReady, setVideoReady] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [isModalReady, setIsModalReady] = useState(false)
 
@@ -80,6 +83,14 @@ export default function PortfolioCard({
 
   const content = (
     <>
+      {cover && !videoReady && (
+        <img
+          src={cover}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
       <video
         src={shouldLoadVideo ? video : undefined}
         autoPlay={canAutoplay}
@@ -87,6 +98,7 @@ export default function PortfolioCard({
         loop
         playsInline
         preload={index < 2 ? "metadata" : "none"}
+        onCanPlay={() => setVideoReady(true)}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035]"
       >
         <track kind="captions" />

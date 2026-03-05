@@ -28,7 +28,7 @@ export default function QueEs() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section id="que-es" className="py-24 sm:py-28 lg:py-32 xl:py-36">
+    <section id="que-es" className="py-14 sm:py-28 lg:py-32 xl:py-36">
       <div className="px-5 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
         <div className="mx-auto max-w-7xl">
           <ScrollReveal>

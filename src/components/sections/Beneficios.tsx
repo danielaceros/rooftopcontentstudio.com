@@ -4,7 +4,7 @@ import DitherCard from "@/components/ui/DitherCard";
 
 export default function Beneficios() {
   return (
-    <section id="beneficios" className="px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section id="beneficios" className="px-5 py-14 sm:px-8 sm:py-28 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">

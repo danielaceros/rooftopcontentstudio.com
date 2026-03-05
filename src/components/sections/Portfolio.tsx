@@ -21,7 +21,7 @@ export default function Portfolio({
   return (
     <section
       id="portfolio"
-      className="py-24 sm:py-28 lg:py-32"
+      className="py-14 sm:py-28 lg:py-32"
     >
       <div className="px-5 pb-8 sm:px-8 sm:pb-10 lg:px-12 lg:pb-12">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">( Portfolio )</p>
@@ -41,6 +41,7 @@ export default function Portfolio({
                       <PortfolioCard
                         title={project.title}
                         video={project.video}
+                        cover={project.cover}
                         index={i}
                         openInModal={openVideosInModal}
                         hideOverlayTitle
@@ -63,6 +64,7 @@ export default function Portfolio({
                       <PortfolioCard
                         title={project.title}
                         video={project.video}
+                        cover={project.cover}
                         index={i}
                         openInModal={openVideosInModal}
                       />
@@ -160,6 +162,7 @@ export default function Portfolio({
                 key={project.slug}
                 title={project.title}
                 video={project.video}
+                cover={project.cover}
                 index={i}
                 openInModal={openVideosInModal}
               />

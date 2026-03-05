@@ -1,15 +1,42 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+const VIDEO_SRC =
+  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/hero2-1.webm?alt=media&token=52954767-3264-4f22-8c8a-e850ba4fba55";
+
+type NavigatorConnection = {
+  saveData?: boolean;
+  effectiveType?: string;
+};
+
 export default function VideoBackground() {
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const conn = (navigator as Navigator & { connection?: NavigatorConnection })
+      .connection;
+    const isSlow =
+      conn?.saveData ||
+      ["slow-2g", "2g", "3g"].includes(conn?.effectiveType ?? "");
+    if (!isSlow) setShouldLoad(true);
+  }, []);
+
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden bg-background">
+      {/* TODO: ideally serve a vertical (9:16) video for mobile via <source media="..."> */}
       <video
-        src="https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/hero2.mp4?alt=media&token=1c2da14d-d074-4896-953b-78612a8fb3b9"
+        src={shouldLoad ? VIDEO_SRC : undefined}
         autoPlay
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         poster="/optimized/hero-poster.webp"
-        className="absolute inset-0 h-full w-full object-cover"
+        onCanPlay={() => setLoaded(true)}
+        className="absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-1000 lg:object-center"
+        style={{ opacity: loaded ? 1 : 0 }}
       >
         <track kind="captions" />
       </video>

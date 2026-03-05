@@ -2,7 +2,8 @@ export const projects = [
   {
     slug: "fifa",
     title: "FIFA",
-    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A1.mp4?alt=media&token=12073558-3af3-459a-bf2a-e76441a8c42e",
+    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/fifa.webm?alt=media&token=8c6aaa0a-e340-4de4-86ae-3e2d4952cb6c",
+    cover: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/fifa-cover.webp?alt=media&token=bc571b17-6fee-499d-bc91-be1d3cdff465",
     sections: [
       {
         title: "",
@@ -69,9 +70,25 @@ export const projects = [
     ],
   },
   {
+    slug: "brahim-diaz",
+    title: "Brahím Díaz",
+    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/brahim.webm?alt=media&token=8166a4ee-e9a3-4e76-aa03-ff402e913f1e",
+    cover: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/brahim-cover.webp?alt=media&token=9adcc058-ae36-4de5-b262-0fd27e55d3bc",
+    sections: [
+      {
+        title: "",
+        items: [
+          "Producción audiovisual para el evento de Brahím Díaz, jugador del Real Madrid.",
+          "El objetivo fue capturar la esencia del acto con un enfoque visual cinematográfico y dinámico.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "camara-de-comercio",
     title: "Cámara de Comercio",
-    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A7%20(2).mp4?alt=media&token=9aefe430-138c-4501-b6fa-b0f0b160ccfe",
+    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ccomercio.webm?alt=media&token=eaefc4f3-6288-4446-b980-fd8b76f5ecf8",
+    cover: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ccomercio-cover.webp?alt=media&token=ac894579-14a4-458f-9ac2-508ef55fc90b",
     sections: [
       {
         title: "",
@@ -140,7 +157,8 @@ export const projects = [
   {
     slug: "ifema",
     title: "IFEMA",
-    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/%F0%9F%8E%A5%20Un%20punto%20de%20encuentro%2C%20un%20impulso%2C%20y%20una%20sen%CC%83al%20clara-%20el%20sector%20esta%CC%81%20despertando.Tercer%20an%CC%83o%20c.mp4?alt=media&token=e9318ece-6817-48e0-a1a0-f6c90daf774f",
+    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ifema.webm?alt=media&token=f6c36099-4634-4c12-9fa9-1d823c65aa42",
+    cover: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ifema-cover.webp?alt=media&token=db2bd50b-2db2-4623-b495-5481f737b678",
     sections: [
       {
         title: "",
@@ -213,7 +231,8 @@ export const projects = [
   {
     slug: "cinesa",
     title: "Cinesa",
-    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/CINESA%20(2).mp4?alt=media&token=da7f88d0-6b36-4ee8-9e9c-6b81c6a1819b",
+    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/cinesa.webm?alt=media&token=82305aba-5ee9-41aa-8999-b47ffd29a38d",
+    cover: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/cinesa-cover.webp?alt=media&token=d7d2f79a-0f7a-43f9-9f57-c620dc61c756",
     sections: [
       {
         title: "",
@@ -291,7 +310,8 @@ export const projects = [
   {
     slug: "federacion-esgrima",
     title: "Federación Española de Esgrima",
-    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/A5.mp4?alt=media&token=ce83614c-90e9-45ce-ae95-0feaec9c1135",
+    video: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/esgrima.webm?alt=media&token=ed0160b7-be0c-4df2-8cfd-2cc1af08a9c3",
+    cover: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/esgrima-cover.webp?alt=media&token=5552f73c-7389-4b4d-adaf-6291822d0e50",
     sections: [
       {
         title: "",
