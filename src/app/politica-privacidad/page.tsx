@@ -29,7 +29,7 @@ export default function PoliticaPrivacidad() {
             <li><strong className="text-foreground">Nombre comercial:</strong> KLIP</li>
             <li><strong className="text-foreground">DNI/NIF:</strong> 06590329R</li>
             <li><strong className="text-foreground">Domicilio:</strong> Calle de Mercedes Arteaga 24, España</li>
-            <li><strong className="text-foreground">Correo electrónico de contacto:</strong> hello@daniaceros.com</li>
+            <li><strong className="text-foreground">Correo electrónico de contacto:</strong> work@daniaceros.com</li>
           </ul>
 
           <h2 className="mb-4 mt-12 font-heading text-2xl uppercase text-foreground">
