@@ -21,7 +21,7 @@ export default function Hero() {
           </p>
           <a
             href="#contacto"
-            className="absolute bottom-6 right-0 hidden rounded-full border border-white/80 px-8 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white drop-shadow-sm backdrop-blur-[2px] transition-all hover:border-white hover:bg-white hover:text-background lg:inline-flex"
+            className="absolute bottom-6 right-0 inline-flex rounded-full border border-white/80 bg-white/10 px-8 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white drop-shadow-sm backdrop-blur-[2px] transition-all hover:border-white hover:bg-white hover:text-background"
           >
             Pide Presupuesto
           </a>

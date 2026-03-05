@@ -10,10 +10,13 @@ interface NeonFlowProps {
 const CDN =
   "https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js";
 
-const randomColors = (count: number) =>
-  Array.from({ length: count }, () =>
-    "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0")
-  );
+const PALETTES = [
+  ["#f59e0b", "#d97706", "#92400e"],
+  ["#fbbf24", "#f59e0b", "#b45309"],
+  ["#d97706", "#92400e", "#78350f"],
+];
+let paletteIndex = 0;
+const nextPalette = () => PALETTES[paletteIndex++ % PALETTES.length];
 
 export default function NeonFlow({ children, className = "" }: NeonFlowProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -23,8 +26,6 @@ export default function NeonFlow({ children, className = "" }: NeonFlowProps) {
   useEffect(() => {
     if (!canvasRef.current) return;
 
-    // Create a <script type="module"> that imports from the CDN
-    // and exposes the constructor on window, bypassing Turbopack
     const script = document.createElement("script");
     script.type = "module";
     script.textContent = `
@@ -55,7 +56,6 @@ export default function NeonFlow({ children, className = "" }: NeonFlowProps) {
       }
     };
 
-    // If already loaded from a previous mount, init immediately
     if ((window as any).__TubesCursor) {
       onLoaded();
     } else {
@@ -63,15 +63,25 @@ export default function NeonFlow({ children, className = "" }: NeonFlowProps) {
       document.head.appendChild(script);
     }
 
+    // Fallback if CDN fails to load after 3s
+    const fallbackTimer = setTimeout(() => {
+      if (!tubesRef.current && containerRef.current) {
+        containerRef.current.style.background =
+          "radial-gradient(ellipse at 50% 100%, rgba(245,158,11,0.08) 0%, transparent 70%)";
+      }
+    }, 3000);
+
     return () => {
       window.removeEventListener("__tubesLoaded", onLoaded);
+      clearTimeout(fallbackTimer);
     };
   }, []);
 
   const handleClick = () => {
     if (!tubesRef.current) return;
-    tubesRef.current.tubes.setColors(randomColors(3));
-    tubesRef.current.tubes.setLightsColors(randomColors(4));
+    const palette = nextPalette();
+    tubesRef.current.tubes.setColors(palette);
+    tubesRef.current.tubes.setLightsColors([...palette, "#fbbf24"]);
   };
 
   return (

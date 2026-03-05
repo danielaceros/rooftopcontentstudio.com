@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Ubicacion() {
@@ -44,27 +43,16 @@ export default function Ubicacion() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <a
-              href="https://maps.google.com/?q=Calle+Ronda+de+Atocha,+16,+Madrid"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative block aspect-[4/3] overflow-hidden"
-              aria-label="Ver ubicación en Google Maps"
-            >
-              <Image
-                src="/optimized/studio-space.webp"
-                alt="Interior del estudio Rooftop Content Studio en Madrid"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.1!2d-3.6945!3d40.4085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42263baf5a4e0b%3A0x0!2sCalle%20Ronda%20de%20Atocha%2C%2016%2C%20Madrid!5e0!3m2!1ses!2ses!4v1709000000000"
+                className="absolute inset-0 h-full w-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación de Rooftop Content Studio en Google Maps"
               />
-              <div className="absolute inset-0 bg-background/20 transition-colors duration-500 group-hover:bg-transparent" />
-              <div className="absolute bottom-6 left-5 sm:bottom-8 sm:left-8">
-                <span className="rounded-full border border-foreground/50 bg-background/70 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.14em] text-foreground backdrop-blur-sm transition-colors group-hover:bg-foreground group-hover:text-background sm:px-6 sm:py-3 sm:text-xs sm:tracking-[0.2em]">
-                  Ver en Google Maps
-                </span>
-              </div>
-            </a>
+            </div>
           </ScrollReveal>
         </div>
       </div>

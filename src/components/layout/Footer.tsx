@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { CONTACT_INFO, NAV_LINKS } from "@/lib/constants";
 import NeonFlow from "@/components/ui/NeonFlow";
 
@@ -7,17 +8,18 @@ export default function Footer() {
 
   return (
     <NeonFlow className="min-h-[400px]">
-      <footer className="px-5 pb-12 pt-20 sm:px-8 lg:px-12">
+      <footer className="px-5 pb-12 pt-10 sm:px-8 sm:pt-12 lg:px-12 lg:pt-14">
         <div className="mx-auto max-w-7xl">
           {/* Big footer logo */}
           <div className="flex justify-center opacity-[0.06]">
             <Image
               src="/optimized/logo.webp"
               alt=""
-              width={400}
-              height={400}
+              width={256}
+              height={256}
               className="h-36 w-auto sm:h-48 lg:h-64"
               aria-hidden="true"
+              loading="lazy"
             />
           </div>
 
@@ -56,15 +58,39 @@ export default function Footer() {
                 >
                   {CONTACT_INFO.phone}
                 </a>
-                <p>{CONTACT_INFO.address}</p>
+                <a
+                  href="https://maps.google.com/?q=Calle+Ronda+de+Atocha,+16,+Madrid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-foreground"
+                >
+                  Calle Ronda de Atocha, 16, Madrid
+                </a>
               </div>
             </div>
 
-            <div className="flex items-end md:justify-end">
-              <p className="text-xs text-foreground/30">
-                &copy; {currentYear} Rooftop Content Studio
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
+                Legal
               </p>
+              <nav className="mt-6 flex flex-col gap-3">
+                <Link href="/aviso-legal" className="text-sm text-foreground/60 transition-colors hover:text-foreground">
+                  Aviso Legal
+                </Link>
+                <Link href="/politica-privacidad" className="text-sm text-foreground/60 transition-colors hover:text-foreground">
+                  Política de Privacidad
+                </Link>
+                <Link href="/politica-cookies" className="text-sm text-foreground/60 transition-colors hover:text-foreground">
+                  Política de Cookies
+                </Link>
+              </nav>
             </div>
+          </div>
+
+          <div className="mt-10 border-t border-foreground/10 pt-6 md:mt-12 md:pt-8">
+            <p className="text-center text-xs text-foreground/30">
+              &copy; {currentYear} Rooftop Content Studio
+            </p>
           </div>
         </div>
       </footer>

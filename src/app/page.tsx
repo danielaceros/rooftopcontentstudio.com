@@ -1,13 +1,14 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import QueEs from "@/components/sections/QueEs";
-import Galeria from "@/components/sections/Galeria";
+import ClientLogos from "@/components/sections/ClientLogos";
+import Portfolio from "@/components/sections/Portfolio";
 import Beneficios from "@/components/sections/Beneficios";
+import QueEs from "@/components/sections/QueEs";
 import Proceso from "@/components/sections/Proceso";
 import Tarifas from "@/components/sections/Tarifas";
-import Ubicacion from "@/components/sections/Ubicacion";
 import FAQ from "@/components/sections/FAQ";
+import Ubicacion from "@/components/sections/Ubicacion";
 import CTA from "@/components/sections/CTA";
 
 export default function Home() {
@@ -16,13 +17,14 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <QueEs />
-        <Galeria />
+        <ClientLogos />
+        <Portfolio desktopSlideshow={true} openVideosInModal={true} />
         <Beneficios />
+        <QueEs />
         <Proceso />
         <Tarifas />
-        <Ubicacion />
         <FAQ />
+        <Ubicacion />
         <CTA />
       </main>
       <Footer />
