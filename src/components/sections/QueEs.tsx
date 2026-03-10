@@ -95,7 +95,7 @@ export default function QueEs() {
                     src={img.src}
                     alt={img.alt}
                     fill
-                    sizes="(max-width: 640px) 85vw, (max-width: 1024px) 60vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
                     priority={i < 2}
                   />

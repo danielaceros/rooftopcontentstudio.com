@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const VIDEO_SRC =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/hero2-1.webm?alt=media&token=52954767-3264-4f22-8c8a-e850ba4fba55";
+const VIDEO_SRC = "/video/hero.webm";
 
 type NavigatorConnection = {
   saveData?: boolean;
@@ -34,6 +33,7 @@ export default function VideoBackground() {
         playsInline
         preload="none"
         poster="/optimized/hero-poster.webp"
+        fetchPriority="high"
         onCanPlay={() => setLoaded(true)}
         className="absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-1000 lg:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
