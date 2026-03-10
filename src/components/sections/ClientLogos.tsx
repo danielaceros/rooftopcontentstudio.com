@@ -1,5 +1,6 @@
-const LOGOS_SRC =
-  "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/bannerlegit.png?alt=media&token=99a19a7d-ffa0-4eb1-80ff-5732df48ea7b";
+import Image from "next/image";
+
+const LOGOS_SRC = "/optimized/logos-banner.png";
 
 export default function ClientLogos() {
   return (
@@ -19,22 +20,24 @@ export default function ClientLogos() {
           }}
         >
           <div className="animate-marquee flex w-max items-center">
-            <img
+            <Image
               src={LOGOS_SRC}
               alt="Clientes: Cámara de Comercio de Madrid, IFEMA, FIFA, Cinesa, Federación Española de Esgrima"
               width={1200}
               height={56}
               className="h-10 w-auto max-w-none sm:h-12 lg:h-14"
               draggable={false}
+              loading="lazy"
             />
-            <img
+            <Image
               src={LOGOS_SRC}
               alt=""
-              aria-hidden="true"
+              aria-hidden={true}
               width={1200}
               height={56}
               className="h-10 w-auto max-w-none sm:h-12 lg:h-14"
               draggable={false}
+              loading="lazy"
             />
           </div>
         </div>
