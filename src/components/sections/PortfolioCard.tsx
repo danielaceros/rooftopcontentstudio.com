@@ -6,6 +6,7 @@ import { createPortal } from "react-dom"
 type Props = {
   title: string
   video: string
+  videoHD?: string
   cover?: string
   index?: number
   openInModal?: boolean
@@ -20,6 +21,7 @@ type NavigatorConnection = {
 export default function PortfolioCard({
   title,
   video,
+  videoHD,
   cover,
   index = 0,
   openInModal = false,
@@ -97,7 +99,7 @@ export default function PortfolioCard({
         muted
         loop
         playsInline
-        preload={index < 2 && canAutoplay ? "metadata" : "none"}
+        preload="none"
         onCanPlay={() => setVideoReady(true)}
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.035]"
       >
@@ -152,7 +154,7 @@ export default function PortfolioCard({
                     Cerrar
                   </button>
                   <video
-                    src={video}
+                    src={videoHD || video}
                     controls
                     autoPlay
                     playsInline
