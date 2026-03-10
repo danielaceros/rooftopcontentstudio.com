@@ -33,7 +33,7 @@ export default function VideoBackground() {
         playsInline
         preload="none"
         poster="/optimized/hero-poster.webp"
-        fetchPriority="high"
+        {...{ fetchPriority: "high" } as React.VideoHTMLAttributes<HTMLVideoElement>}
         onCanPlay={() => setLoaded(true)}
         className="absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-1000 lg:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
