@@ -7,19 +7,19 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const IMAGES = [
   {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/DSC09910%20(1).webp?alt=media&token=c16cd222-b4e0-4245-b848-4a14d37aae52",
+    src: "/optimized/studio-1.webp",
     alt: "Setup de entrevista con sofá blanco y cámara profesional",
   },
   {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/DSC09876%20(1).webp?alt=media&token=31bc1a8f-7102-4c2d-82b3-f1eb76d300b0",
+    src: "/optimized/studio-2.webp",
     alt: "Formato mesa de entrevista en el estudio",
   },
   {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/DSC09614%20(1).webp?alt=media&token=15e4cb45-6ba6-44c4-a9dc-60eaaa5dfe93",
+    src: "/optimized/studio-3.webp",
     alt: "Vista panorámica del skyline de Madrid desde la terraza",
   },
   {
-    src: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/DSC09925%20(1).webp?alt=media&token=e09cb5d2-601c-42b2-b751-063ebe6bafc8",
+    src: "/optimized/studio-4.webp",
     alt: "Cámara en la terraza rooftop con Madrid de fondo",
   },
 ];
