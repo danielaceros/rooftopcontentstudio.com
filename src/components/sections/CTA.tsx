@@ -20,34 +20,15 @@ export default function CTA() {
           </h2>
         </ScrollReveal>
 
-        <div className="mt-14 grid gap-12 sm:mt-16 sm:gap-16 lg:mt-20 lg:grid-cols-12 lg:items-start">
-          <ScrollReveal delay={0.2} className="lg:col-span-5 lg:pt-4">
-            <p className="max-w-lg text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-              Cuéntanos sobre tu proyecto y te responderemos en menos de 24
-              horas con una propuesta personalizada.
-            </p>
-            <div className="mt-10 flex flex-col gap-4 sm:mt-12 sm:gap-5">
-              <a
-                href="mailto:hola@rooftopcontentstudio.es"
-                className="flex items-center gap-4 break-all text-base text-foreground transition-colors hover:text-amber sm:gap-5 sm:text-[1.05rem]"
-              >
-                <span className="h-px w-8 bg-amber" aria-hidden="true" />
-                hola@rooftopcontentstudio.es
-              </a>
-              <a
-                href="tel:+34711255496"
-                className="flex items-center gap-4 text-base text-foreground transition-colors hover:text-amber sm:gap-5 sm:text-[1.05rem]"
-              >
-                <span className="h-px w-8 bg-amber" aria-hidden="true" />
-                +34 711 25 54 96
-              </a>
-            </div>
-          </ScrollReveal>
+        <ScrollReveal delay={0.2} className="mt-14 sm:mt-16 lg:mt-20">
+          <p className="max-w-lg text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
+            Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas con una propuesta personalizada.
+          </p>
+        </ScrollReveal>
 
-          <ScrollReveal delay={0.3} className="lg:col-span-7">
-            <ContactFormEmbed />
-          </ScrollReveal>
-        </div>
+        <ScrollReveal delay={0.3} className="mt-10 sm:mt-12 mx-auto max-w-3xl">
+          <ContactFormEmbed />
+        </ScrollReveal>
       </div>
     </section>
   );
