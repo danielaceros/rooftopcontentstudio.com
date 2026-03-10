@@ -2,9 +2,6 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import ContactFormEmbed from "./ContactFormEmbed";
 
 export default function CTA() {
-  const currentMonth = new Date().toLocaleString("es-ES", { month: "long" });
-  const month = currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1);
-
   return (
     <section id="contacto" className="px-5 pb-12 pt-20 sm:px-8 sm:pb-14 sm:pt-28 lg:px-12 lg:pb-16 lg:pt-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
@@ -16,7 +13,7 @@ export default function CTA() {
 
         <ScrollReveal delay={0.1}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Plazas Limitadas en {month}.
+            Plazas Limitadas.
           </h2>
         </ScrollReveal>
 
