@@ -23,9 +23,9 @@ export default function CTA() {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.3} className="mt-10 sm:mt-12 mx-auto max-w-3xl">
+        <div className="mt-10 sm:mt-12 mx-auto max-w-3xl">
           <ContactFormEmbed />
-        </ScrollReveal>
+        </div>
       </div>
     </section>
   );

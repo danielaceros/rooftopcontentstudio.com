@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
 
 type Props = {
   className?: string;
@@ -8,6 +8,8 @@ type Props = {
 
 export default function ContactFormEmbed({ className }: Props) {
   const [loaded, setLoaded] = useState(false);
+  const suffix = useId().replace(/:/g, "");
+  const iframeId = `inline-sxDYj1gBgfvDh9PI9Jte-${suffix}`;
 
   return (
     <div className={`relative ${className ?? ""}`}>
@@ -18,7 +20,7 @@ export default function ContactFormEmbed({ className }: Props) {
       )}
       <iframe
         src="https://api.fitnesslaunch.es/widget/form/sxDYj1gBgfvDh9PI9Jte"
-        id="inline-sxDYj1gBgfvDh9PI9Jte"
+        id={iframeId}
         data-layout='{"id":"INLINE"}'
         data-trigger-type="alwaysShow"
         data-trigger-value=""
@@ -28,7 +30,7 @@ export default function ContactFormEmbed({ className }: Props) {
         data-deactivation-value=""
         data-form-name="Form - The Rooftop Content Studio"
         data-height="undefined"
-        data-layout-iframe-id="inline-sxDYj1gBgfvDh9PI9Jte"
+        data-layout-iframe-id={iframeId}
         data-form-id="sxDYj1gBgfvDh9PI9Jte"
         title="Formulario de contacto Rooftop Content Studio"
         loading="lazy"

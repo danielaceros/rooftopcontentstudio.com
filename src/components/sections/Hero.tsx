@@ -15,12 +15,14 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center text-center lg:min-h-screen lg:flex-row lg:items-end lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16">
         {/* Headline — overlaps video bottom on mobile, left column on desktop */}
-        <div className="-mt-16 flex-1 px-3 pb-2 sm:px-8 lg:mt-0 lg:px-0 lg:pb-12">
+        <div className="-mt-16 flex-1 px-3 pb-0 sm:px-8 lg:mt-0 lg:px-0 lg:pb-12">
           <h1 className="mb-1 font-body text-[9px] uppercase tracking-[0.2em] text-white/80 drop-shadow-md sm:mb-3 sm:text-sm sm:tracking-[0.25em] lg:text-base">
             Estudio de Grabación en Madrid
           </h1>
           <p className="max-w-[1100px] font-heading text-[clamp(1.9rem,9.5vw,10rem)] uppercase leading-[0.86] tracking-tight text-white [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,13.2vw,10rem)] sm:leading-[0.85]">
-            Graba Meses de Contenido
+            Graba Meses
+            <br className="hidden lg:inline" />
+            {" "}de Contenido
             <br />
             en Una Mañana
           </p>
@@ -47,7 +49,7 @@ export default function Hero() {
                 alt="Clientes: Cámara de Comercio de Madrid, IFEMA, FIFA, Cinesa"
                 width={1200}
                 height={56}
-                className="mx-auto h-6 w-auto max-w-none brightness-0 invert opacity-60 sm:h-9"
+                className="mx-auto h-6 w-auto max-w-none scale-[1.15] brightness-0 invert opacity-60 sm:h-9"
                 draggable={false}
                 loading="eager"
               />
