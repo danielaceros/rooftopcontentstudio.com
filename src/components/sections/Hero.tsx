@@ -8,11 +8,14 @@ const LOGOS_SRC = "/optimized/logos-banner.png";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden" aria-label="Hero">
-      <VideoBackground />
+      {/* Video — contained block on mobile, absolute fullscreen on desktop */}
+      <div className="relative h-[160px] overflow-hidden lg:absolute lg:inset-0 lg:h-auto">
+        <VideoBackground />
+      </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center px-3 pt-22 text-center sm:px-8 sm:pt-36 lg:min-h-screen lg:flex-row lg:items-end lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16">
-        {/* Headline — left column */}
-        <div className="flex-1 pb-2 sm:pb-10 lg:pb-12">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center text-center lg:min-h-screen lg:flex-row lg:items-end lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16">
+        {/* Headline — overlaps video bottom on mobile, left column on desktop */}
+        <div className="-mt-16 flex-1 px-3 pb-2 sm:px-8 lg:mt-0 lg:px-0 lg:pb-12">
           <h1 className="mb-1 font-body text-[9px] uppercase tracking-[0.2em] text-white/80 drop-shadow-md sm:mb-3 sm:text-sm sm:tracking-[0.25em] lg:text-base">
             Estudio de Grabación en Madrid
           </h1>
@@ -23,8 +26,8 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Form — full width on mobile, right column on desktop */}
-        <div className="w-full pb-4 sm:pb-20 lg:w-[380px] lg:shrink-0 lg:pb-12 xl:w-[420px]">
+        {/* Form block — solid bg on mobile, transparent on desktop */}
+        <div className="w-full bg-background px-3 pb-4 pt-2 sm:px-8 lg:w-[380px] lg:shrink-0 lg:bg-transparent lg:px-0 lg:pb-12 xl:w-[420px]">
           {/* Social proof logos — mobile only */}
           <div className="mb-1.5 lg:hidden">
             <p className="mb-1 text-center text-[7px] font-semibold uppercase tracking-[0.3em] text-white/50 sm:text-[10px]">
@@ -51,13 +54,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-xl border border-white/15 bg-black/60 backdrop-blur-md sm:rounded-2xl">
+          <div className="overflow-hidden rounded-xl border border-white/15 bg-black/60 backdrop-blur-md sm:rounded-2xl lg:bg-black/60">
             <ContactFormEmbed />
           </div>
         </div>
       </div>
 
-      {/* Marquee at the very bottom — absolute on desktop, static on mobile */}
+      {/* Marquee — static on mobile, absolute on desktop */}
       <div className="relative z-10 w-full lg:absolute lg:bottom-0 lg:left-0">
         <Marquee />
       </div>
