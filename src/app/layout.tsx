@@ -66,6 +66,10 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        <Script
+          src="https://link.msgsndr.com/js/form_embed.js"
+          strategy="afterInteractive"
+        />
         <noscript>
           <img
             height="1"

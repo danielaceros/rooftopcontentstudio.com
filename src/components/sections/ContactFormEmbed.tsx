@@ -2,13 +2,17 @@
 
 import { useState } from "react";
 
-export default function ContactFormEmbed() {
+type Props = {
+  className?: string;
+};
+
+export default function ContactFormEmbed({ className }: Props) {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="relative">
+    <div className={`relative ${className ?? ""}`}>
       {!loaded && (
-        <div className="absolute inset-0 flex h-[680px] items-center justify-center rounded-lg bg-foreground/[0.03]">
+        <div className="flex min-h-[400px] items-center justify-center">
           <span className="h-8 w-8 animate-spin rounded-full border border-foreground/20 border-t-foreground/60" />
         </div>
       )}
@@ -28,10 +32,12 @@ export default function ContactFormEmbed() {
         data-form-id="sxDYj1gBgfvDh9PI9Jte"
         title="Formulario de contacto Rooftop Content Studio"
         loading="lazy"
+        scrolling="no"
         onLoad={() => setLoaded(true)}
-        className={`h-[680px] w-full border-0 sm:h-[640px] xl:h-[700px] transition-opacity duration-300 ${
+        className={`w-full border-0 transition-opacity duration-300 ${
           loaded ? "opacity-100" : "opacity-0"
         }`}
+        style={{ minHeight: 400 }}
       />
     </div>
   );
