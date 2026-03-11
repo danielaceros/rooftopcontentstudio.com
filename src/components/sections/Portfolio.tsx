@@ -1,5 +1,6 @@
 import PortfolioCard from "./PortfolioCard"
 import { projects } from "@/data/projects"
+import ScrollReveal from "@/components/ui/ScrollReveal"
 
 type Props = {
   openVideosInModal?: boolean
@@ -23,11 +24,15 @@ export default function Portfolio({
       id="portfolio"
       className="py-20 sm:py-28 lg:py-32"
     >
-      <div className="px-5 pb-8 sm:px-8 sm:pb-10 lg:px-12 lg:pb-12">
-        <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">( Portfolio )</p>
-        <h2 className="mt-4 font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground">
-          Trabajos Recientes.
-        </h2>
+      <div className="px-5 pb-8 sm:px-8 sm:pb-10 md:px-10 lg:px-12 lg:pb-12">
+        <ScrollReveal>
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">( Portfolio )</p>
+        </ScrollReveal>
+        <ScrollReveal delay={0.08}>
+          <h2 className="mt-4 font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground">
+            Trabajos Recientes.
+          </h2>
+        </ScrollReveal>
       </div>
       <div>
         {desktopSlideshow ? (
@@ -47,7 +52,7 @@ export default function Portfolio({
                         openInModal={openVideosInModal}
                         hideOverlayTitle
                       />
-                      <p className="mt-2 px-1 text-left font-heading text-[13px] font-semibold uppercase leading-tight text-white/92">
+                      <p className="mt-2 px-1 text-left font-mono text-[10px] uppercase tracking-[0.1em] text-foreground/70">
                         {project.title}
                       </p>
                     </div>
@@ -95,12 +100,12 @@ export default function Portfolio({
 
               .portfolio-slideshow-wrap::before {
                 left: 0;
-                background: linear-gradient(to right, #0a0a0a, rgba(10, 10, 10, 0));
+                background: linear-gradient(to right, #080808, rgba(8, 8, 8, 0));
               }
 
               .portfolio-slideshow-wrap::after {
                 right: 0;
-                background: linear-gradient(to left, #0a0a0a, rgba(10, 10, 10, 0));
+                background: linear-gradient(to left, #080808, rgba(8, 8, 8, 0));
               }
 
               .portfolio-mobile-track {

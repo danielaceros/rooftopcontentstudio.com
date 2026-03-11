@@ -1,186 +1,134 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { FORMATOS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const IMAGES = [
-  {
-    src: "/optimized/studio-1.webp",
-    alt: "Setup de entrevista con sofá blanco y cámara profesional",
-  },
-  {
-    src: "/optimized/studio-2.webp",
-    alt: "Formato mesa de entrevista en el estudio",
-  },
-  {
-    src: "/optimized/studio-3.webp",
-    alt: "Vista panorámica del skyline de Madrid desde la terraza",
-  },
-  {
-    src: "/optimized/studio-4.webp",
-    alt: "Cámara en la terraza rooftop con Madrid de fondo",
-  },
+  { src: "/optimized/studio-1.webp", alt: "Setup de entrevista con sofá blanco y cámara profesional" },
+  { src: "/optimized/studio-3.webp", alt: "Vista panorámica del skyline de Madrid desde la terraza" },
+  { src: "/optimized/studio-4.webp", alt: "Cámara en la terraza rooftop con Madrid de fondo" },
 ];
 
+const INTERVAL = 3500;
+
 export default function QueEs() {
-  const [isPaused, setIsPaused] = useState(false);
+  const [active, setActive] = useState(0);
+  const timerRef = useRef<ReturnType<typeof setInterval>>(undefined);
+
+  const startTimer = useCallback(() => {
+    clearInterval(timerRef.current);
+    timerRef.current = setInterval(() => {
+      setActive((prev) => (prev + 1) % IMAGES.length);
+    }, INTERVAL);
+  }, []);
+
+  useEffect(() => {
+    startTimer();
+    return () => clearInterval(timerRef.current);
+  }, [startTimer]);
+
+  const goTo = (index: number) => {
+    setActive(index);
+    startTimer();
+  };
 
   return (
-    <section id="que-es" className="py-14 sm:py-28 lg:py-32 xl:py-36">
-      <div className="px-5 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+    <section id="que-es" className="py-14 sm:py-28 lg:py-32">
+      <div className="px-5 sm:px-8 md:px-10 lg:px-12 xl:px-16 2xl:px-20">
         <div className="mx-auto max-w-7xl">
-          <ScrollReveal>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
-              ( Qué es )
-            </p>
-          </ScrollReveal>
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+            {/* Left — text content */}
+            <div>
+              <ScrollReveal>
+                <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
+                  ( Qué es )
+                </p>
+              </ScrollReveal>
 
-          <ScrollReveal delay={0.1}>
-            <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-              Tu Estudio de Contenido en Madrid.
-            </h2>
-          </ScrollReveal>
+              <ScrollReveal delay={0.08}>
+                <h2 className="mt-6 font-heading text-[clamp(2.4rem,9vw,5rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
+                  Tu Estudio de Contenido en Madrid.
+                </h2>
+              </ScrollReveal>
 
-          <div className="mt-14 grid gap-12 sm:mt-16 sm:gap-16 lg:mt-20 lg:grid-cols-2 lg:gap-20">
+              <ScrollReveal delay={0.16}>
+                <p className="mt-8 text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
+                  Rooftop Content Studio es un espacio de grabación premium
+                  diseñado para creadores, marcas y profesionales que quieren
+                  producir contenido de calidad sin complicaciones.
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.24}>
+                <p className="mb-8 mt-4 font-mono text-[10px] uppercase tracking-[0.4em] text-muted lg:mt-10">
+                  Formatos que producimos
+                </p>
+                <ul className="flex flex-col gap-4">
+                  {FORMATOS.map((formato) => (
+                    <li key={formato} className="flex items-center gap-4 text-base text-foreground sm:text-[1.05rem]">
+                      <span className="h-px w-6 bg-accent" aria-hidden="true" />
+                      {formato}
+                    </li>
+                  ))}
+                </ul>
+              </ScrollReveal>
+            </div>
+
+            {/* Right — auto slideshow */}
             <ScrollReveal delay={0.2}>
-              <p className="mb-8 text-xs font-semibold uppercase tracking-[0.4em] text-muted">
-                Formatos que producimos
-              </p>
-              <ul className="flex flex-col gap-5">
-                {FORMATOS.map((formato) => (
-                  <li key={formato} className="flex items-center gap-5 text-base sm:text-[1.1rem] text-foreground">
-                    <span className="h-px w-8 bg-amber" aria-hidden="true" />
-                    {formato}
-                  </li>
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm">
+                {IMAGES.map((img, i) => (
+                  <div
+                    key={img.src}
+                    className="absolute inset-0"
+                    style={{
+                      opacity: i === active ? 1 : 0,
+                      transition: "opacity 0.8s ease-in-out",
+                    }}
+                  >
+                    <Image
+                      src={img.src}
+                      alt={img.alt}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      className="object-cover"
+                      style={{
+                        animation: i === active ? "queEsKenBurns 3.5s ease-out forwards" : "none",
+                      }}
+                      loading={i === 0 ? "eager" : "lazy"}
+                    />
+                  </div>
                 ))}
-              </ul>
-            </ScrollReveal>
 
-            <ScrollReveal delay={0.3}>
-              <p className="text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-                Rooftop Content Studio es un espacio de grabación premium
-                diseñado para creadores, marcas y profesionales que quieren
-                producir contenido de calidad sin complicaciones.
-              </p>
-              <p className="mt-6 text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-                Reservas tu sesión, te presentas y nosotros nos encargamos de
-                todo: equipo, iluminación y dirección. Sales con semanas
-                de contenido grabado y listo para usar.
-              </p>
+                {/* Dot indicators */}
+                <div className="absolute inset-x-0 bottom-4 z-10 flex items-center justify-center gap-2 sm:bottom-5">
+                  {IMAGES.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => goTo(i)}
+                      aria-label={`Imagen ${i + 1}`}
+                      className="h-[3px] rounded-[2px] transition-all duration-300"
+                      style={{
+                        width: i === active ? 24 : 8,
+                        backgroundColor: i === active ? "#C9A84C" : "#333",
+                      }}
+                    />
+                  ))}
+                </div>
+              </div>
             </ScrollReveal>
           </div>
         </div>
       </div>
 
-      {/* Slideshow de galería */}
-      <div className="mt-16 sm:mt-20 lg:mt-24">
-        <ScrollReveal delay={0.4}>
-          <div className="galeria-slideshow-wrap overflow-hidden">
-            <div
-              className="galeria-track"
-              style={{ animationPlayState: isPaused ? "paused" : "running" }}
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-              onTouchStart={() => setIsPaused(true)}
-              onTouchEnd={() => setIsPaused(false)}
-            >
-              {[...IMAGES, ...IMAGES].map((img, i) => (
-                <div
-                  key={`${img.alt}-${i}`}
-                  className="galeria-item relative shrink-0 overflow-hidden"
-                >
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover"
-                    priority={i < 2}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <style>{`
-            .galeria-slideshow-wrap {
-              position: relative;
-              isolation: isolate;
-            }
-
-            .galeria-slideshow-wrap::before,
-            .galeria-slideshow-wrap::after {
-              content: "";
-              position: absolute;
-              top: 0;
-              bottom: 0;
-              width: 48px;
-              pointer-events: none;
-              z-index: 2;
-            }
-
-            .galeria-slideshow-wrap::before {
-              left: 0;
-              background: linear-gradient(to right, #0a0a0a, rgba(10, 10, 10, 0));
-            }
-
-            .galeria-slideshow-wrap::after {
-              right: 0;
-              background: linear-gradient(to left, #0a0a0a, rgba(10, 10, 10, 0));
-            }
-
-            .galeria-track {
-              display: flex;
-              width: max-content;
-              gap: 0.75rem;
-              animation: galeria-slide 35s linear infinite;
-              will-change: transform;
-            }
-
-            .galeria-item {
-              width: min(72vw, 700px);
-              aspect-ratio: 16 / 9;
-              border-radius: 0.75rem;
-            }
-
-            @keyframes galeria-slide {
-              0% {
-                transform: translate3d(0, 0, 0);
-              }
-              100% {
-                transform: translate3d(-50%, 0, 0);
-              }
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-              .galeria-track {
-                animation: none;
-                transform: translate3d(0, 0, 0);
-              }
-            }
-
-            @media (min-width: 640px) {
-              .galeria-item {
-                width: min(55vw, 700px);
-              }
-            }
-
-            @media (min-width: 1024px) {
-              .galeria-slideshow-wrap::before,
-              .galeria-slideshow-wrap::after {
-                width: 80px;
-              }
-
-              .galeria-item {
-                width: 55vw;
-                max-width: 900px;
-              }
-            }
-          `}</style>
-        </ScrollReveal>
-      </div>
+      <style>{`
+        @keyframes queEsKenBurns {
+          from { transform: scale(1); }
+          to { transform: scale(1.05); }
+        }
+      `}</style>
     </section>
   );
 }

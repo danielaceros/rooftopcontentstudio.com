@@ -1,36 +1,26 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-
 interface AccordionProps {
   question: string;
   answer: string;
+  isOpen: boolean;
+  onToggle: () => void;
 }
 
-export default function Accordion({ question, answer }: AccordionProps) {
-  const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const [maxHeight, setMaxHeight] = useState(0);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      setMaxHeight(contentRef.current.scrollHeight);
-    }
-  }, [answer]);
-
+export default function Accordion({ question, answer, isOpen, onToggle }: AccordionProps) {
   return (
-    <div className="border-b border-foreground/10">
+    <div className="border-b border-foreground/10 transition-colors duration-300 hover:bg-card">
       <button
         type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full cursor-pointer items-center justify-between py-8 text-left"
+        onClick={onToggle}
+        className="flex w-full cursor-pointer items-center justify-between px-2 py-8 text-left md:px-4"
         aria-expanded={isOpen}
       >
         <span className="pr-8 font-heading text-[clamp(1.2rem,2vw,1.6rem)] uppercase tracking-wide text-foreground">
           {question}
         </span>
         <span
-          className={`shrink-0 font-heading text-3xl text-foreground/40 transition-transform duration-300 ${
+          className={`shrink-0 font-mono text-xl text-accent/40 transition-transform duration-300 ${
             isOpen ? "rotate-45" : ""
           }`}
           aria-hidden="true"
@@ -39,16 +29,19 @@ export default function Accordion({ question, answer }: AccordionProps) {
         </span>
       </button>
       <div
-        ref={contentRef}
-        className="overflow-hidden transition-[max-height,opacity] duration-300 ease-out"
+        className="grid transition-[grid-template-rows] duration-300 ease-out"
         style={{
-          maxHeight: isOpen ? `${maxHeight}px` : "0px",
-          opacity: isOpen ? 1 : 0,
+          gridTemplateRows: isOpen ? "1fr" : "0fr",
         }}
       >
-        <p className="max-w-2xl pb-8 text-[1.05rem] leading-relaxed text-muted">
-          {answer}
-        </p>
+        <div className="overflow-hidden">
+          <p
+            className="max-w-2xl px-2 pb-8 text-[1.05rem] leading-relaxed text-muted transition-opacity duration-300 md:px-4"
+            style={{ opacity: isOpen ? 1 : 0 }}
+          >
+            {answer}
+          </p>
+        </div>
       </div>
     </div>
   );

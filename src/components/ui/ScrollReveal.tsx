@@ -13,7 +13,7 @@ export default function ScrollReveal({
   children,
   className,
   delay = 0,
-  y = 40,
+  y = 30,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -22,7 +22,6 @@ export default function ScrollReveal({
     const el = ref.current;
     if (!el) return;
 
-    // Respect prefers-reduced-motion
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
@@ -38,7 +37,7 @@ export default function ScrollReveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.1, rootMargin: "0px 0px -80px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
     );
 
     observer.observe(el);
@@ -48,15 +47,14 @@ export default function ScrollReveal({
   return (
     <div
       ref={ref}
-      className={`${className ?? ""} transition-all duration-700 ease-out ${
-        visible
-          ? "translate-y-0 opacity-100"
-          : "translate-y-[var(--sr-y)] opacity-0"
-      }`}
+      className={className ?? ""}
       style={{
-        "--sr-y": `${y}px`,
-        transitionDelay: visible ? `${delay * 1000}ms` : "0ms",
-      } as React.CSSProperties}
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : `translateY(${y}px)`,
+        transition: visible
+          ? `opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`
+          : "none",
+      }}
     >
       {children}
     </div>

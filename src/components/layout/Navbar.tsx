@@ -1,12 +1,35 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
 import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 z-50 w-full">
-      {/* Dark gradient backdrop for contrast */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-transparent" />
+    <header
+      className="fixed top-0 z-50 w-full transition-all duration-500"
+      style={{
+        backgroundColor: scrolled ? "rgba(8, 8, 8, 0.92)" : "transparent",
+        backdropFilter: scrolled ? "blur(12px)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
+      }}
+    >
+      {/* Gold accent line at top */}
+      <div
+        className="h-px w-full bg-accent transition-opacity duration-500"
+        style={{ opacity: scrolled ? 0.4 : 0 }}
+      />
+
       <nav
         className="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-2 sm:px-8 sm:py-3 lg:px-12"
         aria-label="Navegación principal"
@@ -17,7 +40,7 @@ export default function Navbar() {
             alt="Rooftop Content Studio"
             width={128}
             height={128}
-            className="h-20 w-20 object-cover object-top sm:h-28 sm:w-28 lg:h-32 lg:w-32"
+            className="h-14 w-14 object-cover object-top sm:h-16 sm:w-16 lg:h-20 lg:w-20"
             priority
             fetchPriority="high"
           />
@@ -28,15 +51,15 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="group relative text-sm font-semibold uppercase tracking-[0.15em] text-white drop-shadow-sm transition-colors hover:text-amber"
+              className="group relative font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-foreground/60 transition-colors duration-300 hover:text-foreground"
             >
               {link.label}
-              <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-amber transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
           <a
             href="#contacto"
-            className="rounded-full border border-white/80 px-6 py-2.5 text-sm font-semibold uppercase tracking-[0.15em] text-white drop-shadow-sm transition-all hover:border-white hover:bg-white hover:text-background"
+            className="border border-accent/40 px-6 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
           >
             Hablemos
           </a>
@@ -45,7 +68,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3 md:hidden">
           <a
             href="#contacto"
-            className="rounded-full border border-white/80 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-white drop-shadow-sm transition-all hover:border-white hover:bg-white hover:text-background"
+            className="border border-accent/40 px-3 py-1.5 font-mono text-[9px] font-medium uppercase tracking-[0.15em] text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
           >
             Hablemos
           </a>

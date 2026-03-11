@@ -105,18 +105,29 @@ export default function PortfolioCard({
       >
         <track kind="captions" />
       </video>
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
+      {/* Overlay: dark on hover (desktop), permanent subtle on mobile */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 transition-all duration-300 sm:from-black/0 sm:via-transparent sm:to-transparent sm:opacity-0 sm:group-hover:from-black/70 sm:group-hover:via-black/30 sm:group-hover:to-transparent sm:group-hover:opacity-100" />
+      {/* Mobile permanent subtle overlay */}
+      <div className="pointer-events-none absolute inset-0 bg-black/25 sm:hidden" />
+      {/* Play icon */}
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-300 group-hover:opacity-100">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true" className="scale-[0.8] transition-transform duration-300 group-hover:scale-100 drop-shadow-lg">
+          <circle cx="22" cy="22" r="21" stroke="white" strokeWidth="1.5" opacity="0.8" />
+          <path d="M18 14L30 22L18 30V14Z" fill="white" opacity="0.9" />
+        </svg>
+      </div>
+      {/* Title */}
       {hideOverlayTitle ? null : (
-        <span className="pointer-events-none absolute bottom-4 left-4 right-4 font-heading text-[16px] font-semibold uppercase leading-tight text-white/95 line-clamp-2 sm:bottom-5 sm:left-5 sm:right-5 sm:text-[19px]">
+        <span className="pointer-events-none absolute bottom-4 left-4 right-4 translate-y-2 font-heading text-[16px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/95 transition-all duration-300 line-clamp-2 group-hover:translate-y-0 sm:bottom-5 sm:left-5 sm:right-5 sm:text-[19px]">
           {title}
         </span>
       )}
-      <span className="absolute bottom-5 left-5 h-px w-0 bg-white/60 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-10" />
+      <span className="absolute bottom-5 left-5 h-px w-0 bg-amber transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-10" />
     </>
   )
 
   const baseClass =
-    "group relative block aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-[#0a0a0a] transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+    "group relative block aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-background transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
 
   if (openInModal) {
     return (
@@ -142,7 +153,7 @@ export default function PortfolioCard({
                 aria-label={`Video de ${title}`}
               >
                 <div
-                  className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-[#0a0a0a] shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
+                  className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-background shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
                   onClick={(event) => event.stopPropagation()}
                 >
                   <button

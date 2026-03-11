@@ -1,30 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-foreground: #ededed;
-  --color-muted: #a1a1aa;
-  --color-border: #1e1e1e;
-  --color-card: #111111;
-  --color-card-hover: #161616;
-  --color-amber: #f59e0b;
-  --color-amber-light: #fbbf24;
-  --color-amber-dark: #d97706;
+  --color-background: #080808;
+  --color-foreground: #F0EDE6;
+  --color-muted: #666666;
+  --color-border: #1A1A1A;
+  --color-card: #0F0F0F;
+  --color-card-hover: #141414;
+  --color-accent: #C9A84C;
+  --color-accent-light: #D4B85C;
+  --color-accent-dark: #A88A3C;
+  /* Keep amber as alias for accent so existing classes still work */
+  --color-amber: #C9A84C;
+  --color-amber-light: #D4B85C;
+  --color-amber-dark: #A88A3C;
 
   --font-heading: var(--font-bebas-neue);
   --font-body: var(--font-dm-sans);
+  --font-mono: var(--font-dm-mono);
 }
 
-/* Base */
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
+/* Base — smooth scroll handled by SmoothScroll.tsx */
 
 body {
   background-color: var(--color-background);
@@ -33,6 +29,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  letter-spacing: 0.01em;
 }
 
 section[id] {

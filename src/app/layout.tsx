@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Bebas_Neue, DM_Sans } from "next/font/google";
+import { Bebas_Neue, DM_Sans, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import { siteMetadata } from "@/lib/metadata";
 import { getLocalBusinessSchema, getFAQSchema } from "@/lib/structured-data";
+import LoadingScreen from "@/components/ui/LoadingScreen";
+// GrainOverlay removed per user request
+import CustomCursor from "@/components/ui/CustomCursor";
+import SmoothScroll from "@/components/ui/SmoothScroll";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -18,6 +22,13 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
+const dmMono = DM_Mono({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-dm-mono",
+  display: "swap",
+});
+
 export const metadata: Metadata = siteMetadata;
 
 export default function RootLayout({
@@ -26,16 +37,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${bebasNeue.variable} ${dmSans.variable}`}>
+    <html lang="es" className={`${bebasNeue.variable} ${dmSans.variable} ${dmMono.variable}`}>
       <head>
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://connect.facebook.net" />
         <link rel="preconnect" href="https://api.fitnesslaunch.es" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17976589112"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-ads-gtag" strategy="afterInteractive">
+        <Script id="google-ads-gtag" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -43,7 +54,7 @@ export default function RootLayout({
             gtag('config', 'AW-17976589112');
           `}
         </Script>
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -52,7 +63,7 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "vn26qy7r7m");
           `}
         </Script>
-        <Script id="meta-pixel" strategy="afterInteractive">
+        <Script id="meta-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -92,7 +103,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <LoadingScreen />
+        <CustomCursor />
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }

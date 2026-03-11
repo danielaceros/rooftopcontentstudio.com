@@ -1,100 +1,55 @@
 import { BENEFICIOS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
-import DitherCard from "@/components/ui/DitherCard";
 
 export default function Beneficios() {
   return (
-    <section id="beneficios" className="px-5 py-20 sm:px-8 sm:py-28 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section id="beneficios" className="px-5 py-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
             ( Beneficios )
           </p>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.1}>
+        <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
             Por Qué Elegirnos.
           </h2>
         </ScrollReveal>
 
-        {/* Alternating layout: large feature left + two stacked right, then flip */}
-        <div className="mt-14 flex flex-col gap-12 sm:mt-16 sm:gap-16 lg:mt-24 lg:gap-20">
-          {/* Row 1: big left + 2 stacked right */}
-          <div className="grid gap-8 lg:grid-cols-5">
-            <ScrollReveal delay={0.1} className="lg:col-span-3">
-              <DitherCard className="flex h-full flex-col justify-end bg-foreground/[0.04] p-7 sm:p-10 lg:p-14">
-                <span className="absolute right-6 top-5 font-heading text-[5.5rem] leading-none text-foreground/[0.04] sm:right-8 sm:top-6 sm:text-[8rem] lg:text-[12rem]">
-                  01
-                </span>
-                <div className="relative">
-                  <span className="mb-4 inline-block h-px w-12 bg-amber" />
-                  <h3 className="font-heading text-[clamp(1.8rem,3vw,2.8rem)] uppercase tracking-wide text-foreground">
-                    {BENEFICIOS[0].title}
+        {/* Editorial list with hover effects */}
+        <div className="mt-14 flex flex-col sm:mt-16 lg:mt-24">
+          {BENEFICIOS.map((b, i) => (
+            <ScrollReveal key={b.title} delay={i * 0.06}>
+              <div className="group grid border-t border-border py-8 transition-all duration-300 hover:bg-card md:grid-cols-12 md:gap-8 md:py-12 md:px-4">
+                {/* Number */}
+                <div className="md:col-span-1">
+                  <span className="font-mono text-[11px] text-muted transition-colors duration-300 group-hover:text-accent">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                {/* Title */}
+                <div className="mt-1 md:col-span-4 md:mt-0">
+                  <h3 className="font-heading text-[clamp(1.6rem,2.5vw,2.2rem)] uppercase tracking-wide text-foreground">
+                    {b.title}
                   </h3>
-                  <p className="mt-4 max-w-md text-base sm:text-[1.05rem] leading-relaxed text-muted">
-                    {BENEFICIOS[0].description}
+                </div>
+                {/* Description */}
+                <div className="mt-3 md:col-span-5 md:col-start-6 md:mt-0">
+                  <p className="max-w-lg text-base leading-[1.8] text-muted sm:text-[1.05rem]">
+                    {b.description}
                   </p>
                 </div>
-              </DitherCard>
-            </ScrollReveal>
-
-            <div className="flex flex-col gap-8 lg:col-span-2">
-              {BENEFICIOS.slice(1, 3).map((b, i) => (
-                <ScrollReveal key={b.title} delay={0.15 + i * 0.1} className="flex-1">
-                  <DitherCard className="flex h-full flex-col justify-end border border-foreground/10 p-6 sm:p-8 transition-colors duration-500 hover:border-amber/20">
-                    <span className="mb-6 font-heading text-5xl text-foreground/[0.06]">
-                      0{i + 2}
-                    </span>
-                    <h3 className="font-heading text-[clamp(1.3rem,2vw,1.6rem)] uppercase tracking-wide text-foreground">
-                      {b.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted">
-                      {b.description}
-                    </p>
-                  </DitherCard>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-
-          {/* Row 2: 2 stacked left + big right (flipped) */}
-          <div className="grid gap-8 lg:grid-cols-5">
-            <div className="flex flex-col gap-8 lg:col-span-2">
-              {BENEFICIOS.slice(3, 5).map((b, i) => (
-                <ScrollReveal key={b.title} delay={0.1 + i * 0.1} className="flex-1">
-                  <DitherCard className="flex h-full flex-col justify-end border border-foreground/10 p-6 sm:p-8 transition-colors duration-500 hover:border-amber/20">
-                    <span className="mb-6 font-heading text-5xl text-foreground/[0.06]">
-                      0{i + 4}
-                    </span>
-                    <h3 className="font-heading text-[clamp(1.3rem,2vw,1.6rem)] uppercase tracking-wide text-foreground">
-                      {b.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-muted">
-                      {b.description}
-                    </p>
-                  </DitherCard>
-                </ScrollReveal>
-              ))}
-            </div>
-
-            <ScrollReveal delay={0.15} className="lg:col-span-3">
-              <DitherCard className="flex h-full flex-col justify-end bg-foreground/[0.04] p-7 sm:p-10 lg:p-14">
-                <span className="absolute right-6 top-5 font-heading text-[5.5rem] leading-none text-foreground/[0.04] sm:right-8 sm:top-6 sm:text-[8rem] lg:text-[12rem]">
-                  06
-                </span>
-                <div className="relative">
-                  <span className="mb-4 inline-block h-px w-12 bg-amber" />
-                  <h3 className="font-heading text-[clamp(1.8rem,3vw,2.8rem)] uppercase tracking-wide text-foreground">
-                    {BENEFICIOS[5].title}
-                  </h3>
-                  <p className="mt-4 max-w-md text-base sm:text-[1.05rem] leading-relaxed text-muted">
-                    {BENEFICIOS[5].description}
-                  </p>
+                {/* Arrow */}
+                <div className="hidden items-center justify-end md:col-span-1 md:col-start-12 md:flex">
+                  <span className="translate-x-0 font-mono text-lg text-muted opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:text-accent group-hover:opacity-100">
+                    &rarr;
+                  </span>
                 </div>
-              </DitherCard>
+              </div>
             </ScrollReveal>
-          </div>
+          ))}
+          <div className="border-t border-border" />
         </div>
       </div>
     </section>

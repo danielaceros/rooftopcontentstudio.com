@@ -1,11 +1,38 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
+const MAPS_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.8!2d-3.6992!3d40.4072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42288a!2sCalle+Ronda+de+Atocha+16+Madrid!5e0!3m2!1ses!2ses!4v1";
+
 export default function Ubicacion() {
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          iframe.src = MAPS_SRC;
+          setLoaded(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(iframe);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="ubicacion" className="px-5 py-14 sm:px-8 sm:py-28 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section id="ubicacion" className="px-5 py-14 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
             ( Ubicación )
           </p>
         </ScrollReveal>
@@ -35,7 +62,7 @@ export default function Ubicacion() {
                     index === 0 ? "text-[1.05rem] font-semibold sm:text-[1.2rem]" : "text-base sm:text-[1.05rem]"
                   }`}
                 >
-                  <span className="h-px w-8 bg-amber" aria-hidden="true" />
+                  <span className="h-px w-8 bg-accent" aria-hidden="true" />
                   {item}
                 </div>
               ))}
@@ -43,15 +70,40 @@ export default function Ubicacion() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.1!2d-3.6945!3d40.4085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42263baf5a4e0b%3A0x0!2sCalle%20Ronda%20de%20Atocha%2C%2016%2C%20Madrid!5e0!3m2!1ses!2ses!4v1709000000000"
-                className="absolute inset-0 h-full w-full border-0"
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de Rooftop Content Studio en Google Maps"
-              />
+            <div>
+              {/* Map container */}
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[4px] border border-border sm:aspect-[16/10] lg:aspect-[4/3]">
+                <iframe
+                  ref={iframeRef}
+                  width="100%"
+                  height="100%"
+                  style={{ border: "none", display: "block", minHeight: 300 }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Rooftop Content Studio - Ubicación"
+                  className="grayscale contrast-[1.1] brightness-[0.85] transition-[filter] duration-500 hover:grayscale-0 hover:contrast-100 hover:brightness-100"
+                />
+                {!loaded && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-card">
+                    <span className="h-6 w-6 animate-spin rounded-full border border-accent/20 border-t-accent/60" />
+                  </div>
+                )}
+              </div>
+
+              {/* Info below map */}
+              <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                <p className="font-mono text-[10px] text-[#444] sm:text-[11px]">
+                  Metro: Atocha Renfe · L1 · Cercanías
+                </p>
+                <a
+                  href="https://maps.google.com/?q=Calle+Ronda+de+Atocha+16+Madrid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mono text-[10px] text-accent transition-colors duration-300 hover:text-accent/80 sm:text-[11px]"
+                >
+                  ABRIR EN GOOGLE MAPS →
+                </a>
+              </div>
             </div>
           </ScrollReveal>
         </div>

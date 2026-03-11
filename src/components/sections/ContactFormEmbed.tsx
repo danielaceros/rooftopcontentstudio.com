@@ -1,46 +1,75 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Props = {
   className?: string;
+  /** Delay in ms before loading the iframe (0 = load immediately when visible) */
+  loadDelay?: number;
+  /** Signal LoadingScreen when this iframe is ready */
+  signalReady?: boolean;
 };
 
-export default function ContactFormEmbed({ className }: Props) {
-  const [loaded, setLoaded] = useState(false);
-  const suffix = useId().replace(/:/g, "");
-  const iframeId = `inline-sxDYj1gBgfvDh9PI9Jte-${suffix}`;
+export default function ContactFormEmbed({ className, loadDelay = 0, signalReady = false }: Props) {
+  const [shouldRender, setShouldRender] = useState(loadDelay === 0);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (shouldRender || !containerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          observer.disconnect();
+          if (loadDelay > 0) {
+            setTimeout(() => setShouldRender(true), loadDelay);
+          } else {
+            setShouldRender(true);
+          }
+        }
+      },
+      { rootMargin: "200px" }
+    );
+
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [shouldRender, loadDelay]);
 
   return (
-    <div className={`relative ${className ?? ""}`}>
-      {!loaded && (
+    <div ref={containerRef} className={`relative ${className ?? ""}`}>
+      {!shouldRender && (
         <div className="flex min-h-[400px] items-center justify-center">
           <span className="h-8 w-8 animate-spin rounded-full border border-foreground/20 border-t-foreground/60" />
         </div>
       )}
-      <iframe
-        src="https://api.fitnesslaunch.es/widget/form/sxDYj1gBgfvDh9PI9Jte"
-        id={iframeId}
-        data-layout='{"id":"INLINE"}'
-        data-trigger-type="alwaysShow"
-        data-trigger-value=""
-        data-activation-type="alwaysActivated"
-        data-activation-value=""
-        data-deactivation-type="neverDeactivate"
-        data-deactivation-value=""
-        data-form-name="Form - The Rooftop Content Studio"
-        data-height="undefined"
-        data-layout-iframe-id={iframeId}
-        data-form-id="sxDYj1gBgfvDh9PI9Jte"
-        title="Formulario de contacto Rooftop Content Studio"
-        loading="lazy"
-        scrolling="no"
-        onLoad={() => setLoaded(true)}
-        className={`w-full border-0 transition-opacity duration-300 ${
-          loaded ? "opacity-100" : "opacity-0"
-        }`}
-        style={{ minHeight: 400 }}
-      />
+      {shouldRender && (
+        <iframe
+          src="https://api.fitnesslaunch.es/widget/form/sxDYj1gBgfvDh9PI9Jte"
+          id="inline-sxDYj1gBgfvDh9PI9Jte"
+          data-layout='{"id":"INLINE"}'
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Form - The Rooftop Content Studio"
+          data-layout-iframe-id="inline-sxDYj1gBgfvDh9PI9Jte"
+          data-form-id="sxDYj1gBgfvDh9PI9Jte"
+          title="Formulario de contacto Rooftop Content Studio"
+          scrolling="no"
+          suppressHydrationWarning
+          onLoad={(e) => {
+            (e.target as HTMLIFrameElement).style.opacity = "1";
+            if (signalReady) {
+              (window as unknown as Record<string, unknown>).__ghlReady = true;
+              window.dispatchEvent(new Event("ghlReady"));
+            }
+          }}
+          className="w-full border-0"
+          style={{ minHeight: 600 }}
+        />
+      )}
     </div>
   );
 }
