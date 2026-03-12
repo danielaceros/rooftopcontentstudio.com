@@ -34,8 +34,8 @@ export default function MobileMenu() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-40 flex flex-col items-center justify-center bg-[#080808]/98 backdrop-blur-md">
-          <nav className="flex flex-col items-center gap-8 text-center">
+        <div className="fixed inset-0 z-40 flex flex-col items-center justify-center overflow-y-auto bg-[#080808]/98 px-6 pb-12 pt-24 backdrop-blur-md">
+          <nav className="flex flex-col items-center gap-6 text-center">
             {NAV_LINKS.map((link, i) => (
               <a
                 key={link.href}
