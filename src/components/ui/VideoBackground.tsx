@@ -61,6 +61,13 @@ export default function VideoBackground() {
 
   return (
     <div className="absolute inset-0 overflow-hidden bg-background">
+      {/* Poster fallback — always visible behind video */}
+      <img
+        src="/optimized/hero-poster.webp"
+        alt=""
+        className="absolute inset-0 h-[130%] w-full object-cover object-top lg:object-center"
+        fetchPriority="high"
+      />
       <video
         ref={videoRef}
         src={shouldLoad ? VIDEO_SRC : undefined}
@@ -69,6 +76,7 @@ export default function VideoBackground() {
         loop
         playsInline
         preload="metadata"
+        fetchPriority="high"
         poster="/optimized/hero-poster.webp"
         onCanPlay={() => setLoaded(true)}
         className="absolute inset-0 h-[130%] w-full object-cover object-top transition-opacity duration-1000 will-change-transform lg:object-center"

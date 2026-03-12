@@ -32,7 +32,7 @@ export default function Footer() {
             <div className="mt-6 flex flex-col gap-3 font-mono text-[12px] text-foreground/40">
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
-                className="break-all transition-colors hover:text-foreground"
+                className="break-words transition-colors hover:text-foreground"
               >
                 {CONTACT_INFO.email}
               </a>

@@ -73,6 +73,7 @@ export default function Hero() {
                 >
                   {line.text}
                 </span>
+                {i < LINES.length - 1 && " "}
               </span>
             ))}
           </h1>
