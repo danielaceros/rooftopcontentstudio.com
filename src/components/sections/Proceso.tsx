@@ -73,6 +73,11 @@ export default function Proceso() {
                     <p className="max-w-md text-base leading-[1.75] text-muted">
                       {paso.description}
                     </p>
+                    {paso.step === 3 && (
+                      <p className="mt-2 text-sm text-muted/70">
+                        📍 Calle Ronda de Atocha, 16, Madrid · Metro Atocha Renfe
+                      </p>
+                    )}
                   </div>
                 </div>
               </ScrollReveal>
@@ -152,6 +157,15 @@ export default function Proceso() {
               >
                 {currentPaso.description}
               </p>
+              {currentPaso.step === 3 && (
+                <p
+                  key="location-hint"
+                  className="mt-3 text-sm text-muted/70"
+                  style={{ animation: "procesoFadeIn 0.4s ease-out 0.1s both" }}
+                >
+                  📍 Calle Ronda de Atocha, 16, Madrid · Metro Atocha Renfe
+                </p>
+              )}
             </div>
 
             {/* Right column: large decorative number */}

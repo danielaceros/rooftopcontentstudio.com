@@ -29,7 +29,7 @@ export default function CTA() {
 
               <ScrollReveal delay={0.16}>
                 <p className="mt-6 max-w-[400px] text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-                  Quedan 2 plazas disponibles este mes. Cuéntanos tu proyecto y te contactamos por WhatsApp en menos de 1 hora.
+                  Plazas limitadas cada mes. Cuéntanos tu proyecto y te contactamos por WhatsApp en menos de 1 hora.
                 </p>
               </ScrollReveal>
 
@@ -59,7 +59,7 @@ export default function CTA() {
               <div className="relative">
                 {/* Badge */}
                 <div className="absolute -top-3 right-4 z-20 bg-accent px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-background sm:right-6">
-                  Quedan 2 plazas en marzo
+                  Plazas limitadas
                 </div>
 
                 {/* Form container */}

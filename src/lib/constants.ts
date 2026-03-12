@@ -161,7 +161,7 @@ export const FAQS = [
   {
     question: "¿Dónde está el estudio?",
     answer:
-      "Estamos en el centro de Madrid, en una terraza rooftop privada con vistas panorámicas a la ciudad. Te enviaremos la dirección exacta al confirmar tu reserva.",
+      "Estamos en Calle Ronda de Atocha, 16, Madrid — a 5 minutos a pie del Metro Atocha Renfe. Te enviaremos los detalles exactos de acceso al confirmar tu reserva.",
   },
   {
     question: "¿Cómo reservo una sesión?",
