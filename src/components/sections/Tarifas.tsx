@@ -74,17 +74,17 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
           className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
         />
 
-        {/* Label badge */}
-        <div className={`absolute right-7 top-7 font-mono text-[10px] uppercase tracking-[0.3em] sm:right-9 sm:top-9 lg:right-10 lg:top-10 ${
-          option.highlighted ? "text-accent" : "text-muted"
-        }`}>
-          {option.label}
+        {/* Name + Label badge */}
+        <div className="relative z-10 flex items-center justify-between gap-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
+            {option.name}
+          </p>
+          <span className={`shrink-0 font-mono text-[10px] uppercase tracking-[0.3em] ${
+            option.highlighted ? "text-accent" : "text-muted"
+          }`}>
+            {option.label}
+          </span>
         </div>
-
-        {/* Name */}
-        <p className="relative z-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
-          {option.name}
-        </p>
 
         {/* Price */}
         <div className="relative z-10 mt-6 flex items-baseline gap-1">

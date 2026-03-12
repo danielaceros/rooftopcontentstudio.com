@@ -17,35 +17,30 @@ export default function Comparativa() {
     isTouchDevice.current = window.matchMedia("(pointer: coarse)").matches;
   }, []);
 
-  // Start both videos at exactly the same time, then keep them locked with rAF
+  // Keep both videos playing and loosely synced
   useEffect(() => {
     const after = afterVideoRef.current;
     const before = beforeVideoRef.current;
     if (!after || !before) return;
 
     let rafId: number;
-    const BUFFER = 0.3;
+    let started = false;
 
-    // Wait for both to be ready, then start together
-    const tryStart = () => {
-      if (before.readyState >= 3 && after.readyState >= 3) {
-        before.currentTime = 0;
-        after.currentTime = 0;
-        before.play();
-        after.play();
-        startSyncLoop();
-      }
+    const ensurePlaying = () => {
+      before.play().catch(() => {});
+      after.play().catch(() => {});
     };
 
-    const startSyncLoop = () => {
+    const startSync = () => {
+      if (started) return;
+      started = true;
+      before.currentTime = 0;
+      after.currentTime = 0;
+      ensurePlaying();
+
       const tick = () => {
-        // Seamless loop: restart before black frame
-        if (before.duration && before.currentTime >= before.duration - BUFFER) {
-          before.currentTime = 0;
-          after.currentTime = 0;
-        }
-        // Keep after locked to before
-        if (Math.abs(before.currentTime - after.currentTime) > 0.05) {
+        // Only correct if drift exceeds 0.15s — avoids constant seeking that freezes playback
+        if (Math.abs(before.currentTime - after.currentTime) > 0.15) {
           after.currentTime = before.currentTime;
         }
         rafId = requestAnimationFrame(tick);
@@ -53,15 +48,24 @@ export default function Comparativa() {
       rafId = requestAnimationFrame(tick);
     };
 
-    before.addEventListener("canplaythrough", tryStart);
-    after.addEventListener("canplaythrough", tryStart);
-    // Also try immediately in case already buffered
-    tryStart();
+    const onReady = () => {
+      if (before.readyState >= 3 && after.readyState >= 3) startSync();
+    };
+
+    before.addEventListener("canplaythrough", onReady);
+    after.addEventListener("canplaythrough", onReady);
+    onReady();
+
+    // Fallback: start after 2s even if canplaythrough never fires (mobile)
+    const fallbackTimer = setTimeout(() => {
+      if (!started) startSync();
+    }, 2000);
 
     return () => {
+      clearTimeout(fallbackTimer);
       cancelAnimationFrame(rafId);
-      before.removeEventListener("canplaythrough", tryStart);
-      after.removeEventListener("canplaythrough", tryStart);
+      before.removeEventListener("canplaythrough", onReady);
+      after.removeEventListener("canplaythrough", onReady);
     };
   }, []);
 
@@ -145,13 +149,15 @@ export default function Comparativa() {
             <video
               ref={afterVideoRef}
               className="absolute inset-0 h-full w-full object-cover"
-              src="/video/corr.webm"
               autoPlay
               muted
               loop
               playsInline
               preload="auto"
-            />
+            >
+              <source src="/video/corr.webm" type="video/webm" />
+              <source src="/video/corr.mp4" type="video/mp4" />
+            </video>
 
             {/* Before (sin estudio) — clipped layer on top */}
             <div
@@ -162,13 +168,15 @@ export default function Comparativa() {
               <video
                 ref={beforeVideoRef}
                 className="absolute inset-0 h-full w-full object-cover"
-                src="/video/ncorr.webm"
                 autoPlay
                 muted
                 loop
                 playsInline
                 preload="auto"
-              />
+              >
+                <source src="/video/ncorr.webm" type="video/webm" />
+                <source src="/video/ncorr.mp4" type="video/mp4" />
+              </video>
             </div>
 
             {/* Labels */}
