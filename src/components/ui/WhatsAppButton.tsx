@@ -1,7 +1,7 @@
 "use client";
 
 const PHONE = "34711255496";
-const MESSAGE = encodeURIComponent("Hola, me gustaría saber más sobre Rooftop Content Studio");
+const MESSAGE = encodeURIComponent("Hola, quiero pedir presupuesto para grabar en el rooftop");
 
 export default function WhatsAppButton() {
   return (
