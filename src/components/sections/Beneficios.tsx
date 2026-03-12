@@ -51,6 +51,17 @@ export default function Beneficios() {
           ))}
           <div className="border-t border-border" />
         </div>
+
+        <ScrollReveal delay={0.3}>
+          <div className="mt-12 text-center sm:mt-16">
+            <a
+              href="#contacto"
+              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+            >
+              Pedir Presupuesto
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

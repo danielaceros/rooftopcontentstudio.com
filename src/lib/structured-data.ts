@@ -42,7 +42,7 @@ export function getFAQPageSchema() {
         "name": "¿Dónde está el estudio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Estamos en el centro de Madrid, en Calle Ronda de Atocha 16, una terraza rooftop privada con vistas panorámicas a la ciudad. A 5 minutos del metro Atocha Renfe."
+          "text": "Estamos en Calle Ronda de Atocha, 16, Madrid — a 5 minutos a pie del Metro Atocha Renfe. Te enviaremos los detalles exactos de acceso al confirmar tu reserva."
         }
       },
       {
@@ -50,7 +50,7 @@ export function getFAQPageSchema() {
         "name": "¿Cómo reservo una sesión?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rellena el formulario de contacto o escríbenos a hola@rooftopcontentstudio.es. Te responderemos en menos de 24 horas para agendar tu sesión."
+          "text": "Rellena el formulario de contacto o escríbenos a hola@rooftopcontentstudio.es. Te respondemos en menos de 1 hora con presupuesto y fecha disponible."
         }
       },
       {
@@ -58,7 +58,7 @@ export function getFAQPageSchema() {
         "name": "¿Ofrecéis edición de vídeo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí, como parte de la producción completa podemos encargarnos de la edición: cortes, subtítulos, formato vertical, motion graphics… lo que necesite tu proyecto. Es opcional."
+          "text": "Sí, como parte de la producción completa podemos encargarnos de la edición: cortes, subtítulos, formato vertical, motion graphics… lo que necesite tu proyecto. Es opcional — si ya tienes editor, perfecto."
         }
       }
     ]

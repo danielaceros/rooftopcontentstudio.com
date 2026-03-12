@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gracias | The Rooftop Content Studio",
-  description: "Gracias por contactarnos. Te responderemos en menos de 24 horas.",
+  title: "Gracias | Rooftop Content Studio",
+  description: "Gracias por contactarnos. Te respondemos en menos de 1 hora.",
   robots: { index: false, follow: false },
 };
 
@@ -17,7 +17,7 @@ export default function GraciasPage() {
         Gracias.
       </h1>
       <p className="mt-8 max-w-md text-lg leading-relaxed text-muted">
-        Hemos recibido tu mensaje. Te responderemos en menos de 24 horas.
+        Hemos recibido tu mensaje. Te respondemos en menos de 1 hora con presupuesto y fecha disponible.
       </p>
       <Link
         href="/"

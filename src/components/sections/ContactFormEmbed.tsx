@@ -38,7 +38,7 @@ export default function ContactFormEmbed({ className, loadDelay = 0, signalReady
   return (
     <div ref={containerRef} className={`relative ${className ?? ""}`}>
       {!shouldRender && (
-        <div className="flex min-h-[400px] items-center justify-center">
+        <div className="flex min-h-[600px] items-center justify-center">
           <span className="h-8 w-8 animate-spin rounded-full border border-foreground/20 border-t-foreground/60" />
         </div>
       )}

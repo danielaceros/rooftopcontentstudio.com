@@ -149,13 +149,13 @@ export default function Tarifas() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Un Espacio que se Adapta a Ti.
+            Elige lo que Necesitas. Nada Más.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-8 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-            Cuéntanos tu proyecto y te enviamos presupuesto personalizado en menos de 1 hora.
+            Sin packs inflados ni servicios que no vas a usar.
           </p>
         </ScrollReveal>
 

@@ -61,16 +61,16 @@ export default function Navbar() {
             href="#contacto"
             className="border border-accent/40 px-6 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
           >
-            Hablemos
+            Pedir Presupuesto
           </a>
         </div>
 
         <div className="flex items-center gap-3 md:hidden">
           <a
             href="#contacto"
-            className="border border-accent/40 px-3 py-1.5 font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
+            className="border border-accent/40 px-3 py-2 font-mono text-[11px] font-medium uppercase tracking-[0.15em] text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
           >
-            Hablemos
+            Pedir Presupuesto
           </a>
           <MobileMenu />
         </div>

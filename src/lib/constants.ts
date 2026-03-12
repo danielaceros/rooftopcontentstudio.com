@@ -1,22 +1,13 @@
 export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
-  "Estudio de grabación a medida en Madrid. Alquila el espacio, añade filmmaker o contrata la producción completa. Sesiones desde 2 horas en un rooftop privado.";
+  "Graba un mes de contenido en una mañana. Rooftop privado en el centro de Madrid con vistas al skyline. Desde 50€/h. FIFA, IFEMA y Cinesa ya han grabado aquí.";
 
 export const NAV_LINKS = [
   { label: "Portfolio", href: "#portfolio" },
   { label: "Proceso", href: "#proceso" },
   { label: "Opciones", href: "#tarifas" },
   { label: "FAQ", href: "#faq" },
-] as const;
-
-export const FORMATOS = [
-  "Reels y TikToks",
-  "Vídeos para YouTube",
-  "Podcasts y entrevistas",
-  "VSLs y vídeos de venta",
-  "Cursos y formaciones",
-  "Vídeos corporativos",
 ] as const;
 
 export const BENEFICIOS = [
@@ -53,7 +44,7 @@ export const BENEFICIOS = [
   {
     title: "Marcas que ya Confían en Nosotros",
     description:
-      "FIFA, IFEMA, Cinesa, Brahím Díaz. El mismo nivel de producción, ahora disponible para tu marca.",
+      "Hemos grabado para FIFA, IFEMA, Cinesa, la Cámara de Comercio de Madrid y Brahím Díaz. Mismo equipo, mismo estudio, mismo resultado.",
     icon: "package",
   },
 ] as const;
@@ -114,7 +105,7 @@ export const FAQS = [
   {
     question: "¿Cómo reservo una sesión?",
     answer:
-      "Rellena el formulario de contacto o escríbenos por email. Te responderemos en menos de 24 horas para agendar tu sesión.",
+      "Rellena el formulario de contacto o escríbenos por email. Te respondemos en menos de 1 hora con presupuesto y fecha disponible.",
   },
   {
     question: "¿Ofrecéis edición de vídeo?",
@@ -128,7 +119,7 @@ export const CONTACT_INFO = {
   phone: "+34 711 25 54 96",
   address: "Calle Ronda de Atocha, 16",
   city: "Madrid",
-  postalCode: "28001",
+  postalCode: "28012",
   country: "ES",
 } as const;
 
