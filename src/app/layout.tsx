@@ -7,6 +7,7 @@ import LoadingScreen from "@/components/ui/LoadingScreen";
 // GrainOverlay removed per user request
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/ui/SmoothScroll";
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -128,6 +129,7 @@ export default function RootLayout({
         <CustomCursor />
         <SmoothScroll />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );

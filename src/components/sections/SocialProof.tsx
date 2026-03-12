@@ -12,7 +12,7 @@ const STATS = [
 const LOGOS_SRC = "/optimized/logos-banner.png";
 
 function ScrambleNumber({ target, suffix, active }: { target: number; suffix: string; active: boolean }) {
-  const [display, setDisplay] = useState("0");
+  const [display, setDisplay] = useState(String(target));
 
   useEffect(() => {
     if (!active) return;

@@ -120,7 +120,7 @@ export default function Hero() {
           </div>
 
           <div className="overflow-hidden border border-foreground/10 bg-[#0A0A0A]/80 backdrop-blur-md">
-            <ContactFormEmbed loadDelay={1500} signalReady />
+            <ContactFormEmbed loadDelay={0} signalReady />
           </div>
         </div>
       </div>
