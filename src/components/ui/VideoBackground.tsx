@@ -76,7 +76,6 @@ export default function VideoBackground() {
         loop
         playsInline
         preload="metadata"
-        fetchPriority="high"
         poster="/optimized/hero-poster.webp"
         onCanPlay={() => setLoaded(true)}
         className="absolute inset-0 h-[130%] w-full object-cover object-top transition-opacity duration-1000 will-change-transform lg:object-center"

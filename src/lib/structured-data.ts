@@ -1,70 +1,5 @@
 import { SITE_URL, SITE_NAME } from "./constants";
 
-export function getFAQPageSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Necesito experiencia delante de la cámara?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Nuestro equipo de dirección te guiará en todo momento. Además, contamos con teleprompter para que no tengas que memorizar nada."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué incluye exactamente el servicio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Depende de lo que necesites. Puedes alquilar solo el espacio rooftop, añadir un filmmaker profesional con dirección creativa, o contratar la producción completa con equipo técnico y edición. Cuéntanos tu proyecto y te preparamos un presupuesto a medida."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Qué puedo grabar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Lo que necesites: reels, vídeos de YouTube, podcast, VSLs, cursos, vídeo corporativo o cualquier formato audiovisual. El espacio y el equipo se adaptan completamente a tu proyecto."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Puedo traer a mi propio equipo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Por supuesto. Puedes alquilar solo el espacio y traer tu propio filmmaker y equipo. También ofrecemos filmmaker profesional y equipo técnico completo si lo necesitas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Dónde está el estudio?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Estamos en Calle Ronda de Atocha, 16, Madrid — a 5 minutos a pie del Metro Atocha Renfe. Te enviaremos los detalles exactos de acceso al confirmar tu reserva."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Cómo reservo una sesión?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Rellena el formulario de contacto o escríbenos a hola@rooftopcontentstudio.es. Te respondemos en menos de 1 hora con presupuesto y fecha disponible."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Ofrecéis edición de vídeo?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí, como parte de la producción completa podemos encargarnos de la edición: cortes, subtítulos, formato vertical, motion graphics… lo que necesite tu proyecto. Es opcional — si ya tienes editor, perfecto."
-        }
-      }
-    ]
-  };
-}
-
 export function getProfessionalServiceSchema() {
   return {
     "@context": "https://schema.org",
@@ -76,12 +11,18 @@ export function getProfessionalServiceSchema() {
     url: SITE_URL,
     telephone: "+34711255496",
     email: "hola@rooftopcontentstudio.es",
-    foundingDate: "2024",
+    foundingDate: "2024-01-01",
     logo: {
       "@type": "ImageObject",
-      url: `${SITE_URL}/logo.png`,
+      url: `${SITE_URL}/optimized/logo.webp`,
+      width: 256,
+      height: 256,
     },
-    image: `${SITE_URL}/og-image.jpg`,
+    image: [
+      `${SITE_URL}/og-image.jpg`,
+      `${SITE_URL}/optimized/studio-1.webp`,
+      `${SITE_URL}/optimized/studio-2.webp`,
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: "Calle Ronda de Atocha, 16",
@@ -96,27 +37,83 @@ export function getProfessionalServiceSchema() {
       longitude: -3.6992,
     },
     priceRange: "€€",
+    currenciesAccepted: "EUR",
+    paymentAccepted: "Transferencia bancaria, Tarjeta de crédito",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "20:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "10:00",
+        closes: "18:00",
+      },
+    ],
+    founder: {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#founder`,
+      name: "Daniel Acero",
+      jobTitle: "Founder & Creative Director",
+      sameAs: ["https://www.instagram.com/daniaceros"],
+    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Sesiones de grabación a medida",
       itemListElement: [
         {
-          "@type": "Offer",
+          "@type": "OfferCatalog",
           name: "Alquiler de espacio rooftop",
           description:
             "Espacio rooftop privado con vistas a Madrid. Trae tu propio equipo y filmmaker. Sesiones desde 2 horas.",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              name: "Alquiler de espacio rooftop",
+              description:
+                "Espacio rooftop privado con vistas a Madrid. Trae tu propio equipo y filmmaker. Sesiones desde 2 horas.",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: `${SITE_URL}/#tarifas`,
+            },
+          ],
         },
         {
-          "@type": "Offer",
+          "@type": "OfferCatalog",
           name: "Espacio + Filmmaker",
           description:
             "Espacio rooftop con filmmaker profesional y dirección creativa incluida.",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              name: "Espacio + Filmmaker",
+              description:
+                "Espacio rooftop con filmmaker profesional y dirección creativa incluida.",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: `${SITE_URL}/#tarifas`,
+            },
+          ],
         },
         {
-          "@type": "Offer",
+          "@type": "OfferCatalog",
           name: "Producción completa",
           description:
             "Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral a medida.",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              name: "Producción completa",
+              description:
+                "Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral a medida.",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: `${SITE_URL}/#tarifas`,
+            },
+          ],
         },
       ],
     },
@@ -128,8 +125,8 @@ export function getProfessionalServiceSchema() {
       "@type": "City",
       name: "Madrid",
     },
-    serviceType:
-      "Producción audiovisual y grabación de contenido digital",
+    serviceType: "Producción audiovisual y grabación de contenido digital",
+    knowsLanguage: ["es", "en"],
   };
 }
 
@@ -140,7 +137,61 @@ export function getWebSiteSchema() {
     "@id": `${SITE_URL}/#website`,
     url: SITE_URL,
     name: SITE_NAME,
+    description:
+      "Estudio de grabación premium en Madrid para marcas y creadores de contenido.",
     inLanguage: "es",
+    publisher: {
+      "@id": `${SITE_URL}/#business`,
+    },
+  };
+}
+
+export function getWebPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/#webpage`,
+    url: SITE_URL,
+    name: "Rooftop Content Studio - Estudio de Grabación Premium en Madrid",
+    description:
+      "Estudio de grabación premium en Madrid para marcas y creadores. Producción de reels, podcasts, vídeos corporativos y contenido para redes sociales.",
+    isPartOf: {
+      "@id": `${SITE_URL}/#website`,
+    },
+    about: {
+      "@id": `${SITE_URL}/#business`,
+    },
+    inLanguage: "es",
+    datePublished: "2024-01-01",
+    dateModified: "2026-03-12",
+  };
+}
+
+export function getBreadcrumbSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Inicio",
+        item: SITE_URL,
+      },
+    ],
+  };
+}
+
+export function getVideoSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: "Rooftop Content Studio - Showreel",
+    description:
+      "Portfolio de producciones audiovisuales realizadas en Rooftop Content Studio, estudio de grabación premium en Madrid.",
+    thumbnailUrl: `${SITE_URL}/og-image.jpg`,
+    uploadDate: "2024-01-01",
+    contentUrl: `${SITE_URL}/video/corr.mp4`,
     publisher: {
       "@id": `${SITE_URL}/#business`,
     },

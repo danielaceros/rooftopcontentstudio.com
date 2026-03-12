@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import { siteMetadata } from "@/lib/metadata";
-import { getProfessionalServiceSchema, getWebSiteSchema, getFAQPageSchema } from "@/lib/structured-data";
+import { getProfessionalServiceSchema, getWebSiteSchema, getWebPageSchema, getBreadcrumbSchema, getVideoSchema } from "@/lib/structured-data";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 // GrainOverlay removed per user request
 import CustomCursor from "@/components/ui/CustomCursor";
@@ -39,6 +39,8 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${bebasNeue.variable} ${dmSans.variable} ${dmMono.variable}`}>
       <head>
+        <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
+        <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
         <link rel="preconnect" href="https://api.fitnesslaunch.es" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://connect.facebook.net" />
@@ -105,7 +107,19 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(getFAQPageSchema()),
+            __html: JSON.stringify(getWebPageSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getBreadcrumbSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getVideoSchema()),
           }}
         />
       </head>
