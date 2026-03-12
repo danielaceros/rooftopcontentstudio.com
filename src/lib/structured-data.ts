@@ -1,61 +1,81 @@
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, CONTACT_INFO, FAQS } from "./constants";
+import { SITE_URL, SITE_NAME } from "./constants";
 
-export function getLocalBusinessSchema() {
+export function getProfessionalServiceSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
-    description: SITE_DESCRIPTION,
+    description:
+      "Estudio de grabación premium en Madrid para marcas y creadores. Producción de reels, podcasts, vídeos corporativos y contenido para redes sociales.",
     url: SITE_URL,
-    telephone: CONTACT_INFO.phone,
-    email: CONTACT_INFO.email,
+    telephone: "+34711255496",
+    email: "hola@rooftopcontentstudio.es",
+    foundingDate: "2024",
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.png`,
+    },
+    image: `${SITE_URL}/og-image.jpg`,
     address: {
       "@type": "PostalAddress",
-      streetAddress: CONTACT_INFO.address,
-      addressLocality: CONTACT_INFO.city,
-      postalCode: CONTACT_INFO.postalCode,
-      addressCountry: CONTACT_INFO.country,
+      streetAddress: "Calle Ronda de Atocha, 16",
+      addressLocality: "Madrid",
+      addressRegion: "Madrid",
+      postalCode: "28012",
+      addressCountry: "ES",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 40.4065,
-      longitude: -3.6947,
+      latitude: 40.4072,
+      longitude: -3.6992,
     },
-    image: `${SITE_URL}/optimized/og-image.webp`,
-    priceRange: "€€",
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "20:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "10:00",
-        closes: "18:00",
-      },
+    priceRange: "€€€",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Sesiones de grabación",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          name: "Media Jornada",
+          description:
+            "4 horas de grabación profesional. Hasta 24 reels o 12 vídeos YouTube.",
+          price: "600",
+          priceCurrency: "EUR",
+        },
+        {
+          "@type": "Offer",
+          name: "Jornada Completa",
+          description:
+            "8 horas de grabación profesional. Ideal para podcasts y producciones intensivas.",
+          price: "1000",
+          priceCurrency: "EUR",
+        },
+      ],
+    },
+    sameAs: [
+      "https://www.instagram.com/daniaceros",
+      "https://www.instagram.com/rooftopcontentstudio",
     ],
     areaServed: {
       "@type": "City",
       name: "Madrid",
     },
+    serviceType:
+      "Producción audiovisual y grabación de contenido digital",
   };
 }
 
-export function getFAQSchema() {
+export function getWebSiteSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQS.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: SITE_NAME,
+    inLanguage: "es",
+    publisher: {
+      "@id": `${SITE_URL}/#business`,
+    },
   };
 }

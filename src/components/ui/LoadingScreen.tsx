@@ -11,11 +11,16 @@ export default function LoadingScreen() {
   const disposeRef = useRef<(() => void) | null>(null);
   const [phase, setPhase] = useState<"loading" | "exiting" | "done">("loading");
 
+  // Skip loading screen entirely for search engine bots
+  const isBot =
+    typeof navigator !== "undefined" &&
+    /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+
   /* ── Ready logic (window.load + GHL) ── */
   useEffect(() => {
     const start = Date.now();
     const isMobile = window.innerWidth < 768;
-    const minTime = isMobile ? 3000 : 2500;
+    const minTime = isMobile ? 2000 : 1500;
 
     let windowLoaded = document.readyState === "complete";
     let ghlReady =
@@ -47,7 +52,7 @@ export default function LoadingScreen() {
       const fallback = setTimeout(() => {
         ghlReady = true;
         tryExit();
-      }, 6000);
+      }, 4000);
       return () => {
         window.removeEventListener("load", onLoad);
         window.removeEventListener("ghlReady", onGhl);
@@ -63,7 +68,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     if (phase !== "loading") return;
     const start = performance.now();
-    const duration = 2000;
+    const duration = 1500;
     let raf: number;
 
     const tick = () => {
@@ -331,7 +336,7 @@ export default function LoadingScreen() {
     };
   }, [phase]);
 
-  if (phase === "done") return null;
+  if (phase === "done" || isBot) return null;
 
   const isExiting = phase === "exiting";
   const isMobileSSR = typeof window !== "undefined" && window.innerWidth < 768;
@@ -391,7 +396,6 @@ export default function LoadingScreen() {
             width={128}
             height={128}
             className="h-12 w-12 object-cover object-top sm:h-16 sm:w-16"
-            priority
           />
         </div>
 

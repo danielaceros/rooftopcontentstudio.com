@@ -81,7 +81,7 @@ export default function Stats() {
             <span className="font-heading text-[clamp(3rem,12vw,6rem)] leading-none text-accent">
               <ScrambleNumber target={stat.value} suffix={stat.suffix} active={active} />
             </span>
-            <span className="mt-2 font-mono text-[7px] uppercase tracking-[0.35em] text-muted sm:mt-3 sm:text-[9px]">
+            <span className="mt-2 font-mono text-[11px] uppercase tracking-[0.35em] text-muted sm:mt-3 sm:text-[11px]">
               {stat.label}
             </span>
           </div>

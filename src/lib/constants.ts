@@ -1,4 +1,4 @@
-export const SITE_URL = "https://rooftopcontentstudio.es";
+export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
   "Estudio de grabación de contenido premium en Madrid. Graba meses de contenido en una sola mañana con un equipo profesional en una localización exclusiva.";

@@ -56,7 +56,7 @@ export default function Hero() {
           {/* Terminal-style label */}
           <div className="hero-line-wrapper mb-2 sm:mb-3">
             <p
-              className="hero-line font-mono text-[9px] uppercase tracking-[0.25em] text-accent sm:text-[11px]"
+              className="hero-line font-mono text-[11px] uppercase tracking-[0.25em] text-accent sm:text-[11px]"
               style={{ animationDelay: "0.2s" }}
             >
               [ Estudio de Grabación — Madrid ]
@@ -85,7 +85,7 @@ export default function Hero() {
         >
           {/* Social proof logos — mobile only */}
           <div className="mb-1.5 lg:hidden">
-            <p className="mb-1 text-center font-mono text-[7px] uppercase tracking-[0.3em] text-foreground/30 sm:text-[9px]">
+            <p className="mb-1 text-center font-mono text-[11px] uppercase tracking-[0.3em] text-foreground/30 sm:text-[11px]">
               Empresas que han confiado en nosotros
             </p>
             <div

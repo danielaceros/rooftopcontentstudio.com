@@ -5,7 +5,7 @@ const LOGOS_SRC = "/optimized/logos-banner.png";
 export default function ClientLogos() {
   return (
     <section className="hidden py-10 sm:py-12 lg:block">
-      <p className="mb-7 text-center font-mono text-[9px] uppercase tracking-[0.35em] text-muted sm:mb-8 sm:text-[10px]">
+      <p className="mb-7 text-center font-mono text-[11px] uppercase tracking-[0.35em] text-muted sm:mb-8 sm:text-[11px]">
         Empresas que han confiado en nosotros
       </p>
 
