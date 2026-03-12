@@ -1,25 +1,72 @@
 "use client";
 
-import { TARIFAS, ADDONS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { use3DTilt } from "@/hooks/use3DTilt";
 
-function TarifaCard({ tarifa, index }: { tarifa: typeof TARIFAS[number]; index: number }) {
-  const { ref, lightRef, onMouseMove, onMouseLeave } = use3DTilt(8);
+const OPTIONS = [
+  {
+    label: "Espacio",
+    name: "Solo el Espacio",
+    price: "50",
+    unit: "/hora",
+    description:
+      "El rooftop es tuyo. Trae tu propio equipo y filmmaker — tú controlas la sesión.",
+    includes: [
+      "Rooftop privado con vistas a Madrid",
+      "Iluminación de estudio",
+      "Conexión Wi-Fi de alta velocidad",
+      "Acceso a zona de maquillaje",
+    ],
+    highlighted: false,
+  },
+  {
+    label: "Más popular",
+    name: "Espacio + Filmmaker",
+    price: "100",
+    unit: "/hora",
+    description:
+      "Un filmmaker profesional dirige tu sesión para que solo tengas que ponerte delante de la cámara.",
+    includes: [
+      "Todo lo del plan Espacio",
+      "Filmmaker con dirección creativa",
+      "Cámaras y equipo técnico",
+      "Sonido profesional",
+      "Teleprompter",
+    ],
+    highlighted: true,
+  },
+  {
+    label: "Todo incluido",
+    name: "Producción Completa",
+    price: null,
+    unit: null,
+    description:
+      "Nos encargamos de todo: grabación, edición y entrega. Tú solo tienes que aparecer.",
+    includes: [
+      "Todo lo del plan Espacio + Filmmaker",
+      "Edición profesional a medida",
+      "Subtítulos y formato para cada plataforma",
+      "Entrega en 24-48h",
+    ],
+    highlighted: false,
+  },
+] as const;
+
+function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index: number }) {
+  const { ref, lightRef, onMouseMove, onMouseLeave } = use3DTilt(6);
 
   return (
-    <ScrollReveal delay={index * 0.12}>
+    <ScrollReveal delay={index * 0.1}>
       <div
         ref={ref}
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
-        className={`group relative flex h-full flex-col p-7 transition-all duration-500 sm:p-10 lg:p-14 ${
-          tarifa.highlighted
+        className={`group relative flex h-full flex-col p-7 transition-all duration-500 sm:p-9 lg:p-10 ${
+          option.highlighted
             ? "border border-accent/30 bg-foreground/[0.03]"
             : "border border-border bg-transparent"
         }`}
         style={{ transition: "transform 0.6s ease, box-shadow 0.5s ease" }}
-        data-cursor-text="VER"
       >
         {/* Light highlight overlay */}
         <div
@@ -27,50 +74,62 @@ function TarifaCard({ tarifa, index }: { tarifa: typeof TARIFAS[number]; index: 
           className="pointer-events-none absolute inset-0 z-0 transition-opacity duration-300"
         />
 
-        {tarifa.highlighted && (
-          <div className="absolute right-10 top-10 font-mono text-[10px] uppercase tracking-[0.3em] text-accent lg:right-14 lg:top-14">
-            Más Elegido
-          </div>
-        )}
-
-        <p className="relative z-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
-          {tarifa.name}
-        </p>
-
-        <div className="relative z-10 mt-6 flex items-baseline gap-3">
-          <span className="font-heading text-[clamp(4rem,8vw,5rem)] leading-none text-foreground">
-            {tarifa.price}
-          </span>
+        {/* Label badge */}
+        <div className={`absolute right-7 top-7 font-mono text-[10px] uppercase tracking-[0.3em] sm:right-9 sm:top-9 lg:right-10 lg:top-10 ${
+          option.highlighted ? "text-accent" : "text-muted"
+        }`}>
+          {option.label}
         </div>
-        <p className="relative z-10 mt-1 font-mono text-[13px] text-accent">
-          {tarifa.pricePerUnit}
+
+        {/* Name */}
+        <p className="relative z-10 font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
+          {option.name}
         </p>
 
-        <p className="relative z-10 mt-6 max-w-md text-base leading-relaxed text-muted sm:text-[1.05rem]">
-          {tarifa.description}
+        {/* Price */}
+        <div className="relative z-10 mt-6 flex items-baseline gap-1">
+          {option.price ? (
+            <>
+              <span className="font-mono text-[13px] text-muted">desde</span>
+              <span className="font-heading text-[clamp(3rem,6vw,4rem)] leading-none text-foreground">
+                {option.price}€
+              </span>
+              <span className="font-mono text-[13px] text-muted">{option.unit}</span>
+            </>
+          ) : (
+            <span className="font-heading text-[clamp(1.8rem,4vw,2.4rem)] leading-none text-foreground">
+              A medida
+            </span>
+          )}
+        </div>
+
+        {/* Description */}
+        <p className="relative z-10 mt-6 max-w-md text-[0.95rem] leading-relaxed text-muted sm:text-base">
+          {option.description}
         </p>
 
-        {/* Incluye list */}
+        {/* Includes */}
         <ul className="relative z-10 mt-8 flex flex-col gap-3">
-          {tarifa.incluye.map((item) => (
-            <li key={item} className="flex items-start gap-3 text-[0.95rem] leading-snug text-foreground/80">
+          {option.includes.map((item) => (
+            <li key={item} className="flex items-start gap-3 text-[0.9rem] leading-snug text-foreground/80">
               <span className="mt-[7px] h-px w-4 shrink-0 bg-accent" aria-hidden="true" />
               {item}
             </li>
           ))}
         </ul>
 
-        <div className="relative z-10 mt-auto pt-14">
+        {/* CTA */}
+        <div className="relative z-10 mt-auto pt-10">
           <a
             href="#contacto"
             data-cursor-text="RESERVAR"
-            className={`inline-block px-8 py-3 font-mono text-[11px] uppercase tracking-[0.15em] transition-all duration-300 sm:px-10 sm:py-4 ${
-              tarifa.highlighted
+            className={`inline-block w-full px-8 py-3.5 text-center font-mono text-[11px] uppercase tracking-[0.15em] transition-all duration-300 sm:px-10 ${
+              option.highlighted
                 ? "bg-accent text-background hover:bg-accent-light"
                 : "border border-foreground/30 text-foreground hover:border-accent hover:bg-accent hover:text-background"
             }`}
           >
-            Reservar sesión
+            Pedir Presupuesto
           </a>
         </div>
       </div>
@@ -84,53 +143,34 @@ export default function Tarifas() {
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
-            ( Tarifas )
+            ( Opciones )
           </p>
         </ScrollReveal>
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Invierte en tu Contenido.
+            Un Espacio que se Adapta a Ti.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-8 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-            Todo incluido. Edición básica gratis. Sin costes ocultos.
+            Cuéntanos tu proyecto y te enviamos presupuesto personalizado en menos de 1 hora.
           </p>
         </ScrollReveal>
 
-        <div className="mt-14 grid gap-6 sm:mt-16 sm:gap-8 md:grid-cols-2 md:gap-10 lg:mt-24 lg:gap-12">
-          {TARIFAS.map((tarifa, index) => (
-            <TarifaCard key={tarifa.name} tarifa={tarifa} index={index} />
+        {/* 3 Cards */}
+        <div className="mt-14 grid gap-6 sm:mt-16 sm:gap-8 lg:mt-24 lg:grid-cols-3 lg:gap-6">
+          {OPTIONS.map((option, index) => (
+            <OptionCard key={option.name} option={option} index={index} />
           ))}
         </div>
 
-        {/* Add-ons */}
-        <ScrollReveal delay={0.18}>
-          <div className="mt-16 border-t border-border pt-10 sm:mt-20">
-            <h3 className="font-heading text-[clamp(1.6rem,4vw,2.5rem)] uppercase leading-[0.95] text-foreground">
-              Potencia tu Contenido
-            </h3>
-            <div className="mt-8 grid gap-6 sm:grid-cols-3 sm:gap-8">
-              {ADDONS.map((addon) => (
-                <div
-                  key={addon.name}
-                  className="border border-border/50 p-6 transition-colors duration-300 hover:border-accent/30 sm:p-8"
-                >
-                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
-                    {addon.name}
-                  </p>
-                  <p className="mt-3 text-[0.95rem] leading-relaxed text-muted">
-                    {addon.description}
-                  </p>
-                  <p className="mt-4 font-heading text-[1.5rem] uppercase text-foreground">
-                    {addon.price}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Bottom note */}
+        <ScrollReveal delay={0.4}>
+          <p className="mt-10 text-center font-mono text-[12px] text-muted sm:mt-14">
+            Sesiones desde 2 horas · Reels, YouTube, podcast, VSLs, cursos o lo que necesites · Presupuesto sin compromiso
+          </p>
         </ScrollReveal>
       </div>
     </section>

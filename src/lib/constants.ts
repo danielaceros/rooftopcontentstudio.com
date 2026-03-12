@@ -1,16 +1,31 @@
 export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
-  "Estudio de grabación de contenido premium en Madrid. Graba meses de contenido en una sola mañana con un equipo profesional en una localización exclusiva.";
+  "Estudio de grabación a medida en Madrid. Alquila el espacio, añade filmmaker o contrata la producción completa. Sesiones desde 2 horas en un rooftop privado.";
 
 export const NAV_LINKS = [
   { label: "Portfolio", href: "#portfolio" },
   { label: "Proceso", href: "#proceso" },
-  { label: "Tarifas", href: "#tarifas" },
+  { label: "Opciones", href: "#tarifas" },
   { label: "FAQ", href: "#faq" },
 ] as const;
 
+export const FORMATOS = [
+  "Reels y TikToks",
+  "Vídeos para YouTube",
+  "Podcasts y entrevistas",
+  "VSLs y vídeos de venta",
+  "Cursos y formaciones",
+  "Vídeos corporativos",
+] as const;
+
 export const BENEFICIOS = [
+  {
+    title: "Todo tu Contenido en una Mañana",
+    description:
+      "Llegas, grabas y te vas con semanas de contenido listo. Sin montar, sin desmontar, sin perder tiempo. Todo preparado para ti.",
+    icon: "clock",
+  },
   {
     title: "El Único Rooftop de Madrid",
     description:
@@ -18,21 +33,15 @@ export const BENEFICIOS = [
     icon: "location",
   },
   {
-    title: "Un Mes de Contenido en 4 Horas",
+    title: "Graba lo que Quieras",
     description:
-      "Sal con 24 reels grabados, organizados y listos para publicar. Sin improvisar, sin volver a casa con nada.",
-    icon: "clock",
-  },
-  {
-    title: "Editado y Listo para Publicar",
-    description:
-      "Subtítulos, reencuadre y formato para cada plataforma incluidos. Solo tienes que subir.",
+      "Reels, YouTube, podcast, VSLs, cursos, vídeo corporativo… el espacio y el equipo se adaptan a cualquier formato.",
     icon: "sparkles",
   },
   {
-    title: "Dirección Creativa Incluida",
+    title: "Tú Decides Qué Necesitas",
     description:
-      "No grabamos por grabar. Un filmmaker profesional te guía en cada toma para que el resultado funcione en redes.",
+      "Solo el espacio, con filmmaker, o producción completa con edición. Tú eliges el nivel de servicio, nosotros nos adaptamos.",
     icon: "strategy",
   },
   {
@@ -52,88 +61,27 @@ export const BENEFICIOS = [
 export const PROCESO = [
   {
     step: 1,
-    title: "Briefing Estratégico",
+    title: "Cuéntanos tu Proyecto",
     description:
-      "Analizamos tu marca, tu audiencia y tus objetivos para diseñar un plan de contenido a medida.",
+      "Rellena el formulario o escríbenos. Nos cuentas qué quieres grabar y te enviamos un presupuesto a medida en menos de 1 hora.",
   },
   {
     step: 2,
-    title: "Pre-producción",
+    title: "Montamos tu Sesión",
     description:
-      "Te ayudamos a preparar guiones, escaleta y referencias visuales. Nadie conoce tu negocio mejor que tú, pero nosotros nos encargamos de que todo esté listo para grabar.",
+      "Reservamos tu fecha y preparamos todo lo que necesites: solo el espacio, con filmmaker o producción completa. Tú eliges, nosotros nos encargamos.",
   },
   {
     step: 3,
-    title: "Día de Grabación",
+    title: "Llegas y Grabas",
     description:
-      "Grabamos todo el contenido planificado en nuestro estudio rooftop con un equipo profesional a tu disposición.",
+      "Todo está listo cuando llegas. Sin montar, sin desmontar, sin perder tiempo. Solo tienes que ponerte delante de la cámara y grabar todo tu contenido.",
   },
   {
     step: 4,
-    title: "Post-producción y Entrega",
+    title: "Te Llevas tu Contenido",
     description:
-      "Te entregamos todas las grabaciones organizadas en menos de 24 horas desde la sesión, listas para usar.",
-  },
-] as const;
-
-export const TARIFAS = [
-  {
-    name: "24 Reels Profesionales",
-    price: "600€",
-    pricePerUnit: "Solo 25€/reel",
-    description:
-      "Graba hasta 24 reels o 12 vídeos de YouTube en una sola sesión. Contenido listo para publicar.",
-    incluye: [
-      "4 horas de grabación",
-      "Espacio rooftop privado",
-      "Filmmaker profesional",
-      "Cámaras y equipo técnico",
-      "Iluminación de estudio",
-      "Sonido profesional",
-      "Teleprompter",
-      "Dirección creativa",
-      "Edición básica incluida (cortes, subtítulos y formato vertical)",
-      "Entrega en 24-48h",
-    ],
-    highlighted: false,
-  },
-  {
-    name: "48 Reels Profesionales",
-    price: "1.000€",
-    pricePerUnit: "Solo 21€/reel",
-    description:
-      "El doble de contenido para marcas que necesitan escalar. Hasta 48 reels o 24 vídeos de YouTube.",
-    incluye: [
-      "8 horas de grabación",
-      "Espacio rooftop privado",
-      "Filmmaker profesional",
-      "Cámaras y equipo técnico",
-      "Iluminación de estudio",
-      "Sonido profesional",
-      "Teleprompter",
-      "Dirección creativa",
-      "Edición básica incluida (cortes, subtítulos y formato vertical)",
-      "Entrega en 24-48h",
-    ],
-    highlighted: true,
-  },
-] as const;
-
-export const ADDONS = [
-  {
-    name: "Edición Premium",
-    description: "Pack 10 reels con transiciones, motion graphics y color grading",
-    price: "desde 300€",
-  },
-  {
-    name: "Thumbnails YouTube",
-    description: "Pack 10 thumbnails profesionales para tus vídeos",
-    price: "150€",
-  },
-  {
-    name: "Estrategia de Contenido",
-    description: "Calendario editorial + estrategia de publicación personalizada",
-    price: "200€",
+      "Sales con todo tu material grabado. Si has contratado edición, te lo entregamos organizado y listo para publicar en 24-48h.",
   },
 ] as const;
 
@@ -146,17 +94,17 @@ export const FAQS = [
   {
     question: "¿Qué incluye exactamente el servicio?",
     answer:
-      "Incluye el uso del espacio rooftop, equipo técnico completo (cámaras, iluminación, sonido), teleprompter y dirección creativa durante toda la sesión. Recibes todas las grabaciones organizadas y listas para usar en menos de 24 horas.",
+      "Depende de lo que necesites. Puedes alquilar solo el espacio rooftop, añadir un filmmaker profesional con dirección creativa, o contratar la producción completa con equipo técnico y edición. Cuéntanos tu proyecto y te preparamos un presupuesto a medida.",
   },
   {
-    question: "¿Cuánto contenido puedo grabar en una sesión?",
+    question: "¿Qué puedo grabar?",
     answer:
-      "En una media jornada (4 horas) puedes grabar hasta 24 reels o 12 vídeos de YouTube. En una jornada completa, el doble.",
+      "Lo que necesites: reels, vídeos de YouTube, podcast, VSLs, cursos, vídeo corporativo o cualquier formato audiovisual. El espacio y el equipo se adaptan completamente a tu proyecto.",
   },
   {
     question: "¿Puedo traer a mi propio equipo?",
     answer:
-      "Por supuesto. Si tienes un fotógrafo, videógrafo o maquillador de confianza, pueden acompañarte sin coste adicional por el uso del espacio.",
+      "Por supuesto. Puedes alquilar solo el espacio y traer tu propio filmmaker y equipo. También ofrecemos filmmaker profesional y equipo técnico completo si lo necesitas.",
   },
   {
     question: "¿Dónde está el estudio?",
@@ -169,9 +117,9 @@ export const FAQS = [
       "Rellena el formulario de contacto o escríbenos por email. Te responderemos en menos de 24 horas para agendar tu sesión.",
   },
   {
-    question: "¿Qué incluye la edición básica?",
+    question: "¿Ofrecéis edición de vídeo?",
     answer:
-      "Todos nuestros planes incluyen edición básica: cortes dinámicos, subtítulos animados y adaptación a formato vertical (9:16) para Instagram Reels y TikTok. Si necesitas algo más avanzado como motion graphics, color grading profesional o transiciones personalizadas, ofrecemos packs de edición premium como add-on.",
+      "Sí, como parte de la producción completa podemos encargarnos de la edición: cortes, subtítulos, formato vertical, motion graphics… lo que necesite tu proyecto. Es opcional — si ya tienes editor, perfecto.",
   },
 ] as const;
 

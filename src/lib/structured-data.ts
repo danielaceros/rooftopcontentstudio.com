@@ -18,15 +18,15 @@ export function getFAQPageSchema() {
         "name": "¿Qué incluye exactamente el servicio?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Espacio rooftop, filmmaker profesional, cámaras y equipo técnico, iluminación de estudio, sonido profesional, teleprompter y dirección creativa. Archivos entregados en menos de 24 horas."
+          "text": "Depende de lo que necesites. Puedes alquilar solo el espacio rooftop, añadir un filmmaker profesional con dirección creativa, o contratar la producción completa con equipo técnico y edición. Cuéntanos tu proyecto y te preparamos un presupuesto a medida."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Cuánto contenido puedo grabar en una sesión?",
+        "name": "¿Qué puedo grabar?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "En una media jornada (4 horas) puedes grabar hasta 24 reels o 12 vídeos de YouTube. En una jornada completa, el doble."
+          "text": "Lo que necesites: reels, vídeos de YouTube, podcast, VSLs, cursos, vídeo corporativo o cualquier formato audiovisual. El espacio y el equipo se adaptan completamente a tu proyecto."
         }
       },
       {
@@ -34,7 +34,7 @@ export function getFAQPageSchema() {
         "name": "¿Puedo traer a mi propio equipo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Por supuesto. Si tienes un fotógrafo, videógrafo o maquillador de confianza, pueden acompañarte sin coste adicional por el uso del espacio."
+          "text": "Por supuesto. Puedes alquilar solo el espacio y traer tu propio filmmaker y equipo. También ofrecemos filmmaker profesional y equipo técnico completo si lo necesitas."
         }
       },
       {
@@ -55,10 +55,10 @@ export function getFAQPageSchema() {
       },
       {
         "@type": "Question",
-        "name": "¿Qué incluye la edición básica?",
+        "name": "¿Ofrecéis edición de vídeo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Todos nuestros planes incluyen edición básica: cortes dinámicos, subtítulos animados y adaptación a formato vertical (9:16) para Instagram Reels y TikTok. Si necesitas algo más avanzado como motion graphics, color grading profesional o transiciones personalizadas, ofrecemos packs de edición premium como add-on."
+          "text": "Sí, como parte de la producción completa podemos encargarnos de la edición: cortes, subtítulos, formato vertical, motion graphics… lo que necesite tu proyecto. Es opcional."
         }
       }
     ]
@@ -95,26 +95,28 @@ export function getProfessionalServiceSchema() {
       latitude: 40.4072,
       longitude: -3.6992,
     },
-    priceRange: "€€€",
+    priceRange: "€€",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Sesiones de grabación",
+      name: "Sesiones de grabación a medida",
       itemListElement: [
         {
           "@type": "Offer",
-          name: "24 Reels Profesionales",
+          name: "Alquiler de espacio rooftop",
           description:
-            "4 horas de grabación profesional. Hasta 24 reels o 12 vídeos YouTube. Edición básica incluida.",
-          price: "600",
-          priceCurrency: "EUR",
+            "Espacio rooftop privado con vistas a Madrid. Trae tu propio equipo y filmmaker. Sesiones desde 2 horas.",
         },
         {
           "@type": "Offer",
-          name: "48 Reels Profesionales",
+          name: "Espacio + Filmmaker",
           description:
-            "8 horas de grabación profesional. Hasta 48 reels o 24 vídeos YouTube. Edición básica incluida.",
-          price: "1000",
-          priceCurrency: "EUR",
+            "Espacio rooftop con filmmaker profesional y dirección creativa incluida.",
+        },
+        {
+          "@type": "Offer",
+          name: "Producción completa",
+          description:
+            "Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral a medida.",
         },
       ],
     },

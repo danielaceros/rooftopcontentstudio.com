@@ -5,6 +5,7 @@ import SocialProof from "@/components/sections/SocialProof";
 import Portfolio from "@/components/sections/Portfolio";
 import Beneficios from "@/components/sections/Beneficios";
 import Proceso from "@/components/sections/Proceso";
+import QueEs from "@/components/sections/QueEs";
 import Tarifas from "@/components/sections/Tarifas";
 import FAQ from "@/components/sections/FAQ";
 import CTA from "@/components/sections/CTA";
@@ -19,6 +20,7 @@ export default function Home() {
         <Portfolio desktopSlideshow={true} openVideosInModal={true} />
         <Beneficios />
         <Proceso />
+        <QueEs />
         <Tarifas />
         <FAQ />
         <CTA />
