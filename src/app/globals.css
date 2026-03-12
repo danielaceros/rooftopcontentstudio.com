@@ -15,7 +15,7 @@
   --color-amber-light: #D4B85C;
   --color-amber-dark: #A88A3C;
 
-  --font-heading: var(--font-bebas-neue);
+  --font-heading: var(--font-bebas-neue), "Arial Narrow", "Impact", sans-serif;
   --font-body: var(--font-dm-sans);
   --font-mono: var(--font-dm-mono);
 }
