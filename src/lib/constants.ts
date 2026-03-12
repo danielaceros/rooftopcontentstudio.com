@@ -45,9 +45,9 @@ export const BENEFICIOS = [
     icon: "strategy",
   },
   {
-    title: "Entrega en Menos de 24h",
+    title: "Entrega en 24-48h",
     description:
-      "Tus archivos organizados por pieza y listos para programar al día siguiente de la sesión.",
+      "Tus archivos organizados por pieza y listos para programar en un máximo de 48 horas tras la sesión.",
     icon: "zap",
   },
   {
