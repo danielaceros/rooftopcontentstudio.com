@@ -17,56 +17,45 @@ export default function Comparativa() {
     isTouchDevice.current = window.matchMedia("(pointer: coarse)").matches;
   }, []);
 
-  // Keep both videos playing and loosely synced
+  // Let both videos autoplay naturally, then gently sync once both are actually playing
   useEffect(() => {
     const after = afterVideoRef.current;
     const before = beforeVideoRef.current;
     if (!after || !before) return;
 
     let rafId: number;
-    let started = false;
+    let syncing = false;
 
-    const ensurePlaying = () => {
-      before.play().catch(() => {});
-      after.play().catch(() => {});
-    };
+    // Check if a video is truly playing (not paused and has progressed)
+    const isPlaying = (v: HTMLVideoElement) => !v.paused && v.currentTime > 0;
 
-    const startSync = () => {
-      if (started) return;
-      started = true;
-      before.currentTime = 0;
-      after.currentTime = 0;
-      ensurePlaying();
-
-      const tick = () => {
-        // Only correct if drift exceeds 0.15s — avoids constant seeking that freezes playback
-        if (Math.abs(before.currentTime - after.currentTime) > 0.15) {
-          after.currentTime = before.currentTime;
-        }
+    const tick = () => {
+      // Wait until BOTH videos are actually playing before any sync
+      if (!isPlaying(before) || !isPlaying(after)) {
+        // Nudge play in case autoplay didn't kick in
+        if (before.paused) before.play().catch(() => {});
+        if (after.paused) after.play().catch(() => {});
         rafId = requestAnimationFrame(tick);
-      };
+        return;
+      }
+
+      // First frame where both are playing — align once
+      if (!syncing) {
+        syncing = true;
+        after.currentTime = before.currentTime;
+      }
+
+      // Gentle drift correction — only when clearly out of sync
+      if (Math.abs(before.currentTime - after.currentTime) > 0.2) {
+        after.currentTime = before.currentTime;
+      }
+
       rafId = requestAnimationFrame(tick);
     };
 
-    const onReady = () => {
-      if (before.readyState >= 3 && after.readyState >= 3) startSync();
-    };
+    rafId = requestAnimationFrame(tick);
 
-    before.addEventListener("canplaythrough", onReady);
-    after.addEventListener("canplaythrough", onReady);
-    onReady();
-
-    // Fallback: start after 2s even if canplaythrough never fires (mobile)
-    const fallbackTimer = setTimeout(() => {
-      if (!started) startSync();
-    }, 2000);
-
-    return () => {
-      clearTimeout(fallbackTimer);
-      cancelAnimationFrame(rafId);
-      before.removeEventListener("canplaythrough", onReady);
-      after.removeEventListener("canplaythrough", onReady);
-    };
+    return () => cancelAnimationFrame(rafId);
   }, []);
 
   // Direct DOM mutation — no React re-render, no CSS transition
