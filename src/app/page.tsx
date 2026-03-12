@@ -18,11 +18,11 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
-        <Portfolio desktopSlideshow={true} openVideosInModal={true} />
         <Beneficios />
-        <Proceso />
-        <QueEs />
         <Comparativa />
+        <QueEs />
+        <Portfolio desktopSlideshow={true} openVideosInModal={true} />
+        <Proceso />
         <Tarifas />
         <FAQ />
         <CTA />

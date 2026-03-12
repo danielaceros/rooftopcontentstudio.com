@@ -207,6 +207,20 @@ export default function Comparativa() {
             </div>
           </div>
         </ScrollReveal>
+
+        <ScrollReveal delay={0.24}>
+          <div className="mt-10 text-center sm:mt-14">
+            <p className="mb-6 font-mono text-[13px] text-muted sm:text-sm">
+              ¿Ves la diferencia?
+            </p>
+            <a
+              href="#contacto"
+              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+            >
+              Pedir Presupuesto →
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

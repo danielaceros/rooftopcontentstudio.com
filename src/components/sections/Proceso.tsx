@@ -51,7 +51,7 @@ export default function Proceso() {
           </ScrollReveal>
           <ScrollReveal delay={0.08}>
             <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-              Cómo Funciona una Sesión de Grabación de Contenido.
+              De la Idea al Contenido en 4 Pasos.
             </h2>
           </ScrollReveal>
 
@@ -84,6 +84,17 @@ export default function Proceso() {
             ))}
             <div className="border-t border-border" />
           </div>
+
+          <ScrollReveal delay={0.3}>
+            <div className="mt-12 text-center sm:mt-16">
+              <a
+                href="#contacto"
+                className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+              >
+                Empieza por el Paso 1 →
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     );
@@ -102,7 +113,7 @@ export default function Proceso() {
           </ScrollReveal>
           <ScrollReveal delay={0.08}>
             <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-              Cómo Funciona una Sesión de Grabación de Contenido.
+              De la Idea al Contenido en 4 Pasos.
             </h2>
           </ScrollReveal>
         </div>
@@ -193,6 +204,18 @@ export default function Proceso() {
               className="h-screen"
             />
           ))}
+        </div>
+      </div>
+
+      {/* CTA after steps */}
+      <div className="px-5 pb-28 sm:px-8 lg:px-12 lg:pb-32 xl:px-16 2xl:px-20">
+        <div className="mx-auto max-w-7xl text-center">
+          <a
+            href="#contacto"
+            className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+          >
+            Empieza por el Paso 1 →
+          </a>
         </div>
       </div>
 

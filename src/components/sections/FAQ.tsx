@@ -38,6 +38,20 @@ export default function FAQ() {
             </div>
           </ScrollReveal>
         </div>
+
+        <ScrollReveal delay={0.24}>
+          <div className="mt-12 text-center sm:mt-16">
+            <p className="mb-6 text-base text-muted sm:text-[1.05rem]">
+              ¿Algo más? Escríbenos y te respondemos en menos de 1 hora.
+            </p>
+            <a
+              href="#contacto"
+              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+            >
+              Pedir Presupuesto
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

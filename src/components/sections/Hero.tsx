@@ -76,6 +76,15 @@ export default function Hero() {
               </span>
             ))}
           </h1>
+
+          <div className="hero-line-wrapper mt-4 sm:mt-6">
+            <p
+              className="hero-line max-w-[540px] text-[0.95rem] leading-[1.7] text-foreground/60 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
+              style={{ animationDelay: "0.9s" }}
+            >
+              El único estudio rooftop del centro de Madrid. Espacio, filmmaker y equipo profesional — tú solo pon la cara.
+            </p>
+          </div>
         </div>
 
         {/* Form block — solid bg on mobile, transparent on desktop (45%) */}

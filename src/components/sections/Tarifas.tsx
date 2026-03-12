@@ -18,6 +18,7 @@ const OPTIONS = [
       "Acceso a zona de maquillaje",
     ],
     highlighted: false,
+    cta: "Reservar Espacio",
   },
   {
     label: "Más popular",
@@ -34,6 +35,7 @@ const OPTIONS = [
       "Teleprompter",
     ],
     highlighted: true,
+    cta: "Reservar Sesión",
   },
   {
     label: "Todo incluido",
@@ -49,6 +51,7 @@ const OPTIONS = [
       "Entrega en 24-48h",
     ],
     highlighted: false,
+    cta: "Pedir Presupuesto",
   },
 ] as const;
 
@@ -129,7 +132,7 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
                 : "border border-foreground/30 text-foreground hover:border-accent hover:bg-accent hover:text-background"
             }`}
           >
-            Pedir Presupuesto
+            {option.cta}
           </a>
         </div>
       </div>

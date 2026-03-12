@@ -1,5 +1,5 @@
 const MARQUEE_COPY =
-  "El único estudio rooftop en el centro de Madrid · Graba un mes de contenido en una mañana · Desde 50€/h · FIFA, IFEMA y Cinesa ya han grabado aquí · Presupuesto en menos de 1 hora · Sesiones desde 2 horas · ";
+  "El único estudio rooftop en Madrid · FIFA, IFEMA y Cinesa ya han grabado aquí · Desde 50€/h · ";
 
 export default function Marquee() {
   return (

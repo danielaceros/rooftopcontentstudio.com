@@ -48,6 +48,12 @@ export default function QueEs() {
           </h2>
         </ScrollReveal>
 
+        <ScrollReveal delay={0.12}>
+          <p className="mt-6 max-w-2xl text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
+            Vistas al skyline, zona de maquillaje, iluminación profesional y acústica de estudio. Todo montado — tú solo llegas y grabas.
+          </p>
+        </ScrollReveal>
+
         {/* Full-width slideshow */}
         <ScrollReveal delay={0.16}>
           <div className="relative mt-14 aspect-[16/9] w-full overflow-hidden sm:mt-16 lg:mt-20">
