@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#050505] px-5 pb-12 pt-10 sm:px-8 sm:pt-12 md:px-10 lg:px-12 lg:pt-16">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-10 pt-0 md:grid-cols-3 md:gap-12">
+        <div className="grid grid-cols-2 gap-10 pt-0 md:grid-cols-4 md:gap-12">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
               Navegación
@@ -49,6 +49,28 @@ export default function Footer() {
                 className="transition-colors hover:text-foreground"
               >
                 Calle Ronda de Atocha, 16, Madrid
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
+              Equipo
+            </p>
+            <div className="mt-6 flex flex-col gap-2">
+              <p className="font-mono text-[12px] text-foreground/60">
+                Daniel Acero
+              </p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent/70">
+                Founder & Filmmaker
+              </p>
+              <a
+                href="https://www.instagram.com/daniaceros"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[12px] text-foreground/40 transition-colors hover:text-accent"
+              >
+                @daniaceros
               </a>
             </div>
           </div>

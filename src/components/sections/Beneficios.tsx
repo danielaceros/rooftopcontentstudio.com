@@ -13,7 +13,7 @@ export default function Beneficios() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Por Qué Elegirnos.
+            Por Qué Elegir un Estudio de Grabación en Madrid.
           </h2>
         </ScrollReveal>
 

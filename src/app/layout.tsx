@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import { siteMetadata } from "@/lib/metadata";
-import { getProfessionalServiceSchema, getWebSiteSchema } from "@/lib/structured-data";
+import { getProfessionalServiceSchema, getWebSiteSchema, getFAQPageSchema } from "@/lib/structured-data";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 // GrainOverlay removed per user request
 import CustomCursor from "@/components/ui/CustomCursor";
@@ -100,6 +100,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(getWebSiteSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getFAQPageSchema()),
           }}
         />
       </head>

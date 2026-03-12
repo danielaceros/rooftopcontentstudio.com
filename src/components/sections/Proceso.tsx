@@ -51,7 +51,7 @@ export default function Proceso() {
           </ScrollReveal>
           <ScrollReveal delay={0.08}>
             <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-              Cómo Trabajamos.
+              Cómo Funciona una Sesión de Grabación de Contenido.
             </h2>
           </ScrollReveal>
 
@@ -97,7 +97,7 @@ export default function Proceso() {
           </ScrollReveal>
           <ScrollReveal delay={0.08}>
             <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-              Cómo Trabajamos.
+              Cómo Funciona una Sesión de Grabación de Contenido.
             </h2>
           </ScrollReveal>
         </div>

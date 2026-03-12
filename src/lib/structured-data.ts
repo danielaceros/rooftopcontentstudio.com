@@ -1,9 +1,74 @@
 import { SITE_URL, SITE_NAME } from "./constants";
 
+export function getFAQPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Necesito experiencia delante de la cámara?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Nuestro equipo de dirección te guiará en todo momento. Además, contamos con teleprompter para que no tengas que memorizar nada."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué incluye exactamente el servicio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Espacio rooftop, filmmaker profesional, cámaras y equipo técnico, iluminación de estudio, sonido profesional, teleprompter y dirección creativa. Archivos entregados en menos de 24 horas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto contenido puedo grabar en una sesión?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En una media jornada (4 horas) puedes grabar hasta 24 reels o 12 vídeos de YouTube. En una jornada completa, el doble."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo traer a mi propio equipo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Por supuesto. Si tienes un fotógrafo, videógrafo o maquillador de confianza, pueden acompañarte sin coste adicional por el uso del espacio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde está el estudio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Estamos en el centro de Madrid, en Calle Ronda de Atocha 16, una terraza rooftop privada con vistas panorámicas a la ciudad. A 5 minutos del metro Atocha Renfe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo reservo una sesión?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rellena el formulario de contacto o escríbenos a hola@rooftopcontentstudio.es. Te responderemos en menos de 24 horas para agendar tu sesión."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué incluye la edición básica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Todos nuestros planes incluyen edición básica: cortes dinámicos, subtítulos animados y adaptación a formato vertical (9:16) para Instagram Reels y TikTok. Si necesitas algo más avanzado como motion graphics, color grading profesional o transiciones personalizadas, ofrecemos packs de edición premium como add-on."
+        }
+      }
+    ]
+  };
+}
+
 export function getProfessionalServiceSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": ["ProfessionalService", "LocalBusiness"],
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     description:
@@ -37,17 +102,17 @@ export function getProfessionalServiceSchema() {
       itemListElement: [
         {
           "@type": "Offer",
-          name: "Media Jornada",
+          name: "24 Reels Profesionales",
           description:
-            "4 horas de grabación profesional. Hasta 24 reels o 12 vídeos YouTube.",
+            "4 horas de grabación profesional. Hasta 24 reels o 12 vídeos YouTube. Edición básica incluida.",
           price: "600",
           priceCurrency: "EUR",
         },
         {
           "@type": "Offer",
-          name: "Jornada Completa",
+          name: "48 Reels Profesionales",
           description:
-            "8 horas de grabación profesional. Ideal para podcasts y producciones intensivas.",
+            "8 horas de grabación profesional. Hasta 48 reels o 24 vídeos YouTube. Edición básica incluida.",
           price: "1000",
           priceCurrency: "EUR",
         },

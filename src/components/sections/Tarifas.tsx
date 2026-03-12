@@ -1,6 +1,6 @@
 "use client";
 
-import { TARIFAS, TARIFAS_INCLUYE } from "@/lib/constants";
+import { TARIFAS, ADDONS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { use3DTilt } from "@/hooks/use3DTilt";
 
@@ -41,14 +41,26 @@ function TarifaCard({ tarifa, index }: { tarifa: typeof TARIFAS[number]; index: 
           <span className="font-heading text-[clamp(4rem,8vw,5rem)] leading-none text-foreground">
             {tarifa.price}
           </span>
-          <span className="font-mono text-sm text-muted">/ {tarifa.duration}</span>
         </div>
+        <p className="relative z-10 mt-1 font-mono text-[13px] text-accent">
+          {tarifa.pricePerUnit}
+        </p>
 
         <p className="relative z-10 mt-6 max-w-md text-base leading-relaxed text-muted sm:text-[1.05rem]">
           {tarifa.description}
         </p>
 
-        <div className="relative z-10 mt-14">
+        {/* Incluye list */}
+        <ul className="relative z-10 mt-8 flex flex-col gap-3">
+          {tarifa.incluye.map((item) => (
+            <li key={item} className="flex items-start gap-3 text-[0.95rem] leading-snug text-foreground/80">
+              <span className="mt-[7px] h-px w-4 shrink-0 bg-accent" aria-hidden="true" />
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <div className="relative z-10 mt-auto pt-14">
           <a
             href="#contacto"
             data-cursor-text="RESERVAR"
@@ -58,7 +70,7 @@ function TarifaCard({ tarifa, index }: { tarifa: typeof TARIFAS[number]; index: 
                 : "border border-foreground/30 text-foreground hover:border-accent hover:bg-accent hover:text-background"
             }`}
           >
-            Reservar
+            Reservar sesión
           </a>
         </div>
       </div>
@@ -78,13 +90,13 @@ export default function Tarifas() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Elige tu Plan.
+            Invierte en tu Contenido.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-8 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-            Todo incluido. Sin sorpresas. Sin costes ocultos.
+            Todo incluido. Edición básica gratis. Sin costes ocultos.
           </p>
         </ScrollReveal>
 
@@ -94,21 +106,28 @@ export default function Tarifas() {
           ))}
         </div>
 
-        {/* Incluye */}
-        <ScrollReveal delay={0.15}>
-          <div className="mt-16 border-t border-border pt-10">
-            <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
-              Incluye
-            </p>
-            <div className="mt-6 flex flex-wrap gap-x-8 gap-y-4">
-              {TARIFAS_INCLUYE.map((item) => (
-                <span
-                  key={item}
-                  className="flex items-center gap-3 text-base text-foreground sm:text-[1.05rem]"
+        {/* Add-ons */}
+        <ScrollReveal delay={0.18}>
+          <div className="mt-16 border-t border-border pt-10 sm:mt-20">
+            <h3 className="font-heading text-[clamp(1.6rem,4vw,2.5rem)] uppercase leading-[0.95] text-foreground">
+              Potencia tu Contenido
+            </h3>
+            <div className="mt-8 grid gap-6 sm:grid-cols-3 sm:gap-8">
+              {ADDONS.map((addon) => (
+                <div
+                  key={addon.name}
+                  className="border border-border/50 p-6 transition-colors duration-300 hover:border-accent/30 sm:p-8"
                 >
-                  <span className="h-px w-5 bg-accent" aria-hidden="true" />
-                  {item}
-                </span>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
+                    {addon.name}
+                  </p>
+                  <p className="mt-3 text-[0.95rem] leading-relaxed text-muted">
+                    {addon.description}
+                  </p>
+                  <p className="mt-4 font-heading text-[1.5rem] uppercase text-foreground">
+                    {addon.price}
+                  </p>
+                </div>
               ))}
             </div>
           </div>

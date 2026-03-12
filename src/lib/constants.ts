@@ -4,57 +4,48 @@ export const SITE_DESCRIPTION =
   "Estudio de grabación de contenido premium en Madrid. Graba meses de contenido en una sola mañana con un equipo profesional en una localización exclusiva.";
 
 export const NAV_LINKS = [
-  { label: "Estudio", href: "#que-es" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "Proceso", href: "#proceso" },
   { label: "Tarifas", href: "#tarifas" },
   { label: "FAQ", href: "#faq" },
 ] as const;
 
-export const FORMATOS = [
-  "Reels y TikToks",
-  "Vídeos para YouTube",
-  "Podcasts y entrevistas",
-  "Fotos para redes sociales",
-  "Contenido para newsletters",
-  "Vídeos corporativos",
-] as const;
-
 export const BENEFICIOS = [
   {
-    title: "Ahorra Tiempo",
+    title: "El Único Rooftop de Madrid",
     description:
-      "Produce semanas de contenido en una sola sesión. Sin improvisar, sin estrés, sin perder horas editando en casa.",
-    icon: "clock",
-  },
-  {
-    title: "Calidad Profesional",
-    description:
-      "Iluminación de estudio, sonido profesional y un equipo que sabe cómo hacerte brillar ante la cámara.",
-    icon: "sparkles",
-  },
-  {
-    title: "Localización Única",
-    description:
-      "Un rooftop privado en el centro de Madrid con vistas espectaculares. El escenario perfecto para tu marca.",
+      "Vistas panorámicas al skyline de Madrid. Un escenario que ningún otro estudio puede ofrecerte.",
     icon: "location",
   },
   {
-    title: "Todo Incluido",
+    title: "Un Mes de Contenido en 4 Horas",
     description:
-      "Equipo técnico, dirección creativa y teleprompter. Tú solo tienes que presentarte y grabar.",
-    icon: "package",
+      "Sal con 24 reels grabados, organizados y listos para publicar. Sin improvisar, sin volver a casa con nada.",
+    icon: "clock",
   },
   {
-    title: "Contenido Estratégico",
+    title: "Editado y Listo para Publicar",
     description:
-      "No grabamos por grabar. Planificamos cada pieza para que encaje en tu estrategia de contenidos.",
+      "Subtítulos, reencuadre y formato para cada plataforma incluidos. Solo tienes que subir.",
+    icon: "sparkles",
+  },
+  {
+    title: "Dirección Creativa Incluida",
+    description:
+      "No grabamos por grabar. Un filmmaker profesional te guía en cada toma para que el resultado funcione en redes.",
     icon: "strategy",
   },
   {
-    title: "Resultados Inmediatos",
+    title: "Entrega en Menos de 24h",
     description:
-      "Recibe tus grabaciones organizadas y listas para usar en menos de 24 horas.",
+      "Tus archivos organizados por pieza y listos para programar al día siguiente de la sesión.",
     icon: "zap",
+  },
+  {
+    title: "Marcas que ya Confían en Nosotros",
+    description:
+      "FIFA, IFEMA, Cinesa, Brahím Díaz. El mismo nivel de producción, ahora disponible para tu marca.",
+    icon: "package",
   },
 ] as const;
 
@@ -87,31 +78,63 @@ export const PROCESO = [
 
 export const TARIFAS = [
   {
-    name: "Media Jornada",
+    name: "24 Reels Profesionales",
     price: "600€",
-    duration: "4 horas",
+    pricePerUnit: "Solo 25€/reel",
     description:
-      "Graba hasta 24 reels o 12 vídeos de YouTube en 4 horas. Ideal para creadores que quieren acumular semanas de contenido en una mañana.",
+      "Graba hasta 24 reels o 12 vídeos de YouTube en una sola sesión. Contenido listo para publicar.",
+    incluye: [
+      "4 horas de grabación",
+      "Espacio rooftop privado",
+      "Filmmaker profesional",
+      "Cámaras y equipo técnico",
+      "Iluminación de estudio",
+      "Sonido profesional",
+      "Teleprompter",
+      "Dirección creativa",
+      "Edición básica incluida (cortes, subtítulos y formato vertical)",
+      "Entrega en 24-48h",
+    ],
     highlighted: false,
   },
   {
-    name: "Jornada Completa",
+    name: "48 Reels Profesionales",
     price: "1.000€",
-    duration: "8 horas",
+    pricePerUnit: "Solo 21€/reel",
     description:
-      "El doble de tiempo, el doble de contenido. Perfecta para formaciones, podcasts o producciones intensivas de un día completo.",
+      "El doble de contenido para marcas que necesitan escalar. Hasta 48 reels o 24 vídeos de YouTube.",
+    incluye: [
+      "8 horas de grabación",
+      "Espacio rooftop privado",
+      "Filmmaker profesional",
+      "Cámaras y equipo técnico",
+      "Iluminación de estudio",
+      "Sonido profesional",
+      "Teleprompter",
+      "Dirección creativa",
+      "Edición básica incluida (cortes, subtítulos y formato vertical)",
+      "Entrega en 24-48h",
+    ],
     highlighted: true,
   },
 ] as const;
 
-export const TARIFAS_INCLUYE = [
-  "Espacio rooftop",
-  "Filmmaker profesional",
-  "Cámaras y equipo técnico",
-  "Iluminación de estudio",
-  "Sonido profesional",
-  "Teleprompter",
-  "Dirección creativa",
+export const ADDONS = [
+  {
+    name: "Edición Premium",
+    description: "Pack 10 reels con transiciones, motion graphics y color grading",
+    price: "desde 300€",
+  },
+  {
+    name: "Thumbnails YouTube",
+    description: "Pack 10 thumbnails profesionales para tus vídeos",
+    price: "150€",
+  },
+  {
+    name: "Estrategia de Contenido",
+    description: "Calendario editorial + estrategia de publicación personalizada",
+    price: "200€",
+  },
 ] as const;
 
 export const FAQS = [
@@ -145,6 +168,11 @@ export const FAQS = [
     answer:
       "Rellena el formulario de contacto o escríbenos por email. Te responderemos en menos de 24 horas para agendar tu sesión.",
   },
+  {
+    question: "¿Qué incluye la edición básica?",
+    answer:
+      "Todos nuestros planes incluyen edición básica: cortes dinámicos, subtítulos animados y adaptación a formato vertical (9:16) para Instagram Reels y TikTok. Si necesitas algo más avanzado como motion graphics, color grading profesional o transiciones personalizadas, ofrecemos packs de edición premium como add-on.",
+  },
 ] as const;
 
 export const CONTACT_INFO = {
@@ -156,5 +184,3 @@ export const CONTACT_INFO = {
   country: "ES",
 } as const;
 
-export const MARQUEE_TEXT =
-  "CONTENT STUDIO · MADRID · ROOFTOP · GRABACIÓN PROFESIONAL · REELS · PODCAST · VIDEO · ";

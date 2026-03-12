@@ -116,13 +116,13 @@ export default function PortfolioCard({
           <path d="M18 14L30 22L18 30V14Z" fill="white" opacity="0.9" />
         </svg>
       </div>
-      {/* Title */}
+      {/* Title — always visible */}
       {hideOverlayTitle ? null : (
-        <span className="pointer-events-none absolute bottom-4 left-4 right-4 translate-y-2 font-heading text-[16px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/95 transition-all duration-300 line-clamp-2 group-hover:translate-y-0 sm:bottom-5 sm:left-5 sm:right-5 sm:text-[19px]">
+        <span className="pointer-events-none absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent px-4 pb-4 pt-8 font-heading text-[15px] font-semibold uppercase leading-tight tracking-[0.08em] text-white/90 sm:px-5 sm:pb-5 sm:pt-10 sm:text-[18px]">
           {title}
         </span>
       )}
-      <span className="absolute bottom-5 left-5 h-px w-0 bg-amber transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-10" />
+      <span className="absolute bottom-5 left-5 z-10 h-px w-0 bg-amber transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:w-10" />
     </>
   )
 
