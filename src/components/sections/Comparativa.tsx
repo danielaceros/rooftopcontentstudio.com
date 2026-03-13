@@ -17,45 +17,23 @@ export default function Comparativa() {
     isTouchDevice.current = window.matchMedia("(pointer: coarse)").matches;
   }, []);
 
-  // Let both videos autoplay naturally, then gently sync once both are actually playing
+  // Ensure both videos are playing — nudge if autoplay didn't kick in
   useEffect(() => {
     const after = afterVideoRef.current;
     const before = beforeVideoRef.current;
     if (!after || !before) return;
 
-    let rafId: number;
-    let syncing = false;
-
-    // Check if a video is truly playing (not paused and has progressed)
-    const isPlaying = (v: HTMLVideoElement) => !v.paused && v.currentTime > 0;
-
-    const tick = () => {
-      // Wait until BOTH videos are actually playing before any sync
-      if (!isPlaying(before) || !isPlaying(after)) {
-        // Nudge play in case autoplay didn't kick in
-        if (before.paused) before.play().catch(() => {});
-        if (after.paused) after.play().catch(() => {});
-        rafId = requestAnimationFrame(tick);
-        return;
-      }
-
-      // First frame where both are playing — align once
-      if (!syncing) {
-        syncing = true;
-        after.currentTime = before.currentTime;
-      }
-
-      // Gentle drift correction — only when clearly out of sync
-      if (Math.abs(before.currentTime - after.currentTime) > 0.2) {
-        after.currentTime = before.currentTime;
-      }
-
-      rafId = requestAnimationFrame(tick);
+    const nudge = () => {
+      if (before.paused) before.play().catch(() => {});
+      if (after.paused) after.play().catch(() => {});
     };
 
-    rafId = requestAnimationFrame(tick);
+    // Try immediately, then again after a short delay for iOS
+    nudge();
+    const t1 = setTimeout(nudge, 500);
+    const t2 = setTimeout(nudge, 2000);
 
-    return () => cancelAnimationFrame(rafId);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
 
   // Direct DOM mutation — no React re-render, no CSS transition
