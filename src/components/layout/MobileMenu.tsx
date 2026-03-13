@@ -1,16 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NAV_LINKS } from "@/lib/constants";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Lock body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+    }
+    return () => { document.documentElement.style.overflow = ""; };
+  }, [isOpen]);
+
   return (
     <div className="md:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative z-50 flex h-11 w-11 items-center justify-center"
+        className="relative z-[10000] flex h-11 w-11 items-center justify-center"
         aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
         aria-expanded={isOpen}
       >
@@ -34,7 +44,9 @@ export default function MobileMenu() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 z-[55] flex flex-col items-center justify-center overflow-y-auto bg-[#080808] px-6 pb-12 pt-24">
+        <div
+          className="fixed left-0 top-0 z-[9999] flex h-[100dvh] w-full flex-col items-center justify-center overflow-y-auto bg-[#080808] px-6 pb-12 pt-24"
+        >
           <nav className="flex flex-col items-center gap-6 text-center">
             {NAV_LINKS.map((link, i) => (
               <a
