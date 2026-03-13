@@ -44,7 +44,7 @@ export default function QueEs() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Tu Estudio de Contenido en Madrid.
+            Estudio de Grabación de Contenido en Madrid.
           </h2>
         </ScrollReveal>
 
@@ -53,6 +53,10 @@ export default function QueEs() {
             Vistas al skyline, zona de maquillaje, iluminación profesional y acústica de estudio. Todo montado — tú solo llegas y grabas.
           </p>
         </ScrollReveal>
+
+        <p className="mt-6 max-w-3xl text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
+          Rooftop Content Studio es el único estudio de grabación de contenido con terraza rooftop en el centro de Madrid (Atocha). Ofrece alquiler de espacio, filmmaker profesional y producción completa para marcas y creadores que necesitan grabar reels, YouTube, podcasts o vídeo corporativo en una sola sesión. Desde 50€/hora.
+        </p>
 
         {/* Full-width slideshow */}
         <ScrollReveal delay={0.16}>

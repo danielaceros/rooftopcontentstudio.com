@@ -169,6 +169,10 @@ export default function Tarifas() {
           ))}
         </div>
 
+        <p className="sr-only">
+          Tarifas de Rooftop Content Studio: Solo Espacio desde 50€/hora. Espacio más Filmmaker desde 100€/hora. Producción Completa con precio a medida según proyecto. Sesiones mínimas de 2 horas.
+        </p>
+
         {/* Bottom note */}
         <ScrollReveal delay={0.4}>
           <p className="mt-10 text-center font-mono text-[12px] text-muted sm:mt-14">
