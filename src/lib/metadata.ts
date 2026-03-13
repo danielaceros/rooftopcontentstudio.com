@@ -8,7 +8,7 @@ export const siteMetadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Estudio de grabación de contenido en Madrid. Graba hasta 24 reels o 12 vídeos de YouTube en una sola sesión. Equipo profesional, rooftop privado y edición incluida. Reserva tu día.",
+    "Rooftop Content Studio es un estudio de grabación de contenido con terraza rooftop en el centro de Madrid. Alquiler de espacio desde 50€/h, filmmaker profesional y producción completa para marcas y creadores. FIFA, IFEMA y Cinesa ya han grabado aquí.",
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {

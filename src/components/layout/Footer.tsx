@@ -95,7 +95,7 @@ export default function Footer() {
 
         <div className="mt-10 border-t border-foreground/[0.06] pt-6 md:mt-12 md:pt-8">
           <p className="text-center font-mono text-[10px] tracking-[0.1em] text-foreground/20">
-            &copy; {currentYear} Rooftop Content Studio
+            &copy; {currentYear} Rooftop Content Studio · Última actualización: marzo 2026
           </p>
         </div>
       </div>

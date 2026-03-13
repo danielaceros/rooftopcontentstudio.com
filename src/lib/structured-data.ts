@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME } from "./constants";
+import { SITE_URL, SITE_NAME, FAQS } from "./constants";
 
 export function getProfessionalServiceSchema() {
   return {
@@ -163,7 +163,10 @@ export function getWebPageSchema() {
     },
     inLanguage: "es",
     datePublished: "2024-01-01",
-    dateModified: "2026-03-12",
+    dateModified: "2026-03-13",
+    author: {
+      "@id": `${SITE_URL}/#founder`,
+    },
   };
 }
 
@@ -179,6 +182,21 @@ export function getBreadcrumbSchema() {
         item: SITE_URL,
       },
     ],
+  };
+}
+
+export function getFAQPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }
 

@@ -1,0 +1,35 @@
+# Rooftop Content Studio — robots.txt
+# Allow all crawlers including AI bots
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# AI search bots — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block training-only crawlers (not search)
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://www.rooftopcontentstudio.es/sitemap.xml
