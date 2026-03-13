@@ -150,8 +150,14 @@ export default function Tarifas() {
           </p>
         </ScrollReveal>
 
+        <ScrollReveal delay={0.04}>
+          <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.3em] text-accent">
+            Solo 1 sesión por día · Disponibilidad limitada
+          </p>
+        </ScrollReveal>
+
         <ScrollReveal delay={0.08}>
-          <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
+          <h2 className="mt-4 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-6 sm:leading-[0.85]">
             Elige lo que Necesitas. Nada Más.
           </h2>
         </ScrollReveal>
@@ -176,7 +182,7 @@ export default function Tarifas() {
         {/* Bottom note */}
         <ScrollReveal delay={0.4}>
           <p className="mt-10 text-center font-mono text-[12px] text-muted sm:mt-14">
-            Sesiones desde 2 horas · Reels, YouTube, podcast, VSLs, cursos o lo que necesites · Presupuesto sin compromiso
+            Sesiones desde 2 horas · Reels, YouTube, podcast, VSLs, cursos o lo que necesites · Presupuesto sin compromiso · Máximo 3-4 sesiones por semana
           </p>
         </ScrollReveal>
       </div>
