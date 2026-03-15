@@ -43,10 +43,12 @@ export default function QueEs() {
   const [active, setActive] = useState(0);
   const [prevActive, setPrevActive] = useState(0);
   const [animKey, setAnimKey] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval>>(undefined);
   const hoveredRef = useRef(false);
   const touchStartRef = useRef(0);
   const dirRef = useRef<"fwd" | "bwd">("fwd");
+  const slideshowRef = useRef<HTMLDivElement>(null);
 
   const startTimer = useCallback(() => {
     clearInterval(timerRef.current);
@@ -115,6 +117,22 @@ export default function QueEs() {
     },
     [active, goTo],
   );
+
+  const toggleFullscreen = useCallback(() => {
+    const el = slideshowRef.current;
+    if (!el) return;
+    if (document.fullscreenElement) {
+      document.exitFullscreen().catch(() => {});
+    } else {
+      el.requestFullscreen().catch(() => {});
+    }
+  }, []);
+
+  useEffect(() => {
+    const onChange = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", onChange);
+    return () => document.removeEventListener("fullscreenchange", onChange);
+  }, []);
 
   const pad = (n: number) => String(n).padStart(2, "0");
 
@@ -213,8 +231,9 @@ export default function QueEs() {
         {/* Cinematic slideshow */}
         <ScrollReveal delay={0.16}>
           <div
-            className="group relative mt-14 aspect-[16/9] w-full overflow-hidden md:aspect-[16/7] sm:mt-16 lg:mt-20"
-            style={{ borderRadius: 2, backgroundColor: "#080808" }}
+            ref={slideshowRef}
+            className={`group relative w-full overflow-hidden ${isFullscreen ? "flex items-center justify-center" : "mt-14 aspect-[16/9] md:aspect-[16/7] sm:mt-16 lg:mt-20"}`}
+            style={{ borderRadius: isFullscreen ? 0 : 2, backgroundColor: "#080808", height: isFullscreen ? "100vh" : undefined }}
             onMouseEnter={() => { hoveredRef.current = true; }}
             onMouseLeave={() => { hoveredRef.current = false; }}
             onTouchStart={onTouchStart}
@@ -326,6 +345,31 @@ export default function QueEs() {
               }}
             >
               &#8250;
+            </button>
+
+            {/* Fullscreen toggle */}
+            <button
+              onClick={toggleFullscreen}
+              aria-label={isFullscreen ? "Salir de pantalla completa" : "Pantalla completa"}
+              className={`absolute top-3 right-3 z-[3] flex items-center justify-center transition-opacity duration-300 ${isFullscreen ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: "50%",
+                background: "rgba(8,8,8,0.4)",
+                border: "1px solid rgba(255,255,255,0.2)",
+                color: "rgba(255,255,255,0.8)",
+              }}
+            >
+              {isFullscreen ? (
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                  <path d="M9 1v4h4M5 13V9H1M9 5L13 1M5 9L1 13" />
+                </svg>
+              ) : (
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                  <path d="M1 5V1h4M13 9v4h-4M5 1L1 5M9 13l4-4" />
+                </svg>
+              )}
             </button>
 
             {/* Progress bars — Instagram Stories style */}
