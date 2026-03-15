@@ -50,12 +50,16 @@ export default function QueEs() {
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-2xl text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-            Vistas al skyline, zona de maquillaje, iluminación profesional y acústica de estudio. Todo montado — tú solo llegas y grabas.
+            Vistas al skyline, iluminación profesional y acústica de estudio. Todo montado — tú solo grabas.
           </p>
         </ScrollReveal>
 
+        <h2 className="mt-10 font-heading text-[clamp(1.6rem,5vw,3rem)] uppercase leading-[0.95] text-foreground sm:mt-12">
+          ¿Qué es Rooftop Content Studio?
+        </h2>
+
         <p className="mt-6 max-w-3xl text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-          Rooftop Content Studio es el único estudio de grabación de contenido con terraza rooftop en el centro de Madrid (Atocha). Ofrece alquiler de espacio, filmmaker profesional y producción completa para marcas y creadores que necesitan grabar reels, YouTube, podcasts o vídeo corporativo en una sola sesión. Desde 50€/hora.
+          Rooftop Content Studio es un estudio de grabación de contenido audiovisual en el centro de Madrid, con terraza rooftop y vistas panorámicas al skyline. Fundado por Daniel Acero, filmmaker con más de 6 años de experiencia. Tres modalidades: alquiler del espacio, espacio con filmmaker, o producción completa con edición. Solo 1 sesión por día — disponibilidad limitada.
         </p>
 
         {/* Full-width slideshow */}

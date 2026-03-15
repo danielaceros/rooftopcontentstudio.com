@@ -14,7 +14,7 @@ export const BENEFICIOS = [
   {
     title: "Todo tu Contenido en una Mañana",
     description:
-      "Llegas, grabas y te vas con semanas de contenido listo. Sin montar, sin desmontar, sin perder tiempo. Todo preparado para ti.",
+      "Llegas, grabas y te vas con semanas de contenido listo. Todo preparado para ti.",
     icon: "clock",
   },
   {
@@ -26,7 +26,7 @@ export const BENEFICIOS = [
   {
     title: "Graba lo que Quieras",
     description:
-      "Reels, YouTube, podcast, VSLs, cursos, vídeo corporativo… el espacio y el equipo se adaptan a cualquier formato.",
+      "El espacio y el equipo se adaptan a cualquier formato audiovisual.",
     icon: "sparkles",
   },
   {
@@ -38,13 +38,13 @@ export const BENEFICIOS = [
   {
     title: "Entrega en 24-48h",
     description:
-      "Tus archivos organizados por pieza y listos para programar en un máximo de 48 horas tras la sesión.",
+      "Archivos organizados y listos para publicar en un máximo de 48 horas.",
     icon: "zap",
   },
   {
     title: "Marcas que ya Confían en Nosotros",
     description:
-      "Hemos grabado para FIFA, IFEMA, Cinesa, la Cámara de Comercio de Madrid y Brahím Díaz. Mismo equipo, mismo estudio, mismo resultado.",
+      "FIFA, IFEMA, Cinesa y la Cámara de Comercio de Madrid. Mismo equipo, mismo resultado.",
     icon: "package",
   },
 ] as const;
@@ -54,25 +54,25 @@ export const PROCESO = [
     step: 1,
     title: "Cuéntanos tu Proyecto",
     description:
-      "Rellena el formulario o escríbenos. Nos cuentas qué quieres grabar y te enviamos un presupuesto a medida en menos de 1 hora.",
+      "Escríbenos o rellena el formulario. Te enviamos presupuesto a medida en menos de 1 hora.",
   },
   {
     step: 2,
     title: "Montamos tu Sesión",
     description:
-      "Reservamos tu fecha y preparamos todo lo que necesites: solo el espacio, con filmmaker o producción completa. Tú eliges, nosotros nos encargamos.",
+      "Reservamos fecha y lo preparamos todo. Tú eliges el nivel de servicio.",
   },
   {
     step: 3,
     title: "Llegas y Grabas",
     description:
-      "Todo está listo cuando llegas. Sin montar, sin desmontar, sin perder tiempo. Solo tienes que ponerte delante de la cámara y grabar todo tu contenido.",
+      "Todo está listo cuando llegas. Sin montar, sin desmontar, sin perder tiempo. Solo ponte delante de la cámara.",
   },
   {
     step: 4,
     title: "Te Llevas tu Contenido",
     description:
-      "Sales con todo tu material grabado. Si has contratado edición, te lo entregamos organizado y listo para publicar en 24-48h.",
+      "Sales con todo tu material. Si incluye edición, listo para publicar en 24-48h.",
   },
 ] as const;
 
@@ -85,32 +85,32 @@ export const FAQS = [
   {
     question: "¿Qué incluye exactamente el servicio?",
     answer:
-      "Depende de lo que necesites. Puedes alquilar solo el espacio rooftop, añadir un filmmaker profesional con dirección creativa, o contratar la producción completa con equipo técnico y edición. Cuéntanos tu proyecto y te preparamos un presupuesto a medida.",
+      "Depende de lo que necesites: solo el espacio, espacio con filmmaker, o producción completa con edición. Cuéntanos tu proyecto y te preparamos un presupuesto.",
   },
   {
     question: "¿Qué puedo grabar?",
     answer:
-      "Lo que necesites: reels, vídeos de YouTube, podcast, VSLs, cursos, vídeo corporativo o cualquier formato audiovisual. El espacio y el equipo se adaptan completamente a tu proyecto.",
+      "Reels, YouTube, podcast, VSLs, cursos, vídeo corporativo… cualquier formato audiovisual. El equipo se adapta a tu proyecto.",
   },
   {
     question: "¿Puedo traer a mi propio equipo?",
     answer:
-      "Por supuesto. Puedes alquilar solo el espacio y traer tu propio filmmaker y equipo. También ofrecemos filmmaker profesional y equipo técnico completo si lo necesitas.",
+      "Por supuesto. Puedes alquilar solo el espacio y traer tu propio equipo.",
   },
   {
     question: "¿Dónde está el estudio?",
     answer:
-      "Estamos en Calle Ronda de Atocha, 16, Madrid — a 5 minutos a pie del Metro Atocha Renfe. Te enviaremos los detalles exactos de acceso al confirmar tu reserva.",
+      "Calle Ronda de Atocha, 16, Madrid — a 5 minutos del Metro Atocha Renfe.",
   },
   {
     question: "¿Cómo reservo una sesión?",
     answer:
-      "Rellena el formulario de contacto o escríbenos por email. Te respondemos en menos de 1 hora con presupuesto y fecha disponible.",
+      "Rellena el formulario o escríbenos. Te respondemos en menos de 1 hora.",
   },
   {
     question: "¿Ofrecéis edición de vídeo?",
     answer:
-      "Sí, como parte de la producción completa podemos encargarnos de la edición: cortes, subtítulos, formato vertical, motion graphics… lo que necesite tu proyecto. Es opcional — si ya tienes editor, perfecto.",
+      "Sí. Cortes, subtítulos, formato por plataforma, motion graphics… lo que necesite tu proyecto. Es opcional.",
   },
 ] as const;
 

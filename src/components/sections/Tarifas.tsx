@@ -182,7 +182,7 @@ export default function Tarifas() {
         {/* Bottom note */}
         <ScrollReveal delay={0.4}>
           <p className="mt-10 text-center font-mono text-[12px] text-muted sm:mt-14">
-            Sesiones desde 2 horas · Reels, YouTube, podcast, VSLs, cursos o lo que necesites · Presupuesto sin compromiso · Máximo 3-4 sesiones por semana
+            Sesiones desde 2 horas · Reels, YouTube, podcast, VSLs, cursos · Presupuesto sin compromiso
           </p>
         </ScrollReveal>
       </div>
