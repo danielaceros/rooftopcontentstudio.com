@@ -121,6 +121,13 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
           ))}
         </ul>
 
+        {/* Trust text for Producción Completa */}
+        {option.name === "Producción Completa" && (
+          <p className="relative z-10 mt-6 text-[13px] leading-relaxed text-muted">
+            Cuéntanos tu proyecto — presupuesto personalizado en menos de 1 hora, sin compromiso.
+          </p>
+        )}
+
         {/* CTA */}
         <div className="relative z-10 mt-auto pt-10">
           <a

@@ -1,22 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function FlashOffer() {
   const [dismissed, setDismissed] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  if (dismissed) return null;
+  useEffect(() => {
+    if (sessionStorage.getItem("rcs_flash_dismissed")) {
+      setDismissed(true);
+    }
+    setMounted(true);
+  }, []);
+
+  if (!mounted || dismissed) return null;
 
   const handleDismiss = () => {
     setDismissed(true);
     sessionStorage.setItem("rcs_flash_dismissed", "1");
   };
-
-  // Check sessionStorage after mount (SSR-safe via useState initializer won't work, but
-  // the banner flash is acceptable since it's tiny)
-  if (typeof window !== "undefined" && sessionStorage.getItem("rcs_flash_dismissed")) {
-    return null;
-  }
 
   return (
     <div className="relative z-[60] flex w-full items-center justify-center gap-3 bg-accent px-4 py-2 sm:gap-4 sm:px-8">
