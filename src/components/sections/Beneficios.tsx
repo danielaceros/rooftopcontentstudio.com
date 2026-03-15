@@ -13,7 +13,7 @@ export default function Beneficios() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Lo que Hace Diferente a Este Estudio.
+            Por Qué Aquí y no en un Plató.
           </h2>
         </ScrollReveal>
 

@@ -47,21 +47,32 @@ export default function LoadingScreen() {
     if (!windowLoaded)
       window.addEventListener("load", onLoad, { once: true });
 
+    // Hard timeout: never block user for more than 3 seconds
+    const hardTimeout = setTimeout(() => {
+      windowLoaded = true;
+      ghlReady = true;
+      tryExit();
+    }, 3000);
+
     if (isMobile && !ghlReady) {
       window.addEventListener("ghlReady", onGhl, { once: true });
       const fallback = setTimeout(() => {
         ghlReady = true;
         tryExit();
-      }, 4000);
+      }, 2500);
       return () => {
         window.removeEventListener("load", onLoad);
         window.removeEventListener("ghlReady", onGhl);
         clearTimeout(fallback);
+        clearTimeout(hardTimeout);
       };
     }
 
     tryExit();
-    return () => window.removeEventListener("load", onLoad);
+    return () => {
+      window.removeEventListener("load", onLoad);
+      clearTimeout(hardTimeout);
+    };
   }, []);
 
   /* ── Progress bar animation (HTML-driven, 2s linear) ── */

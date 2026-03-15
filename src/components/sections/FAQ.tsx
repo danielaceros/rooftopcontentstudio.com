@@ -1,13 +1,8 @@
-"use client";
-
-import { useState } from "react";
 import { FAQS } from "@/lib/constants";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import Accordion from "@/components/ui/Accordion";
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
   return (
     <section id="faq" className="px-5 py-14 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-5xl">
@@ -26,13 +21,11 @@ export default function FAQ() {
         <div className="mt-14 sm:mt-20">
           <ScrollReveal delay={0.16}>
             <div className="border-t border-foreground/10">
-              {FAQS.map((faq, i) => (
+              {FAQS.map((faq) => (
                 <Accordion
                   key={faq.question}
                   question={faq.question}
                   answer={faq.answer}
-                  isOpen={openIndex === i}
-                  onToggle={() => setOpenIndex(openIndex === i ? null : i)}
                 />
               ))}
             </div>

@@ -10,9 +10,9 @@ const OPTIONS = [
     price: "50",
     unit: "/hora",
     description:
-      "El rooftop es tuyo. Trae tu propio equipo y filmmaker — tú controlas la sesión.",
+      "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo y graba a tu manera.",
     includes: [
-      "Rooftop privado con vistas a Madrid",
+      "Ático privado con vistas a Madrid",
       "Iluminación de estudio",
       "Conexión Wi-Fi de alta velocidad",
       "Acceso a zona de maquillaje",
@@ -26,7 +26,7 @@ const OPTIONS = [
     price: "100",
     unit: "/hora",
     description:
-      "Un filmmaker profesional dirige tu sesión para que solo tengas que ponerte delante de la cámara.",
+      "Un filmmaker profesional dirige tu sesión en un espacio que no parece un plató. Solo preocúpate de estar delante de la cámara.",
     includes: [
       "Todo lo del plan Espacio",
       "Filmmaker con dirección creativa",
@@ -43,7 +43,7 @@ const OPTIONS = [
     price: null,
     unit: null,
     description:
-      "Nos encargamos de todo: grabación, edición y entrega. Tú solo tienes que aparecer.",
+      "Grabación, edición y entrega. Vienes, grabas, y en 48h tienes contenido listo para publicar que parece orgánico y suena profesional.",
     includes: [
       "Todo lo del plan Espacio + Filmmaker",
       "Edición profesional a medida",

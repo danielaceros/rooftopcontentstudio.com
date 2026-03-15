@@ -8,7 +8,7 @@ export const siteMetadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Rooftop Content Studio es un estudio de grabación de contenido con terraza rooftop en el centro de Madrid. Alquiler de espacio desde 50€/h, filmmaker profesional y producción completa para marcas y creadores. FIFA, IFEMA y Cinesa ya han grabado aquí.",
+    "Estudio de grabación en un ático real en Madrid. Terraza con skyline, luz natural y equipo profesional. Contenido orgánico desde 50€/h.",
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {

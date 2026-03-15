@@ -21,13 +21,13 @@ export default function CTA() {
 
               <ScrollReveal delay={0.08}>
                 <h2 className="mt-6 font-heading text-[clamp(2.8rem,6vw,5.5rem)] uppercase leading-[0.85] text-foreground sm:mt-8">
-                  Tu Próxima Sesión Puede Ser Esta Semana.
+                  Tu Próximo Contenido no Tiene que Parecer un Anuncio.
                 </h2>
               </ScrollReveal>
 
               <ScrollReveal delay={0.16}>
                 <p className="mt-6 max-w-[400px] text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-                  Cuéntanos qué necesitas. En menos de 1 hora tienes presupuesto y fecha disponible.
+                  Cuéntanos qué necesitas y te preparamos sesión esta semana. Presupuesto en menos de 1 hora.
                 </p>
               </ScrollReveal>
 

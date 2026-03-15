@@ -9,9 +9,8 @@ import ContactFormEmbed from "./ContactFormEmbed";
 const LOGOS_SRC = "/optimized/logos-banner.png";
 
 const LINES = [
-  { text: "Graba Meses", desktopOnly: false },
-  { text: "de Contenido", desktopOnly: false },
-  { text: "en Una Mañana", desktopOnly: false },
+  { text: "Calidad de Estudio.", desktopOnly: false },
+  { text: "Resultado Orgánico.", desktopOnly: false },
 ];
 
 export default function Hero() {
@@ -46,7 +45,7 @@ export default function Hero() {
         <VideoBackground />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center text-center lg:min-h-screen lg:flex-row lg:items-end lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16 2xl:px-20">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center text-center lg:min-h-screen lg:flex-row lg:items-center lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16 2xl:px-20">
         {/* Headline — overlaps video bottom on mobile, left column on desktop (55%) */}
         <div
           ref={headlineRef}
@@ -64,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Cinematic line-by-line reveal */}
-          <h1 className="max-w-[1100px] font-heading text-[clamp(1.9rem,9.5vw,10rem)] uppercase leading-[0.86] tracking-tight text-foreground [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,13.2vw,10rem)] sm:leading-[0.85]">
+          <h1 className="max-w-[1100px] font-heading text-[clamp(1.9rem,9.5vw,6.5rem)] uppercase leading-[0.86] tracking-tight text-foreground [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,7vw,6.5rem)] sm:leading-[0.85]">
             {LINES.map((line, i) => (
               <span key={i} className="hero-line-wrapper inline-block w-full">
                 <span
@@ -83,7 +82,7 @@ export default function Hero() {
               className="hero-line max-w-[540px] text-[0.95rem] leading-[1.7] text-foreground/60 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
               style={{ animationDelay: "0.9s" }}
             >
-              El único estudio rooftop del centro de Madrid. Espacio, filmmaker y equipo profesional — tú solo pon la cara.
+              Un ático real en el centro de Madrid con terraza, luz natural y equipo profesional. Contenido que parece grabado en el mejor sitio de la ciudad.
             </p>
           </div>
         </div>

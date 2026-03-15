@@ -1,5 +1,5 @@
 const MARQUEE_COPY =
-  "El único estudio rooftop en Madrid · FIFA, IFEMA y Cinesa ya han grabado aquí · Desde 50€/h · ";
+  "Un ático real en el centro de Madrid · FIFA, IFEMA y Cinesa ya han grabado aquí · Desde 50€/h · ";
 
 export default function Marquee() {
   return (

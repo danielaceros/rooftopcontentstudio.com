@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Bebas_Neue, DM_Sans, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import { siteMetadata } from "@/lib/metadata";
-import { getProfessionalServiceSchema, getWebSiteSchema, getWebPageSchema, getBreadcrumbSchema, getFAQPageSchema, getVideoSchema } from "@/lib/structured-data";
-import LoadingScreen from "@/components/ui/LoadingScreen";
+import { getProfessionalServiceSchema, getWebSiteSchema, getWebPageSchema, getBreadcrumbSchema, getFAQPageSchema, getHowToSchema, getVideoSchema } from "@/lib/structured-data";
+import LoadingScreenWrapper from "@/components/ui/LoadingScreenWrapper";
 // GrainOverlay removed per user request
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/ui/SmoothScroll";
@@ -82,7 +82,7 @@ export default function RootLayout({
         </Script>
         <Script
           src="https://link.msgsndr.com/js/form_embed.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <noscript>
           <img
@@ -126,12 +126,18 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getHowToSchema()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
             __html: JSON.stringify(getVideoSchema()),
           }}
         />
       </head>
       <body>
-        <LoadingScreen />
+        <LoadingScreenWrapper />
         <CustomCursor />
         <SmoothScroll />
         {children}

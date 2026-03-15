@@ -58,7 +58,22 @@ export function getProfessionalServiceSchema() {
       "@id": `${SITE_URL}/#founder`,
       name: "Daniel Acero",
       jobTitle: "Founder & Creative Director",
-      sameAs: ["https://www.instagram.com/daniaceros"],
+      url: "https://www.rooftopcontentstudio.es",
+      sameAs: [
+        "https://www.instagram.com/daniaceros",
+        "https://www.instagram.com/rooftopcontentstudio",
+        "https://www.daniaceros.com",
+      ],
+      knowsAbout: [
+        "Producción audiovisual",
+        "Filmmaking",
+        "Contenido para redes sociales",
+        "Videografía profesional",
+        "Dirección creativa",
+        "Producción de contenido para marcas",
+        "Grabación de podcast",
+        "Edición de vídeo",
+      ],
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -75,7 +90,14 @@ export function getProfessionalServiceSchema() {
               name: "Alquiler de espacio rooftop",
               description:
                 "Espacio rooftop privado con vistas a Madrid. Trae tu propio equipo y filmmaker. Sesiones desde 2 horas.",
+              price: "50",
               priceCurrency: "EUR",
+              priceSpecification: {
+                "@type": "UnitPriceSpecification",
+                price: "50",
+                priceCurrency: "EUR",
+                unitText: "hora",
+              },
               availability: "https://schema.org/InStock",
               url: `${SITE_URL}/#tarifas`,
             },
@@ -92,7 +114,14 @@ export function getProfessionalServiceSchema() {
               name: "Espacio + Filmmaker",
               description:
                 "Espacio rooftop con filmmaker profesional y dirección creativa incluida.",
+              price: "100",
               priceCurrency: "EUR",
+              priceSpecification: {
+                "@type": "UnitPriceSpecification",
+                price: "100",
+                priceCurrency: "EUR",
+                unitText: "hora",
+              },
               availability: "https://schema.org/InStock",
               url: `${SITE_URL}/#tarifas`,
             },
@@ -108,8 +137,11 @@ export function getProfessionalServiceSchema() {
               "@type": "Offer",
               name: "Producción completa",
               description:
-                "Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral a medida.",
-              priceCurrency: "EUR",
+                "Precio a medida según proyecto. Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral.",
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                priceCurrency: "EUR",
+              },
               availability: "https://schema.org/InStock",
               url: `${SITE_URL}/#tarifas`,
             },
@@ -162,8 +194,8 @@ export function getWebPageSchema() {
       "@id": `${SITE_URL}/#business`,
     },
     inLanguage: "es",
-    datePublished: "2024-01-01",
-    dateModified: "2026-03-13",
+    datePublished: "2025-09-01",
+    dateModified: "2026-03-15",
     author: {
       "@id": `${SITE_URL}/#founder`,
     },
@@ -200,6 +232,42 @@ export function getFAQPageSchema() {
   };
 }
 
+export function getHowToSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Cómo grabar contenido profesional en Rooftop Content Studio",
+    description:
+      "Proceso de grabación de contenido audiovisual en 4 pasos en el estudio rooftop de Madrid.",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Cuéntanos tu proyecto",
+        text: "Escríbenos o rellena el formulario. Te enviamos presupuesto a medida en menos de 1 hora.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Preparamos tu sesión",
+        text: "Reservamos fecha y preparamos el ático para que el resultado parezca natural, no producido. Tú eliges el nivel de servicio.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Llegas y grabas",
+        text: "Todo está listo cuando llegas. El espacio es cómodo y no intimida — es un ático, no un plató. Solo ponte delante de la cámara.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Te llevas tu contenido",
+        text: "Sales con contenido que parece orgánico y suena profesional. Si incluye edición, listo para publicar en 24-48 horas.",
+      },
+    ],
+  };
+}
+
 export function getVideoSchema() {
   return {
     "@context": "https://schema.org",
@@ -209,6 +277,7 @@ export function getVideoSchema() {
       "Portfolio de producciones audiovisuales realizadas en Rooftop Content Studio, estudio de grabación premium en Madrid.",
     thumbnailUrl: `${SITE_URL}/og-image.jpg`,
     uploadDate: "2024-01-01",
+    duration: "PT30S",
     contentUrl: `${SITE_URL}/video/corr.mp4`,
     publisher: {
       "@id": `${SITE_URL}/#business`,

@@ -17,23 +17,37 @@ export default function Comparativa() {
     isTouchDevice.current = window.matchMedia("(pointer: coarse)").matches;
   }, []);
 
-  // Ensure both videos are playing — nudge if autoplay didn't kick in
+  // Lazy-load videos when section enters viewport, then nudge autoplay
   useEffect(() => {
+    const container = containerRef.current;
     const after = afterVideoRef.current;
     const before = beforeVideoRef.current;
-    if (!after || !before) return;
+    if (!container || !after || !before) return;
 
     const nudge = () => {
       if (before.paused) before.play().catch(() => {});
       if (after.paused) after.play().catch(() => {});
     };
 
-    // Try immediately, then again after a short delay for iOS
-    nudge();
-    const t1 = setTimeout(nudge, 500);
-    const t2 = setTimeout(nudge, 2000);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          before.preload = "auto";
+          after.preload = "auto";
+          before.load();
+          after.load();
+          nudge();
+          const t1 = setTimeout(nudge, 500);
+          const t2 = setTimeout(nudge, 2000);
+          observer.disconnect();
+          return () => { clearTimeout(t1); clearTimeout(t2); };
+        }
+      },
+      { rootMargin: "200px" }
+    );
+    observer.observe(container);
 
-    return () => { clearTimeout(t1); clearTimeout(t2); };
+    return () => observer.disconnect();
   }, []);
 
   // Direct DOM mutation — no React re-render, no CSS transition
@@ -97,7 +111,7 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Grabarte Tú vs. Grabarlo con Nosotros.
+            Contenido de Plató vs. Contenido Orgánico.
           </h2>
         </ScrollReveal>
 
@@ -120,7 +134,7 @@ export default function Comparativa() {
               muted
               loop
               playsInline
-              preload="auto"
+              preload="none"
             >
               <source src="/video/corr.webm" type="video/webm" />
               <source src="/video/corr.mp4" type="video/mp4" />
@@ -139,7 +153,7 @@ export default function Comparativa() {
                 muted
                 loop
                 playsInline
-                preload="auto"
+                preload="none"
               >
                 <source src="/video/ncorr.webm" type="video/webm" />
                 <source src="/video/ncorr.mp4" type="video/mp4" />
@@ -148,10 +162,10 @@ export default function Comparativa() {
 
             {/* Labels */}
             <div className="pointer-events-none absolute left-4 top-4 z-20 bg-background/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-foreground backdrop-blur-sm sm:left-5 sm:top-5">
-              Sin estudio
+              Plató genérico
             </div>
             <div className="pointer-events-none absolute right-4 top-4 z-20 bg-accent/90 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-background backdrop-blur-sm sm:right-5 sm:top-5">
-              Con nosotros
+              Rooftop Content Studio
             </div>
 
             {/* Divider line */}
@@ -189,7 +203,7 @@ export default function Comparativa() {
         <ScrollReveal delay={0.24}>
           <div className="mt-10 text-center sm:mt-14">
             <p className="mb-6 font-mono text-[13px] text-muted sm:text-sm">
-              ¿Ves la diferencia?
+              ¿Cuál parece un anuncio?
             </p>
             <a
               href="#contacto"
