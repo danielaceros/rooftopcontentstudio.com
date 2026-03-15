@@ -41,7 +41,7 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden" aria-label="Hero">
       {/* Video — contained block on mobile, absolute fullscreen on desktop */}
-      <div className="relative h-[140px] overflow-hidden sm:h-[180px] lg:absolute lg:inset-0 lg:h-auto">
+      <div className="relative h-[200px] overflow-hidden sm:h-[240px] lg:absolute lg:inset-0 lg:h-auto">
         <VideoBackground />
       </div>
 

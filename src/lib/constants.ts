@@ -4,6 +4,7 @@ export const SITE_DESCRIPTION =
   "Graba un mes de contenido en una mañana. Rooftop privado en el centro de Madrid con vistas al skyline. Desde 50€/h. FIFA, IFEMA y Cinesa ya han grabado aquí.";
 
 export const NAV_LINKS = [
+  { label: "Espacio", href: "#estudio" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Proceso", href: "#proceso" },
   { label: "Opciones", href: "#tarifas" },
@@ -18,16 +19,10 @@ export const BENEFICIOS = [
     icon: "clock",
   },
   {
-    title: "Madrid de Fondo",
+    title: "Terraza, Skyline y Luz Natural",
     description:
-      "Terraza con vistas al skyline. Ningún ciclorama puede competir con esto.",
+      "Vistas panorámicas a Madrid y luz real que entra por las ventanas. Ningún ciclorama ni foco puede replicar esto.",
     icon: "location",
-  },
-  {
-    title: "Luz Natural Real",
-    description:
-      "La mejor iluminación no sale de un foco. Sale de una ventana. Tu contenido se ve auténtico porque la luz lo es.",
-    icon: "sparkles",
   },
   {
     title: "Un Espacio que no Intimida",
@@ -41,12 +36,6 @@ export const BENEFICIOS = [
       "Llegas, grabas reels, podcast, YouTube, lo que necesites, y te vas con semanas de contenido. Sin perder el día.",
     icon: "zap",
   },
-  {
-    title: "Marcas que ya Graban Aquí",
-    description:
-      "FIFA, IFEMA, Cinesa y la Cámara de Comercio de Madrid. Mismo equipo, mismo espacio, mismo resultado.",
-    icon: "package",
-  },
 ] as const;
 
 export const PROCESO = [
@@ -54,25 +43,25 @@ export const PROCESO = [
     step: 1,
     title: "Cuéntanos qué Necesitas",
     description:
-      "Escríbenos o rellena el formulario. Te enviamos presupuesto a medida en menos de 1 hora.",
+      "Escríbenos y tienes presupuesto en menos de 1 hora.",
   },
   {
     step: 2,
     title: "Preparamos tu Sesión",
     description:
-      "Reservamos fecha y preparamos el espacio para que el resultado parezca natural, no producido. Tú eliges el nivel de servicio.",
+      "Reservamos fecha y lo dejamos todo listo para que solo tengas que venir.",
   },
   {
     step: 3,
     title: "Llegas y Grabas",
     description:
-      "El ático está listo cuando llegas. Un espacio cómodo, sin intimidar, donde todo fluye desde el minuto uno.",
+      "Todo montado. Sin esperas, sin montar, sin desmontar. Solo graba.",
   },
   {
     step: 4,
     title: "Te Llevas tu Contenido",
     description:
-      "Sales con contenido que parece orgánico y suena profesional. Si incluye edición, listo para publicar en 24-48h.",
+      "Material listo. Si incluye edición, entregado en 24-48h.",
   },
 ] as const;
 

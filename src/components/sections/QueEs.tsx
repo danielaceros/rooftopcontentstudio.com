@@ -11,31 +11,29 @@ const IMAGES: {
   caption: string;
 }[] = [
   // — Terraza / Exterior —
-  { src: "/optimized/studio-3.webp", alt: "Vista panorámica del skyline de Madrid desde la terraza", label: "01 — Terraza", caption: "Skyline de Madrid como fondo" },
-  { src: "/optimized/studio/dsc09596.webp", alt: "Vistas al skyline de Madrid desde la terraza del ático", label: "02 — Terraza", caption: "Tejados de Madrid a tus pies" },
-  { src: "/optimized/studio-4.webp", alt: "Cámara en la terraza rooftop con Madrid de fondo", label: "03 — Terraza", caption: "Set exterior con vistas" },
-  { src: "/optimized/studio/dsc09925.webp", alt: "Cámara en la terraza rooftop con vistas a los tejados de Madrid", label: "04 — Terraza", caption: "Grabación al aire libre en rooftop" },
+  { src: "/optimized/studio-3.webp", alt: "Vista panorámica del skyline de Madrid desde la terraza", label: "01 — Terraza", caption: "Vistas desde la terraza" },
+  { src: "/optimized/studio/dsc09925.webp", alt: "Cámara en la terraza rooftop con vistas a los tejados de Madrid", label: "02 — Terraza", caption: "Cámara lista en la terraza" },
   // — Salón / Entrevistas —
-  { src: "/optimized/studio-1.webp", alt: "Setup de entrevista con sofá blanco y cámara profesional", label: "05 — Salón", caption: "Setup de entrevista profesional" },
-  { src: "/optimized/studio/dsc09680.webp", alt: "Salón del estudio con softboxes, cámara y sofá blanco", label: "06 — Salón", caption: "Iluminación y cámara lista" },
-  { src: "/optimized/studio/dsc09694.webp", alt: "Setup de iluminación con softbox y cámara en el salón", label: "07 — Salón", caption: "Softbox y cámara en posición" },
-  { src: "/optimized/studio/dsc09702.webp", alt: "Salón con sofá, softbox y mesa de trabajo con portátil", label: "08 — Salón", caption: "Zona de trabajo y grabación" },
-  { src: "/optimized/studio/dsc09710.webp", alt: "Zona de entrevista con sofá beige y equipo de iluminación", label: "09 — Salón", caption: "Sofá de entrevistas con equipo" },
+  { src: "/optimized/studio-1.webp", alt: "Setup de entrevista con sofá blanco y cámara profesional", label: "03 — Salón", caption: "Set de entrevista listo" },
+  { src: "/optimized/studio/dsc09680.webp", alt: "Salón del estudio con softboxes, cámara y sofá blanco", label: "04 — Salón", caption: "Salón con luz natural y equipo" },
+  { src: "/optimized/studio/dsc09694.webp", alt: "Setup de iluminación con softbox y cámara en el salón", label: "05 — Salón", caption: "Reflector y cámara en el salón" },
+  { src: "/optimized/studio/dsc09702.webp", alt: "Salón con sofá, softbox y mesa de trabajo con portátil", label: "06 — Salón", caption: "Zona de trabajo y grabación" },
+  { src: "/optimized/studio/dsc09710.webp", alt: "Zona de entrevista con sofá beige y equipo de iluminación", label: "07 — Salón", caption: "El salón: cómodo, no intimida" },
   // — Set de grabación —
-  { src: "/optimized/studio/dsc09771.webp", alt: "Set de grabación con sillón reclinable y dos softboxes", label: "10 — Set", caption: "Sillón con doble iluminación" },
-  { src: "/optimized/studio/dsc09774.webp", alt: "Salón preparado para rodaje con iluminación profesional", label: "11 — Set", caption: "Listo para rodar" },
-  { src: "/optimized/studio/dsc09776.webp", alt: "Vista cenital del set con sillón y softboxes encendidas", label: "12 — Set", caption: "Vista cenital del set" },
-  { src: "/optimized/studio/dsc09780.webp", alt: "Rincón de grabación con sillón y softboxes desde arriba", label: "13 — Set", caption: "Perspectiva aérea del rincón" },
-  { src: "/optimized/studio/dsc09789.webp", alt: "Sillón con panel reflector y cámara en plano cenital", label: "14 — Set", caption: "Panel reflector y cámara" },
-  { src: "/optimized/studio/dsc09897.webp", alt: "Sofá con teleprompter y softboxes de iluminación", label: "15 — Set", caption: "Teleprompter y softboxes" },
-  { src: "/optimized/studio/dsc09900.webp", alt: "Setup de entrevista con sofá, cámara y doble softbox", label: "16 — Set", caption: "Doble softbox frontal" },
-  { src: "/optimized/studio/dsc09911.webp", alt: "Cámara profesional con teleprompter frente al sofá", label: "17 — Set", caption: "Cámara con teleprompter" },
+  { src: "/optimized/studio/dsc09771.webp", alt: "Set de grabación con sillón reclinable y dos softboxes", label: "08 — Set", caption: "Set de entrevista nocturno" },
+  { src: "/optimized/studio/dsc09774.webp", alt: "Salón preparado para rodaje con iluminación profesional", label: "09 — Set", caption: "Listo para rodar" },
+  { src: "/optimized/studio/dsc09776.webp", alt: "Vista cenital del set con sillón y softboxes encendidas", label: "10 — Set", caption: "Vista cenital del set" },
+  { src: "/optimized/studio/dsc09780.webp", alt: "Rincón de grabación con sillón y softboxes desde arriba", label: "11 — Set", caption: "Iluminación desde arriba" },
+  { src: "/optimized/studio/dsc09789.webp", alt: "Sillón con panel reflector y cámara en plano cenital", label: "12 — Set", caption: "Sillón con reflector y cámara" },
+  { src: "/optimized/studio/dsc09897.webp", alt: "Sofá con teleprompter y softboxes de iluminación", label: "13 — Set", caption: "Sofá con teleprompter" },
+  { src: "/optimized/studio/dsc09900.webp", alt: "Setup de entrevista con sofá, cámara y doble softbox", label: "14 — Set", caption: "Todo listo para grabar" },
+  { src: "/optimized/studio/dsc09911.webp", alt: "Cámara profesional con teleprompter frente al sofá", label: "15 — Set", caption: "Cámara y teleprompter" },
   // — Podcast / Mesa —
-  { src: "/optimized/studio/dsc09820.webp", alt: "Set de podcast con escritorio, portátil y dos softboxes", label: "18 — Podcast", caption: "Mesa de podcast preparada" },
-  { src: "/optimized/studio/dsc09849.webp", alt: "Mesa de podcast con portátil y softboxes laterales", label: "19 — Podcast", caption: "Iluminación lateral para podcast" },
-  { src: "/optimized/studio/dsc09859.webp", alt: "Habitación de grabación con softboxes y escritorio", label: "20 — Podcast", caption: "Sala de grabación completa" },
-  { src: "/optimized/studio/dsc09877.webp", alt: "Set de conversación con mesa, vasos y softboxes", label: "21 — Podcast", caption: "Set íntimo de conversación" },
-  { src: "/optimized/studio/dsc09886.webp", alt: "Vista aérea de la mesa de podcast con dos sillas", label: "22 — Podcast", caption: "Vista cenital de la mesa" },
+  { src: "/optimized/studio/dsc09820.webp", alt: "Set de podcast con escritorio, portátil y dos softboxes", label: "16 — Podcast", caption: "Set de podcast preparado" },
+  { src: "/optimized/studio/dsc09849.webp", alt: "Mesa de podcast con portátil y softboxes laterales", label: "17 — Podcast", caption: "Mesa de podcast con iluminación" },
+  { src: "/optimized/studio/dsc09859.webp", alt: "Habitación de grabación con softboxes y escritorio", label: "18 — Podcast", caption: "Sala de podcast completa" },
+  { src: "/optimized/studio/dsc09877.webp", alt: "Set de conversación con mesa, vasos y softboxes", label: "19 — Podcast", caption: "Set íntimo de conversación" },
+  { src: "/optimized/studio/dsc09886.webp", alt: "Vista aérea de la mesa de podcast con dos sillas", label: "20 — Podcast", caption: "Vista cenital del set de podcast" },
 ];
 
 const INTERVAL = 5000;
@@ -161,14 +159,6 @@ export default function QueEs() {
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
             No es un Plató. Es un Ático en Madrid.
           </h2>
-        </ScrollReveal>
-
-        <ScrollReveal delay={0.12}>
-          <p className="mt-6 max-w-2xl text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-            Un salón, una terraza con vistas a todo Madrid y todo el equipo
-            profesional que necesitas. Lo montamos como un estudio pero lo
-            diseñamos para que tu contenido no lo parezca.
-          </p>
         </ScrollReveal>
 
         <h3 className="mt-10 font-heading text-[clamp(1.6rem,5vw,3rem)] uppercase leading-[0.95] text-foreground sm:mt-12">

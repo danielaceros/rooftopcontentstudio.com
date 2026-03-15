@@ -12,6 +12,7 @@ export default function Comparativa() {
   const afterVideoRef = useRef<HTMLVideoElement>(null);
   const isTouchDevice = useRef(false);
   const dragging = useRef(false);
+  const userInteracted = useRef(false);
 
   useEffect(() => {
     isTouchDevice.current = window.matchMedia("(pointer: coarse)").matches;
@@ -65,13 +66,18 @@ export default function Comparativa() {
     return (x / rect.width) * 100;
   }, []);
 
+  const markInteracted = useCallback(() => {
+    userInteracted.current = true;
+  }, []);
+
   // Desktop: hover
   const onMouseMove = useCallback(
     (e: React.MouseEvent) => {
       if (isTouchDevice.current) return;
+      markInteracted();
       applyPosition(getPercent(e.clientX));
     },
-    [applyPosition, getPercent]
+    [applyPosition, getPercent, markInteracted]
   );
 
   const onMouseLeave = useCallback(() => {
@@ -82,10 +88,11 @@ export default function Comparativa() {
   // Mobile: touch drag
   const onTouchStart = useCallback(
     (e: React.TouchEvent) => {
+      markInteracted();
       dragging.current = true;
       applyPosition(getPercent(e.touches[0].clientX));
     },
-    [applyPosition, getPercent]
+    [applyPosition, getPercent, markInteracted]
   );
 
   const onTouchMove = useCallback(
@@ -162,24 +169,24 @@ export default function Comparativa() {
 
             {/* Labels */}
             <div className="pointer-events-none absolute left-4 top-4 z-20 bg-background/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-foreground backdrop-blur-sm sm:left-5 sm:top-5">
-              Plató genérico
+              Sin Nosotros
             </div>
             <div className="pointer-events-none absolute right-4 top-4 z-20 bg-accent/90 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-background backdrop-blur-sm sm:right-5 sm:top-5">
-              Rooftop Content Studio
+              Con Nosotros
             </div>
 
             {/* Divider line */}
             <div
               ref={lineRef}
               className="pointer-events-none absolute top-0 z-10 h-full w-px bg-foreground/80"
-              style={{ left: "50%", willChange: "left" }}
+              style={{ left: "0%", willChange: "left" }}
             />
 
             {/* Handle */}
             <div
               ref={handleRef}
               className="pointer-events-none absolute top-1/2 z-20 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-foreground/30 bg-background/80 backdrop-blur-sm sm:h-12 sm:w-12"
-              style={{ left: "50%", willChange: "left" }}
+              style={{ left: "0%", willChange: "left" }}
             >
               <svg
                 width="18"
