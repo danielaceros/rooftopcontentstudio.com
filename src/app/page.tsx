@@ -6,6 +6,7 @@ import Portfolio from "@/components/sections/Portfolio";
 import Beneficios from "@/components/sections/Beneficios";
 import Proceso from "@/components/sections/Proceso";
 import QueEs from "@/components/sections/QueEs";
+import VirtualTour from "@/components/sections/VirtualTour";
 import Comparativa from "@/components/sections/Comparativa";
 import Tarifas from "@/components/sections/Tarifas";
 import FAQ from "@/components/sections/FAQ";
@@ -21,6 +22,7 @@ export default function Home() {
         <Beneficios />
         <Comparativa />
         <QueEs />
+        <VirtualTour />
         <Portfolio desktopSlideshow={true} openVideosInModal={true} />
         <Proceso />
         <Tarifas />

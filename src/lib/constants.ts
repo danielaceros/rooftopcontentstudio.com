@@ -4,7 +4,7 @@ export const SITE_DESCRIPTION =
   "Graba un mes de contenido en una mañana. Rooftop privado en el centro de Madrid con vistas al skyline. Desde 50€/h. FIFA, IFEMA y Cinesa ya han grabado aquí.";
 
 export const NAV_LINKS = [
-  { label: "Espacio", href: "#estudio" },
+  { label: "Espacio", href: "#tour-virtual" },
   { label: "Portfolio", href: "#portfolio" },
   { label: "Proceso", href: "#proceso" },
   { label: "Opciones", href: "#tarifas" },
