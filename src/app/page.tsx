@@ -20,12 +20,12 @@ export default function Home() {
         <Hero />
         <SocialProof />
         <Beneficios />
-        <Comparativa />
-        <QueEs />
         <VirtualTour />
+        <Comparativa />
         <Portfolio desktopSlideshow={true} openVideosInModal={true} />
         <Proceso />
         <Tarifas />
+        <QueEs />
         <FAQ />
         <CTA />
       </main>
