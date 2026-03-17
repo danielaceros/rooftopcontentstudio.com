@@ -17,6 +17,12 @@ export default function Beneficios() {
           </h2>
         </ScrollReveal>
 
+        <ScrollReveal delay={0.12}>
+          <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
+            El contenido de plató parece publicidad. Tu audiencia lo salta. El contenido grabado aquí parece real — y por eso funciona.
+          </p>
+        </ScrollReveal>
+
         {/* Editorial list with hover effects */}
         <div className="mt-14 flex flex-col sm:mt-16 lg:mt-24">
           {BENEFICIOS.map((b, i) => (
@@ -52,16 +58,6 @@ export default function Beneficios() {
           <div className="border-t border-border" />
         </div>
 
-        <ScrollReveal delay={0.3}>
-          <div className="mt-12 text-center sm:mt-16">
-            <a
-              href="#contacto"
-              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
-            >
-              Pedir Presupuesto
-            </a>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   );

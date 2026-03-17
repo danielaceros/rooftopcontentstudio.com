@@ -122,6 +122,12 @@ export default function Comparativa() {
           </h2>
         </ScrollReveal>
 
+        <ScrollReveal delay={0.12}>
+          <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
+            La diferencia no es la cámara. Es dónde grabas.
+          </p>
+        </ScrollReveal>
+
         {/* Comparison slider */}
         <ScrollReveal delay={0.18}>
           <div
@@ -216,7 +222,7 @@ export default function Comparativa() {
               href="#contacto"
               className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
             >
-              Pedir Presupuesto →
+              Ver disponibilidad →
             </a>
           </div>
         </ScrollReveal>

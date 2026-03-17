@@ -16,7 +16,7 @@ export const siteMetadata: Metadata = {
     locale: "es_ES",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Graba Meses de Contenido en Una Sola Mañana`,
+    title: `${SITE_NAME} — El Único Estudio de Madrid que No Parece un Estudio`,
     description: SITE_DESCRIPTION,
     images: [
       {

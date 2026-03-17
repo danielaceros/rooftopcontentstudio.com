@@ -1,7 +1,7 @@
 export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
-  "Graba un mes de contenido en una mañana. Rooftop privado en el centro de Madrid con vistas al skyline. Desde 50€/h. FIFA, IFEMA y Cinesa ya han grabado aquí.";
+  "El único estudio de grabación en Madrid que no parece un estudio. Un ático real con terraza, skyline y equipo profesional. Desde 50€/h. FIFA, IFEMA y Cinesa ya han grabado aquí.";
 
 export const NAV_LINKS = [
   { label: "Espacio", href: "#tour-virtual" },
@@ -31,10 +31,10 @@ export const BENEFICIOS = [
     icon: "strategy",
   },
   {
-    title: "Todo en una Sesión",
+    title: "En el Centro, no en un Polígono",
     description:
-      "Llegas, grabas reels, podcast, YouTube, lo que necesites, y te vas con semanas de contenido. Sin perder el día.",
-    icon: "zap",
+      "Ronda de Atocha, metro al lado. No tienes que irte a las afueras para grabar en un espacio profesional.",
+    icon: "location",
   },
 ] as const;
 

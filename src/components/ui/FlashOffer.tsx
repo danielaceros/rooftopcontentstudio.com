@@ -24,14 +24,14 @@ export default function FlashOffer() {
     <div className="relative z-[60] flex w-full items-center justify-center gap-3 bg-accent px-4 py-2 sm:gap-4 sm:px-8">
       <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
         <span className="font-mono text-[10px] font-medium uppercase tracking-[0.2em] text-background sm:text-[11px]">
-          50% en tu primera sesión · Espacio + Filmmaker desde 50€/h
+          Primera sesión: dirección creativa incluida sin coste · Espacio + Filmmaker desde 50€/h
         </span>
 
         <a
           href="#contacto"
           className="font-mono text-[10px] font-bold uppercase tracking-[0.15em] text-background underline underline-offset-2 transition-opacity hover:opacity-80 sm:text-[11px]"
         >
-          Reservar con descuento
+          Reservar primera sesión
         </a>
       </div>
 

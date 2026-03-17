@@ -41,7 +41,7 @@ export default function FAQ() {
               href="#contacto"
               className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
             >
-              Pedir Presupuesto
+              ¿Más dudas? Escríbenos →
             </a>
           </div>
         </ScrollReveal>
