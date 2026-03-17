@@ -9,6 +9,7 @@ export const NAV_LINKS = [
   { label: "Proceso", href: "#proceso" },
   { label: "Opciones", href: "#tarifas" },
   { label: "FAQ", href: "#faq" },
+  { label: "Blog", href: "/blog" },
 ] as const;
 
 export const BENEFICIOS = [
