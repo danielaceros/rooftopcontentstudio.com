@@ -13,13 +13,13 @@ export default function Beneficios() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Por Qué Aquí y no en un Plató.
+            Lo que te Llevas.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            El contenido de plató parece publicidad. Tu audiencia lo salta. El contenido grabado aquí parece real — y por eso funciona.
+            No solo un espacio para grabar. Un equipo de producción, dirección creativa y edición que convierte una sesión en semanas de contenido.
           </p>
         </ScrollReveal>
 

@@ -124,7 +124,7 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            La diferencia no es la cámara. Es dónde grabas.
+            El mismo mensaje. Dos resultados muy diferentes.
           </p>
         </ScrollReveal>
 
@@ -215,8 +215,8 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.24}>
           <div className="mt-10 text-center sm:mt-14">
-            <p className="mb-6 font-mono text-[13px] text-muted sm:text-sm">
-              ¿Cuál parece un anuncio?
+            <p className="mb-6 max-w-lg mx-auto text-[0.95rem] leading-[1.75] text-muted sm:text-base">
+              Tu audiencia scrollea 300 posts al día. El contenido de plató lo saltan. El que parece real lo paran, lo ven y lo comparten. Nosotros grabamos el segundo con calidad del primero.
             </p>
             <a
               href="#contacto"

@@ -1,11 +1,12 @@
 interface AccordionProps {
   question: string;
   answer: string;
+  defaultOpen?: boolean;
 }
 
-export default function Accordion({ question, answer }: AccordionProps) {
+export default function Accordion({ question, answer, defaultOpen = false }: AccordionProps) {
   return (
-    <details className="group border-b border-foreground/10 transition-colors duration-300 hover:bg-card">
+    <details open={defaultOpen} className="group border-b border-foreground/10 transition-colors duration-300 hover:bg-card">
       <summary className="flex w-full cursor-pointer items-center justify-between px-2 py-8 text-left md:px-4 [&::-webkit-details-marker]:hidden list-none">
         <span className="pr-8 font-heading text-[clamp(1.2rem,2vw,1.6rem)] uppercase tracking-wide text-foreground">
           {question}

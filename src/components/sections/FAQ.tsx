@@ -21,11 +21,12 @@ export default function FAQ() {
         <div className="mt-14 sm:mt-20">
           <ScrollReveal delay={0.16}>
             <div className="border-t border-foreground/10">
-              {FAQS.map((faq) => (
+              {FAQS.map((faq, i) => (
                 <Accordion
                   key={faq.question}
                   question={faq.question}
                   answer={faq.answer}
+                  defaultOpen={i === 0}
                 />
               ))}
             </div>

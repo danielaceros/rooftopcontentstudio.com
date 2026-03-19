@@ -9,8 +9,9 @@ import ContactFormEmbed from "./ContactFormEmbed";
 const LOGOS_SRC = "/optimized/logos-banner.png";
 
 const LINES = [
-  { text: "Calidad de Estudio.", desktopOnly: false },
-  { text: "Resultado Orgánico.", desktopOnly: false },
+  { text: "Tu Contenido.", desktopOnly: false },
+  { text: "Tu Marca.", desktopOnly: false },
+  { text: "Un Día.", desktopOnly: false },
 ];
 
 export default function Hero() {
@@ -58,7 +59,7 @@ export default function Hero() {
               className="hero-line font-mono text-[11px] uppercase tracking-[0.25em] text-accent sm:text-[11px]"
               style={{ animationDelay: "0.2s" }}
             >
-              [ Ático-Estudio — Centro de Madrid ]
+              [ Graba contenido para semanas. En una mañana. En un ático en Madrid. ]
             </p>
           </div>
 
@@ -82,7 +83,7 @@ export default function Hero() {
               className="hero-line max-w-[540px] text-[0.95rem] leading-[1.7] text-foreground/60 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
               style={{ animationDelay: "0.9s" }}
             >
-              El único estudio de grabación en Madrid que no parece un estudio. Un ático real con terraza y vistas al skyline — y detrás de cámara, equipo profesional.
+              Founders, marcas y equipos de marketing vienen al ático, graban con nuestro equipo y se van con contenido listo para semanas. Podcast, reels, YouTube, cursos — con look real, calidad de producción y entrega en 24-48h.
             </p>
           </div>
         </div>

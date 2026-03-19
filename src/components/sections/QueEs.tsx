@@ -15,7 +15,7 @@ export default function QueEs() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            No es un Plató. Es un Ático en Madrid.
+            Un Estudio de Contenido en un Ático en Madrid.
           </h2>
         </ScrollReveal>
 
@@ -25,10 +25,10 @@ export default function QueEs() {
 
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:gap-12">
           <p className="text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
-            Rooftop Content Studio es un espacio de grabación profesional ubicado en un ático real en la Calle Ronda de Atocha, 16, en el centro de Madrid. A diferencia de los platós convencionales con ciclorama blanco y focos artificiales, el espacio cuenta con un salón con sofás, una terraza con vistas panorámicas al skyline de Madrid y luz natural directa. Está diseñado para que el contenido grabado parezca orgánico — no producido en un estudio — mientras mantiene calidad profesional con cámaras, iluminación y sonido de estudio.
+            Rooftop Content Studio es un estudio de contenido en Madrid pensado para marcas personales, founders y equipos de marketing que necesitan contenido recurrente con look premium. Está ubicado en un ático real en Ronda de Atocha, 16, centro de Madrid, a 5 minutos de Metro Atocha Renfe. El espacio cuenta con salón con sofás, terraza con vistas panorámicas al skyline de Madrid y luz natural directa. A diferencia de los platós convencionales con ciclorama blanco y focos artificiales, el contenido que sale de aquí parece orgánico y auténtico, pero detrás hay un equipo profesional con cámaras, iluminación y sonido de estudio.
           </p>
           <p className="text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
-            Fundado por Daniel Acero, filmmaker con más de 6 años de experiencia y clientes como FIFA, IFEMA y Cinesa, ofrece tres modalidades: alquiler del espacio (desde 50€/h), espacio con filmmaker profesional (desde 100€/h), o producción completa con edición y entrega en 24-48 horas. Solo se realiza 1 sesión por día.
+            Los clientes vienen a grabar podcast, reels para Instagram y TikTok, vídeos para YouTube, cursos online y contenido corporativo. El equipo del estudio dirige la sesión — dirección creativa, cámaras, sonido y teleprompter incluidos — y si se necesita edición, se entrega en 24-48 horas listo para publicar en todas las plataformas. Tres modalidades: solo el espacio desde 50€/hora, espacio con filmmaker desde 100€/hora, o producción completa a medida. FIFA, IFEMA, Cinesa y Cámara de Comercio de Madrid ya han grabado aquí.
           </p>
         </div>
 

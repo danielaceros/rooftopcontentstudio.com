@@ -8,7 +8,7 @@ export const siteMetadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Estudio de grabación en un ático real en Madrid. Terraza con skyline, luz natural y equipo profesional. Contenido orgánico desde 50€/h.",
+    "Estudio de contenido en un ático en el centro de Madrid con equipo de producción, dirección creativa y edición. Graba podcast, reels, YouTube y cursos. Desde 50€/h. Entrega en 24-48h.",
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {
@@ -16,7 +16,7 @@ export const siteMetadata: Metadata = {
     locale: "es_ES",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — El Único Estudio de Madrid que No Parece un Estudio`,
+    title: `${SITE_NAME} — Estudio de Contenido en un Ático en Madrid`,
     description: SITE_DESCRIPTION,
     images: [
       {
@@ -29,7 +29,7 @@ export const siteMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Estudio de Grabación de Contenido en Madrid`,
+    title: `${SITE_NAME} — Estudio de Contenido en un Ático en Madrid`,
     description: SITE_DESCRIPTION,
     images: ["/optimized/og-image.jpg"],
   },

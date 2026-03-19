@@ -7,7 +7,7 @@ export function getProfessionalServiceSchema() {
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     description:
-      "Estudio de grabación premium en Madrid para marcas y creadores. Producción de reels, podcasts, vídeos corporativos y contenido para redes sociales.",
+      "Estudio de contenido en un ático en el centro de Madrid. Founders, marcas y equipos de marketing graban podcast, reels, YouTube y cursos con equipo de producción profesional. Desde 50€/h.",
     url: SITE_URL,
     telephone: "+34711255496",
     email: "hola@rooftopcontentstudio.es",
@@ -170,7 +170,7 @@ export function getWebSiteSchema() {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Estudio de grabación premium en Madrid para marcas y creadores de contenido.",
+      "Estudio de contenido en un ático en Madrid para marcas personales, founders y equipos de marketing.",
     inLanguage: "es",
     publisher: {
       "@id": `${SITE_URL}/#business`,
@@ -184,9 +184,9 @@ export function getWebPageSchema() {
     "@type": "WebPage",
     "@id": `${SITE_URL}/#webpage`,
     url: SITE_URL,
-    name: "Rooftop Content Studio - Estudio de Grabación Premium en Madrid",
+    name: "Rooftop Content Studio — Estudio de Contenido en un Ático en Madrid",
     description:
-      "Estudio de grabación premium en Madrid para marcas y creadores. Producción de reels, podcasts, vídeos corporativos y contenido para redes sociales.",
+      "Estudio de contenido en un ático en el centro de Madrid. Founders, marcas y equipos de marketing graban podcast, reels, YouTube y cursos con equipo de producción profesional.",
     isPartOf: {
       "@id": `${SITE_URL}/#website`,
     },
@@ -195,7 +195,7 @@ export function getWebPageSchema() {
     },
     inLanguage: "es",
     datePublished: "2025-09-01",
-    dateModified: "2026-03-15",
+    dateModified: "2026-03-19",
     author: {
       "@id": `${SITE_URL}/#founder`,
     },
@@ -244,25 +244,25 @@ export function getHowToSchema() {
         "@type": "HowToStep",
         position: 1,
         name: "Cuéntanos tu proyecto",
-        text: "Escríbenos o rellena el formulario. Te enviamos presupuesto a medida en menos de 1 hora.",
+        text: "Escríbenos con lo que necesitas. Presupuesto en menos de 1 hora.",
       },
       {
         "@type": "HowToStep",
         position: 2,
         name: "Preparamos tu sesión",
-        text: "Reservamos fecha y preparamos el ático para que el resultado parezca natural, no producido. Tú eliges el nivel de servicio.",
+        text: "Nuestro equipo reserva fecha, prepara el set y planifica la sesión para que solo tengas que venir.",
       },
       {
         "@type": "HowToStep",
         position: 3,
         name: "Llegas y grabas",
-        text: "Todo está listo cuando llegas. El espacio es cómodo y no intimida — es un ático, no un plató. Solo ponte delante de la cámara.",
+        text: "Todo montado. Te dirigimos, te guiamos y nos encargamos de la técnica. Tú solo graba.",
       },
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Te llevas tu contenido",
-        text: "Sales con contenido que parece orgánico y suena profesional. Si incluye edición, listo para publicar en 24-48 horas.",
+        name: "Contenido listo para publicar",
+        text: "Te llevas el material. Si incluye edición, en 24-48h tienes todo editado, subtitulado y formateado.",
       },
     ],
   };

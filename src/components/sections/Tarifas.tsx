@@ -10,7 +10,7 @@ const OPTIONS = [
     price: "50",
     unit: "/hora",
     description:
-      "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo y graba a tu manera.",
+      "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo, tu filmmaker y graba a tu manera.",
     includes: [
       "Ático privado con vistas a Madrid",
       "Iluminación de estudio",
@@ -21,12 +21,12 @@ const OPTIONS = [
     cta: "Reservar Espacio",
   },
   {
-    label: "Más popular",
+    label: "Elegido por 8 de cada 10 clientes",
     name: "Espacio + Filmmaker",
     price: "100",
     unit: "/hora",
     description:
-      "Un filmmaker profesional dirige tu sesión en un espacio que no parece un plató. Solo preocúpate de estar delante de la cámara.",
+      "Sales con los brutos del día o con contenido editado en 48h. Tú solo vienes, grabas y te vas con material listo.",
     includes: [
       "Todo lo del plan Espacio",
       "Filmmaker con dirección creativa",
@@ -43,7 +43,7 @@ const OPTIONS = [
     price: null,
     unit: null,
     description:
-      "Grabación, edición y entrega. Vienes, grabas, y en 48h tienes contenido listo para publicar que parece orgánico y suena profesional.",
+      "Grabación, edición y entrega. Vienes, grabas con nuestro equipo, y en 48h tienes contenido listo para publicar en todas tus plataformas.",
     includes: [
       "Todo lo del plan Espacio + Filmmaker",
       "Edición profesional a medida",
