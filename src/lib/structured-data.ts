@@ -7,7 +7,7 @@ export function getProfessionalServiceSchema() {
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     description:
-      "Estudio de contenido en un ático en el centro de Madrid. Founders, marcas y equipos de marketing graban podcast, reels, YouTube y cursos con equipo de producción profesional. Desde 50€/h.",
+      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Desde 50€/h.",
     url: SITE_URL,
     telephone: "+34711255496",
     email: "hola@rooftopcontentstudio.es",
@@ -170,7 +170,7 @@ export function getWebSiteSchema() {
     url: SITE_URL,
     name: SITE_NAME,
     description:
-      "Estudio de contenido en un ático en Madrid para marcas personales, founders y equipos de marketing.",
+      "Estudio de contenido en un ático en Madrid. Graba podcast, reels, YouTube y cursos con look auténtico y calidad de producción.",
     inLanguage: "es",
     publisher: {
       "@id": `${SITE_URL}/#business`,
@@ -184,9 +184,9 @@ export function getWebPageSchema() {
     "@type": "WebPage",
     "@id": `${SITE_URL}/#webpage`,
     url: SITE_URL,
-    name: "Rooftop Content Studio — Estudio de Contenido en un Ático en Madrid",
+    name: "Rooftop Content Studio — Tu Contenido. Tu Marca. Un Día. Madrid",
     description:
-      "Estudio de contenido en un ático en el centro de Madrid. Founders, marcas y equipos de marketing graban podcast, reels, YouTube y cursos con equipo de producción profesional.",
+      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con contenido listo para publicar. Look auténtico, calidad de producción.",
     isPartOf: {
       "@id": `${SITE_URL}/#website`,
     },
@@ -195,7 +195,7 @@ export function getWebPageSchema() {
     },
     inLanguage: "es",
     datePublished: "2025-09-01",
-    dateModified: "2026-03-19",
+    dateModified: "2026-03-20",
     author: {
       "@id": `${SITE_URL}/#founder`,
     },
