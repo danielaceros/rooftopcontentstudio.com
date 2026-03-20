@@ -22,7 +22,7 @@ export const BENEFICIOS = [
   {
     title: "Look Real, Calidad de Producción",
     description:
-      "Luz natural, terraza con skyline de Madrid y un set diseñado para que el contenido parezca auténtico — porque lo es. Sin cicloramas blancos ni focos que te pongan nervioso. Solo tú, el mensaje y un equipo que se encarga de todo lo demás.",
+      "Luz natural, terraza con skyline de Madrid y un set diseñado para que el contenido parezca auténtico — porque lo es. Sin el aspecto artificial de un plató. Espacio real, contenido auténtico. Solo tú, el mensaje y un equipo que se encarga de todo lo demás.",
     icon: "location",
   },
   {

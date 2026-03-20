@@ -258,13 +258,13 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Nuestros primeros clientes.
+            Lo que dicen quienes han grabado aquí.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            Dos personas reales. Un equipo que volverá.
+            Geko Marketing grabó con nosotros. Esto es lo que dijeron.
           </p>
         </ScrollReveal>
 
