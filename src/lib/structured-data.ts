@@ -107,18 +107,18 @@ export function getProfessionalServiceSchema() {
           "@type": "OfferCatalog",
           name: "Espacio + Filmmaker",
           description:
-            "Espacio rooftop con filmmaker profesional y dirección creativa incluida.",
+            "Espacio rooftop con filmmaker profesional, dirección creativa, cámaras y sonido incluidos.",
           itemListElement: [
             {
               "@type": "Offer",
               name: "Espacio + Filmmaker",
               description:
-                "Espacio rooftop con filmmaker profesional y dirección creativa incluida.",
-              price: "100",
+                "Espacio rooftop con filmmaker profesional, dirección creativa, cámaras y sonido incluidos.",
+              price: "75",
               priceCurrency: "EUR",
               priceSpecification: {
                 "@type": "UnitPriceSpecification",
-                price: "100",
+                price: "75",
                 priceCurrency: "EUR",
                 unitText: "hora",
               },

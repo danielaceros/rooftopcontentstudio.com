@@ -24,12 +24,28 @@ export default function QueEs() {
         </h3>
 
         <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 lg:gap-12">
-          <p className="text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
-            Rooftop Content Studio es un estudio de contenido en Madrid pensado para marcas personales, founders y equipos de marketing que necesitan contenido recurrente con look premium. Está ubicado en un ático real en Ronda de Atocha, 16, centro de Madrid, a 5 minutos de Metro Atocha Renfe. El espacio cuenta con salón con sofás, terraza con vistas panorámicas al skyline de Madrid y luz natural directa. A diferencia de los platós convencionales con ciclorama blanco y focos artificiales, el contenido que sale de aquí parece orgánico y auténtico, pero detrás hay un equipo profesional con cámaras, iluminación y sonido de estudio.
-          </p>
-          <p className="text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
-            Los clientes vienen a grabar podcast, reels para Instagram y TikTok, vídeos para YouTube, cursos online y contenido corporativo. El equipo del estudio dirige la sesión — dirección creativa, cámaras, sonido y teleprompter incluidos — y si se necesita edición, se entrega en 24-48 horas listo para publicar en todas las plataformas. Tres modalidades: solo el espacio desde 50€/hora, espacio con filmmaker desde 75€/hora, o producción completa a medida. FIFA, IFEMA, Cinesa y Cámara de Comercio de Madrid ya han grabado aquí.
-          </p>
+          <div>
+            <p className="text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
+              Rooftop Content Studio es un estudio de contenido en Madrid pensado para founders, marcas personales y equipos de marketing que necesitan contenido recurrente con look auténtico y calidad de producción. Está ubicado en un ático real en Ronda de Atocha, 16, centro de Madrid, a 5 minutos de Metro Atocha Renfe.
+            </p>
+            <p className="mt-4 text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
+              El espacio tiene terraza con vistas al skyline de Madrid, luz natural directa y un set diseñado para que el contenido parezca orgánico. Sin cicloramas blancos ni focos que intimiden. Detrás hay un equipo profesional con cámaras, iluminación y sonido de estudio.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-heading text-[clamp(1.1rem,2vw,1.4rem)] uppercase text-foreground">
+              ¿Qué se puede grabar?
+            </h4>
+            <p className="mt-3 text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
+              Podcast, reels para Instagram y TikTok, vídeos para YouTube, cursos online y contenido corporativo. La mayoría de clientes graban varios formatos en la misma sesión para aprovechar el día.
+            </p>
+            <h4 className="mt-6 font-heading text-[clamp(1.1rem,2vw,1.4rem)] uppercase text-foreground">
+              ¿Cuánto cuesta?
+            </h4>
+            <p className="mt-3 text-[0.935rem] leading-[1.8] text-muted sm:text-[1rem]">
+              Solo el espacio desde 50€/hora. Espacio con filmmaker desde 75€/hora. Producción completa con edición y entrega en 24-48h a medida. FIFA, IFEMA, Cinesa y Cámara de Comercio de Madrid ya han grabado aquí.
+            </p>
+          </div>
         </div>
 
         {/* Key stats */}
