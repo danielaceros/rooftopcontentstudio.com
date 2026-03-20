@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
@@ -21,7 +21,19 @@ const TESTIMONIALS = [
   },
 ];
 
-function TestimonialReel({ src, poster, name, role, quote }: { src: string; poster: string; name: string; role: string; quote: string }) {
+function TestimonialCard({
+  src,
+  poster,
+  name,
+  role,
+  quote,
+}: {
+  src: string;
+  poster: string;
+  name: string;
+  role: string;
+  quote: string;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -71,11 +83,11 @@ function TestimonialReel({ src, poster, name, role, quote }: { src: string; post
 
   return (
     <>
-      <div ref={containerRef} className="shrink-0 snap-center">
+      <div ref={containerRef} className="flex flex-col items-center text-center">
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group relative aspect-[9/16] w-[280px] max-w-[360px] cursor-pointer overflow-hidden rounded-sm sm:w-[320px] lg:w-[360px]"
+          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[320px] lg:max-w-[360px]"
           style={{ backgroundColor: "#0a0a0a" }}
         >
           <video
@@ -102,27 +114,19 @@ function TestimonialReel({ src, poster, name, role, quote }: { src: string; post
             </svg>
           </div>
 
-          {/* Subtle gradient at bottom */}
+          {/* Gradient bottom */}
           <div
             className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4"
-            style={{
-              background: "linear-gradient(0deg, rgba(8,8,8,0.6) 0%, transparent 100%)",
-            }}
-          />
-
-          {/* Film grain */}
-          <div
-            className="pointer-events-none absolute inset-0 mix-blend-overlay"
-            style={{
-              opacity: 0.03,
-              backgroundImage:
-                "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E\")",
-            }}
+            style={{ background: "linear-gradient(0deg, rgba(8,8,8,0.6) 0%, transparent 100%)" }}
           />
         </button>
-        <p className="mt-3 text-[0.95rem] font-medium text-foreground">{name}</p>
-        <p className="text-[0.8rem] text-muted">{role}</p>
-        <p className="mt-2 text-[0.85rem] italic text-foreground/70">&ldquo;{quote}&rdquo;</p>
+
+        {/* Info below video */}
+        <p className="mt-4 text-[1rem] font-medium text-foreground">{name}</p>
+        <p className="mt-0.5 text-[0.8rem] text-muted">{role}</p>
+        <p className="mt-2 max-w-[280px] text-[0.9rem] italic leading-relaxed text-foreground/70">
+          &ldquo;{quote}&rdquo;
+        </p>
       </div>
 
       {/* Modal */}
@@ -174,6 +178,74 @@ function TestimonialReel({ src, poster, name, role, quote }: { src: string; post
   );
 }
 
+/* ── Mobile carousel with dots ── */
+function MobileCarousel() {
+  const [active, setActive] = useState(0);
+
+  const prev = useCallback(() => {
+    setActive((i) => (i - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
+  }, []);
+
+  const next = useCallback(() => {
+    setActive((i) => (i + 1) % TESTIMONIALS.length);
+  }, []);
+
+  const t = TESTIMONIALS[active];
+
+  return (
+    <div className="mt-14 sm:hidden">
+      <div className="flex items-center justify-center gap-4">
+        {/* Prev arrow */}
+        <button
+          type="button"
+          onClick={prev}
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition hover:border-foreground/30 hover:text-foreground"
+          aria-label="Anterior"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        </button>
+
+        {/* Card */}
+        <div className="min-w-0 flex-1">
+          <TestimonialCard
+            key={t.src}
+            src={t.src}
+            poster={t.poster}
+            name={t.name}
+            role={t.role}
+            quote={t.quote}
+          />
+        </div>
+
+        {/* Next arrow */}
+        <button
+          type="button"
+          onClick={next}
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition hover:border-foreground/30 hover:text-foreground"
+          aria-label="Siguiente"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        </button>
+      </div>
+
+      {/* Dots */}
+      <div className="mt-6 flex justify-center gap-2">
+        {TESTIMONIALS.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            onClick={() => setActive(i)}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              i === active ? "w-6 bg-accent" : "w-2 bg-foreground/20"
+            }`}
+            aria-label={`Ir al testimonio ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Comparativa() {
   return (
     <section className="px-5 py-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
@@ -196,12 +268,23 @@ export default function Comparativa() {
           </p>
         </ScrollReveal>
 
+        {/* Mobile: single-card carousel */}
         <ScrollReveal delay={0.18}>
-          <div className="-mx-5 mt-14 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 sm:mx-0 sm:mt-16 sm:flex-row sm:justify-center sm:gap-8 sm:overflow-visible sm:px-0 sm:pb-0 lg:mt-20 lg:gap-12"
-            style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
-          >
+          <MobileCarousel />
+        </ScrollReveal>
+
+        {/* Desktop: side by side */}
+        <ScrollReveal delay={0.18}>
+          <div className="mt-16 hidden gap-8 sm:flex sm:justify-center lg:mt-20 lg:gap-12">
             {TESTIMONIALS.map((t) => (
-              <TestimonialReel key={t.src} src={t.src} poster={t.poster} name={t.name} role={t.role} quote={t.quote} />
+              <TestimonialCard
+                key={t.src}
+                src={t.src}
+                poster={t.poster}
+                name={t.name}
+                role={t.role}
+                quote={t.quote}
+              />
             ))}
           </div>
         </ScrollReveal>

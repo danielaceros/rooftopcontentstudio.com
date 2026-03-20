@@ -16,7 +16,6 @@ const LINES = [
 
 export default function Hero() {
   const headlineRef = useRef<HTMLDivElement>(null);
-  const formRef = useRef<HTMLDivElement>(null);
 
   // Layer 3: headline floats up slightly on scroll (desktop only)
   useEffect(() => {
@@ -40,23 +39,23 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden sm:min-h-[100svh]" aria-label="Hero">
+    <section className="relative min-h-[100svh] overflow-hidden" aria-label="Hero">
       {/* Video — absolute fullscreen on all viewports */}
       <div className="absolute inset-0">
         <VideoBackground />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center text-center lg:min-h-screen lg:flex-row lg:items-center lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16 2xl:px-20">
-        {/* Headline — overlaps video on all viewports */}
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col lg:min-h-screen lg:flex-row lg:items-center lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16 2xl:px-20">
+        {/* Headline — centered on mobile, left on desktop */}
         <div
           ref={headlineRef}
-          className="flex-1 px-4 pb-0 pt-28 sm:px-8 sm:pt-32 lg:pt-0 lg:w-[55%] lg:px-0 lg:pb-12"
+          className="flex min-h-[100svh] flex-1 flex-col justify-center px-5 sm:px-8 lg:min-h-0 lg:w-[55%] lg:px-0 lg:pb-12"
           style={{ willChange: "transform" }}
         >
           {/* Terminal-style label */}
-          <div className="hero-line-wrapper mb-2 sm:mb-3">
+          <div className="hero-line-wrapper mb-3 sm:mb-3">
             <p
-              className="hero-line font-mono text-[11px] uppercase tracking-[0.25em] text-accent sm:text-[11px]"
+              className="hero-line font-mono text-[11px] uppercase tracking-[0.25em] text-accent"
               style={{ animationDelay: "0.2s" }}
             >
               [ Graba contenido para semanas. En una mañana. En un ático en Madrid. ]
@@ -64,7 +63,7 @@ export default function Hero() {
           </div>
 
           {/* Cinematic line-by-line reveal */}
-          <h1 className="max-w-[1100px] font-heading text-[clamp(1.9rem,9.5vw,6.5rem)] uppercase leading-[0.86] tracking-tight text-foreground [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,7vw,6.5rem)] sm:leading-[0.85]">
+          <h1 className="max-w-[1100px] font-heading text-[clamp(2.8rem,11vw,6.5rem)] uppercase leading-[0.86] tracking-tight text-foreground [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,7vw,6.5rem)] sm:leading-[0.85]">
             {LINES.map((line, i) => (
               <span key={i} className="hero-line-wrapper inline-block w-full">
                 <span
@@ -78,47 +77,60 @@ export default function Hero() {
             ))}
           </h1>
 
-          <div className="hero-line-wrapper mt-4 sm:mt-6">
+          <div className="hero-line-wrapper mt-5 sm:mt-6">
             <p
-              className="hero-line max-w-[540px] text-[0.95rem] leading-[1.7] text-foreground/60 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
+              className="hero-line max-w-[540px] text-base leading-[1.7] text-foreground/65 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
               style={{ animationDelay: "0.9s" }}
             >
               Vienes al ático, grabas con nuestro equipo y te vas con podcast, reels, YouTube o cursos listos para publicar. Look auténtico, calidad de producción, entrega en 24-48h. Desde 50€/h.
             </p>
           </div>
-        </div>
 
-        {/* Form block — solid bg on mobile, transparent on desktop (45%) */}
-        <div
-          ref={formRef}
-          className="hero-form-reveal w-full bg-background/90 px-4 pb-4 pt-2 backdrop-blur-sm sm:px-8 lg:w-[380px] lg:shrink-0 lg:bg-transparent lg:backdrop-blur-none lg:px-0 lg:pb-12 xl:w-[420px]"
-        >
-          {/* Social proof logos — mobile only */}
-          <div className="mb-1.5 lg:hidden">
-            <p className="mb-1 text-center font-mono text-[11px] uppercase tracking-[0.3em] text-foreground/30 sm:text-[11px]">
-              Empresas que han confiado en nosotros
-            </p>
-            <div
-              className="mx-auto w-[85%] overflow-hidden"
-              style={{
-                WebkitMaskImage:
-                  "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-                maskImage:
-                  "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
-              }}
+          {/* CTA button on mobile instead of form */}
+          <div className="hero-line-wrapper mt-8 lg:hidden">
+            <a
+              href="#contacto"
+              className="hero-line inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+              style={{ animationDelay: "1.1s" }}
             >
-              <Image
-                src={LOGOS_SRC}
-                alt="Clientes: Cámara de Comercio de Madrid, IFEMA, FIFA, Cinesa"
-                width={1200}
-                height={56}
-                className="mx-auto h-6 w-auto max-w-none scale-[1.15] brightness-0 invert opacity-40 sm:h-9"
-                draggable={false}
-                loading="eager"
-              />
-            </div>
+              Reservar Sesión →
+            </a>
           </div>
 
+          {/* Social proof logos — mobile */}
+          <div className="hero-line-wrapper mt-8 lg:hidden">
+            <div
+              className="hero-line"
+              style={{ animationDelay: "1.3s" }}
+            >
+              <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.3em] text-foreground/30">
+                Empresas que han confiado en nosotros
+              </p>
+              <div
+                className="w-[85%] overflow-hidden"
+                style={{
+                  WebkitMaskImage:
+                    "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+                  maskImage:
+                    "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
+                }}
+              >
+                <Image
+                  src={LOGOS_SRC}
+                  alt="Clientes: Cámara de Comercio de Madrid, IFEMA, FIFA, Cinesa"
+                  width={1200}
+                  height={56}
+                  className="h-6 w-auto max-w-none scale-[1.15] brightness-0 invert opacity-40 sm:h-9"
+                  draggable={false}
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Form block — ONLY on desktop */}
+        <div className="hero-form-reveal hidden lg:block lg:w-[380px] lg:shrink-0 lg:pb-12 xl:w-[420px]">
           <div className="overflow-hidden border border-foreground/10 bg-[#0A0A0A]/80 backdrop-blur-md">
             <ContactFormEmbed loadDelay={0} signalReady />
           </div>
