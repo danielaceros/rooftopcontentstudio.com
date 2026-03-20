@@ -65,7 +65,7 @@ export default function VideoBackground() {
       <img
         src="/optimized/hero-poster-v2.webp"
         alt=""
-        className="absolute inset-0 h-[130%] w-full object-cover object-top lg:object-center"
+        className="absolute inset-0 h-full w-full object-contain object-center lg:h-[130%] lg:object-cover lg:object-center"
         fetchPriority="high"
       />
       <video
@@ -78,7 +78,7 @@ export default function VideoBackground() {
         preload="metadata"
         poster="/optimized/hero-poster-v2.webp"
         onCanPlay={() => setLoaded(true)}
-        className="absolute inset-0 h-[130%] w-full object-cover object-top transition-opacity duration-1000 will-change-transform lg:object-center"
+        className="absolute inset-0 h-full w-full object-contain object-center transition-opacity duration-1000 will-change-transform lg:h-[130%] lg:object-cover lg:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
       >
         <track kind="captions" />
