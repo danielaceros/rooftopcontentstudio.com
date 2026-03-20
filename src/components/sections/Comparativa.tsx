@@ -7,19 +7,21 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 const TESTIMONIALS = [
   {
     src: "/AXZ.webm",
+    poster: "/optimized/poster-axz.webp",
     name: "Guillermo",
     role: "Founder, Geko Marketing",
     quote: "En tres horas grabamos contenido para todo el equipo. Volveremos.",
   },
   {
     src: "/C5694.webm",
+    poster: "/optimized/poster-c5694.webp",
     name: "Almudena",
     role: "Content Creator, Geko Marketing",
     quote: "El espacio es super comodo. Cinco estrellas.",
   },
 ];
 
-function TestimonialReel({ src, name, role, quote }: { src: string; name: string; role: string; quote: string }) {
+function TestimonialReel({ src, poster, name, role, quote }: { src: string; poster: string; name: string; role: string; quote: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +71,7 @@ function TestimonialReel({ src, name, role, quote }: { src: string; name: string
 
   return (
     <>
-      <div ref={containerRef}>
+      <div ref={containerRef} className="shrink-0 snap-center">
         <button
           type="button"
           onClick={() => setIsOpen(true)}
@@ -84,6 +86,7 @@ function TestimonialReel({ src, name, role, quote }: { src: string; name: string
             loop
             playsInline
             preload="none"
+            poster={poster}
           >
             <source src={src} type="video/webm" />
           </video>
@@ -194,9 +197,11 @@ export default function Comparativa() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.18}>
-          <div className="mt-14 flex flex-col items-center gap-6 sm:mt-16 sm:flex-row sm:justify-center sm:gap-8 lg:mt-20 lg:gap-12">
+          <div className="-mx-5 mt-14 flex snap-x snap-mandatory gap-5 overflow-x-auto px-5 pb-4 sm:mx-0 sm:mt-16 sm:flex-row sm:justify-center sm:gap-8 sm:overflow-visible sm:px-0 sm:pb-0 lg:mt-20 lg:gap-12"
+            style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
+          >
             {TESTIMONIALS.map((t) => (
-              <TestimonialReel key={t.src} src={t.src} name={t.name} role={t.role} quote={t.quote} />
+              <TestimonialReel key={t.src} src={t.src} poster={t.poster} name={t.name} role={t.role} quote={t.quote} />
             ))}
           </div>
         </ScrollReveal>

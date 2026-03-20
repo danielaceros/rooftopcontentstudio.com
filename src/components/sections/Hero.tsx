@@ -40,17 +40,17 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden" aria-label="Hero">
-      {/* Video — contained block on mobile, absolute fullscreen on desktop */}
-      <div className="relative h-[200px] overflow-hidden sm:h-[240px] lg:absolute lg:inset-0 lg:h-auto">
+    <section className="relative min-h-[100svh] overflow-hidden sm:min-h-[100svh]" aria-label="Hero">
+      {/* Video — absolute fullscreen on all viewports */}
+      <div className="absolute inset-0">
         <VideoBackground />
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center text-center lg:min-h-screen lg:flex-row lg:items-center lg:gap-12 lg:px-12 lg:pb-20 lg:pt-40 lg:text-left xl:gap-16 2xl:px-20">
-        {/* Headline — overlaps video bottom on mobile, left column on desktop (55%) */}
+        {/* Headline — overlaps video on all viewports */}
         <div
           ref={headlineRef}
-          className="-mt-16 flex-1 px-4 pb-0 sm:px-8 lg:mt-0 lg:w-[55%] lg:px-0 lg:pb-12"
+          className="flex-1 px-4 pb-0 pt-28 sm:px-8 sm:pt-32 lg:pt-0 lg:w-[55%] lg:px-0 lg:pb-12"
           style={{ willChange: "transform" }}
         >
           {/* Terminal-style label */}
@@ -91,7 +91,7 @@ export default function Hero() {
         {/* Form block — solid bg on mobile, transparent on desktop (45%) */}
         <div
           ref={formRef}
-          className="hero-form-reveal w-full bg-background px-4 pb-4 pt-2 sm:px-8 lg:w-[380px] lg:shrink-0 lg:bg-transparent lg:px-0 lg:pb-12 xl:w-[420px]"
+          className="hero-form-reveal w-full bg-background/90 px-4 pb-4 pt-2 backdrop-blur-sm sm:px-8 lg:w-[380px] lg:shrink-0 lg:bg-transparent lg:backdrop-blur-none lg:px-0 lg:pb-12 xl:w-[420px]"
         >
           {/* Social proof logos — mobile only */}
           <div className="mb-1.5 lg:hidden">
