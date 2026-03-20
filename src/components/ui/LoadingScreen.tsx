@@ -25,7 +25,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     const start = Date.now();
     const isMobile = window.innerWidth < 768;
-    const minTime = isMobile ? 2000 : 1500;
+    const minTime = isMobile ? 1200 : 800;
 
     let windowLoaded = document.readyState === "complete";
     let ghlReady =
@@ -52,19 +52,19 @@ export default function LoadingScreen() {
     if (!windowLoaded)
       window.addEventListener("load", onLoad, { once: true });
 
-    // Hard timeout: never block user for more than 3 seconds
+    // Hard timeout: never block user for more than 2 seconds
     const hardTimeout = setTimeout(() => {
       windowLoaded = true;
       ghlReady = true;
       tryExit();
-    }, 3000);
+    }, 2000);
 
     if (isMobile && !ghlReady) {
       window.addEventListener("ghlReady", onGhl, { once: true });
       const fallback = setTimeout(() => {
         ghlReady = true;
         tryExit();
-      }, 2500);
+      }, 1500);
       return () => {
         window.removeEventListener("load", onLoad);
         window.removeEventListener("ghlReady", onGhl);
@@ -84,7 +84,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     if (phase !== "loading") return;
     const start = performance.now();
-    const duration = 1500;
+    const duration = 800;
     let raf: number;
 
     const tick = () => {
@@ -344,7 +344,7 @@ export default function LoadingScreen() {
       const timer = setTimeout(() => {
         setPhase("done");
         document.body.style.overflow = "";
-      }, 800);
+      }, 500);
       return () => clearTimeout(timer);
     }
     return () => {
@@ -366,7 +366,7 @@ export default function LoadingScreen() {
         style={{
           height: "50vh",
           transform: isExiting ? "translateY(-100%)" : "translateY(0)",
-          transition: "transform 0.7s cubic-bezier(0.76, 0, 0.24, 1)",
+          transition: "transform 0.5s cubic-bezier(0.76, 0, 0.24, 1)",
         }}
       />
 
@@ -376,7 +376,7 @@ export default function LoadingScreen() {
         style={{
           height: "50vh",
           transform: isExiting ? "translateY(100%)" : "translateY(0)",
-          transition: "transform 0.7s cubic-bezier(0.76, 0, 0.24, 1)",
+          transition: "transform 0.5s cubic-bezier(0.76, 0, 0.24, 1)",
         }}
       />
 
@@ -403,7 +403,7 @@ export default function LoadingScreen() {
           style={{
             opacity: 0,
             transform: "scale(0.95)",
-            animation: "ls-fade-in 0.8s ease-out 0.2s forwards",
+            animation: "ls-fade-in 0.5s ease-out 0.1s forwards",
           }}
         >
           <Image
@@ -420,7 +420,7 @@ export default function LoadingScreen() {
           className="mt-4 font-mono text-[11px] uppercase tracking-[0.3em] text-accent/70"
           style={{
             opacity: 0,
-            animation: "ls-fade-in 0.7s ease-out 0.5s forwards",
+            animation: "ls-fade-in 0.4s ease-out 0.25s forwards",
           }}
         >
           Content Studio · Madrid
@@ -431,7 +431,7 @@ export default function LoadingScreen() {
           className="mt-8 flex flex-col items-center gap-3"
           style={{
             opacity: 0,
-            animation: "ls-fade-in 0.6s ease-out 0.7s forwards",
+            animation: "ls-fade-in 0.3s ease-out 0.35s forwards",
           }}
         >
           <div className="h-px w-[120px] bg-[#1a1a1a]">
