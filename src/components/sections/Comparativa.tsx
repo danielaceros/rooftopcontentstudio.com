@@ -5,11 +5,21 @@ import { createPortal } from "react-dom";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const TESTIMONIALS = [
-  { src: "/C5694.webm" },
-  { src: "/AXZ.webm" },
+  {
+    src: "/AXZ.webm",
+    name: "Guillermo",
+    role: "Founder, Geko Marketing",
+    quote: "En tres horas grabamos contenido para todo el equipo. Volveremos.",
+  },
+  {
+    src: "/C5694.webm",
+    name: "Almudena",
+    role: "Content Creator, Geko Marketing",
+    quote: "El espacio es super comodo. Cinco estrellas.",
+  },
 ];
 
-function TestimonialReel({ src }: { src: string }) {
+function TestimonialReel({ src, name, role, quote }: { src: string; name: string; role: string; quote: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -107,6 +117,9 @@ function TestimonialReel({ src }: { src: string }) {
             }}
           />
         </button>
+        <p className="mt-3 text-[0.95rem] font-medium text-foreground">{name}</p>
+        <p className="text-[0.8rem] text-muted">{role}</p>
+        <p className="mt-2 text-[0.85rem] italic text-foreground/70">&ldquo;{quote}&rdquo;</p>
       </div>
 
       {/* Modal */}
@@ -170,20 +183,20 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Lo que dicen nuestros clientes.
+            Nuestros primeros clientes.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            Resultados reales. Historias reales.
+            Dos personas reales. Un equipo que volverá.
           </p>
         </ScrollReveal>
 
         <ScrollReveal delay={0.18}>
           <div className="mt-14 flex flex-col items-center gap-6 sm:mt-16 sm:flex-row sm:justify-center sm:gap-8 lg:mt-20 lg:gap-12">
             {TESTIMONIALS.map((t) => (
-              <TestimonialReel key={t.src} src={t.src} />
+              <TestimonialReel key={t.src} src={t.src} name={t.name} role={t.role} quote={t.quote} />
             ))}
           </div>
         </ScrollReveal>
