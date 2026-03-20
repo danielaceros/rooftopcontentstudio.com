@@ -22,7 +22,7 @@ export const BENEFICIOS = [
   {
     title: "Look Real, Calidad de Producción",
     description:
-      "Terraza con skyline, sofás reales, luz natural — tu audiencia ve a alguien hablando desde su salón, no desde un plató. Pero detrás hay cámaras, iluminación y sonido profesional.",
+      "Luz natural, terraza con skyline de Madrid y un set diseñado para que el contenido parezca auténtico — porque lo es. Sin cicloramas blancos ni focos que te pongan nervioso. Solo tú, el mensaje y un equipo que se encarga de todo lo demás.",
     icon: "location",
   },
   {

@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 const STATS = [
-  { value: 28, suffix: "+", label: "Marcas Grabadas" },
-  { value: 500, suffix: "+", label: "Horas de Contenido" },
+  { value: 28, suffix: "+", label: "Proyectos" },
+  { value: 500, suffix: "+", label: "Horas Producidas" },
   { value: 12, suffix: "+", label: "Piezas Editadas por Sesión" },
 ];
 
