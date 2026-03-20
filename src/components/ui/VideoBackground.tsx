@@ -65,7 +65,7 @@ export default function VideoBackground() {
       <img
         src="/optimized/hero-poster-v2.webp"
         alt=""
-        className="absolute inset-0 h-full w-full object-contain object-center lg:h-[130%] lg:object-cover lg:object-center"
+        className="absolute inset-x-0 top-0 h-auto w-full object-contain object-top lg:absolute lg:inset-0 lg:h-[130%] lg:w-full lg:object-cover lg:object-center"
         fetchPriority="high"
       />
       <video
@@ -78,7 +78,7 @@ export default function VideoBackground() {
         preload="metadata"
         poster="/optimized/hero-poster-v2.webp"
         onCanPlay={() => setLoaded(true)}
-        className="absolute inset-0 h-full w-full object-contain object-center transition-opacity duration-1000 will-change-transform lg:h-[130%] lg:object-cover lg:object-center"
+        className="absolute inset-x-0 top-0 h-auto w-full object-contain object-top transition-opacity duration-1000 will-change-transform lg:absolute lg:inset-0 lg:h-[130%] lg:w-full lg:object-cover lg:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
       >
         <track kind="captions" />
@@ -89,7 +89,8 @@ export default function VideoBackground() {
         className="absolute inset-0 bg-background"
         style={{ opacity: 0.15 }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent lg:via-background/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent lg:hidden" style={{ background: "linear-gradient(to top, var(--color-background) 0%, var(--color-background) 15%, transparent 60%)" }} />
       <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/20 to-transparent" />
     </div>
   );
