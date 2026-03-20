@@ -18,7 +18,7 @@ export function use3DTilt(maxDeg = 8) {
     const y = (e.clientY - rect.top) / rect.height - 0.5;
     ref.current.style.transform = `perspective(1000px) rotateY(${x * maxDeg * 2}deg) rotateX(${-y * maxDeg * 2}deg)`;
     if (lightRef.current) {
-      lightRef.current.style.background = `radial-gradient(circle at ${(x + 0.5) * 100}% ${(y + 0.5) * 100}%, rgba(201,168,76,0.10) 0%, transparent 60%)`;
+      lightRef.current.style.background = `radial-gradient(circle at ${(x + 0.5) * 100}% ${(y + 0.5) * 100}%, rgba(255,255,255,0.10) 0%, transparent 60%)`;
     }
   }, [maxDeg]);
 

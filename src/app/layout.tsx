@@ -137,6 +137,16 @@ export default function RootLayout({
         />
       </head>
       <body>
+        {/* Instant black overlay — covers page until LoadingScreen JS hydrates and takes over */}
+        <div
+          id="pre-loader"
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 9998,
+            backgroundColor: "#080808",
+          }}
+        />
         <LoadingScreenWrapper />
         <CustomCursor />
         <SmoothScroll />

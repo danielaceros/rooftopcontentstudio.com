@@ -130,7 +130,7 @@ export default function Proceso() {
                     <div
                       className="h-2 w-2 rounded-full transition-all duration-500"
                       style={{
-                        backgroundColor: i === activeStep ? "#C9A84C" : "#333",
+                        backgroundColor: i === activeStep ? "#FFFFFF" : "#333",
                         transform: i === activeStep ? "scale(1.3)" : "scale(1)",
                       }}
                     />

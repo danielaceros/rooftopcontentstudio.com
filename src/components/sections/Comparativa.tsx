@@ -1,228 +1,200 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-export default function Comparativa() {
+const TESTIMONIALS = [
+  { src: "/C5694.webm" },
+  { src: "/AXZ.webm" },
+];
+
+function TestimonialReel({ src }: { src: string }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const clipRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
-  const handleRef = useRef<HTMLDivElement>(null);
-  const beforeVideoRef = useRef<HTMLVideoElement>(null);
-  const afterVideoRef = useRef<HTMLVideoElement>(null);
-  const isTouchDevice = useRef(false);
-  const dragging = useRef(false);
-  const userInteracted = useRef(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isModalReady, setIsModalReady] = useState(false);
 
   useEffect(() => {
-    isTouchDevice.current = window.matchMedia("(pointer: coarse)").matches;
-  }, []);
-
-  // Lazy-load videos when section enters viewport, then nudge autoplay
-  useEffect(() => {
-    const container = containerRef.current;
-    const after = afterVideoRef.current;
-    const before = beforeVideoRef.current;
-    if (!container || !after || !before) return;
-
-    const nudge = () => {
-      if (before.paused) before.play().catch(() => {});
-      if (after.paused) after.play().catch(() => {});
-    };
+    const el = containerRef.current;
+    const video = videoRef.current;
+    if (!el || !video) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry?.isIntersecting) {
-          before.preload = "auto";
-          after.preload = "auto";
-          before.load();
-          after.load();
-          nudge();
-          const t1 = setTimeout(nudge, 500);
-          const t2 = setTimeout(nudge, 2000);
+          video.preload = "auto";
+          video.load();
+          video.play().catch(() => {});
           observer.disconnect();
-          return () => { clearTimeout(t1); clearTimeout(t2); };
         }
       },
-      { rootMargin: "200px" }
+      { rootMargin: "200px" },
     );
-    observer.observe(container);
-
+    observer.observe(el);
     return () => observer.disconnect();
   }, []);
 
-  // Direct DOM mutation — no React re-render, no CSS transition
-  const applyPosition = useCallback((pct: number) => {
-    if (clipRef.current) clipRef.current.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
-    if (lineRef.current) lineRef.current.style.left = `${pct}%`;
-    if (handleRef.current) handleRef.current.style.left = `${pct}%`;
-  }, []);
+  useEffect(() => {
+    if (!isOpen) return;
+    const prevBody = document.body.style.overflow;
+    const prevHtml = document.documentElement.style.overflow;
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
 
-  const getPercent = useCallback((clientX: number) => {
-    const container = containerRef.current;
-    if (!container) return 50;
-    const rect = container.getBoundingClientRect();
-    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
-    return (x / rect.width) * 100;
-  }, []);
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevBody;
+      document.documentElement.style.overflow = prevHtml;
+    };
+  }, [isOpen]);
 
-  const markInteracted = useCallback(() => {
-    userInteracted.current = true;
-  }, []);
+  useEffect(() => {
+    if (isOpen) setIsModalReady(false);
+  }, [isOpen]);
 
-  // Desktop: hover
-  const onMouseMove = useCallback(
-    (e: React.MouseEvent) => {
-      if (isTouchDevice.current) return;
-      markInteracted();
-      applyPosition(getPercent(e.clientX));
-    },
-    [applyPosition, getPercent, markInteracted]
+  return (
+    <>
+      <div ref={containerRef}>
+        <button
+          type="button"
+          onClick={() => setIsOpen(true)}
+          className="group relative aspect-[9/16] w-[280px] max-w-[360px] cursor-pointer overflow-hidden rounded-sm sm:w-[320px] lg:w-[360px]"
+          style={{ backgroundColor: "#0a0a0a" }}
+        >
+          <video
+            ref={videoRef}
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.03]"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="none"
+          >
+            <source src={src} type="video/webm" />
+          </video>
+
+          {/* Hover overlay */}
+          <div className="pointer-events-none absolute inset-0 bg-black/0 transition-all duration-300 group-hover:bg-black/30" />
+
+          {/* Play icon */}
+          <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-300 group-hover:opacity-100">
+            <svg width="52" height="52" viewBox="0 0 44 44" fill="none" className="scale-[0.8] transition-transform duration-300 group-hover:scale-100 drop-shadow-lg">
+              <circle cx="22" cy="22" r="21" stroke="white" strokeWidth="1.5" opacity="0.8" />
+              <path d="M18 14L30 22L18 30V14Z" fill="white" opacity="0.9" />
+            </svg>
+          </div>
+
+          {/* Subtle gradient at bottom */}
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4"
+            style={{
+              background: "linear-gradient(0deg, rgba(8,8,8,0.6) 0%, transparent 100%)",
+            }}
+          />
+
+          {/* Film grain */}
+          <div
+            className="pointer-events-none absolute inset-0 mix-blend-overlay"
+            style={{
+              opacity: 0.03,
+              backgroundImage:
+                "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E\")",
+            }}
+          />
+        </button>
+      </div>
+
+      {/* Modal */}
+      {isOpen && typeof document !== "undefined"
+        ? createPortal(
+            <div
+              className="fixed inset-0 z-[120] flex items-center justify-center bg-black/82 px-3 py-4 backdrop-blur-sm sm:px-6"
+              onClick={() => setIsOpen(false)}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Testimonio"
+            >
+              <div
+                className="relative max-h-[88svh] max-w-[94vw] overflow-hidden rounded-2xl border border-white/15 bg-background shadow-[0_28px_70px_-30px_rgba(0,0,0,0.95)]"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  type="button"
+                  onClick={() => setIsOpen(false)}
+                  className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
+                  aria-label="Cerrar video"
+                >
+                  Cerrar
+                </button>
+                <video
+                  src={src}
+                  controls
+                  autoPlay
+                  playsInline
+                  preload="metadata"
+                  onLoadedData={() => setIsModalReady(true)}
+                  className="block max-h-[88svh] max-w-[94vw] bg-black object-contain"
+                >
+                  <track kind="captions" />
+                </video>
+                <div
+                  className={`pointer-events-none absolute inset-0 flex items-center justify-center bg-black/35 transition-opacity duration-300 ${
+                    isModalReady ? "opacity-0" : "opacity-100"
+                  }`}
+                >
+                  <span className="h-8 w-8 animate-spin rounded-full border border-white/60 border-t-transparent" />
+                </div>
+              </div>
+            </div>,
+            document.body,
+          )
+        : null}
+    </>
   );
+}
 
-  const onMouseLeave = useCallback(() => {
-    if (isTouchDevice.current) return;
-    applyPosition(50);
-  }, [applyPosition]);
-
-  // Mobile: touch drag
-  const onTouchStart = useCallback(
-    (e: React.TouchEvent) => {
-      markInteracted();
-      dragging.current = true;
-      applyPosition(getPercent(e.touches[0].clientX));
-    },
-    [applyPosition, getPercent, markInteracted]
-  );
-
-  const onTouchMove = useCallback(
-    (e: React.TouchEvent) => {
-      if (!dragging.current) return;
-      applyPosition(getPercent(e.touches[0].clientX));
-    },
-    [applyPosition, getPercent]
-  );
-
-  const onTouchEnd = useCallback(() => {
-    dragging.current = false;
-  }, []);
-
+export default function Comparativa() {
   return (
     <section className="px-5 py-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
-            ( La Diferencia )
+            ( Testimonios )
           </p>
         </ScrollReveal>
 
         <ScrollReveal delay={0.08}>
           <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Contenido de Plató vs. Contenido Orgánico.
+            Lo que dicen nuestros clientes.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            El mismo mensaje. Dos resultados muy diferentes.
+            Resultados reales. Historias reales.
           </p>
         </ScrollReveal>
 
-        {/* Comparison slider */}
         <ScrollReveal delay={0.18}>
-          <div
-            ref={containerRef}
-            className="relative mt-14 aspect-[9/16] max-w-[400px] mx-auto cursor-col-resize select-none overflow-hidden sm:mt-16 lg:mt-20"
-            onMouseMove={onMouseMove}
-            onMouseLeave={onMouseLeave}
-            onTouchStart={onTouchStart}
-            onTouchMove={onTouchMove}
-            onTouchEnd={onTouchEnd}
-          >
-            {/* After (pro) — full layer behind */}
-            <video
-              ref={afterVideoRef}
-              className="absolute inset-0 h-full w-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="none"
-            >
-              <source src="/video/corr.webm" type="video/webm" />
-              <source src="/video/corr.mp4" type="video/mp4" />
-            </video>
-
-            {/* Before (sin estudio) — clipped layer on top */}
-            <div
-              ref={clipRef}
-              className="absolute inset-0"
-              style={{ clipPath: "inset(0 50% 0 0)", willChange: "clip-path" }}
-            >
-              <video
-                ref={beforeVideoRef}
-                className="absolute inset-0 h-full w-full object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="none"
-              >
-                <source src="/video/ncorr.webm" type="video/webm" />
-                <source src="/video/ncorr.mp4" type="video/mp4" />
-              </video>
-            </div>
-
-            {/* Labels */}
-            <div className="pointer-events-none absolute left-4 top-4 z-20 bg-background/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-foreground backdrop-blur-sm sm:left-5 sm:top-5">
-              Sin Nosotros
-            </div>
-            <div className="pointer-events-none absolute right-4 top-4 z-20 bg-accent/90 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.15em] text-background backdrop-blur-sm sm:right-5 sm:top-5">
-              Con Nosotros
-            </div>
-
-            {/* Divider line */}
-            <div
-              ref={lineRef}
-              className="pointer-events-none absolute top-0 z-10 h-full w-px bg-foreground/80"
-              style={{ left: "0%", willChange: "left" }}
-            />
-
-            {/* Handle */}
-            <div
-              ref={handleRef}
-              className="pointer-events-none absolute top-1/2 z-20 flex h-10 w-10 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-foreground/30 bg-background/80 backdrop-blur-sm sm:h-12 sm:w-12"
-              style={{ left: "0%", willChange: "left" }}
-            >
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-                className="text-foreground"
-              >
-                <path
-                  d="M5.5 4L1.5 9L5.5 14M12.5 4L16.5 9L12.5 14"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
+          <div className="mt-14 flex flex-col items-center gap-6 sm:mt-16 sm:flex-row sm:justify-center sm:gap-8 lg:mt-20 lg:gap-12">
+            {TESTIMONIALS.map((t) => (
+              <TestimonialReel key={t.src} src={t.src} />
+            ))}
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={0.24}>
           <div className="mt-10 text-center sm:mt-14">
-            <p className="mb-6 max-w-lg mx-auto text-[0.95rem] leading-[1.75] text-muted sm:text-base">
-              Tu audiencia scrollea 300 posts al día. El contenido de plató lo saltan. El que parece real lo paran, lo ven y lo comparten. Nosotros grabamos el segundo con calidad del primero.
-            </p>
             <a
               href="#contacto"
               className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
             >
-              Ver disponibilidad →
+              Reserva tu sesión →
             </a>
           </div>
         </ScrollReveal>

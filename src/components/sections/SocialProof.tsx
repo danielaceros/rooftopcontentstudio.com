@@ -72,7 +72,7 @@ export default function SocialProof() {
   }, []);
 
   return (
-    <section ref={ref} className="relative border-y border-[#C9A84C]/20 bg-[#C9A84C]">
+    <section ref={ref} className="relative border-y border-[#FFFFFF]/20 bg-[#FFFFFF]">
       <div className="mx-auto max-w-7xl px-5 py-10 sm:px-8 sm:py-14 md:px-10 lg:px-12 lg:py-16 xl:px-16 2xl:px-20">
         {/* Desktop: single row — stats left, logos right */}
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:justify-between lg:gap-12">

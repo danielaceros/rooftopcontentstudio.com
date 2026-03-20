@@ -16,6 +16,11 @@ export default function LoadingScreen() {
     typeof navigator !== "undefined" &&
     /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
 
+  /* ── Remove pre-loader overlay once React hydrates ── */
+  useEffect(() => {
+    document.getElementById("pre-loader")?.remove();
+  }, []);
+
   /* ── Ready logic (window.load + GHL) ── */
   useEffect(() => {
     const start = Date.now();
@@ -151,7 +156,7 @@ export default function LoadingScreen() {
       keyLight.target.position.set(0, 0, 0);
       scene.add(keyLight, keyLight.target);
 
-      const amberLight = new THREE.SpotLight(0xc9a84c, 1);
+      const amberLight = new THREE.SpotLight(0xffffff, 1);
       amberLight.position.set(-5, 2, 3);
       amberLight.angle = Math.PI / 4;
       amberLight.penumbra = 0.6;
@@ -182,8 +187,8 @@ export default function LoadingScreen() {
 
       /* Lens glass (amber reflection) */
       const glassMat = mat(new THREE.MeshStandardMaterial({
-        color: 0xc9a84c,
-        emissive: 0xc9a84c,
+        color: 0xffffff,
+        emissive: 0xffffff,
         emissiveIntensity: 0.3,
         metalness: 0.5,
         roughness: 0.2,
@@ -199,7 +204,7 @@ export default function LoadingScreen() {
 
       /* Film reels */
       const reelMat = mat(new THREE.MeshStandardMaterial({ color: 0x222222, metalness: 0.7, roughness: 0.3 }));
-      const spokeMat = mat(new THREE.MeshStandardMaterial({ color: 0xc9a84c, metalness: 0.6, roughness: 0.3 }));
+      const spokeMat = mat(new THREE.MeshStandardMaterial({ color: 0xffffff, metalness: 0.6, roughness: 0.3 }));
       const spokeGeo = geo(new THREE.BoxGeometry(0.03, 0.38, 0.02));
 
       for (const side of [-1, 1]) {
@@ -263,7 +268,7 @@ export default function LoadingScreen() {
         pGeo.setAttribute("position", new THREE.BufferAttribute(pos, 3));
         geos.push(pGeo);
         const pMat = mat(new THREE.PointsMaterial({
-          color: 0xc9a84c,
+          color: 0xffffff,
           size: 0.015,
           transparent: true,
           opacity: 0.2,

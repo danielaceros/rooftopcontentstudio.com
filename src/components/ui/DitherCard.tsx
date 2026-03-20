@@ -29,7 +29,7 @@ export default function DitherCard({ children, className = "" }: DitherCardProps
         >
           <Dithering
             colorBack="#00000000"
-            colorFront="#C9A84C"
+            colorFront="#FFFFFF"
             shape="warp"
             type="4x4"
             speed={isHovered ? 0.6 : 0.15}

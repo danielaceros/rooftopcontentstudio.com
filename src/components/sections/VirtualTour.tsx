@@ -17,6 +17,7 @@ interface Zone {
   subtitle: string;
   photos: ZonePhoto[];
   connections: string[];
+  comingSoon?: boolean;
 }
 
 const ZONES: Zone[] = [
@@ -34,31 +35,21 @@ const ZONES: Zone[] = [
     id: "salon",
     name: "Salón / Set",
     subtitle: "Escenario principal de grabación",
-    photos: [
-      { src: "/optimized/studio-1.webp", alt: "Setup de entrevista con sofá blanco y cámara profesional", caption: "Set de entrevista listo" },
-      { src: "/optimized/studio/dsc09680.webp", alt: "Salón del estudio con softboxes, cámara y sofá blanco", caption: "Salón con luz natural y equipo" },
-      { src: "/optimized/studio/dsc09694.webp", alt: "Setup de iluminación con softbox y cámara en el salón", caption: "Reflector y cámara en el salón" },
-      { src: "/optimized/studio/dsc09702.webp", alt: "Salón con sofá, softbox y mesa de trabajo con portátil", caption: "Zona de trabajo y grabación" },
-      { src: "/optimized/studio/dsc09710.webp", alt: "Zona de entrevista con sofá beige y equipo de iluminación", caption: "El salón: cómodo, no intimida" },
-      { src: "/optimized/studio/dsc09771.webp", alt: "Set de grabación con sillón reclinable y dos softboxes", caption: "Set de entrevista nocturno" },
-      { src: "/optimized/studio/dsc09774.webp", alt: "Salón preparado para rodaje con iluminación profesional", caption: "Listo para rodar" },
-      { src: "/optimized/studio/dsc09776.webp", alt: "Vista cenital del set con sillón y softboxes encendidas", caption: "Vista cenital del set" },
-      { src: "/optimized/studio/dsc09780.webp", alt: "Rincón de grabación con sillón y softboxes desde arriba", caption: "Iluminación desde arriba" },
-      { src: "/optimized/studio/dsc09789.webp", alt: "Sillón con panel reflector y cámara en plano cenital", caption: "Sillón con reflector y cámara" },
-      { src: "/optimized/studio/dsc09897.webp", alt: "Sofá con teleprompter y softboxes de iluminación", caption: "Sofá con teleprompter" },
-      { src: "/optimized/studio/dsc09900.webp", alt: "Setup de entrevista con sofá, cámara y doble softbox", caption: "Todo listo para grabar" },
-      { src: "/optimized/studio/dsc09911.webp", alt: "Cámara profesional con teleprompter frente al sofá", caption: "Cámara y teleprompter" },
-    ],
+    photos: [],
     connections: ["terraza", "podcast", "foto"],
+    comingSoon: true,
   },
   {
     id: "foto",
-    name: "Sala de Fotografía",
-    subtitle: "Conectada a la cocina · Iluminación controlada",
+    name: "Sala Polivalente",
+    subtitle: "Espacio flexible · Foto, vídeo y más",
     photos: [
-      { src: "/optimized/studio/dsc09820.webp", alt: "Set de fotografía con escritorio, portátil y dos softboxes", caption: "Set de fotografía preparado" },
-      { src: "/optimized/studio/dsc09849.webp", alt: "Mesa con portátil y softboxes laterales", caption: "Mesa con iluminación" },
-      { src: "/optimized/studio/dsc09859.webp", alt: "Habitación de grabación con softboxes y escritorio", caption: "Sala de fotografía completa" },
+      { src: "/IMG_7346.webp", alt: "Vista amplia del set con iluminación ambiente", caption: "Vista completa del set" },
+      { src: "/IMG_7352.webp", alt: "Detalle de invitada hablando al micrófono", caption: "Micrófono y detalle" },
+      { src: "/IMG_7368.webp", alt: "Dos presentadores mirándose en el set", caption: "Conexión entre presentadores" },
+      { src: "/1_1.webp", alt: "Entrevista en set de podcast con iluminación cálida", caption: "Entrevista con iluminación cálida" },
+      { src: "/3_1 (1).webp", alt: "Invitada en el set de podcast con micrófono profesional", caption: "Invitada en el set" },
+      { src: "/4_1.webp", alt: "Sesión de podcast con iluminación ambiente púrpura", caption: "Set con iluminación púrpura" },
     ],
     connections: ["salon", "podcast"],
   },
@@ -66,11 +57,9 @@ const ZONES: Zone[] = [
     id: "podcast",
     name: "Sala de Podcast",
     subtitle: "Espacio íntimo para conversaciones",
-    photos: [
-      { src: "/optimized/studio/dsc09877.webp", alt: "Set de conversación con mesa, vasos y softboxes", caption: "Set íntimo de conversación" },
-      { src: "/optimized/studio/dsc09886.webp", alt: "Vista aérea de la mesa de podcast con dos sillas", caption: "Vista cenital del set de podcast" },
-    ],
+    photos: [],
     connections: ["salon", "foto"],
+    comingSoon: true,
   },
 ];
 
@@ -124,15 +113,15 @@ function FloorPlan({
   onZoneClick: (id: string) => void;
 }) {
   const zoneStyle = (id: string) => ({
-    fill: activeZone === id ? "rgba(201,168,76,0.15)" : "rgba(255,255,255,0.03)",
-    stroke: activeZone === id ? "#C9A84C" : "rgba(255,255,255,0.12)",
+    fill: activeZone === id ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.03)",
+    stroke: activeZone === id ? "#FFFFFF" : "rgba(255,255,255,0.12)",
     strokeWidth: activeZone === id ? 1.5 : 0.75,
     cursor: "pointer" as const,
     transition: "all 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
   });
 
   const labelStyle = (id: string): React.CSSProperties => ({
-    fill: activeZone === id ? "#C9A84C" : "rgba(255,255,255,0.4)",
+    fill: activeZone === id ? "#FFFFFF" : "rgba(255,255,255,0.4)",
     fontSize: 8,
     fontFamily: "'DM Mono', monospace",
     textTransform: "uppercase",
@@ -142,7 +131,7 @@ function FloorPlan({
   });
 
   const subtitleStyle = (id: string): React.CSSProperties => ({
-    fill: activeZone === id ? "rgba(201,168,76,0.6)" : "rgba(255,255,255,0.2)",
+    fill: activeZone === id ? "rgba(255,255,255,0.6)" : "rgba(255,255,255,0.2)",
     fontSize: 5.5,
     fontFamily: "'DM Sans', sans-serif",
     pointerEvents: "none",
@@ -206,29 +195,22 @@ function FloorPlan({
         onClick={() => onZoneClick("foto")}
         data-cursor-hover="true" data-cursor-text="Ver"
       />
-      <text x="95" y="82" style={labelStyle("foto")}>Sala Foto</text>
-      <text x="87" y="95" style={subtitleStyle("foto")}>Fotografía · Iluminación</text>
+      <text x="82" y="82" style={labelStyle("foto")}>Polivalente</text>
+      <text x="87" y="95" style={subtitleStyle("foto")}>Próximamente</text>
       <line x1="110" y1="140" x2="110" y2="140" stroke="rgba(255,255,255,0.06)" strokeWidth="0.5" />
 
-      {/* ── Sala de Podcast ── */}
+      {/* ── Sala de Podcast (próximamente) ── */}
       <rect x="210" y="40" width="110" height="100" rx="1"
-        style={zoneStyle("podcast")}
-        onClick={() => onZoneClick("podcast")}
-        data-cursor-hover="true" data-cursor-text="Ver"
+        fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" strokeDasharray="4 2"
       />
-      <line x1="240" y1="140" x2="280" y2="140" stroke={activeZone === "podcast" ? "#C9A84C" : "rgba(255,255,255,0.12)"} strokeWidth="1.5" style={{ transition: "stroke 0.4s ease" }} />
-      <text x="228" y="85" style={labelStyle("podcast")}>Podcast</text>
-      <text x="222" y="98" style={subtitleStyle("podcast")}>Conversaciones</text>
+      <text x="225" y="90" style={{ fill: "rgba(255,255,255,0.12)", fontSize: 6, fontFamily: "'DM Mono', monospace", letterSpacing: "0.15em", textTransform: "uppercase", pointerEvents: "none" } as React.CSSProperties}>Próximamente</text>
 
-      {/* ── Salón / Set ── */}
+      {/* ── Salón / Set (próximamente) ── */}
       <rect x="350" y="90" width="180" height="160" rx="1"
-        style={zoneStyle("salon")}
-        onClick={() => onZoneClick("salon")}
-        data-cursor-hover="true" data-cursor-text="Ver"
+        fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.04)" strokeWidth="0.5" strokeDasharray="4 2"
       />
-      <line x1="350" y1="210" x2="350" y2="240" stroke={activeZone === "salon" ? "#C9A84C" : "rgba(255,255,255,0.12)"} strokeWidth="1.5" style={{ transition: "stroke 0.4s ease" }} />
-      <text x="400" y="168" style={labelStyle("salon")}>Salón / Set</text>
-      <text x="383" y="181" style={subtitleStyle("salon")}>Escenario principal</text>
+      <line x1="350" y1="210" x2="350" y2="240" stroke="rgba(255,255,255,0.06)" strokeWidth="1" style={{ transition: "stroke 0.4s ease" }} />
+      <text x="393" y="170" style={{ fill: "rgba(255,255,255,0.12)", fontSize: 6, fontFamily: "'DM Mono', monospace", letterSpacing: "0.15em", textTransform: "uppercase", pointerEvents: "none" } as React.CSSProperties}>Próximamente</text>
 
       {/* ── Terraza ── */}
       <rect x="350" y="10" width="180" height="75" rx="1"
@@ -236,7 +218,7 @@ function FloorPlan({
         onClick={() => onZoneClick("terraza")}
         data-cursor-hover="true" data-cursor-text="Ver"
       />
-      <line x1="400" y1="85" x2="480" y2="85" stroke={activeZone === "terraza" ? "#C9A84C" : "rgba(255,255,255,0.15)"} strokeWidth="2" strokeDasharray="6 3" style={{ transition: "stroke 0.4s ease" }} />
+      <line x1="400" y1="85" x2="480" y2="85" stroke={activeZone === "terraza" ? "#FFFFFF" : "rgba(255,255,255,0.15)"} strokeWidth="2" strokeDasharray="6 3" style={{ transition: "stroke 0.4s ease" }} />
       <text x="402" y="48" style={labelStyle("terraza")}>Terraza</text>
       <text x="389" y="61" style={subtitleStyle("terraza")}>Rooftop · Skyline</text>
 
@@ -254,7 +236,7 @@ function FloorPlan({
           key={`route-${routeKey}`}
           d={routePath}
           fill="none"
-          stroke="#C9A84C"
+          stroke="#FFFFFF"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -269,7 +251,7 @@ function FloorPlan({
       )}
 
       {/* ── Active zone pulsing dot ── */}
-      <circle cx={dotCx[activeZone]} cy={dotCy[activeZone]} r="3" fill="#C9A84C" filter="url(#glow)">
+      <circle cx={dotCx[activeZone]} cy={dotCy[activeZone]} r="3" fill="#FFFFFF" filter="url(#glow)">
         <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
         <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
       </circle>
@@ -306,7 +288,7 @@ function PhotoViewer({
   onPrev: () => void;
   onNext: () => void;
 }) {
-  const photo = zone.photos[photoIndex];
+  const photo = zone.photos[photoIndex] ?? null;
   const total = zone.photos.length;
   const containerRef = useRef<HTMLDivElement>(null);
   const tiltRef = useRef({ x: 0, y: 0 });
@@ -445,7 +427,7 @@ function PhotoViewer({
             <p
               className="mt-2 font-mono text-[9px] uppercase tracking-[0.4em]"
               style={{
-                color: "rgba(201,168,76,0.8)",
+                color: "rgba(255,255,255,0.8)",
                 textShadow: "0 1px 10px rgba(0,0,0,0.8)",
                 animation: showZoneInfo ? "vtTypeIn 0.5s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both" : "none",
               }}
@@ -454,6 +436,15 @@ function PhotoViewer({
             </p>
           </div>
         </div>
+
+        {/* Coming soon overlay */}
+        {zone.comingSoon && (
+          <div className="absolute inset-0 z-[7] flex items-center justify-center" style={{ background: "rgba(8,8,8,0.85)", backdropFilter: "blur(8px)" }}>
+            <p className="font-mono text-[11px] uppercase tracking-[0.4em]" style={{ color: "rgba(255,255,255,0.5)" }}>
+              Próximamente
+            </p>
+          </div>
+        )}
 
         {/* Caption — bottom left (above dots) */}
         <div className="absolute bottom-10 left-4 z-[4] sm:bottom-14 sm:left-6 lg:bottom-16 lg:left-7">
@@ -467,7 +458,7 @@ function PhotoViewer({
             className="mt-0.5 font-sans text-[11px] font-medium sm:text-[13px] lg:text-[14px]"
             style={{ color: "rgba(255,255,255,0.85)" }}
           >
-            {photo.caption}
+            {photo?.caption}
           </p>
         </div>
 
@@ -527,7 +518,7 @@ function PhotoViewer({
                 style={{
                   width: i === photoIndex ? 14 : 4,
                   height: 4,
-                  backgroundColor: i === photoIndex ? "#C9A84C" : "rgba(255,255,255,0.2)",
+                  backgroundColor: i === photoIndex ? "#FFFFFF" : "rgba(255,255,255,0.2)",
                 }}
               />
             ))}
@@ -549,8 +540,8 @@ function PhotoViewer({
 
 /* ─── Main Component ─── */
 export default function VirtualTour() {
-  const [activeZoneId, setActiveZoneId] = useState("salon");
-  const [prevZoneId, setPrevZoneId] = useState("salon");
+  const [activeZoneId, setActiveZoneId] = useState("foto");
+  const [prevZoneId, setPrevZoneId] = useState("foto");
   const [photoIndex, setPhotoIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(false);
   const [routeKey, setRouteKey] = useState(0);
@@ -595,15 +586,18 @@ export default function VirtualTour() {
     let zoneIdx = ZONES.findIndex((z) => z.id === activeZoneId);
     let pIdx = photoIndex;
 
+    const playableZones = ZONES.filter((z) => !z.comingSoon);
     clearInterval(autoPlayRef.current);
     autoPlayRef.current = setInterval(() => {
+      const pZoneIdx = playableZones.findIndex((z) => z.id === ZONES[zoneIdx].id);
       const zone = ZONES[zoneIdx];
-      if (pIdx < zone.photos.length - 1) {
+      if (!zone.comingSoon && pIdx < zone.photos.length - 1) {
         pIdx++;
         setPhotoIndex(pIdx);
       } else {
         const prevIdx = zoneIdx;
-        zoneIdx = (zoneIdx + 1) % ZONES.length;
+        const nextPlayable = playableZones[(pZoneIdx + 1) % playableZones.length];
+        zoneIdx = ZONES.findIndex((z) => z.id === nextPlayable.id);
         pIdx = 0;
         const from = ZONE_POS[ZONES[prevIdx].id];
         const to = ZONE_POS[ZONES[zoneIdx].id];
@@ -700,13 +694,13 @@ export default function VirtualTour() {
           <button
             onClick={isAutoPlaying ? stopAutoPlay : startAutoPlay}
             className="mt-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.3em] transition-colors duration-300"
-            style={{ color: isAutoPlaying ? "#C9A84C" : "rgba(255,255,255,0.4)" }}
+            style={{ color: isAutoPlaying ? "#FFFFFF" : "rgba(255,255,255,0.4)" }}
           >
             <span
               className="flex h-5 w-5 items-center justify-center rounded-full border transition-all duration-300"
               style={{
-                borderColor: isAutoPlaying ? "#C9A84C" : "rgba(255,255,255,0.2)",
-                boxShadow: isAutoPlaying ? "0 0 12px rgba(201,168,76,0.3)" : "none",
+                borderColor: isAutoPlaying ? "#FFFFFF" : "rgba(255,255,255,0.2)",
+                boxShadow: isAutoPlaying ? "0 0 12px rgba(255,255,255,0.3)" : "none",
               }}
             >
               {isAutoPlaying ? (
@@ -745,29 +739,52 @@ export default function VirtualTour() {
               {/* Zone chips — horizontal scroll on mobile with fade mask */}
               <div className="relative">
               <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none lg:grid lg:grid-cols-2 lg:overflow-visible lg:pb-0" style={{ WebkitOverflowScrolling: "touch", msOverflowStyle: "none", scrollbarWidth: "none" }}>
-                {ZONES.map((zone) => (
+                {ZONES.filter((z) => !z.comingSoon).map((zone) => (
                   <button
                     key={zone.id}
                     onClick={() => selectZone(zone.id)}
-                    className="flex-shrink-0 rounded-sm px-3 py-2.5 text-left transition-all duration-300 lg:px-4 lg:py-3"
+                    className="group relative flex-shrink-0 overflow-hidden rounded-sm px-3 py-2.5 text-left transition-all duration-300 lg:px-4 lg:py-3"
                     style={{
-                      backgroundColor: activeZoneId === zone.id ? "rgba(201,168,76,0.1)" : "rgba(255,255,255,0.02)",
-                      border: `1px solid ${activeZoneId === zone.id ? "rgba(201,168,76,0.3)" : "rgba(255,255,255,0.06)"}`,
-                      boxShadow: activeZoneId === zone.id ? "0 0 20px rgba(201,168,76,0.08)" : "none",
+                      backgroundColor: zone.comingSoon
+                        ? "rgba(255,255,255,0.01)"
+                        : activeZoneId === zone.id ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.02)",
+                      border: `1px solid ${zone.comingSoon
+                        ? "rgba(255,255,255,0.04)"
+                        : activeZoneId === zone.id ? "rgba(255,255,255,0.3)" : "rgba(255,255,255,0.06)"}`,
+                      boxShadow: !zone.comingSoon && activeZoneId === zone.id ? "0 0 20px rgba(255,255,255,0.08)" : "none",
                     }}
                   >
-                    <p
-                      className="font-mono text-[9px] uppercase tracking-[0.2em] transition-colors duration-300"
-                      style={{ color: activeZoneId === zone.id ? "#C9A84C" : "rgba(255,255,255,0.5)" }}
-                    >
-                      {zone.name}
-                    </p>
-                    <p
-                      className="mt-0.5 hidden text-[11px] lg:block"
-                      style={{ color: "rgba(255,255,255,0.3)" }}
-                    >
-                      {zone.photos.length} foto{zone.photos.length !== 1 && "s"}
-                    </p>
+                    {zone.comingSoon ? (
+                      <>
+                        <p
+                          className="font-mono text-[9px] uppercase tracking-[0.2em]"
+                          style={{ color: "rgba(255,255,255,0.15)", filter: "blur(4px)", userSelect: "none" }}
+                        >
+                          {zone.name}
+                        </p>
+                        <p
+                          className="absolute inset-0 flex items-center justify-center font-mono text-[8px] uppercase tracking-[0.3em]"
+                          style={{ color: "rgba(255,255,255,0.6)" }}
+                        >
+                          Próximamente
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p
+                          className="font-mono text-[9px] uppercase tracking-[0.2em] transition-colors duration-300"
+                          style={{ color: activeZoneId === zone.id ? "#FFFFFF" : "rgba(255,255,255,0.5)" }}
+                        >
+                          {zone.name}
+                        </p>
+                        <p
+                          className="mt-0.5 hidden text-[11px] lg:block"
+                          style={{ color: "rgba(255,255,255,0.3)" }}
+                        >
+                          {zone.photos.length} foto{zone.photos.length !== 1 ? "s" : ""}
+                        </p>
+                      </>
+                    )}
                   </button>
                 ))}
               </div>

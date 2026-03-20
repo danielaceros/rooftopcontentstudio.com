@@ -66,7 +66,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "En Rooftop Content Studio trabajamos con tres modalidades sencillas: solo espacio desde 50€/h, espacio + filmmaker desde 100€/h y producción completa con edición según alcance. La idea no es complicarlo, sino adaptarlo al tipo de sesión que realmente necesitas.",
+        text: "En Rooftop Content Studio trabajamos con tres modalidades sencillas: solo espacio desde 50€/h, espacio + filmmaker desde 75€/h y producción completa con edición según alcance. La idea no es complicarlo, sino adaptarlo al tipo de sesión que realmente necesitas.",
       },
       { type: "heading", level: 2, text: "Qué encarece o abarata una sesión" },
       {

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const VIDEO_SRC = "/video/hero.webm";
+const VIDEO_SRC = "/IMG_7394_1.webm";
 
 type NavigatorConnection = {
   saveData?: boolean;
@@ -46,7 +46,7 @@ export default function VideoBackground() {
         video.style.transform = `translateY(${scrollY * 0.5}px)`;
         // Layer 2: overlay darkens with scroll
         if (overlay) {
-          const opacity = Math.min(0.85, 0.4 + scrollY / 1000);
+          const opacity = Math.min(0.5, 0.15 + scrollY / 1200);
           overlay.style.opacity = String(opacity);
         }
       });
@@ -63,7 +63,7 @@ export default function VideoBackground() {
     <div className="absolute inset-0 overflow-hidden bg-background">
       {/* Poster fallback — always visible behind video */}
       <img
-        src="/optimized/hero-poster.webp"
+        src="/optimized/hero-poster-v2.webp"
         alt=""
         className="absolute inset-0 h-[130%] w-full object-cover object-top lg:object-center"
         fetchPriority="high"
@@ -76,7 +76,7 @@ export default function VideoBackground() {
         loop
         playsInline
         preload="metadata"
-        poster="/optimized/hero-poster.webp"
+        poster="/optimized/hero-poster-v2.webp"
         onCanPlay={() => setLoaded(true)}
         className="absolute inset-0 h-[130%] w-full object-cover object-top transition-opacity duration-1000 will-change-transform lg:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
@@ -87,10 +87,10 @@ export default function VideoBackground() {
       <div
         ref={overlayRef}
         className="absolute inset-0 bg-background"
-        style={{ opacity: 0.4 }}
+        style={{ opacity: 0.15 }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-background/20" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/20 to-transparent" />
     </div>
   );
 }

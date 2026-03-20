@@ -25,9 +25,7 @@ export default function Navbar() {
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
       }}
     >
-      <FlashOffer />
-
-      {/* Gold accent line at top */}
+      {/* Accent line at top */}
       <div
         className="h-px w-full bg-accent transition-opacity duration-500"
         style={{ opacity: scrolled ? 0.4 : 0 }}

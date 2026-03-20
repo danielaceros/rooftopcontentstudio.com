@@ -7,13 +7,13 @@
   --color-border: #1A1A1A;
   --color-card: #0F0F0F;
   --color-card-hover: #141414;
-  --color-accent: #C9A84C;
-  --color-accent-light: #D4B85C;
-  --color-accent-dark: #A88A3C;
+  --color-accent: #FFFFFF;
+  --color-accent-light: #F0EDE6;
+  --color-accent-dark: #CCCCCC;
   /* Keep amber as alias for accent so existing classes still work */
-  --color-amber: #C9A84C;
-  --color-amber-light: #D4B85C;
-  --color-amber-dark: #A88A3C;
+  --color-amber: #FFFFFF;
+  --color-amber-light: #F0EDE6;
+  --color-amber-dark: #CCCCCC;
 
   --font-heading: var(--font-bebas-neue), "Arial Narrow", "Impact", sans-serif;
   --font-body: var(--font-dm-sans);

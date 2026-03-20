@@ -21,9 +21,9 @@ const OPTIONS = [
     cta: "Reservar Espacio",
   },
   {
-    label: "Elegido por 8 de cada 10 clientes",
+    label: "Más elegido",
     name: "Espacio + Filmmaker",
-    price: "100",
+    price: "75",
     unit: "/hora",
     description:
       "Sales con los brutos del día o con contenido editado en 48h. Tú solo vienes, grabas y te vas con material listo.",
@@ -183,7 +183,7 @@ export default function Tarifas() {
         </div>
 
         <p className="sr-only">
-          Tarifas de Rooftop Content Studio: Solo Espacio desde 50€/hora. Espacio más Filmmaker desde 100€/hora. Producción Completa con precio a medida según proyecto. Sesiones mínimas de 2 horas.
+          Tarifas de Rooftop Content Studio: Solo Espacio desde 50€/hora. Espacio más Filmmaker desde 75€/hora. Producción Completa con precio a medida según proyecto. Sesiones mínimas de 2 horas.
         </p>
 
         {/* Bottom note */}

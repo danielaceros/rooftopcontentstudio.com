@@ -74,7 +74,7 @@ export default function CustomCursor() {
         if (ringRef.current) {
           ringRef.current.style.width = "56px";
           ringRef.current.style.height = "56px";
-          ringRef.current.style.backgroundColor = "rgba(201,168,76,0.08)";
+          ringRef.current.style.backgroundColor = "rgba(255,255,255,0.08)";
         }
         if (labelRef.current) {
           labelRef.current.textContent = hoverLabel.current;
@@ -142,7 +142,7 @@ export default function CustomCursor() {
         style={{
           width: 5,
           height: 5,
-          backgroundColor: "#C9A84C",
+          backgroundColor: "#FFFFFF",
           opacity: visible ? 1 : 0,
           transition: "opacity 0.2s",
         }}
@@ -154,7 +154,7 @@ export default function CustomCursor() {
         style={{
           width: 32,
           height: 32,
-          border: "1px solid rgba(201, 168, 76, 0.4)",
+          border: "1px solid rgba(255, 255, 255, 0.4)",
           backgroundColor: "transparent",
           opacity: visible ? 1 : 0,
           transition: "width 0.3s, height 0.3s, opacity 0.2s, background-color 0.3s",
