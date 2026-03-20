@@ -36,6 +36,15 @@ section[id] {
   scroll-margin-top: 130px;
 }
 
+.hero-video-pos {
+  object-position: 20% center;
+}
+@media (min-width: 768px) {
+  .hero-video-pos {
+    object-position: center;
+  }
+}
+
 @media (min-width: 1024px) {
   section[id] {
     scroll-margin-top: 140px;
