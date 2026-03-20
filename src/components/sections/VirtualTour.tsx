@@ -868,6 +868,18 @@ export default function VirtualTour() {
         </div>
       </div>
 
+      {/* CTA */}
+      <ScrollReveal delay={0.2}>
+        <div className="mx-auto mt-12 max-w-7xl text-center sm:mt-16">
+          <a
+            href="#contacto"
+            className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+          >
+            Reserva el espacio →
+          </a>
+        </div>
+      </ScrollReveal>
+
       <style>{`
         @keyframes vtZoneEnter {
           from {

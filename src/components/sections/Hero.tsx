@@ -83,7 +83,7 @@ export default function Hero() {
               className="hero-line max-w-[540px] text-[0.95rem] leading-[1.7] text-foreground/60 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
               style={{ animationDelay: "0.9s" }}
             >
-              Founders, marcas y equipos de marketing vienen al ático, graban con nuestro equipo y se van con contenido listo para semanas. Podcast, reels, YouTube, cursos — con look real, calidad de producción y entrega en 24-48h.
+              Vienes al ático, grabas con nuestro equipo y te vas con podcast, reels, YouTube o cursos listos para publicar. Look auténtico, calidad de producción, entrega en 24-48h. Desde 50€/h.
             </p>
           </div>
         </div>
