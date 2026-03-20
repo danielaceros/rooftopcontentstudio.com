@@ -21,10 +21,8 @@ export default function VideoBackground() {
     const isSlow =
       conn?.saveData ||
       ["slow-2g", "2g", "3g"].includes(conn?.effectiveType ?? "");
-    // Mobile: only poster, no video
     const isMobile = window.innerWidth < 768;
     if (!isSlow && !isMobile) setShouldLoad(true);
-    // On mobile, load video only on fast connections (preload metadata)
     if (!isSlow && isMobile) setShouldLoad(true);
   }, []);
 
@@ -42,9 +40,7 @@ export default function VideoBackground() {
     const onScroll = () => {
       raf = requestAnimationFrame(() => {
         const scrollY = window.scrollY;
-        // Layer 1: video moves slow (0.5x)
         video.style.transform = `translateY(${scrollY * 0.5}px)`;
-        // Layer 2: overlay darkens with scroll
         if (overlay) {
           const opacity = Math.min(0.5, 0.15 + scrollY / 1200);
           overlay.style.opacity = String(opacity);
@@ -61,11 +57,11 @@ export default function VideoBackground() {
 
   return (
     <div className="absolute inset-0 overflow-hidden bg-background">
-      {/* Poster fallback — always visible behind video */}
+      {/* Poster fallback */}
       <img
         src="/optimized/hero-poster-v2.webp"
         alt=""
-        className="absolute inset-x-0 top-0 h-auto w-full object-contain object-top lg:absolute lg:inset-0 lg:h-[130%] lg:w-full lg:object-cover lg:object-center"
+        className="absolute inset-0 h-full w-full object-cover object-top md:h-[130%] md:object-center"
         fetchPriority="high"
       />
       <video
@@ -78,19 +74,20 @@ export default function VideoBackground() {
         preload="metadata"
         poster="/optimized/hero-poster-v2.webp"
         onCanPlay={() => setLoaded(true)}
-        className="absolute inset-x-0 top-0 h-auto w-full object-contain object-top transition-opacity duration-1000 will-change-transform lg:absolute lg:inset-0 lg:h-[130%] lg:w-full lg:object-cover lg:object-center"
+        className="absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-1000 will-change-transform md:h-[130%] md:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
       >
         <track kind="captions" />
       </video>
-      {/* Layer 2: dynamic overlay */}
+      {/* Dynamic overlay for parallax */}
       <div
         ref={overlayRef}
         className="absolute inset-0 bg-background"
         style={{ opacity: 0.15 }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent lg:via-background/30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent lg:hidden" style={{ background: "linear-gradient(to top, var(--color-background) 0%, var(--color-background) 15%, transparent 60%)" }} />
+      {/* Gradient: aggressive on mobile (text in bottom half), softer on desktop */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/95 md:from-black/10 md:via-black/30 md:to-black/80" />
+      {/* Side gradient for desktop readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/20 to-transparent" />
     </div>
   );

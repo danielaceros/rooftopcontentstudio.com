@@ -39,7 +39,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden" aria-label="Hero">
+    <section className="relative min-h-[100svh] overflow-hidden md:min-h-screen" aria-label="Hero">
       {/* Video — absolute fullscreen on all viewports */}
       <div className="absolute inset-0">
         <VideoBackground />
@@ -49,7 +49,7 @@ export default function Hero() {
         {/* Headline — centered on mobile, left on desktop */}
         <div
           ref={headlineRef}
-          className="flex min-h-[100svh] flex-1 flex-col justify-center px-5 sm:px-8 lg:min-h-0 lg:w-[55%] lg:px-0 lg:pb-12"
+          className="flex min-h-[100svh] flex-1 flex-col justify-end pb-16 px-5 sm:px-8 md:justify-center md:pb-0 lg:min-h-0 lg:w-[55%] lg:px-0 lg:pb-12"
           style={{ willChange: "transform" }}
         >
           {/* Terminal-style label */}
