@@ -61,7 +61,7 @@ export default function VideoBackground() {
       <img
         src="/optimized/hero-poster-v2.webp"
         alt=""
-        className="absolute inset-0 h-full w-full object-cover object-top md:h-[130%] md:object-center"
+        className="absolute inset-0 h-full w-full object-cover object-left-top md:h-[130%] md:object-center"
         fetchPriority="high"
       />
       <video
@@ -74,7 +74,7 @@ export default function VideoBackground() {
         preload="metadata"
         poster="/optimized/hero-poster-v2.webp"
         onCanPlay={() => setLoaded(true)}
-        className="absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-1000 will-change-transform md:h-[130%] md:object-center"
+        className="absolute inset-0 h-full w-full object-cover object-left-top transition-opacity duration-1000 will-change-transform md:h-[130%] md:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
       >
         <track kind="captions" />
@@ -86,7 +86,7 @@ export default function VideoBackground() {
         style={{ opacity: 0.15 }}
       />
       {/* Gradient: aggressive on mobile (text in bottom half), softer on desktop */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/95 md:from-black/10 md:via-black/30 md:to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/95 md:from-black/10 md:via-black/20 md:to-black/80" />
       {/* Side gradient for desktop readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/20 to-transparent" />
     </div>
