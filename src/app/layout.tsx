@@ -3,7 +3,6 @@ import { Bebas_Neue, DM_Sans, DM_Mono } from "next/font/google";
 import Script from "next/script";
 import { siteMetadata } from "@/lib/metadata";
 import { getProfessionalServiceSchema, getWebSiteSchema, getWebPageSchema, getBreadcrumbSchema, getFAQPageSchema, getHowToSchema, getVideoSchema } from "@/lib/structured-data";
-import LoadingScreenWrapper from "@/components/ui/LoadingScreenWrapper";
 // GrainOverlay removed per user request
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/ui/SmoothScroll";
@@ -137,17 +136,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* Instant black overlay — covers page until LoadingScreen JS hydrates and takes over */}
-        <div
-          id="pre-loader"
-          style={{
-            position: "fixed",
-            inset: 0,
-            zIndex: 9998,
-            backgroundColor: "#080808",
-          }}
-        />
-        <LoadingScreenWrapper />
         <CustomCursor />
         <SmoothScroll />
         {children}
