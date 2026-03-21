@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Beneficios() {
   return (
-    <section id="beneficios" className="px-5 py-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section id="beneficios" className="px-5 pb-12 pt-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
@@ -59,7 +59,7 @@ export default function Beneficios() {
         </div>
 
         <ScrollReveal delay={0.3}>
-          <div className="mt-12 text-center sm:mt-16">
+          <div className="mt-6 text-center sm:mt-16">
             <a
               href="#contacto"
               className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
