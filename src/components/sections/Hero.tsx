@@ -55,7 +55,7 @@ export default function Hero() {
           {/* Terminal-style label */}
           <div className="hero-line-wrapper mb-3 sm:mb-3">
             <p
-              className="hero-line font-mono text-[11px] uppercase tracking-[0.25em] text-accent"
+              className="hero-line font-mono text-[10px] uppercase tracking-widest text-accent md:text-xs md:tracking-[0.25em]"
               style={{ animationDelay: "0.2s" }}
             >
               [ Graba contenido para semanas. En una mañana. En un ático en Madrid. ]

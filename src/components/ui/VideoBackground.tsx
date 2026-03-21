@@ -85,8 +85,14 @@ export default function VideoBackground() {
         className="absolute inset-0 bg-background"
         style={{ opacity: 0.15 }}
       />
-      {/* Gradient: aggressive on mobile (text in bottom half), softer on desktop */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/95 md:from-black/10 md:via-black/20 md:to-black/80" />
+      {/* Gradient: extended smooth fade on mobile, softer on desktop */}
+      <div className="absolute inset-0 hidden bg-gradient-to-b from-black/10 via-black/20 to-black/80 md:block" />
+      <div
+        className="absolute inset-0 md:hidden"
+        style={{
+          background: "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.3) 45%, rgba(0,0,0,0.6) 65%, rgba(0,0,0,0.85) 80%, rgba(0,0,0,0.95) 100%)",
+        }}
+      />
       {/* Side gradient for desktop readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-background/20 to-transparent" />
     </div>
