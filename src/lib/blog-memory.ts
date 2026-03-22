@@ -13,9 +13,18 @@ export const blogMemory: BlogMemoryEntry[] = [
     keyword: "estudios de grabacion madrid precios",
     intent: "comercial",
     createdAt: "2026-03-17",
-    status: "draft",
+    status: "published",
     notes:
       "Tema inicial del blog de RCS. Evitar repetir la misma intención de precio/estudio sin revisar primero esta URL.",
+  },
+  {
+    slug: "grabar-podcast-madrid-estudio",
+    keyword: "grabar podcast madrid estudio",
+    intent: "comercial",
+    createdAt: "2026-03-22",
+    status: "published",
+    notes:
+      "Post de prueba real para validar el circuito completo de autopublicación en RCS sin depender de aprobación manual.",
   },
 ];
 

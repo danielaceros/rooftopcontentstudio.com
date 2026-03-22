@@ -122,6 +122,85 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-podcast-madrid-estudio",
+    title: "Grabar podcast en Madrid: cómo elegir un estudio que eleve tu marca y no parezca un set frío",
+    description:
+      "Qué mirar si quieres grabar un podcast en Madrid con imagen premium, sonido sólido y un espacio que ayude a vender mejor tu marca.",
+    publishedAt: "2026-03-22",
+    readingTime: "7 min",
+    category: "SEO",
+    tags: ["podcast madrid", "estudio podcast madrid", "marca personal", "contenido premium"],
+    keyword: "grabar podcast madrid estudio",
+    intent: "comercial",
+    excerpt:
+      "Una guía para marcas y perfiles personales que quieren grabar podcast en Madrid con mejor imagen, mejor contexto y mejor percepción de marca.",
+    seoTitle: "Grabar podcast en Madrid: cómo elegir un estudio con imagen premium",
+    metaDescription:
+      "Descubre cómo elegir un estudio para grabar podcast en Madrid con estética cuidada, sonido profesional y un resultado que refuerce tu marca.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar podcast en Madrid se ha vuelto fácil. Grabarlo bien, no tanto. Hay muchos espacios donde colocar dos micros y dar a grabar, pero no tantos donde el resultado ayude de verdad a que tu marca se vea más seria, más cuidada y más creíble.",
+      },
+      {
+        type: "paragraph",
+        text: "Si el podcast forma parte de tu estrategia comercial, no deberías elegir estudio solo por precio o disponibilidad. El entorno visual, la acústica, la luz, la comodidad del invitado y la posibilidad de sacar clips para redes afectan directamente a cómo se percibe el contenido y a cuánto partido le vas a sacar después.",
+      },
+      { type: "heading", level: 2, text: "Qué debería tener un estudio para grabar podcast en Madrid" },
+      {
+        type: "list",
+        items: [
+          "Buen sonido sin tener que pelearte luego con una postproducción infinita.",
+          "Un entorno visual que sume marca, no un fondo genérico sin alma.",
+          "Luz natural o una iluminación que no deje el resultado plano.",
+          "Espacio suficiente para invitado, equipo y formatos extra como reels o piezas horizontales.",
+          "Flexibilidad para grabar varias piezas en una sola sesión.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Por qué importa tanto el contexto visual" },
+      {
+        type: "paragraph",
+        text: "Un podcast no se consume ya solo como audio. Se corta en clips, se distribuye en redes, se convierte en contenido de autoridad y muchas veces es la primera impresión que alguien tiene de tu marca. Si grabas en un set que parece improvisado o demasiado frío, esa percepción baja aunque el mensaje sea bueno.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso en RCS encaja bien un formato de ático-estudio: se siente real, respira mejor en cámara y da una imagen más editorial. Profesional, sí, pero sin ese olor a plató genérico que mata naturalidad.",
+      },
+      { type: "heading", level: 2, text: "Cuándo compensa reservar un estudio en vez de grabar en oficina o casa" },
+      {
+        type: "list",
+        items: [
+          "Cuando quieres usar el podcast como activo comercial y no solo como experimento.",
+          "Cuando vas a grabar varios episodios o clips en bloque.",
+          "Cuando invitas clientes, socios o perfiles potentes y quieres cuidar la experiencia.",
+          "Cuando necesitas que el contenido se vea premium desde el primer frame.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Cómo aprovechar una sesión de podcast para sacar más contenido" },
+      {
+        type: "paragraph",
+        text: "Una buena sesión no debería acabar en un episodio largo y ya. Lo inteligente es salir con clips verticales, cortes temáticos, mini piezas de autoridad, fotos fijas y algún recurso horizontal para web o anuncios. Si eliges bien el espacio, una sola mañana puede darte contenido para semanas.",
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿RCS sirve solo para podcast o también para reels y entrevistas?",
+        answer: "Sirve para ambos. La idea es que una misma sesión pueda darte podcast, clips, entrevistas y contenido de marca sin cambiar de lógica ni de espacio.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo reservar solo el espacio o también con apoyo de grabación?",
+        answer: "Sí. Puedes alquilar el espacio o montar una sesión con apoyo de filmmaker según el nivel de producción que necesites.",
+      },
+      {
+        type: "faq",
+        question: "¿Tiene sentido para marca personal?",
+        answer: "Muchísimo. Si trabajas tu autoridad o vendes servicios, un podcast bien grabado te coloca en otro nivel de percepción.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
