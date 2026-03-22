@@ -54,6 +54,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17976589112');
+            gtag('config', 'G-5RBDKSDEZQ');
           `}
         </Script>
         <Script id="microsoft-clarity" strategy="afterInteractive">
