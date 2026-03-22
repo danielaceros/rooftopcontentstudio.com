@@ -190,8 +190,6 @@ function MobileCarousel() {
     setActive((i) => (i + 1) % TESTIMONIALS.length);
   }, []);
 
-  const t = TESTIMONIALS[active];
-
   return (
     <div className="mt-14 sm:hidden">
       <div className="flex items-center justify-center gap-4">
@@ -199,29 +197,35 @@ function MobileCarousel() {
         <button
           type="button"
           onClick={prev}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition hover:border-foreground/30 hover:text-foreground"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition-colors hover:border-foreground/30 hover:text-foreground"
           aria-label="Anterior"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </button>
 
-        {/* Card */}
-        <div className="min-w-0 flex-1">
-          <TestimonialCard
-            key={t.src}
-            src={t.src}
-            poster={t.poster}
-            name={t.name}
-            role={t.role}
-            quote={t.quote}
-          />
+        {/* Cards — all mounted, toggle visibility to avoid re-renders */}
+        <div className="relative min-w-0 flex-1">
+          {TESTIMONIALS.map((t, i) => (
+            <div
+              key={t.src}
+              className={i === active ? "block" : "hidden"}
+            >
+              <TestimonialCard
+                src={t.src}
+                poster={t.poster}
+                name={t.name}
+                role={t.role}
+                quote={t.quote}
+              />
+            </div>
+          ))}
         </div>
 
         {/* Next arrow */}
         <button
           type="button"
           onClick={next}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition hover:border-foreground/30 hover:text-foreground"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition-colors hover:border-foreground/30 hover:text-foreground"
           aria-label="Siguiente"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -235,7 +239,7 @@ function MobileCarousel() {
             key={i}
             type="button"
             onClick={() => setActive(i)}
-            className={`h-2 rounded-full transition-all duration-300 ${
+            className={`h-2 rounded-full transition-[width,background-color] duration-300 ${
               i === active ? "w-6 bg-accent" : "w-2 bg-foreground/20"
             }`}
             aria-label={`Ir al testimonio ${i + 1}`}

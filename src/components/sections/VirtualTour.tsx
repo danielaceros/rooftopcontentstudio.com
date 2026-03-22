@@ -669,6 +669,7 @@ export default function VirtualTour() {
       ref={sectionRef}
       id="tour-virtual"
       className="px-5 py-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20"
+      style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }}
     >
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>

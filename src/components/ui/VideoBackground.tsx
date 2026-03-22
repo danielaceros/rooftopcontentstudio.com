@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const VIDEO_SRC = "/IMG_7394_1.webm";
+const VIDEO_MOBILE = "/optimized/hero-mobile.mp4";
+const VIDEO_DESKTOP = "/optimized/hero-desktop.mp4";
 
 type NavigatorConnection = {
   saveData?: boolean;
@@ -10,7 +11,7 @@ type NavigatorConnection = {
 };
 
 export default function VideoBackground() {
-  const [shouldLoad, setShouldLoad] = useState(false);
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
   const [loaded, setLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
@@ -21,9 +22,9 @@ export default function VideoBackground() {
     const isSlow =
       conn?.saveData ||
       ["slow-2g", "2g", "3g"].includes(conn?.effectiveType ?? "");
-    const isMobile = window.innerWidth < 768;
-    if (!isSlow && !isMobile) setShouldLoad(true);
-    if (!isSlow && isMobile) setShouldLoad(true);
+    if (!isSlow) {
+      setVideoSrc(window.innerWidth < 768 ? VIDEO_MOBILE : VIDEO_DESKTOP);
+    }
   }, []);
 
   // Parallax multicapa — desktop only
@@ -66,17 +67,17 @@ export default function VideoBackground() {
       />
       <video
         ref={videoRef}
-        src={shouldLoad ? VIDEO_SRC : undefined}
         autoPlay
         muted
         loop
         playsInline
-        preload="metadata"
+        preload="none"
         poster="/optimized/hero-poster-v2.webp"
         onCanPlay={() => setLoaded(true)}
         className="absolute inset-0 h-full w-full object-cover hero-video-pos transition-opacity duration-1000 will-change-transform md:h-[130%] md:object-center"
         style={{ opacity: loaded ? 1 : 0 }}
       >
+        {videoSrc && <source src={videoSrc} type="video/mp4" />}
         <track kind="captions" />
       </video>
       {/* Dynamic overlay for parallax */}

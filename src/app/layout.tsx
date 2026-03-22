@@ -39,6 +39,9 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${bebasNeue.variable} ${dmSans.variable} ${dmMono.variable}`}>
       <head>
+        <Script id="webkit-error-guard" strategy="beforeInteractive">
+          {`window.addEventListener('error',function(e){if(e.message&&e.message.indexOf('messageHandlers')!==-1){e.preventDefault();}});`}
+        </Script>
         <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
         <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
         <link rel="preconnect" href="https://api.fitnesslaunch.es" />

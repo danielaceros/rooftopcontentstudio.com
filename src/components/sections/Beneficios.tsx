@@ -27,7 +27,7 @@ export default function Beneficios() {
         <div className="mt-14 flex flex-col sm:mt-16 lg:mt-24">
           {BENEFICIOS.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.06}>
-              <div className="group grid border-t border-border py-8 transition-all duration-300 hover:bg-card md:grid-cols-12 md:gap-8 md:py-12 md:px-4">
+              <div className="group grid border-t border-border py-8 transition-colors duration-300 hover:bg-card md:grid-cols-12 md:gap-8 md:py-12 md:px-4">
                 {/* Number */}
                 <div className="md:col-span-1">
                   <span className="font-mono text-[11px] text-muted transition-colors duration-300 group-hover:text-accent">
