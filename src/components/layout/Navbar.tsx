@@ -18,8 +18,9 @@ export default function Navbar() {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full transition-all duration-500"
+      className="fixed z-50 w-full transition-all duration-500"
       style={{
+        top: "var(--promo-banner-h, 0px)",
         backgroundColor: scrolled ? "rgba(8, 8, 8, 0.92)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",

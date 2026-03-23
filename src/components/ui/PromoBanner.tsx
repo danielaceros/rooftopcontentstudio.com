@@ -19,28 +19,26 @@ export default function PromoBanner() {
   const [dismissed, setDismissed] = useState(false);
   const bannerRef = useRef<HTMLDivElement>(null);
 
-  // Update countdown every minute
   useEffect(() => {
     const id = setInterval(() => setTimeLeft(getTimeLeft()), 60_000);
     return () => clearInterval(id);
   }, []);
 
-  // Push body down so banner doesn't cover content
+  // Set CSS custom property so Navbar can offset itself
   useEffect(() => {
-    if (dismissed || !timeLeft) {
-      document.body.style.paddingTop = "";
-      return;
-    }
-    const updatePadding = () => {
-      if (bannerRef.current) {
-        document.body.style.paddingTop = `${bannerRef.current.offsetHeight}px`;
-      }
+    const update = () => {
+      const h = (!dismissed && timeLeft && bannerRef.current)
+        ? bannerRef.current.offsetHeight
+        : 0;
+      document.documentElement.style.setProperty("--promo-banner-h", `${h}px`);
+      document.body.style.paddingTop = `${h}px`;
     };
-    updatePadding();
-    window.addEventListener("resize", updatePadding);
+    update();
+    window.addEventListener("resize", update);
     return () => {
+      document.documentElement.style.setProperty("--promo-banner-h", "0px");
       document.body.style.paddingTop = "";
-      window.removeEventListener("resize", updatePadding);
+      window.removeEventListener("resize", update);
     };
   }, [dismissed, timeLeft]);
 
@@ -49,7 +47,7 @@ export default function PromoBanner() {
   return (
     <div
       ref={bannerRef}
-      className="fixed top-0 left-0 right-0 z-[9999] border-b border-foreground/10 bg-foreground px-4 py-3 sm:px-6"
+      className="fixed top-0 left-0 right-0 z-[60] border-b border-foreground/10 bg-foreground px-4 py-3 sm:px-6"
     >
       <a
         href="#tarifas"
