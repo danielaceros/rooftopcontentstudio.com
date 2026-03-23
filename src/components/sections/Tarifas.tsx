@@ -3,11 +3,14 @@
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { use3DTilt } from "@/hooks/use3DTilt";
 
+const PROMO_END = new Date("2026-03-31T23:59:59");
+
 const OPTIONS = [
   {
     label: "Espacio",
     name: "Solo el Espacio",
     price: "50",
+    originalPrice: null as string | null,
     unit: "/hora",
     description:
       "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo, tu filmmaker y graba a tu manera.",
@@ -24,6 +27,7 @@ const OPTIONS = [
     label: "Más elegido",
     name: "Espacio + Filmmaker",
     price: "75",
+    originalPrice: "100" as string | null,
     unit: "/hora",
     description:
       "Sales con los brutos del día o con contenido editado en 48h. Tú solo vienes, grabas y te vas con material listo.",
@@ -41,6 +45,7 @@ const OPTIONS = [
     label: "Todo incluido",
     name: "Producción Completa",
     price: null,
+    originalPrice: null as string | null,
     unit: null,
     description:
       "Grabación, edición y entrega. Vienes, grabas con nuestro equipo, y en 48h tienes contenido listo para publicar en todas tus plataformas.",
@@ -89,11 +94,29 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
           </span>
         </div>
 
+        {/* Promo badge */}
+        {option.originalPrice && new Date() < PROMO_END && (
+          <div className="relative z-10 mt-5 inline-flex items-center gap-2 border border-accent/40 bg-accent/10 px-3 py-1.5">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+            </span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
+              -25% hasta fin de marzo
+            </span>
+          </div>
+        )}
+
         {/* Price */}
         <div className="relative z-10 mt-6 flex items-baseline gap-1">
           {option.price ? (
             <>
               <span className="font-mono text-[13px] text-muted">desde</span>
+              {option.originalPrice && new Date() < PROMO_END && (
+                <span className="font-heading text-[clamp(1.6rem,3vw,2.2rem)] leading-none text-muted line-through decoration-accent/60 decoration-2">
+                  {option.originalPrice}€
+                </span>
+              )}
               <span className="font-heading text-[clamp(3rem,6vw,4rem)] leading-none text-foreground">
                 {option.price}€
               </span>
@@ -183,7 +206,7 @@ export default function Tarifas() {
         </div>
 
         <p className="sr-only">
-          Tarifas de Rooftop Content Studio: Solo Espacio desde 50€/hora. Espacio más Filmmaker desde 75€/hora. Producción Completa con precio a medida según proyecto. Sesiones mínimas de 2 horas.
+          Tarifas de Rooftop Content Studio: Solo Espacio desde 50€/hora. Espacio más Filmmaker desde 75€/hora (antes 100€/hora, oferta -25% hasta fin de marzo 2026). Producción Completa con precio a medida según proyecto. Sesiones mínimas de 2 horas.
         </p>
 
         {/* Bottom note */}
