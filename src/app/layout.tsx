@@ -7,6 +7,7 @@ import { getProfessionalServiceSchema, getWebSiteSchema, getWebPageSchema, getBr
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
+import PromoBanner from "@/components/ui/PromoBanner";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -140,6 +141,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <PromoBanner />
         <CustomCursor />
         <SmoothScroll />
         {children}
