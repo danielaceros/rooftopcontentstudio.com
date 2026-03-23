@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const PROMO_END = new Date("2026-03-31T23:59:59").getTime();
 
@@ -17,51 +17,86 @@ function getTimeLeft() {
 export default function PromoBanner() {
   const [timeLeft, setTimeLeft] = useState(getTimeLeft);
   const [dismissed, setDismissed] = useState(false);
+  const bannerRef = useRef<HTMLDivElement>(null);
 
+  // Update countdown every minute
   useEffect(() => {
     const id = setInterval(() => setTimeLeft(getTimeLeft()), 60_000);
     return () => clearInterval(id);
   }, []);
 
-  // Don't render if promo expired or dismissed
+  // Push body down so banner doesn't cover content
+  useEffect(() => {
+    if (dismissed || !timeLeft) {
+      document.body.style.paddingTop = "";
+      return;
+    }
+    const updatePadding = () => {
+      if (bannerRef.current) {
+        document.body.style.paddingTop = `${bannerRef.current.offsetHeight}px`;
+      }
+    };
+    updatePadding();
+    window.addEventListener("resize", updatePadding);
+    return () => {
+      document.body.style.paddingTop = "";
+      window.removeEventListener("resize", updatePadding);
+    };
+  }, [dismissed, timeLeft]);
+
   if (!timeLeft || dismissed) return null;
 
   return (
-    <div className="relative z-50 flex items-center justify-center gap-3 bg-foreground px-4 py-2.5 sm:gap-5 sm:px-6">
-      {/* Pulsing dot */}
-      <span className="relative flex h-2 w-2 shrink-0">
-        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-background opacity-75" />
-        <span className="relative inline-flex h-2 w-2 rounded-full bg-background" />
-      </span>
-
-      {/* Copy */}
+    <div
+      ref={bannerRef}
+      className="fixed top-0 left-0 right-0 z-[9999] border-b border-foreground/10 bg-foreground px-4 py-3 sm:px-6"
+    >
       <a
         href="#tarifas"
-        className="flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 text-center"
+        className="mx-auto flex max-w-4xl flex-col items-center gap-1.5 pr-8 sm:flex-row sm:justify-center sm:gap-4"
       >
-        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-background sm:text-[11px]">
-          -25% Filmmaker
+        {/* Indicator + label */}
+        <span className="flex items-center gap-2">
+          <span className="relative flex h-2 w-2 shrink-0">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-red-500" />
+          </span>
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-background sm:text-[11px]">
+            Oferta solo en marzo
+          </span>
         </span>
-        <span className="hidden text-background/30 sm:inline">·</span>
-        <span className="font-heading text-sm text-background sm:text-base">
-          <span className="line-through decoration-background/40 decoration-1">100€/h</span>
-          {" "}
-          <span>75€/h</span>
+
+        {/* Price */}
+        <span className="flex items-center gap-2">
+          <span className="font-heading text-base text-background sm:text-lg">
+            Espacio + Filmmaker:
+          </span>
+          <span className="font-heading text-base text-background/50 line-through decoration-red-500/60 decoration-2 sm:text-lg">
+            100€/h
+          </span>
+          <span className="font-heading text-base text-background sm:text-lg">
+            75€/h
+          </span>
         </span>
-        <span className="hidden text-background/30 sm:inline">·</span>
-        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-background/70 sm:text-[11px]">
-          {timeLeft.days}d {timeLeft.hours}h {timeLeft.mins}m
+
+        {/* Countdown */}
+        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-background/60 sm:text-[11px]">
+          Quedan {timeLeft.days}d {timeLeft.hours}h {timeLeft.mins}m
         </span>
       </a>
 
       {/* Close */}
       <button
-        onClick={() => setDismissed(true)}
-        className="absolute right-2 top-1/2 -translate-y-1/2 p-1 text-background/50 transition-colors hover:text-background sm:right-4"
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          setDismissed(true);
+        }}
+        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1.5 text-background/40 transition-colors hover:bg-background/10 hover:text-background sm:right-5"
         aria-label="Cerrar oferta"
       >
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M1 1l12 12M13 1L1 13" />
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M2 2l12 12M14 2L2 14" />
         </svg>
       </button>
     </div>
