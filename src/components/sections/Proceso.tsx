@@ -11,9 +11,16 @@ export default function Proceso() {
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 1024);
-    const onResize = () => setIsMobile(window.innerWidth < 1024);
+    let timeout: ReturnType<typeof setTimeout>;
+    const onResize = () => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => setIsMobile(window.innerWidth < 1024), 150);
+    };
     window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      clearTimeout(timeout);
+    };
   }, []);
 
   useEffect(() => {

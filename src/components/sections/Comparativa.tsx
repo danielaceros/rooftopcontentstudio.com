@@ -252,7 +252,7 @@ function MobileCarousel() {
 
 export default function Comparativa() {
   return (
-    <section className="px-5 pb-10 pt-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section className="px-5 pb-10 pt-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20" style={{ contentVisibility: "auto", containIntrinsicSize: "auto 900px" }}>
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">

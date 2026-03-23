@@ -2,6 +2,30 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
+// Shared IntersectionObserver for all ScrollReveal instances
+let sharedObserver: IntersectionObserver | null = null;
+const callbacks = new Map<Element, () => void>();
+
+function getObserver() {
+  if (sharedObserver) return sharedObserver;
+  sharedObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const cb = callbacks.get(entry.target);
+          if (cb) {
+            cb();
+            callbacks.delete(entry.target);
+            sharedObserver?.unobserve(entry.target);
+          }
+        }
+      }
+    },
+    { threshold: 0.1, rootMargin: "0px 0px -60px 0px" },
+  );
+  return sharedObserver;
+}
+
 interface ScrollRevealProps {
   children: ReactNode;
   className?: string;
@@ -23,25 +47,21 @@ export default function ScrollReveal({
     if (!el) return;
 
     const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
     if (prefersReduced) {
       setVisible(true);
       return;
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry?.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
-    );
-
+    const observer = getObserver();
+    callbacks.set(el, () => setVisible(true));
     observer.observe(el);
-    return () => observer.disconnect();
+
+    return () => {
+      callbacks.delete(el);
+      observer.unobserve(el);
+    };
   }, []);
 
   return (

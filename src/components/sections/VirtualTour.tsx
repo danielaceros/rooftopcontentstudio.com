@@ -562,15 +562,19 @@ export default function VirtualTour() {
     const dx = to.x - from.x;
     const dy = to.y - from.y;
     const len = Math.sqrt(dx * dx + dy * dy) || 1;
-    setSlideDirection({ x: dx / len, y: dy / len });
 
-    setPrevZoneId(activeZoneId);
-    setActiveZoneId(id);
-    setPhotoIndex(0);
-    setRouteKey((k) => k + 1);
-    setZoneChangeKey((k) => k + 1);
-    setIsAutoPlaying(false);
+    // Batch all state updates in a single render via React 18 auto-batching
+    // Use requestAnimationFrame to defer heavy work off the interaction
     clearInterval(autoPlayRef.current);
+    requestAnimationFrame(() => {
+      setSlideDirection({ x: dx / len, y: dy / len });
+      setPrevZoneId(activeZoneId);
+      setActiveZoneId(id);
+      setPhotoIndex(0);
+      setRouteKey((k) => k + 1);
+      setZoneChangeKey((k) => k + 1);
+      setIsAutoPlaying(false);
+    });
   }, [activeZoneId]);
 
   const goPrev = useCallback(() => {
@@ -604,12 +608,15 @@ export default function VirtualTour() {
         const dx = to.x - from.x;
         const dy = to.y - from.y;
         const len = Math.sqrt(dx * dx + dy * dy) || 1;
-        setSlideDirection({ x: dx / len, y: dy / len });
-        setPrevZoneId(ZONES[prevIdx].id);
-        setActiveZoneId(ZONES[zoneIdx].id);
-        setPhotoIndex(0);
-        setRouteKey((k) => k + 1);
-        setZoneChangeKey((k) => k + 1);
+        // Defer heavy state updates off the interval tick
+        requestAnimationFrame(() => {
+          setSlideDirection({ x: dx / len, y: dy / len });
+          setPrevZoneId(ZONES[prevIdx].id);
+          setActiveZoneId(ZONES[zoneIdx].id);
+          setPhotoIndex(0);
+          setRouteKey((k) => k + 1);
+          setZoneChangeKey((k) => k + 1);
+        });
       }
     }, 3000);
   }, [activeZoneId, photoIndex]);
@@ -648,15 +655,32 @@ export default function VirtualTour() {
     (e: React.TouchEvent) => {
       const delta = touchStartRef.current - e.changedTouches[0].clientX;
       if (Math.abs(delta) > 50) {
-        if (delta > 0) goNext();
-        else goPrev();
+        // Defer navigation off the touch event to reduce INP
+        requestAnimationFrame(() => {
+          if (delta > 0) goNext();
+          else goPrev();
+        });
       }
     },
     [goNext, goPrev],
   );
 
+  // Only listen for keyboard when section is visible
+  const isVisibleRef = useRef(false);
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { isVisibleRef.current = entry.isIntersecting; },
+      { threshold: 0.1 },
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      if (!isVisibleRef.current) return;
       if (e.key === "ArrowLeft") goPrev();
       else if (e.key === "ArrowRight") goNext();
     };
