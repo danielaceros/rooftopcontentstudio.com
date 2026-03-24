@@ -8,7 +8,7 @@ export default function CTA() {
       id="contacto"
       className="relative scroll-mt-24 bg-[#0D0D0D] sm:scroll-mt-32"
     >
-      <div className="px-5 pb-20 pt-20 sm:px-8 sm:pb-28 sm:pt-28 md:px-10 lg:px-12 lg:pb-32 lg:pt-32 xl:px-16 2xl:px-20">
+      <div className="px-5 py-24 sm:px-8 sm:py-32 md:px-10 lg:px-12 lg:py-40 xl:px-16 2xl:px-20">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-12 md:grid-cols-2 md:items-start md:gap-12 lg:gap-16">
             {/* Left column */}

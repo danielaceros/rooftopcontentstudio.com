@@ -4,7 +4,7 @@ import Accordion from "@/components/ui/Accordion";
 
 export default function FAQ() {
   return (
-    <section id="faq" className="px-5 py-14 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section id="faq" className="bg-[#0e0e0e] px-5 py-24 sm:px-8 sm:py-32 md:px-10 lg:px-12 lg:py-40 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">

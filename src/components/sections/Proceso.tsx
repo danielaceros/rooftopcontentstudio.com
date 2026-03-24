@@ -49,7 +49,7 @@ export default function Proceso() {
   // Mobile: stacked layout
   if (isMobile) {
     return (
-      <section id="proceso" className="px-5 py-14 sm:px-8 sm:py-28 md:px-10">
+      <section id="proceso" className="px-5 py-24 sm:px-8 sm:py-32 md:px-10">
         <div className="mx-auto max-w-7xl">
           <ScrollReveal>
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">

@@ -16,25 +16,25 @@ export const BENEFICIOS = [
   {
     title: "Contenido para Semanas en un Solo Día",
     description:
-      "Vienes una mañana. Te dirigimos la sesión. Sales con reels, podcast, clips y piezas editadas para todas tus plataformas.",
+      "Vienes una mañana. Sales con contenido para meses.",
     icon: "clock",
   },
   {
     title: "Look Real, Calidad de Producción",
     description:
-      "Luz natural, terraza con skyline de Madrid y un set diseñado para que el contenido parezca auténtico — porque lo es. Sin el aspecto artificial de un plató. Espacio real, contenido auténtico. Solo tú, el mensaje y un equipo que se encarga de todo lo demás.",
+      "Sin el aspecto artificial de un plató. Espacio real, contenido auténtico.",
     icon: "location",
   },
   {
     title: "Dirección Creativa y Equipo Técnico",
     description:
-      "Tú vienes con el mensaje. Nuestro equipo se encarga de cámaras, luces y dirección. Solo preocúpate de estar delante de cámara.",
+      "Tú vienes con el mensaje. Nosotros nos encargamos del resto.",
     icon: "strategy",
   },
   {
     title: "Edición y Entrega Lista para Publicar",
     description:
-      "Si lo necesitas, editamos, subtitulamos y formateamos para cada plataforma. En 24-48h tienes el contenido listo. Solo dale a publicar.",
+      "En 24-48h tienes el contenido listo para publicar.",
     icon: "location",
   },
 ] as const;
@@ -44,25 +44,25 @@ export const PROCESO = [
     step: 1,
     title: "Cuéntanos tu Proyecto",
     description:
-      "Escríbenos con lo que necesitas. Presupuesto en menos de 1 hora.",
+      "Escríbenos. Presupuesto en menos de 1 hora.",
   },
   {
     step: 2,
     title: "Preparamos tu Sesión",
     description:
-      "Nuestro equipo reserva fecha, prepara el set y planifica la sesión para que solo tengas que venir.",
+      "Reservamos fecha y preparamos el set.",
   },
   {
     step: 3,
     title: "Llegas y Grabas",
     description:
-      "Todo montado. Te dirigimos, te guiamos y nos encargamos de la técnica. Tú solo graba.",
+      "Todo montado. Tú solo graba.",
   },
   {
     step: 4,
     title: "Contenido Listo para Publicar",
     description:
-      "Te llevas el material. Si incluye edición, en 24-48h tienes todo editado, subtitulado y formateado.",
+      "Si incluye edición, en 24-48h lo tienes todo.",
   },
 ] as const;
 
@@ -70,42 +70,37 @@ export const FAQS = [
   {
     question: "¿Para quién es esto?",
     answer:
-      "Founders que quieren lanzar su podcast. Marcas personales que necesitan reels recurrentes con calidad. Equipos de marketing que buscan un content day mensual para tener material para semanas. Si necesitas contenido constante sin gestionar producción — esto es para ti.",
+      "Founders, marcas personales y equipos de marketing que necesitan contenido recurrente con calidad de producción sin gestionar la producción.",
   },
   {
     question: "¿Necesito experiencia delante de la cámara?",
     answer:
-      "No. El espacio ayuda: es un ático con salón y terraza, no un plató con focos apuntándote. Y nuestro equipo te dirige — teleprompter, guía de contenido y dirección para que todo fluya natural.",
+      "No. El espacio es un ático real, no un plató. Y nuestro equipo te dirige con teleprompter y guía de contenido.",
   },
   {
-    question: "¿Qué incluye exactamente el servicio?",
+    question: "¿Qué incluye el servicio?",
     answer:
-      "Depende de lo que necesites: solo el ático, ático con nuestro equipo de grabación, o producción completa con edición y entrega en 24-48h. Cuéntanos tu proyecto y te preparamos un presupuesto en menos de 1 hora.",
+      "Solo el ático, ático con filmmaker, o producción completa con edición y entrega en 24-48h. Presupuesto en menos de 1 hora.",
   },
   {
     question: "¿Qué puedo grabar?",
     answer:
-      "Reels, YouTube, podcast, VSLs, cursos, vídeo corporativo… cualquier formato audiovisual. El espacio y nuestro equipo se adaptan a tu proyecto. La mayoría de clientes graban varios formatos en la misma sesión para aprovechar el día.",
+      "Podcast, reels, YouTube, cursos, vídeo corporativo. La mayoría de clientes graban varios formatos en la misma sesión.",
   },
   {
     question: "¿Puedo traer a mi propio equipo?",
     answer:
-      "Por supuesto. Puedes alquilar solo el ático — terraza, salón, luz natural — y traer tu propio equipo y filmmaker. Desde 50€/h.",
-  },
-  {
-    question: "¿Ofrecéis edición de vídeo?",
-    answer:
-      "Sí. Cortes, subtítulos, formato por plataforma, motion graphics… lo que necesite tu proyecto. Entrega en 24-48h. Puedes añadirlo a cualquier sesión o contratarlo de forma independiente — muchos clientes nos envían brutos de otras grabaciones y nos encargamos de la edición.",
+      "Sí. Alquila solo el ático con terraza, salón y luz natural. Desde 50€/h.",
   },
   {
     question: "¿Dónde está el estudio?",
     answer:
-      "En un ático en la Calle Ronda de Atocha, 16, Madrid — a 5 minutos del Metro Atocha Renfe. Centro de Madrid, fácil acceso para ti, tus invitados y tu equipo.",
+      "Ronda de Atocha, 16, Madrid. A 5 minutos del Metro Atocha Renfe.",
   },
   {
-    question: "¿Cómo reservo una sesión?",
+    question: "¿Cómo reservo?",
     answer:
-      "Rellena el formulario o escríbenos. Te respondemos en menos de 1 hora con presupuesto y disponibilidad. Solo hacemos 1 sesión al día, así que recomendamos reservar con antelación.",
+      "Rellena el formulario o escríbenos. Presupuesto en menos de 1 hora. Solo 1 sesión al día.",
   },
 ] as const;
 

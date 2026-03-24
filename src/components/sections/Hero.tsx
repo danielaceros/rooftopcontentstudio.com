@@ -82,7 +82,7 @@ export default function Hero() {
               className="hero-line max-w-[540px] text-base leading-[1.7] text-foreground/65 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"
               style={{ animationDelay: "0.9s" }}
             >
-              Vienes al ático, grabas con nuestro equipo y te vas con podcast, reels, YouTube o cursos listos para publicar. Look auténtico, calidad de producción, entrega en 24-48h. Desde 50€/h.
+              Ático en Madrid centro. Equipo, filmmaker y dirección incluidos. Entrega en 24-48h.
             </p>
           </div>
 

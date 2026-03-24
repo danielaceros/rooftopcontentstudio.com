@@ -22,7 +22,7 @@ export default function Portfolio({
   return (
     <section
       id="portfolio"
-      className="pb-20 pt-10 sm:py-28 lg:py-32"
+      className="pb-24 pt-16 sm:py-32 lg:py-40"
     >
       <div className="px-5 pb-8 sm:px-8 sm:pb-10 md:px-10 lg:px-12 lg:pb-12">
         <ScrollReveal>

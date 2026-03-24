@@ -83,10 +83,10 @@ export default function SocialProof() {
                 {i > 0 && (
                   <div className="absolute left-0 top-1/2 h-8 w-px -translate-y-1/2 bg-[#080808]/15 sm:h-14" />
                 )}
-                <span className="font-heading text-[clamp(2.2rem,9vw,4.5rem)] leading-none text-[#080808]">
+                <span className="font-heading text-[clamp(3rem,12vw,6rem)] leading-none text-[#080808]">
                   <ScrambleNumber target={stat.value} suffix={stat.suffix} active={active} />
                 </span>
-                <span className="mt-1 font-mono text-[9px] uppercase tracking-[0.2em] text-[#080808]/60 sm:mt-2 sm:text-[11px] sm:tracking-[0.3em]">
+                <span className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[#080808]/60 sm:mt-3 sm:text-[12px] sm:tracking-[0.3em]">
                   {stat.label}
                 </span>
               </div>

@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Beneficios() {
   return (
-    <section id="beneficios" className="px-5 pb-12 pt-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20">
+    <section id="beneficios" className="bg-[#0e0e0e] px-5 py-24 sm:px-8 sm:py-32 md:px-10 lg:px-12 lg:py-40 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
@@ -17,14 +17,8 @@ export default function Beneficios() {
           </h2>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.12}>
-          <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            No solo un espacio para grabar. Un equipo de producción, dirección creativa y edición que convierte una sesión en semanas de contenido.
-          </p>
-        </ScrollReveal>
-
         {/* Editorial list with hover effects */}
-        <div className="mt-14 flex flex-col sm:mt-16 lg:mt-24">
+        <div className="mt-14 flex flex-col sm:mt-16 lg:mt-20">
           {BENEFICIOS.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.06}>
               <div className="group grid border-t border-border py-8 transition-colors duration-300 hover:bg-card md:grid-cols-12 md:gap-8 md:py-12 md:px-4">
