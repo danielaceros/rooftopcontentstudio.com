@@ -215,12 +215,12 @@ export function getPostBySlug(slug: string) {
 
 export function getBlogMetadata(): Metadata {
   return {
-    title: `Blog | ${SITE_NAME}`,
+    title: "Blog",
     description:
       "Artículos sobre estudios de grabación, contenido para marcas, reels, podcast y producción audiovisual en Madrid.",
     alternates: { canonical: "/blog" },
     openGraph: {
-      title: `Blog | ${SITE_NAME}`,
+      title: "Blog",
       description:
         "Ideas, guías y artículos sobre espacios para grabar contenido, producción audiovisual y contenido orgánico en Madrid.",
       url: `${SITE_URL}/blog`,

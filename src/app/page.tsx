@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import SocialProof from "@/components/sections/SocialProof";
+import QueEs from "@/components/sections/QueEs";
 import Portfolio from "@/components/sections/Portfolio";
 import Beneficios from "@/components/sections/Beneficios";
 import Proceso from "@/components/sections/Proceso";
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
+        <QueEs />
         <Beneficios />
         <VirtualTour />
         <Comparativa />

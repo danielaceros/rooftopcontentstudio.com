@@ -131,6 +131,9 @@ export default function SocialProof() {
                   loading="lazy"
                 />
               </div>
+              <p className="mt-2 text-center font-mono text-xs text-[#080808]/40 lg:text-right">
+                FIFA · IFEMA · Cinesa · Cámara de Comercio de Madrid
+              </p>
             </div>
           </div>
         </div>

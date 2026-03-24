@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { NAV_LINKS } from "@/lib/constants";
 import MobileMenu from "./MobileMenu";
-import FlashOffer from "@/components/ui/FlashOffer";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

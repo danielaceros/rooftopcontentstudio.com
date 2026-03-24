@@ -149,6 +149,35 @@ export function getProfessionalServiceSchema() {
         },
       ],
     },
+    review: [
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Guillermo" },
+        reviewBody:
+          "En tres horas grabamos contenido para todo el equipo. Volveremos.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+      },
+      {
+        "@type": "Review",
+        author: { "@type": "Person", name: "Almudena" },
+        reviewBody: "El espacio es super comodo. Cinco estrellas.",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+      },
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "2",
+      bestRating: "5",
+    },
     sameAs: [
       "https://www.instagram.com/daniaceros",
       "https://www.instagram.com/rooftopcontentstudio",
@@ -158,7 +187,7 @@ export function getProfessionalServiceSchema() {
       name: "Madrid",
     },
     serviceType: "Producción audiovisual y grabación de contenido digital",
-    knowsLanguage: ["es", "en"],
+    knowsLanguage: ["es"],
   };
 }
 

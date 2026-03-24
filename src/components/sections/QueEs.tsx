@@ -13,10 +13,11 @@ export default function QueEs() {
           </p>
         </ScrollReveal>
 
+        {/* Citable paragraph for AI search engines */}
         <ScrollReveal delay={0.08}>
-          <h2 className="mt-6 max-w-5xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
-            Un Estudio de Contenido en un Ático en Madrid.
-          </h2>
+          <p className="mt-8 max-w-3xl text-base leading-[1.8] text-muted sm:text-[1.05rem] sm:leading-[1.85]">
+            Rooftop Content Studio es un estudio de producción de contenido ubicado en un ático en el centro de Madrid (Ronda de Atocha, 16, a 5 minutos del Metro Atocha Renfe). Ofrece sesiones de grabación para podcast, reels de Instagram y TikTok, vídeos de YouTube, cursos online y contenido corporativo. El estudio incluye terraza con vistas al skyline de Madrid, iluminación profesional y equipo técnico completo. Las tarifas comienzan en 50€/hora para el alquiler del espacio y 75€/hora con filmmaker y dirección creativa incluidos. El servicio de producción completa incluye grabación, edición, subtítulos y formato por plataforma con entrega en 24-48 horas. Entre sus clientes se encuentran FIFA, IFEMA, Cinesa y la Cámara de Comercio de Madrid. Solo se realiza 1 sesión por día.
+          </p>
         </ScrollReveal>
 
         {/* Key stats — large numbers */}

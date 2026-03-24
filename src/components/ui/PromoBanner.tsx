@@ -50,7 +50,7 @@ export default function PromoBanner() {
       className="fixed top-0 left-0 right-0 z-[60] border-b border-foreground/10 bg-foreground px-4 py-3 sm:px-6"
     >
       <a
-        href="#tarifas"
+        href="#contacto"
         className="mx-auto flex max-w-4xl flex-col items-center gap-1.5 pr-8 sm:flex-row sm:justify-center sm:gap-4"
       >
         {/* Indicator + label */}
