@@ -70,7 +70,7 @@ export const FAQS = [
   {
     question: "¿Para quién es esto?",
     answer:
-      "Founders, marcas personales y equipos de marketing que necesitan contenido recurrente con calidad de producción sin gestionar la producción.",
+      "Founders, marcas personales y equipos de marketing que necesitan contenido recurrente con calidad profesional sin gestionar la producción.",
   },
   {
     question: "¿Necesito experiencia delante de la cámara?",
