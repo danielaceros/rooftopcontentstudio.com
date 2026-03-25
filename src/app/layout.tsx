@@ -40,9 +40,13 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${bebasNeue.variable} ${dmSans.variable} ${dmMono.variable}`}>
       <head>
-        <Script id="webkit-error-guard" strategy="beforeInteractive">
-          {`window.addEventListener('error',function(e){if(e.message&&e.message.indexOf('messageHandlers')!==-1){e.preventDefault();}});`}
-        </Script>
+        {/* Inline script (not Next Script) to run before ANY other JS — catches
+            webkit.messageHandlers errors thrown by Instagram/TikTok iOS WebViews */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var w='webkit',m='messageHandlers';function s(e){var g=e&&(e.message||e.reason&&e.reason.message||'');if(g.indexOf(w)!==-1||g.indexOf(m)!==-1){e.preventDefault&&e.preventDefault();e.stopImmediatePropagation&&e.stopImmediatePropagation();return true;}}window.addEventListener('error',s,true);window.addEventListener('unhandledrejection',function(e){if(s(e)){e.preventDefault();}},true);})();`,
+          }}
+        />
         <link rel="preconnect" href="https://firebasestorage.googleapis.com" />
         <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
         <link rel="preconnect" href="https://api.fitnesslaunch.es" />
