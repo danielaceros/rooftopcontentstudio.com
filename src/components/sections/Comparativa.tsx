@@ -19,6 +19,20 @@ const TESTIMONIALS = [
     role: "Content Creator, Geko Marketing",
     quote: "El espacio es super comodo. Cinco estrellas.",
   },
+  {
+    src: "/TCARLOS.webm",
+    poster: "/optimized/poster-tcarlos.webp",
+    name: "Carlos Niño",
+    role: "CFO, Wifiads",
+    quote: "Te sientes como en casa. La comodidad, los equipos, las innovaciones... Para mí un diez.",
+  },
+  {
+    src: "/TJAVI.webm",
+    poster: "/optimized/poster-tjavi.webp",
+    name: "Javi",
+    role: "CEO & Founder, ECOM Advisory",
+    quote: "Es la segunda vez que venimos. La primera fue un éxito y ahora vamos a por el segundo.",
+  },
 ];
 
 function TestimonialCard({
@@ -87,7 +101,7 @@ function TestimonialCard({
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[320px] lg:max-w-[360px]"
+          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[280px] lg:max-w-[280px]"
           style={{ backgroundColor: "#0a0a0a" }}
         >
           <video
@@ -268,7 +282,7 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            Geko Marketing grabó con nosotros. Esto es lo que dijeron.
+            Profesionales de diferentes sectores ya han grabado con nosotros. Esto es lo que dijeron.
           </p>
         </ScrollReveal>
 
@@ -279,7 +293,7 @@ export default function Comparativa() {
 
         {/* Desktop: side by side */}
         <ScrollReveal delay={0.18}>
-          <div className="mt-16 hidden gap-8 sm:flex sm:justify-center lg:mt-20 lg:gap-12">
+          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-4 lg:gap-8">
             {TESTIMONIALS.map((t) => (
               <TestimonialCard
                 key={t.src}
