@@ -3,7 +3,6 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import SocialProof from "@/components/sections/SocialProof";
 import QueEs from "@/components/sections/QueEs";
-import Portfolio from "@/components/sections/Portfolio";
 import Beneficios from "@/components/sections/Beneficios";
 import Proceso from "@/components/sections/Proceso";
 import VirtualTour from "@/components/sections/VirtualTour";
@@ -22,7 +21,6 @@ export default function Home() {
         <QueEs />
         <Beneficios />
         <Comparativa />
-        <Portfolio desktopSlideshow={true} openVideosInModal={true} />
         <VirtualTour />
         <Proceso />
         <Tarifas />

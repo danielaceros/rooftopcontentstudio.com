@@ -5,7 +5,6 @@ export const SITE_DESCRIPTION =
 
 export const NAV_LINKS = [
   { label: "Espacio", href: "#tour-virtual" },
-  { label: "Portfolio", href: "#portfolio" },
   { label: "Proceso", href: "#proceso" },
   { label: "Opciones", href: "#tarifas" },
   { label: "FAQ", href: "#faq" },
