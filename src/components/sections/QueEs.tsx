@@ -28,7 +28,7 @@ function ContentCard({ item, index }: { item: (typeof CONTENT_TYPES)[number]; in
       <div
         ref={cardRef}
         onMouseMove={handleMouseMove}
-        className="group relative flex flex-col gap-4 overflow-hidden border border-foreground/[0.06] bg-foreground/[0.02] p-6 transition-all duration-500 hover:border-foreground/[0.12] hover:bg-foreground/[0.04] sm:p-8"
+        className="group relative flex h-full flex-col gap-4 overflow-hidden border border-foreground/[0.06] bg-foreground/[0.02] p-6 transition-all duration-500 hover:border-foreground/[0.12] hover:bg-foreground/[0.04] sm:p-8"
       >
         {/* Hover glow effect */}
         <div
