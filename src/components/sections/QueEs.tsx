@@ -16,7 +16,7 @@ export default function QueEs() {
         {/* Citable paragraph for AI search engines */}
         <ScrollReveal delay={0.08}>
           <p className="mt-8 max-w-3xl text-base leading-[1.8] text-muted sm:text-[1.05rem] sm:leading-[1.85]">
-            Rooftop Content Studio es un estudio de producción de contenido ubicado en un ático en el centro de Madrid (Ronda de Atocha, 16, a 5 minutos del Metro Atocha Renfe). Ofrece sesiones de grabación para podcast, reels de Instagram y TikTok, vídeos de YouTube, cursos online y contenido corporativo. El estudio incluye terraza con vistas al skyline de Madrid, iluminación profesional y equipo técnico completo. Las tarifas comienzan en 50€/hora para el alquiler del espacio y 75€/hora con filmmaker y dirección creativa incluidos. El servicio de producción completa incluye grabación, edición, subtítulos y formato por plataforma con entrega en 24-48 horas. Entre sus clientes se encuentran FIFA, IFEMA, Cinesa y la Cámara de Comercio de Madrid. Solo se realiza 1 sesión por día.
+            Rooftop Content Studio es un estudio de producción de contenido ubicado en un ático en el centro de Madrid (Ronda de Atocha, 16, a 5 minutos del Metro Atocha Renfe). Ofrece sesiones de grabación para podcast, reels de Instagram y TikTok, vídeos de YouTube, cursos online y contenido corporativo. El estudio incluye terraza con vistas al skyline de Madrid, iluminación profesional y equipo técnico completo. Más de 28 proyectos completados y 500 horas de producción. El servicio de producción completa incluye grabación, edición, subtítulos y formato por plataforma con entrega en 24-48 horas. Entre sus clientes se encuentran FIFA, IFEMA, Cinesa y la Cámara de Comercio de Madrid. Solo se realiza 1 sesión por día.
           </p>
         </ScrollReveal>
 
@@ -25,20 +25,20 @@ export default function QueEs() {
           <ScrollReveal delay={0.12}>
             <div>
               <p className="font-heading text-[clamp(2.8rem,6vw,4.5rem)] uppercase leading-none text-foreground">
-                50€/h
+                28+
               </p>
               <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-                Solo espacio
+                Proyectos
               </p>
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.16}>
             <div>
               <p className="font-heading text-[clamp(2.8rem,6vw,4.5rem)] uppercase leading-none text-foreground">
-                75€/h
+                500+
               </p>
               <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted">
-                Espacio + Filmmaker
+                Horas Producidas
               </p>
             </div>
           </ScrollReveal>

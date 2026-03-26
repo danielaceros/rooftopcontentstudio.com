@@ -1,4 +1,3 @@
-import ContactFormEmbed from "./ContactFormEmbed";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function CTA() {
@@ -60,9 +59,14 @@ export default function CTA() {
                   Presupuesto en 1h
                 </div>
 
-                {/* Form container */}
-                <div className="rounded-[4px] border border-foreground/[0.08] bg-[#0A0A0A] p-6 sm:p-8 lg:p-10">
-                  <ContactFormEmbed />
+                {/* GHL Form embed — replace placeholder with actual GHL iframe/script */}
+                <div
+                  id="ghl-form-placeholder"
+                  className="flex min-h-[500px] items-center justify-center rounded-[4px] border border-dashed border-foreground/20 bg-[#0A0A0A] p-6 sm:p-8 lg:p-10"
+                >
+                  <p className="font-mono text-[13px] uppercase tracking-[0.2em] text-muted/50">
+                    [EMBED FORMULARIO GHL]
+                  </p>
                 </div>
                 <p className="mt-3 text-center font-mono text-[11px] text-muted/60">
                   Sin compromiso. Respuesta en menos de 1 hora.

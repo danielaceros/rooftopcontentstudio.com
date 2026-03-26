@@ -3,34 +3,25 @@
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import { use3DTilt } from "@/hooks/use3DTilt";
 
-const PROMO_END = new Date("2026-03-31T23:59:59");
-
 const OPTIONS = [
   {
     label: "Espacio",
     name: "Solo el Espacio",
-    price: "50",
-    originalPrice: null as string | null,
-    unit: "/hora",
     description:
-      "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo, tu filmmaker y graba a tu manera.",
+      "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo y graba a tu manera.",
     includes: [
       "Ático privado con vistas a Madrid",
       "Iluminación de estudio",
-      "Conexión Wi-Fi de alta velocidad",
-      "Acceso a zona de maquillaje",
+      "Wi-Fi de alta velocidad",
+      "Zona de maquillaje",
     ],
     highlighted: false,
-    cta: "Reservar Espacio",
   },
   {
     label: "Más elegido",
     name: "Espacio + Filmmaker",
-    price: "75",
-    originalPrice: "100" as string | null,
-    unit: "/hora",
     description:
-      "Sales con los brutos del día o con contenido editado en 48h. Tú solo vienes, grabas y te vas con material listo.",
+      "Tú solo vienes y grabas. Nosotros nos encargamos del equipo, la dirección y la entrega.",
     includes: [
       "Todo lo del plan Espacio",
       "Filmmaker con dirección creativa",
@@ -39,24 +30,19 @@ const OPTIONS = [
       "Teleprompter",
     ],
     highlighted: true,
-    cta: "Reservar Sesión",
   },
   {
     label: "Todo incluido",
     name: "Producción Completa",
-    price: null,
-    originalPrice: null as string | null,
-    unit: null,
     description:
-      "Grabación, edición y entrega. Vienes, grabas con nuestro equipo, y en 48h tienes contenido listo para publicar en todas tus plataformas.",
+      "Grabación, edición y entrega. En 48h tienes contenido listo para publicar en todas tus plataformas.",
     includes: [
       "Todo lo del plan Espacio + Filmmaker",
       "Edición profesional a medida",
-      "Subtítulos y formato para cada plataforma",
+      "Subtítulos y formato por plataforma",
       "Entrega en 24-48h",
     ],
     highlighted: false,
-    cta: "Pedir Presupuesto",
   },
 ] as const;
 
@@ -94,41 +80,6 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
           </span>
         </div>
 
-        {/* Promo badge */}
-        {option.originalPrice && new Date() < PROMO_END && (
-          <div className="relative z-10 mt-5 inline-flex items-center gap-2 border border-accent/40 bg-accent/10 px-3 py-1.5">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
-            </span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent">
-              -25% hasta fin de marzo
-            </span>
-          </div>
-        )}
-
-        {/* Price */}
-        <div className="relative z-10 mt-6 flex items-baseline gap-1">
-          {option.price ? (
-            <>
-              <span className="font-mono text-[13px] text-muted">desde</span>
-              {option.originalPrice && new Date() < PROMO_END && (
-                <span className="font-heading text-[clamp(1.6rem,3vw,2.2rem)] leading-none text-muted line-through decoration-accent/60 decoration-2">
-                  {option.originalPrice}€
-                </span>
-              )}
-              <span className="font-heading text-[clamp(3rem,6vw,4rem)] leading-none text-foreground">
-                {option.price}€
-              </span>
-              <span className="font-mono text-[13px] text-muted">{option.unit}</span>
-            </>
-          ) : (
-            <span className="font-heading text-[clamp(1.8rem,4vw,2.4rem)] leading-none text-foreground">
-              A medida
-            </span>
-          )}
-        </div>
-
         {/* Description */}
         <p className="relative z-10 mt-6 max-w-md text-[0.95rem] leading-relaxed text-muted sm:text-base">
           {option.description}
@@ -144,13 +95,6 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
           ))}
         </ul>
 
-        {/* Trust text for Producción Completa */}
-        {option.name === "Producción Completa" && (
-          <p className="relative z-10 mt-6 text-[13px] leading-relaxed text-muted">
-            Cuéntanos tu proyecto — presupuesto personalizado en menos de 1 hora, sin compromiso.
-          </p>
-        )}
-
         {/* CTA */}
         <div className="relative z-10 mt-auto pt-10">
           <a
@@ -162,7 +106,7 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
                 : "border border-foreground/30 text-foreground hover:border-accent hover:bg-accent hover:text-background"
             }`}
           >
-            {option.cta}
+            Pedir Presupuesto
           </a>
         </div>
       </div>
@@ -180,21 +124,15 @@ export default function Tarifas() {
           </p>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.04}>
-          <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.3em] text-accent">
-            Solo 1 sesión por día · Disponibilidad limitada
-          </p>
-        </ScrollReveal>
-
         <ScrollReveal delay={0.08}>
           <h2 className="mt-4 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-6 sm:leading-[0.85]">
-            Elige lo que Necesitas. Nada Más.
+            Elige lo que Necesitas.
           </h2>
         </ScrollReveal>
 
         <ScrollReveal delay={0.12}>
           <p className="mt-8 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.15rem] sm:leading-[1.8]">
-            Sin packs inflados ni servicios que no vas a usar.
+            Presupuesto personalizado en menos de 1 hora. Sin compromiso.
           </p>
         </ScrollReveal>
 
@@ -204,10 +142,6 @@ export default function Tarifas() {
             <OptionCard key={option.name} option={option} index={index} />
           ))}
         </div>
-
-        <p className="sr-only">
-          Tarifas de Rooftop Content Studio: Solo Espacio desde 50€/hora. Espacio más Filmmaker desde 75€/hora (antes 100€/hora, oferta -25% hasta fin de marzo 2026). Producción Completa con precio a medida según proyecto. Sesiones mínimas de 2 horas.
-        </p>
 
         {/* Bottom note */}
         <ScrollReveal delay={0.4}>

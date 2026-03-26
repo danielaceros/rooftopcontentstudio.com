@@ -1,5 +1,5 @@
 const MARQUEE_COPY =
-  "Un ático real en el centro de Madrid · FIFA, IFEMA y Cinesa ya han grabado aquí · Desde 50€/h · ";
+  "Un ático real en el centro de Madrid · FIFA, IFEMA y Cinesa ya han grabado aquí · ";
 
 export default function Marquee() {
   return (
