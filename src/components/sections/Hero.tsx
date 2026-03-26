@@ -1,12 +1,21 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import VideoBackground from "@/components/ui/VideoBackground";
 import Marquee from "@/components/ui/Marquee";
 import ContactFormEmbed from "./ContactFormEmbed";
 
 const LOGOS_SRC = "/optimized/logos-banner.png";
+
+const TESTIMONIALS = [
+  { quote: "En tres horas grabamos contenido para todo el equipo. Volveremos.", name: "Guillermo", role: "Geko Marketing" },
+  { quote: "El espacio es super cómodo. Cinco estrellas.", name: "Almudena", role: "Geko Marketing" },
+  { quote: "Te sientes como en casa. La comodidad, los equipos, las innovaciones... Para mí un diez.", name: "Carlos Niño", role: "Wifiads" },
+  { quote: "Es la segunda vez que venimos. La primera fue un éxito y ahora vamos a por el segundo.", name: "Javi", role: "ECOM Advisory" },
+  { quote: "Todo muy profesional. Buena calidad, buena luz, buen ambiente. Este es tu sitio.", name: "Alexandra", role: "Creadora de Contenido" },
+  { quote: "Brutal. Gente cercana, profesional. Grabamos anuncios, podcast, VSL y contenido orgánico.", name: "Narro Machetti", role: "GoalGuiders IA" },
+];
 
 const LINES = [
   { text: "Tu Contenido.", desktopOnly: false },
@@ -16,6 +25,14 @@ const LINES = [
 
 export default function Hero() {
   const headlineRef = useRef<HTMLDivElement>(null);
+  const [activeTestimonial, setActiveTestimonial] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTestimonial((prev) => (prev + 1) % TESTIMONIALS.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Layer 3: headline floats up slightly on scroll (desktop only)
   useEffect(() => {
@@ -100,14 +117,22 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Mini-testimonio */}
+          {/* Mini-testimonio rotativo */}
           <div className="hero-line-wrapper mt-5 lg:mt-6">
-            <p
-              className="hero-line text-sm leading-relaxed text-foreground/50 lg:text-[0.9rem]"
+            <div
+              className="hero-line relative h-[3.2em] sm:h-[2.8em] overflow-hidden"
               style={{ animationDelay: "1.25s" }}
             >
-              ★★★★★ &ldquo;En tres horas grabamos contenido para todo el equipo.&rdquo; — Guillermo, Geko Marketing
-            </p>
+              {TESTIMONIALS.map((t, i) => (
+                <p
+                  key={i}
+                  className="absolute inset-0 text-sm leading-relaxed text-foreground/50 transition-opacity duration-700 ease-in-out lg:text-[0.9rem]"
+                  style={{ opacity: i === activeTestimonial ? 1 : 0 }}
+                >
+                  ★★★★★ &ldquo;{t.quote}&rdquo; — {t.name}, {t.role}
+                </p>
+              ))}
+            </div>
           </div>
 
           {/* Social proof logos — mobile */}
