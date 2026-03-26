@@ -40,6 +40,13 @@ const TESTIMONIALS = [
     role: "Creadora de Contenido",
     quote: "Todo muy profesional. Buena calidad, buena luz, buen ambiente. Este es tu sitio.",
   },
+  {
+    src: "/TNARRO.webm",
+    poster: "/optimized/poster-tnarro.webp",
+    name: "Narro Machetti",
+    role: "CEO, GoalGuiders IA",
+    quote: "Brutal. Gente cercana, profesional. Grabamos anuncios, podcast, VSL y contenido orgánico.",
+  },
 ];
 
 function TestimonialCard({
@@ -108,7 +115,7 @@ function TestimonialCard({
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[260px] lg:max-w-[240px]"
+          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[260px] lg:max-w-[220px]"
           style={{ backgroundColor: "#0a0a0a" }}
         >
           <video
@@ -300,7 +307,7 @@ export default function Comparativa() {
 
         {/* Desktop: side by side */}
         <ScrollReveal delay={0.18}>
-          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-3 lg:gap-8 xl:grid-cols-5">
+          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-3 lg:gap-8 xl:grid-cols-6">
             {TESTIMONIALS.map((t) => (
               <TestimonialCard
                 key={t.src}
