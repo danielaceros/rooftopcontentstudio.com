@@ -90,7 +90,7 @@ export const FAQS = [
   {
     question: "¿Puedo traer a mi propio equipo?",
     answer:
-      "Sí. Alquila solo el ático con terraza, salón y luz natural. Desde 50€/h.",
+      "Sí. Cuéntanos tu proyecto y te preparamos la opción que mejor encaje. Presupuesto en menos de 1 hora.",
   },
   {
     question: "¿Dónde está el estudio?",

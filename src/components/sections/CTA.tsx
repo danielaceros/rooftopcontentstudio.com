@@ -23,13 +23,13 @@ export default function CTA() {
 
               <ScrollReveal delay={0.08}>
                 <h2 className="mt-6 font-heading text-[clamp(2.8rem,6vw,5.5rem)] uppercase leading-[0.85] text-foreground sm:mt-8">
-                  Reserva tu Sesión.
+                  Pide tu Presupuesto.
                 </h2>
               </ScrollReveal>
 
               <ScrollReveal delay={0.16}>
                 <p className="mt-6 max-w-[400px] text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-                  Solo 1 sesión al día. Cuéntanos qué necesitas y te montamos todo esta semana. Presupuesto en menos de 1 hora.
+                  Solo 1 sesión al día. Cuéntanos qué necesitas y te respondemos en menos de 1 hora.
                 </p>
               </ScrollReveal>
 

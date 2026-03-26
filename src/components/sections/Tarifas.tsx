@@ -5,29 +5,30 @@ import { use3DTilt } from "@/hooks/use3DTilt";
 
 const OPTIONS = [
   {
-    label: "Espacio",
-    name: "Solo el Espacio",
+    label: "Grabación",
+    name: "Solo Grabación",
     description:
-      "El ático es tuyo. Terraza, salón, luz natural — trae tu equipo y graba a tu manera.",
+      "El ático es tuyo con todo el equipo técnico. Tú diriges, nosotros grabamos. Sales con los brutos del día.",
     includes: [
       "Ático privado con vistas a Madrid",
       "Iluminación de estudio",
-      "Wi-Fi de alta velocidad",
-      "Zona de maquillaje",
+      "Cámaras y equipo técnico",
+      "Sonido profesional",
+      "Teleprompter",
     ],
     highlighted: false,
   },
   {
     label: "Más elegido",
-    name: "Espacio + Filmmaker",
+    name: "Grabación + Edición",
     description:
-      "Tú solo vienes y grabas. Nosotros nos encargamos del equipo, la dirección y la entrega.",
+      "Vienes, grabas con nuestro equipo y en 48h tienes el contenido listo para publicar. Sin gestionar nada.",
     includes: [
-      "Todo lo del plan Espacio",
+      "Todo lo de Solo Grabación",
       "Filmmaker con dirección creativa",
-      "Cámaras y equipo técnico",
-      "Sonido profesional",
-      "Teleprompter",
+      "Edición profesional",
+      "Subtítulos y formato por plataforma",
+      "Entrega en 24-48h",
     ],
     highlighted: true,
   },
@@ -35,12 +36,12 @@ const OPTIONS = [
     label: "Todo incluido",
     name: "Producción Completa",
     description:
-      "Grabación, edición y entrega. En 48h tienes contenido listo para publicar en todas tus plataformas.",
+      "Grabación, edición, estrategia y distribución. Tú solo apareces delante de la cámara. Nosotros hacemos el resto.",
     includes: [
-      "Todo lo del plan Espacio + Filmmaker",
-      "Edición profesional a medida",
-      "Subtítulos y formato por plataforma",
-      "Entrega en 24-48h",
+      "Todo lo de Grabación + Edición",
+      "Estrategia de contenido",
+      "Distribución multiplataforma",
+      "Seguimiento y optimización",
     ],
     highlighted: false,
   },
