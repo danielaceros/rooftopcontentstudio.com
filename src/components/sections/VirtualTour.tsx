@@ -50,6 +50,10 @@ const ZONES: Zone[] = [
       { src: "/1_1.webp", alt: "Entrevista en set de podcast con iluminación cálida", caption: "Entrevista con iluminación cálida" },
       { src: "/3_1 (1).webp", alt: "Invitada en el set de podcast con micrófono profesional", caption: "Invitada en el set" },
       { src: "/4_1.webp", alt: "Sesión de podcast con iluminación ambiente púrpura", caption: "Set con iluminación púrpura" },
+      { src: "/optimized/tour-podcast-1.webp", alt: "Invitado grabando podcast con micrófono profesional", caption: "Grabación de podcast" },
+      { src: "/optimized/tour-podcast-2.webp", alt: "Setup de grabación con teleprompter y cámara", caption: "Setup con teleprompter" },
+      { src: "/optimized/tour-podcast-3.webp", alt: "Entrevista entre dos personas en la sala de podcast", caption: "Entrevista en la sala" },
+      { src: "/optimized/tour-podcast-4.webp", alt: "Invitado en la sala de podcast con iluminación cálida", caption: "Invitado en el set" },
     ],
     connections: ["salon", "podcast"],
   },
@@ -692,7 +696,7 @@ export default function VirtualTour() {
     <section
       ref={sectionRef}
       id="tour-virtual"
-      className="px-5 py-20 sm:px-8 sm:py-28 md:px-10 lg:px-12 lg:py-32 xl:px-16 2xl:px-20"
+      className="px-5 py-24 sm:px-8 sm:py-32 md:px-10 lg:px-12 lg:py-40 xl:px-16 2xl:px-20"
       style={{ contentVisibility: "auto", containIntrinsicSize: "auto 800px" }}
     >
       <div className="mx-auto max-w-7xl">
