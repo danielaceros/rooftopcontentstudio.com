@@ -48,6 +48,7 @@ export default function Portfolio({
                         video={project.video}
                         videoHD={project.videoHD}
                         cover={project.cover}
+                        alt={project.alt}
                         index={i}
                         openInModal={openVideosInModal}
                         hideOverlayTitle
@@ -72,6 +73,7 @@ export default function Portfolio({
                         video={project.video}
                         videoHD={project.videoHD}
                         cover={project.cover}
+                        alt={project.alt}
                         index={i}
                         openInModal={openVideosInModal}
                       />
@@ -171,6 +173,7 @@ export default function Portfolio({
                 video={project.video}
                 videoHD={project.videoHD}
                 cover={project.cover}
+                alt={project.alt}
                 index={i}
                 openInModal={openVideosInModal}
               />

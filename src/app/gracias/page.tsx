@@ -17,7 +17,7 @@ export default function GraciasPage() {
         Gracias.
       </h1>
       <p className="mt-8 max-w-md text-lg leading-relaxed text-muted">
-        Hemos recibido tu mensaje. Te respondemos en menos de 1 hora con presupuesto y fecha disponible.
+        Hemos recibido tu mensaje. Te respondemos hoy con fecha disponible.
       </p>
       <Link
         href="/"

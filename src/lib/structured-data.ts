@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME, FAQS } from "./constants";
+import { SITE_URL, SITE_NAME } from "./constants";
 
 export function getProfessionalServiceSchema() {
   return {
@@ -7,7 +7,7 @@ export function getProfessionalServiceSchema() {
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     description:
-      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Presupuesto personalizado sin compromiso.",
+      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción.",
     url: SITE_URL,
     telephone: "+34711255496",
     email: "hola@rooftopcontentstudio.es",
@@ -164,12 +164,6 @@ export function getProfessionalServiceSchema() {
         },
       },
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5",
-      reviewCount: "2",
-      bestRating: "5",
-    },
     sameAs: [
       "https://www.instagram.com/daniaceros",
       "https://www.instagram.com/rooftopcontentstudio",
@@ -238,56 +232,6 @@ export function getBreadcrumbSchema() {
   };
 }
 
-export function getFAQPageSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: FAQS.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
-}
-
-export function getHowToSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: "Cómo grabar contenido profesional en Rooftop Content Studio",
-    description:
-      "Proceso de grabación de contenido audiovisual en 4 pasos en el estudio rooftop de Madrid.",
-    step: [
-      {
-        "@type": "HowToStep",
-        position: 1,
-        name: "Cuéntanos tu proyecto",
-        text: "Escríbenos con lo que necesitas. Presupuesto en menos de 1 hora.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 2,
-        name: "Preparamos tu sesión",
-        text: "Nuestro equipo reserva fecha, prepara el set y planifica la sesión para que solo tengas que venir.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 3,
-        name: "Llegas y grabas",
-        text: "Todo montado. Te dirigimos, te guiamos y nos encargamos de la técnica. Tú solo graba.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 4,
-        name: "Contenido listo para publicar",
-        text: "Te llevas el material. Si incluye edición, en 24-48h tienes todo editado, subtitulado y formateado.",
-      },
-    ],
-  };
-}
 
 export function getVideoSchema() {
   return {

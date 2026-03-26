@@ -8,6 +8,7 @@ type Props = {
   video: string
   videoHD?: string
   cover?: string
+  alt?: string
   index?: number
   openInModal?: boolean
   hideOverlayTitle?: boolean
@@ -23,6 +24,7 @@ export default function PortfolioCard({
   video,
   videoHD,
   cover,
+  alt,
   index = 0,
   openInModal = false,
   hideOverlayTitle = false,
@@ -88,8 +90,7 @@ export default function PortfolioCard({
       {cover && !videoReady && (
         <img
           src={cover}
-          alt=""
-          aria-hidden="true"
+          alt={alt || title}
           className="absolute inset-0 h-full w-full object-cover"
         />
       )}

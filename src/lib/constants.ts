@@ -1,7 +1,7 @@
 export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
-  "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Presupuesto personalizado sin compromiso.";
+  "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Te respondemos hoy, sin compromiso.";
 
 export const NAV_LINKS = [
   { label: "Espacio", href: "#tour-virtual" },
@@ -44,25 +44,25 @@ export const PROCESO = [
     step: 1,
     title: "Cuéntanos tu Proyecto",
     description:
-      "Escríbenos. Presupuesto en menos de 1 hora.",
+      "Cuéntanos qué quieres grabar. En menos de 1 hora recibes un presupuesto detallado con fecha disponible.",
   },
   {
     step: 2,
     title: "Preparamos tu Sesión",
     description:
-      "Reservamos fecha y preparamos el set.",
+      "Reservamos la fecha y preparamos el set según tu proyecto. Tú solo tienes que aparecer.",
   },
   {
     step: 3,
     title: "Llegas y Grabas",
     description:
-      "Todo montado. Tú solo graba.",
+      "Llegas al ático, todo está montado. Nuestro filmmaker te dirige. Tú solo concéntrate en el mensaje.",
   },
   {
     step: 4,
     title: "Contenido Listo para Publicar",
     description:
-      "Si incluye edición, en 24-48h lo tienes todo.",
+      "Si incluye edición, en 24-48h tienes todo el contenido formateado y listo para publicar en cada plataforma.",
   },
 ] as const;
 
@@ -80,7 +80,7 @@ export const FAQS = [
   {
     question: "¿Qué incluye el servicio?",
     answer:
-      "Solo el ático, ático con filmmaker, o producción completa con edición y entrega en 24-48h. Presupuesto en menos de 1 hora.",
+      "Solo el ático, ático con filmmaker, o producción completa con edición y entrega en 24-48h. Sin compromiso.",
   },
   {
     question: "¿Qué puedo grabar?",
@@ -90,7 +90,7 @@ export const FAQS = [
   {
     question: "¿Puedo traer a mi propio equipo?",
     answer:
-      "Sí. Cuéntanos tu proyecto y te preparamos la opción que mejor encaje. Presupuesto en menos de 1 hora.",
+      "Sí. Cuéntanos tu proyecto y te preparamos la opción que mejor encaje. Sin esperas.",
   },
   {
     question: "¿Dónde está el estudio?",
@@ -100,7 +100,7 @@ export const FAQS = [
   {
     question: "¿Cómo reservo?",
     answer:
-      "Rellena el formulario o escríbenos. Presupuesto en menos de 1 hora. Solo 1 sesión al día.",
+      "Rellena el formulario o escríbenos. Te respondemos hoy, sin compromiso.",
   },
 ] as const;
 

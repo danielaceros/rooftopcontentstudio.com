@@ -2,6 +2,7 @@ export const projects = [
   {
     slug: "fifa",
     title: "FIFA",
+    alt: "Producción de vídeo corporativo para FIFA en Rooftop Content Studio Madrid",
     video: "/video/fifa.webm",
     videoHD: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/fifa.webm?alt=media&token=8c6aaa0a-e340-4de4-86ae-3e2d4952cb6c",
     cover: "/optimized/covers/fifa.webp",
@@ -41,6 +42,7 @@ export const projects = [
   {
     slug: "brahim-diaz",
     title: "Brahím Díaz",
+    alt: "Sesión de contenido para Brahím Díaz en Rooftop Content Studio Madrid",
     video: "/video/brahim.webm",
     videoHD: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/brahim.webm?alt=media&token=8166a4ee-e9a3-4e76-aa03-ff402e913f1e",
     cover: "/optimized/covers/brahim.webp",
@@ -57,6 +59,7 @@ export const projects = [
   {
     slug: "camara-de-comercio",
     title: "Cámara de Comercio",
+    alt: "Grabación de vídeo para la Cámara de Comercio de Madrid en Rooftop Content Studio",
     video: "/video/ccomercio.webm",
     videoHD: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ccomercio.webm?alt=media&token=eaefc4f3-6288-4446-b980-fd8b76f5ecf8",
     cover: "/optimized/covers/ccomercio.webp",
@@ -74,6 +77,7 @@ export const projects = [
   {
     slug: "ifema",
     title: "IFEMA",
+    alt: "Producción audiovisual para IFEMA en Rooftop Content Studio Madrid",
     video: "/video/ifema.webm",
     videoHD: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/ifema.webm?alt=media&token=f6c36099-4634-4c12-9fa9-1d823c65aa42",
     cover: "/optimized/covers/ifema.webp",
@@ -90,6 +94,7 @@ export const projects = [
   {
     slug: "cinesa",
     title: "Cinesa",
+    alt: "Sesión de grabación para Cinesa en Rooftop Content Studio Madrid",
     video: "/video/cinesa.webm",
     videoHD: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/cinesa.webm?alt=media&token=82305aba-5ee9-41aa-8999-b47ffd29a38d",
     cover: "/optimized/covers/cinesa.webp",
@@ -106,6 +111,7 @@ export const projects = [
   {
     slug: "federacion-esgrima",
     title: "Federación Española de Esgrima",
+    alt: "Vídeo corporativo para la Federación Española de Esgrima en Rooftop Content Studio",
     video: "/video/esgrima.webm",
     videoHD: "https://firebasestorage.googleapis.com/v0/b/klip-e547f.firebasestorage.app/o/esgrima.webm?alt=media&token=ed0160b7-be0c-4df2-8cfd-2cc1af08a9c3",
     cover: "/optimized/covers/esgrima.webp",
