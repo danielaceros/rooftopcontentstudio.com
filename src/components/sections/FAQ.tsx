@@ -44,6 +44,9 @@ export default function FAQ() {
             >
               Pide tu Presupuesto →
             </a>
+            <p className="mt-2 text-xs text-muted">
+              Sin compromiso · Respuesta en menos de 1h
+            </p>
           </div>
         </ScrollReveal>
       </div>
