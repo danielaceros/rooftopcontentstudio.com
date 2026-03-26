@@ -110,16 +110,6 @@ export default function Hero() {
             </p>
           </div>
 
-          {/* Scarcity badge */}
-          <div className="hero-line-wrapper mt-3">
-            <span
-              className="hero-line inline-block text-xs font-medium uppercase tracking-wide text-amber-400/80"
-              style={{ animationDelay: "1.35s" }}
-            >
-              Solo 1 sesión al día · Disponibilidad limitada
-            </span>
-          </div>
-
           {/* Social proof logos — mobile */}
           <div className="hero-line-wrapper mt-8 lg:hidden">
             <div
