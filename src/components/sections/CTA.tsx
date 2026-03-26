@@ -29,7 +29,7 @@ export default function CTA() {
 
               <ScrollReveal delay={0.16}>
                 <p className="mt-6 max-w-[400px] text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-                  Solo 1 sesión al día. Cuéntanos qué necesitas y te respondemos en menos de 1 hora.
+                  Cuéntanos qué necesitas y te respondemos en menos de 1 hora.
                 </p>
               </ScrollReveal>
 
