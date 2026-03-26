@@ -33,6 +33,13 @@ const TESTIMONIALS = [
     role: "CEO & Founder, ECOM Advisory",
     quote: "Es la segunda vez que venimos. La primera fue un éxito y ahora vamos a por el segundo.",
   },
+  {
+    src: "/TALEXANDRA.webm",
+    poster: "/optimized/poster-talexandra.webp",
+    name: "Alexandra",
+    role: "Creadora de Contenido",
+    quote: "Todo muy profesional. Buena calidad, buena luz, buen ambiente. Este es tu sitio.",
+  },
 ];
 
 function TestimonialCard({
@@ -101,7 +108,7 @@ function TestimonialCard({
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[280px] lg:max-w-[280px]"
+          className="group relative aspect-[9/16] w-full max-w-[320px] cursor-pointer overflow-hidden rounded-sm sm:max-w-[260px] lg:max-w-[240px]"
           style={{ backgroundColor: "#0a0a0a" }}
         >
           <video
@@ -293,7 +300,7 @@ export default function Comparativa() {
 
         {/* Desktop: side by side */}
         <ScrollReveal delay={0.18}>
-          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-4 lg:gap-8">
+          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-3 lg:gap-8 xl:grid-cols-5">
             {TESTIMONIALS.map((t) => (
               <TestimonialCard
                 key={t.src}
@@ -315,6 +322,9 @@ export default function Comparativa() {
             >
               Pide tu Presupuesto →
             </a>
+            <p className="mt-2 text-xs text-muted">
+              Sin compromiso · Respuesta en menos de 1h
+            </p>
           </div>
         </ScrollReveal>
       </div>
