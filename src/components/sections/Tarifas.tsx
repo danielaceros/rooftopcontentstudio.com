@@ -8,7 +8,7 @@ const OPTIONS = [
     label: "Grabación",
     name: "Solo Grabación",
     description:
-      "El ático es tuyo con todo el equipo técnico. Tú diriges, nosotros grabamos. Sales con los brutos del día.",
+      "Vienes al ático y grabas con nuestro equipo técnico. Sales con los brutos del día listos para editar.",
     includes: [
       "Ático privado con vistas a Madrid",
       "Iluminación de estudio",

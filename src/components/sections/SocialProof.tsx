@@ -6,7 +6,8 @@ import Image from "next/image";
 const STATS = [
   { value: 28, suffix: "+", label: "Proyectos" },
   { value: 500, suffix: "+", label: "Horas Producidas" },
-  { value: 12, suffix: "+", label: "Piezas Editadas por Sesión" },
+  { value: 24, suffix: "-48h", label: "Entrega con edición" },
+  { value: 1, suffix: " sesión/día", label: "Disponibilidad limitada" },
 ];
 
 const LOGOS_SRC = "/optimized/logos-banner.png";

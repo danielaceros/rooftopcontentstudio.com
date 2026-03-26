@@ -71,7 +71,7 @@ export default function MobileMenu() {
                 animation: `menu-fade-in 0.4s ease-out ${NAV_LINKS.length * 0.08}s forwards`,
               }}
             >
-              Reservar Sesión
+              Pedir Presupuesto
             </a>
           </nav>
 
