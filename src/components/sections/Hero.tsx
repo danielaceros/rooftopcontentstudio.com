@@ -52,10 +52,10 @@ export default function Hero() {
           className="flex min-h-[100svh] flex-1 flex-col justify-end pb-16 px-5 sm:px-8 md:justify-center md:pb-0 lg:min-h-0 lg:w-[55%] lg:px-0 lg:pb-12"
           style={{ willChange: "transform" }}
         >
-          {/* Terminal-style label */}
-          <div className="hero-line-wrapper mb-3 sm:mb-3">
+          {/* Terminal-style label — visually reinforced */}
+          <div className="hero-line-wrapper mb-4 sm:mb-5">
             <p
-              className="hero-line font-mono text-[10px] uppercase tracking-widest text-accent md:text-xs md:tracking-[0.25em]"
+              className="hero-line font-mono text-sm uppercase leading-relaxed tracking-wide text-accent sm:text-base md:tracking-[0.2em]"
               style={{ animationDelay: "0.2s" }}
             >
               [ Graba contenido para semanas. En una mañana. En un ático en Madrid. ]
@@ -95,6 +95,29 @@ export default function Hero() {
             >
               Pide tu Presupuesto →
             </a>
+            <p className="hero-line mt-2 text-center text-xs text-foreground/40" style={{ animationDelay: "1.2s" }}>
+              Sin compromiso · Respuesta en menos de 1h
+            </p>
+          </div>
+
+          {/* Mini-testimonio */}
+          <div className="hero-line-wrapper mt-5 lg:mt-6">
+            <p
+              className="hero-line text-sm leading-relaxed text-foreground/50 lg:text-[0.9rem]"
+              style={{ animationDelay: "1.25s" }}
+            >
+              ★★★★★ &ldquo;En tres horas grabamos contenido para todo el equipo.&rdquo; — Guillermo, Geko Marketing
+            </p>
+          </div>
+
+          {/* Scarcity badge */}
+          <div className="hero-line-wrapper mt-3">
+            <span
+              className="hero-line inline-block text-xs font-medium uppercase tracking-wide text-amber-400/80"
+              style={{ animationDelay: "1.35s" }}
+            >
+              Solo 1 sesión al día · Disponibilidad limitada
+            </span>
           </div>
 
           {/* Social proof logos — mobile */}

@@ -21,9 +21,9 @@ export default function Home() {
         <SocialProof />
         <QueEs />
         <Beneficios />
-        <VirtualTour />
         <Comparativa />
         <Portfolio desktopSlideshow={true} openVideosInModal={true} />
+        <VirtualTour />
         <Proceso />
         <Tarifas />
         <FAQ />
