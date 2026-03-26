@@ -1,7 +1,7 @@
 export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
-  "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Desde 50€/h.";
+  "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Presupuesto personalizado sin compromiso.";
 
 export const NAV_LINKS = [
   { label: "Espacio", href: "#tour-virtual" },

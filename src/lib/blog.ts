@@ -54,26 +54,26 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", level: 2, text: "Cuánto cuesta un estudio de grabación en Madrid" },
       {
         type: "paragraph",
-        text: "En Madrid puedes encontrar opciones muy distintas según el tipo de espacio, el equipo incluido y el enfoque del servicio. Hay estudios que alquilan solo la sala. Otros añaden iluminación, cámaras o técnico. Y luego están los espacios híbridos, donde además del entorno físico tienes apoyo creativo o producción audiovisual completa.",
+        text: "En Madrid puedes encontrar opciones muy distintas según el tipo de espacio, el equipo incluido y el enfoque del servicio. Hay estudios que solo ofrecen la sala. Otros añaden iluminación, cámaras o técnico. Y luego están los espacios híbridos, donde además del entorno físico tienes apoyo creativo o producción audiovisual completa.",
       },
       {
         type: "list",
         items: [
-          "Alquiler solo espacio: ideal si ya vienes con tu propio equipo o filmmaker.",
-          "Espacio + filmmaker: útil si quieres resolver grabación sin montar un equipo completo.",
-          "Producción completa: mejor opción si quieres salir con el contenido prácticamente resuelto.",
+          "Solo Grabación: vienes al ático y grabas con equipo técnico profesional. Sales con los brutos del día.",
+          "Grabación + Edición: filmmaker con dirección creativa, edición profesional y entrega en 24-48h.",
+          "Producción Completa: grabación, edición, estrategia de contenido y distribución multiplataforma.",
         ],
       },
       {
         type: "paragraph",
-        text: "En Rooftop Content Studio trabajamos con tres modalidades sencillas: solo espacio desde 50€/h, espacio + filmmaker desde 75€/h y producción completa con edición según alcance. La idea no es complicarlo, sino adaptarlo al tipo de sesión que realmente necesitas.",
+        text: "En Rooftop Content Studio trabajamos con tres modalidades sencillas: Solo Grabación, Grabación + Edición y Producción Completa. Presupuesto personalizado en menos de 1 hora, sin compromiso.",
       },
       { type: "heading", level: 2, text: "Qué encarece o abarata una sesión" },
       {
         type: "list",
         items: [
           "Duración de la sesión.",
-          "Si solo alquilas el espacio o necesitas equipo humano.",
+          "Si necesitas solo grabación o también edición y estrategia.",
           "Número de formatos o piezas finales.",
           "Si hay edición, subtítulos o adaptaciones para redes.",
           "Complejidad del set, sonido o multicámara.",
@@ -96,7 +96,7 @@ export const blogPosts: BlogPost[] = [
           "Si puedes grabar varios formatos en una sola sesión.",
           "Si hay luz natural real o todo depende de focos cerrados.",
           "Si el acceso es fácil para cliente, equipo o invitados.",
-          "Si el estudio ofrece solo alquiler o también apoyo audiovisual.",
+          "Si el estudio ofrece solo grabación o también edición y producción completa.",
         ],
       },
       { type: "heading", level: 2, text: "Cuándo tiene sentido grabar en un rooftop studio en Madrid" },
@@ -107,8 +107,8 @@ export const blogPosts: BlogPost[] = [
       { type: "heading", level: 2, text: "Preguntas frecuentes" },
       {
         type: "faq",
-        question: "¿Puedo alquilar solo el espacio?",
-        answer: "Sí. Si ya vienes con tu equipo o filmmaker, puedes reservar únicamente el ático-estudio.",
+        question: "¿Puedo grabar sin edición?",
+        answer: "Sí. Con Solo Grabación vienes al ático, grabas con nuestro equipo técnico y sales con los brutos del día.",
       },
       {
         type: "faq",
@@ -191,8 +191,8 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "faq",
-        question: "¿Puedo reservar solo el espacio o también con apoyo de grabación?",
-        answer: "Sí. Puedes alquilar el espacio o montar una sesión con apoyo de filmmaker según el nivel de producción que necesites.",
+        question: "¿Qué opciones de servicio hay?",
+        answer: "Tres: Solo Grabación, Grabación + Edición y Producción Completa. Cuéntanos tu proyecto y te preparamos presupuesto en menos de 1 hora.",
       },
       {
         type: "faq",

@@ -7,7 +7,7 @@ export function getProfessionalServiceSchema() {
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     description:
-      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Desde 50€/h.",
+      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Presupuesto personalizado sin compromiso.",
     url: SITE_URL,
     telephone: "+34711255496",
     email: "hola@rooftopcontentstudio.es",
@@ -81,22 +81,18 @@ export function getProfessionalServiceSchema() {
       itemListElement: [
         {
           "@type": "OfferCatalog",
-          name: "Alquiler de espacio rooftop",
+          name: "Solo Grabación",
           description:
-            "Espacio rooftop privado con vistas a Madrid. Trae tu propio equipo y filmmaker. Sesiones desde 2 horas.",
+            "Ático privado con equipo técnico, cámaras, sonido profesional y teleprompter. Sales con los brutos del día.",
           itemListElement: [
             {
               "@type": "Offer",
-              name: "Alquiler de espacio rooftop",
+              name: "Solo Grabación",
               description:
-                "Espacio rooftop privado con vistas a Madrid. Trae tu propio equipo y filmmaker. Sesiones desde 2 horas.",
-              price: "50",
-              priceCurrency: "EUR",
+                "Ático privado con equipo técnico, cámaras, sonido profesional y teleprompter. Sales con los brutos del día.",
               priceSpecification: {
-                "@type": "UnitPriceSpecification",
-                price: "50",
+                "@type": "PriceSpecification",
                 priceCurrency: "EUR",
-                unitText: "hora",
               },
               availability: "https://schema.org/InStock",
               url: `${SITE_URL}/#tarifas`,
@@ -105,22 +101,18 @@ export function getProfessionalServiceSchema() {
         },
         {
           "@type": "OfferCatalog",
-          name: "Espacio + Filmmaker",
+          name: "Grabación + Edición",
           description:
-            "Espacio rooftop con filmmaker profesional, dirección creativa, cámaras y sonido incluidos.",
+            "Grabación con filmmaker y dirección creativa, edición profesional, subtítulos y entrega en 24-48h.",
           itemListElement: [
             {
               "@type": "Offer",
-              name: "Espacio + Filmmaker",
+              name: "Grabación + Edición",
               description:
-                "Espacio rooftop con filmmaker profesional, dirección creativa, cámaras y sonido incluidos.",
-              price: "75",
-              priceCurrency: "EUR",
+                "Grabación con filmmaker y dirección creativa, edición profesional, subtítulos y entrega en 24-48h.",
               priceSpecification: {
-                "@type": "UnitPriceSpecification",
-                price: "75",
+                "@type": "PriceSpecification",
                 priceCurrency: "EUR",
-                unitText: "hora",
               },
               availability: "https://schema.org/InStock",
               url: `${SITE_URL}/#tarifas`,
@@ -129,15 +121,15 @@ export function getProfessionalServiceSchema() {
         },
         {
           "@type": "OfferCatalog",
-          name: "Producción completa",
+          name: "Producción Completa",
           description:
-            "Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral a medida.",
+            "Grabación, edición, estrategia de contenido y distribución multiplataforma. Servicio integral a medida.",
           itemListElement: [
             {
               "@type": "Offer",
-              name: "Producción completa",
+              name: "Producción Completa",
               description:
-                "Precio a medida según proyecto. Espacio, filmmaker profesional, equipo técnico completo y edición. Servicio integral.",
+                "Grabación, edición, estrategia de contenido y distribución multiplataforma. Servicio integral a medida.",
               priceSpecification: {
                 "@type": "PriceSpecification",
                 priceCurrency: "EUR",

@@ -89,7 +89,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
 
           <div className="mt-14 rounded-[28px] border border-accent/20 bg-accent/5 p-6 sm:p-8">
-            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">Reservar sesión</p>
+            <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">Pedir Presupuesto</p>
             <h2 className="mt-4 font-display text-[36px] leading-[0.96] uppercase text-foreground sm:text-[52px] max-w-[12ch]">
               Si quieres grabar contenido premium en Madrid, hablemos
             </h2>
@@ -98,7 +98,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/#contacto" className="inline-flex min-h-[44px] items-center border border-accent px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-foreground transition-all duration-300 hover:bg-accent hover:text-background">
-                Reservar sesión
+                Pedir Presupuesto
               </Link>
               <Link href="/blog" className="inline-flex min-h-[44px] items-center border border-white/10 px-5 py-3 font-mono text-[11px] uppercase tracking-[0.18em] text-foreground/60 transition-all duration-300 hover:text-foreground">
                 Volver al blog

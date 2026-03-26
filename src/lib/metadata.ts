@@ -8,7 +8,7 @@ export const siteMetadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Desde 50€/h.",
+    "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Presupuesto personalizado sin compromiso.",
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,
   openGraph: {
