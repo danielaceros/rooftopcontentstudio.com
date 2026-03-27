@@ -54,6 +54,8 @@ const ZONES: Zone[] = [
       { src: "/optimized/tour-podcast-2.webp", alt: "Setup de grabación con teleprompter y cámara", caption: "Setup con teleprompter" },
       { src: "/optimized/tour-podcast-3.webp", alt: "Entrevista entre dos personas en la sala de podcast", caption: "Entrevista en la sala" },
       { src: "/optimized/tour-podcast-4.webp", alt: "Invitado en la sala de podcast con iluminación cálida", caption: "Invitado en el set" },
+      { src: "/optimized/sala-polivalente-7774.webp", alt: "Entrevista de podcast con dos personas y micrófonos profesionales", caption: "Entrevista en el set" },
+      { src: "/optimized/sala-polivalente-7761.webp", alt: "Sesión de grabación en la sala polivalente con iluminación cálida", caption: "Sesión en sala polivalente" },
     ],
     connections: ["salon", "podcast"],
   },
