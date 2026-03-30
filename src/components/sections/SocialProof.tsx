@@ -96,7 +96,7 @@ export default function SocialProof() {
           {/* Logos */}
           <div className="w-full lg:w-auto">
             <p className="mb-4 text-center font-mono text-[10px] uppercase tracking-[0.35em] text-[#080808]/50 lg:text-right">
-              Empresas que confían en nosotros
+              Empresas que han confiado en mí
             </p>
             <div
               className="mx-auto w-[85%] overflow-hidden sm:w-[70%] lg:mx-0 lg:w-[320px] xl:w-[380px]"

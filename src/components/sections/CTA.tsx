@@ -29,7 +29,7 @@ export default function CTA() {
 
               <ScrollReveal delay={0.16}>
                 <p className="mt-6 max-w-[400px] text-base leading-[1.75] text-muted sm:text-[1.05rem] sm:leading-[1.8]">
-                  Cuéntanos qué necesitas y te respondemos en menos de 1 hora.
+                  Cuéntame qué necesitas y te respondo en menos de 1 hora.
                 </p>
               </ScrollReveal>
 
@@ -37,17 +37,22 @@ export default function CTA() {
               <ScrollReveal delay={0.24}>
                 <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:gap-4">
                   {[
-                    { text: "hola@rooftopcontentstudio.es", href: "mailto:hola@rooftopcontentstudio.es" },
+                    { text: "hola@rooftopcontentstudio.es", href: "mailto:hola@rooftopcontentstudio.es", label: "Escríbeme directamente" },
                     { text: "+34 711 25 54 96", href: "tel:+34711255496" },
                   ].map((item) => (
-                    <div key={item.text} className="flex items-center gap-3 sm:gap-4">
-                      <span className="h-px w-4 shrink-0 bg-accent sm:w-5" aria-hidden="true" />
-                      <a
-                        href={item.href}
-                        className="font-mono text-[12px] text-muted transition-colors duration-300 hover:text-foreground sm:font-sans sm:text-[14px]"
-                      >
-                        {item.text}
-                      </a>
+                    <div key={item.text} className="flex flex-col gap-1">
+                      {"label" in item && item.label && (
+                        <p className="ml-7 text-sm text-muted sm:ml-9">{item.label}</p>
+                      )}
+                      <div className="flex items-center gap-3 sm:gap-4">
+                        <span className="h-px w-4 shrink-0 bg-accent sm:w-5" aria-hidden="true" />
+                        <a
+                          href={item.href}
+                          className="font-mono text-[12px] text-muted transition-colors duration-300 hover:text-foreground sm:font-sans sm:text-[14px]"
+                        >
+                          {item.text}
+                        </a>
+                      </div>
                     </div>
                   ))}
                 </div>

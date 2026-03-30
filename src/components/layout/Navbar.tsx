@@ -35,7 +35,7 @@ export default function Navbar() {
         className="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-2 sm:px-8 sm:py-3 lg:px-12"
         aria-label="Navegación principal"
       >
-        <a href="#" className="relative z-10">
+        <a href="#" className="relative z-10 flex items-center gap-2">
           <Image
             src="/optimized/logo.webp"
             alt="Rooftop Content Studio"
@@ -45,6 +45,9 @@ export default function Navbar() {
             priority
             fetchPriority="high"
           />
+          <span className="font-mono text-[10px] uppercase tracking-widest text-muted/50">
+            by @daniaceros
+          </span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex lg:gap-10">

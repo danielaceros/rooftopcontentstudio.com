@@ -1,7 +1,7 @@
 export const SITE_URL = "https://www.rooftopcontentstudio.es";
 export const SITE_NAME = "Rooftop Content Studio";
 export const SITE_DESCRIPTION =
-  "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción. Te respondemos hoy, sin compromiso.";
+  "El estudio de Dani Acero — filmmaker de FIFA, IFEMA y Cinesa. Graba podcast, reels y contenido corporativo en un ático en Madrid centro con equipo y dirección incluidos.";
 
 export const NAV_LINKS = [
   { label: "Espacio", href: "#tour-virtual" },
@@ -27,7 +27,7 @@ export const BENEFICIOS = [
   {
     title: "Dirección Creativa y Equipo Técnico",
     description:
-      "Tú vienes con el mensaje. Nosotros nos encargamos del resto.",
+      "Tú vienes con el mensaje. Yo me encargo del resto.",
     icon: "strategy",
   },
   {
@@ -55,7 +55,7 @@ export const PROCESO = [
     step: 3,
     title: "Llegas y Grabas",
     description:
-      "Llegas al ático, todo está montado. Nuestro filmmaker te dirige. Tú solo concéntrate en el mensaje.",
+      "Llegas al ático, todo está montado. Te dirijo yo. Tú solo concéntrate en el mensaje.",
   },
   {
     step: 4,
@@ -74,7 +74,7 @@ export const FAQS = [
   {
     question: "¿Necesito experiencia delante de la cámara?",
     answer:
-      "No. El espacio es un ático real, no un plató. Y nuestro equipo te dirige con teleprompter y guía de contenido.",
+      "No. El espacio es un ático real, no un plató. Y yo te dirijo con teleprompter y guía de contenido.",
   },
   {
     question: "¿Qué incluye el servicio?",
@@ -99,7 +99,7 @@ export const FAQS = [
   {
     question: "¿Cómo reservo?",
     answer:
-      "Rellena el formulario o escríbenos. Te respondemos hoy, sin compromiso.",
+      "Rellena el formulario o escríbeme. Te respondo hoy, sin compromiso.",
   },
 ] as const;
 

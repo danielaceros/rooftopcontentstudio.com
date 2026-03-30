@@ -8,7 +8,7 @@ const OPTIONS = [
     label: "Grabación",
     name: "Solo Grabación",
     description:
-      "Vienes al ático y grabas con nuestro equipo técnico. Sales con los brutos del día listos para editar.",
+      "Vienes al ático y grabas con mi equipo técnico. Sales con los brutos del día listos para editar.",
     includes: [
       "Ático privado con vistas a Madrid",
       "Iluminación de estudio",
@@ -22,7 +22,7 @@ const OPTIONS = [
     label: "Más elegido",
     name: "Grabación + Edición",
     description:
-      "Vienes, grabas con nuestro equipo y en 48h tienes el contenido listo para publicar. Sin gestionar nada.",
+      "Vienes, grabas conmigo y en 48h tienes el contenido listo para publicar. Sin gestionar nada.",
     includes: [
       "Todo lo de Solo Grabación",
       "Filmmaker con dirección creativa",
@@ -36,7 +36,7 @@ const OPTIONS = [
     label: "Todo incluido",
     name: "Producción Completa",
     description:
-      "Grabación, edición, estrategia y distribución. Tú solo apareces delante de la cámara. Nosotros hacemos el resto.",
+      "Grabación, edición, estrategia y distribución. Tú solo apareces delante de la cámara. Yo me encargo del resto.",
     includes: [
       "Todo lo de Grabación + Edición",
       "Estrategia de contenido",

@@ -64,6 +64,9 @@ export default function Footer() {
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-accent/70">
                 Founder & Filmmaker
               </p>
+              <p className="font-mono text-[10px] text-muted">
+                FIFA &middot; IFEMA &middot; Cinesa &middot; C&aacute;mara de Comercio
+              </p>
               <a
                 href="https://www.instagram.com/daniaceros"
                 target="_blank"

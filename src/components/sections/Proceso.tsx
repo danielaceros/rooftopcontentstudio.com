@@ -93,7 +93,7 @@ export default function Proceso() {
                 href="#contacto"
                 className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
               >
-                Empieza por el Paso 1 →
+                Cu&eacute;ntame tu proyecto →
               </a>
             </div>
           </ScrollReveal>
@@ -207,7 +207,7 @@ export default function Proceso() {
             href="#contacto"
             className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
           >
-            Empieza por el Paso 1 →
+            Cu&eacute;ntame tu proyecto →
           </a>
         </div>
       </div>

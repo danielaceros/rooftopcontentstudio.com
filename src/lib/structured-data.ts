@@ -7,7 +7,7 @@ export function getProfessionalServiceSchema() {
     "@id": `${SITE_URL}/#business`,
     name: SITE_NAME,
     description:
-      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con podcast, reels, YouTube y cursos listos para publicar. Look auténtico, calidad de producción.",
+      "El estudio de Dani Acero — filmmaker de FIFA, IFEMA y Cinesa. Graba podcast, reels y contenido corporativo en un ático en Madrid centro con equipo y dirección incluidos.",
     url: SITE_URL,
     telephone: "+34711255496",
     email: "hola@rooftopcontentstudio.es",
@@ -57,11 +57,10 @@ export function getProfessionalServiceSchema() {
       "@type": "Person",
       "@id": `${SITE_URL}/#founder`,
       name: "Daniel Acero",
-      jobTitle: "Founder & Creative Director",
-      url: "https://www.rooftopcontentstudio.es",
+      jobTitle: "Founder & Filmmaker",
+      url: "https://www.daniaceros.com",
       sameAs: [
         "https://www.instagram.com/daniaceros",
-        "https://www.instagram.com/rooftopcontentstudio",
         "https://www.daniaceros.com",
       ],
       knowsAbout: [
@@ -201,7 +200,7 @@ export function getWebPageSchema() {
     url: SITE_URL,
     name: "Rooftop Content Studio — Tu Contenido. Tu Marca. Un Día. Madrid",
     description:
-      "Estudio de contenido en un ático en Madrid. Vienes una mañana, grabas con nuestro equipo y te vas con contenido listo para publicar. Look auténtico, calidad de producción.",
+      "El estudio de Dani Acero — filmmaker de FIFA, IFEMA y Cinesa. Graba podcast, reels y contenido corporativo en un ático en Madrid centro con equipo y dirección incluidos.",
     isPartOf: {
       "@id": `${SITE_URL}/#website`,
     },

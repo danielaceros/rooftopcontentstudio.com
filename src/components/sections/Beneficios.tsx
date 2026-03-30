@@ -58,7 +58,7 @@ export default function Beneficios() {
               href="#contacto"
               className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
             >
-              Reserva tu Sesión →
+              Graba Conmigo →
             </a>
             <p className="mt-2 text-xs text-muted">
               Sin compromiso · Respuesta en menos de 1h

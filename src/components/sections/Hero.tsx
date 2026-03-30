@@ -115,6 +115,15 @@ export default function Hero() {
             <p className="hero-line mt-2 text-center text-xs text-foreground/40" style={{ animationDelay: "1.2s" }}>
               Sin compromiso · Respuesta en menos de 1h
             </p>
+            <a
+              href="https://www.instagram.com/daniaceros"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hero-line mt-3 block text-center font-mono text-xs uppercase tracking-wider text-muted/60 transition-colors hover:text-accent"
+              style={{ animationDelay: "1.3s" }}
+            >
+              por @daniaceros · filmmaker
+            </a>
           </div>
 
           {/* Mini-testimonio rotativo */}
@@ -142,7 +151,7 @@ export default function Hero() {
               style={{ animationDelay: "1.3s" }}
             >
               <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.3em] text-foreground/30">
-                Empresas que han confiado en nosotros
+                Empresas que han confiado en m&iacute;
               </p>
               <div
                 className="w-[85%] overflow-hidden"

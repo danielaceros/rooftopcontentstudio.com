@@ -296,7 +296,7 @@ export default function Comparativa() {
 
         <ScrollReveal delay={0.12}>
           <p className="mt-6 max-w-xl text-base leading-[1.75] text-muted sm:text-[1.1rem] sm:leading-[1.8]">
-            Profesionales de diferentes sectores ya han grabado con nosotros. Esto es lo que dijeron.
+            Esto es lo que dicen quienes han grabado conmigo.
           </p>
         </ScrollReveal>
 
@@ -327,7 +327,7 @@ export default function Comparativa() {
               href="#contacto"
               className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
             >
-              Graba con Nosotros →
+              Graba Conmigo →
             </a>
             <p className="mt-2 text-xs text-muted">
               Sin compromiso · Respuesta en menos de 1h

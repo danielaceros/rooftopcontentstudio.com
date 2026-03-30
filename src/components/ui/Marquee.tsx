@@ -1,5 +1,5 @@
 const MARQUEE_COPY =
-  "Un ático real en el centro de Madrid · FIFA, IFEMA y Cinesa ya han grabado aquí · ";
+  "He filmado para FIFA, IFEMA y Cinesa · Ahora te toca a ti · Ático en Madrid centro · ";
 
 export default function Marquee() {
   return (
