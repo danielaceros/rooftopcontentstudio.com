@@ -23,11 +23,16 @@ interface Zone {
 const ZONES: Zone[] = [
   {
     id: "terraza",
-    name: "Terraza",
+    name: "Chillout",
     subtitle: "Rooftop con vistas al skyline de Madrid",
     photos: [
       { src: "/optimized/studio-3.webp", alt: "Vista panorámica del skyline de Madrid desde la terraza", caption: "Skyline de Madrid" },
       { src: "/optimized/studio/dsc09925.webp", alt: "Cámara en la terraza rooftop con vistas a los tejados de Madrid", caption: "Cámara lista en la terraza" },
+      { src: "/optimized/terraza-img_8051.webp", alt: "Vistas al skyline de Madrid desde la terraza del estudio", caption: "Vistas al skyline" },
+      { src: "/optimized/terraza-img_8052.webp", alt: "Panorámica de los tejados de Madrid desde el rooftop", caption: "Tejados de Madrid" },
+      { src: "/optimized/terraza-img_8054.webp", alt: "Terraza del estudio con vistas a los edificios de Madrid centro", caption: "Terraza con vistas" },
+      { src: "/optimized/terraza-img_8055.webp", alt: "Vista aérea de los edificios del barrio de Atocha desde la terraza", caption: "Barrio de Atocha" },
+      { src: "/optimized/terraza-img_8061.webp", alt: "Atardecer sobre los tejados de Madrid desde la terraza rooftop", caption: "Atardecer en el rooftop" },
     ],
     connections: ["salon"],
   },
