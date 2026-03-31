@@ -23,10 +23,10 @@ export default function Founder() {
           <ScrollReveal delay={0.1}>
             <div className="max-w-xl">
               <p className="text-[0.8rem] leading-[1.7] text-muted sm:text-[0.9rem] sm:leading-[1.8] lg:text-base lg:leading-[1.85]">
-                Soy Dani, filmmaker con m&aacute;s de 6 a&ntilde;os rodando para FIFA, IFEMA, Cinesa y la
-                C&aacute;mara de Comercio de Madrid. He montado este estudio para que grabes con el mismo
-                equipo y la misma direcci&oacute;n que usan las grandes marcas. Sin montar nada, sin
-                gestionar nada. T&uacute; solo ven y graba.
+                Daniel Acero es filmmaker corporativo con m&aacute;s de 6 a&ntilde;os de experiencia produciendo contenido audiovisual para marcas como FIFA, IFEMA, Cinesa y la C&aacute;mara de Comercio de Madrid. Fund&oacute; Rooftop Content Studio con un objetivo claro: crear un espacio donde empresas y creadores pudieran producir contenido profesional de forma eficiente, sin los costes ni la log&iacute;stica de un rodaje tradicional.
+              </p>
+              <p className="mt-3 text-[0.8rem] leading-[1.7] text-muted sm:text-[0.9rem] sm:leading-[1.8] lg:mt-4 lg:text-base lg:leading-[1.85]">
+                Con formaci&oacute;n t&eacute;cnica en producci&oacute;n audiovisual y experiencia en direcci&oacute;n creativa, Daniel supervisa personalmente cada sesi&oacute;n en el estudio &mdash; desde la preparaci&oacute;n del set hasta la entrega del material editado. Su enfoque combina la calidad visual de la producci&oacute;n corporativa con la agilidad que exige el contenido para redes sociales.
               </p>
               <a
                 href="https://www.instagram.com/daniaceros"

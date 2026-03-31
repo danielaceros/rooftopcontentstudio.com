@@ -69,37 +69,37 @@ export const FAQS = [
   {
     question: "¿Para quién es esto?",
     answer:
-      "Founders, marcas personales y equipos de marketing que necesitan contenido recurrente con calidad profesional sin gestionar la producción.",
+      "Rooftop Content Studio está diseñado para founders, marcas personales, empresas y equipos de marketing que necesitan contenido profesional de forma recurrente sin gestionar la producción internamente. Es especialmente útil para quienes graban reels, vídeos para LinkedIn, podcasts, cursos online o contenido corporativo y quieren un resultado de calidad sin montar su propio estudio. Clientes como FIFA, IFEMA y la Cámara de Comercio de Madrid ya han grabado aquí.",
   },
   {
     question: "¿Necesito experiencia delante de la cámara?",
     answer:
-      "No. El espacio es un ático real, no un plató. Y yo te dirijo con teleprompter y guía de contenido.",
+      "No es necesaria ninguna experiencia previa. El espacio es un ático real, no un plató artificial, lo que hace que grabar resulte más natural y cómodo. Nuestro filmmaker te dirige durante toda la sesión: estructura el contenido, gestiona el teleprompter y te guía entre toma y toma para que salgas con el material listo sin haber perdido tiempo ni energía.",
   },
   {
     question: "¿Qué incluye el servicio?",
     answer:
-      "Solo el ático, ático con filmmaker, o producción completa con edición y entrega en 24-48h. Sin compromiso.",
+      "El servicio básico incluye acceso exclusivo al ático, iluminación profesional LED, cámaras Sony con objetivos, micrófonos, teleprompter y dirección creativa durante la grabación. El plan de Grabación + Edición añade edición profesional, subtítulos y formato optimizado para cada plataforma con entrega en 24-48 horas. El plan de Producción Completa incorpora además estrategia de contenido, distribución multiplataforma y seguimiento. El presupuesto se personaliza según el proyecto.",
   },
   {
     question: "¿Qué puedo grabar?",
     answer:
-      "Podcast, reels, YouTube, cursos, vídeo corporativo. La mayoría de clientes graban varios formatos en la misma sesión.",
+      "En Rooftop Content Studio puedes grabar podcasts y entrevistas, reels y vídeos cortos para Instagram, TikTok y YouTube Shorts, vídeos de marca personal para LinkedIn o presentaciones corporativas, anuncios y VSLs, cursos y formación online, y contenido corporativo en general. La mayoría de clientes graban varios formatos distintos en una misma sesión de mañana, aprovechando la disponibilidad exclusiva del espacio.",
   },
   {
     question: "¿Puedo traer a mi propio equipo?",
     answer:
-      "Sí. Cuéntanos tu proyecto y te preparamos la opción que mejor encaje. Sin esperas.",
+      "Sí. Si prefieres venir con tu propio equipo de producción, puedes contratar únicamente el espacio. El ático incluye terraza con vistas a Madrid, sala polivalente con iluminación de estudio, conexión Wi-Fi de alta velocidad y zona de maquillaje. Cuéntanos tu proyecto y te preparamos la opción que mejor encaje con un presupuesto personalizado en menos de 1 hora.",
   },
   {
     question: "¿Dónde está el estudio?",
     answer:
-      "Ronda de Atocha, 16, Madrid. A 5 minutos del Metro Atocha Renfe.",
+      "Rooftop Content Studio está ubicado en Ronda de Atocha 16, planta 7, Madrid centro. El acceso en transporte público es muy sencillo: a 5 minutos a pie del Metro Atocha Renfe (líneas 1 y 3) y de la estación de Cercanías Atocha. También hay parking público en los alrededores para quienes vengan en coche.",
   },
   {
     question: "¿Cómo reservo?",
     answer:
-      "Rellena el formulario o escríbeme. Te respondo hoy, sin compromiso.",
+      "Para reservar, rellena el formulario de contacto en la web o escríbenos directamente a hola@rooftopcontentstudio.es o al +34 711 25 54 96. Respondemos con disponibilidad y presupuesto personalizado en menos de 1 hora. Solo realizamos una sesión al día, por lo que te recomendamos contactarnos con al menos dos semanas de antelación para asegurar tu fecha.",
   },
 ] as const;
 

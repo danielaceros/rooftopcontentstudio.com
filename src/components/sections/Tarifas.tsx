@@ -144,6 +144,10 @@ export default function Tarifas() {
           ))}
         </div>
 
+        <p className="sr-only">
+          Rooftop Content Studio ofrece tres modalidades de servicio. Solo Grabación incluye acceso al ático con equipo técnico completo, cámaras Sony, iluminación LED, sonido profesional y teleprompter. Grabación más Edición añade filmmaker con dirección creativa, edición profesional, subtítulos y formato por plataforma con entrega en 24-48 horas. Producción Completa incorpora además estrategia de contenido, distribución multiplataforma y seguimiento. Todas las sesiones tienen una duración mínima de 2 horas. El presupuesto es personalizado según el proyecto, con respuesta en menos de 1 hora.
+        </p>
+
         {/* Bottom note */}
         <ScrollReveal delay={0.4}>
           <p className="mt-10 text-center font-mono text-[12px] text-muted sm:mt-14">

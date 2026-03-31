@@ -66,7 +66,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "paragraph",
-        text: "En Rooftop Content Studio trabajamos con tres modalidades sencillas: Solo Grabación, Grabación + Edición y Producción Completa. Te respondemos hoy, sin compromiso.",
+        text: "En Rooftop Content Studio trabajo con tres modalidades sencillas: Solo Grabación, Grabación + Edición y Producción Completa. Te respondo hoy, sin compromiso.",
       },
       { type: "heading", level: 2, text: "Qué encarece o abarata una sesión" },
       {
@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "faq",
         question: "¿Puedo grabar sin edición?",
-        answer: "Sí. Con Solo Grabación vienes al ático, grabas con nuestro equipo técnico y sales con los brutos del día.",
+        answer: "Sí. Con Solo Grabación vienes al ático, grabas con mi equipo técnico y sales con los brutos del día.",
       },
       {
         type: "faq",

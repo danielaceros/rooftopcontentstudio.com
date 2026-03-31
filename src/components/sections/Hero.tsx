@@ -94,6 +94,10 @@ export default function Hero() {
             ))}
           </h1>
 
+          <p className="sr-only">
+            Estudio de grabación de contenido audiovisual en Madrid centro. Ubicado en un ático en Ronda de Atocha 16, ofrece sesiones de grabación de podcast, reels, vídeo corporativo, cursos online y anuncios con filmmaker, equipo técnico y dirección creativa incluidos. Entrega de contenido editado en 24-48 horas. Clientes: FIFA, IFEMA, Cinesa, Cámara de Comercio de Madrid.
+          </p>
+
           <div className="hero-line-wrapper mt-5 sm:mt-6">
             <p
               className="hero-line max-w-[540px] text-base leading-[1.7] text-foreground/65 sm:text-[1.05rem] sm:leading-[1.8] lg:text-[1.1rem]"

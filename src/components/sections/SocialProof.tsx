@@ -137,6 +137,10 @@ export default function SocialProof() {
             </div>
           </div>
         </div>
+
+        <p className="sr-only">
+          Rooftop Content Studio ha completado más de 28 proyectos audiovisuales, producido más de 500 horas de contenido y entrega una media de 12 piezas editadas por sesión. El estudio opera con disponibilidad exclusiva de una sesión diaria con entregas en 24-48 horas. Clientes como FIFA, IFEMA, Cinesa y la Cámara de Comercio de Madrid han grabado en el estudio.
+        </p>
       </div>
     </section>
   );
