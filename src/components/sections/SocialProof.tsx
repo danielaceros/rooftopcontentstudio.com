@@ -77,16 +77,16 @@ export default function SocialProof() {
         {/* Desktop: single row — stats left, logos right */}
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:justify-between lg:gap-12">
           {/* Stats */}
-          <div className="grid w-full grid-cols-3 gap-2 sm:gap-4 lg:w-auto lg:gap-12">
+          <div className="grid w-full grid-cols-2 gap-y-6 gap-x-2 sm:grid-cols-3 sm:gap-4 lg:w-auto lg:gap-12">
             {STATS.map((stat, i) => (
               <div key={stat.label} className="relative flex flex-col items-center text-center">
                 {i > 0 && (
-                  <div className="absolute left-0 top-1/2 h-8 w-px -translate-y-1/2 bg-[#080808]/15 sm:h-14" />
+                  <div className="absolute left-0 top-1/2 hidden h-14 w-px -translate-y-1/2 bg-[#080808]/15 sm:block" />
                 )}
-                <span className="font-heading text-[clamp(3rem,12vw,6rem)] leading-none text-[#080808]">
+                <span className="font-heading text-[clamp(2.4rem,10vw,6rem)] leading-none text-[#080808] sm:text-[clamp(3rem,12vw,6rem)]">
                   <ScrambleNumber target={stat.value} suffix={stat.suffix} active={active} />
                 </span>
-                <span className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[#080808]/60 sm:mt-3 sm:text-[12px] sm:tracking-[0.3em]">
+                <span className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-[#080808]/60 sm:mt-3 sm:text-[12px] sm:tracking-[0.3em]">
                   {stat.label}
                 </span>
               </div>

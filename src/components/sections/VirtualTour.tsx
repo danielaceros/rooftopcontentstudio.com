@@ -760,7 +760,7 @@ export default function VirtualTour() {
             {/* Left panel */}
             <div className="flex flex-col gap-2 sm:gap-3 lg:w-[38%] lg:gap-4">
               <div
-                className="relative rounded-sm border p-2.5 sm:p-4"
+                className="relative hidden rounded-sm border p-2.5 sm:p-4 md:block"
                 style={{ backgroundColor: "#0a0a0a", borderColor: "rgba(255,255,255,0.06)" }}
               >
                 <p
