@@ -112,7 +112,7 @@ export default function PortfolioCard({
       <div className="pointer-events-none absolute inset-0 bg-black/25 sm:hidden" />
       {/* Play icon */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-0 transition-all duration-300 group-hover:opacity-100">
-        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true" className="scale-[0.8] transition-transform duration-300 group-hover:scale-100 drop-shadow-lg">
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" aria-hidden="true" className="scale-100 transition-transform duration-300 drop-shadow-lg sm:scale-[0.8] sm:group-hover:scale-100">
           <circle cx="22" cy="22" r="21" stroke="white" strokeWidth="1.5" opacity="0.8" />
           <path d="M18 14L30 22L18 30V14Z" fill="white" opacity="0.9" />
         </svg>
@@ -160,7 +160,7 @@ export default function PortfolioCard({
                   <button
                     type="button"
                     onClick={() => setIsOpen(false)}
-                    className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
+                    className="absolute right-3 top-3 z-10 flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/55 px-4 py-2 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
                     aria-label="Cerrar video"
                   >
                     Cerrar

@@ -80,7 +80,7 @@ export default function Hero() {
           </div>
 
           {/* Cinematic line-by-line reveal */}
-          <h1 className="max-w-[1100px] font-heading text-[clamp(2.8rem,11vw,6.5rem)] uppercase leading-[0.86] tracking-tight text-foreground [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,7vw,6.5rem)] sm:leading-[0.85]">
+          <h1 className="max-w-[1100px] font-heading text-[clamp(2.2rem,11vw,6.5rem)] uppercase leading-[0.95] tracking-tight text-foreground [text-shadow:0_2px_20px_rgba(0,0,0,0.7)] sm:text-[clamp(2.8rem,7vw,6.5rem)] sm:leading-[0.86] md:leading-[0.85]">
             {LINES.map((line, i) => (
               <span key={i} className="hero-line-wrapper inline-block w-full">
                 <span
@@ -111,7 +111,7 @@ export default function Hero() {
           <div className="hero-line-wrapper mt-8 lg:hidden">
             <a
               href="#contacto"
-              className="hero-line inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+              className="hero-line inline-block bg-accent px-10 py-4 font-mono text-[12px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light sm:text-[11px]"
               style={{ animationDelay: "1.1s" }}
             >
               Pide tu Presupuesto →
@@ -133,7 +133,7 @@ export default function Hero() {
           {/* Mini-testimonio rotativo */}
           <div className="hero-line-wrapper mt-5 lg:mt-6">
             <div
-              className="hero-line relative h-[3.2em] sm:h-[2.8em] overflow-hidden"
+              className="hero-line relative h-[3.8em] sm:h-[3.2em] md:h-[2.8em] overflow-hidden"
               style={{ animationDelay: "1.25s" }}
             >
               {TESTIMONIALS.map((t, i) => (
@@ -158,7 +158,7 @@ export default function Hero() {
                 Empresas que han confiado en m&iacute;
               </p>
               <div
-                className="w-[85%] overflow-hidden"
+                className="w-[95%] overflow-hidden sm:w-[85%]"
                 style={{
                   WebkitMaskImage:
                     "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",

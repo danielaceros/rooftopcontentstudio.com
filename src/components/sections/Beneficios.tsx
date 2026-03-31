@@ -6,7 +6,7 @@ export default function Beneficios() {
     <section id="beneficios" className="bg-[#0e0e0e] px-5 py-24 sm:px-8 sm:py-32 md:px-10 lg:px-12 lg:py-40 xl:px-16 2xl:px-20">
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
+          <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted sm:tracking-[0.4em]">
             ( Beneficios )
           </p>
         </ScrollReveal>
@@ -21,7 +21,7 @@ export default function Beneficios() {
         <div className="mt-14 flex flex-col sm:mt-16 lg:mt-20">
           {BENEFICIOS.map((b, i) => (
             <ScrollReveal key={b.title} delay={i * 0.06}>
-              <div className="group grid border-t border-border py-8 transition-colors duration-300 hover:bg-card md:grid-cols-12 md:gap-8 md:py-12 md:px-4">
+              <div className="group grid border-t border-border px-3 py-8 transition-colors duration-300 hover:bg-card sm:px-0 md:grid-cols-12 md:gap-8 md:py-12 md:px-4">
                 {/* Number */}
                 <div className="md:col-span-1">
                   <span className="font-mono text-[11px] text-muted transition-colors duration-300 group-hover:text-accent">
@@ -56,7 +56,7 @@ export default function Beneficios() {
           <div className="mt-6 text-center sm:mt-16">
             <a
               href="#contacto"
-              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+              className="inline-block bg-accent px-10 py-4 font-mono text-[12px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light sm:text-[11px]"
             >
               Graba Conmigo →
             </a>

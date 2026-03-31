@@ -10,7 +10,7 @@ export default function ContactForm() {
     <form action={formAction} className="flex flex-col gap-8">
       <div className="grid gap-8 sm:grid-cols-2">
         <div>
-          <label htmlFor="name" className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+          <label htmlFor="name" className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.15em] text-muted sm:text-xs sm:tracking-[0.2em]">
             Nombre *
           </label>
           <input
@@ -26,7 +26,7 @@ export default function ContactForm() {
           )}
         </div>
         <div>
-          <label htmlFor="email" className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+          <label htmlFor="email" className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.15em] text-muted sm:text-xs sm:tracking-[0.2em]">
             Email *
           </label>
           <input
@@ -44,7 +44,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="phone" className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+        <label htmlFor="phone" className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.15em] text-muted sm:text-xs sm:tracking-[0.2em]">
           Teléfono
         </label>
         <input
@@ -57,7 +57,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="mb-3 block text-xs font-semibold uppercase tracking-[0.2em] text-muted">
+        <label htmlFor="message" className="mb-3 block text-[10px] font-semibold uppercase tracking-[0.15em] text-muted sm:text-xs sm:tracking-[0.2em]">
           Mensaje *
         </label>
         <textarea
@@ -77,7 +77,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isPending}
-          className="rounded-full border border-foreground/60 px-12 py-4 font-heading text-xl uppercase tracking-[0.15em] text-foreground transition-all hover:bg-foreground hover:text-background disabled:opacity-40"
+          className="rounded-full border border-foreground/60 px-8 py-3 font-heading text-base uppercase tracking-[0.1em] text-foreground transition-all hover:bg-foreground hover:text-background disabled:opacity-40 sm:px-10 sm:py-4 sm:text-lg lg:px-12 lg:text-xl lg:tracking-[0.15em]"
         >
           {isPending ? "Enviando..." : "Enviar"}
         </button>

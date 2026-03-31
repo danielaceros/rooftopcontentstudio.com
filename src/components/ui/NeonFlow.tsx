@@ -100,7 +100,7 @@ export default function NeonFlow({ children, className = "" }: NeonFlowProps) {
       <div className="absolute inset-0 bg-background/50" />
 
       {/* Top fade — smooth transition from the section above */}
-      <div className="absolute inset-x-0 top-0 z-[1] h-72 bg-gradient-to-b from-background via-background/80 to-transparent" />
+      <div className="absolute inset-x-0 top-0 z-[1] h-40 bg-gradient-to-b from-background via-background/80 to-transparent sm:h-56 lg:h-72" />
 
       {/* Content */}
       <div className="relative z-10 w-full">{children}</div>

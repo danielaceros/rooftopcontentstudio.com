@@ -434,7 +434,7 @@ export default function LoadingScreen() {
             animation: "ls-fade-in 0.3s ease-out 0.35s forwards",
           }}
         >
-          <div className="h-px w-[120px] bg-[#1a1a1a]">
+          <div className="h-px w-[80px] bg-[#1a1a1a] sm:w-[120px]">
             <div
               ref={progressBarRef}
               className="h-full origin-left bg-accent"
@@ -443,7 +443,7 @@ export default function LoadingScreen() {
           </div>
           <span
             ref={counterRef}
-            className="font-mono text-[10px] tabular-nums text-[#333]"
+            className="font-mono text-[10px] tabular-nums text-accent/40"
           >
             00
           </span>

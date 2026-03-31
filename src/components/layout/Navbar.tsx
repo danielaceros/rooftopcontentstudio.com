@@ -41,7 +41,7 @@ export default function Navbar() {
             alt="Rooftop Content Studio"
             width={128}
             height={128}
-            className="h-14 w-14 object-cover object-top sm:h-16 sm:w-16 lg:h-20 lg:w-20"
+            className="h-11 w-11 object-cover object-top sm:h-14 sm:w-14 lg:h-20 lg:w-20"
             priority
             fetchPriority="high"
           />

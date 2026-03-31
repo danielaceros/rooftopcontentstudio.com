@@ -57,7 +57,7 @@ export default function Proceso() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.08}>
-            <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
+            <h2 className="mt-6 max-w-4xl font-heading text-[clamp(1.8rem,7vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
               De la Idea al Contenido en 4 Pasos.
             </h2>
           </ScrollReveal>
@@ -91,7 +91,7 @@ export default function Proceso() {
             <div className="mt-12 text-center sm:mt-16">
               <a
                 href="#contacto"
-                className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+                className="inline-block bg-accent px-10 py-4 font-mono text-[12px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light sm:text-[11px]"
               >
                 Cu&eacute;ntame tu proyecto →
               </a>
@@ -114,7 +114,7 @@ export default function Proceso() {
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.08}>
-            <h2 className="mt-6 max-w-4xl font-heading text-[clamp(2.4rem,9vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
+            <h2 className="mt-6 max-w-4xl font-heading text-[clamp(1.8rem,7vw,7rem)] uppercase leading-[0.9] text-foreground sm:mt-8 sm:leading-[0.85]">
               De la Idea al Contenido en 4 Pasos.
             </h2>
           </ScrollReveal>
@@ -129,7 +129,7 @@ export default function Proceso() {
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
           <div className="mx-auto flex w-full max-w-7xl items-center gap-16 px-5 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
             {/* Left column: sticky content */}
-            <div className="w-[55%] pr-8">
+            <div className="min-w-0 flex-[55] pr-8">
               {/* Progress dots */}
               <div className="mb-10 flex items-center gap-6">
                 {PROCESO.map((_, i) => (
@@ -173,7 +173,7 @@ export default function Proceso() {
             </div>
 
             {/* Right column: large decorative number */}
-            <div className="flex w-[45%] items-center justify-center">
+            <div className="flex min-w-0 flex-[45] items-center justify-center">
               <span
                 key={`num-${activeStep}`}
                 className="select-none font-heading leading-none text-foreground/[0.03]"
@@ -205,7 +205,7 @@ export default function Proceso() {
         <div className="mx-auto max-w-7xl text-center">
           <a
             href="#contacto"
-            className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+            className="inline-block bg-accent px-10 py-4 font-mono text-[12px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light sm:text-[11px]"
           >
             Cu&eacute;ntame tu proyecto →
           </a>

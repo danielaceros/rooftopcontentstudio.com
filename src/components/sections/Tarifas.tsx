@@ -56,7 +56,7 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
         ref={ref}
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
-        className={`group relative flex h-full flex-col p-7 transition-all duration-500 sm:p-9 lg:p-10 ${
+        className={`group relative flex h-full flex-col p-5 transition-all duration-500 sm:p-7 md:p-9 lg:p-10 ${
           option.highlighted
             ? "border border-accent/30 bg-foreground/[0.03]"
             : "border border-border bg-transparent"
@@ -89,7 +89,7 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
         {/* Includes */}
         <ul className="relative z-10 mt-8 flex flex-col gap-3">
           {option.includes.map((item) => (
-            <li key={item} className="flex items-start gap-3 text-[0.9rem] leading-snug text-foreground/80">
+            <li key={item} className="flex items-start gap-3 text-[0.9rem] leading-[1.4] text-foreground/80 sm:leading-snug">
               <span className="mt-[7px] h-px w-4 shrink-0 bg-accent" aria-hidden="true" />
               {item}
             </li>
@@ -101,7 +101,7 @@ function OptionCard({ option, index }: { option: (typeof OPTIONS)[number]; index
           <a
             href="#contacto"
             data-cursor-text="RESERVAR"
-            className={`inline-block w-full px-8 py-3.5 text-center font-mono text-[11px] uppercase tracking-[0.15em] transition-all duration-300 sm:px-10 ${
+            className={`inline-block w-full min-h-[44px] px-8 py-4 text-center font-mono text-[12px] uppercase tracking-[0.15em] transition-all duration-300 sm:px-10 sm:text-[11px] ${
               option.highlighted
                 ? "bg-accent text-background hover:bg-accent-light"
                 : "border border-foreground/30 text-foreground hover:border-accent hover:bg-accent hover:text-background"

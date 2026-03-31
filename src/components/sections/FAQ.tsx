@@ -40,7 +40,7 @@ export default function FAQ() {
             </p>
             <a
               href="#contacto"
-              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+              className="inline-block bg-accent px-10 py-4 font-mono text-[12px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light sm:text-[11px]"
             >
               Pide tu Presupuesto →
             </a>

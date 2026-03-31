@@ -86,7 +86,7 @@ export default function SocialProof() {
                 <span className="font-heading text-[clamp(2.4rem,10vw,6rem)] leading-none text-[#080808] sm:text-[clamp(3rem,12vw,6rem)]">
                   <ScrambleNumber target={stat.value} suffix={stat.suffix} active={active} />
                 </span>
-                <span className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-[#080808]/60 sm:mt-3 sm:text-[12px] sm:tracking-[0.3em]">
+                <span className="mt-2 font-mono text-[9px] uppercase tracking-[0.15em] text-[#080808]/60 sm:mt-3 sm:text-[12px] sm:tracking-[0.3em]">
                   {stat.label}
                 </span>
               </div>
@@ -99,7 +99,7 @@ export default function SocialProof() {
               Empresas que han confiado en mí
             </p>
             <div
-              className="mx-auto w-[85%] overflow-hidden sm:w-[70%] lg:mx-0 lg:w-[320px] xl:w-[380px]"
+              className="mx-auto w-[90%] overflow-hidden sm:w-[75%] md:w-[60%] lg:mx-0 lg:w-[320px] xl:w-[380px]"
               style={{
                 WebkitMaskImage:
                   "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",

@@ -49,7 +49,9 @@ export default function ScrollReveal({
     const prefersReduced = window.matchMedia(
       "(prefers-reduced-motion: reduce)",
     ).matches;
-    if (prefersReduced) {
+    const conn = (navigator as Navigator & { connection?: { effectiveType?: string } }).connection;
+    const isSlow = conn?.effectiveType === "slow-2g" || conn?.effectiveType === "2g";
+    if (prefersReduced || isSlow) {
       setVisible(true);
       return;
     }

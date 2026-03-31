@@ -90,7 +90,7 @@ export default function PromoBanner() {
           e.stopPropagation();
           setDismissed(true);
         }}
-        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full p-1.5 text-background/40 transition-colors hover:bg-background/10 hover:text-background sm:right-5"
+        className="absolute right-3 top-1/2 flex min-h-[44px] min-w-[44px] -translate-y-1/2 items-center justify-center rounded-full p-2.5 text-background/40 transition-colors hover:bg-background/10 hover:text-background sm:right-5"
         aria-label="Cerrar oferta"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">

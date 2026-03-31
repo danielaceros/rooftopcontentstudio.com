@@ -22,9 +22,14 @@ export default function VideoBackground() {
     const isSlow =
       conn?.saveData ||
       ["slow-2g", "2g", "3g"].includes(conn?.effectiveType ?? "");
-    if (!isSlow) {
-      setVideoSrc(window.innerWidth < 768 ? VIDEO_MOBILE : VIDEO_DESKTOP);
-    }
+    const update = () => {
+      if (!isSlow) {
+        setVideoSrc(window.innerWidth < 768 ? VIDEO_MOBILE : VIDEO_DESKTOP);
+      }
+    };
+    update();
+    window.addEventListener("orientationchange", update);
+    return () => window.removeEventListener("orientationchange", update);
   }, []);
 
   // Parallax multicapa — desktop only

@@ -21,6 +21,7 @@ export default function DitherCard({ children, className = "" }: DitherCardProps
       className={`group relative overflow-hidden ${className}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onTouchStart={() => setIsHovered(!isHovered)}
     >
       <Suspense fallback={null}>
         <div

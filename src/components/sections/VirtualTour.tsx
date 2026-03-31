@@ -291,6 +291,7 @@ function PhotoViewer({
   zoneChangeKey,
   onPrev,
   onNext,
+  onGoTo,
 }: {
   zone: Zone;
   photoIndex: number;
@@ -298,6 +299,7 @@ function PhotoViewer({
   zoneChangeKey: number;
   onPrev: () => void;
   onNext: () => void;
+  onGoTo: (i: number) => void;
 }) {
   const photo = zone.photos[photoIndex] ?? null;
   const total = zone.photos.length;
@@ -436,7 +438,7 @@ function PhotoViewer({
               {zone.name}
             </p>
             <p
-              className="mt-2 font-mono text-[9px] uppercase tracking-[0.4em]"
+              className="mt-2 font-mono text-[10px] uppercase tracking-[0.4em] sm:text-[11px]"
               style={{
                 color: "rgba(255,255,255,0.8)",
                 textShadow: "0 1px 10px rgba(0,0,0,0.8)",
@@ -460,7 +462,7 @@ function PhotoViewer({
         {/* Caption — bottom left (above dots) */}
         <div className="absolute bottom-10 left-4 z-[4] sm:bottom-14 sm:left-6 lg:bottom-16 lg:left-7">
           <p
-            className="font-mono text-[7px] uppercase sm:text-[8px] lg:text-[9px]"
+            className="font-mono text-[9px] uppercase sm:text-[10px] lg:text-[11px]"
             style={{ letterSpacing: "0.35em", color: "rgba(255,255,255,0.4)" }}
           >
             {zone.name}
@@ -495,7 +497,7 @@ function PhotoViewer({
               aria-label="Foto anterior"
               className="absolute left-2 top-1/2 z-[4] flex -translate-y-1/2 items-center justify-center transition-opacity duration-300 opacity-50 hover:opacity-100 active:opacity-100"
               style={{
-                width: 32, height: 32, borderRadius: "50%",
+                width: 44, height: 44, borderRadius: "50%",
                 background: "rgba(8,8,8,0.6)", backdropFilter: "blur(8px)",
                 border: "1px solid rgba(255,255,255,0.12)",
                 color: "rgba(255,255,255,0.8)", fontSize: 14,
@@ -508,7 +510,7 @@ function PhotoViewer({
               aria-label="Foto siguiente"
               className="absolute right-2 top-1/2 z-[4] flex -translate-y-1/2 items-center justify-center transition-opacity duration-300 opacity-50 hover:opacity-100 active:opacity-100"
               style={{
-                width: 32, height: 32, borderRadius: "50%",
+                width: 44, height: 44, borderRadius: "50%",
                 background: "rgba(8,8,8,0.6)", backdropFilter: "blur(8px)",
                 border: "1px solid rgba(255,255,255,0.12)",
                 color: "rgba(255,255,255,0.8)", fontSize: 14,
@@ -521,17 +523,24 @@ function PhotoViewer({
 
         {/* Photo dots — at bottom */}
         {total > 1 && (
-          <div className="absolute bottom-3 left-1/2 z-[4] flex -translate-x-1/2 gap-1 sm:bottom-5 sm:gap-1.5 lg:bottom-7">
+          <div className="absolute bottom-3 left-1/2 z-[4] flex -translate-x-1/2 gap-0.5 sm:bottom-5 sm:gap-1 lg:bottom-7">
             {zone.photos.map((_, i) => (
-              <div
+              <button
                 key={i}
-                className="rounded-full transition-all duration-300"
-                style={{
-                  width: i === photoIndex ? 14 : 4,
-                  height: 4,
-                  backgroundColor: i === photoIndex ? "#FFFFFF" : "rgba(255,255,255,0.2)",
-                }}
-              />
+                onClick={() => onGoTo(i)}
+                className="flex items-center justify-center"
+                style={{ minWidth: 32, minHeight: 32 }}
+                aria-label={`Ir a foto ${i + 1}`}
+              >
+                <span
+                  className="rounded-full transition-all duration-300"
+                  style={{
+                    width: i === photoIndex ? 14 : 4,
+                    height: 4,
+                    backgroundColor: i === photoIndex ? "#FFFFFF" : "rgba(255,255,255,0.2)",
+                  }}
+                />
+              </button>
             ))}
           </div>
         )}
@@ -665,7 +674,8 @@ export default function VirtualTour() {
   const onTouchEnd = useCallback(
     (e: React.TouchEvent) => {
       const delta = touchStartRef.current - e.changedTouches[0].clientX;
-      if (Math.abs(delta) > 50) {
+      const threshold = Math.min(50, window.innerWidth * 0.12);
+      if (Math.abs(delta) > threshold) {
         // Defer navigation off the touch event to reduce INP
         requestAnimationFrame(() => {
           if (delta > 0) goNext();
@@ -729,7 +739,7 @@ export default function VirtualTour() {
         <ScrollReveal delay={0.18}>
           <button
             onClick={isAutoPlaying ? stopAutoPlay : startAutoPlay}
-            className="mt-6 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.3em] transition-colors duration-300"
+            className="mt-6 flex min-h-[44px] items-center gap-2 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.3em] transition-colors duration-300"
             style={{ color: isAutoPlaying ? "#FFFFFF" : "rgba(255,255,255,0.4)" }}
           >
             <span
@@ -774,12 +784,12 @@ export default function VirtualTour() {
 
               {/* Zone chips — horizontal scroll on mobile with fade mask */}
               <div className="relative">
-              <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none lg:grid lg:grid-cols-2 lg:overflow-visible lg:pb-0" style={{ WebkitOverflowScrolling: "touch", msOverflowStyle: "none", scrollbarWidth: "none" }}>
+              <div className="flex gap-2 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-1 scrollbar-none lg:grid lg:grid-cols-2 lg:snap-none lg:overflow-visible lg:pb-0" style={{ WebkitOverflowScrolling: "touch", msOverflowStyle: "none", scrollbarWidth: "none" }}>
                 {ZONES.filter((z) => !z.comingSoon).map((zone) => (
                   <button
                     key={zone.id}
                     onClick={() => selectZone(zone.id)}
-                    className="group relative flex-shrink-0 overflow-hidden rounded-sm px-3 py-2.5 text-left transition-all duration-300 lg:px-4 lg:py-3"
+                    className="group relative flex-shrink-0 snap-start overflow-hidden rounded-sm px-3 py-2.5 text-left transition-all duration-300 lg:px-4 lg:py-3"
                     style={{
                       backgroundColor: zone.comingSoon
                         ? "rgba(255,255,255,0.01)"
@@ -871,6 +881,7 @@ export default function VirtualTour() {
                 zoneChangeKey={zoneChangeKey}
                 onPrev={goPrev}
                 onNext={goNext}
+                onGoTo={setPhotoIndex}
               />
             </div>
           </div>

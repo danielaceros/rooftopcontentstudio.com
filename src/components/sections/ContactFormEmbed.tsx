@@ -38,7 +38,7 @@ export default function ContactFormEmbed({ className, loadDelay = 0, signalReady
   return (
     <div ref={containerRef} className={`relative ${className ?? ""}`}>
       {!shouldRender && (
-        <div className="flex min-h-[600px] items-center justify-center">
+        <div className="flex min-h-[300px] items-center justify-center sm:min-h-[400px] md:min-h-[600px]">
           <span className="h-8 w-8 animate-spin rounded-full border border-foreground/20 border-t-foreground/60" />
         </div>
       )}
@@ -66,8 +66,7 @@ export default function ContactFormEmbed({ className, loadDelay = 0, signalReady
               window.dispatchEvent(new Event("ghlReady"));
             }
           }}
-          className="w-full border-0"
-          style={{ minHeight: 600 }}
+          className="w-full border-0 min-h-[400px] sm:min-h-[500px] md:min-h-[600px]"
         />
       )}
     </div>

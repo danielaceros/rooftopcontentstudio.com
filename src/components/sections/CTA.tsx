@@ -12,9 +12,9 @@ export default function CTA() {
     >
       <div className="px-5 py-24 sm:px-8 sm:py-32 md:px-10 lg:px-12 lg:py-40 xl:px-16 2xl:px-20">
         <div className="mx-auto max-w-7xl">
-          <div className="grid gap-12 md:grid-cols-2 md:items-start md:gap-12 lg:gap-16">
+          <div className="grid gap-8 sm:gap-10 lg:grid-cols-2 lg:items-start lg:gap-16">
             {/* Left column */}
-            <div className="md:sticky md:top-32">
+            <div className="lg:sticky lg:top-[130px]">
               <ScrollReveal>
                 <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-accent">
                   ( Contacto )

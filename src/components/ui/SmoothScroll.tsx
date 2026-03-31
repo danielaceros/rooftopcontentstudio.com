@@ -39,7 +39,7 @@ export default function SmoothScroll() {
 
       e.preventDefault();
 
-      const navHeight = 90;
+      const navHeight = 110;
       const targetY = el.getBoundingClientRect().top + window.scrollY - navHeight;
 
       if (prefersReduced) {

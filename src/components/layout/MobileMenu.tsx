@@ -6,14 +6,25 @@ import { NAV_LINKS } from "@/lib/constants";
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Lock body scroll when menu is open
+  // Lock body scroll when menu is open (iOS-safe)
   useEffect(() => {
     if (isOpen) {
       document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+      document.body.style.position = "fixed";
+      document.body.style.width = "100%";
     } else {
       document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
     }
-    return () => { document.documentElement.style.overflow = ""; };
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      document.body.style.width = "";
+    };
   }, [isOpen]);
 
   return (

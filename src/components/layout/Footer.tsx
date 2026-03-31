@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#050505] px-5 pb-12 pt-10 sm:px-8 sm:pt-12 md:px-10 lg:px-12 lg:pt-16">
       <div className="mx-auto max-w-7xl">
-        <div className="grid grid-cols-2 gap-10 pt-0 md:grid-cols-4 md:gap-12">
+        <div className="grid grid-cols-1 gap-8 pt-0 sm:grid-cols-2 md:grid-cols-4 md:gap-12">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-muted">
               Navegación
@@ -17,7 +17,7 @@ export default function Footer() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground"
+                  className="py-1.5 -my-1.5 font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </a>
@@ -32,13 +32,13 @@ export default function Footer() {
             <div className="mt-6 flex flex-col gap-3 font-mono text-[12px] text-foreground/40">
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
-                className="break-words transition-colors hover:text-foreground"
+                className="py-1.5 -my-1.5 break-words transition-colors hover:text-foreground"
               >
                 {CONTACT_INFO.email}
               </a>
               <a
                 href={`tel:${CONTACT_INFO.phone}`}
-                className="transition-colors hover:text-foreground"
+                className="py-1.5 -my-1.5 transition-colors hover:text-foreground"
               >
                 {CONTACT_INFO.phone}
               </a>
@@ -46,7 +46,7 @@ export default function Footer() {
                 href="https://maps.google.com/?q=Calle+Ronda+de+Atocha,+16,+Madrid"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition-colors hover:text-foreground"
+                className="py-1.5 -my-1.5 break-words transition-colors hover:text-foreground"
               >
                 Calle Ronda de Atocha, 16, Madrid
               </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                 href="https://www.instagram.com/daniaceros"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-[12px] text-foreground/40 transition-colors hover:text-accent"
+                className="py-1.5 -my-1.5 font-mono text-[12px] text-foreground/40 transition-colors hover:text-accent"
               >
                 @daniaceros
               </a>
@@ -83,13 +83,13 @@ export default function Footer() {
               Legal
             </p>
             <nav className="mt-6 flex flex-col gap-3">
-              <Link href="/aviso-legal" className="font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground">
+              <Link href="/aviso-legal" className="py-1.5 -my-1.5 font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground">
                 Aviso Legal
               </Link>
-              <Link href="/politica-privacidad" className="font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground">
+              <Link href="/politica-privacidad" className="py-1.5 -my-1.5 font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground">
                 Política de Privacidad
               </Link>
-              <Link href="/politica-cookies" className="font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground">
+              <Link href="/politica-cookies" className="py-1.5 -my-1.5 font-mono text-[12px] text-foreground/40 transition-colors hover:text-foreground">
                 Política de Cookies
               </Link>
             </nav>

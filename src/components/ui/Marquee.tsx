@@ -8,7 +8,7 @@ export default function Marquee() {
         {[...Array(2)].map((_, i) => (
           <span
             key={i}
-            className="font-mono text-[clamp(0.7rem,1.4vw,0.85rem)] uppercase tracking-[0.3em] text-foreground/15 sm:tracking-[0.5em]"
+            className="font-mono text-[clamp(0.8rem,1.5vw,0.95rem)] uppercase tracking-[0.25em] text-foreground/15 sm:tracking-[0.4em]"
           >
             {MARQUEE_COPY}
           </span>

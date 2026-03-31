@@ -151,8 +151,8 @@ function TestimonialCard({
 
         {/* Info below video */}
         <p className="mt-4 text-[1rem] font-medium text-foreground">{name}</p>
-        <p className="mt-0.5 text-[0.8rem] text-muted">{role}</p>
-        <p className="mt-2 max-w-[280px] text-[0.9rem] italic leading-relaxed text-foreground/70">
+        <p className="mt-0.5 text-xs text-muted sm:text-sm">{role}</p>
+        <p className="mt-2 max-w-[280px] text-sm italic leading-relaxed text-foreground/70 sm:text-base">
           &ldquo;{quote}&rdquo;
         </p>
       </div>
@@ -174,7 +174,7 @@ function TestimonialCard({
                 <button
                   type="button"
                   onClick={() => setIsOpen(false)}
-                  className="absolute right-3 top-3 z-10 cursor-pointer rounded-full border border-white/20 bg-black/55 px-3 py-1 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
+                  className="absolute right-3 top-3 z-10 flex min-h-[44px] min-w-[44px] cursor-pointer items-center justify-center rounded-full border border-white/20 bg-black/55 px-4 py-2 text-[11px] uppercase text-white/85 transition hover:bg-black/75"
                   aria-label="Cerrar video"
                 >
                   Cerrar
@@ -225,7 +225,7 @@ function MobileCarousel() {
         <button
           type="button"
           onClick={prev}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition-colors hover:border-foreground/30 hover:text-foreground"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition-colors hover:border-foreground/30 hover:text-foreground sm:h-10 sm:w-10"
           aria-label="Anterior"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -253,7 +253,7 @@ function MobileCarousel() {
         <button
           type="button"
           onClick={next}
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition-colors hover:border-foreground/30 hover:text-foreground"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-foreground/50 transition-colors hover:border-foreground/30 hover:text-foreground sm:h-10 sm:w-10"
           aria-label="Siguiente"
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -267,11 +267,13 @@ function MobileCarousel() {
             key={i}
             type="button"
             onClick={() => setActive(i)}
-            className={`h-2 rounded-full transition-[width,background-color] duration-300 ${
-              i === active ? "w-6 bg-accent" : "w-2 bg-foreground/20"
-            }`}
+            className="flex h-8 w-8 items-center justify-center"
             aria-label={`Ir al testimonio ${i + 1}`}
-          />
+          >
+            <span className={`block h-2 rounded-full transition-[width,background-color] duration-300 ${
+              i === active ? "w-6 bg-accent" : "w-2 bg-foreground/20"
+            }`} />
+          </button>
         ))}
       </div>
     </div>
@@ -307,7 +309,7 @@ export default function Comparativa() {
 
         {/* Desktop: side by side */}
         <ScrollReveal delay={0.18}>
-          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-3 lg:gap-8 xl:grid-cols-6">
+          <div className="mt-16 hidden gap-6 sm:grid sm:grid-cols-2 sm:justify-items-center lg:mt-20 lg:grid-cols-2 lg:gap-8 xl:grid-cols-3 2xl:grid-cols-6">
             {TESTIMONIALS.map((t) => (
               <TestimonialCard
                 key={t.src}
@@ -325,7 +327,7 @@ export default function Comparativa() {
           <div className="mt-10 text-center sm:mt-14">
             <a
               href="#contacto"
-              className="inline-block bg-accent px-10 py-4 font-mono text-[11px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light"
+              className="inline-block bg-accent px-10 py-4 font-mono text-[12px] uppercase tracking-[0.15em] text-background transition-all duration-300 hover:bg-accent-light sm:text-[11px]"
             >
               Graba Conmigo →
             </a>
