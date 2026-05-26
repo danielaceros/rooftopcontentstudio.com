@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { getAllPosts, getPostBySlug, getPostMetadata } from "@/lib/blog";
@@ -81,6 +82,29 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                     <h3 className="font-mono text-[12px] uppercase tracking-[0.18em] text-accent">{block.question}</h3>
                     <p className="mt-4 text-[14px] sm:text-[15px] leading-[1.85] text-foreground/72 font-sans">{block.answer}</p>
                   </div>
+                );
+              }
+
+              if (block.type === "image") {
+                return (
+                  <figure key={index} className="my-2 sm:my-4">
+                    <div className="overflow-hidden rounded-[20px] border border-white/10 bg-white/[0.02]">
+                      <Image
+                        src={block.src}
+                        alt={block.alt}
+                        width={block.width}
+                        height={block.height}
+                        priority={block.priority}
+                        sizes="(min-width: 1024px) 720px, 100vw"
+                        className="h-auto w-full"
+                      />
+                    </div>
+                    {block.caption ? (
+                      <figcaption className="mt-3 text-[12px] sm:text-[13px] leading-[1.6] text-white/50 font-mono">
+                        {block.caption}
+                      </figcaption>
+                    ) : null}
+                  </figure>
                 );
               }
 

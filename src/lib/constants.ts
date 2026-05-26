@@ -4,10 +4,10 @@ export const SITE_DESCRIPTION =
   "El estudio de Dani Acero — filmmaker de FIFA, IFEMA y Cinesa. Graba podcast, reels y contenido corporativo en un ático en Madrid centro con equipo y dirección incluidos.";
 
 export const NAV_LINKS = [
-  { label: "Espacio", href: "#tour-virtual" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Opciones", href: "#tarifas" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Espacio", href: "/#tour-virtual" },
+  { label: "Proceso", href: "/#proceso" },
+  { label: "Opciones", href: "/#tarifas" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Blog", href: "/blog" },
 ] as const;
 

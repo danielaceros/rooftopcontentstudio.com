@@ -21,6 +21,7 @@ export type BlogPost = {
     | { type: "heading"; level: 2 | 3; text: string }
     | { type: "list"; ordered?: boolean; items: string[] }
     | { type: "faq"; question: string; answer: string }
+    | { type: "image"; src: string; alt: string; width: number; height: number; caption?: string; priority?: boolean }
   >;
 };
 

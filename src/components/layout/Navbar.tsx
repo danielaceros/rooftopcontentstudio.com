@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { NAV_LINKS } from "@/lib/constants";
 import MobileMenu from "./MobileMenu";
 
@@ -35,7 +36,7 @@ export default function Navbar() {
         className="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-2 sm:px-8 sm:py-3 lg:px-12"
         aria-label="Navegación principal"
       >
-        <a href="#" className="relative z-10 flex items-center gap-2">
+        <Link href="/" className="relative z-10 flex items-center gap-2">
           <Image
             src="/optimized/logo.webp"
             alt="Rooftop Content Studio"
@@ -48,7 +49,7 @@ export default function Navbar() {
           <span className="font-mono text-[10px] uppercase tracking-widest text-muted/50">
             by @daniaceros
           </span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex lg:gap-10">
           {NAV_LINKS.map((link) => (
@@ -61,12 +62,12 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
-          <a
-            href="#contacto"
+          <Link
+            href="/#contacto"
             className="border border-accent/40 px-6 py-2.5 font-mono text-[11px] font-medium uppercase tracking-[0.2em] text-foreground transition-all duration-300 hover:border-accent hover:bg-accent hover:text-background"
           >
             Pedir Presupuesto
-          </a>
+          </Link>
         </div>
 
         <div className="flex items-center gap-3 md:hidden">

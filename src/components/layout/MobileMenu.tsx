@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { NAV_LINKS } from "@/lib/constants";
 
 export default function MobileMenu() {
@@ -73,8 +74,8 @@ export default function MobileMenu() {
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contacto"
+            <Link
+              href="/#contacto"
               onClick={() => setIsOpen(false)}
               className="mt-4 border border-accent/40 px-8 py-3 font-mono text-[11px] uppercase tracking-[0.2em] text-foreground transition-all hover:bg-accent hover:text-background"
               style={{
@@ -83,7 +84,7 @@ export default function MobileMenu() {
               }}
             >
               Pedir Presupuesto
-            </a>
+            </Link>
           </nav>
 
           <style>{`
