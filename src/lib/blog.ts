@@ -32,6 +32,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Qué cuesta realmente grabar contenido en un estudio de Madrid, qué opciones existen y cómo elegir un espacio que no mate la naturalidad del contenido.",
     publishedAt: "2026-03-17",
+    updatedAt: "2026-05-27",
     readingTime: "6 min",
     category: "SEO",
     tags: ["estudio grabación madrid", "precios", "reels", "contenido"],
@@ -52,6 +53,7 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "Si haces contenido para marca personal, empresa, reels, podcast, entrevistas o piezas comerciales, el espacio condiciona muchísimo el resultado. Y también el precio. Por eso conviene entender bien qué estás pagando y qué diferencias hay entre un plató convencional y un estudio pensado para que el contenido parezca real, no artificial.",
       },
+      { type: "image", src: "/blog/estudio-grabacion-madrid-precios/hero.webp", alt: "Micrófono y auriculares en estudio de grabación profesional en Madrid", width: 1920, height: 1252, priority: true },
       { type: "heading", level: 2, text: "Cuánto cuesta un estudio de grabación en Madrid" },
       {
         type: "paragraph",
@@ -70,6 +72,7 @@ export const blogPosts: BlogPost[] = [
         text: "En Rooftop Content Studio trabajo con tres modalidades sencillas: Solo Grabación, Grabación + Edición y Producción Completa. Te respondo hoy, sin compromiso.",
       },
       { type: "heading", level: 2, text: "Qué encarece o abarata una sesión" },
+      { type: "image", src: "/blog/estudio-grabacion-madrid-precios/mid.webp", alt: "Micrófono profesional sobre soporte en estudio de grabación", width: 1920, height: 1280 },
       {
         type: "list",
         items: [
@@ -129,6 +132,7 @@ export const blogPosts: BlogPost[] = [
     description:
       "Qué mirar si quieres grabar un podcast en Madrid con imagen premium, sonido sólido y un espacio que ayude a vender mejor tu marca.",
     publishedAt: "2026-03-22",
+    updatedAt: "2026-05-27",
     readingTime: "7 min",
     category: "SEO",
     tags: ["podcast madrid", "estudio podcast madrid", "marca personal", "contenido premium"],
@@ -149,6 +153,7 @@ export const blogPosts: BlogPost[] = [
         type: "paragraph",
         text: "Si el podcast forma parte de tu estrategia comercial, no deberías elegir estudio solo por precio o disponibilidad. El entorno visual, la acústica, la luz, la comodidad del invitado y la posibilidad de sacar clips para redes afectan directamente a cómo se percibe el contenido y a cuánto partido le vas a sacar después.",
       },
+      { type: "image", src: "/blog/grabar-podcast-madrid-estudio/hero.webp", alt: "Setup de podcast con micrófono profesional y auriculares en estudio", width: 1920, height: 1280, priority: true },
       { type: "heading", level: 2, text: "Qué debería tener un estudio para grabar podcast en Madrid" },
       {
         type: "list",
@@ -161,6 +166,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       { type: "heading", level: 2, text: "Por qué importa tanto el contexto visual" },
+      { type: "image", src: "/blog/grabar-podcast-madrid-estudio/mid.webp", alt: "Micrófono y auriculares para grabación de podcast en estudio profesional", width: 1920, height: 1280 },
       {
         type: "paragraph",
         text: "Un podcast no se consume ya solo como audio. Se corta en clips, se distribuye en redes, se convierte en contenido de autoridad y muchas veces es la primera impresión que alguien tiene de tu marca. Si grabas en un set que parece improvisado o demasiado frío, esa percepción baja aunque el mensaje sea bueno.",
@@ -199,6 +205,97 @@ export const blogPosts: BlogPost[] = [
         type: "faq",
         question: "¿Tiene sentido para marca personal?",
         answer: "Muchísimo. Si trabajas tu autoridad o vendes servicios, un podcast bien grabado te coloca en otro nivel de percepción.",
+      },
+    ],
+  },
+  {
+    slug: "como-preparar-sesion-grabacion-contenido-madrid",
+    title: "Cómo preparar tu sesión de grabación de contenido en Madrid",
+    description:
+      "Guía práctica para llegar a tu sesión de grabación de contenido en Madrid con el plan claro, aprovechar cada hora y salir con el material que necesitas.",
+    publishedAt: "2026-05-27",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["grabación contenido madrid", "sesión de grabación", "producción vídeo", "reels", "contenido de marca", "estudio madrid"],
+    keyword: "como preparar sesion grabacion contenido madrid",
+    intent: "informacional",
+    excerpt:
+      "Una guía práctica para llegar preparado a tu sesión de grabación de contenido en Madrid y sacar el máximo partido desde el primer minuto.",
+    seoTitle: "Cómo preparar tu sesión de grabación de contenido | RCS Madrid",
+    metaDescription: "Cómo preparar una sesión de grabación de contenido en Madrid: formatos, guión, equipo, errores comunes y todo lo que necesitas para no perder tiempo en el estudio.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Llegar a una sesión de grabación sin plan es la forma más cara de perder horas en el estudio. No porque el espacio falle, sino porque el tiempo corre desde que enciendes las cámaras. Si no tienes claro qué vas a grabar, en qué orden y con qué estructura, acabas improvisando, repitiendo tomas innecesarias y saliendo con menos material del que necesitabas. En el peor caso, con material que no puedes usar directamente.",
+      },
+      {
+        type: "paragraph",
+        text: "He visto pasar por RCS perfiles muy distintos: founders de startups, marcas de empresa, creators con millones de seguidores y equipos de marketing de compañías grandes. Los que sacan más partido a cada sesión no son necesariamente los que más presupuesto tienen, sino los que llegan con las ideas claras: saben qué quieren grabar, en qué formato y con qué criterio van a priorizar si el tiempo aprieta.",
+      },
+      { type: "image", src: "/blog/como-preparar-sesion-grabacion-contenido-madrid/hero.webp", alt: "Estudio de grabación con equipo premium para contenido profesional", width: 1920, height: 1280, priority: true },
+      { type: "heading", level: 2, text: "Qué es una sesión de grabación de contenido y por qué importa prepararse" },
+      {
+        type: "paragraph",
+        text: "Una sesión de grabación de contenido no es un rodaje tradicional. No hay actores, no hay guión de 40 páginas ni un equipo de producción de 15 personas. Es un bloque de horas en el que tú o tu equipo grabáis el material que luego se convierte en piezas reales: reels, clips para LinkedIn, episodios de podcast, una VSL para tu web o formación en vídeo. El objetivo al terminar es salir del estudio con todo lo que necesitas para semanas de publicación.",
+      },
+      {
+        type: "paragraph",
+        text: "Prepararse bien no significa rigidez ni controlarlo todo al milímetro. Significa saber cuántas piezas quieres sacar, en qué orden vas a grabarlas, qué ropa llevas, si necesitas teleprompter y cómo vas a gestionar la energía si vas a estar frente a cámara durante 3 o 4 horas seguidas. Todas esas decisiones se toman antes, no durante la sesión. Cuando estás en el estudio, tu único trabajo es grabar bien.",
+      },
+      { type: "heading", level: 2, text: "Cómo preparar tu sesión paso a paso" },
+      { type: "heading", level: 3, text: "Define los formatos y las piezas que necesitas" },
+      {
+        type: "paragraph",
+        text: "Lo primero es tener claro qué vas a grabar. ¿Solo reels verticales? ¿Reels y un episodio de podcast? ¿Piezas para ads en horizontal? Haz una lista real, no aspiracional. Si tienes 3 horas disponibles, puedes grabar de forma realista entre 10 y 15 clips cortos o 2-3 piezas largas, no las dos cosas a pleno rendimiento. Prioriza por impacto: las piezas más importantes, al principio, cuando la energía es mayor.",
+      },
+      { type: "heading", level: 3, text: "Prepara el guión o los puntos clave" },
+      {
+        type: "paragraph",
+        text: "No hace falta que lo tengas todo memorizado ni que llegues con un guión cerrado. Pero sí que llegues con los puntos principales de cada pieza escritos. Un esquema con 3-5 bullets por clip basta para mantener el hilo sin parecer robot. Si vas a usar teleprompter, trae el texto listo antes de la sesión. Escribirlo en el estudio te cuesta el doble de tiempo y te rompe el ritmo.",
+      },
+      { type: "heading", level: 3, text: "Coordina el equipo y el espacio de antemano" },
+      {
+        type: "paragraph",
+        text: "Si llevas invitado, coméntale de antemano cómo va a ir la sesión: duración, qué ropa es mejor para cámara (evitar rayas finas, estampados pequeños o colores muy saturados), si hay que traer algo preparado. Si vas solo, comparte el listado de piezas con el equipo del estudio antes para que puedan preparar el set según tu estética. En RCS hacemos una llamada breve de planificación previa a cada sesión para llegar con el plan cerrado y no perder tiempo en ajustes básicos.",
+      },
+      { type: "image", src: "/blog/como-preparar-sesion-grabacion-contenido-madrid/mid.webp", alt: "Trípode de cámara para producción de vídeo en estudio profesional", width: 1920, height: 1280 },
+      { type: "heading", level: 2, text: "Errores comunes que cuestan tiempo y dinero" },
+      {
+        type: "list",
+        items: [
+          "Llegar sin lista de piezas ni orden de grabación definido.",
+          "Intentar grabar demasiados formatos distintos en una sola sesión sin tiempo suficiente.",
+          "Escribir o revisar el guión en el estudio en lugar de traerlo listo.",
+          "No informar al invitado de qué ropa llevar o cómo va a funcionar la dinámica.",
+          "Poner las piezas más complejas al final de la sesión, cuando la energía ya bajó.",
+          "Salir sin revisar si tienes todo el material que necesitabas antes de desmontar el set.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas piezas puedo grabar en una sesión de 3 horas?",
+        answer: "Con buena preparación, entre 10 y 15 clips cortos o 2-3 piezas de formato largo. Si mezclas formatos, cuenta más tiempo para el cambio de set y los ajustes técnicos entre piezas.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guión o puedo improvisar?",
+        answer: "Puedes improvisar si tienes mucha práctica frente a cámara. Para el resto, mejor llegar con puntos clave escritos por pieza. No tiene que ser un guión cerrado, solo un hilo que te dé seguridad y mantenga el ritmo.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS tiene teleprompter?",
+        answer: "Sí. Si quieres usarlo, mándanos el texto antes de la sesión para tenerlo configurado desde el primer minuto.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo hablar con vosotros antes para organizar el plan?",
+        answer: "Por supuesto. Hacemos una llamada de planificación previa con todos los clientes para llegar al estudio con el plan cerrado y no perder tiempo en ajustes que se podían resolver antes.",
+      },
+      {
+        type: "paragraph",
+        text: "Una sesión bien preparada es la diferencia entre salir con 15 clips que puedes publicar mañana y salir con dudas sobre si el material sirve. Si quieres hablar sobre cómo organizar la tuya o qué formatos tienen más sentido para tu proyecto, escríbenos en /#contacto. Te respondemos el mismo día.",
       },
     ],
   },

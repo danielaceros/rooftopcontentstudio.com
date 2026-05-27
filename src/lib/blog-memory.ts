@@ -26,6 +26,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Post de prueba real para validar el circuito completo de autopublicación en RCS sin depender de aprobación manual.",
   },
+  {
+    slug: "como-preparar-sesion-grabacion-contenido-madrid",
+    keyword: "como preparar sesion grabacion contenido madrid",
+    intent: "informacional",
+    createdAt: "2026-05-27",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #1. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
