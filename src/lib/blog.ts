@@ -299,6 +299,98 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-es-un-rooftop-studio-contenido-marca",
+    title: "Qué es un rooftop studio y por qué mejora el contenido de marca",
+    description:
+      "Qué define a un rooftop studio, cómo cambia la imagen del contenido de marca y cuándo tiene sentido grabar desde un espacio en altura en Madrid.",
+    publishedAt: "2026-05-28",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["rooftop studio", "contenido de marca", "estudio grabación Madrid", "grabación Madrid", "producción de contenido"],
+    keyword: "rooftop studio contenido marca",
+    intent: "informacional",
+    excerpt:
+      "Un rooftop studio combina luz natural, entorno urbano y equipo profesional. Así cambia el contenido que grabas desde el ático de Madrid.",
+    seoTitle: "Qué es un rooftop studio de contenido | RCS Madrid",
+    metaDescription:
+      "Un rooftop studio transforma el contenido de marca: luz natural, vistas urbanas y equipo profesional desde el ático de Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar en un rooftop studio cambia lo que ves cuando revisas las tomas. No es un argumento de venta ni una cuestión de marca: es algo concreto. Cuando el entorno tiene profundidad real, luz natural y vistas de la ciudad, el contenido gana un contexto visual que no se puede fabricar con focos y ciclorama. Eso se nota en pantalla desde el primer frame.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS trabajamos desde el séptimo piso de Ronda de Atocha 16, en el centro de Madrid. Grabamos podcasts, entrevistas, reels, VSLs y content days para founders, marcas y equipos de marketing. El ático no es un plus estético: es parte del motivo por el que el material que sale de aquí se ve distinto al de un estudio convencional.",
+      },
+      { type: "image", src: "/blog/que-es-un-rooftop-studio-contenido-marca/hero.webp", alt: "Terraza con vistas al skyline urbano desde un edificio de Madrid", width: 1920, height: 1280, priority: true },
+      { type: "heading", level: 2, text: "Qué define a un rooftop studio" },
+      {
+        type: "paragraph",
+        text: "Un rooftop studio es un espacio de grabación situado en planta alta de un edificio urbano, con acceso a luz natural y vistas exteriores. No es un plató con paredes negras y foam acústico. Es lo contrario: entorno real, luz del día trabajada con difusores y estores, y una ciudad visible al fondo que da contexto sin necesidad de decorados ni artificios.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia respecto a un estudio convencional no es solo visual. La altura reduce el ruido de calle por encima de lo que se puede conseguir con tratamiento acústico en planta baja. Eso cambia el punto de partida técnico de cada grabación: menos ruido ambiente, menos tiempo de limpieza de audio en postproducción. La acústica mejora, la imagen tiene más profundidad natural y el espacio comunica algo por sí solo antes de que empiece a hablar nadie.",
+      },
+      { type: "heading", level: 2, text: "Cómo mejora el contenido de marca" },
+      { type: "heading", level: 3, text: "El entorno como elemento narrativo" },
+      {
+        type: "paragraph",
+        text: "Cuando grabas con el skyline de Madrid visible detrás, el espacio trabaja para ti sin que tengas que mencionarlo. Para marcas personales, founders y empresas que quieren posicionarse como referentes, ese contexto visual suma credibilidad sin decir una palabra. No es lo mismo transmitir desde una sala de reuniones genérica con pared blanca que desde un ático en el centro de Madrid. El espacio dice dónde estás y, por extensión, en qué nivel operas. Para contenido de autoridad en LinkedIn o YouTube, esa diferencia es relevante.",
+      },
+      { type: "heading", level: 3, text: "Luz natural que reduce el tiempo de postproducción" },
+      {
+        type: "paragraph",
+        text: "La luz artificial mal gestionada crea problemas difíciles de corregir después: sombras duras en la cara, piel sobreexpuesta, colores que no representan bien la realidad. La luz natural, bien controlada con difusores y estores, da una imagen limpia desde el primer fotograma. En sesiones en RCS, el tiempo de corrección de color en postproducción se reduce porque la base ya es sólida. Para equipos que sacan contenido de forma recurrente, eso se traduce en ciclos de entrega más rápidos y menos vueltas sobre el material bruto.",
+      },
+      { type: "heading", level: 3, text: "El efecto de exclusividad en la percepción" },
+      {
+        type: "paragraph",
+        text: "Un estudio en altura en pleno centro de una ciudad proyecta una percepción de exclusividad que un sótano o una oficina habilitada no transmiten. Ese detalle importa cuando el contenido va a representar a tu empresa frente a clientes potenciales, inversores o comunidad. La percepción de calidad del espacio se transfiere al contenido. Funciona igual que elegir dónde haces una reunión importante: el entorno forma parte del mensaje.",
+      },
+      { type: "image", src: "/blog/que-es-un-rooftop-studio-contenido-marca/mid.webp", alt: "Cámara en estabilizador durante sesión de grabación de contenido profesional", width: 1880, height: 1253 },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido grabar en un rooftop studio" },
+      {
+        type: "list",
+        items: [
+          "Cuando quieres que el espacio forme parte del mensaje de marca y no sea un fondo neutro.",
+          "Cuando grabas contenido recurrente y necesitas una base visual coherente y reconocible.",
+          "Cuando el contenido va a LinkedIn, YouTube o formatos largos donde el contexto visual es visible.",
+          "Cuando invitas clientes o socios y el espacio también dice algo de tu empresa.",
+          "Cuando el posicionamiento de la marca es premium y el entorno tiene que respaldarlo.",
+          "Cuando grabas una jornada completa y necesitas luz que aguante toda la mañana sin fatiga visual.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿La luz natural es un problema si cambia durante la sesión?",
+        answer: "No si el estudio está preparado. En RCS trabajamos con difusores, estores y luces de apoyo que permiten mantener una imagen consistente aunque cambie la hora o haya nubes. La luz natural es un recurso, no un inconveniente.",
+      },
+      {
+        type: "faq",
+        question: "¿Un rooftop studio tiene más ruido que un estudio en planta baja?",
+        answer: "Al contrario. Estar en un séptimo piso elimina gran parte del ruido de calle: tráfico, obras, voces. El nivel de ruido ambiente es notablemente menor que en planta baja, y además se trabaja con tratamientos acústicos interiores para grabaciones de voz que exigen máxima limpieza de audio.",
+      },
+      {
+        type: "faq",
+        question: "¿Para qué formatos funciona mejor un rooftop studio?",
+        answer: "Podcasts con vídeo, entrevistas de marca, VSLs, reels corporativos y content days. En general, para cualquier formato en el que el contexto visual forme parte del mensaje. Si el fondo no importa, cualquier sala sirve. Si importa, el rooftop suma.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo visitar el espacio antes de reservar?",
+        answer: "Sí. Podemos hacer una visita previa para que veas el estudio, la luz a esa hora y el setup posible según tu tipo de contenido. Escríbenos desde /#contacto y lo coordinamos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres ver el espacio en persona o empezar a planificar una sesión, escríbenos desde /#contacto. En RCS trabajamos con marcas que saben que el entorno visual del contenido no es un detalle menor: es parte del mensaje.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

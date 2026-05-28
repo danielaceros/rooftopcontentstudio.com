@@ -34,6 +34,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #1. Imágenes Unsplash.",
   },
+  {
+    slug: "que-es-un-rooftop-studio-contenido-marca",
+    keyword: "rooftop studio contenido marca",
+    intent: "informacional",
+    createdAt: "2026-05-28",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #2. Imágenes Unsplash/Pexels.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
