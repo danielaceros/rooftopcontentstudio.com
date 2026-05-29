@@ -42,6 +42,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #2. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "grabacion-reels-madrid-que-necesitas",
+    keyword: "grabacion reels madrid",
+    intent: "informacional",
+    createdAt: "2026-05-29",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #3. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

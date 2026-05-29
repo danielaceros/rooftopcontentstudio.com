@@ -391,6 +391,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-reels-madrid-que-necesitas",
+    title: "Grabación de reels en Madrid: qué necesitas para hacerlo bien",
+    description:
+      "Qué equipo, espacio e iluminación necesitas para grabar reels en Madrid con resultado profesional, sin improvisar y sin perder tiempo de sesión.",
+    publishedAt: "2026-05-29",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabación reels madrid", "reels empresa", "vídeo vertical", "contenido redes", "producción reels", "estudio madrid"],
+    keyword: "grabacion reels madrid",
+    intent: "informacional",
+    excerpt:
+      "Qué equipo, espacio y plan necesitas para grabar reels en Madrid con resultado profesional, sin improvisar y sin perder tiempo en el estudio.",
+    seoTitle: "Grabación de reels en Madrid: qué necesitas | RCS Madrid",
+    metaDescription:
+      "Grabación de reels en Madrid: qué equipo, espacio e iluminación necesitas para conseguir vídeo vertical profesional sin perder tiempo en el estudio.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar reels en Madrid es fácil. Conseguir que queden bien ya es otra historia. El formato vertical lleva años siendo el de mayor alcance orgánico en redes, y eso ha hecho que todo el mundo quiera producirlos. El problema es que la mayoría se ve de forma inmediata si tienen o no calidad visual y de audio. No hay lugar donde esconderse en 30 o 60 segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS lo vemos en cada sesión: hay perfiles que llegan con el iPhone y un guión claro y sacan piezas que funcionan perfectamente bien. Y otros que traen equipo caro y salen con material que no sirve porque el espacio estaba mal planteado, la luz no acompañaba o el audio tiene demasiado ruido ambiente. El equipo importa, sí, pero no es lo primero. Lo primero es el contexto en el que grabas.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-reels-madrid-que-necesitas/hero.webp",
+        alt: "Cámara de cine profesional en set de producción para grabación de contenido",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué necesitas realmente para grabar reels en un estudio" },
+      {
+        type: "paragraph",
+        text: "Un reel bien producido no requiere una cámara de cine ni un equipo de diez personas. Requiere tres cosas en orden: buen espacio, buena luz y audio limpio. Si tienes esas tres, puedes grabar con una Sony ZV-E10, con una mirrorless de gama media o con un móvil bien configurado y el resultado va a quedar bien. Si no tienes las tres, da igual cuánto cueste la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "El espacio condiciona todo lo demás. Un fondo con profundidad, texturas reales o entorno urbano da contexto visual sin que tengas que añadir recursos de edición. Un fondo plano o con desorden visible es un problema que no se puede corregir en postproducción sin que se note. Por eso en RCS el ático tiene distintas opciones de fondo según el tipo de reel: fondo neutro, zona con luz natural, vista de Madrid o setup interior más editorial. No tienes que adaptar tu contenido al espacio: el espacio se adapta a lo que necesitas.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "La cámara y el encuadre vertical" },
+      {
+        type: "paragraph",
+        text: "Para vídeo vertical en estudio, casi cualquier cámara mirrorless reciente o un smartphone con buena estabilización funciona. Lo que sí marca diferencia es el objetivo: una focal fija entre 24mm y 50mm equivalente da una imagen más limpia y con menos distorsión que los objetivos zoom kit. Si grabas con móvil, activa el grid para centrar bien el encuadre y graba en el modo de mayor calidad disponible, nunca con zoom digital. Lo que hay que evitar es grabar en resolución inferior a 1080p o usar el modo automático sin revisar la exposición de fondo antes de empezar.",
+      },
+      { type: "heading", level: 3, text: "La iluminación: lo que más impacta en el resultado final" },
+      {
+        type: "paragraph",
+        text: "La luz es el elemento que más diferencia hay entre un reel amateur y uno profesional, y el más fácil de subestimar. Una fuente de luz principal bien posicionada, ligeramente elevada y a unos 45 grados del sujeto da un resultado limpio y con volumen en la cara. Si añades un relleno suave o usas la luz natural de una ventana como fill, el resultado mejora sin añadir complejidad al setup. Lo que hay que evitar: luz cenital directa (aplana el rostro), ventana brillante directamente detrás del sujeto sin compensar la exposición y tubos fluorescentes fríos sin ningún control de dirección.",
+      },
+      { type: "heading", level: 3, text: "El audio: el elemento más ignorado y más crítico" },
+      {
+        type: "paragraph",
+        text: "La mayoría de los reels mal valorados fallan por el audio, no por la imagen. Un micrófono de solapa, un inalámbrico tipo Rode Wireless GO II o un micrófono de cañón bien situado dan un resultado radicalmente mejor que el micrófono integrado de cualquier cámara o móvil. Si no tienes micro externo disponible, graba al menos en un espacio con poco eco: alfombras, sofás y paredes con textura absorben mucho mejor que una sala vacía con paredes lisas. El eco no se elimina bien en postproducción; es mucho más eficiente no generarlo.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-reels-madrid-que-necesitas/mid.webp",
+        alt: "Sesión de grabación de vídeo en estudio con setup de iluminación profesional",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar reels en estudio" },
+      {
+        type: "list",
+        items: [
+          "Grabar en horizontal y cortar verticalmente después: pierdes resolución y el encuadre queda mal en casi todos los casos.",
+          "No controlar la luz de fondo: si hay una ventana brillante detrás, la cámara expone para el fondo y el sujeto queda oscuro.",
+          "Audio del propio dispositivo en espacios con eco: se nota desde el primer segundo y corta la retención del vídeo.",
+          "No hacer una toma de prueba antes de grabar toda la secuencia: 2 minutos de revisión ahorran muchas repeticiones.",
+          "Cambiar de set o de iluminación entre clips de la misma sesión sin documentar: la coherencia visual entre piezas de una misma serie importa.",
+          "Llevar ropa con patrones finos o estampados pequeños: generan efecto moiré en cámara y quedan mal en pantalla.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Con qué cámara es mejor grabar reels en estudio?",
+        answer: "Con la que tengas, siempre que grabe en al menos 1080p y puedas añadir audio externo. Una Sony ZV-E10, una Fujifilm X-S10 o un iPhone 15 son más que suficientes si el espacio, la luz y el audio están bien resueltos. La cámara rara vez es el cuello de botella.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántos reels puedo grabar en una sesión de 3 horas?",
+        answer: "Con buena preparación previa, entre 12 y 18 clips cortos de 30-60 segundos. Si los reels son más guionizados o requieren cambio de set, el número baja. La clave es llegar con los puntos clave de cada pieza ya preparados, no escribirlos en el estudio.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guión cerrado para grabar reels?",
+        answer: "No. Basta con 3-5 puntos clave por pieza. Los reels más naturales suelen ser los que tienen estructura pero no están leídos palabra por palabra. Si prefieres teleprompter, en RCS lo tenemos disponible: mándanos el texto antes de la sesión y lo tenemos configurado desde el primer minuto.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS tiene equipo de grabación incluido o tengo que traer el mío?",
+        answer: "Tenemos cámaras, micrófonos, iluminación y teleprompter disponibles. Si tienes tu propio equipo y quieres usarlo, también funciona. Lo importante es que llegues con el contenido planificado: el equipo técnico se adapta a lo que necesitas.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres organizar una sesión para grabar reels, clips para LinkedIn o cualquier formato vertical con resultado profesional, escríbenos desde /#contacto. Te respondemos el mismo día y podemos hacer una visita previa si quieres ver el espacio antes de reservar.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
