@@ -496,6 +496,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "podcast-con-video-contexto-visual-audio",
+    title: "Podcast con vídeo: por qué el contexto visual importa tanto como el audio",
+    description:
+      "Por qué grabar un podcast con vídeo cambia cómo se percibe tu marca, qué importa del contexto visual y cómo grabarlo bien desde el principio.",
+    publishedAt: "2026-06-01",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["podcast con vídeo", "producción de contenido", "grabación podcast", "contenido visual", "estudio madrid", "marca personal"],
+    keyword: "podcast con video contexto visual",
+    intent: "informacional",
+    excerpt:
+      "Grabar audio limpio es el mínimo. Lo que ves mientras escuchas cambia cómo percibes el mensaje. Así transforma el vídeo un podcast.",
+    seoTitle: "Podcast con vídeo: el contexto visual importa | RCS Madrid",
+    metaDescription:
+      "Podcast con vídeo: por qué el contexto visual define cómo se percibe tu marca y cómo grabarlo bien desde el principio en un estudio profesional.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Durante años, el podcast fue formato de audio. Pero el consumo ha cambiado: la mayoría de los oyentes ven los episodios en YouTube, LinkedIn o Instagram con los ojos abiertos. Si grabas solo audio en 2026 y publicas una imagen estática sobre el sonido, estás dejando sobre la mesa gran parte del impacto posible.",
+      },
+      {
+        type: "paragraph",
+        text: "El contexto visual no es un extra ni un capricho estético. Es parte del mensaje. Lo que ve tu audiencia mientras te escucha determina cómo percibe tu credibilidad, tu energía y la seriedad de lo que estás contando. Aquí te explico por qué el vídeo transforma un podcast y cómo grabarlo bien desde el principio.",
+      },
+      {
+        type: "image",
+        src: "/blog/podcast-con-video-contexto-visual-audio/hero.webp",
+        alt: "Micrófono de condensador en estudio de grabación profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué el vídeo transforma un podcast" },
+      {
+        type: "paragraph",
+        text: "El audio define lo que se dice. El vídeo define quién lo dice y desde dónde. Un mismo mensaje grabado en una habitación con luz de techo sin control y otro grabado en un estudio con tratamiento visible, fondos bien resueltos y luz natural produce percepciones radicalmente distintas. No es estética vacía: es señal de autoridad.",
+      },
+      {
+        type: "paragraph",
+        text: "Los podcasts con vídeo en YouTube retienen mejor a la audiencia, se comparten con más facilidad en redes y permiten generar clips directamente desde la grabación. Una sesión de dos horas puede producir entre 15 y 20 cortes de 30-90 segundos listos para Instagram Reels, LinkedIn o YouTube Shorts sin grabar nada por separado.",
+      },
+      {
+        type: "paragraph",
+        text: "Grabar con cámara también obliga a ser más consciente del lenguaje corporal, el ritmo y la presencia en pantalla. Muchos podcasters que pasan del audio al vídeo notan que mejoran también la calidad del audio, porque la preparación se vuelve más exigente desde que hay algo visible que juzgar.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabarlo bien" },
+      { type: "heading", level: 3, text: "El espacio habla antes que tú" },
+      {
+        type: "paragraph",
+        text: "El primer plano que ve tu audiencia es el fondo. Un estudio con tratamiento acústico visible, luz diseñada y elementos de contexto no solo suena bien: comunica que te lo has tomado en serio antes de decir nada. En RCS grabamos en un ático en Madrid centro con luz natural controlada y distintas opciones de fondo según el tipo de contenido que necesites.",
+      },
+      { type: "heading", level: 3, text: "Cámara y encuadre" },
+      {
+        type: "paragraph",
+        text: "No necesitas el equipo más caro, pero sí un encuadre correcto: regla de tercios básica, cámara a la altura de los ojos, espacio de cabeza justo y separación del fondo. Si grabas con invitado, dos cámaras permiten montar una conversación real sin planos estáticos ni cortes forzados. En RCS usamos Sony A7 con objetivos que dan la separación de fondo que el formato pide.",
+      },
+      { type: "heading", level: 3, text: "Audio y vídeo sincronizados desde el inicio" },
+      {
+        type: "paragraph",
+        text: "El error más frecuente es tener buena cámara y mal micrófono. El audio tiene que resolverse con la misma atención que la imagen: un micrófono de condensador o dinámico delante de cada hablante, bien posicionado y con ganancia controlada. Si uno va mal, todo va mal, y no hay corrección en postproducción que lo salve del todo. En una sesión bien montada, resolver el audio no añade complejidad: simplemente se hace antes de empezar.",
+      },
+      {
+        type: "image",
+        src: "/blog/podcast-con-video-contexto-visual-audio/mid.webp",
+        alt: "Micrófono sobre soporte en estudio de grabación profesional",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al añadir vídeo a un podcast" },
+      {
+        type: "list",
+        items: [
+          "Encuadre demasiado abierto: la cara queda pequeña y el espacio vacío distrae.",
+          "Luz de techo sin difusores: crea sombras duras bajo los ojos que dan sensación de cansancio.",
+          "Audio grabado con el micrófono de la cámara: suena a llamada de teléfono, no a podcast profesional.",
+          "Fondo desordenado o genérico: rompe la percepción de profesionalidad antes de que empieces a hablar.",
+          "Grabación sin multicámara: el resultado de edición es estático y acaba cansando al espectador.",
+          "No dejar 5 minutos de calentamiento: los primeros minutos suelen ser descartables y no deberían salir en el episodio.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito una cámara específica para grabar un podcast con vídeo?",
+        answer: "No es lo más importante. Una Sony A7, una Fujifilm X-T o incluso un móvil reciente bien configurado da resultados más que suficientes. Lo que más impacta en la imagen final es la luz y el espacio, no el cuerpo de la cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo tarda en montarse una sesión de podcast con vídeo?",
+        answer: "Si el espacio está preparado de antemano, montar un podcast para dos personas lleva unos 20-30 minutos. La grabación puede durar entre 45 minutos y 2 horas según el formato y el número de clips que quieras sacar.",
+      },
+      {
+        type: "faq",
+        question: "¿Se pueden sacar clips para redes directamente de la sesión de podcast?",
+        answer: "Sí. Es una de las ventajas más concretas de grabar con vídeo. De una hora de grabación bien planificada puedes sacar entre 10 y 20 cortes de 30-90 segundos listos para LinkedIn, Instagram o YouTube Shorts sin grabarlos por separado.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta guión para un podcast grabado con vídeo?",
+        answer: "Depende del formato. Para entrevistas, un guión de preguntas bien preparado es suficiente. Para formatos de solo voz o exposición directa, un esquema o teleprompter ayuda a mantener el ritmo y reducir el tiempo de edición. En RCS tenemos teleprompter disponible.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás pensando en añadir vídeo a tu podcast o quieres grabar el próximo episodio con un resultado profesional desde el primer frame, en RCS podemos organizarlo. Escríbenos desde /#contacto y te cuento cómo funciona una sesión.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

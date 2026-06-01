@@ -50,6 +50,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #3. Imágenes Unsplash.",
   },
+  {
+    slug: "podcast-con-video-contexto-visual-audio",
+    keyword: "podcast con video contexto visual",
+    intent: "informacional",
+    createdAt: "2026-06-01",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #4. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
