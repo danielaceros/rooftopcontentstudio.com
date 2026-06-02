@@ -605,6 +605,101 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-grabar-contenido-semanas-en-una-manana",
+    title: "Cómo grabar contenido para semanas en una sola mañana",
+    description:
+      "Cómo organizar una sesión de batch recording para producir contenido para semanas en unas pocas horas, sin improvisar y con un plan que funciona.",
+    publishedAt: "2026-06-02",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["batch recording", "content day", "grabación contenido", "productividad", "estudio madrid", "contenido recurrente"],
+    keyword: "grabar contenido semanas una manana",
+    intent: "informacional",
+    excerpt:
+      "Una sola mañana en el estudio puede dar contenido para semanas. Así funciona el batch recording y cómo planificarlo para que salga bien.",
+    seoTitle: "Grabar contenido para semanas en una mañana | RCS Madrid",
+    metaDescription:
+      "Grabar contenido para semanas en una sola mañana es posible con buena planificación. Así funciona el batch recording y cómo hacerlo bien en estudio.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Si produces contenido para tu marca o empresa, publicar de forma constante es el reto que nunca desaparece. Pero hay un error de base que complica todo: grabar pieza por pieza, sesión por sesión, sin aprovechar que preparar el espacio, el equipo y la energía mental tiene un coste fijo que no escala linealmente. Entras al estudio por un reel y acabas agotado después de 90 minutos con una sola pieza. Eso no es producción eficiente.",
+      },
+      {
+        type: "paragraph",
+        text: "El batch recording —grabar todo el contenido de semanas en un solo bloque— cambia la ecuación. No requiere más presupuesto ni un equipo mayor. Requiere un cambio de mentalidad y un plan claro antes de llegar al estudio. En RCS lo vemos funcionar en casi todas las sesiones: quien llega con lista de piezas sale con material para semanas. Quien improvisa, graba uno o dos clips y pierde el día.",
+      },
+      { type: "image", src: "/blog/como-grabar-contenido-semanas-en-una-manana/hero.webp", alt: "Estudio de grabación con equipo profesional preparado para sesión de contenido en bloque", width: 1920, height: 1280, priority: true },
+      { type: "heading", level: 2, text: "Qué es el batch recording y por qué funciona" },
+      {
+        type: "paragraph",
+        text: "El batch recording es el proceso de grabar todo el contenido de un período —una semana, dos semanas, un mes— en una sola sesión de estudio. El principio es el mismo que cocinar en grandes cantidades: el coste de preparación es prácticamente el mismo para 2 platos que para 10, pero la eficiencia se dispara. Aplicado al contenido, una mañana bien planificada puede producir 15-20 clips, 2 episodios de podcast o una VSL completa más los cortes para redes.",
+      },
+      {
+        type: "paragraph",
+        text: "La constancia es el activo de contenido más difícil de mantener y también el que más resultados acumula con el tiempo. El batch recording lo hace sostenible: no tienes que entrar al estudio cada semana con toda la energía y preparación que eso requiere. Grabas en bloque, sales con material para semanas y el ritmo de publicación no depende de tu estado de ánimo del martes por la tarde.",
+      },
+      {
+        type: "paragraph",
+        text: "Este formato no es exclusivo de grandes marcas con equipos de producción. En RCS lo usan founders que graban solos, marcas personales que quieren mantener presencia en LinkedIn sin consumir su semana y equipos de marketing con un único día de estudio al mes. El punto de partida siempre es el mismo: lista de piezas, orden de grabación y setup listo antes de empezar.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Planifica las piezas antes de entrar al estudio" },
+      {
+        type: "paragraph",
+        text: "El error que más tiempo cuesta en una sesión de batch recording es empezar a decidir qué grabar cuando ya estás en el estudio. La planificación es trabajo previo, no de estudio. Antes de llegar, ten una lista con las piezas que necesitas: tema, formato —reel, clip largo, episodio de podcast—, duración aproximada y puntos clave de cada una. No hace falta un guión cerrado para cada pieza, pero sí saber exactamente qué vas a decir y en qué orden vas a grabar. Si usas teleprompter, manda el texto con antelación.",
+      },
+      { type: "heading", level: 3, text: "Agrupa por formato, no por tema" },
+      {
+        type: "paragraph",
+        text: "Cuando planificas el orden de grabación, el criterio más eficiente no es el temático sino el técnico: primero todos los reels verticales, luego los clips horizontales, luego el podcast. Cambiar de formato implica ajustar el encuadre, reposicionar el micrófono y revisar la iluminación. Si agrupas por formato reduces a la mitad las interrupciones técnicas. Dentro de cada bloque, las piezas más complejas o que más energía requieren van al inicio de la sesión, cuando la concentración es mayor.",
+      },
+      { type: "heading", level: 3, text: "El flujo en RCS: de lista a clips entregados" },
+      {
+        type: "paragraph",
+        text: "En una sesión de batch recording en RCS el flujo habitual es: 15 minutos de setup y repaso de la lista con el equipo, bloque de grabación por formato con tomas organizadas, revisión rápida del material bruto al cerrar la sesión para confirmar que está todo. Con Grabación + Edición, recibes los clips editados en 24-48 horas. Con Producción Completa, incluimos también la estrategia de distribución: qué publicar, cuándo y en qué canal para sacar el máximo de cada pieza.",
+      },
+      { type: "image", src: "/blog/como-grabar-contenido-semanas-en-una-manana/mid.webp", alt: "Monitor de producción en sesión de grabación de contenido profesional en estudio", width: 1920, height: 1280 },
+      { type: "heading", level: 2, text: "Errores que frenan el batch recording" },
+      {
+        type: "list",
+        items: [
+          "Llegar sin lista de piezas cerrada: improvisar en el estudio cuesta tiempo y produce contenido más débil.",
+          "Mezclar demasiados formatos sin priorizar: los cambios de set continuos dispersan la energía y alargan los tiempos muertos.",
+          "Poner las piezas más difíciles al final: pasadas 2 horas la concentración baja; lo más exigente va siempre al inicio.",
+          "No revisar el material bruto antes de desmontar el set: descubrir un problema cuando el setup ya está recogido obliga a volver al estudio.",
+          "Planificar sin margen: si listas 18 piezas para 3 horas y una se complica, el resto sufre. Deja siempre un 20% de holgura.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas piezas puedo grabar en una sesión de 3 horas?",
+        answer: "Con buena planificación previa, entre 12 y 18 clips cortos de 30-60 segundos, o 2-3 piezas de formato largo. Si mezclas formatos distintos, añade tiempo de transición entre bloques. La clave está en llegar con la lista cerrada: decidir qué grabar en el estudio consume tiempo que deberías dedicar a grabar.",
+      },
+      {
+        type: "faq",
+        question: "¿Tengo que llevar el guión escrito para cada pieza?",
+        answer: "No hace falta guión cerrado. Con 3-5 puntos clave por pieza es suficiente para mantener el hilo sin perder naturalidad. Si prefieres teleprompter, mándanos el texto antes de la sesión y lo tenemos configurado desde el primer minuto.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabar contenido para semanas si nunca lo he hecho en bloque?",
+        answer: "Sí, y es más fácil de lo que parece si llegas preparado. El mayor salto lo dan quienes ya han grabado alguna sesión sin plan y entienden lo que cuesta improvisar. En RCS hacemos una llamada de preparación previa con todos los clientes para llegar con el plan cerrado y sin sorpresas.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre Solo Grabación y Grabación + Edición para una sesión de batch?",
+        answer: "Con Solo Grabación sales con los brutos organizados por pieza. Con Grabación + Edición recibes los clips editados listos para publicar en 24-48 horas. Si el volumen de piezas es alto, la edición integrada ahorra tiempo todavía más.",
+      },
+      {
+        type: "paragraph",
+        text: "Grabar contenido para semanas en una mañana no es un truco de productividad. Es la diferencia entre publicar de forma constante y publicar cuando hay tiempo. Si quieres organizarlo bien desde el principio, escríbenos desde /#contacto. Te cuento cómo funcionaría una sesión de batch recording según tu tipo de contenido y lo que quieres conseguir.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

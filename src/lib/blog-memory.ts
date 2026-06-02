@@ -58,6 +58,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #4. Imágenes Unsplash.",
   },
+  {
+    slug: "como-grabar-contenido-semanas-en-una-manana",
+    keyword: "grabar contenido semanas una manana",
+    intent: "informacional",
+    createdAt: "2026-06-02",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #5. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
