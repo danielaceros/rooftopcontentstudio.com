@@ -66,6 +66,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #5. Imágenes Unsplash.",
   },
+  {
+    slug: "estudio-grabacion-vs-grabar-en-oficina",
+    keyword: "estudio de grabacion vs grabar en oficina",
+    intent: "informacional",
+    createdAt: "2026-06-03",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #6. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

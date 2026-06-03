@@ -700,6 +700,98 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "estudio-grabacion-vs-grabar-en-oficina",
+    title: "Estudio de grabación vs grabar en oficina: diferencias reales",
+    description:
+      "Qué diferencias hay entre grabar en un estudio profesional y hacerlo en una oficina: imagen, audio, eficiencia y cuándo tiene sentido cada opción.",
+    publishedAt: "2026-06-03",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["estudio de grabación", "grabar en oficina", "calidad de audio", "producción de vídeo", "contenido profesional", "Madrid"],
+    keyword: "estudio de grabacion vs grabar en oficina",
+    intent: "informacional",
+    excerpt:
+      "Entre grabar en oficina y hacerlo en un estudio hay diferencias reales en imagen, audio y eficiencia. Guía para saber qué tiene sentido según tu tipo de contenido.",
+    seoTitle: "Grabar en estudio vs oficina: diferencias reales | RCS Madrid",
+    metaDescription:
+      "Estudio de grabación vs grabar en oficina: diferencias reales en imagen, audio y eficiencia. Guía práctica para saber cuándo compensa cada opción.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay una pregunta que llega con frecuencia antes de reservar la primera sesión: ¿vale la pena grabar en un estudio o puedo conseguir un buen resultado en la oficina? La respuesta no es universal. Depende del tipo de contenido que produces, del nivel de calidad que necesitas y del tiempo que puedes dedicar a resolver el espacio antes de ponerte delante de la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS hemos grabado con founders que llegaron después de meses intentándolo en su despacho y con otros que vinieron directamente desde el primer clip. El patrón que se repite en los primeros es siempre el mismo: el espacio les limitaba, aunque no sabían bien cómo explicarlo. Te cuento cuáles son esas diferencias y cuándo importan de verdad.",
+      },
+      { type: "image", src: "/blog/estudio-grabacion-vs-grabar-en-oficina/hero.webp", alt: "Estudio de grabación profesional con equipo de audio y vídeo configurado", width: 1920, height: 1280, priority: true },
+      { type: "heading", level: 2, text: "Qué diferencia real hay entre grabar en oficina y en un estudio" },
+      {
+        type: "paragraph",
+        text: "La diferencia más obvia es el control del entorno. En un estudio, el espacio está pensado para grabar: la acústica, la iluminación, el fondo y el equipo técnico están diseñados para que el resultado sea bueno con menos esfuerzo. En una oficina, estás peleando contra el entorno desde el primer segundo: ruido de aire acondicionado, luz de techo fría sin control de dirección, fondo con cables o monitores visibles, eco en paredes de cristal o pladur.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero hay una diferencia menos evidente que acaba siendo igual de importante: el tiempo que tardas en conseguir un resultado aceptable. En la oficina, entre el 30 y el 40 por ciento del tiempo de grabación se va en ajustes, repeticiones por ruido de fondo y revisión de material que no sirve. En un estudio con todo preparado de antemano, ese tiempo desaparece casi por completo. No es solo una cuestión de calidad técnica, sino de eficiencia real.",
+      },
+      { type: "heading", level: 2, text: "Cómo afecta cada espacio al resultado" },
+      { type: "heading", level: 3, text: "Imagen y entorno visual" },
+      {
+        type: "paragraph",
+        text: "La imagen que proyectas depende en gran medida del contexto visual que hay detrás. Una oficina con fondo genérico, pizarras de sala de reuniones o paneles con logos corporativos da una percepción muy diferente a un estudio con fondo trabajado, luz natural controlada y profundidad real detrás del sujeto. No es que la oficina sea imposible de usar, pero requiere trabajo activo para mejorar el fondo: telas, paneles de color, reorganización del mobiliario. Ese trabajo es difícil de mantener constante si la sesión dura varias horas o si el espacio lo comparten más personas. En el estudio el fondo ya está resuelto antes de que llegues.",
+      },
+      { type: "heading", level: 3, text: "Audio: el problema que la oficina no puede resolver sola" },
+      {
+        type: "paragraph",
+        text: "El audio es donde la oficina pierde más terreno. Los espacios de trabajo tienen ruido de fondo constante: climatización, conversaciones de otros despachos, teclados, impresoras, tráfico de calle. Y la acústica suele ser mala: paredes lisas, suelos duros y techos altos generan eco y reverberación que suenan fatal en grabación de voz. Puedes mejorar algo con un micrófono de calidad bien posicionado y cerrando puertas. Pero el techo de calidad que puedes alcanzar en una oficina sin tratamiento acústico específico es sustancialmente inferior al de un estudio preparado. En producción de podcast, entrevistas o contenido de autoridad para LinkedIn o YouTube, esa diferencia se nota desde el primer segundo.",
+      },
+      { type: "heading", level: 3, text: "Eficiencia y aprovechamiento del tiempo" },
+      {
+        type: "paragraph",
+        text: "Grabar en tu oficina parece más cómodo porque no requiere desplazamiento. Pero hay un coste oculto en la preparación: reorganizar el espacio, conseguir que no haya interrupciones durante la grabación, resolver la iluminación, coordinar con el equipo que nadie entre y luego volver a dejarlo todo como estaba tiene un tiempo real que no aparece en ninguna factura. Si produces contenido de forma recurrente, ese tiempo suma. Una sesión de 3 horas en un estudio bien montado puede producir más material y de mayor calidad que un día entero de grabación fragmentada en oficina.",
+      },
+      { type: "image", src: "/blog/estudio-grabacion-vs-grabar-en-oficina/mid.webp", alt: "Setup de grabación con micrófono y equipo de audio en espacio de trabajo", width: 1920, height: 1280 },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido cada opción" },
+      {
+        type: "list",
+        items: [
+          "Oficina: cuando el contenido es interno, la audiencia ya te sigue y la producción es secundaria respecto al mensaje.",
+          "Oficina: cuando grabas de forma puntual y el presupuesto no da para más en este momento.",
+          "Estudio: cuando el contenido va a ser la primera impresión de alguien con tu marca.",
+          "Estudio: cuando grabas podcast, entrevistas o formatos donde el audio limpio no es negociable.",
+          "Estudio: cuando haces batch recording y necesitas grabar varias piezas en bloque con coherencia visual entre ellas.",
+          "Estudio: cuando invitas clientes, socios o colaboradores y el espacio forma parte del mensaje que quieres transmitir.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se puede grabar contenido profesional en una oficina?",
+        answer: "Sí, con condiciones. Si el audio es limpio, el fondo está resuelto y la iluminación es correcta, puedes conseguir un resultado aceptable. Pero el esfuerzo para llegar a ese punto suele ser mayor que reservar un estudio preparado para ello, especialmente si grabas de forma recurrente.",
+      },
+      {
+        type: "faq",
+        question: "¿Por qué el audio grabado en oficina suena peor?",
+        answer: "El problema principal es el ruido de fondo y el eco. La climatización, las voces de otros despachos, el tráfico y la reverberación en paredes lisas se captan en el micrófono y degradan la percepción del audio. Un buen micrófono mejora, pero no elimina el problema si la acústica del espacio no está tratada.",
+      },
+      {
+        type: "faq",
+        question: "¿Vale la pena el desplazamiento al estudio si grabo poco contenido?",
+        answer: "Depende del formato. Si grabas una sola pieza al mes de baja exigencia técnica, quizás no. Pero si haces batch recording —varios clips, un episodio de podcast más cortes para redes— el resultado mejora tanto que el desplazamiento queda absorbido por la diferencia de calidad y el tiempo ahorrado en preparación.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo visitar RCS antes de reservar para ver si el espacio encaja?",
+        answer: "Sí. Podemos hacer una visita previa para que veas el estudio, la luz a esa hora y las opciones de set según tu tipo de contenido. Escríbenos desde /#contacto y lo coordinamos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás en el punto en que la oficina ya no da más de sí pero no tienes claro si el salto a estudio tiene sentido para tu caso, escríbenos desde /#contacto. En RCS lo miramos juntos y te contamos, sin compromiso, qué opciones encajan mejor con el tipo de contenido que quieres producir.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
