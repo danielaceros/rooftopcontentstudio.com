@@ -74,6 +74,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #6. Imágenes Unsplash.",
   },
+  {
+    slug: "contenido-autoridad-linkedin-formatos-madrid",
+    keyword: "contenido autoridad linkedin formatos madrid",
+    intent: "informacional",
+    createdAt: "2026-06-04",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #7. Imágenes Pexels/Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

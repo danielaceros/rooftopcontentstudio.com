@@ -792,6 +792,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "contenido-autoridad-linkedin-formatos-madrid",
+    title: "Contenido de autoridad para LinkedIn: qué formatos funcionan en Madrid",
+    description:
+      "Qué formatos de vídeo construyen autoridad real en LinkedIn, cómo producirlos bien y por qué el contexto de grabación cambia el resultado.",
+    publishedAt: "2026-06-04",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["linkedin contenido", "contenido de autoridad", "vídeo linkedin", "content day", "marca personal", "estudio madrid"],
+    keyword: "contenido autoridad linkedin formatos madrid",
+    intent: "informacional",
+    excerpt:
+      "Si publicas en LinkedIn para posicionar tu marca, el formato y el contexto de grabación cambian el resultado. Guía sobre qué funciona y por qué.",
+    seoTitle: "Contenido de autoridad para LinkedIn: formatos | RCS Madrid",
+    metaDescription:
+      "Contenido de autoridad para LinkedIn: qué formatos de vídeo funcionan en Madrid, cómo producirlos bien y cómo grabarlo con un contexto que refuerza tu marca.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "LinkedIn ha pasado de ser un currículum online a convertirse en la plataforma donde se construyen marcas personales serias en el mundo B2B. El problema es que publicar no es suficiente. Publicar con regularidad y con contenido que haga que alguien confíe más en ti después de verlo, eso es lo que marca la diferencia entre presencia y autoridad.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo en LinkedIn sigue siendo la categoría menos saturada en comparación con texto o carruseles. Quien lo hace bien tiene más impacto por pieza publicada. La pregunta relevante no es si hacer vídeo, sino qué formatos funcionan de verdad y cómo producirlos con un contexto visual que refuerce lo que estás diciendo.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-autoridad-linkedin-formatos-madrid/hero.webp",
+        alt: "Creadora de contenido grabando vídeo para redes sociales con iluminación profesional",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el contenido de autoridad en LinkedIn y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Contenido de autoridad no es lo mismo que contenido de visibilidad. Un post viral puede traer alcance sin construir nada concreto en la percepción de quien lo ve. El contenido de autoridad deja una impresión: cuando alguien termina de ver tu vídeo, sabe más sobre el tema, entiende tu punto de vista y tiene un criterio más claro sobre si quiere trabajar contigo. Ese es el objetivo real.",
+      },
+      {
+        type: "paragraph",
+        text: "En LinkedIn, el contenido de autoridad suele tomar tres formas: el take —un punto de vista concreto sobre algo del sector—, el explicativo —cómo hacer algo, por qué funciona de cierta manera— y el análisis de caso real con datos y contexto. Los tres formatos funcionan mejor en vídeo que en texto, porque el vídeo añade la capa de quién eres, cómo piensas y cómo comunicas.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El vídeo nativo en feed: el take y el explicativo" },
+      {
+        type: "paragraph",
+        text: "El formato más eficiente para construir autoridad en LinkedIn es el vídeo nativo: clips de 60 a 90 segundos subidos directamente a la plataforma sin enlace externo. El algoritmo favorece el contenido nativo, y el vídeo publicado de esta forma tiene más retención inicial que el redirigido a YouTube. La pieza que mejor funciona es el take corto —un punto de vista en 3-4 frases bien construidas— o el explicativo rápido: un problema concreto del sector, una causa que la mayoría no identifica y un ángulo de solución. Todo en menos de 90 segundos. Para que funcione, el encuadre tiene que ser limpio, el audio tiene que ser claro y el fondo tiene que sumar, no contradecir lo que estás contando.",
+      },
+      { type: "heading", level: 3, text: "El clip de podcast o entrevista: autoridad con contexto" },
+      {
+        type: "paragraph",
+        text: "Si ya grabas podcast o entrevistas, LinkedIn es el canal donde los cortes de 60-90 segundos tienen más impacto en términos de autoridad percibida. Un clip bien extraído de una conversación real —con un insight concreto, editado sin florituras y subtitulado— funciona porque transmite algo que el vídeo hablando a cámara no transmite igual: que hay una conversación real detrás, que el tema interesa a más de una persona y que el nivel de la discusión es suficientemente serio como para grabar. Eso se proyecta en cómo percibe tu marca alguien que llega sin conocerte.",
+      },
+      { type: "heading", level: 3, text: "El content day: un mes de LinkedIn en una sola jornada" },
+      {
+        type: "paragraph",
+        text: "La forma más eficiente de mantener constancia en LinkedIn sin consumir tu semana es el content day: una jornada en estudio donde grabas todo el contenido del mes en bloque. 4-6 horas de sesión pueden producir 15-20 clips de 60-90 segundos con coherencia visual entre ellos, subtitulados y organizados por tema. La ventaja no es solo la cantidad: es que todos los clips tienen el mismo fondo, la misma luz y el mismo registro de imagen, lo que construye una imagen de marca coherente a lo largo del tiempo. En RCS hacemos content days para fundadores, equipos de marketing y marcas personales que quieren mantener presencia en LinkedIn sin improvisar cada semana.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-autoridad-linkedin-formatos-madrid/mid.webp",
+        alt: "Micrófono de condensador en estudio de grabación profesional",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes que frenan el contenido de autoridad" },
+      {
+        type: "list",
+        items: [
+          "Audio grabado con el micrófono del portátil o del móvil: el sonido malo destruye la percepción de autoridad antes de que el mensaje llegue.",
+          "Fondo genérico o desordenado: contradice el mensaje de marca que intentas transmitir desde el primer frame.",
+          "Publicar sin ángulo concreto: temas demasiado amplios que no dejan ninguna impresión clara.",
+          "Clips sin sustancia real: los vídeos de 15 segundos que presentan sin decir nada relevante no construyen autoridad.",
+          "Imagen inconsistente entre vídeos: grabar cada semana en un sitio diferente con luz y encuadre cambiantes no construye reconocimiento de marca.",
+          "No subtitular: más del 70 por ciento del vídeo en LinkedIn se consume en silencio. Sin subtítulos, el mensaje no llega.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántos clips de LinkedIn puedo grabar en una sesión de medio día?",
+        answer: "Con buena preparación previa, entre 12 y 18 clips de 60-90 segundos. El flujo habitual en un content day en RCS es: listado de piezas cerrado antes de llegar, grabación en bloque por formato y revisión del material antes de desmontar el set.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta equipo profesional para que el vídeo de LinkedIn quede bien?",
+        answer: "No necesitas el equipo más caro, pero sí resolver tres cosas: audio limpio, fondo coherente con tu marca e iluminación que no aplane ni oscurezca. Con eso resuelto, una mirrorless de gama media o un móvil reciente es más que suficiente.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué duración funciona mejor para vídeo de autoridad en LinkedIn?",
+        answer: "Entre 45 y 90 segundos para takes y piezas explicativas cortas. Para clips de podcast o entrevista, hasta 2-3 minutos si el contenido lo justifica. Lo que no funciona es alargar sin añadir valor: la retención cae desde el segundo 20 si el vídeo no sustenta el tiempo.",
+      },
+      {
+        type: "faq",
+        question: "¿En RCS podéis hacer el content day para LinkedIn de principio a fin?",
+        answer: "Sí. Con Producción Completa incluimos grabación, edición, subtitulado y estrategia de publicación: qué clip publicar cada día, en qué orden y con qué copy de acompañamiento para maximizar el impacto de cada pieza.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres empezar a construir autoridad en LinkedIn con un flujo de producción que no consuma toda tu semana, escríbenos desde /#contacto. En RCS podemos organizar un content day adaptado a tu tipo de contenido y al posicionamiento que quieres construir.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
