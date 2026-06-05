@@ -82,6 +82,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #7. Imágenes Pexels/Unsplash.",
   },
+  {
+    slug: "vsl-linkedin-estructura-duracion-como-grabarlo",
+    keyword: "vsl para linkedin",
+    intent: "informacional",
+    createdAt: "2026-06-05",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #8. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

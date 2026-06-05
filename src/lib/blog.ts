@@ -897,6 +897,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "vsl-linkedin-estructura-duracion-como-grabarlo",
+    title: "VSL para LinkedIn: estructura, duración y cómo grabarlo bien",
+    description:
+      "Qué es una VSL, cómo estructurarla para que convierta en LinkedIn, cuánto debe durar y cómo grabarla en un estudio para que el resultado trabaje por ti.",
+    publishedAt: "2026-06-05",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vsl linkedin", "video sales letter", "contenido de marca", "grabación vídeo", "marca personal", "estudio madrid"],
+    keyword: "vsl para linkedin",
+    intent: "informacional",
+    excerpt:
+      "Una VSL bien hecha puede ser el activo de LinkedIn que más convierte. Así se estructura, cuánto debe durar y cómo grabarla en estudio para que funcione.",
+    seoTitle: "VSL para LinkedIn: estructura, duración y cómo grabarlo | RCS Madrid",
+    metaDescription:
+      "VSL para LinkedIn: qué es, cómo estructurarla, cuánto debe durar y cómo grabarla en un estudio para que convierta desde el primer frame.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una VSL —video sales letter— es el formato más directo que existe en LinkedIn para convertir a alguien que te ve por primera vez en alguien que quiere saber más. No es un anuncio ni un vídeo de marca genérico. Es una pieza estructurada cuyo único objetivo es llevar al espectador de no saber quién eres a querer contactar contigo. Cuando está bien grabada, hace ese trabajo de forma silenciosa, 24 horas al día.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que la mayoría de las VSL que circulan por LinkedIn fallan por lo mismo: demasiada introducción, demasiada fricción antes del punto clave y un CTA que llega tan tarde que la mitad del vídeo ya perdió a quien lo estaba viendo. Aquí te explico cómo estructurarla, cuánto debe durar y cómo grabarla en un estudio para que el resultado trabaje por ti.",
+      },
+      {
+        type: "image",
+        src: "/blog/vsl-linkedin-estructura-duracion-como-grabarlo/hero.webp",
+        alt: "Cámara de cine profesional en set de grabación documental",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es una VSL y por qué funciona en LinkedIn" },
+      {
+        type: "paragraph",
+        text: "Una VSL es un monólogo estructurado en vídeo que sigue la lógica de un texto de ventas: gancho, problema, agitación, solución y llamada a la acción. A diferencia de un anuncio de producto o un clip de contenido de valor, la VSL está diseñada para personas que ya están en proceso de decisión. No busca entretener ni informar en general: busca que alguien específico tome una acción concreta al terminar de verla.",
+      },
+      {
+        type: "paragraph",
+        text: "En LinkedIn funciona especialmente bien porque la intención de compra en esa plataforma ya existe. Quien te sigue o llega a tu perfil está en un contexto de trabajo, no en modo ocio. Una VSL bien posicionada —como contenido destacado en el perfil, dentro de una campaña de leads o como primer mensaje en outreach— captura esa intención antes de que la persona pase a otra cosa. La clave es que tiene que empezar a trabajar desde el primer segundo.",
+      },
+      { type: "heading", level: 2, text: "Cómo estructurar una VSL que convierte" },
+      { type: "heading", level: 3, text: "El gancho: los primeros 5 segundos" },
+      {
+        type: "paragraph",
+        text: "Los primeros 5 segundos deciden si el vídeo se ve o se pasa. El gancho tiene que romper el patrón de scroll con una afirmación concreta, una pregunta que no se puede ignorar o un dato que genera curiosidad inmediata. Nada de presentaciones: empezar con 'Hola, soy X y hoy te voy a contar' es una invitación a pasar de largo. El gancho empieza en el problema del espectador, no en quién eres tú.",
+      },
+      { type: "heading", level: 3, text: "El desarrollo: problema, agitación y solución" },
+      {
+        type: "paragraph",
+        text: "Una vez que tienes la atención, el desarrollo tiene que hacer dos cosas: demostrar que entiendes bien el problema y ofrecer un ángulo de solución creíble. El error más frecuente es llegar demasiado rápido a la solución sin dedicar tiempo a describir el problema con precisión. Si el espectador no se reconoce en el problema que describes, la solución no le interesa. Dedica un tercio del tiempo al problema, otro tercio a agitarlo —qué cuesta no resolverlo, qué pasa si no se actúa— y el tercio final a la solución.",
+      },
+      { type: "heading", level: 3, text: "El CTA: corto, claro y sin fricción" },
+      {
+        type: "paragraph",
+        text: "El CTA de una VSL tiene que ser una sola acción, una sola vez y sin ambigüedad. No ofrezcas tres opciones ni expliques en detalle qué va a pasar después. 'Escríbeme y lo vemos' convierte mejor que 'rellena el formulario, recibirás un email y en 48 horas alguien del equipo se pone en contacto'. La fricción en el CTA destruye el impulso que has generado en el desarrollo. Cuanto más corto y directo, mejor funciona.",
+      },
+      {
+        type: "image",
+        src: "/blog/vsl-linkedin-estructura-duracion-como-grabarlo/mid.webp",
+        alt: "Persona grabando vídeo con cámara profesional en sesión de contenido",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en una VSL de LinkedIn" },
+      {
+        type: "list",
+        items: [
+          "Empezar con presentación en lugar de gancho: los primeros segundos tienen que hablar del espectador, no de ti.",
+          "VSL demasiado larga: entre 90 segundos y 3 minutos es el rango óptimo para LinkedIn. Por encima, la retención cae sin recuperarse.",
+          "Audio de baja calidad: si el vídeo suena mal, la credibilidad cae antes de que el mensaje llegue.",
+          "Fondo que contradice el mensaje: si vendes resultados premium, el contexto visual tiene que respaldarlo desde el primer frame.",
+          "CTA vago o con demasiadas opciones: una sola acción, en los últimos 15-20 segundos, sin alternativas que paralicen.",
+          "No subtitular: más del 70% del vídeo en LinkedIn se consume en silencio. Sin subtítulos, el mensaje no llega.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar una VSL para LinkedIn?",
+        answer: "Entre 90 segundos y 3 minutos. Por debajo de 90 segundos es difícil desarrollar el problema y la solución con suficiente credibilidad. Por encima de 3 minutos, la retención en LinkedIn cae de forma brusca salvo que la pieza sea muy específica para una audiencia ya caliente.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta guión cerrado para grabar una VSL?",
+        answer: "Sí, en este caso sí. A diferencia de un reel o un clip de contenido de valor donde la naturalidad puede compensar la falta de guión, la VSL tiene una estructura con lógica interna que hay que respetar. Un esquema con las frases clave escritas —especialmente el gancho y el CTA— evita que improvises justo donde más importa el orden de las palabras.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué equipo necesito para grabar una VSL en estudio?",
+        answer: "Una cámara que grabe en 1080p o 4K, audio externo —micrófono de condensador o solapa— y una iluminación que no genere sombras duras. En RCS tenemos todo el equipo disponible, incluido teleprompter si prefieres leer el guión en lugar de memorizar.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar la misma VSL para ads y para el perfil de LinkedIn?",
+        answer: "Puedes partir del mismo material, pero hay diferencias de contexto importantes. Para perfil, el espectador ya tiene un mínimo de intención hacia ti. Para ads, llega en frío y el gancho tiene que ser aún más rápido. Grabar dos versiones en la misma sesión —misma estructura, gancho adaptado— es la forma más eficiente de cubrir ambos usos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres grabar tu VSL para LinkedIn con un setup que respalde el mensaje desde el primer frame, en RCS podemos organizarlo. Escríbenos desde /#contacto y cuéntanos el objetivo de la pieza: te respondemos el mismo día.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
