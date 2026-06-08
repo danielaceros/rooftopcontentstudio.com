@@ -1002,6 +1002,155 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-hacer-un-day-in-studio-marcas-personales",
+    title: "Cómo hacer un day in studio: guía para marcas personales",
+    description:
+      "Qué es un day in studio, cómo organizarlo y qué grabar en una jornada de contenido en Madrid. Guía práctica para marcas personales.",
+    publishedAt: "2026-06-08",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["day in studio", "marcas personales", "contenido Madrid", "grabación de contenido", "content day", "producción audiovisual"],
+    keyword: "day in studio marcas personales",
+    intent: "informacional",
+    excerpt:
+      "Un day in studio es la forma más eficiente de producir contenido de marca en una sola jornada. Esta guía explica qué grabar, cómo organizarlo y cómo sacarle el máximo partido en el estudio.",
+    seoTitle: "Day in Studio para marcas personales | RCS Madrid",
+    metaDescription:
+      "Qué es un day in studio y cómo organizarlo para grabar el contenido de tu marca personal en Madrid en una sola jornada. Guía práctica.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayor queja que escucho de founders y creadores de contenido no es que no tengan ideas. Es que no tienen tiempo. Un podcast por aquí, un reel por allá, una presentación para el martes. Y al final del mes, el perfil de LinkedIn lleva tres semanas sin actividad.",
+      },
+      {
+        type: "paragraph",
+        text: "El day in studio existe para resolver exactamente eso. En lugar de producir contenido por goteo —un vídeo hoy, otro en quince días—, concentras toda la producción en una sola jornada. Llegas por la mañana, grabas, y sales con material para semanas o meses. Si tienes una marca personal y todavía no lo has probado, esta guía te explica cómo funciona.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-hacer-un-day-in-studio-marcas-personales/hero.webp",
+        alt: "Creadora de contenido grabando vídeo para su marca personal en estudio",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué es un day in studio y por qué funciona para marcas personales",
+      },
+      {
+        type: "paragraph",
+        text: "Un day in studio es una jornada completa de grabación planificada. No es grabar sin orden: es entrar con un plan claro de qué piezas necesitas y salir con todo rodado, listo para editar.",
+      },
+      {
+        type: "paragraph",
+        text: "Para marcas personales tiene sentido especial. Tu contenido no es el de una empresa con equipo de marketing. Eres tú quien aparece, quien habla, quien necesita prepararse mentalmente para cámara. Hacerlo en una sola sesión larga —en lugar de en pequeñas grabaciones dispersas— te permite mantener el estado mental y el flow. La cuarta toma de la mañana sale mejor que la primera de la tarde porque ya llevas horas delante del objetivo y el nerviosismo desaparece.",
+      },
+      {
+        type: "paragraph",
+        text: "En términos logísticos también tiene sentido. El setup de cámara, el micrófono, la iluminación: montas una vez y grabas durante horas. Si cada grabación fuera por separado, estarías montando y desmontando equipo de forma constante.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo organizar tu day in studio",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Define qué piezas vas a grabar antes de llegar",
+      },
+      {
+        type: "paragraph",
+        text: "El error más común es llegar al estudio sin guiones ni lista de temas definidos. En ese momento, el tiempo que pagas empieza a correr y tú aún estás decidiendo qué grabar.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo mínimo antes de una jornada: una lista con todos los vídeos que necesitas, en qué formato —horizontal, vertical, corto, largo— y si tienen guión o son más libres. Cuanta más precisión llegues, más grabas. En RCS solemos recomendar preparar entre 10 y 20 piezas cortas, aunque en la práctica se ajusta según el ritmo y los objetivos del día.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Organiza el orden por vestuario o cambio de look",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes pensado cambiar de ropa o de look durante la jornada, agrupa todas las grabaciones del mismo atuendo antes de cambiar. Suena obvio, pero es fácil perderse entre formatos y darte cuenta al final de que una pieza del primer bloque se grabó con la misma ropa que otra del tercero, rompiendo la continuidad visual.",
+      },
+      {
+        type: "paragraph",
+        text: "Una hoja de rodaje sencilla —por look o por tema— resuelve este problema sin necesidad de producción compleja. Puede ser una nota en el móvil. Lo que importa es el orden.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Alterna entre formatos para mantener la energía",
+      },
+      {
+        type: "paragraph",
+        text: "Una jornada de grabación sostenida puede cansar. No es lo mismo hablar a cámara durante cuatro horas seguidas que alternar entre entrevistas, monólogos y piezas técnicas. Si tienes variedad de formatos planificados, distribúyelos de forma que no acumules el mismo tipo de esfuerzo cognitivo en bloque.",
+      },
+      {
+        type: "paragraph",
+        text: "Por ejemplo: empieza con las piezas más preparadas y guionizadas cuando la concentración está al máximo. Deja las piezas más conversacionales o libres para el tramo de la tarde, cuando el cuerpo ya está caliente y la naturalidad fluye mejor. Un teleprompter bien colocado puede ayudar en los momentos en que la memoria falla.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-hacer-un-day-in-studio-marcas-personales/mid.webp",
+        alt: "Setup de grabación profesional con iluminación en estudio de contenido",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores que arruinan una jornada de contenido",
+      },
+      {
+        type: "list",
+        items: [
+          "Llegar sin guiones ni lista de temas definidos",
+          "No organizar el orden de grabación según los cambios de look",
+          "Dejar los formatos verticales para el final cuando ya estás agotado",
+          "No revisar ninguna toma en cámara antes de terminar la jornada",
+          "Intentar editar durante la misma jornada de grabación",
+          "Subestimar el tiempo por pieza: un reel de 60 segundos puede llevar 20 minutos si requiere varias tomas",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas piezas se pueden grabar en un day in studio?",
+        answer: "En una jornada de 4-5 horas con material bien preparado, es habitual sacar entre 15 y 25 piezas cortas. Si incluyes formatos más largos —episodios completos de podcast, VSLs— el número baja. En RCS recomendamos no superar los 20-22 clips en un solo día para mantener la calidad de la última toma tan alta como la primera.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guiones escritos o sirve con un esquema?",
+        answer: "Para piezas de 30-60 segundos, un esquema con los puntos clave suele dar más naturalidad que leer un guión cerrado. Para formatos más largos o con estructura específica —VSL, episodio formativo—, conviene un guión más desarrollado. El teleprompter en RCS está disponible para quien prefiere leer sin perder el contacto visual con la cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo necesito reservar para un day in studio completo?",
+        answer: "Depende del volumen. Para 15-20 piezas cortas bien preparadas, entre 3 y 5 horas es suficiente. Si tienes formatos largos o necesitas cambios de look, calcula entre 5 y 7 horas. Lo mejor es hablar antes de la reserva para dimensionarlo bien.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo hacer un day in studio si es la primera vez que grabo en estudio?",
+        answer: "Sí, de hecho es un buen punto de entrada. En la primera hora suele haber una curva de adaptación —el espacio, la cámara, los monitores—, pero en la segunda ya estás rodado. El formato de jornada completa te da margen para esa adaptación sin que se coma toda la sesión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes marca personal y quieres planificar tu primer day in studio en Madrid, escríbenos desde /#contacto. Te ayudamos a definir qué grabar, en qué formatos y cómo organizar la jornada para que salgas con el contenido de las próximas semanas.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

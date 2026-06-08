@@ -90,6 +90,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #8. Imágenes Unsplash.",
   },
+  {
+    slug: "como-hacer-un-day-in-studio-marcas-personales",
+    keyword: "day in studio marcas personales",
+    intent: "informacional",
+    createdAt: "2026-06-08",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #9. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
