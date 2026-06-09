@@ -1151,6 +1151,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "reels-verticales-empresa-ceos",
+    title: "Reels verticales para empresa: qué graban los CEOs que funcionan",
+    description:
+      "Qué formatos de reel vertical funcionan para empresas y CEOs, cómo grabarlos bien y los errores que destruyen la percepción de autoridad antes de empezar.",
+    publishedAt: "2026-06-09",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["reels verticales", "empresa", "CEO", "LinkedIn", "vídeo vertical", "contenido de marca"],
+    keyword: "reels verticales empresa ceos",
+    intent: "informacional",
+    excerpt:
+      "Los CEOs con mejor presencia digital no improvisan: saben qué formato grabar y por qué. Guía sobre los reels verticales que funcionan de verdad para empresas.",
+    seoTitle: "Reels verticales para empresa: qué graban los CEOs | RCS",
+    metaDescription:
+      "Reels verticales para empresa y CEOs: qué formatos funcionan, cómo grabarlos bien y los errores que destruyen la autoridad antes de empezar a hablar.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Los CEOs que mejor funcionan en vídeo vertical no son necesariamente los más cómodos frente a la cámara. Son los que han decidido qué quieren contar y en qué formato antes de encender el primer foco. El resto —la calidad técnica, el encuadre, el audio— es secundario si el contenido no tiene un objetivo claro.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos reels para empresas de todos los tamaños: founders de startups, directivos de empresa consolidada y marcas que quieren que alguien del equipo lleve la voz del negocio en redes. El patrón que se repite en los que consiguen presencia real es siempre el mismo: saben qué formato encaja con lo que tienen para contar y no intentan hacerlo todo en un solo clip.",
+      },
+      {
+        type: "image",
+        src: "/blog/reels-verticales-empresa-ceos/hero.webp",
+        alt: "Professional journalist with notepad sharing information on camera in studio on white background",
+        width: 1880,
+        height: 1255,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué tipo de reel funciona para una empresa o un CEO" },
+      {
+        type: "paragraph",
+        text: "El reel vertical de empresa o de perfil directivo no compite por viralidad ni busca seguidores genéricos. Su objetivo es más concreto: construir reconocimiento entre personas que ya podrían ser clientes, socios o candidatos. En ese contexto, el formato más eficaz no es el más espectacular, sino el más reconocible: alguien que sabe de lo que habla, lo explica con claridad y aparece de forma consistente.",
+      },
+      {
+        type: "paragraph",
+        text: "Los formatos que funcionan para empresa en vídeo vertical son menos de los que parecen. El take —una posición sobre algo del sector—, el explicativo —cómo funciona algo, por qué cierta decisión tiene sentido—, el detrás de la empresa —qué hace el equipo, cómo se trabaja un proyecto real— y el resultado sin datos confidenciales —un hito del negocio contado con contexto. Cuatro formatos. Los CEOs con mejor presencia digital rotan entre ellos sin buscar más variedad que esa.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El take de liderazgo: corto, concreto, tuyo" },
+      {
+        type: "paragraph",
+        text: "El take es el formato más directo: una posición sobre algo del sector, en menos de 60 segundos. No hace falta una revelación ni un dato inédito. Hace falta que quien lo vea entienda con claridad qué piensas tú sobre algo específico. Si al terminar el clip el espectador puede repetir tu posición en una frase, el take funcionó. Lo que no funciona es el take genérico: frases que cualquier profesional del sector podría firmar sin que nadie sepa quién eres tú. Cuanto más propio es el punto de vista, más retención tiene la pieza.",
+      },
+      { type: "heading", level: 3, text: "El vídeo de proceso: mostrar sin revelar todo" },
+      {
+        type: "paragraph",
+        text: "El contenido de proceso —qué hace el equipo, cómo se construye algo dentro de la empresa, qué ocurre en el estudio o en la reunión de estrategia— funciona porque da contexto real a lo que vendes. No hace falta revelar información sensible. Basta con mostrar un fragmento de trabajo auténtico al que el espectador no tiene acceso de otro modo. Ese tipo de clip construye confianza sin necesidad de argumentario de ventas.",
+      },
+      { type: "heading", level: 3, text: "El reel de resultado: contarlo sin las cifras exactas" },
+      {
+        type: "paragraph",
+        text: "El resultado también se puede contar en vídeo sin revelar datos confidenciales. Un proyecto terminado bien descrito —qué problema tenía el cliente, qué se hizo, qué cambió— funciona como prueba social sin citar empresas ni compartir contratos. El formato más eficaz para esto en vídeo vertical es el monólogo directo a cámara con tres bloques: contexto del reto, qué se hizo diferente y qué resultado se observó. Entre 45 y 75 segundos. Sin intro corporativa.",
+      },
+      {
+        type: "image",
+        src: "/blog/reels-verticales-empresa-ceos/mid.webp",
+        alt: "Podcast recording with Microphone ready.",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en reels de empresa o CEO" },
+      {
+        type: "list",
+        items: [
+          "Hablar del producto o servicio desde el primer segundo: el espectador aún no tiene motivo para escuchar.",
+          "Intro corporativa de 10 segundos antes del contenido: en ese tiempo ya perdiste a la mayoría.",
+          "Audio grabado con el micrófono del teléfono en espacios con eco: la percepción de autoridad cae antes de que empieces a hablar.",
+          "Publicar sin subtítulos: más del 70% del consumo de vídeo vertical en LinkedIn e Instagram ocurre sin sonido.",
+          "Cambiar de estética en cada clip: la coherencia visual entre piezas construye reconocimiento; la variedad constante lo destruye.",
+          "Grabar sin posición clara: los vídeos que intentan contentar a todos acaban sin decirle nada útil a nadie.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Tiene sentido que el CEO de una empresa grabe reels aunque no tenga muchos seguidores?",
+        answer: "Sí, especialmente en B2B. El reel de un directivo no compite por alcance masivo: construye confianza entre un número reducido de personas relevantes. Un CEO con 800 seguidores bien elegidos que ve tus vídeos de forma constante vale más en términos comerciales que 10.000 seguidores aleatorios.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántos reels puede grabar una empresa en media jornada de estudio?",
+        answer: "Con buena preparación, entre 10 y 15 clips de 30-60 segundos. Si incluyes cambios de portavoz —por ejemplo, CEO más alguien del equipo— calcula entre 12 y 15 piezas. La clave es llegar con la lista de temas cerrada antes de entrar al estudio.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta que el CEO lleve guión o puede improvisar?",
+        answer: "Para los formatos tipo take o explicativo, un esquema de 3-5 puntos clave por pieza da más naturalidad que memorizar. Si prefiere teleprompter, en RCS lo tenemos disponible: basta con mandar el texto antes de la sesión para tenerlo configurado desde el primer minuto.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre un reel grabado en oficina y uno grabado en estudio?",
+        answer: "El espacio comunica antes de que empiece el vídeo. Un estudio con luz natural, fondo trabajado y audio limpio transmite un nivel de preparación que la sala de reuniones de la empresa no puede replicar sin trabajo previo. Para una empresa que quiere posicionarse como referente, ese detalle importa.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres organizar una sesión de reels para tu empresa o empezar a grabar como CEO con un formato que funcione, escríbenos desde /#contacto. En RCS lo planificamos contigo antes de la sesión para que entres sabiendo qué grabar y salgas con material para semanas.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

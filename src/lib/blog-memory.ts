@@ -98,6 +98,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #9. Imágenes Unsplash.",
   },
+  {
+    slug: "reels-verticales-empresa-ceos",
+    keyword: "reels verticales empresa ceos",
+    intent: "informacional",
+    createdAt: "2026-06-09",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #10. Imágenes Pexels/Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
