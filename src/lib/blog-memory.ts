@@ -106,6 +106,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #10. Imágenes Pexels/Unsplash.",
   },
+  {
+    slug: "grabacion-multicamara-podcast-que-aporta",
+    keyword: "grabacion multicamara podcast",
+    intent: "informacional",
+    createdAt: "2026-06-10",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #11. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

@@ -1256,6 +1256,138 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-multicamara-podcast-que-aporta",
+    title: "Grabación multicámara para podcast: qué aporta y cuándo tiene sentido",
+    description:
+      "Qué cambia cuando grabas un podcast con 2 o 3 cámaras, cómo funciona el flujo de edición y en qué casos justifica la inversión frente al setup de cámara única.",
+    publishedAt: "2026-06-10",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["podcast", "multicámara", "grabación", "producción audiovisual", "Madrid"],
+    keyword: "grabacion multicamara podcast",
+    intent: "informacional",
+    excerpt:
+      "Con multicámara, un episodio de podcast genera entre 8 y 20 clips listos para redes. Qué aporta este formato y cuándo tiene sentido contratarlo en Madrid.",
+    seoTitle: "Grabación multicámara podcast | RCS Madrid",
+    metaDescription:
+      "La grabación multicámara transforma tu podcast en contenido para YouTube, LinkedIn y redes. Qué aporta, cómo funciona y cuándo tiene sentido en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar un podcast con una sola cámara funciona. Pero grabar con dos o tres cambia completamente lo que puedes hacer con el material en postproducción. La diferencia no está solo en la estética, está en la utilidad del contenido una vez grabado.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS hemos grabado podcasts y entrevistas con setup multicámara para marcas, founders y equipos de marketing. Lo que sigue es lo que aprendes cuando comparas los resultados de uno y otro formato.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-multicamara-podcast-que-aporta/hero.webp",
+        alt: "Grabación de podcast en estudio con dos personas frente a micrófono y cámaras",
+        width: 1920,
+        height: 1267,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Qué aporta la multicámara en un podcast",
+      },
+      {
+        type: "paragraph",
+        text: "El objetivo de cualquier podcast con vídeo no es solo escuchar bien, es generar clips. Un episodio de 45 minutos grabado con multicámara puede dar entre 8 y 20 momentos cortables listos para LinkedIn, Instagram o YouTube Shorts. Si grabas con una sola cámara fija, ese mismo episodio da la mitad porque los cortes son menos limpios y hay menos opciones de montaje.",
+      },
+      {
+        type: "paragraph",
+        text: "La segunda ventaja es la calidad del diálogo visual. Cuando hay dos personas y cambias de cámara en los momentos de reacción, la conversación se siente más viva. Con plano fijo, el tiempo de retención en los primeros 15 segundos cae de manera notable, especialmente en vídeos de más de 10 minutos.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo hacerlo bien",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Ángulos y cámaras mínimas para que funcione",
+      },
+      {
+        type: "paragraph",
+        text: "Un setup funcional para podcast con 2 personas necesita como mínimo 3 posiciones: plano general con ambos presentadores, plano medio del host y plano medio del invitado. Si añades una cuarta cámara de detalle —manos, micro, pantalla— el material de b-roll se multiplica sin esfuerzo extra en grabación. En RCS trabajamos habitualmente con 2 Sony A7 y 1 cámara fija para el plano general. No hace falta más para que el montaje tenga variedad real.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Audio: la base que no puede fallar",
+      },
+      {
+        type: "paragraph",
+        text: "Con multicámara el audio es aún más crítico porque el editor necesita un track de referencia limpio para sincronizar. Lo habitual es grabar cada micro por separado —uno por persona— y tener además una mezcla de referencia en el audio del plano general. Si hay una sola pista para todo el episodio, la edición multicámara pierde la mitad de su potencial. En RCS usamos DaVinci Resolve para sincronización por waveform: automático, sin drifteo, listo para cortar.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Edición multicámara: flujo real",
+      },
+      {
+        type: "paragraph",
+        text: "La sincronización es lo más técnico. El resto es criterio editorial: cuándo cambiar de cámara, cuántos segundos aguantas en reacción, cómo ritmar los cortes para que no se note que los estás haciendo. Un episodio de 40 minutos bien montado en multicámara lleva entre 3 y 6 horas de edición dependiendo de la densidad de cortes y si incluye subtítulos, motion graphics o clips adicionales para redes.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-multicamara-podcast-que-aporta/mid.webp",
+        alt: "Cámara de cine Sony apuntando a un invitado durante la grabación de un episodio en estudio",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cuándo tiene sentido contratar multicámara",
+      },
+      {
+        type: "list",
+        items: [
+          "Cuando el podcast tiene invitados habituales y necesitas mantener el interés visual semana a semana.",
+          "Cuando el objetivo es distribuir clips en LinkedIn o Instagram a partir de cada episodio.",
+          "Cuando el formato incluye dos o más personas con roles distintos: host más invitado, dos founders, panel.",
+          "Cuando el programa ya tiene audiencia en YouTube y no solo escucha.",
+          "Cuando quieres que el material tenga vida más allá del episodio completo: el clip de 60 segundos que convierte.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda más una sesión multicámara respecto a grabar con una sola cámara?",
+        answer: "El setup físico suma entre 20 y 40 minutos dependiendo de cuántas cámaras y si hay que ajustar iluminación por posición. La grabación en sí dura exactamente lo mismo. Lo que cambia es la postproducción, que es más larga. En RCS el setup está listo antes de que llegues, así que no resta tiempo de tu sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta teleprompter para el host si hay varias cámaras?",
+        answer: "No. Con multicámara el host tiene más libertad porque el editor puede recortar miradas fuera de cámara o momentos de duda sin que se note. Si llevas un esquema de 3-5 puntos clave en vez de guión completo, el resultado es más natural. El teleprompter lo usamos solo cuando hay un texto exacto que leer.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar un solo episodio y sacar contenido para un mes?",
+        answer: "Sí. Con un episodio de 45 minutos y un setup de 3 cámaras, podemos entregar el episodio completo para YouTube, entre 8 y 12 clips editados para LinkedIn o Instagram y un reel corto de presentación del programa. Todo en la misma sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿Funciona el formato multicámara si el invitado nunca ha grabado?",
+        answer: "Mejor de lo que parece. Cuando hay varias cámaras, el invitado tiende a hablar a la persona que tiene enfrente, no a la cámara, y eso da naturalidad. La incomodidad con el plano fijo único desaparece porque no hay que mantener el encuadre: el editor lo resuelve en postproducción.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres montar un podcast con vídeo en Madrid o convertir un episodio en contenido para redes, escríbenos desde /#contacto. En RCS diseñamos el setup según el formato y el volumen de material que necesitas.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
