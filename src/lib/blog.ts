@@ -1388,6 +1388,138 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-usar-teleprompter-sin-parecer-robot",
+    title: "Cómo usar el teleprompter sin parecer robot",
+    description:
+      "Técnica, ritmo y ajustes para leer en teleprompter con naturalidad. Lo que cambia entre un presentador que convence y uno que claramente está leyendo.",
+    publishedAt: "2026-06-11",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["teleprompter", "grabación de contenido", "vídeo corporativo", "técnica de cámara", "Madrid"],
+    keyword: "como usar teleprompter sin parecer robot",
+    intent: "informacional",
+    excerpt: "Usar el teleprompter es una habilidad que se entrena. Estas son las claves para leer sin que se note.",
+    seoTitle: "Cómo usar el teleprompter sin parecer robot | RCS Madrid",
+    metaDescription:
+      "Cómo usar el teleprompter sin parecer robot: técnica, ritmo y ajustes para grabar con naturalidad en estudio. Guía práctica de RCS Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "El teleprompter da miedo la primera vez. Ves el texto en pantalla, empiezas a leer, y en los primeros 30 segundos ya sabes que lo que estás haciendo no parece una persona hablando. Parece alguien leyendo. Que es exactamente lo que estás haciendo.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema casi nunca es el teleprompter. Es el texto que metes en él, la velocidad a la que lo configuras y la falta de práctica con la técnica de voz. Esto se puede entrenar. Cuando lo haces bien, el resultado es una pieza grabada con precisión de mensaje pero con la naturalidad de una conversación.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-usar-teleprompter-sin-parecer-robot/hero.webp",
+        alt: "Cámara de cine Sony FS7 en set de grabación profesional para producción de contenido de marca",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué el teleprompter existe y cuándo tiene sentido usarlo",
+      },
+      {
+        type: "paragraph",
+        text: "El teleprompter es una herramienta de precisión. Se inventó para la televisión porque los presentadores necesitaban hablar a cámara con fluidez sin perder ni una coma del guión. En producción de contenido de marca, tiene sentido en contextos concretos: VSLs, declaraciones corporativas, presentaciones de producto donde el texto legal o técnico no puede improvisar.",
+      },
+      {
+        type: "paragraph",
+        text: "No tiene sentido para una entrevista, un podcast con invitado o un reel donde quieres parecer espontáneo. Usarlo en el contexto equivocado es el primer error. Si el formato pide naturalidad, un esquema de 4-5 puntos clave es mejor herramienta que un guión completo.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se usa bien el teleprompter",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La velocidad del scroll",
+      },
+      {
+        type: "paragraph",
+        text: "La velocidad del teleprompter se ajusta al ritmo del orador, no al contrario. Si el texto avanza demasiado rápido, el presentador lo persigue y se nota. Si va demasiado lento, hace pausas forzadas. El punto justo es ligeramente más lento que la velocidad natural de habla, con margen para respirar entre frases. En una sesión en RCS ajustamos la velocidad antes de rodar, no sobre la marcha. Eso ahorra tiempo y grabaciones inútiles.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La distancia con la cámara y el ángulo",
+      },
+      {
+        type: "paragraph",
+        text: "El teleprompter se coloca encima del objetivo de la cámara, con un cristal semitransparente que refleja el texto. Si la pantalla está muy separada del eje del objetivo, los ojos del presentador se desvían visiblemente. Cuando la distancia es correcta, el espectador ve a alguien mirando a cámara. La diferencia entre los dos casos es enorme en postproducción: el primero no tiene arreglo, el segundo no necesita nada.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El texto y el ritmo de las frases",
+      },
+      {
+        type: "paragraph",
+        text: "El texto para teleprompter no es igual que un texto para leer en papel. Las frases deben ser más cortas. Sin subordinadas de tres niveles. Sin tecnicismos que no pronuncies de forma natural. Una buena prueba: si lees el guión en voz alta y trastabillas en un punto, reescribe esa frase. El teleprompter reproduce exactamente lo que has escrito, incluidos los tropiezos. Antes de grabar, lee el guión entero en voz alta al menos dos veces.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-usar-teleprompter-sin-parecer-robot/mid.webp",
+        alt: "Equipo de iluminación y cámara configurado en estudio para grabación de vídeo corporativo",
+        width: 1920,
+        height: 1080,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores más comunes con el teleprompter",
+      },
+      {
+        type: "list",
+        items: [
+          "Escribir el guión como si fuera un artículo y no un discurso hablado.",
+          "Configurar la velocidad del scroll sin haberla probado antes de rodar.",
+          "Colocar la pantalla del prompter demasiado lejos del eje de la cámara.",
+          "No hacer una lectura en voz alta previa al rodaje.",
+          "Memorizar el texto en vez de leerlo: el objetivo del teleprompter es que no lo memorices.",
+          "Usar el teleprompter en formatos donde la naturalidad importa más que la precisión del mensaje.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo tarda alguien en adaptarse al teleprompter?",
+        answer: "Depende del punto de partida. Una persona con experiencia en presentaciones o locución lo controla en 20-30 minutos de práctica. Alguien sin hábito de cámara puede necesitar 2-3 sesiones para que el resultado sea convincente. En RCS, si es tu primera vez con el prompter, lo dejamos rodando sin presión durante los primeros 10 minutos para que cojas el ritmo antes de grabar la pieza definitiva.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor el teleprompter o un guión memorizado?",
+        answer: "Para piezas de más de 90 segundos, el teleprompter gana. Memorizar un guión largo consume energía que luego no está disponible para la expresión y el tono. Con el prompter bien ajustado, el presentador puede concentrarse en cómo dice las cosas, no en qué viene después. Para piezas cortas de 30-45 segundos, memorizar puede dar más naturalidad si el presentador tiene soltura.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué aplicación de teleprompter usáis en RCS?",
+        answer: "Usamos principalmente PromptSmart Pro y Teleprompter Premium, que permiten ajustar velocidad de scroll, tamaño de texto y márgenes de lectura. Para sesiones en iPad conectado al cristal del prompter, fuente grande, fondo negro y texto blanco. El fondo gris o verde dificulta la lectura bajo luz de estudio.",
+      },
+      {
+        type: "faq",
+        question: "¿El teleprompter funciona bien con personas que llevan gafas?",
+        answer: "Sí, aunque hay que ajustar la posición del reflector para evitar destellos. Las monturas metálicas son las que más reflejan. Un ajuste de ángulo de 2-3 grados en el cristal suele resolver el problema. En RCS lo testeamos antes de empezar si la sesión lo requiere.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un mensaje que necesita precisión y quieres grabarlo con naturalidad, escríbenos desde /#contacto. En RCS tenemos el equipo y el proceso para que el teleprompter deje de darte miedo y empiece a trabajar para ti.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

@@ -114,6 +114,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #11. Imágenes Unsplash.",
   },
+  {
+    slug: "como-usar-teleprompter-sin-parecer-robot",
+    keyword: "como usar teleprompter sin parecer robot",
+    intent: "informacional",
+    createdAt: "2026-06-11",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #12. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
