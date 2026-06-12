@@ -122,6 +122,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #12. Imágenes Unsplash.",
   },
+  {
+    slug: "iluminacion-grabacion-contenido-basicos",
+    keyword: "iluminacion grabacion contenido",
+    intent: "informacional",
+    createdAt: "2026-06-12",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #13. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

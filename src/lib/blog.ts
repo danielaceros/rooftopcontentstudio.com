@@ -1520,6 +1520,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "iluminacion-grabacion-contenido-basicos",
+    title: "Iluminación para grabación de contenido: básicos que marcan la diferencia",
+    description:
+      "Tipos de luz, setup básico de tres puntos y errores que arruinan el vídeo antes de empezar a hablar. Los fundamentos de iluminación que usamos en RCS.",
+    publishedAt: "2026-06-12",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["iluminación", "grabación de contenido", "vídeo profesional", "estudio madrid", "setup grabación", "luz natural"],
+    keyword: "iluminacion grabacion contenido",
+    intent: "informacional",
+    excerpt:
+      "La iluminación decide si el vídeo parece profesional o no. Estos son los básicos que usamos en RCS y que puedes aplicar desde el primer día.",
+    seoTitle: "Iluminación para grabación de contenido | RCS Madrid",
+    metaDescription:
+      "Iluminación para grabación de contenido: tipos de luz, setup básico y errores que arruinan el vídeo antes de que empieces a hablar. Guía de RCS Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "La iluminación es el elemento que más personas subestiman antes de entrar al estudio. Llegan con buena cámara, buen micrófono, el guión listo, y resulta que la primera toma sale plana, con sombras raras en la cara o con un fondo quemado que destruye todo el efecto que querían conseguir. El equipo no falla. Falla la luz.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto no es accidental. La iluminación para grabación de contenido tiene una lógica concreta que conviene entender antes de encender el primer panel. No hace falta montar un plató de televisión ni un setup de siete focos. Hace falta entender tres o cuatro principios que, una vez que los tienes claros, cambian el resultado desde la primera toma.",
+      },
+      {
+        type: "image",
+        src: "/blog/iluminacion-grabacion-contenido-basicos/hero.webp",
+        alt: "Setup de estudio fotográfico con iluminación profesional para grabación de contenido",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es la iluminación para grabación de contenido y por qué importa tanto" },
+      {
+        type: "paragraph",
+        text: "La iluminación no es solo añadir luz para que se vea algo. Es decidir de dónde viene esa luz, con qué intensidad, qué temperatura de color tiene y cómo interactúa con el sujeto y el fondo. Una misma cara iluminada desde arriba, desde un lado o con luz difusa desde el frente da tres resultados radicalmente distintos. Uno aplana, otro añade volumen, el tercero da una imagen limpia y profesional. Lo que ves en pantalla depende de esas decisiones, no solo de cuántos vatios tiene el panel.",
+      },
+      {
+        type: "paragraph",
+        text: "En grabación de contenido para marca personal o empresa, la iluminación también comunica. Un setup de luz fría y dura genera una percepción muy diferente a uno con luz cálida y suave. No es estética vacía: es la señal que el espectador recibe antes de escuchar una sola palabra. Si el setup parece improvisado, la percepción del mensaje baja. Si la luz está resuelta, el contenido arranca desde un punto de partida más sólido.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "La luz principal: el punto de partida de cualquier setup" },
+      {
+        type: "paragraph",
+        text: "La luz principal, o key light, es la fuente que ilumina al sujeto con mayor intensidad y define las sombras del setup. Lo habitual es colocarla ligeramente por encima de la línea de ojos, a unos 45 grados del sujeto y a una distancia de entre 1 y 1,5 metros. Esa posición da volumen facial sin generar sombras agresivas. Si colocas la key light directamente de frente, el resultado es plano. Si la pones demasiado lateral, las sombras son excesivas y el resultado queda más dramático que profesional. Para contenido de marca o autoridad, la posición a 45 grados es casi siempre el punto de partida correcto. En RCS usamos paneles LED con difusor: temperatura regulable de 3200 K a 5600 K, suaves desde el primer encendido.",
+      },
+      { type: "heading", level: 3, text: "El relleno: el segundo elemento que no puedes saltarte" },
+      {
+        type: "paragraph",
+        text: "El relleno, o fill light, es la fuente que aclara las sombras que genera la luz principal. Sin relleno, el lado de la cara en sombra queda demasiado oscuro para grabación de contenido y el resultado se ve más cine negro que producción de autoridad. El fill no tiene que ser igual de potente que la key: lo habitual es colocarlo al otro lado del sujeto con una intensidad de entre un tercio y la mitad de la key. En espacios con luz natural, una pared o superficie blanca al lado opuesto puede hacer de relleno sin necesidad de un segundo foco. En el estudio, un reflector plegable es la solución más simple y funcional.",
+      },
+      { type: "heading", level: 3, text: "La luz de fondo: separar el sujeto del entorno" },
+      {
+        type: "paragraph",
+        text: "La luz de fondo no ilumina al sujeto: ilumina lo que hay detrás. Su función es crear separación entre sujeto y fondo para dar profundidad a la imagen. Sin ella, si fondo y sujeto tienen la misma luminosidad, todo queda en el mismo plano y la imagen pierde dimensión. Una luz de fondo bien colocada puede iluminar una pared, resaltar un elemento decorativo o simplemente añadir un gradiente suave que rompe la planitud. No necesitas un setup complejo: un panel pequeño apuntado al fondo desde uno de los lados es suficiente para cambiar claramente la percepción de profundidad.",
+      },
+      {
+        type: "image",
+        src: "/blog/iluminacion-grabacion-contenido-basicos/mid.webp",
+        alt: "Setup de grabación en estudio de vídeo con iluminación LED y cámara profesional",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en iluminación para grabación de contenido" },
+      {
+        type: "list",
+        items: [
+          "Usar la luz de techo como fuente principal: la luz cenital crea sombras bajo los ojos y da sensación de cansancio o dureza.",
+          "Colocar una ventana brillante directamente detrás del sujeto sin compensar: la cámara expone para el fondo y el sujeto queda oscuro.",
+          "No controlar la temperatura de color entre fuentes: mezclar luz cálida de foco con luz fría de ventana genera tonos inconsistentes en piel.",
+          "Añadir luz sin difusor: la luz dura proyecta sombras marcadas que son difíciles de corregir en postproducción.",
+          "No hacer una toma de prueba antes de grabar: 2 minutos de revisión evitan descubrir el problema cuando el setup ya está desmontado.",
+          "Olvidar iluminar el fondo: sin separación entre sujeto y fondo, la imagen pierde toda la profundidad.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Hace falta equipo de iluminación profesional para que el vídeo quede bien?",
+        answer: "No necesariamente. Dos paneles LED de gama media más un reflector de tela resuelven el 80% de los setups de contenido habituales. Lo que importa no es el precio del equipo, sino saber dónde colocar cada fuente. Un panel bien posicionado da mejor resultado que tres mal colocados.",
+      },
+      {
+        type: "faq",
+        question: "¿La luz natural es suficiente para grabar contenido en estudio?",
+        answer: "Sí, si el espacio está preparado para controlarla. La luz natural es la fuente más suave y natural que existe, pero cambia con las nubes, la hora y la orientación de las ventanas. En RCS trabajamos con difusores y estores que permiten mantener una imagen consistente aunque cambie la luz exterior. Sin control, la luz natural puede convertirse en un problema.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué temperatura de color es mejor para grabar contenido de marca?",
+        answer: "Entre 5000 K y 5500 K, que es la temperatura que más se aproxima a la luz de día natural. Esa gama da una piel con tono neutro y un blanco limpio sin la frialdad del blanco puro ni la calidez excesiva de los 3200 K. En RCS ajustamos la temperatura de color según el entorno de cada sesión para mantener coherencia entre los planos.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo lleva montar un setup de iluminación básico?",
+        answer: "Un setup de tres puntos de luz —key, fill y fondo— bien organizado se monta en 20-30 minutos en un espacio nuevo. En RCS el setup está listo antes de que llegues. Si traes tu propio equipo, recomendamos un ensayo previo en el mismo espacio para no perder tiempo de sesión en ajustes básicos.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres grabar tu próxima sesión de contenido con una iluminación resuelta desde el primer minuto, en RCS lo tenemos preparado. Escríbenos desde /#contacto y te contamos cómo funciona una sesión.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
