@@ -130,6 +130,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #13. Imágenes Unsplash.",
   },
+  {
+    slug: "microfonos-podcast-entrevistas-tipos",
+    keyword: "microfonos para podcast y entrevistas",
+    intent: "informacional",
+    createdAt: "2026-06-15",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #14. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

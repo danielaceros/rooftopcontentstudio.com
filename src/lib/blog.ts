@@ -1625,6 +1625,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "microfonos-podcast-entrevistas-tipos",
+    title: "Micrófonos para podcast y entrevistas: qué tipos existen y cuándo usar cada uno",
+    description:
+      "Guía práctica sobre los tipos de micrófonos para podcast y entrevistas: condensador, dinámico y lavalier. Cuándo usar cada uno y qué errores evitar.",
+    publishedAt: "2026-06-15",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["micrófonos", "podcast", "entrevistas", "grabación", "audio", "estudio"],
+    keyword: "microfonos para podcast y entrevistas",
+    intent: "informacional",
+    excerpt:
+      "Elegir el micrófono correcto marca la diferencia entre un audio tolerable y uno que retiene al oyente. Esto es lo que usamos en RCS y por qué.",
+    seoTitle: "Micrófonos para Podcast y Entrevistas | RCS Madrid",
+    metaDescription:
+      "Micrófonos para podcast y entrevistas: tipos, diferencias y cuándo usar cada uno. Guía práctica desde el estudio RCS Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien escucha tu podcast o tu entrevista, el micrófono que usas determina si sigue escuchando o cierra la pestaña. No es exageración. El vídeo puede ser mejorable, pero el audio malo es directamente fatiga. La elección del micrófono depende de tres factores: el formato que grabas, el entorno donde lo haces y el nivel de control que quieres tener sobre el sonido.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS usamos distintos tipos de micrófonos según lo que graba cada cliente. No hay un micrófono que sea el mejor para todo. Hay uno que encaja con lo que tú haces. Esto es lo que necesitas saber para elegir bien.",
+      },
+      {
+        type: "image",
+        src: "/blog/microfonos-podcast-entrevistas-tipos/hero.webp",
+        alt: "Micrófono de condensador en estudio de grabación profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué el tipo de micrófono cambia el resultado final" },
+      {
+        type: "paragraph",
+        text: "La diferencia entre un micrófono de condensador y uno dinámico no es solo técnica. Afecta directamente al tono de la voz, a cómo se recoge el ambiente de la sala y a cuánto espacio necesitas controlar para que el audio suene bien. Elegir el tipo equivocado no siempre se puede corregir en postproducción.",
+      },
+      {
+        type: "paragraph",
+        text: "Antes de entrar en los tipos, un concepto básico: el patrón polar. Es la forma en que el micrófono recoge el sonido. La mayoría de micrófonos de podcast y entrevistas usan patrón cardioide, que capta principalmente lo que tiene delante y rechaza los sonidos laterales y traseros. Algunos tienen patrón bidireccional —para dos personas cara a cara— u omnidireccional —para reuniones o ambientes muy controlados—. El patrón importa tanto como el tipo.",
+      },
+      {
+        type: "paragraph",
+        text: "Con eso claro, los tres tipos que más vas a encontrar en setups de podcast y entrevistas son: condensador, dinámico y lavalier.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien: los tres tipos principales" },
+      { type: "heading", level: 3, text: "Micrófonos de condensador" },
+      {
+        type: "paragraph",
+        text: "El condensador es el estándar en estudio para podcast y entrevistas en interiores. Capta frecuencias altas con mucho detalle, lo que hace que la voz suene natural, abierta y clara. El problema: también capta el ambiente de la sala. En un estudio tratado acústicamente, eso es una ventaja. En una oficina sin tratamiento, el aire acondicionado, el tráfico y el eco de las paredes van a aparecer en la grabación. El Rode NT1, el Audio-Technica AT2020 o el Neumann U87 son referencias habituales en setups profesionales. Si grabas en un entorno controlado, el condensador es la mejor opción.",
+      },
+      { type: "heading", level: 3, text: "Micrófonos dinámicos" },
+      {
+        type: "paragraph",
+        text: "El micrófono dinámico fue diseñado para el directo, pero en los últimos años se ha convertido en una opción muy sólida para podcast y entrevistas en entornos con algo de ruido ambiente. Rechaza más el sonido lateral y de fondo que el condensador, lo que lo hace más permisivo con la sala. La voz suena más cálida y menos brillante, lo que a mucha gente le parece más natural en formato conversacional. El Shure SM7B y el Electro-Voice RE20 son los dos más usados en podcast profesional. Requieren más ganancia que un condensador, así que necesitas una interfaz con previo potente o un amplificador adicional como el Cloudlifter. Si grabas en una sala sin mucho control acústico, el dinámico te va a dar menos problemas.",
+      },
+      { type: "heading", level: 3, text: "Micrófonos de solapa o lavalier" },
+      {
+        type: "paragraph",
+        text: "El lavalier es el micrófono que va enganchado a la ropa, cerca del pecho. Se usa principalmente en entrevistas en movimiento, presentaciones o cuando el sujeto no puede estar frente a un micrófono de pie. La ventaja es que es completamente discreto y mantiene una distancia constante con la boca. La desventaja: capta el movimiento de la ropa y es más sensible al viento en exteriores. Los modelos inalámbricos como el Røde Wireless GO o el DJI Mic son los más usados hoy en día para contenido de empresa y entrevistas en carretera. En RCS los usamos cuando grabamos entrevistas que combinan planos frontales con planos de movimiento.",
+      },
+      {
+        type: "image",
+        src: "/blog/microfonos-podcast-entrevistas-tipos/mid.webp",
+        alt: "Micrófono de condensador negro sobre mesa de grabación profesional",
+        width: 1920,
+        height: 1281,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al elegir micrófono" },
+      {
+        type: "list",
+        items: [
+          "Usar un condensador en una sala sin tratar: el resultado tendrá reverberación y ruido de fondo que no se elimina completamente en edición.",
+          "Comprar el micrófono más caro sin revisar el entorno: el equipo no compensa la sala. Primero controla el espacio, luego el micrófono.",
+          "Mezclar dos micrófonos de tipos distintos sin igualar niveles: suenan diferente y la edición se vuelve costosa.",
+          "Poner el lavalier debajo de ropa con tejido ruidoso: cada movimiento aparece en el audio como un golpe sordo.",
+          "No hacer prueba de audio antes de grabar: dos minutos de revisión con auriculares evitan descubrir el fallo al editar.",
+          "Colocar el condensador demasiado lejos de la boca: la voz pierde presencia y el ratio señal/ruido empeora.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Qué micrófono es mejor para podcast con dos personas?",
+        answer: "Depende del espacio. Si grabáis en un estudio tratado acústicamente, dos micrófonos de condensador en patrón cardioide dan el resultado más limpio. Si hay ruido de fondo, un dinámico para cada persona es más seguro. También puedes usar un solo micrófono bidireccional entre los dos, aunque el balance de voces es más difícil de controlar.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta interfaz de audio con un micrófono dinámico?",
+        answer: "Sí, siempre. Los micrófonos dinámicos de bobina tienen salida XLR y necesitan conectarse a una interfaz con un previo potente. Algunos como el SM7B requieren además un amplificador adicional como el Cloudlifter o el Fethead para alcanzar el nivel de ganancia adecuado sin introducir ruido.",
+      },
+      {
+        type: "faq",
+        question: "¿Los micrófonos USB valen para podcast profesional?",
+        answer: "Para contenido básico, sí. Para producción de calidad media-alta, no. Los micrófonos USB tienen la interfaz integrada, lo que simplifica el setup, pero limita el control sobre ganancia, ecualización y procesado de señal. Si vas a grabar de forma regular y quieres evolucionar el setup, lo correcto es XLR desde el principio.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuál es la distancia correcta entre la boca y el micrófono?",
+        answer: "Entre 15 y 25 centímetros para la mayoría de micrófonos de condensador en patrón cardioide. Para micrófonos dinámicos como el SM7B, se trabaja más cerca, entre 5 y 15 centímetros, para aprovechar el efecto de proximidad que añade calidez a la voz. Con el lavalier, la posición ideal es a la altura del segundo o tercer botón de la camisa, evitando el cuello.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes dudas sobre qué micrófono usar en tu próxima sesión de podcast o entrevista en Madrid, en RCS lo resolvemos antes de que llegues. Escríbenos desde /#contacto y te contamos qué setup montamos según lo que necesitas grabar.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
