@@ -138,6 +138,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #14. Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-cursos-online-madrid",
+    keyword: "grabacion cursos online madrid",
+    intent: "informacional",
+    createdAt: "2026-06-16",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #15. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

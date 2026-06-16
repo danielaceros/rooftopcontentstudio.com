@@ -1734,6 +1734,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-cursos-online-madrid",
+    title: "Grabación de cursos online en Madrid: espacio, equipo y flujo de trabajo",
+    description:
+      "Qué espacio, qué equipo y cómo organizar el día para grabar cursos online con calidad profesional en Madrid sin perder tiempo ni tomas.",
+    publishedAt: "2026-06-16",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabación cursos online", "formación en vídeo", "producción elearning", "estudio grabación madrid", "contenido formativo"],
+    keyword: "grabacion cursos online madrid",
+    intent: "informacional",
+    excerpt:
+      "Espacio, equipo y flujo de trabajo para grabar cursos online con calidad profesional en Madrid. Lo que funciona en RCS para formadores y empresas.",
+    seoTitle: "Grabación de cursos online Madrid | RCS Madrid",
+    metaDescription:
+      "Grabación de cursos online en Madrid: qué espacio, equipo y organización necesitas para producir formación en vídeo de calidad profesional.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar un curso online de calidad no es solo enchufar una cámara y hablar. El espacio condiciona la concentración del formador y la percepción del alumno. El equipo determina si el audio cansa o si la imagen invita a seguir viendo. Y el flujo de trabajo decide si grabas el curso en una mañana o en tres semanas.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS hemos grabado formación en vídeo para empresas y profesionales independientes que querían algo más que pantalla verde improvisada o iluminación de anillo en casa. Lo que te cuento aquí es lo que funciona en la práctica: qué espacio usar, qué equipo mínimo necesitas y cómo estructurar el día para salir con el material listo para editar.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-cursos-online-madrid/hero.webp",
+        alt: "Estudio de grabación profesional preparado para grabar cursos online en Madrid",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué necesita un espacio para grabar cursos online" },
+      {
+        type: "paragraph",
+        text: "La formación en vídeo exige más control del entorno que un podcast o una entrevista. El alumno va a ver el mismo plano durante minutos o incluso horas. Cualquier distracción visual —pared sucia, fondo caótico, luz cambiante con el sol— rompe la concentración y baja la percepción de calidad aunque el contenido sea bueno.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que funciona bien: un fondo limpio y consistente, iluminación controlada que no depende de la hora del día, y una sala con buen comportamiento acústico para que la voz no rebote. En RCS el ático tiene control total sobre la luz, fondo configurable y tratamiento que evita el eco típico de oficinas o salas diáfanas.",
+      },
+      {
+        type: "paragraph",
+        text: "El espacio también influye en el rendimiento del formador. Grabar en casa con el móvil mirando al portátil y ruido de fondo es diferente a llegar a un espacio preparado, hacer una prueba rápida y ponerse a grabar. La concentración se nota en el material final.",
+      },
+      { type: "heading", level: 2, text: "Equipo esencial para cursos en vídeo" },
+      { type: "heading", level: 3, text: "Cámara y lente" },
+      {
+        type: "paragraph",
+        text: "No hace falta una cinema camera para cursos online. Una Sony A7 III o una Sony FX30 con una lente fija de 35mm o 50mm da un resultado que cualquier plataforma —Kajabi, Hotmart, Teachable, YouTube— recibe bien. Lo importante es estabilidad de imagen y color consistente entre sesiones. Con cámara fija y luz artificial controlada, eso se resuelve una vez y se olvida.",
+      },
+      { type: "heading", level: 3, text: "Audio" },
+      {
+        type: "paragraph",
+        text: "El audio es donde se gana o se pierde un curso. Si el alumno tiene que subir el volumen para entenderte o escucha eco de fondo, abandona. Para cursos con un solo formador, un micrófono de condensador tipo Rode NT1-A o un dinámico tipo Shure SM7B conectado a una interfaz Focusrite Scarlett da una voz limpia y con autoridad. El lavalier inalámbrico (Rode Wireless GO II, DJI Mic) es una opción si el formador necesita moverse, pero un micrófono fijo bien colocado siempre gana en calidad.",
+      },
+      { type: "heading", level: 3, text: "Iluminación" },
+      {
+        type: "paragraph",
+        text: "Luz frontal suave como key light y un fill para evitar sombras duras en el rostro. Un softbox tipo Aputure Amaran o un aro LED grande son suficientes para la mayoría de cursos. Si quieres separar al sujeto del fondo, añades un kicker. En RCS montamos el setup antes de que llegues: llegas, te pruebas, grabas.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-cursos-online-madrid/mid.webp",
+        alt: "Setup de cámara profesional para grabación de vídeo formativo",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Cómo organizar el flujo de trabajo" },
+      {
+        type: "list",
+        items: [
+          "Divide el contenido por módulos antes de venir. Un módulo, un bloque de grabación. No grabes el curso como si fuera una conferencia continua.",
+          "Prepara un guion o bullet points por tema. Un teleprompter o notas en pantalla reducen las tomas repetidas a la mitad.",
+          "Reserva los primeros 20-30 minutos para calentamiento: prueba de luz, audio y un fragmento de prueba. No es tiempo perdido.",
+          "Graba de menor a mayor dificultad técnica: los módulos conceptuales primero, las demos prácticas cuando ya tienes ritmo.",
+          "Descansa 10 minutos cada 90 minutos. La voz y la concentración lo agradecen. El material grabado tras pausa es más limpio.",
+          "Entrega los brutos organizados por módulo y toma: facilita la edición y permite corregir un bloque sin regrabar todo el curso.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántos módulos se pueden grabar en una jornada en RCS?",
+        answer: "En una jornada de 6 horas, es realista grabar entre 8 y 12 módulos de 5-8 minutos si el formador llega con el guion preparado. Si los módulos incluyen demos o cambios de setup entre bloques, el ritmo baja. La clave es llegar con el contenido organizado y no improvisar el orden en sala.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta editar el vídeo antes de subirlo a la plataforma?",
+        answer: "Sí, aunque sea un corte básico. Los alumnos toleran mal los silencios largos, las tomas fallidas o los arranques vacilantes. Un montaje limpio —cortar errores, ajustar audio, añadir títulos de módulo— mejora la percepción del curso aunque el contenido sea el mismo. Con el servicio de Grabación + Edición en RCS, entregamos el vídeo editado y listo para subir.",
+      },
+      {
+        type: "faq",
+        question: "¿Es necesario grabar con croma o fondo verde?",
+        answer: "No. El croma funciona bien en producción grande con equipo dedicado, pero en sesiones de un día genera complicaciones: espacio extra, iluminación específica y edición posterior más laboriosa. Un fondo real con carácter —ladrillo visto, librería, madera— transmite más personalidad y cuesta menos en producción. En RCS el fondo del ático aporta ese contexto sin efectos.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabar módulos de cursos distintos en el mismo día?",
+        answer: "Sí, pero hay que planificarlo. Si los dos cursos tienen identidad visual diferente —distinto outfit, fondo o configuración de luz— conviene terminar uno, cambiar el setup y continuar con el otro. Si la identidad es la misma, no hay problema en mezclarlos siempre que el guion esté claro y el formador sepa en qué módulo está en cada momento.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás pensando en grabar un curso online en Madrid y no sabes por dónde empezar, en RCS te ayudamos a estructurar la jornada antes de que llegues. Escríbenos desde /#contacto y te decimos qué necesitas según el tipo de formación que quieres producir.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
