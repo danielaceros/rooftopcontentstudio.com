@@ -1843,6 +1843,111 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "contenido-youtube-shorts-sesion-estudio",
+    title: "Contenido para YouTube Shorts desde una sesión de estudio",
+    description:
+      "Cómo grabar YouTube Shorts en una sesión de estudio en Madrid: qué planificar, cómo capturarlo en vertical y cómo estructurar los clips para que funcionen.",
+    publishedAt: "2026-06-17",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["YouTube Shorts", "estudio de grabación", "contenido de marca", "vídeo vertical", "content day", "Madrid"],
+    keyword: "contenido youtube shorts sesion estudio",
+    intent: "informacional",
+    excerpt:
+      "YouTube Shorts tiene mejor alcance orgánico del que muchas marcas aprovechan. Así se planifica y graba en una sesión de estudio en Madrid sin alargar el día.",
+    seoTitle: "YouTube Shorts desde estudio: cómo planificarlo | RCS Madrid",
+    metaDescription:
+      "Contenido para YouTube Shorts desde una sesión de estudio: cómo planificarlo, capturarlo en vertical y estructurar los clips para que funcionen en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "YouTube Shorts ha pasado de ser un experimento a convertirse en uno de los formatos con mayor alcance orgánico de la plataforma. Si ya produces contenido en estudio —podcast, reels, entrevistas—, añadir clips verticales para Shorts no implica alargar la sesión ni multiplicar el presupuesto. Implica planificarlo antes de llegar.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS llevamos tiempo grabando content days donde una parte del material se destina directamente a YouTube Shorts. No como añadido de última hora, sino como formato previsto desde el principio. Lo que te cuento aquí es cómo funciona en la práctica: qué capturar, cómo organizarlo y qué errores evitar para que los clips no queden enterrados en el disco duro después de la sesión.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-youtube-shorts-sesion-estudio/hero.webp",
+        alt: "Icono de YouTube Shorts sobre fondo oscuro para contenido de marca",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué YouTube Shorts merece un hueco en tu sesión de estudio" },
+      {
+        type: "paragraph",
+        text: "YouTube Shorts tiene algo que Instagram Reels y TikTok no tienen en el mismo grado: alimenta directamente el canal de YouTube largo. Un Short que funciona puede derivar visitas al episodio completo, a la página de tu empresa o al vídeo de ventas anclado en el canal. El algoritmo favorece la consistencia en formatos mixtos: quienes combinan Shorts con vídeo largo tienen más probabilidad de que el canal crezca como sistema, no solo como un formato aislado.",
+      },
+      {
+        type: "paragraph",
+        text: "El segundo elemento que hace interesante Shorts para marcas y empresas es la búsqueda dentro de YouTube. YouTube es el segundo motor de búsqueda del mundo. Un Short bien titulado sobre un tema concreto —cómo preparar una sesión de grabación, qué micrófono usar para podcast— aparece en resultados de búsqueda cuando alguien busca ese término desde YouTube o Google. Eso es tráfico orgánico que los clips de Instagram no generan con la misma eficiencia.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar Shorts en una sesión de estudio" },
+      { type: "heading", level: 3, text: "Planifica los clips antes de entrar al estudio" },
+      {
+        type: "paragraph",
+        text: "El error más frecuente es llegar con la idea de aprovechar lo que sobra para Shorts. Eso rara vez funciona. Los clips que funcionan en Shorts tienen una estructura propia: gancho en los primeros 3 segundos, mensaje central claro y cierre con dirección concreta. Si eso no está pensado antes de llegar, lo que sale es material residual que no sirve para ningún formato. Prepara una lista de 5 a 10 ideas de Shorts —distintas del contenido largo que también vas a grabar— y llega con los puntos clave escritos por pieza.",
+      },
+      { type: "heading", level: 3, text: "Captura en vertical desde el primer momento" },
+      {
+        type: "paragraph",
+        text: "Grabar en horizontal y recortar en vertical para Shorts es el atajo que peor funciona. Pierdes un 40% de la imagen y el encuadre queda forzado. Si planeas publicar en Shorts, graba en 9:16 desde el principio, bien con la cámara principal en posición vertical o con una segunda cámara dedicada. En RCS, cuando los content days incluyen Shorts, montamos un ángulo vertical específico que no interfiere con el setup horizontal del resto de la sesión. Un trípode con un smartphone reciente —iPhone 15, Samsung S24— bien configurado es suficiente para la mayoría de casos.",
+      },
+      { type: "heading", level: 3, text: "Estructura el clip en 60 segundos o menos" },
+      {
+        type: "paragraph",
+        text: "YouTube Shorts admite hasta 3 minutos, pero los clips de entre 30 y 60 segundos tienen mejor retención. Eso significa que cada pieza tiene que tener una sola idea central. El formato que mejor funciona en Shorts desde un estudio: habla directa a cámara con un punto de vista concreto, una técnica que has probado o una pregunta del sector respondida sin rodeos. Si necesitas más de 60 segundos para explicarlo, probablemente es contenido de vídeo largo, no de Short.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-youtube-shorts-sesion-estudio/mid.webp",
+        alt: "Creador de contenido grabando vídeo vertical con smartphone en estudio profesional",
+        width: 1880,
+        height: 1253,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar YouTube Shorts en estudio" },
+      {
+        type: "list",
+        items: [
+          "Grabar en horizontal y recortar verticalmente después: se pierde encuadre y resolución en el 80% de los casos.",
+          "No preparar el gancho de los primeros 3 segundos: si el inicio no engancha, YouTube no distribuye el clip.",
+          "Meter demasiados temas en un solo Short: Shorts funciona con una sola idea, no con resúmenes de contenido largo.",
+          "Usar el audio del teléfono para el ángulo vertical: sincroniza siempre con el track limpio del setup principal.",
+          "Publicar sin descripción ni hashtags: YouTube Shorts necesita metadatos para aparecer en búsquedas.",
+          "Dejar los Shorts para el final de la sesión cuando la energía ya bajó: los primeros clips del día son siempre los más naturales.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántos YouTube Shorts puedo grabar en una sesión de 3 horas?",
+        answer: "Con preparación previa, entre 8 y 15 clips de 30-60 segundos. Si los Shorts son grabaciones independientes y no clips extraídos de contenido largo, calcula entre 10 y 20 minutos por pieza incluyendo tomas y revisión rápida.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito editar mucho los Shorts antes de publicarlos?",
+        answer: "No si el clip está bien grabado. Los Shorts que funcionan tienen edición mínima: corte limpio, subtítulos y poco más. Si hay que construir el clip con música, transiciones y efectos, el tiempo de edición sube y el resultado no siempre mejora. Graba bien y edita poco.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor grabar Shorts por separado o extraerlos del contenido largo?",
+        answer: "Lo más eficiente es tener ambas cosas en la misma sesión, pero planificadas por separado. Extraer clips de un episodio de podcast funciona bien para momentos con insight concreto. Los Shorts grabados directamente tienen más control sobre el gancho y la estructura. En RCS combinamos las dos opciones según el tipo de content day.",
+      },
+      {
+        type: "faq",
+        question: "¿YouTube Shorts tiene sentido para B2B o empresas?",
+        answer: "Sí, y más de lo que parece. No para alcance masivo, sino para aparecer en búsquedas concretas dentro de YouTube: términos de sector, preguntas técnicas, comparativas. Un Short de 45 segundos bien titulado sobre un problema que resuelve tu empresa aparece en resultados cuando alguien busca ese problema. Eso vale más que mil reproducciones de audiencia genérica.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres incluir YouTube Shorts en tu próximo content day en Madrid, en RCS lo planificamos contigo antes de llegar. Escríbenos desde /#contacto y te decimos qué tiene sentido según el tipo de contenido que produces.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

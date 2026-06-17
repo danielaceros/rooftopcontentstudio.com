@@ -146,6 +146,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #15. Imágenes Unsplash.",
   },
+  {
+    slug: "contenido-youtube-shorts-sesion-estudio",
+    keyword: "contenido youtube shorts sesion estudio",
+    intent: "informacional",
+    createdAt: "2026-06-17",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #16. Imágenes Unsplash/Pexels.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
