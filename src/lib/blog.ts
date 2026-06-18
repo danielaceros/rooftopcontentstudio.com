@@ -1948,6 +1948,114 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-grabar-jornada-intensiva-contenido",
+    title: "Qué grabar en una jornada intensiva de contenido",
+    description:
+      "Cómo estructurar qué grabar en una jornada intensiva de contenido: qué formatos priorizar, en qué orden y cómo salir del estudio con semanas de material listo.",
+    publishedAt: "2026-06-18",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["content day", "grabación", "estudio de grabación", "producción de contenido", "Madrid", "marca personal"],
+    keyword: "jornada intensiva de contenido",
+    intent: "informacional",
+    excerpt:
+      "Un día entero de estudio puede generar contenido para semanas. La clave está en saber qué grabar y en qué orden.",
+    seoTitle: "Jornada intensiva de contenido: qué grabar | RCS Madrid",
+    metaDescription:
+      "Jornada intensiva de contenido en estudio: qué formatos grabar, en qué orden y cómo sacar el máximo partido a un día entero de producción en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Una jornada intensiva de contenido no es grabar mucho de cualquier cosa. Es grabar lo que necesitas, en el orden correcto, para que al final del día tengas semanas de publicaciones listas. La diferencia entre salir con 40 clips útiles o con 4 que se usan está casi siempre en la planificación previa, no en el tiempo que pasas delante de la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS llevamos tiempo haciendo jornadas de este tipo con founders, equipos de marketing y marcas personales. Lo que hemos aprendido es simple: el orden importa tanto como el volumen. Si llegas sin un esquema de qué vas a grabar y en qué secuencia, pierdes las mejores horas del día en decisiones que debían estar tomadas antes de entrar en sala.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-grabar-jornada-intensiva-contenido/hero.webp",
+        alt: "Setup de grabación en estudio para jornada intensiva de contenido",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué una jornada intensiva cambia la escala" },
+      {
+        type: "paragraph",
+        text: "Grabar en sesiones sueltas de una hora tiene sentido para empezar. Pero a partir de cierto ritmo de publicación, esa dinámica es ineficiente. Cada vez que montas la cámara, calibras el sonido, preparas el set y entras en modo grabación, estás gastando energía que no produce contenido.",
+      },
+      {
+        type: "paragraph",
+        text: "Una jornada de 6-8 horas en estudio elimina ese coste fijo. Lo pagas una vez y grabas 3-4 semanas de material. El ratio esfuerzo/output cambia completamente. En RCS, la mayoría de los clientes que vienen una vez al mes sacan entre 15 y 30 piezas terminadas por sesión: vídeos largos para YouTube, clips cortos para LinkedIn o Instagram, pilares de podcast y en algunos casos testimonios o piezas de producto.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que mucha gente llega al estudio con buena energía pero sin un plan concreto de qué grabar. El resultado es material desordenado, formatos mezclados y tomas que no sirven para nada porque el contexto estaba mal planteado.",
+      },
+      { type: "heading", level: 2, text: "Cómo estructurar qué grabar" },
+      { type: "heading", level: 3, text: "Empieza por el contenido largo" },
+      {
+        type: "paragraph",
+        text: "Lo primero que debes grabar son los vídeos que requieren más concentración: episodios de podcast, tutoriales, vídeos de autoridad para YouTube. La mente está fresca, la voz no está cansada y los errores son menos frecuentes. Si tienes 3 episodios de podcast previstos, grába los 3 antes de pasar a cualquier otro formato. Cambiar entre formatos muy distintos en intervalos cortos fragmenta el estado mental y baja la calidad del resultado.",
+      },
+      { type: "heading", level: 3, text: "Después, los clips cortos" },
+      {
+        type: "paragraph",
+        text: "Una vez tienes el contenido largo grabado, los clips cortos son mucho más fáciles. Muchos salen directamente de cortar el material ya grabado, pero otros hay que plantearlos aparte: hooks directos a cámara, respuestas a preguntas frecuentes, tips de 60 segundos. Para LinkedIn o Instagram Reels, suelen bastar 2-3 minutos de grabación por clip. Con 10-12 clips tienes un mes de publicaciones.",
+      },
+      { type: "heading", level: 3, text: "Cierra con testimonios o entrevistas" },
+      {
+        type: "paragraph",
+        text: "Los testimonios, entrevistas o piezas donde solo hablas de un producto o servicio concreto van bien al final. No requieren el mismo nivel de energía narrativa que un tutorial, y si el invitado llega a media mañana, el timing encaja perfectamente. En RCS usamos multicámara para este tipo de grabaciones: Sony A7 como cámara principal y una segunda cámara en plano más cerrado para los cortes de edición.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-grabar-jornada-intensiva-contenido/mid.webp",
+        alt: "Cámara de vídeo profesional para content day en estudio",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al planificar la jornada" },
+      {
+        type: "list",
+        items: [
+          "Llegar sin guiones: la improvisación no escala. Aunque el formato sea conversacional, necesitas al menos un esquema de puntos por pieza.",
+          "Grabar clips cortos primero: si empiezas por los Reels, cuando llegues al podcast ya habrás gastado energía vocal y mental en tonos más cortos y rápidos.",
+          "No prever el tiempo de cambio de set: entre formato y formato hay 10-15 minutos de ajuste. En una jornada de 6 horas, eso es una hora entera si cambias de setup 4 veces.",
+          "Meter demasiados temas distintos en el mismo día: una jornada con 8 temas produce contenido disperso. Mejor 3 temas bien desarrollados con variaciones de formato.",
+          "No marcar los mejores takes al terminar: si entregas el material sin referencias, el editor tarda el doble y el output final baja.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántos vídeos se pueden grabar en una jornada de 6 horas?",
+        answer: "Depende del formato y la complejidad. Una jornada bien planificada en RCS suele producir entre 2 y 4 vídeos largos de 10-20 minutos más 8-15 clips cortos. Si el foco son solo clips cortos de 60-90 segundos, el número puede superar los 20.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor grabar todo en un día o repartirlo en varias sesiones?",
+        answer: "Depende del ritmo de publicación. Si publicas a diario o muy seguido, una jornada mensual es más eficiente. Si publicas 2-3 veces por semana, puede tener más sentido venir cada 2 semanas con menos material por sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta llevar el guión escrito o vale con notas?",
+        answer: "Para vídeos de más de 5 minutos, siempre es mejor guión o al menos bullets detallados. En RCS usamos teleprompter para quienes prefieren leer sin que se note, pero incluso con notas en mano el resultado mejora frente a improvisar desde cero.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué equipo usa RCS en una jornada intensiva multicámara?",
+        answer: "La configuración estándar incluye Sony A7 en plano principal, segunda cámara para plano cerrado, micrófonos de solapa o de estudio según el formato, kit de luz LED con difusores y el fondo de ático de Madrid. El audio va a un interface Focusrite y se graba en pistas separadas para mayor flexibilidad en edición.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás pensando en organizar tu primera jornada intensiva de contenido o quieres mejorar cómo estructuras las que ya haces, en RCS planificamos la sesión contigo antes del día de grabación. El tiempo en estudio es más productivo cuando lo que vas a grabar ya está decidido. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

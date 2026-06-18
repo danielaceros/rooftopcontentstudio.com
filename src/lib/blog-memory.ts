@@ -154,6 +154,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #16. Imágenes Unsplash/Pexels.",
   },
+  {
+    slug: "que-grabar-jornada-intensiva-contenido",
+    keyword: "jornada intensiva de contenido",
+    intent: "informacional",
+    createdAt: "2026-06-18",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #17. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
