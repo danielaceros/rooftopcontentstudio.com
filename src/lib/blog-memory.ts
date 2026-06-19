@@ -162,6 +162,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #17. Imágenes Unsplash.",
   },
+  {
+    slug: "como-preparar-invitado-grabar-podcast",
+    keyword: "como preparar invitado grabar podcast",
+    intent: "informacional",
+    createdAt: "2026-06-19",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #18. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

@@ -2056,6 +2056,114 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-preparar-invitado-grabar-podcast",
+    title: "Cómo preparar a un invitado para grabar un podcast",
+    description:
+      "Guía práctica para preparar a tus invitados antes de la sesión de podcast en estudio: qué enviarles, cómo hacer el briefing y qué errores evitar para que la grabación fluya.",
+    publishedAt: "2026-06-19",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["podcast", "grabación", "invitados", "estudio", "Madrid", "producción"],
+    keyword: "como preparar invitado grabar podcast",
+    intent: "informacional",
+    excerpt:
+      "Preparar bien a un invitado antes de la grabación marca la diferencia entre una conversación forzada y una entrevista que engancha desde el minuto uno.",
+    seoTitle: "Cómo preparar a un invitado para podcast | RCS Madrid",
+    metaDescription:
+      "Cómo preparar a un invitado para grabar un podcast: briefing de temas, llamada previa y errores a evitar para que la sesión fluya desde el minuto uno.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Traer a un invitado al estudio es una de las mejores formas de enriquecer un podcast. Pero si esa persona llega sin haber leído nada, sin saber qué esperar y con los nervios a flor de piel, los primeros 20 minutos de grabación se van en que empiece a sonar natural. Eso es tiempo y energía que se puede ahorrar con muy poco trabajo previo.",
+      },
+      {
+        type: "paragraph",
+        text: "He grabado suficientes episodios en RCS como para saber que la diferencia entre una entrevista que fluye y una que se nota forzada rara vez está en el equipo. Está en la preparación del invitado. No hace falta un briefing largo ni una llamada de una hora. Hace falta darle la información correcta en el momento correcto para que llegue al estudio con claridad.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-preparar-invitado-grabar-podcast/hero.webp",
+        alt: "Estudio de podcast con micrófono profesional y auriculares listos para grabar una entrevista",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la preparación del invitado cambia el resultado" },
+      {
+        type: "paragraph",
+        text: "Cuando alguien llega al estudio por primera vez, está procesando muchas cosas a la vez: el espacio, los micrófonos, las cámaras, las luces. Su cerebro está en modo exploración, no en modo conversación. Si además no sabe bien de qué vais a hablar ni cuánto tiempo dura la grabación, el arranque es lento y la confianza tarda en llegar.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que ese tiempo de calentamiento se graba. Y si estás en formato solo audio, lo puedes cortar fácil. Pero si grabas en vídeo y quieres aprovechar clips del principio del episodio, necesitas que la energía esté ahí desde el minuto uno. Por eso la preparación no es un extra: es parte del proceso de producción.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, un invitado bien preparado habla con más concisión. Sabe lo que viene. No necesita titubear mientras intenta recordar de qué fuente sacó ese dato. Y eso se traduce en frases más limpias, menos cortes y mejor material para clips de redes.",
+      },
+      { type: "heading", level: 2, text: "Cómo prepararlo antes del día de grabación" },
+      { type: "heading", level: 3, text: "Envíale los temas y el formato por adelantado" },
+      {
+        type: "paragraph",
+        text: "No hace falta mandarle las preguntas exactas. De hecho, si las memoriza todas, la conversación pierde espontaneidad. Lo que sí funciona es enviarle un bloque de 3 a 5 ejes temáticos con una frase cada uno: qué cambió en tu forma de trabajar desde que empezaste, qué le dirías a quien empieza hoy, cuál fue el error más caro que cometiste. Eso da estructura sin cortar la conversación.",
+      },
+      { type: "heading", level: 3, text: "Dile qué llevar y cómo vestir" },
+      {
+        type: "paragraph",
+        text: "Que llegue descansado, con ropa sin estampados muy llamativos (generan ruido visual en cámara) y sin colonia intensa si habrá micrófonos de solapa. Si grabáis también en remoto o estáis pensando en episodios híbridos, añade instrucciones básicas de audio: auriculares cableados, habitación sin eco, micrófono USB si lo tiene.",
+      },
+      { type: "heading", level: 3, text: "Haz una llamada de 15 minutos antes de grabar" },
+      {
+        type: "paragraph",
+        text: "No para repasar todo el guión. Para dos cosas: primero, que el invitado te oiga y te asocie con la experiencia que ya le explicaste por escrito. Segundo, para confirmar que tiene claro el objetivo del episodio. Qué quieres que se lleve quien escuche esto es la mejor pregunta de esa llamada. La respuesta te da el eje de la entrevista.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-preparar-invitado-grabar-podcast/mid.webp",
+        alt: "Micrófono de estudio y auriculares preparados para una sesión de grabación de podcast con invitado",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al llevar invitados al estudio" },
+      {
+        type: "list",
+        items: [
+          "Asumir que el invitado ya sabe cómo funciona un estudio de grabación.",
+          "Mandar toda la lista de preguntas y que la entrevista parezca un examen.",
+          "No explicar la duración: el invitado bloquea solo una hora y la sesión necesita dos.",
+          "Olvidar mencionar que habrá cámaras, no solo micrófonos.",
+          "Empezar la grabación sin un momento de conversación informal para romper el hielo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Hay que mandar un guión completo al invitado antes de grabar?",
+        answer: "No. Un guión completo hace que la conversación suene ensayada. Lo ideal es enviar los bloques temáticos y dos o tres preguntas de arranque. El resto surge en el estudio.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo antes se envía el briefing al invitado?",
+        answer: "Con 48 a 72 horas de antelación es suficiente. Si se lo mandas con demasiada antelación puede que lo haya olvidado. Si es el mismo día, llega sin haberlo procesado.",
+      },
+      {
+        type: "faq",
+        question: "¿Merece la pena hacer una sesión de prueba en estudio con el invitado?",
+        answer: "Solo si es alguien muy poco habitual ante cámaras y el episodio tiene mucho peso. Para la mayoría, el tiempo en estudio se aprovecha mejor grabando directamente con 10 minutos de calentamiento informal al inicio.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar con más de un invitado a la vez?",
+        answer: "Sí. En RCS hemos grabado episodios de debate con tres participantes. La clave es que cada uno tenga micro propio y que todos conozcan las reglas básicas: hablar uno a uno, no interrumpir y mantener la posición respecto al micrófono.",
+      },
+      {
+        type: "paragraph",
+        text: "Preparar bien a un invitado no requiere mucho tiempo, pero sí requiere hacerlo con intención. Si estás planificando un episodio con alguien externo y quieres que el resultado sea aprovechable para clips, newsletters y contenido de redes, en RCS podemos ayudarte a estructurar la sesión antes del día de grabación. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
