@@ -2164,6 +2164,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "edicion-video-rapida-vs-edicion-que-convierte",
+    title: "La diferencia entre edición de vídeo rápida y edición que convierte",
+    description:
+      "No toda la edición vale igual. La diferencia entre montar clips y editar para que el espectador haga algo es técnica, pero sobre todo es de criterio.",
+    publishedAt: "2026-06-23",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["edición de vídeo", "producción de contenido", "marketing de contenidos", "estudio Madrid", "conversión"],
+    keyword: "edicion de video rapida vs edicion que convierte",
+    intent: "informacional",
+    excerpt:
+      "No toda la edición vale igual. La diferencia entre montar clips y editar para que el espectador haga algo es técnica, pero sobre todo es de criterio.",
+    seoTitle: "Edición de vídeo que convierte: qué cambia | RCS Madrid",
+    metaDescription:
+      "Edición rápida y edición que convierte no son lo mismo. Qué diferencia el montaje eficiente del que genera resultados reales para tu marca.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien dice edítame esto rápido entiende recortes limpios, silencios cortados, música de fondo y entrega en el día. Eso es edición. Funciona. Pero hay otro tipo de edición que no solo elimina lo que sobra, sino que organiza, dirige la atención y lleva al espectador a hacer algo concreto al terminar de ver.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS trabajamos los dos. El primero para quien necesita velocidad y volumen. El segundo para quien quiere que cada pieza sea un activo real. La diferencia no está en el programa que usas ni en el editor que contratas. Está en el criterio con el que se toman las decisiones de montaje.",
+      },
+      {
+        type: "image",
+        src: "/blog/edicion-video-rapida-vs-edicion-que-convierte/hero.webp",
+        alt: "Timeline de edición de vídeo en Premiere Pro en pantalla profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué distingue una edición de la otra" },
+      {
+        type: "paragraph",
+        text: "La edición rápida parte de los brutos, elimina errores técnicos, iguala audio y vídeo, añade gráficos básicos y entrega. Es útil y necesaria para contenido de volumen: clips de redes, cortes de eventos, fragmentos de directos. No hay nada malo en hacerlo así cuando el objetivo es presencia y frecuencia.",
+      },
+      {
+        type: "paragraph",
+        text: "La edición que convierte empieza antes del montaje. Empieza en la pregunta: ¿qué quiero que haga el espectador cuando termine de ver esto? Y desde esa pregunta organiza cada segundo. No elimina silencios porque sí. Los elimina cuando distraen. Los deja cuando generan tensión o peso en el argumento.",
+      },
+      {
+        type: "paragraph",
+        text: "El resultado visual puede parecer idéntico. Mismas transiciones, mismo color, misma duración. Pero el espectador lo percibe diferente aunque no sea consciente de por qué.",
+      },
+      { type: "heading", level: 2, text: "Cómo se construye una edición que convierte" },
+      { type: "heading", level: 3, text: "Estructura narrativa antes de abrir el timeline" },
+      {
+        type: "paragraph",
+        text: "El montaje empieza en el guión o en la sala, no en DaVinci Resolve o Premiere. Antes de tocar un clip hay que decidir qué va primero, dónde está el gancho y cuándo llega la resolución. Un editor sin ese mapa edita bien técnicamente pero sin dirección. En RCS el proceso siempre pasa por revisar la estructura del material antes de montar.",
+      },
+      { type: "heading", level: 3, text: "Ritmo controlado, no automático" },
+      {
+        type: "paragraph",
+        text: "La velocidad de corte no es un estilo, es una herramienta. Los cortes rápidos generan energía. Los cortes lentos generan credibilidad y peso. Si cortas todo al mismo ritmo, el espectador se desconecta. Una edición que convierte usa el ritmo como palanca: acelera en la demostración, frena en el argumento central. Eso no ocurre con ningún preset ni plantilla de CapCut aplicada sin criterio.",
+      },
+      { type: "heading", level: 3, text: "El CTA integrado, no pegado al final" },
+      {
+        type: "paragraph",
+        text: "La mayoría de vídeos ponen el CTA como crédito de cierre: sígueme, escríbeme, link en bio. Eso es CTA pegado. En una edición que convierte el CTA surge del contenido: la última frase crea la necesidad y el espectador ya está listo para dar el paso antes de que se lo pidas. No es una petición, es una consecuencia natural de lo que acaba de ver.",
+      },
+      {
+        type: "image",
+        src: "/blog/edicion-video-rapida-vs-edicion-que-convierte/mid.webp",
+        alt: "Pantalla de edición de vídeo en iMac con teclado y ratón Apple en mesa de trabajo",
+        width: 1920,
+        height: 1288,
+      },
+      { type: "heading", level: 2, text: "Cuándo usar cada tipo de edición" },
+      {
+        type: "list",
+        items: [
+          "Clips de redes de bajo riesgo, stories o fragmentos de directos: edición rápida, suficiente.",
+          "Contenido de autoridad en LinkedIn, reflexiones o guías largas: edición que convierte.",
+          "VSL, vídeos de ventas o presentaciones de producto: siempre edición con criterio de conversión.",
+          "Entrevistas que luego se convierten en clips: empieza con criterio de conversión desde el montaje principal.",
+          "Testimonios o casos de éxito de clientes: no hay margen para edición descuidada, cada segundo de duda es una fuga.",
+          "Contenido de branding puro sin CTA directo: balance entre dejar marca y no forzar una acción.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda más una edición que convierte respecto a una rápida?",
+        answer: "Depende del material, pero en proyectos de 3-5 minutos el tiempo puede ser el doble. No porque haya más clics, sino porque hay más decisiones. El editor necesita revisar los brutos con criterio estratégico, no mecánicamente.",
+      },
+      {
+        type: "faq",
+        question: "¿Con CapCut o Premiere se puede hacer edición que convierte?",
+        answer: "Sí. El programa no importa. Lo que importa es el proceso previo: estructura, objetivo, ritmo. CapCut bien utilizado con criterio supera a Premiere usado de forma mecánica.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué información necesito dar al editor para que la edición convierta?",
+        answer: "El objetivo del vídeo, a quién va dirigido y qué acción quieres que tome el espectador al terminar. Con eso hay suficiente para orientar el montaje. Sin eso, el editor monta lo que ve, no lo que necesitas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo empezar con edición rápida y escalar después?",
+        answer: "Sí, y tiene sentido si estás validando formatos. Cuando sepas qué tipo de contenido funciona para tu audiencia, ya inviertes en el criterio editorial. Muchos de nuestros clientes en RCS hacen exactamente ese recorrido.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes brutos de sesiones anteriores y no estás seguro de si la edición está funcionando, lo primero es revisar el criterio editorial. En RCS trabajamos tanto la grabación como la postproducción. Cuéntanos qué tienes y qué quieres conseguir desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

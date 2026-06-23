@@ -170,6 +170,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #18. Imágenes Unsplash.",
   },
+  {
+    slug: "edicion-video-rapida-vs-edicion-que-convierte",
+    keyword: "edicion de video rapida vs edicion que convierte",
+    intent: "informacional",
+    createdAt: "2026-06-23",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #19. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
