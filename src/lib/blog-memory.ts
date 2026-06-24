@@ -178,6 +178,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #19. Imágenes Unsplash.",
   },
+  {
+    slug: "cuando-contratar-produccion-completa-vs-solo-grabacion",
+    keyword: "cuando contratar produccion completa vs solo grabacion",
+    intent: "informacional",
+    createdAt: "2026-06-24",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #20. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

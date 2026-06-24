@@ -2273,6 +2273,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cuando-contratar-produccion-completa-vs-solo-grabacion",
+    title: "Cuándo contratar producción completa vs solo grabación",
+    description:
+      "No siempre necesitas producción completa. Pero a veces ahorrarte la edición es el peor ahorro posible. Guía para elegir el servicio correcto según tu proyecto.",
+    publishedAt: "2026-06-24",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["producción de contenido", "grabación madrid", "edición de vídeo", "estudio madrid", "podcast", "vídeo profesional"],
+    keyword: "cuando contratar produccion completa vs solo grabacion",
+    intent: "informacional",
+    excerpt:
+      "No siempre necesitas producción completa. Pero a veces, ahorrarte la edición es el peor ahorro posible. Esto es lo que tienes que saber antes de decidir.",
+    seoTitle: "Producción completa vs solo grabación | RCS Madrid",
+    metaDescription:
+      "Cuándo contratar producción completa vs solo grabación: guía para elegir el servicio correcto según tu proyecto, equipo y presupuesto en RCS Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien llama a RCS, lo primero que pregunta es el precio. Lo segundo, qué incluye. Y ahí empieza siempre la misma conversación: depende de lo que quieres hacer con lo que grabamos. Los tres servicios —Solo Grabación, Grabación + Edición y Producción Completa— no son versiones del mismo servicio. Son enfoques distintos para necesidades distintas. Elegir mal no solo cuesta dinero: cuesta tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "He visto proyectos que pagaron Producción Completa cuando con Solo Grabación les habría sobrado. Y otros que eligieron Solo Grabación y el material acabó en un disco duro sin publicar porque no tenían quién lo editara. La decisión correcta no depende del presupuesto, sino de dónde está tu cuello de botella real.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuando-contratar-produccion-completa-vs-solo-grabacion/hero.webp",
+        alt: "Estudio de vídeo profesional con cámara y equipo de producción configurado",
+        width: 1920,
+        height: 1282,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué diferencia real hay entre los tres servicios" },
+      {
+        type: "paragraph",
+        text: "Solo Grabación te da el material bruto. Sales del estudio con los archivos y haces con ellos lo que quieras. Es el punto de partida para equipos que ya tienen edición interna o para creators que prefieren controlar cada corte.",
+      },
+      {
+        type: "paragraph",
+        text: "Grabación + Edición te da el vídeo terminado. Grabamos y montamos: cortes, música, títulos, subtítulos si los necesitas. Es el servicio más habitual en RCS porque cubre el 80% de los casos: podcast, entrevistas, reels para empresa, clips de LinkedIn.",
+      },
+      {
+        type: "paragraph",
+        text: "Producción Completa va un paso más. Incluye preproducción —guión, escaleta, dinámica de cámara— más grabación y postproducción completa. Es para proyectos donde el cliente no quiere pensar en nada excepto aparecer delante de cámara y que el resultado quede bien desde el primer frame.",
+      },
+      { type: "heading", level: 2, text: "Cómo elegir según tu situación" },
+      { type: "heading", level: 3, text: "Si ya tienes editor" },
+      {
+        type: "paragraph",
+        text: "Si tu empresa tiene un equipo de vídeo o un editor freelance de confianza, Solo Grabación tiene sentido. El estudio te da calidad de imagen y audio que tu editor aprovecha al máximo. No tiene sentido pagar por edición que ya tienes cubierta por otro lado.",
+      },
+      { type: "heading", level: 3, text: "Si el tiempo es el recurso escaso" },
+      {
+        type: "paragraph",
+        text: "Para un founder o CEO que graba una vez al mes, la edición es una fricción que mata la constancia. Grabación + Edición elimina esa fricción: grabas, te vas y recibes el material listo en 24-48 horas. No hay que hacer seguimiento ni coordinar a nadie: el ciclo completo queda cerrado con una sola sesión.",
+      },
+      { type: "heading", level: 3, text: "Si arrancas desde cero" },
+      {
+        type: "paragraph",
+        text: "Si no tienes guión, no sabes cuántas cámaras necesitas ni tienes claro el formato, Producción Completa es lo correcto. No porque sea el servicio más caro, sino porque la preproducción cambia el resultado. Un guión bien trabajado puede doblar el número de clips útiles que sacas de una mañana de grabación. Sin él, grabas más tiempo del necesario y editas más de lo que tendrías que editar.",
+      },
+      {
+        type: "image",
+        src: "/blog/cuando-contratar-produccion-completa-vs-solo-grabacion/mid.webp",
+        alt: "Operador de cámara sosteniendo equipo de vídeo profesional en sesión de grabación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido cada opción" },
+      {
+        type: "list",
+        items: [
+          "Solo Grabación: si tienes edición interna o el material va a un flujo de postproducción ya establecido.",
+          "Solo Grabación no tiene sentido si vas a tardar semanas en editar porque no tienes tiempo: acabarás sin publicar nada.",
+          "Grabación + Edición es la opción por defecto para la mayoría de proyectos: podcast, entrevistas, vídeos de LinkedIn, reels.",
+          "Producción Completa encaja en lanzamientos de producto, series con identidad visual específica o cuando el cliente no ha grabado contenido profesional antes.",
+          "Contratar Producción Completa para un reel semanal es sobredimensionar; contratar Solo Grabación para una VSL sin guión previo es quedarse corto.",
+          "El cuello de botella real suele ser el tiempo, no el dinero. Elige el servicio que elimina ese cuello de botella.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo empezar con Solo Grabación y pasar a Producción Completa más adelante?",
+        answer: "Sí, y es un camino habitual. Muchos clientes empiezan grabando y editando por su cuenta para entender qué necesitan, y cuando escalan el volumen de contenido pasan a Grabación + Edición o Producción Completa.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo tarda la entrega en cada servicio?",
+        answer: "Con Solo Grabación los archivos están disponibles el mismo día. Con Grabación + Edición entregamos en 48-72 horas. Con Producción Completa los plazos dependen de la preproducción: habitualmente entre 5 y 10 días hábiles desde la sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿La Producción Completa incluye guión o solo edición avanzada?",
+        answer: "Incluye preproducción completa: guión o escaleta, planificación de cámara y dinámica de entrevista o presentación. No es solo edición con más capas: es un trabajo previo que define cómo se va a grabar y maximiza el material útil de la sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué servicio recomendáis para un podcast con vídeo semanal?",
+        answer: "Grabación + Edición. Para un podcast semanal donde necesitas cortes para LinkedIn, Instagram y YouTube, el ciclo de entrega tiene que ser rápido y sin fricciones. Producción Completa tiene más sentido para proyectos de lanzamiento o series con identidad visual muy definida.",
+      },
+      {
+        type: "paragraph",
+        text: "La elección entre servicios no es solo una cuestión de presupuesto. Es una cuestión de cuál es tu cuello de botella y cuánto vale tu tiempo. Si tienes dudas sobre qué tiene sentido para tu proyecto, escríbenos desde /#contacto y lo vemos juntos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
