@@ -2382,6 +2382,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "contenido-recurrente-marca-constancia",
+    title: "Contenido recurrente para marca: por qué la constancia es el activo real",
+    description:
+      "Publicar de forma constante construye más confianza que cualquier campaña puntual. Cómo estructurar contenido recurrente para tu marca desde un estudio en Madrid.",
+    publishedAt: "2026-06-25",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["contenido recurrente", "marca", "constancia", "estrategia de contenido", "Madrid", "producción"],
+    keyword: "contenido recurrente para marca",
+    intent: "informacional",
+    excerpt:
+      "Publicar de forma constante construye más confianza que cualquier campaña puntual. Te contamos cómo estructurar contenido recurrente para tu marca desde una sesión de estudio.",
+    seoTitle: "Contenido recurrente para marca | RCS Madrid",
+    metaDescription:
+      "Contenido recurrente para marca: por qué la constancia genera más autoridad que cualquier campaña puntual y cómo estructurarlo desde un estudio en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay marcas que lanzan una campaña de contenido, generan mucho ruido durante dos semanas y luego desaparecen. Y hay marcas que llevan meses publicando sin grandes golpes de efecto pero que cada vez que aparecen en el feed, el algoritmo las impulsa y el público las reconoce. La diferencia no está en el presupuesto ni en la calidad de cada pieza individual. Está en la constancia.",
+      },
+      {
+        type: "paragraph",
+        text: "La constancia en el contenido no es un principio motivacional. Es una mecánica. El algoritmo premia la regularidad, los seguidores se acostumbran a esperar tus piezas, y el banco de contenido acumulado genera tráfico orgánico mes tras mes. Este artículo explica cómo estructurar el contenido recurrente de una marca para que sea sostenible, no una carrera contra el tiempo.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-recurrente-marca-constancia/hero.webp",
+        alt: "Profesional grabando contenido en estudio con equipo de iluminación y cámara",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el contenido recurrente y por qué importa tanto" },
+      {
+        type: "paragraph",
+        text: "El contenido recurrente no es publicar mucho. Es publicar de forma predecible. Una newsletter cada martes, un podcast cada jueves, tres reels a la semana. La regularidad crea un contrato implícito con tu audiencia: saben cuándo esperarte. Y eso vale más que un vídeo viral que no tiene continuación.",
+      },
+      {
+        type: "paragraph",
+        text: "El algoritmo de LinkedIn, Instagram o YouTube no trabaja por impactos puntuales. Trabaja por señales de actividad sostenida. Una cuenta que publica semanalmente durante seis meses recibe un tratamiento completamente distinto al de una que publicó 20 veces en enero y luego nada. La consistencia envía señales de confianza que acaban traduciéndose en alcance orgánico.",
+      },
+      {
+        type: "paragraph",
+        text: "Pero el efecto más potente no es a corto plazo. Es el acumulado. El post que publicas hoy empieza a posicionarse en Google dentro de 3 meses. El episodio de podcast que grabas esta semana puede seguir atrayendo escuchas en dos años. La constancia convierte el contenido en un activo, no en un gasto de energía.",
+      },
+      { type: "heading", level: 2, text: "Cómo estructurar el contenido recurrente" },
+      { type: "heading", level: 3, text: "Define un formato ancla" },
+      {
+        type: "paragraph",
+        text: "El error más frecuente es intentar estar en todos los sitios al mismo tiempo sin un formato central. El formato ancla es la pieza que grabas sistemáticamente: un podcast semanal, una entrevista de LinkedIn cada dos semanas, una serie de reels de producto. Ese formato elimina la parálisis de la hoja en blanco porque la decisión ya está tomada. No hay que replantearse qué grabar: solo hay que ejecutar.",
+      },
+      { type: "heading", level: 3, text: "Agrupa la producción en sesiones" },
+      {
+        type: "paragraph",
+        text: "La constancia no obliga a grabar cada semana. En RCS vemos habitualmente cómo una sesión de 3-4 horas genera entre 4 y 8 semanas de contenido publicable. El proceso es simple: se planifican los temas antes de llegar al estudio, se graba en bloques y se sale con el material bruto para editar y distribuir en los días siguientes. Una vez al mes en estudio puede ser suficiente para mantener una presencia semanal sólida.",
+      },
+      { type: "heading", level: 3, text: "Adapta el mismo material a distintos canales" },
+      {
+        type: "paragraph",
+        text: "De una sesión de podcast sale mucho más que el episodio. Sale el vídeo completo para YouTube, 3-4 clips cortos para LinkedIn, 2 reels verticales para Instagram, un fragmento para newsletter y potencialmente un artículo de blog basado en el tema tratado. Sin reinventar nada, el mismo material llega a 5 canales distintos. Esto multiplica el impacto de cada sesión de grabación sin multiplicar el tiempo de producción.",
+      },
+      {
+        type: "image",
+        src: "/blog/contenido-recurrente-marca-constancia/mid.webp",
+        alt: "Calendario editorial con planificación de contenido mensual",
+        width: 1920,
+        height: 1281,
+      },
+      { type: "heading", level: 2, text: "Señales de que tu estrategia de contenido no es sostenible" },
+      {
+        type: "list",
+        items: [
+          "Publicas en rachas de 2-3 semanas seguidas y luego desapareces 1 mes completo.",
+          "Cada pieza requiere una reunión interna de aprobación antes de salir al aire.",
+          "Grabas, editas y publicas el mismo día: no hay colchón de contenido preparado.",
+          "No tienes banco de material: si esta semana no grabas, esta semana no publicas.",
+          "El equipo debate desde cero el tema de cada pieza, sin un calendario editorial previo.",
+          "La calidad varía enormemente entre piezas porque no hay proceso ni plantilla definida.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Con qué frecuencia debería publicar una marca?",
+        answer: "Depende del canal y de los recursos disponibles, pero como regla general: al menos una vez por semana en LinkedIn si haces contenido de autoridad, y 3 veces por semana en Instagram si el foco está en reels. Lo más importante no es la frecuencia máxima que puedas sostener un mes; es la mínima que puedas mantener durante un año.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto contenido se puede producir en una sesión de estudio?",
+        answer: "Con una planificación previa adecuada, una sesión de 3-4 horas en RCS genera habitualmente entre 4 y 8 semanas de contenido distribuible. El volumen depende del tipo de formato: un podcast con clips tiene mayor rendimiento por hora grabada que una VSL de producto que requiere más precisión.",
+      },
+      {
+        type: "faq",
+        question: "¿El contenido recurrente funciona si soy una empresa pequeña?",
+        answer: "Especialmente para empresas pequeñas. Las marcas grandes tienen presupuesto para campañas puntuales de alto impacto. Las pequeñas compiten con constancia y especificidad: publicar sistemáticamente sobre un nicho concreto genera más autoridad que intentar aparecer en todos los frentes con piezas dispersas.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo se mide si el contenido recurrente está funcionando?",
+        answer: "Las métricas que importan no son los likes de cada pieza sino las tendencias a 90 días: crecimiento de seguidores, tráfico orgánico acumulado, solicitudes de contacto entrantes y posicionamiento en buscadores. El contenido recurrente tarda entre 3 y 6 meses en mostrar resultados claros. Medir a las 2 semanas solo produce frustración.",
+      },
+      {
+        type: "paragraph",
+        text: "Construir un sistema de contenido recurrente es una de las mejores inversiones que puede hacer una marca. No requiere grandes presupuestos, pero sí requiere planificación, un espacio donde producir sin fricción y un proceso que permita sostenerlo en el tiempo. Si quieres ver cómo encaja en tu situación concreta, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

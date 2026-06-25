@@ -186,6 +186,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #20. Imágenes Unsplash.",
   },
+  {
+    slug: "contenido-recurrente-marca-constancia",
+    keyword: "contenido recurrente para marca",
+    intent: "informacional",
+    createdAt: "2026-06-25",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #21. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
