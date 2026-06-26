@@ -194,6 +194,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #21. Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-testimonios-casos-exito-empresa",
+    keyword: "grabacion de testimonios para empresa",
+    intent: "informacional",
+    createdAt: "2026-06-26",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #22. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

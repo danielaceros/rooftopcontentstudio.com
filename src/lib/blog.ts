@@ -2491,6 +2491,139 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-testimonios-casos-exito-empresa",
+    title: "Grabación de testimonios y casos de éxito para empresa: cómo hacerlo bien",
+    description:
+      "Cómo grabar testimonios de clientes y casos de éxito que generen confianza. Guía práctica sobre preparación, técnica y preguntas desde el estudio RCS en Madrid.",
+    publishedAt: "2026-06-26",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["testimonios empresa", "casos de éxito", "grabación vídeo", "contenido B2B", "Madrid"],
+    keyword: "grabacion de testimonios para empresa",
+    intent: "informacional",
+    excerpt:
+      "Grabar un testimonio de cliente mal resulta contraproducente. Guía para hacerlo bien: espacio, preguntas, técnica y errores que evitar.",
+    seoTitle: "Grabación de testimonios para empresa | RCS Madrid",
+    metaDescription:
+      "Cómo grabar testimonios de clientes y casos de éxito que generen confianza. Guía práctica desde el estudio RCS en Madrid centro.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un testimonio de cliente mal grabado puede hacer más daño que no tener ninguno. Si el vídeo se ve oscuro, el audio suena a llamada de WhatsApp y la persona parece que está leyendo un guión, el mensaje que transmites es el contrario al que buscabas. La cámara amplifica la incomodidad igual que amplifica la autenticidad.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS hemos grabado testimonios y piezas de casos de éxito para equipos de marketing, agencias y empresas que necesitan ese tipo de contenido para cerrar ventas, justificar inversiones o reforzar la credibilidad en licitaciones. Lo que marca la diferencia no es el presupuesto: es el proceso.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-testimonios-casos-exito-empresa/hero.webp",
+        alt: "Grabación de vídeo corporativo en estudio profesional",
+        width: 1920,
+        height: 1282,
+        priority: true,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Por qué el testimonio en vídeo es el contenido más difícil de fabricar",
+      },
+      {
+        type: "paragraph",
+        text: "Cualquier marca puede escribir que sus clientes están satisfechos. El vídeo no se puede fingir igual. Cuando un cliente real habla frente a cámara con naturalidad, sin parecer que está recitando, el impacto en quien lo ve es cualitativamente distinto a una reseña de texto o un logo en un apartado de clientes.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso explica por qué los equipos de ventas B2B que trabajan con nosotros priorizan este formato para decks de presentación, propuestas y follow-ups. Un vídeo de 90 segundos con un cliente real explicando qué problema resolvió y por qué eligió al proveedor puede sustituir varias páginas de documentación.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Cómo se graba un testimonio que genera confianza",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "La preparación con la persona antes de grabar",
+      },
+      {
+        type: "paragraph",
+        text: "No se trata de darle un guión. Se trata de tener una conversación de 10-15 minutos antes de encender la cámara para que llegue sabiendo qué se le va a preguntar y por qué. Nadie habla bien cuando está sorprendido. En RCS preparamos al entrevistado con una lista de 4-5 preguntas abiertas que compartimos con antelación, no para que ensaye respuestas, sino para que llegue pensado. La diferencia en el lenguaje corporal es inmediata.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "El espacio, la cámara y el sonido",
+      },
+      {
+        type: "paragraph",
+        text: "Un testimonio grabado en una sala de reuniones con luz de techo y el aire acondicionado de fondo no va a funcionar aunque lo que diga la persona sea brillante. La calidad técnica condiciona la credibilidad. En el ático de RCS trabajamos con cámaras Sony A7 en plano americano o medio, iluminación Aputure suave que no hace que el entrevistado entorne los ojos, y micrófono de solapa Rode para aislar el audio del ambiente de Madrid centro. El resultado tiene el aspecto de un documental corto, no de una grabación de videoconferencia.",
+      },
+      {
+        type: "heading",
+        level: 3,
+        text: "Las preguntas que funcionan",
+      },
+      {
+        type: "paragraph",
+        text: "Las peores preguntas para un testimonio son las que se responden con sí o no. '¿Estás satisfecho con el servicio?' produce exactamente el tipo de respuesta plana que no convence a nadie. Las preguntas que funcionan son abiertas: '¿Cómo era la situación antes de empezar?', '¿Qué fue lo que más te sorprendió?', '¿A quién le recomendarías esto?'. El patrón es siempre situación — cambio — recomendación. Esas tres respuestas, bien grabadas, montan solas.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-testimonios-casos-exito-empresa/mid.webp",
+        alt: "Setup de cámara para entrevista de vídeo profesional",
+        width: 1920,
+        height: 1280,
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Errores comunes que arruinan un testimonio en vídeo",
+      },
+      {
+        type: "list",
+        items: [
+          "Dar el guión completo al entrevistado: el resultado siempre suena a texto leído.",
+          "Grabar en la oficina del cliente sin controlar el espacio: fondos caóticos, luz cenital, ruido de ambiente.",
+          "Plano fijo a demasiada distancia: pierde conexión emocional. El plano medio funciona mejor.",
+          "No dejar silencios: el nerviosismo del entrevistador llena con preguntas los momentos donde el cliente iba a decir algo valioso.",
+          "Editar con demasiados elementos corporativos: logos en pantalla, música intrusiva, texto sobre texto. El testimonio vive de la cara y la voz.",
+          "No grabar planos de recurso: siempre hacen falta para que el editor monte sin jump cuts visibles.",
+        ],
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Preguntas frecuentes",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una grabación de testimonios?",
+        answer: "Una sesión de 3 horas permite grabar cómodamente entre 3 y 5 testimonios. El tiempo por persona es de 20-30 minutos de grabación real, más preparación y transición entre entrevistados. Si el plan incluye edición, la entrega puede estar lista en 24-48 horas con subtítulos y corte vertical para redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesita el entrevistado alguna preparación especial?",
+        answer: "Solo recibir las preguntas con antelación y venir descansado. Recomendamos evitar ropa con rayas finas por el efecto moiré en cámara, y preferir colores sólidos con buen contraste. El resto lo gestionamos nosotros: el entorno, la iluminación, el audio y el flujo de la entrevista.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formatos de entrega se obtienen de una sesión de testimonios?",
+        answer: "De una sola sesión se pueden obtener el vídeo largo de 90-120 segundos para web o deck, clips cortos de 15-30 segundos para LinkedIn o Instagram, versión sin subtítulos para incrustar y versión subtitulada para redes sociales. Todo depende de lo que vayas a usar y de si contratas la edición o solo la grabación.",
+      },
+      {
+        type: "faq",
+        question: "¿Se pueden grabar testimonios con datos confidenciales?",
+        answer: "Sí. El proceso de preparación incluye acordar qué información es pública y qué no antes de grabar. No hay problema en producir un testimonio potente que hable de resultados sin revelar datos específicos que la empresa prefiera no publicar. Los mejores testimonios que hemos visto no incluyen cifras exactas: incluyen contexto real y emoción honesta.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas grabar testimonios de clientes o piezas de caso de éxito para tu empresa, escríbenos desde /#contacto. Te contamos qué formato tiene más sentido según dónde vas a usarlo y cuánto tiempo necesitas reservar.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
