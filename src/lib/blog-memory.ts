@@ -202,6 +202,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #22. Imágenes Unsplash.",
   },
+  {
+    slug: "como-optimizar-sesion-podcast-clips-redes",
+    keyword: "como optimizar sesion podcast clips redes",
+    intent: "informacional",
+    createdAt: "2026-06-30",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #23. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

@@ -2624,6 +2624,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-optimizar-sesion-podcast-clips-redes",
+    title: "Cómo optimizar una sesión de podcast para sacar clips de redes sociales",
+    description:
+      "Estructura, timing y técnicas de grabación para convertir una sesión de podcast de 60 minutos en 15 o 20 clips listos para publicar en LinkedIn, Instagram y YouTube.",
+    publishedAt: "2026-06-30",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["podcast", "clips redes sociales", "contenido", "grabación", "edición", "Madrid"],
+    keyword: "como optimizar sesion podcast clips redes",
+    intent: "informacional",
+    excerpt:
+      "Grabar un podcast y luego cortar clips para redes no es magia. Con la estructura correcta desde el principio, una sesión de 2 horas puede darte 20 clips listos para publicar.",
+    seoTitle: "Podcast para clips de redes sociales | RCS Madrid",
+    metaDescription:
+      "Cómo optimizar una sesión de podcast para extraer clips de redes sociales. Estructura, timing y edición para multiplicar tu contenido desde el estudio.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Grabar un podcast y luego cortar clips para redes no es lo mismo que grabar un podcast. Son dos cosas que necesitan pensarse juntas desde el principio, si no quieres pasar 3 horas editando para sacar un clip de 30 segundos que al final no encaja en ningún formato.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS hemos visto cómo los clientes que planifican la sesión con los clips en mente salen con 15 o 20 piezas listas para publicar directamente. Y los que no lo planifican, salen con una grabación de 90 minutos que luego no saben cómo cortar. La diferencia es de estructura, no de suerte.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-optimizar-sesion-podcast-clips-redes/hero.webp",
+        alt: "Micrófono de condensador en estudio de grabación de podcast",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la sesión de podcast es la mejor fuente de clips" },
+      {
+        type: "paragraph",
+        text: "Un podcast con vídeo de 60 minutos puede dar para 3 semanas de contenido en redes si sabes qué buscar. Las frases de impacto, los cambios de opinión, los momentos donde el invitado dice algo inesperado: esos 30 segundos son los que detienen el scroll.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que si grabas sin pensar en eso, las mejores frases quedan enterradas en medio de rodeos o silencios. Y al editor le toca buscar pepitas en un campo muy grande.",
+      },
+      {
+        type: "paragraph",
+        text: "Si en cambio estructuras la conversación para que esos momentos aparezcan en puntos predecibles de la grabación, el proceso de cortar clips se acorta de horas a minutos.",
+      },
+      { type: "heading", level: 2, text: "Cómo estructurar la sesión para sacar clips" },
+      { type: "heading", level: 3, text: "Abre con una frase de posicionamiento" },
+      {
+        type: "paragraph",
+        text: "Lo primero que dice el invitado —o tú— debería ser una declaración clara y potente. No 'hola qué tal', sino 'llevo 10 años en marketing de contenidos y la mayoría de lo que se enseña está mal'. Esa frase, con la edición correcta, es un clip. Si no abres así, tendrás que buscarlo en otro sitio.",
+      },
+      { type: "heading", level: 3, text: "Diseña bloques de 8-10 minutos con cierre propio" },
+      {
+        type: "paragraph",
+        text: "Estructura la conversación en bloques temáticos, no en un único hilo continuo. Cada bloque debería tener su propia mini-conclusión. Así puedes cortar un bloque entero como pieza o extraer su frase final. Con 6 bloques en una sesión de 60 minutos ya tienes 6 clips potenciales de 2-3 minutos, más los momentos fuertes de cada uno.",
+      },
+      { type: "heading", level: 3, text: "Prepara preguntas diseñadas para respuestas cortas" },
+      {
+        type: "paragraph",
+        text: "Hay preguntas que generan respuestas de 5 minutos y preguntas que generan respuestas de 45 segundos. 'Cuéntame tu historia' es una de 5 minutos. 'Cuál sería tu consejo número uno para alguien que empieza' es una de 45 segundos, perfecta para un clip de LinkedIn. Prepara 4 o 5 de esas preguntas de respuesta corta y distribúyelas a lo largo de la sesión.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-optimizar-sesion-podcast-clips-redes/mid.webp",
+        alt: "Persona editando clips de redes sociales en smartphone y ordenador",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores que hacen perder tiempo en la edición" },
+      {
+        type: "list",
+        items: [
+          "Grabar sin saber para qué plataforma van los clips: vertical y horizontal no es lo mismo y condiciona el encuadre desde el principio.",
+          "No marcar los momentos clave durante la grabación. Un pin en el timeline vale 20 minutos de revisión posterior.",
+          "Dejar todos los tics de conversación: los 'o sea', 'bueno', 'este' que cortan el ritmo del clip.",
+          "Olvidar que el clip tiene que funcionar sin contexto previo. Si no se entiende solo, no funciona en redes.",
+          "Grabar sin pistas separadas de audio. Sin canales independientes no puedes limpiar bien el sonido después.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántos clips puedo sacar de una sesión de podcast de 60 minutos?",
+        answer:
+          "Depende de la estructura, pero con planificación correcta entre 10 y 20 clips de formatos variados: cortes de 30 segundos para Instagram y TikTok, de 2-3 minutos para LinkedIn y YouTube Shorts, y alguno de 5 minutos para el canal principal de YouTube.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta grabar en vertical para los clips de redes?",
+        answer:
+          "No necesariamente. En RCS grabamos en horizontal con cámaras bien encuadradas y reencuadramos en edición para vertical. Si el encuadre original deja espacio arriba y abajo, el reencuadre queda bien sin perder información importante.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué momento del podcast suelen estar los mejores clips?",
+        answer:
+          "En los primeros 10 minutos y en los últimos 15. El principio porque el invitado suele ir al grano antes de relajarse. El final porque es cuando salen las conclusiones más directas y las frases de impacto más densas.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué herramientas se usan para cortar clips de podcast?",
+        answer:
+          "Para la edición del clip en sí, DaVinci Resolve o Premiere. Para subtítulos automáticos, CapCut o Opus Clip. Para organizar y previsualizar antes de publicar, Frame.io o una carpeta bien estructurada por plataforma y formato.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes pensado grabar un podcast y quieres salir con clips listos para varias semanas, cuéntanos el proyecto desde /#contacto. Te damos una sesión planificada desde el principio para que el montaje sea mínimo y el material máximo.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
