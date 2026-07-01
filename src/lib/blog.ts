@@ -2736,6 +2736,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "audio-profesional-video-microfono-segun-formato",
+    title: "Audio profesional para vídeo: qué micrófono usar según el formato",
+    description:
+      "Guía práctica para elegir el micrófono correcto según el tipo de vídeo que grabas: podcast, reels, entrevistas, cursos o piezas de marca.",
+    publishedAt: "2026-07-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["audio", "micrófonos", "grabación vídeo", "podcast", "producción", "madrid"],
+    keyword: "audio profesional para video que microfono usar",
+    intent: "informacional",
+    excerpt:
+      "El micrófono no es un accesorio secundario en vídeo. Es la primera decisión de producción. Guía para elegir bien según el formato que grabas.",
+    seoTitle: "Qué micrófono usar para vídeo según el formato | RCS Madrid",
+    metaDescription:
+      "Audio profesional para vídeo: cómo elegir entre dinámico, condensador, lavalier o shotgun según si grabas podcast, reels, cursos o entrevistas.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "El error más habitual en producción de vídeo para contenido de marca no está en la cámara. Está en el audio. Puedes grabar con una Sony A7 IV, iluminación Aputure y un set bien montado y el resultado seguirá pareciendo aficionado si el micrófono no encaja con el formato. La razón es directa: el oído humano tolera peor la mala calidad de sonido que la imperfección visual. El espectador aguanta un plano algo subexpuesto o un encuadre no perfecto. Pero desconecta rápido si el audio tiene ruido de fondo, eco o saturación.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS lo vemos constantemente en las primeras consultas. Founders y equipos de marketing que llegan con setups de cámara bien resueltos pero sin una estrategia clara de audio. El problema no es que no tengan micrófonos — muchas veces tienen varios. El problema es que no saben cuál usar para cada formato. Lo que funciona en un podcast de mesa larga no funciona en un reel vertical grabado de pie. Lo que encaja en una entrevista en movimiento no tiene sentido en una narración a cámara sentado. Elegir bien el micrófono no es un detalle técnico — es una decisión de producción que afecta directamente a la calidad percibida del contenido.",
+      },
+      {
+        type: "image",
+        src: "/blog/audio-profesional-video-microfono-segun-formato/hero.webp",
+        alt: "Micrófono condensador en estudio de grabación profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué el audio importa más de lo que parece en vídeo" },
+      {
+        type: "paragraph",
+        text: "Existe un principio bien documentado en producción audiovisual: la percepción de calidad de un vídeo depende más del audio que de la imagen. Si el sonido es malo, el vídeo parece malo aunque la cámara sea cara. Si el audio es limpio y sólido, el vídeo parece profesional aunque la cámara sea modesta. No es opinión — es cómo procesa el cerebro la información audiovisual.",
+      },
+      {
+        type: "paragraph",
+        text: "En la práctica, hay tres problemas recurrentes que arruinan el audio de vídeo: ruido de fondo que delata el espacio donde se grabó, distorsión por nivel de entrada demasiado alto, y reverb o eco que rompe la sensación de control y profesionalidad. Los tres tienen solución técnica, pero la primera línea de defensa siempre es elegir el micrófono adecuado al formato y al espacio de grabación.",
+      },
+      { type: "heading", level: 2, text: "Tipos de micrófono y cuándo usar cada uno" },
+      { type: "heading", level: 3, text: "Dinámico — podcast e intervistas largas" },
+      {
+        type: "paragraph",
+        text: "El micrófono dinámico — Shure SM7B, Rode PodMic — es el estándar para podcast y entrevistas largas en interior. Rechaza bien el ruido ambiental, no necesita un tratamiento acústico perfecto y aguanta bien las variaciones de nivel de voz entre personas distintas. En RCS lo usamos para sesiones con 2 o más personas a mesa, formatos de más de 20 minutos y espacios que no son completamente silenciosos. Su punto débil: necesita buena preamp. Sin un previo decente, el dinámico no da su mejor versión y el ruido de fondo relativo sube.",
+      },
+      { type: "heading", level: 3, text: "Condensador — narraciones y presentaciones a cámara" },
+      {
+        type: "paragraph",
+        text: "El micrófono condensador — Rode NT1, AKG C214 — capta con más detalle y amplitud que el dinámico. Ideal para narraciones en off, cursos online grabados a cámara fija o piezas donde quieres presencia y cuerpo de voz sin coloración agresiva. El problema es que necesita tratamiento acústico: en un espacio con paredes duras y sin absorción, el condensador amplifica el problema en lugar de la voz. En RCS el ático tiene absorción suficiente para que el condensador suene bien sin preparación adicional del espacio.",
+      },
+      { type: "heading", level: 3, text: "Lavalier inalámbrico — movimiento y entrevistas con varios oradores" },
+      {
+        type: "paragraph",
+        text: "El lavalier inalámbrico — Rode Wireless GO II, DJI Mic — es la solución cuando el presentador se mueve, hay varias personas hablando en distintos puntos del espacio, o se graba fuera del estudio. Pierde algo de calidad tonal respecto a un dinámico de mesa — el tamaño de la cápsula limita — pero gana en flexibilidad total. Para reels con movimiento, entrevistas en exterior o piezas donde la cámara varía de posición, el lavalier es la respuesta correcta. Con dos unidades, puedes grabar simultáneamente entrevistador y entrevistado con pistas separadas.",
+      },
+      { type: "heading", level: 3, text: "Shotgun — reels, vídeo de marca y contenido ágil" },
+      {
+        type: "paragraph",
+        text: "El micrófono de cañón — Rode VideoMic NTG, Sennheiser MKE 600 — es direccional: capta lo que tiene delante y rechaza los laterales y el fondo. Montado en la cámara o en boom, es el micrófono de producción de vídeo por excelencia para reels de marca, entrevistas sin cables a la vista y contenido donde la agilidad importa más que el máximo detalle. Con una Sony A7 y un encuadre bien ajustado, grabando en un espacio controlado, el resultado es más que suficiente para contenido profesional en redes.",
+      },
+      {
+        type: "image",
+        src: "/blog/audio-profesional-video-microfono-segun-formato/mid.webp",
+        alt: "Micrófono sobre mesa en estudio de grabación para podcast y vídeo",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al elegir micrófono para vídeo" },
+      {
+        type: "list",
+        items: [
+          "Usar el micrófono interno de la cámara — capta reverb, ventilación y ruido del set en igual medida que la voz.",
+          "Aplicar un condensador en un espacio sin absorción — amplifica el eco y el ambiente en lugar de aislar la voz.",
+          "No monitorizar el nivel de entrada — grabar saturado o demasiado bajo produce problemas que la postproducción no corrige del todo.",
+          "Ignorar el patrón polar del micrófono según el formato — un cardioide mal orientado suma pérdida de graves y presencia.",
+          "Mezclar tipos de micrófono sin compensar niveles — si grabas con lavalier y dinámico a la vez, la mezcla final queda desigual si no ajustas la ganancia por separado.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo grabar un podcast con un micrófono de solapa?",
+        answer:
+          "Sí, pero con matices. El lavalier te da flexibilidad, pero el dinámico te da mejor presencia y rechazo de ambiente para formato largo. Si grabas sentado a mesa con condiciones controladas, el dinámico siempre gana al lavalier en calidad de voz percibida.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué micrófono uso para grabar reels verticales en estudio?",
+        answer:
+          "En RCS usamos habitualmente un shotgun en boom para mantener el encuadre limpio sin cables visibles. Si el presentador habla directo a cámara sin moverse, el shotgun bien posicionado da un resultado limpio y no requiere postproducción de audio intensiva.",
+      },
+      {
+        type: "faq",
+        question: "¿El audio del iPhone vale para contenido profesional?",
+        answer:
+          "Para clips muy cortos en redes puede funcionar, especialmente con un lavalier de calidad conectado. Para podcast, cursos o piezas de marca, no — el ruido de fondo y la compresión del códec limitan mucho la sensación de profesionalidad que busca el formato.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto mejora el audio al grabar en un estudio frente a en casa?",
+        answer:
+          "Mucho, y no solo por el equipo — por el espacio. Un ático con absorción correcta elimina el eco que arruina el audio doméstico. En RCS, con un dinámico o condensador bien ganado, el audio sale listo para mezcla sin tratamiento pesado en postproducción.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un proyecto de vídeo y no tienes claro qué solución de audio encaja con tu formato, cuéntanos lo que necesitas desde /#contacto. Te decimos qué micrófono usaríamos, cómo lo grabaríamos y qué esperar del resultado final.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

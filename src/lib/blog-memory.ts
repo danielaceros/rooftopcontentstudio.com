@@ -210,6 +210,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #23. Imágenes Unsplash.",
   },
+  {
+    slug: "audio-profesional-video-microfono-segun-formato",
+    keyword: "audio profesional para video que microfono usar",
+    intent: "informacional",
+    createdAt: "2026-07-01",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #24. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
