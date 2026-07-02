@@ -218,6 +218,14 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (token expirado). Fallback evergreen #24. Imágenes Unsplash.",
   },
+  {
+    slug: "content-day-como-sacarle-el-maximo-partido",
+    keyword: "content day",
+    intent: "informacional",
+    createdAt: "2026-07-02",
+    status: "published",
+    notes: "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant, requiere reautorización manual). Fallback evergreen #25 (última de la lista). Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

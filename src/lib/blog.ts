@@ -2849,6 +2849,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "content-day-como-sacarle-el-maximo-partido",
+    title: "Qué es un content day y cómo sacarle el máximo partido",
+    description:
+      "Qué es un content day, cómo planificarlo bien y qué errores evitar para grabar semanas de contenido en una sola sesión.",
+    publishedAt: "2026-07-02",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["content day", "producción de contenido", "planificación", "grabación madrid", "marca personal"],
+    keyword: "content day",
+    intent: "informacional",
+    excerpt:
+      "Concentrar la producción de contenido en una sola jornada cambia la constancia y la calidad. Guía para montar un content day que funcione de verdad.",
+    seoTitle: "Qué es un content day y cómo aprovecharlo | RCS Madrid",
+    metaDescription:
+      "Qué es un content day, cómo planificarlo y qué errores evitar para grabar semanas de contenido en una sola sesión en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un content day es una jornada en la que grabas todo el contenido que vas a publicar durante varias semanas en una sola sesión. En vez de grabar un reel el lunes, otro el jueves y un vídeo largo cuando encuentras hueco, concentras la producción en una mañana o un día completo y sales con el material cerrado para un mes o más.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS lo montamos constantemente con founders, marcas personales y equipos de marketing que quieren mantener presencia constante en redes sin depender de grabar cada semana. La lógica es simple: cuesta más arrancar una grabación que grabar diez piezas seguidas una vez que el set, la luz y el estado mental están listos.",
+      },
+      {
+        type: "image",
+        src: "/blog/content-day-como-sacarle-el-maximo-partido/hero.webp",
+        alt: "Persona grabando con cámara de vídeo en sesión de contenido",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un content day y por qué cambia la forma de producir contenido" },
+      {
+        type: "paragraph",
+        text: "Un content day no es simplemente grabar mucho de golpe. Es planificar con antelación qué piezas necesitas, en qué orden las grabas y qué recursos usas para cada una, de forma que la sesión avance sin pausas largas entre pieza y pieza. La diferencia entre un content day que funciona y uno que se alarga sin sentido está casi siempre en la preparación previa, no en el día de grabación en sí.",
+      },
+      {
+        type: "paragraph",
+        text: "El beneficio principal es la constancia. Si dependes de grabar cada vez que publicas, la frecuencia de tu contenido depende de tu agenda semanal, y eso casi siempre significa publicar menos de lo que planeaste. Con un content day mensual o quincenal, el banco de contenido queda cerrado y solo falta programar publicación y algo de edición puntual.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay un efecto añadido que no siempre se tiene en cuenta: la calidad sube. Cuando grabas una pieza aislada, sueles hacerlo con prisa, entre otras tareas. Cuando dedicas una jornada entera a producción, llegas con el guion pensado, la ropa elegida y la cabeza puesta en grabar, no en apagar fuegos de otra parte del negocio.",
+      },
+      { type: "heading", level: 2, text: "Cómo montar un content day que funcione" },
+      { type: "heading", level: 3, text: "Definir los formatos antes de llegar al estudio" },
+      {
+        type: "paragraph",
+        text: "Antes de la sesión conviene tener claro cuántas piezas vas a grabar y de qué tipo: reels cortos, vídeo largo, clips para LinkedIn, contenido de autoridad a cámara. En RCS pedimos esta lista antes de la fecha, porque cambia el vestuario, el encuadre y hasta el orden de grabación. Grabar sin esta lista suele acabar en piezas repetidas y huecos sin cubrir.",
+      },
+      { type: "heading", level: 3, text: "Guionizar sin sobre-escribir" },
+      {
+        type: "paragraph",
+        text: "Un guion cerrado palabra por palabra suena artificial en cámara. Lo que funciona mejor es un esquema con la idea principal, dos o tres puntos que quieres tocar y el cierre. Con teleprompter puedes apoyarte en algo más estructurado, pero incluso ahí conviene dejar margen para que la frase suene hablada y no leída.",
+      },
+      { type: "heading", level: 3, text: "Organizar el orden de grabación por vestuario y energía" },
+      {
+        type: "paragraph",
+        text: "Agrupa las piezas que comparten vestuario o encuadre para no cambiar de set cada cinco minutos. Y ordena por energía: empieza por los formatos que requieren más presencia o intensidad, cuando llegas fresco, y deja para el final los formatos más tranquilos, como narración en off o piezas explicativas, cuando ya llevas unas horas de sesión.",
+      },
+      {
+        type: "image",
+        src: "/blog/content-day-como-sacarle-el-maximo-partido/mid.webp",
+        alt: "Equipo de cámara y producción preparado para sesión de grabación",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes en un content day" },
+      {
+        type: "list",
+        items: [
+          "Llegar sin lista cerrada de piezas — se traduce en tiempo perdido decidiendo qué grabar en el momento.",
+          "Grabar todo con el mismo plano y la misma luz — el contenido acaba pareciendo repetitivo aunque el mensaje cambie.",
+          "No dejar margen para repetir tomas — una sesión sin colchón de tiempo obliga a quedarte con la primera toma aunque no sea la mejor.",
+          "Meter demasiados formatos distintos en una sola jornada — más de 15-20 piezas en un día suele bajar la calidad de las últimas.",
+          "No planificar la edición después — salir con horas de material sin flujo de edición definido retrasa la publicación semanas.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto contenido se puede grabar en un content day?",
+        answer:
+          "Depende del formato, pero en una sesión de 3-4 horas es realista salir con 10-15 piezas cortas, o una combinación de piezas cortas y 2-3 vídeos largos.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito guion cerrado para un content day?",
+        answer:
+          "No hace falta palabra por palabra. Basta un esquema con la idea principal y los puntos que quieres tocar por pieza. Un guion demasiado cerrado suele sonar leído en cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿Cada cuánto debería hacer un content day?",
+        answer:
+          "La cadencia más habitual entre nuestros clientes es mensual o quincenal, según cuánto contenido publiquen a la semana. Un content day mensual bien planificado cubre entre 4 y 8 semanas de publicación.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabar varios formatos distintos el mismo día?",
+        answer:
+          "Sí, es precisamente la idea. Reels, vídeo largo, clips para LinkedIn y contenido de autoridad pueden convivir en la misma jornada si agrupas por vestuario y dejas los formatos más exigentes para el inicio de la sesión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si quieres montar un content day y no sabes por dónde empezar a planificarlo, cuéntanos qué formatos necesitas desde /#contacto. Te ayudamos a diseñar la sesión para que salgas con semanas de contenido cerradas en una sola mañana.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
