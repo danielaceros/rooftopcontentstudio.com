@@ -2961,6 +2961,121 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-corporativo-web-grabacion-estudio",
+    title: "Vídeo corporativo para la web: qué grabar y cómo planificar la sesión",
+    description:
+      "Qué grabar para la web de tu empresa, cómo planificar la sesión por bloques y qué necesita cada página para reforzar confianza y conversión.",
+    publishedAt: "2026-07-03",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["vídeo corporativo", "vídeo para web", "producción audiovisual", "contenido empresa", "Madrid"],
+    keyword: "video corporativo para la web",
+    intent: "informacional",
+    excerpt:
+      "Grabar vídeo para la web de tu empresa no es lo mismo que grabar para redes. Guía para planificar la sesión por bloques y qué necesita cada página.",
+    seoTitle: "Vídeo corporativo para la web | RCS Madrid",
+    metaDescription:
+      "Vídeo corporativo para la web: qué grabar, cómo planificar la sesión por bloques y qué necesita cada página para convertir mejor.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una empresa decide grabar vídeo para su web, la primera pregunta casi nunca es técnica. Es de contenido: qué se graba, en qué orden y para qué sirve cada pieza dentro de la página. Sin esa claridad previa, la sesión se alarga, el resultado queda descolgado de la web real y al final se usan dos minutos de material de tres horas de grabación.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos vídeo corporativo para webs de empresas, agencias y equipos de marketing que necesitan algo más sólido que un móvil en la oficina, pero sin caer en el vídeo institucional de plató que nadie termina de ver entero. La clave está en tratar la sesión como un guion de página, no como una grabación suelta.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-web-grabacion-estudio/hero.webp",
+        alt: "Cámara profesional grabando una entrevista corporativa en oficina con luz natural",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el vídeo corporativo para web y por qué no es lo mismo que un vídeo para redes" },
+      {
+        type: "paragraph",
+        text: "El vídeo corporativo para web tiene un trabajo distinto al de un reel o un vídeo para redes sociales. No compite por atención en un feed que se desliza en segundo y medio: convive con texto, con navegación y con una decisión de compra o contacto que el visitante ya está considerando tomar. Eso cambia el ritmo, la duración y hasta el tono.",
+      },
+      {
+        type: "paragraph",
+        text: "En redes el objetivo suele ser parar el scroll. En una web, el objetivo es reforzar confianza y resolver dudas que el texto no cubre del todo: cómo es el equipo, cómo funciona el servicio, qué se siente al trabajar con la empresa. Por eso un vídeo de home no necesita el mismo gancho de los tres primeros segundos que un reel, pero sí necesita ser corto, claro y fácil de encajar en la maqueta de la página.",
+      },
+      {
+        type: "paragraph",
+        text: "Grabar bien este tipo de vídeo también es una cuestión de credibilidad. Cuando un vídeo institucional se nota grabado con prisa, transmite justo lo contrario de lo que busca: en vez de reforzar confianza, la debilita. Por eso conviene tratarlo como cualquier otra pieza de producción, con planificación previa, aunque la sesión en sí sea corta y el resultado final dure menos de un minuto.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto también afecta al formato técnico. Un vídeo para web suele ir en horizontal, pensado para reproducirse sin sonido por defecto, con subtítulos incrustados o disponibles, y preparado para verse bajo demanda, no en autoplay agresivo con audio.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Definir qué páginas necesitan vídeo antes de grabar" },
+      {
+        type: "paragraph",
+        text: "Antes de reservar sesión, conviene mapear la web y decidir qué páginas necesitan vídeo de verdad: home, servicios, equipo, casos de éxito. No todas lo necesitan. Meter vídeo en una página que no lo pide solo añade peso de carga sin aportar conversión. En RCS pedimos este mapeo antes de la fecha de grabación, porque cambia directamente el guion y el número de piezas que hay que grabar.",
+      },
+      { type: "heading", level: 3, text: "Grabar por bloques, no por página" },
+      {
+        type: "paragraph",
+        text: "En vez de grabar el vídeo de la home y luego el de servicios como piezas cerradas y separadas, es más eficiente grabar por bloques de contenido: presentación del equipo, explicación del servicio, testimonios breves, imágenes de apoyo del espacio o del proceso de trabajo. Después, en edición, esos bloques se recombinan según la página. Así una misma sesión rinde para varias piezas de la web sin repetir grabación ni volver a citar al equipo.",
+      },
+      { type: "heading", level: 3, text: "Pensar en duración desde el guion, no en edición" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de home no debería pasar de 45-60 segundos. Uno de página de servicio puede estirarse hasta 90 segundos si de verdad resuelve dudas concretas. Si el guion se escribe pensando en esa duración desde el principio, la edición es mucho más simple. Si se graba sin límite y se recorta después, el resultado casi siempre se nota forzado y con cortes raros.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-corporativo-web-grabacion-estudio/mid.webp",
+        alt: "Persona grabándose a cámara con trípode para vídeo de contenido",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar el vídeo antes de tener claro dónde va a vivir en la web — cambia duración, formato y tono, y suele obligar a regrabar.",
+          "Usar el mismo vídeo institucional en todas las páginas — reduce el impacto porque no responde a la duda concreta de cada sección.",
+          "Grabar en vertical pensando en adaptarlo después a la web — el recorte casi siempre deja una composición pobre; graba en el formato final desde el principio.",
+          "No incluir subtítulos incrustados — la mayoría de las visitas reproducen el vídeo sin sonido al inicio.",
+          "Olvidar el peso del archivo — un vídeo mal comprimido en la home puede lastrar la velocidad de carga y perjudicar el SEO de toda la página.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un buen vídeo de home?",
+        answer: "Entre 30 y 60 segundos. Suficiente para transmitir tono y equipo sin retrasar la decisión de seguir navegando.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito grabar un vídeo distinto para cada página de la web?",
+        answer:
+          "No necesariamente. Con una sesión bien planificada por bloques, puedes recombinar el mismo material en distintas piezas cortas para home, servicios y equipo.",
+      },
+      {
+        type: "faq",
+        question: "¿El vídeo corporativo necesita el mismo tono que el contenido de redes?",
+        answer:
+          "No. Puede ser algo más calmado y explicativo, porque el visitante ya está en la web decidiendo, no haciendo scroll para entretenerse.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta un guion cerrado para grabar vídeo corporativo?",
+        answer:
+          "Conviene tener un guion claro por bloque, aunque no haga falta memorizarlo palabra por palabra frente a cámara. Con teleprompter es más fácil mantenerlo natural.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a rediseñar tu web o simplemente te falta vídeo real en las páginas clave, cuéntanos qué páginas quieres cubrir desde /#contacto. Planificamos la sesión por bloques para que una sola grabación rinda para toda la web, no solo para la home.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

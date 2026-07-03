@@ -226,6 +226,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     status: "published",
     notes: "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant, requiere reautorización manual). Fallback evergreen #25 (última de la lista). Imágenes Unsplash.",
   },
+  {
+    slug: "video-corporativo-web-grabacion-estudio",
+    keyword: "video corporativo para la web",
+    intent: "informacional",
+    createdAt: "2026-07-03",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, requiere reautorización manual). Lista de fallback evergreen (25 temas) agotada tras el post anterior — tema original en la misma línea temática. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
