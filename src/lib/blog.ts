@@ -3076,6 +3076,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-spots-publicitarios-estudio",
+    title: "Grabación de spots publicitarios en estudio: qué necesitas saber",
+    description:
+      "Cómo planificar la grabación de un spot publicitario en estudio: guion cerrado, tomas sueltas y variantes de campaña sin tener que regrabar nada.",
+    publishedAt: "2026-07-06",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["spots publicitarios", "vídeo publicitario", "producción audiovisual", "estudio de grabación", "Madrid"],
+    keyword: "grabacion de spots publicitarios",
+    intent: "informacional",
+    excerpt:
+      "Un spot publicitario en estudio no se improvisa. Guía para planificar guion, tomas y variantes de campaña antes de pisar el plató.",
+    seoTitle: "Grabación de Spots Publicitarios | RCS Madrid",
+    metaDescription:
+      "Grabación de spots publicitarios en estudio: cómo planificar guion, tomas y variantes de campaña sin tener que regrabar nada.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando una marca decide grabar un spot publicitario, la primera duda casi nunca es de presupuesto. Es de formato: ¿esto se graba en estudio, en localización o mezclando ambos? Un estudio de grabación como RCS resuelve buena parte de esa pregunta antes de que se convierta en un problema el día del rodaje: control total de luz, de sonido y de fondo, sin depender del clima ni del ruido de una calle de Madrid.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos spots para marcas, agencias y empresas que necesitan algo con acabado publicitario real, no un vídeo de producto grabado con el móvil de la oficina. La diferencia no está solo en la cámara. Está en cómo se planifica la sesión antes de encender nada.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-spots-publicitarios-estudio/hero.webp",
+        alt: "Cámara de cine profesional preparada en plató para grabar un spot publicitario",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un spot publicitario en estudio y por qué es distinto a un vídeo de contenido" },
+      {
+        type: "paragraph",
+        text: "Un spot publicitario en estudio se distingue de un vídeo de contenido normal en tres cosas: guion cerrado, control total del entorno y un objetivo de conversión claro desde el primer segundo. No se graba para generar conversación en comentarios. Se graba para vender, para posicionar marca o para acompañar una campaña de medios con fecha de salida fija.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso cambia la forma de trabajar. Un spot no admite tanta improvisación como un reel de marca personal. Cada plano suele estar decidido antes de entrar al estudio, porque el margen de edición se calcula en segundos, no en minutos, y cada segundo de más en el corte final cuesta dinero en la compra de medios.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el nivel de exigencia técnica. Un spot que va a emitirse en televisión, en pantallas digitales o en campañas de pago necesita una calidad de imagen y sonido que no perdona atajos: iluminación consistente, audio limpio sin ruido de fondo y una composición pensada para verse bien tanto en horizontal como recortada a vertical si la campaña lo pide.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Cerrar el guion y el storyboard antes de reservar estudio" },
+      {
+        type: "paragraph",
+        text: "Antes de fijar fecha, conviene tener el guion cerrado plano a plano, no solo la idea general. En RCS pedimos el storyboard o al menos un guion técnico antes de la sesión, porque de ahí sale todo lo demás: cuántas horas de estudio hacen falta, qué atrezo hay que traer y si se necesita más de una cámara para cubrir ángulos distintos sin repetir tomas.",
+      },
+      { type: "heading", level: 3, text: "Planificar el rodaje por tomas, no por escenas" },
+      {
+        type: "paragraph",
+        text: "Un spot de 20-30 segundos puede necesitar 15-20 tomas distintas para tener margen de montaje: planos generales, primeros planos de producto, detalles de manos o de packaging, reacciones de talento. Rodar pensando en tomas sueltas, y no en escenas completas de principio a fin, da mucha más flexibilidad en edición y evita tener que volver a citar al equipo o al talento por un plano que falta.",
+      },
+      { type: "heading", level: 3, text: "Dejar tiempo para variantes de campaña" },
+      {
+        type: "paragraph",
+        text: "La mayoría de campañas necesitan más de una versión: un corte de 30 segundos para TV o YouTube, uno de 15 para redes y uno de 6 para bumper ads. Si esto se decide antes de grabar, se puede planificar la sesión para cubrir todos los cortes con el mismo material. Si se decide después, casi siempre hay que volver a grabar planos que faltan.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-spots-publicitarios-estudio/mid.webp",
+        alt: "Set de estudio con cámara e iluminación montada para rodaje publicitario",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Llegar al estudio sin guion cerrado y decidir los planos sobre la marcha — encarece la sesión y deja huecos en el montaje.",
+          "No prever las variantes de duración de la campaña antes de rodar — obliga a regrabar planos que no se cubrieron.",
+          "Subestimar el tiempo de audio — un spot con música y locución necesita mezcla y masterización, no solo corte de vídeo.",
+          "Grabar en localización cuando el control de luz y sonido del estudio habría dado un resultado más limpio y repetible.",
+          "No pedir al estudio una prueba de cámara y luz antes del día de rodaje si el producto tiene acabados difíciles (brillos, cristal, metal).",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una sesión de grabación de un spot publicitario?",
+        answer:
+          "Depende del número de tomas, pero un spot de 20-30 segundos con varios planos suele necesitar entre 3 y 5 horas de estudio, sin contar la edición posterior.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar un spot para varias plataformas en la misma sesión?",
+        answer:
+          "Sí, si se planifica antes. Grabando por tomas sueltas con margen de encuadre, se pueden montar después versiones para TV, redes y vertical desde el mismo material.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta actor o puede grabarlo el propio equipo de la empresa?",
+        answer:
+          "Ambas opciones funcionan. Lo importante es que quien esté frente a cámara tenga el guion claro y, si no tiene experiencia, un teleprompter para no perder naturalidad.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay entre un spot y un vídeo de contenido para redes?",
+        answer:
+          "El spot se diseña para un objetivo de conversión concreto dentro de una campaña con fecha de salida, mientras que el contenido de redes suele responder a una estrategia más continua y menos cerrada en el tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una campaña en marcha y necesitas grabar el spot en un espacio con control total de luz y sonido, cuéntanos el guion y las variantes que necesitas desde /#contacto. Planificamos la sesión para que el material cubra todos los cortes de la campaña sin tener que volver a grabar.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

@@ -235,6 +235,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, requiere reautorización manual). Lista de fallback evergreen (25 temas) agotada tras el post anterior — tema original en la misma línea temática. Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-spots-publicitarios-estudio",
+    keyword: "grabacion de spots publicitarios",
+    intent: "informacional",
+    createdAt: "2026-07-06",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 3 ejecuciones, requiere reautorización manual). Lista de fallback evergreen (25 temas) agotada — tema original nuevo en la línea de producción publicitaria/corporativa. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
