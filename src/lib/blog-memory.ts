@@ -244,6 +244,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 3 ejecuciones, requiere reautorización manual). Lista de fallback evergreen (25 temas) agotada — tema original nuevo en la línea de producción publicitaria/corporativa. Imágenes Unsplash.",
   },
+  {
+    slug: "fondos-decorados-grabacion-contenido",
+    keyword: "fondos y decorados para grabar contenido",
+    intent: "informacional",
+    createdAt: "2026-07-07",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 4 ejecuciones, requiere reautorización manual). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre fondos/decorados de grabación. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

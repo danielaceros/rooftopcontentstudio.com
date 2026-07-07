@@ -3188,6 +3188,130 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "fondos-decorados-grabacion-contenido",
+    title: "Fondos y decorados para grabar contenido: cómo elegir el que necesita tu marca",
+    description:
+      "Qué fondo usar para grabar contenido de marca: cuándo un decorado neutro funciona mejor que un entorno real, y cómo evitar que el fondo compita con el mensaje.",
+    publishedAt: "2026-07-07",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["fondos de grabación", "decorados", "estudio de grabación", "contenido de marca", "Madrid"],
+    keyword: "fondos y decorados para grabar contenido",
+    intent: "informacional",
+    excerpt:
+      "El fondo es lo que el espectador tiene delante todo el vídeo. Guía para elegir entre un decorado neutro y un entorno real según lo que quiere transmitir tu marca.",
+    seoTitle: "Fondos y Decorados para Grabar Contenido | RCS Madrid",
+    metaDescription:
+      "Fondos y decorados para grabar contenido: cuándo usar un fondo neutro, cuándo un entorno real, y cómo evitar que el decorado compita con tu mensaje.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien piensa en preparar una grabación, casi siempre piensa primero en la cámara, el micrófono o la luz. El fondo se suele decidir el mismo día, casi de pasada. Es un error, porque el decorado es lo que el espectador tiene delante durante todo el vídeo, no un detalle que se resuelve solo.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos cada semana marcas personales, empresas y equipos de marketing que llegan con guion cerrado, buena luz prevista y cero decisión tomada sobre qué va a aparecer detrás. Y el fondo cambia más de lo que parece: puede reforzar el mensaje o competir con él.",
+      },
+      {
+        type: "image",
+        src: "/blog/fondos-decorados-grabacion-contenido/hero.webp",
+        alt: "Set de estudio de grabación con fondo y decorado preparado antes de una sesión",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un fondo o decorado y por qué no es un detalle menor" },
+      {
+        type: "paragraph",
+        text: "Un fondo de grabación es cualquier cosa que quede visible detrás de la persona o el producto que estás grabando. Puede ser un ciclorama liso, una pared de ladrillo, una estantería con libros o, como en nuestro ático, un salón real con terraza y skyline de Madrid al fondo.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia entre un fondo que funciona y uno que no rara vez es de presupuesto. Es de coherencia. Un fondo demasiado cargado roba atención al mensaje. Uno demasiado plano hace que el vídeo parezca un anuncio genérico, sin identidad. El objetivo siempre es el mismo: que el fondo apoye lo que se dice, sin pelear por protagonismo.",
+      },
+      {
+        type: "paragraph",
+        text: "También influye en cómo se percibe la marca antes de que se diga una sola palabra. Un fondo de oficina con luces fluorescentes comunica algo distinto a un fondo de estudio cuidado, y ese algo distinto llega en los primeros dos segundos de vídeo, antes de que el espectador procese el contenido.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Fondo neutro vs entorno real" },
+      {
+        type: "paragraph",
+        text: "Un fondo neutro, tipo ciclorama gris o papel continuo, funciona bien cuando el contenido tiene que verse igual en todas las piezas de una campaña: anuncios, packshots de producto o contenido corporativo muy formal. Da control total sobre la luz y permite recortar o cambiar el fondo en edición sin dejar rastro.",
+      },
+      {
+        type: "paragraph",
+        text: "Un entorno real, como un salón, una terraza o una oficina con vida, funciona mejor cuando el objetivo es cercanía: marca personal, entrevistas, contenido de autoridad o piezas donde quieres que el espectador sienta que está en un sitio de verdad, no en un plató. En RCS usamos el ático precisamente por eso: mantiene la parte técnica de un estudio, pero el fondo no huele a fondo.",
+      },
+      { type: "heading", level: 3, text: "Elegir el fondo según el mensaje de la marca" },
+      {
+        type: "paragraph",
+        text: "Antes de decidir el decorado conviene tener claro qué se quiere transmitir. Una marca que vende cercanía y trato humano no debería grabar sobre un ciclorama blanco frío. Una marca que vende precisión técnica o un producto muy serio puede necesitar justo lo contrario: un fondo simple que no distraiga.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo mismo pasa con el color. Un fondo con los colores de marca ayuda al reconocimiento visual en redes, pero si se satura demasiado, compite con la persona que habla. La regla que seguimos en RCS es simple: el fondo puede sugerir la marca, nunca debe gritarla.",
+      },
+      { type: "heading", level: 3, text: "Cuidar la profundidad y los elementos que entran en cuadro" },
+      {
+        type: "paragraph",
+        text: "Un fondo plano, sin ningún elemento a distintas distancias de la cámara, aplana la imagen y la hace ver más barata aunque la cámara sea buena. Añadir uno o dos elementos a distinta profundidad, una planta, una estantería, una lámpara, da sensación de espacio real y hace que la imagen respire.",
+      },
+      {
+        type: "image",
+        src: "/blog/fondos-decorados-grabacion-contenido/mid.webp",
+        alt: "Salón decorado con estanterías y plantas usado como fondo real de grabación",
+        width: 1920,
+        height: 1125,
+      },
+      {
+        type: "paragraph",
+        text: "También hay que revisar qué entra en cuadro que no debería: cables sueltos, un extintor, una papelera, un cartel mal alineado. Son detalles pequeños que en persona no se notan, pero que en vídeo, sobre todo en primeros planos, se convierten en lo único que ve el espectador.",
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Elegir el fondo el mismo día de la grabación, sin haberlo visto antes en cámara con la luz real.",
+          "Usar un fondo con demasiados elementos que compiten visualmente con la persona que habla.",
+          "Grabar con un fondo corporativo genérico cuando el mensaje pide cercanía, o al revés.",
+          "No revisar el encuadre completo antes de grabar y dejar objetos sueltos o mal colocados dentro de plano.",
+          "Cambiar de fondo entre piezas de una misma campaña sin necesidad, lo que rompe la coherencia visual de la marca.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito llevar mi propio decorado a la sesión?",
+        answer:
+          "No. El ático ya funciona como fondo real con salón, terraza y skyline de Madrid. Si tu marca necesita algo más específico, lo hablamos antes de la sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿El ático sirve como fondo neutro para packshots de producto?",
+        answer:
+          "Podemos montar una zona con fondo liso dentro del espacio para packshots o piezas muy formales, aunque el punto fuerte del ático es el entorno real para contenido de marca y entrevistas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo cambiar de fondo varias veces en la misma sesión?",
+        answer:
+          "Sí, moviéndonos entre distintas zonas del ático: salón, terraza o rincones con luz distinta. Conviene decidirlo antes para organizar bien el tiempo de sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si los colores de mi marca son muy fuertes y chocan con el fondo?",
+        answer:
+          "Se ajusta con vestuario, atrezo puntual o encuadre, sin tener que repintar ni forzar el espacio. Normalmente basta con introducir el color de forma controlada, no en todo el fondo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes dudas sobre qué fondo pedir para tu próxima sesión, cuéntanos qué quieres transmitir desde /#contacto. Te decimos qué zona del ático encaja mejor antes de que reserves fecha.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
