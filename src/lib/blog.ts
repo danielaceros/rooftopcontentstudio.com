@@ -3312,6 +3312,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "camara-grabar-contenido-marca",
+    title: "Cámara para grabar contenido de marca: qué mirar más allá de la resolución",
+    description:
+      "Qué cámara usar para grabar contenido de marca: por qué la resolución no es lo primero que hay que mirar y qué factores marcan más diferencia en el resultado final.",
+    publishedAt: "2026-07-08",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["cámara de grabación", "contenido de marca", "estudio de grabación", "Madrid", "producción de vídeo"],
+    keyword: "camara para grabar contenido de marca",
+    intent: "informacional",
+    excerpt:
+      "La cámara no es lo que más cambia el resultado de un vídeo de marca. Qué mirar de verdad antes de comprar o alquilar equipo.",
+    seoTitle: "Cámara para Grabar Contenido de Marca | RCS Madrid",
+    metaDescription:
+      "Cámara para grabar contenido de marca: qué mirar en autofoco, formato de entrega y lentes antes de elegir o alquilar equipo para tu marca en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien nos escribe para grabar contenido de marca, casi siempre la primera pregunta es qué cámara vamos a usar. Tiene sentido: es lo que se ve, lo que se toca, lo que aparece en las specs del anuncio. Pero después de más de dos años grabando en el ático, la cámara casi nunca es lo que decide si un vídeo se ve profesional o no.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos con equipo de nivel profesional, sí, pero el salto de calidad real viene de otros sitios: cómo enfoca la cámara en movimiento, qué lente lleva montada, cómo suena el vídeo y para qué formato de entrega lo estás preparando. Esta guía va de eso: qué mirar de verdad antes de comprar o alquilar una cámara para grabar contenido de marca.",
+      },
+      {
+        type: "image",
+        src: "/blog/camara-grabar-contenido-marca/hero.webp",
+        alt: "Cámara de vídeo profesional preparada sobre trípode en set de grabación",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es lo que realmente cambia el resultado de un vídeo" },
+      {
+        type: "paragraph",
+        text: "La mayoría de contenido de marca se ve en un móvil, a menudo en 1080p aunque se haya grabado en 4K. Eso significa que perseguir más resolución tiene un retorno muy bajo a partir de cierto punto. El espectador no nota la diferencia entre 4K y 6K en su pantalla de 6 pulgadas, pero sí nota si la imagen está desenfocada dos segundos o si el audio suena a lata.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo que sí se nota, y mucho, es el autofoco cuando hay movimiento, la estabilización cuando no usas trípode, la exposición cuando cambia la luz a mitad de toma y el audio en todo momento. Esos cuatro factores pesan más en la percepción de calidad que cualquier cifra de resolución en la caja de la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso en RCS priorizamos equipo que resuelve bien esos cuatro puntos antes que equipo que solo suma megapíxeles. Una cámara media bien configurada, con buen audio y buena luz, da mejor resultado que una cámara de gama alta mal usada.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Autofoco y estabilización, no resolución" },
+      {
+        type: "paragraph",
+        text: "Si vas a grabar hablando a cámara, moviéndote por un espacio o siguiendo a alguien, el autofoco por seguimiento de ojo o de sujeto marca más diferencia que cualquier otra especificación. Cámaras como la Sony A7 IV o la A7S III resuelven esto muy bien y por eso son de las más usadas en producción de contenido de marca, no porque graben en 4K, sino porque no pierden el foco cuando la persona se mueve.",
+      },
+      { type: "heading", level: 3, text: "Formato de entrega: para qué vas a usar el vídeo" },
+      {
+        type: "paragraph",
+        text: "Antes de fijarte en la cámara, define dónde va a vivir el vídeo. Si es para reels o shorts, necesitas vertical y un encuadre pensado para eso desde el minuto uno, no un recorte del horizontal a última hora. Si es para web o YouTube, el horizontal manda. Grabar en el formato equivocado y recortar después pierde resolución efectiva y suele estropear el encuadre pensado para cámara.",
+      },
+      { type: "heading", level: 3, text: "Lentes y profundidad de campo" },
+      {
+        type: "paragraph",
+        text: "Una lente correcta hace más por la imagen que cambiar de cuerpo de cámara. Para plano de persona hablando, un 35mm o 50mm equivalente con buena apertura separa al sujeto del fondo y da esa sensación de producción cuidada. Una cámara cara con el objetivo de kit se ve peor que una cámara modesta con una lente luminosa bien elegida.",
+      },
+      {
+        type: "image",
+        src: "/blog/camara-grabar-contenido-marca/mid.webp",
+        alt: "Primer plano del objetivo de una cámara profesional durante una grabación",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al elegir cámara" },
+      {
+        type: "list",
+        items: [
+          "Priorizar resolución (4K, 6K, 8K) por encima de autofoco y estabilización.",
+          "Comprar el cuerpo de cámara sin presupuestar una lente decente para acompañarlo.",
+          "No probar el audio real de la cámara antes de una grabación importante.",
+          "Grabar en un códec o formato que complica la edición y alarga los tiempos de entrega.",
+          "Cambiar de cámara entre piezas de una misma campaña sin necesidad, lo que rompe la consistencia visual.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito una cámara de gama alta para grabar contenido de marca?",
+        answer:
+          "No necesariamente. Un equipo de gama media con buen autofoco, buena lente y buen audio suele dar mejor resultado que una cámara cara mal configurada o mal acompañada.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué cámara usáis en RCS?",
+        answer:
+          "Trabajamos con cuerpos Sony A7, elegidos por su autofoco fiable y su rendimiento en vídeo, combinados con lentes luminosas según el tipo de plano que necesita cada sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor grabar en 4K aunque el vídeo vaya a subirse en 1080p?",
+        answer:
+          "Ayuda si necesitas margen para recortar o estabilizar en edición, pero no es imprescindible. Si tienes que elegir entre 4K con mal autofoco o 1080p con buen autofoco, el 1080p gana en resultado percibido.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo traer mi propia cámara a la sesión en RCS?",
+        answer:
+          "Sí. Podemos grabar con tu equipo, con el nuestro, o combinar ambos según lo que necesite cada pieza. Lo hablamos antes de la sesión para preparar el set en consecuencia.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes dudas sobre qué equipo necesita tu próxima sesión, cuéntanos qué contenido quieres grabar desde /#contacto. Te decimos si conviene traer tu cámara, usar la nuestra o combinar ambas.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

@@ -253,6 +253,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 4 ejecuciones, requiere reautorización manual). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre fondos/decorados de grabación. Imágenes Unsplash.",
   },
+  {
+    slug: "camara-grabar-contenido-marca",
+    keyword: "camara para grabar contenido de marca",
+    intent: "informacional",
+    createdAt: "2026-07-08",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 5 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre elección de cámara para grabar contenido de marca. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
