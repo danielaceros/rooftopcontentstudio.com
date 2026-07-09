@@ -3424,6 +3424,114 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "cobertura-audiovisual-eventos-corporativos",
+    title: "Cobertura audiovisual de eventos corporativos: qué necesitas para grabarlo bien",
+    description:
+      "Qué hace falta para cubrir un evento corporativo en vídeo sin perder calidad: cuántas cámaras, cómo resolver el audio en directo y qué entregables sacar al final.",
+    publishedAt: "2026-07-09",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["cobertura de eventos", "producción audiovisual", "eventos corporativos", "Madrid", "vídeo corporativo"],
+    keyword: "cobertura audiovisual eventos corporativos",
+    intent: "informacional",
+    excerpt:
+      "Grabar un evento corporativo no es lo mismo que grabar en estudio. Qué cambia, qué falla más a menudo y cómo llegar con un plan que no dependa de la improvisación.",
+    seoTitle: "Cobertura Audiovisual de Eventos Corporativos | RCS Madrid",
+    metaDescription:
+      "Cobertura audiovisual de eventos corporativos: cuántas cámaras necesitas, cómo resolver el audio en directo y qué entregables pedir al terminar el evento.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un evento corporativo se graba una vez. No hay repetición de toma, no hay segunda oportunidad si falla el audio del ponente o si la cámara pierde el foco justo cuando sube al escenario el director general. Eso cambia por completo la forma de plantear la producción frente a una grabación en estudio, donde siempre puedes parar y volver a intentarlo.",
+      },
+      {
+        type: "paragraph",
+        text: "Hemos cubierto eventos para organizaciones como IFEMA, la Cámara de Comercio de Madrid o Cinesa, y el patrón se repite: el evento sale bien cuando el plan de cobertura está cerrado antes de que empiece, no cuando se improvisa sobre la marcha. Esta guía va de qué necesitas decidir antes, durante y después de grabar un evento corporativo.",
+      },
+      {
+        type: "image",
+        src: "/blog/cobertura-audiovisual-eventos-corporativos/hero.webp",
+        alt: "Trípode con cámara de vídeo preparado para cobertura de evento en directo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es distinto en un evento frente a una grabación en estudio" },
+      {
+        type: "paragraph",
+        text: "En estudio controlas la luz, el sonido, el tiempo y el ritmo. En un evento controlas muy poco de eso. El ponente puede alargarse, el técnico de sonido de la sala puede tener su propio mezclador, y el espacio suele estar pensado para el público presente, no para la cámara. La cobertura audiovisual tiene que adaptarse al evento, no al revés.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso obliga a resolver de antemano tres cosas: cuántas cámaras hacen falta para no perder ningún momento clave, cómo vas a captar el audio sin depender solo del sonido de sala, y qué vas a entregar al final, porque el bruto del evento casi nunca es lo que el cliente necesita compartir después.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Cuántas cámaras necesitas según el formato" },
+      {
+        type: "paragraph",
+        text: "Una ponencia con un único orador fijo se puede cubrir con dos cámaras: un plano general del escenario y un plano medio que puedas mover para reaccionar. Un panel con varios invitados o un evento con photocall, networking y ponencias necesita una tercera cámara suelta por sala para no depender de que todo pase en el escenario. Más de tres cámaras rara vez aporta si no hay un equipo de realización en directo cortando entre ellas.",
+      },
+      { type: "heading", level: 3, text: "Audio en directo: el punto que más falla" },
+      {
+        type: "paragraph",
+        text: "El error más habitual es fiarlo todo al sonido ambiente de la sala. Si el evento tiene megafonía propia, lo correcto es pedir una salida de línea del mezclador del recinto además de tu propio micrófono de corbata o de mano en el ponente. Esa salida de línea es la que salva la grabación cuando el técnico de sala sube o baja el volumen sin avisar.",
+      },
+      { type: "heading", level: 3, text: "Qué entregable pedir al terminar el evento" },
+      {
+        type: "paragraph",
+        text: "El bruto de tres cámaras durante dos horas no sirve para publicar. Lo que de verdad se usa después es un vídeo resumen de 60-90 segundos para redes, un vídeo más largo de la ponencia principal para la web, y un lote de clips cortos de los momentos con más gancho: una frase potente, una reacción del público, un momento visual fuerte. Eso hay que pedirlo como entregable desde el briefing inicial, no improvisarlo en edición.",
+      },
+      {
+        type: "image",
+        src: "/blog/cobertura-audiovisual-eventos-corporativos/mid.webp",
+        alt: "Público asistente sentado en sala durante un evento corporativo",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al cubrir un evento" },
+      {
+        type: "list",
+        items: [
+          "Depender solo del micrófono de la sala sin pedir salida de línea del mezclador.",
+          "Cubrir con una sola cámara un evento con varios momentos simultáneos (photocall, networking, escenario).",
+          "No definir el entregable final antes del evento, lo que alarga y encarece la edición después.",
+          "Colocar la cámara sin comprobar antes el recorrido de luz durante el horario real del evento.",
+          "No tener un plan B si el ponente principal se retrasa o cambia el orden del programa.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas cámaras necesito para cubrir un evento corporativo?",
+        answer:
+          "Depende del formato. Una ponencia única se cubre bien con dos cámaras. Un evento con varios espacios o momentos simultáneos necesita al menos tres.",
+      },
+      {
+        type: "faq",
+        question: "¿Podéis conectaros al sonido de la sala del evento?",
+        answer:
+          "Sí. Siempre que sea posible pedimos una salida de línea del mezclador del recinto además de micrófono propio en el ponente, para no depender del volumen que gestione el técnico de sala.",
+      },
+      {
+        type: "faq",
+        question: "¿Entregáis el vídeo completo o también clips para redes?",
+        answer:
+          "Ambos. Entregamos el vídeo principal de la ponencia y un lote de clips cortos pensados para publicar en redes, además del resumen del evento si se pide en el briefing.",
+      },
+      {
+        type: "faq",
+        question: "¿Trabajáis eventos fuera del ático de RCS?",
+        answer:
+          "Sí. La cobertura de eventos corporativos se hace en el espacio del cliente o del recinto donde tenga lugar el evento, no en nuestro estudio.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento corporativo próximo y quieres cerrar el plan de cobertura con tiempo, cuéntanos el formato desde /#contacto. Te decimos cuántas cámaras y qué entregables tienen sentido para tu caso.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

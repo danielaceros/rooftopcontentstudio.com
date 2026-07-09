@@ -262,6 +262,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 5 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre elección de cámara para grabar contenido de marca. Imágenes Unsplash.",
   },
+  {
+    slug: "cobertura-audiovisual-eventos-corporativos",
+    keyword: "cobertura audiovisual eventos corporativos",
+    intent: "informacional",
+    createdAt: "2026-07-09",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 6 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre cobertura audiovisual de eventos corporativos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
