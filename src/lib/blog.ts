@@ -3532,6 +3532,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-contenido-ugc-marcas",
+    title: "Contenido UGC para marcas: qué es y cómo grabarlo bien en estudio",
+    description:
+      "Qué es el contenido UGC, por qué las marcas lo piden cada vez más y cómo se graba en estudio sin perder el tono auténtico que lo hace funcionar.",
+    publishedAt: "2026-07-10",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["UGC", "contenido de marca", "estudio de grabación", "Madrid", "redes sociales", "vídeo"],
+    keyword: "grabacion de contenido ugc para marcas",
+    intent: "informacional",
+    excerpt:
+      "El contenido UGC ya no es solo cosa de creators grabando desde casa: las marcas lo piden en estudio, con dirección y calidad, pero sin perder el tono casero que funciona.",
+    seoTitle: "Contenido UGC para marcas: cómo grabarlo | RCS Madrid",
+    metaDescription:
+      "Qué es el contenido UGC, por qué funciona en redes y cómo grabarlo en estudio con calidad profesional sin perder el tono auténtico que lo hace convertir.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "El contenido UGC —user generated content— se ha convertido en el formato que mejor funciona en redes para marcas de todos los tamaños. No es el vídeo pulido de agencia: es el vídeo que parece grabado por una persona real, hablando a cámara sin sonar a guion de anuncio.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que grabar 'como si fuera casero' en casa, con luz de ventana y el móvil apoyado en una torre de libros, casi nunca sale bien a la primera. En RCS grabamos UGC en estudio: mantenemos ese tono cercano pero controlamos luz, audio y encuadre para que el resultado se pueda usar de verdad.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-contenido-ugc-marcas/hero.webp",
+        alt: "Persona grabando contenido vertical con cámara para redes sociales",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el contenido UGC y por qué las marcas lo piden" },
+      {
+        type: "paragraph",
+        text: "UGC es cualquier vídeo que suena a persona real hablando de un producto o servicio, no a departamento de marketing. Testimonios, unboxings, reviews cortas, 'un día usando X'. El formato nació en redes con creators grabando desde casa, pero las marcas descubrieron que ese estilo convierte mejor en anuncios que el vídeo corporativo tradicional.",
+      },
+      {
+        type: "paragraph",
+        text: "La razón es sencilla: en el feed, un vídeo que parece publicidad se salta. Uno que parece una persona hablando, no. Por eso agencias y equipos de marketing piden ahora UGC grabado con calidad de estudio pero sin perder esa sensación de espontaneidad que hace que alguien se pare a verlo entero.",
+      },
+      { type: "heading", level: 2, text: "Cómo se graba UGC bien en estudio" },
+      { type: "heading", level: 3, text: "Guion flexible, no guion cerrado" },
+      {
+        type: "paragraph",
+        text: "Preparamos puntos clave, no frases cerradas. La persona que graba —el founder, un empleado o un creator contratado— sabe qué tiene que decir pero lo dice con sus propias palabras. Grabamos varias tomas cortas de cada idea y en edición nos quedamos con la que suena más natural.",
+      },
+      { type: "heading", level: 3, text: "Cámara y encuadre que parecen de móvil" },
+      {
+        type: "paragraph",
+        text: "Usamos cámaras reales (Sony A7 o similar) pero encuadramos como si fuera un móvil: plano medio, vertical, cámara a la altura de los ojos. La calidad de imagen es de estudio, la composición imita lo que verías en una story grabada a pulso.",
+      },
+      { type: "heading", level: 3, text: "Audio limpio sin sonar a spot" },
+      {
+        type: "paragraph",
+        text: "El micrófono de corbata o el shotgun cerca de cámara quitan el ruido de fondo sin sonar sobreproducido. Un audio sucio delata que el vídeo no está cuidado; un audio de anuncio de televisión delata que no es UGC real. El punto medio es lo que funciona.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-contenido-ugc-marcas/mid.webp",
+        alt: "Equipo de iluminación con ring lights junto a ventana en estudio de grabación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar UGC" },
+      {
+        type: "list",
+        items: [
+          "Guion demasiado cerrado que suena a anuncio leído.",
+          "Grabar en horizontal cuando el destino es TikTok, Reels o Stories.",
+          "Iluminación plana que quita la sensación de vídeo casero real.",
+          "No grabar variantes del hook para poder testear cuál engancha más.",
+          "Olvidar un CTA claro al final del vídeo.",
+          "Entregar un solo corte largo en vez de varios clips cortos listos para publicar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una sesión de grabación UGC?",
+        answer:
+          "Entre 2 y 3 horas para grabar 8-10 piezas distintas con varias tomas de cada una. Depende de cuántos guiones o ángulos quieras cubrir.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito llevar guion cerrado antes de venir?",
+        answer:
+          "No, mejor un guion de puntos. Si vienes con frases cerradas de memoria el vídeo suena leído, que es justo lo que el UGC tiene que evitar.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién puede grabar el UGC, yo o un creator?",
+        answer:
+          "Ambos funcionan. El founder da autenticidad, un creator contratado da más soltura frente a cámara. Depende de tu marca y de cuánto vas a repetir el formato.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué formato entrego los vídeos?",
+        answer:
+          "Vertical 9:16 listo para TikTok, Reels y Stories, y si hace falta también un corte horizontal para YouTube o web.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu marca necesita contenido UGC con esa mezcla de auténtico y bien grabado, en RCS montamos la sesión completa: guion de apoyo, grabación y clips listos para publicar. Escríbenos desde /#contacto y lo hablamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

@@ -271,6 +271,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 6 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre cobertura audiovisual de eventos corporativos. Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-contenido-ugc-marcas",
+    keyword: "grabacion de contenido ugc para marcas",
+    intent: "informacional",
+    createdAt: "2026-07-10",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 7 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre contenido UGC para marcas. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
