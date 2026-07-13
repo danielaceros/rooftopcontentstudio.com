@@ -3641,6 +3641,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-employer-branding-atraer-talento",
+    title: "Vídeos de employer branding: cómo grabar contenido que atraiga talento",
+    description:
+      "Qué es un vídeo de employer branding, por qué las empresas lo usan para atraer talento y cómo grabarlo en estudio sin que parezca un anuncio de RRHH.",
+    publishedAt: "2026-07-13",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["employer branding", "contenido de marca", "estudio de grabación", "Madrid", "recursos humanos", "vídeo corporativo"],
+    keyword: "video de employer branding para atraer talento",
+    intent: "informacional",
+    excerpt:
+      "Cada vez más empresas graban vídeo para mostrar cómo es trabajar en su equipo. Cómo hacerlo bien para que atraiga candidatos de verdad, no solo likes.",
+    seoTitle: "Vídeos de employer branding: cómo grabarlos | RCS Madrid",
+    metaDescription:
+      "Vídeo de employer branding para atraer talento: qué grabar, cómo prepararlo y por qué el estudio marca la diferencia frente a grabar en la oficina.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez hablo con más equipos de RRHH y founders que quieren grabar vídeo para mostrar cómo es trabajar en su empresa. No es un anuncio de empleo tradicional: es contenido que enseña al equipo real, el espacio real y el día a día real, para que quien lo vea decida si quiere formar parte de eso.",
+      },
+      {
+        type: "paragraph",
+        text: "Ese tipo de vídeo se llama employer branding y funciona porque un candidato hoy investiga la empresa igual que investiga un producto antes de comprarlo. Mira LinkedIn, mira Glassdoor, mira el Instagram del equipo. Si lo único que encuentra es una oferta de empleo con bullet points, pierde interés antes de empezar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding-atraer-talento/hero.webp",
+        alt: "Persona del equipo grabando un testimonio para vídeo de employer branding",
+        width: 1920,
+        height: 1281,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de employer branding y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de employer branding no vende un puesto, vende cómo es trabajar ahí. Puede ser una persona del equipo contando qué hace en su día a día, un tour por la oficina, o el propio founder explicando por qué monta las cosas como las monta. La diferencia con un vídeo corporativo clásico es el tono: cercano, sin guion de comunicación institucional.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el proceso de selección ya no empieza en la entrevista. Empieza cuando alguien busca el nombre de la empresa antes de mandar el CV. Si encuentra contenido real —caras, voces, espacio de trabajo— llega a la entrevista con más interés y menos dudas. Si no encuentra nada, decide con la única información que tiene: el salario y el título del puesto.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar contenido de employer branding que funcione" },
+      { type: "heading", level: 3, text: "Historias reales de equipo, no anuncios de RRHH" },
+      {
+        type: "paragraph",
+        text: "El vídeo que mejor funciona no lo protagoniza el departamento de RRHH leyendo valores corporativos. Lo protagoniza alguien del equipo contando, con sus palabras, por qué se quedó, qué le sorprendió al entrar o qué haría distinto. Grabamos varias tomas cortas de cada pregunta y nos quedamos con la que suena a conversación, no a discurso preparado.",
+      },
+      { type: "heading", level: 3, text: "Formato y duración pensados para dónde se va a publicar" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de tres minutos para la página de empleo no sirve igual en LinkedIn, donde compite con contenido corto. De cada sesión sacamos un corte largo para la web de carreras y varios clips verticales de 30-60 segundos para LinkedIn e Instagram, cada uno centrado en una sola idea: cultura, proyectos, equipo o beneficios.",
+      },
+      { type: "heading", level: 3, text: "Voces distintas, no solo el CEO" },
+      {
+        type: "paragraph",
+        text: "El founder o el CEO puede abrir el vídeo, pero si todas las voces son de dirección, el mensaje suena a comunicación corporativa. Meter a alguien que lleva seis meses en el puesto, a un manager de equipo y a alguien de un departamento distinto da variedad real y hace que un candidato se vea reflejado en al menos una de esas personas.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-employer-branding-atraer-talento/mid.webp",
+        alt: "Cámara y monitor grabando una entrevista de equipo en estudio",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Guion cerrado que suena leído en vez de contado.",
+          "Grabar solo al CEO o a dirección, sin voces del resto del equipo.",
+          "Un único vídeo largo sin clips cortos para redes.",
+          "Grabar en la oficina sin cuidar sonido ni luz, lo que resta credibilidad.",
+          "No mostrar el espacio de trabajo real, solo caras en plano fijo.",
+          "Publicarlo una vez y no repetir el formato cada cierto tiempo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura grabar un vídeo de employer branding?",
+        answer:
+          "Entre 2 y 3 horas para grabar 3-4 testimonios y cubrir varios ángulos de cada pregunta. Si además quieres imágenes del equipo trabajando, calcula media hora más.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta guion cerrado para cada persona?",
+        answer:
+          "No, mejor un guion de preguntas. Cada persona responde con sus palabras y en edición nos quedamos con la toma que suena más natural.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué formatos se entrega?",
+        answer:
+          "Un corte principal para web o página de empleo y varios clips verticales cortos listos para LinkedIn e Instagram.",
+      },
+      {
+        type: "faq",
+        question: "¿Podemos grabarlo en nuestra oficina en vez de en el estudio?",
+        answer:
+          "Podemos, pero el resultado depende mucho de la luz y el sonido del espacio. En estudio controlamos ambas cosas desde el minuto uno, así que el vídeo sale con nivel profesional sin depender de las condiciones de tu oficina.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu empresa quiere grabar contenido de employer branding para atraer talento, en RCS montamos la sesión completa: preguntas de apoyo, grabación de varias personas del equipo y clips listos para publicar. Escríbenos desde /#contacto y lo hablamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
