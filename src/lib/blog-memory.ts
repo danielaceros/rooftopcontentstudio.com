@@ -289,6 +289,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 8 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo de employer branding para atraer talento. Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-webinars-masterclasses",
+    keyword: "grabacion de webinars y masterclasses",
+    intent: "informacional",
+    createdAt: "2026-07-15",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 9 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre grabación de webinars y masterclasses. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

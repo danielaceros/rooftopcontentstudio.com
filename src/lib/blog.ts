@@ -3750,6 +3750,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-webinars-masterclasses",
+    title: "Grabación de webinars y masterclasses: cómo hacerlo con nivel profesional",
+    description:
+      "Cómo grabar un webinar o una masterclass con cámara, pantalla y audio a nivel profesional, para que el contenido se pueda reutilizar después del directo.",
+    publishedAt: "2026-07-15",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["webinar", "masterclass", "grabación", "contenido de marca", "estudio de grabación", "Madrid"],
+    keyword: "grabacion de webinars y masterclasses",
+    intent: "informacional",
+    excerpt:
+      "Un webinar grabado con webcam y sonido de portátil se nota. Cómo montar cámara, pantalla compartida y audio para que la masterclass funcione en directo y después.",
+    seoTitle: "Grabación de webinars y masterclasses | RCS Madrid",
+    metaDescription:
+      "Grabación de webinars y masterclasses con nivel profesional: cámara, pantalla compartida y audio limpio, listos para el directo y para reutilizar después.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez más founders, coaches y equipos de marketing me preguntan lo mismo antes de lanzar un webinar o una masterclass: cómo hacer que se vea y se escuche bien sin que parezca una videollamada improvisada. Tiene sentido. Ese vídeo no se usa una sola vez: se emite en directo, pero después se convierte en contenido evergreen, en clips para redes o en material de un curso.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema es que la mayoría graba con lo que tiene a mano: webcam del portátil, micrófono integrado, luz de la ventana que cambia a mitad de sesión. Funciona para una reunión interna. No funciona cuando ese vídeo tiene que vender un curso, una mentoría o la reputación de quien lo presenta.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-webinars-masterclasses/hero.webp",
+        alt: "Presentador grabando un webinar con cámara y monitores en estudio",
+        width: 1920,
+        height: 1440,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es grabar un webinar o masterclass y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Grabar un webinar con nivel profesional significa separar tres cosas que en una videollamada normal van todas mezcladas: la imagen de quien presenta, la pantalla compartida con las diapositivas o la demo, y el audio. Cuando cada elemento se capta por separado y con equipo dedicado, en edición se puede combinar, recortar y reutilizar sin depender de cómo salió el directo.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque una masterclass suele ser la pieza de contenido con más intención de compra de todo el funnel. La persona que llega hasta el final de un webinar de 45 minutos está evaluando si confía en quien habla. Si el audio se corta, la luz parpadea o la cámara está torcida, esa duda técnica se traslada a la duda sobre el producto.",
+      },
+      {
+        type: "paragraph",
+        text: "Y además, ese mismo vídeo casi nunca se usa una vez. Se recorta en clips para LinkedIn, se convierte en módulo de curso, se manda por email a quien no pudo asistir en directo. Grabarlo bien de origen ahorra horas de edición después.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Guion por bloques, no lectura literal" },
+      {
+        type: "paragraph",
+        text: "Un webinar leído palabra por palabra suena a webinar leído. Lo que funciona es un guion por bloques: qué se cuenta en cada tramo, qué diapositiva acompaña cada idea y qué pregunta o transición marca el cambio de bloque. Dentro de cada bloque, la persona habla con sus palabras. Se nota la diferencia entre alguien que lee y alguien que explica.",
+      },
+      { type: "heading", level: 3, text: "Pantalla, cámara y presentador en el mismo encuadre" },
+      {
+        type: "paragraph",
+        text: "La fórmula que mejor funciona combina la cámara del presentador con la pantalla compartida en la misma grabación, capturadas por separado. Así en edición se puede alternar entre plano de cámara para los momentos de conexión y pantalla completa para la parte de contenido denso, sin perder nunca la sensación de que hay una persona real al otro lado.",
+      },
+      { type: "heading", level: 3, text: "Audio limpio antes que imagen bonita" },
+      {
+        type: "paragraph",
+        text: "Si alguien abandona un webinar, casi nunca es porque la imagen no sea perfecta. Es porque no se entiende bien lo que se dice. Un micrófono de solapa o de mesa cerca de la boca, sin eco de sala ni ruido de fondo, hace más por la percepción de calidad que cualquier iluminación. En estudio controlamos ambas cosas desde el minuto uno.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-webinars-masterclasses/mid.webp",
+        alt: "Cámara y equipo de grabación enfocando una pantalla de presentación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar con la webcam del portátil como única fuente de imagen.",
+          "Audio del micrófono integrado, con eco de la sala de fondo.",
+          "Diapositivas con mucho texto que nadie puede leer en un vídeo grabado.",
+          "No grabar la pantalla y la cámara por separado, lo que limita la edición después.",
+          "Luz de ventana que cambia de intensidad a mitad de sesión.",
+          "No dejar pausas ni reinicios de bloque, lo que complica cortar clips después.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se puede grabar un webinar en estudio si luego se emite en directo?",
+        answer:
+          "Sí. Grabamos con la misma configuración que usarías en directo (cámara, pantalla y audio) y esa grabación sirve tanto para el directo como para reutilizarla después sin grabar de nuevo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura grabar una masterclass completa?",
+        answer:
+          "Para una masterclass de 45-60 minutos, calcula entre 2 y 3 horas en estudio contando pruebas de sonido, encuadre y algún corte por bloque si hace falta repetir una parte.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta compartir pantalla en el momento de grabar?",
+        answer:
+          "Es lo más práctico: se captura pantalla y cámara a la vez y en edición se decide cuándo mostrar cada una. Si prefieres, también se puede grabar solo la parte de cámara y montar las diapositivas después.",
+      },
+      {
+        type: "faq",
+        question: "¿Se pueden sacar clips para redes de la misma grabación?",
+        answer:
+          "Sí, es habitual. De una masterclass de 45 minutos suelen salir varios clips cortos para LinkedIn o Instagram centrados en las ideas más fuertes de cada bloque.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un webinar o una masterclass en el calendario y quieres que se vea y se escuche a nivel profesional, en RCS montamos cámara, pantalla y audio para que salga bien a la primera. Escríbenos desde /#contacto y lo preparamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
