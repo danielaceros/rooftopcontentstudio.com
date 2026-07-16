@@ -298,6 +298,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 9 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre grabación de webinars y masterclasses. Imágenes Unsplash.",
   },
+  {
+    slug: "grabacion-videos-producto-estudio",
+    keyword: "grabacion de videos de producto en estudio",
+    intent: "informacional",
+    createdAt: "2026-07-16",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 10 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre grabación de vídeo de producto en estudio. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

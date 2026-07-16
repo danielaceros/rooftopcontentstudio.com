@@ -3863,6 +3863,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabacion-videos-producto-estudio",
+    title: "Vídeo de producto en estudio: cómo grabarlo para que venda",
+    description:
+      "Cómo grabar un vídeo de producto en estudio: fondo, iluminación y planos para que el producto se vea bien y el vídeo sirva para vender, no solo para enseñar.",
+    publishedAt: "2026-07-16",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de producto", "grabación", "estudio de grabación", "contenido de marca", "Madrid", "ecommerce"],
+    keyword: "grabacion de videos de producto en estudio",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de producto grabado con el móvil en la mesa de la oficina se nota. Cómo montar fondo, luz y planos en estudio para que el producto se vea bien y venda.",
+    seoTitle: "Vídeo de producto en estudio | RCS Madrid",
+    metaDescription:
+      "Cómo grabar un vídeo de producto en estudio: cámara, luz y fondo para que el producto se vea bien y el vídeo sirva para vender de verdad.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez llegan más marcas a RCS con el mismo encargo: necesitan un vídeo de su producto para la ficha de ecommerce, para un anuncio o para la web, y lo que tienen grabado hasta ahora es con el móvil, encima de la mesa de la oficina, con la luz que entra por la ventana esa tarde. Se nota. Y cuando el producto es lo que tiene que convencer a alguien de comprar, ese detalle pesa.",
+      },
+      {
+        type: "paragraph",
+        text: "Grabar producto no es lo mismo que grabar a una persona hablando a cámara. Cambia el encuadre, cambia la luz, cambia hasta el ritmo del vídeo. Un producto mal iluminado parece más barato de lo que es, tenga el precio que tenga. Uno bien grabado se explica solo, sin necesidad de que nadie hable por encima.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-videos-producto-estudio/hero.webp",
+        alt: "Producto colocado sobre fondo neutro listo para grabación en estudio",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es grabar un vídeo de producto en estudio y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Grabar un vídeo de producto en estudio significa controlar tres variables que en una oficina o en casa son imposibles de controlar a la vez: el fondo, la luz y el ángulo de cámara. En estudio el fondo es neutro o decorado a propósito, la luz es constante durante toda la sesión y la cámara se puede mover en raíl o en mano sin tropezar con el mobiliario.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el vídeo de producto suele ser la última pieza que alguien ve antes de decidir si compra. En una ficha de ecommerce, en un anuncio de Meta o en la web, ese clip de diez o veinte segundos tiene que responder una pregunta muy concreta: ¿esto es lo que parece en la foto? Si el producto se ve mal iluminado, con reflejos raros o con un fondo desordenado, la respuesta que da el cerebro es duda, y la duda no compra.",
+      },
+      {
+        type: "paragraph",
+        text: "Y a diferencia de un vídeo de marca genérico, este tipo de pieza se reutiliza mucho: sirve para la web, para el anuncio, para la ficha del marketplace y para redes, todo desde la misma sesión si se graba pensando en los distintos formatos desde el principio.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Fondo y encuadre según dónde va a vivir el vídeo" },
+      {
+        type: "paragraph",
+        text: "Si el vídeo va a una ficha de ecommerce, el fondo blanco o neutro sigue siendo lo más seguro: pone el foco entero en el producto y es coherente con el resto de fotos de la ficha. Si va a un anuncio o a redes, un fondo con contexto (una mesa, una textura, un ambiente) suele funcionar mejor porque ayuda a imaginar el producto en uso. Decidir esto antes de grabar evita repetir la sesión.",
+      },
+      { type: "heading", level: 3, text: "Luz continua, sin sombras duras ni reflejos" },
+      {
+        type: "paragraph",
+        text: "Para producto trabajamos con luz continua, no con flash: así se ve en tiempo real cómo cae la sombra y se puede ajustar antes de grabar, no después en edición. Con dos paneles y algún difusor se elimina el reflejo duro en superficies brillantes (cristal, plástico, metal), que es el error más común cuando alguien graba con lo que tiene a mano.",
+      },
+      { type: "heading", level: 3, text: "Varios planos, no uno solo fijo" },
+      {
+        type: "paragraph",
+        text: "Un plano general del producto entero, uno de detalle (textura, botón, cierre, etiqueta) y uno en movimiento o en uso cubren la mayoría de los casos. Con una cámara tipo Sony A7 y un objetivo macro se consigue el detalle sin perder nitidez. Ese detalle es justo lo que un vídeo grabado con móvil desde lejos no puede dar.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabacion-videos-producto-estudio/mid.webp",
+        alt: "Set de estudio con cámara e iluminación preparados para grabar producto",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar con la luz de ventana, que cambia de intensidad a mitad de sesión.",
+          "Fondo desordenado o con objetos que distraen del producto.",
+          "Un único plano fijo, sin detalle ni contexto de uso.",
+          "Reflejos sin controlar en superficies de cristal, metal o plástico.",
+          "No pensar antes en qué formatos va a vivir el vídeo (cuadrado, vertical, horizontal).",
+          "Grabar el producto solo, sin ninguna referencia de escala o de uso.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura una sesión de grabación de producto en estudio?",
+        answer:
+          "Para un producto con varios planos (general, detalle y uso) calcula entre 1 y 2 horas en estudio. Si son varios productos de la misma gama, se puede aprovechar el mismo montaje de luz y encuadre para acelerar el resto.",
+      },
+      {
+        type: "faq",
+        question: "¿Se pueden grabar varios productos en la misma sesión?",
+        answer:
+          "Sí, es lo más habitual y lo más eficiente. Mantener el mismo fondo y la misma luz para toda la gama ahorra tiempo de montaje y da coherencia visual a toda la ficha o catálogo.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta fondo blanco tipo packshot siempre?",
+        answer:
+          "No siempre. El fondo blanco funciona mejor para ecommerce y marketplace. Para anuncios o redes, un fondo con contexto suele generar más conexión con quien lo ve. Depende de dónde va a vivir el vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve el mismo vídeo para ecommerce y para anuncios pagados?",
+        answer:
+          "Con planificación sí. Si se graba pensando en varios formatos desde el principio (horizontal, cuadrado, vertical) se puede montar una versión para ficha de producto y otra para anuncio sin repetir la sesión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un producto que necesita verse bien de verdad, en RCS montamos fondo, luz y cámara para que el vídeo cumpla su función: que quien lo vea entienda exactamente qué está comprando. Escríbenos desde /#contacto y lo preparamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
