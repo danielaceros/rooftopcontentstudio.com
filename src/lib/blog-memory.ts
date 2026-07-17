@@ -307,6 +307,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 10 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre grabación de vídeo de producto en estudio. Imágenes Unsplash.",
   },
+  {
+    slug: "tratamiento-acustico-estudio-grabacion",
+    keyword: "tratamiento acustico estudio de grabacion",
+    intent: "informacional",
+    createdAt: "2026-07-17",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 11 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre tratamiento acústico e insonorización de la sala. Imágenes Pexels/Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

@@ -3976,6 +3976,131 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "tratamiento-acustico-estudio-grabacion",
+    title: "Tratamiento acústico en un estudio de grabación: por qué se nota en el resultado",
+    description:
+      "Qué es el tratamiento acústico de una sala, en qué se diferencia de insonorizar y por qué ese trabajo invisible es lo que hace que un podcast o un vídeo suenen profesionales.",
+    publishedAt: "2026-07-17",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["tratamiento acústico", "estudio de grabación", "insonorización", "podcast", "Madrid"],
+    keyword: "tratamiento acustico estudio de grabacion",
+    intent: "informacional",
+    excerpt:
+      "El fondo y la luz se ven a primera vista. El tratamiento acústico no se ve, pero se escucha en cada grabación. Qué hace que una sala suene bien y cómo se consigue.",
+    seoTitle: "Tratamiento acústico en un estudio de grabación | RCS Madrid",
+    metaDescription:
+      "Tratamiento acústico de un estudio: qué hace falta para que un podcast o un vídeo no suenen a habitación vacía y en qué se diferencia de insonorizar.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando alguien visita RCS por primera vez, lo primero que mira es la luz y el fondo. Es lógico, es lo que se ve en la miniatura y en las fotos que se enseñan antes de reservar. El tratamiento acústico de la sala pasa desapercibido justo porque funciona bien: no se ve, se nota en el silencio de fondo cuando reproduces la grabación en casa con auriculares y no en la sala donde se grabó.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia entre grabar en una sala tratada acústicamente y grabar en un salón, una oficina o una habitación cualquiera no está en el micrófono que uses. Está en cómo rebota el sonido antes de llegar a esa cápsula. Un micrófono bueno en una habitación con eco suena peor que uno más modesto en una sala bien tratada, y ese es un error que veo repetirse mucho en gente que invierte en equipo antes de revisar dónde va a grabar con él.",
+      },
+      {
+        type: "image",
+        src: "/blog/tratamiento-acustico-estudio-grabacion/hero.webp",
+        alt: "Sala de grabación con paneles acústicos en las paredes, mesa de mezclas y varios micrófonos con brazo",
+        width: 1880,
+        height: 1253,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el tratamiento acústico y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Tratamiento acústico e insonorización no son lo mismo, aunque se confunden todo el rato. Insonorizar es evitar que el ruido de la calle entre en la sala o que el ruido de dentro salga. Tratar acústicamente una sala es controlar cómo se comporta el sonido una vez ya está dentro: cuánto rebota en las paredes, cuánto tarda en apagarse, si hay frecuencias que se acumulan en las esquinas.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque el oído humano perdona muchas cosas de una grabación, pero el eco de sala no es una de ellas. Una voz grabada en una habitación vacía, con suelo duro y paredes paralelas, suena distante y metálica, aunque el micrófono sea excelente. En un podcast o una entrevista, ese detalle hace que quien escucha se desconecte antes de que termine el primer minuto, algo que no pasa tan rápido con una imagen de calidad media.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema típico es el flutter echo: dos superficies duras y paralelas (dos paredes lisas enfrentadas, o techo y suelo) hacen que el sonido rebote de una a otra varias veces antes de apagarse. Se nota sobre todo en aplausos o en consonantes fuertes, y en una grabación de voz se traduce en un timbre metálico que ninguna edición de audio arregla del todo. Se puede reducir el ruido de fondo con software, pero el eco de la sala ya está grabado dentro de la voz, mezclado con ella, y ahí un plugin ya no separa una cosa de la otra.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto pesa más de lo que parece en formatos donde el audio se escucha sin imagen que lo acompañe, como un podcast que también se sube a plataformas de audio. En vídeo, una imagen algo pobre se perdona porque el ojo sigue completando la escena. En audio puro, un eco de sala incomoda desde el segundo uno y no hay forma de mirar hacia otro lado.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Paneles absorbentes en los puntos que importan" },
+      {
+        type: "paragraph",
+        text: "No hace falta cubrir toda la sala de espuma. Lo que más cambia el sonido son los primeros puntos de reflexión: la pared justo detrás de quien habla, los laterales a la altura del micrófono y las esquinas, donde se acumulan las frecuencias graves. Cubrir esos puntos con paneles absorbentes reduce el eco sin dejar la sala completamente muerta, que tampoco es el objetivo.",
+      },
+      { type: "heading", level: 3, text: "Aislamiento del ruido exterior" },
+      {
+        type: "paragraph",
+        text: "Además del eco interior, está el ruido que entra de fuera: tráfico, obras, el aire acondicionado, el ruido de la calle. En RCS grabamos en un ático de Ronda de Atocha, así que cerramos bien puertas y ventanas antes de empezar y evitamos usar el aire acondicionado durante la toma si hace ruido de fondo. Es un ajuste simple, pero se olvida más de lo que parece cuando alguien graba fuera de un estudio pensado para esto.",
+      },
+      {
+        type: "paragraph",
+        text: "El ruido exterior no siempre es evidente mientras se graba, sobre todo si es constante: un frigorífico, el zumbido de un router o el tráfico de fondo se vuelven invisibles para el oído después de un rato, porque el cerebro deja de prestarles atención. El micrófono no hace ese filtro. Graba exactamente lo que hay, así que conviene revisar el silencio de la sala antes de empezar, no confiar en que \"no se oye nada raro\".",
+      },
+      { type: "heading", level: 3, text: "Colocación del micrófono y distancia a la fuente" },
+      {
+        type: "paragraph",
+        text: "Un micrófono cardioide colocado cerca de la boca (10-15 cm) capta mucha más señal directa que sala, así que el eco residual pesa menos en la mezcla final. Colocado lejos, en cambio, el micrófono capta más habitación que voz, por muy bien tratada que esté la sala. Por eso en RCS ajustamos la distancia antes de grabar, no la posición de la persona respecto a la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "El patrón polar también importa: un cardioide rechaza mejor el sonido que llega de los lados y de atrás, mientras que un omnidireccional capta la sala entera por igual. Para voz hablada en estudio, cardioide casi siempre gana. Y un detalle que se olvida: si hay dos micrófonos abiertos en la misma sala captando la misma fuente, aparece cancelación de fase y el sonido pierde cuerpo, así que en grabaciones a dos voces conviene mantener cada micro cerca de su persona y apagar el que no se esté usando.",
+      },
+      {
+        type: "image",
+        src: "/blog/tratamiento-acustico-estudio-grabacion/mid.webp",
+        alt: "Micrófono de podcast tipo Shure SM7B en primer plano sobre fondo neutro",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Confundir insonorizar (que no entre ruido de fuera) con tratar acústicamente (controlar el eco de dentro).",
+          "Cubrir toda la sala de espuma pensando que cuanta más absorción, mejor: una sala totalmente muerta también suena rara.",
+          "Grabar cerca de ventanas, puertas o rejillas de aire acondicionado sin comprobar antes el ruido de fondo.",
+          "Colocar el micrófono lejos de la boca, lo que hace que se capte más sala que voz.",
+          "No hacer una prueba de sonido antes de grabar: un aplauso o una palmada delatan enseguida el eco de una sala.",
+          "Ignorar el ruido constante de ventiladores de ordenador, neveras o el propio zumbido de los focos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito una sala completamente insonorizada para grabar un podcast?",
+        answer:
+          "No necesariamente. Lo que más se nota en un podcast es el eco de la sala, no el aislamiento total del ruido exterior. Con controlar los reflejos y reducir el ruido de fondo constante (tráfico, aire acondicionado) suele ser suficiente.",
+      },
+      {
+        type: "faq",
+        question: "¿En qué se diferencia insonorizar de tratar una sala acústicamente?",
+        answer:
+          "Insonorizar evita que el ruido entre o salga de la sala (aislamiento). Tratar acústicamente controla cómo rebota el sonido dentro de la sala (paneles, absorción). Son trabajos distintos y muchas veces solo hace falta el segundo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se nota la diferencia si grabo en casa con medios caseros?",
+        answer:
+          "Sí, aunque con límites. Una habitación con alfombra, cortinas gruesas y algún mueble con tela ya suena mejor que una vacía con suelo duro. Pero paneles acústicos reales y una distancia de micrófono correcta siguen dando un salto que lo casero no iguala del todo.",
+      },
+      {
+        type: "faq",
+        question: "¿El tratamiento acústico afecta también a la imagen del vídeo?",
+        answer:
+          "No de forma directa, pero una sala pensada para grabar bien el sonido suele tener también mejor control de luz y menos elementos que distraigan visualmente. Se acaban cuidando las dos cosas a la vez.",
+      },
+      {
+        type: "paragraph",
+        text: "Si grabas podcast, entrevistas o vídeo con audio en directo, el sonido de la sala pesa tanto como la imagen, aunque se note menos a simple vista. En RCS la sala ya está tratada para esto, así que no tienes que pensarlo tú. Escríbenos desde /#contacto y lo hablamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
