@@ -4101,6 +4101,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-ropa-ponerte-grabar-video",
+    title: "Qué ropa ponerte para grabar vídeo: colores, patrones y errores que se ven en cámara",
+    description:
+      "Qué colores funcionan bien en cámara, qué patrones evitar y por qué la ropa condiciona el resultado de una grabación tanto como la luz o el fondo.",
+    publishedAt: "2026-07-20",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vestuario para grabar", "ropa en cámara", "estudio de grabación", "producción de contenido", "Madrid"],
+    keyword: "que ropa ponerte para grabar video",
+    intent: "informacional",
+    excerpt:
+      "La ropa es lo primero que se ve en cualquier grabación, antes incluso de escuchar la primera frase. Qué colores, patrones y prendas funcionan bien en cámara y cuáles conviene evitar.",
+    seoTitle: "Qué ropa ponerte para grabar vídeo | RCS Madrid",
+    metaDescription:
+      "Qué ropa ponerte para grabar vídeo: colores que funcionan en cámara, patrones a evitar y errores de vestuario que se notan en cualquier grabación.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada semana veo llegar a alguien que ha cuidado el guion, ha reservado hora en el estudio y ha probado la luz, y se presenta con una camisa de rayas finas o una camiseta blanca que en cámara pierde todo el contraste. La ropa no es un detalle menor: es lo primero que se ve en un vídeo, antes incluso de escuchar la primera frase.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta un estilista ni ropa nueva para grabar bien. Hace falta entender un puñado de reglas simples sobre cómo se comporta una prenda delante de una cámara, que no siempre coinciden con lo que se ve bien al espejo o en una foto.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-ropa-ponerte-grabar-video/hero.webp",
+        alt: "Persona grabando vídeo en estudio con cámara profesional y ropa de color sólido",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la ropa importa tanto como la luz o el fondo" },
+      {
+        type: "paragraph",
+        text: "Una cámara no ve exactamente lo que ve el ojo. Comprime rangos de color, satura ciertos tonos y reacciona distinto según el sensor y la compresión final que aplique la plataforma donde se sube el vídeo. Una prenda que en persona se ve elegante puede verse plana, quemada o con un patrón que vibra en pantalla sin que la persona lo note hasta que revisa la grabación.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, la ropa condiciona el trabajo de iluminación y de edición. Un color mal elegido obliga a corregir en postproducción, y algunos errores, como el moiré de una camisa de cuadros finos, no se arreglan del todo por mucho tiempo que se le dedique a DaVinci Resolve.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay un motivo más práctico todavía: si se graba con croma o delante de un fondo de un color muy concreto, la ropa puede fundirse con ese fondo y generar un recorte raro alrededor del cuerpo. En un estudio con fondo natural, como salón o terraza, el riesgo es menor, pero sigue existiendo si la prenda coincide demasiado con la tonalidad dominante de la escena.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Colores que funcionan bien en cámara" },
+      {
+        type: "paragraph",
+        text: "Los colores sólidos de saturación media suelen ser la apuesta más segura: azul marino, verde oliva, granate, gris piedra. Dan contraste con la piel y con la mayoría de fondos sin robar protagonismo a la cara. El blanco puro tiende a quemarse con luces potentes y pierde detalle de textura. El negro puro, en un fondo también oscuro, aplana la silueta y complica el trabajo de luz. El rojo saturado puede sangrar en el sensor y generar un halo raro alrededor de los bordes de la prenda.",
+      },
+      { type: "heading", level: 3, text: "Patrones y texturas a evitar" },
+      {
+        type: "paragraph",
+        text: "Las rayas finas y los cuadros pequeños generan moiré: un patrón ondulante que aparece cuando la trama de la tela interfiere con la resolución del sensor. No es un problema del micrófono ni de la cámara en sí, es matemática de píxeles, y se nota más en vídeo comprimido para redes que en una foto. Las telas brillantes o con lentejuelas reflejan la luz de forma irregular y crean puntos que distraen. Los estampados grandes compiten con la cara por la atención de quien mira el vídeo, que es justo lo contrario de lo que se busca.",
+      },
+      { type: "heading", level: 3, text: "Accesorios, brillos y logos" },
+      {
+        type: "paragraph",
+        text: "Los logos y textos grandes en la ropa fechan el vídeo y desvían la mirada del mensaje. Los pendientes largos o collares que se mueven captan luz y, si se usa micrófono de solapa, pueden rozarlo y meter ruido en cada movimiento. Las gafas con cristal sin tratamiento antirreflejante generan un brillo que tapa los ojos bajo ciertos ángulos de luz, algo fácil de evitar simplemente avisando antes de la sesión.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-ropa-ponerte-grabar-video/mid.webp",
+        alt: "Ropa de colores neutros y sólidos colgada en un perchero antes de una grabación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Elegir la ropa la misma mañana de la grabación sin probarla antes con la luz real.",
+          "Llevar una prenda del mismo color que el fondo del set.",
+          "Usar camisas de rayas finas o cuadros pequeños que generan moiré en vídeo.",
+          "Combinar varias prendas brillantes o con mucho estampado a la vez.",
+          "Olvidar el sonido: joyas que rozan el micrófono de solapa en cada gesto.",
+          "No llevar una muda de repuesto en sesiones largas donde puede haber sudor o manchas visibles en cámara.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo llevar blanco o negro puro?",
+        answer:
+          "Se puede, pero exige más cuidado con la luz. El blanco puro tiende a quemarse y perder textura, y el negro puro sobre fondo oscuro aplana la silueta. Un gris claro o un negro combinado con un fondo más iluminado suelen funcionar mejor.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si mi ropa tiene rayas finas?",
+        answer:
+          "Puede aparecer moiré, un patrón ondulante que interfiere con el sensor de la cámara. Si no hay alternativa, ayuda alejarse un poco más de cámara o cambiar a un plano donde la prenda ocupe menos espacio en el encuadre.",
+      },
+      {
+        type: "faq",
+        question: "¿Influye el color de la ropa si grabo con croma?",
+        answer:
+          "Sí, bastante. Cualquier prenda del mismo tono que el croma puede volverse parcialmente transparente al hacer el keying. Conviene evitar verdes o azules saturados si el fondo va a sustituirse en edición.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué colores evitan mejor en el estudio de RCS?",
+        answer:
+          "Con luz natural y fondo de salón o terraza, lo que peor funciona es el blanco muy brillante y los estampados muy cargados. Los colores sólidos de saturación media son los que mejor se integran sin perder presencia.",
+      },
+      {
+        type: "paragraph",
+        text: "La ropa no arregla una grabación floja, pero una mala elección sí puede estropear una buena. Si tienes dudas sobre qué ponerte antes de tu sesión, pregúntame directamente desde /#contacto y te digo qué funciona mejor para tu caso.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
