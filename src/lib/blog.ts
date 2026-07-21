@@ -4214,6 +4214,123 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "guion-video-contenido-sin-sonar-a-anuncio",
+    title: "Cómo escribir un guion para grabar contenido sin que suene a anuncio",
+    description:
+      "Por qué la mayoría de guiones suenan a folleto en vez de a conversación, y cómo estructurar uno que se escuche natural delante de la cámara.",
+    publishedAt: "2026-07-21",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["guion de vídeo", "guion para contenido", "grabación de contenido", "estudio de grabación", "Madrid"],
+    keyword: "guion para grabar contenido",
+    intent: "informacional",
+    excerpt:
+      "La mayoría de guiones suenan a anuncio porque están escritos como un folleto, no como algo que alguien diría en voz alta. Cómo escribir uno que suene a conversación real.",
+    seoTitle: "Guion para grabar contenido sin sonar a anuncio | RCS Madrid",
+    metaDescription:
+      "Guion para grabar contenido sin sonar a anuncio: cómo estructurar el hook, escribir para el oído y dejar hueco a la voz real de quien graba.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada semana recibo guiones que alguien ha escrito la noche antes de grabar. Empiezan con \"Hola, soy fulano y hoy os quiero hablar de...\" y a partir de ahí todo suena a presentación corporativa. El problema no es el contenido, es la estructura: está escrito como un folleto, no como algo que una persona diría en voz alta.",
+      },
+      {
+        type: "paragraph",
+        text: "Un guion no tiene que sonar a guion. Tiene que sonar a alguien que sabe lo que va a decir y lo dice bien, no a alguien leyendo un texto. Esa diferencia se nota en los primeros tres segundos y decide si alguien se queda viendo o pasa al siguiente vídeo sin pensarlo.",
+      },
+      {
+        type: "image",
+        src: "/blog/guion-video-contenido-sin-sonar-a-anuncio/hero.webp",
+        alt: "Cuaderno, portátil y café sobre una mesa mientras se escribe un guion de vídeo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la mayoría de guiones suenan a anuncio" },
+      {
+        type: "paragraph",
+        text: "La mayoría de guiones que suenan a anuncio cometen el mismo error: empiezan presentando en lugar de enganchando. \"Hola, soy Dani y en el vídeo de hoy...\" es la forma más rápida de perder a alguien que está viendo contenido en el móvil sin sonido y decidiendo en menos de un segundo si sigue mirando.",
+      },
+      {
+        type: "paragraph",
+        text: "El segundo error es escribir frases que funcionan en papel pero no en boca. Frases largas, subordinadas, adjetivos de más. Cuando alguien intenta decir eso en voz alta, suena impostado, porque nadie habla así de forma natural en una conversación real. Se nota el esfuerzo por sonar bien en vez de sonar cierto.",
+      },
+      {
+        type: "paragraph",
+        text: "El tercer error es dejar cero margen para la persona que graba. Un guion demasiado cerrado convierte a quien lo lee en un actor leyendo líneas ajenas. Y si esa persona no es actor, se le nota: la mirada busca el texto, el tono se vuelve plano, y el resultado se parece más a una locución que a una conversación.",
+      },
+      {
+        type: "paragraph",
+        text: "Todo esto tiene consecuencia directa en el rendimiento del vídeo. Un guion que suena a anuncio genera menos retención en los primeros segundos, y eso penaliza el alcance en cualquier plataforma. No es solo una cuestión de estilo: es una cuestión de si el contenido llega a la gente o se queda a medio ver.",
+      },
+      { type: "heading", level: 2, text: "Cómo escribir un guion que suene natural" },
+      { type: "heading", level: 3, text: "Empieza por el hook, no por la presentación" },
+      {
+        type: "paragraph",
+        text: "El hook va en la primera frase, no en la tercera. Si necesitas decir \"hola\" antes de decir algo interesante, ese \"hola\" sobra. Empieza por la idea, la pregunta o la afirmación que hace que alguien quiera saber qué viene después. La presentación, si hace falta, va después del hook, nunca antes.",
+      },
+      { type: "heading", level: 3, text: "Escribe para el oído, no para el ojo" },
+      {
+        type: "paragraph",
+        text: "Un guion se escucha, no se lee. Escribe frases cortas, con el orden en que las dirías hablando con un amigo, no el orden que usarías en un email. Si al leerlo en voz alta tropiezas o necesitas repetir una frase para que suene bien, reescríbela más corta. Si suena raro al oído, sonará raro en cámara.",
+      },
+      { type: "heading", level: 3, text: "Deja hueco para la voz real de quien graba" },
+      {
+        type: "paragraph",
+        text: "Un guion no es un texto cerrado palabra por palabra, es una guía de ideas en el orden correcto. Marca los puntos que tienen que aparecer sí o sí, pero deja que la persona que graba diga cada idea con sus propias palabras. Eso es lo que hace que suene a conversación y no a lectura de un teleprompter.",
+      },
+      {
+        type: "image",
+        src: "/blog/guion-video-contenido-sin-sonar-a-anuncio/mid.webp",
+        alt: "Persona hablando delante de una cámara en un estudio de grabación",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al escribir un guion de contenido" },
+      {
+        type: "list",
+        items: [
+          "Escribir el guion completo palabra por palabra y esperar que suene natural al leerlo. Casi nadie lee bien un texto ajeno sin que se note el esfuerzo.",
+          "Meter la marca o el nombre de la empresa en la primera frase, antes de haber dado ningún motivo para seguir viendo el vídeo.",
+          "Usar el mismo guion para todos los formatos, sin adaptar la duración ni el tono a si es un reel, un vídeo largo o un short.",
+          "No dejar ningún hueco para la reacción o el ejemplo espontáneo de quien graba, que suele acabar siendo lo mejor del vídeo.",
+          "Escribir el cierre como una despedida genérica en vez de como una razón concreta para actuar ahora mismo.",
+          "No probar el guion en voz alta antes de grabar, así que el primer intento de decirlo bien ya es delante de la cámara, con el tiempo corriendo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debería durar un guion para un reel?",
+        answer:
+          "Depende del formato, pero como referencia: para un reel de 30-60 segundos necesitas entre 90 y 150 palabras. Más que eso y el ritmo se resiente, y menos y el mensaje se queda corto.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que memorizar el guion palabra por palabra?",
+        answer:
+          "No. Memorizar palabra por palabra suele sonar más rígido que trabajar con una estructura de ideas y decirlas con tus propias palabras cada vez que grabas, aunque cambien ligeramente entre tomas.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar teleprompter con este tipo de guion?",
+        answer:
+          "Sí, y en el estudio lo usamos bastante. La clave es que el guion en el teleprompter esté escrito ya en frases cortas y naturales, no como un texto pensado para leer en silencio.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debería escribir el guion, yo o quien graba?",
+        answer:
+          "Idealmente lo escribe quien va a decirlo, o alguien que conoce bien su forma de hablar. Un guion escrito por un tercero sin ese conocimiento tiende a sonar ajeno incluso cuando el contenido es bueno.",
+      },
+      {
+        type: "paragraph",
+        text: "Un buen guion no se nota. Lo que se nota es cuando falta o cuando está mal escrito. Si quieres que te ayude a preparar el guion antes de tu próxima sesión de grabación, escríbeme desde /#contacto y lo vemos juntos antes del día de la grabación.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

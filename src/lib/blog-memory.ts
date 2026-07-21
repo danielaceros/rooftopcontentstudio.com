@@ -325,6 +325,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 12 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vestuario y colores para grabar en cámara. Imágenes Unsplash.",
   },
+  {
+    slug: "guion-video-contenido-sin-sonar-a-anuncio",
+    keyword: "guion para grabar contenido",
+    intent: "informacional",
+    createdAt: "2026-07-21",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste desde hace 14 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre cómo escribir un guion de vídeo que suene natural. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
