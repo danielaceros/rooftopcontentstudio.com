@@ -4331,6 +4331,117 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-horizontal-vs-vertical-que-formato-usar",
+    title: "Vídeo horizontal vs vertical: cuándo usar cada formato",
+    description:
+      "Horizontal o vertical no es una decisión estética. Depende de dónde va a verse el vídeo y qué tiene que transmitir. Cómo elegir bien antes de grabar.",
+    publishedAt: "2026-07-22",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["formato de vídeo", "vídeo vertical", "contenido para redes", "producción audiovisual", "Madrid"],
+    keyword: "video horizontal vs vertical",
+    intent: "informacional",
+    excerpt:
+      "Horizontal o vertical no es gusto personal, es una decisión que depende de dónde se va a ver el vídeo. Cómo elegir el formato antes de grabar, no después en edición.",
+    seoTitle: "Vídeo horizontal vs vertical: qué formato usar | RCS Madrid",
+    metaDescription:
+      "Vídeo horizontal vs vertical: cómo elegir el formato según la plataforma y el objetivo, y cómo grabar una sesión pensando en ambos sin perder calidad.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi cada semana alguien me pregunta si debería grabar en horizontal o en vertical. La pregunta está mal planteada desde el principio, porque no hay una respuesta única. Depende de dónde va a verse el vídeo, no de qué formato prefieras tú o de cuál te parezca más \"profesional\".",
+      },
+      {
+        type: "paragraph",
+        text: "Elegir mal el formato antes de grabar es uno de los errores que más material desperdicia. No es un detalle técnico de última hora, es una decisión que condiciona el encuadre, la composición y hasta cómo te mueves delante de la cámara. Y se toma antes de grabar, no en edición.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-horizontal-vs-vertical-que-formato-usar/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla de ordenador",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué el formato no es un detalle técnico" },
+      {
+        type: "paragraph",
+        text: "El formato define el encuadre desde el primer segundo de grabación. En vertical, el plano es más cerrado: cara, hombros, poco margen a los lados. En horizontal, hay espacio para mostrar contexto, otra persona en plano o el entorno completo del estudio. Si decides el formato después de grabar, ya es tarde para corregir eso.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia el ritmo del mensaje. El vertical se consume en el móvil, con el pulgar a un swipe de distancia y la atención dividida. Ahí el mensaje tiene que entrar rápido. El horizontal se ve en una pantalla más grande, con más intención de quedarse, así que admite más contexto y un ritmo algo más pausado.",
+      },
+      {
+        type: "paragraph",
+        text: "Y hay una tercera razón, menos evidente: cada plataforma trata mejor el contenido nativo a su formato. Un vídeo horizontal recortado a la fuerza para Reels se nota, y un vertical estirado para YouTube también. El algoritmo no penaliza por capricho, penaliza porque el resultado se ve peor y la gente lo abandona antes.",
+      },
+      { type: "heading", level: 2, text: "Cómo elegir el formato correcto" },
+      { type: "heading", level: 3, text: "Vertical: para el móvil, feed y stories" },
+      {
+        type: "paragraph",
+        text: "Vertical (9:16) es el formato para Reels, TikTok, Stories y Shorts. Plano cerrado, foco en la persona, mensaje directo desde el primer segundo. Deja margen arriba y abajo del encuadre: ahí van los subtítulos y los elementos de interfaz de cada plataforma, y si el plano está demasiado ajustado se tapan la cara o el texto.",
+      },
+      { type: "heading", level: 3, text: "Horizontal: para pantalla grande y contexto" },
+      {
+        type: "paragraph",
+        text: "Horizontal (16:9) sigue siendo el formato para YouTube largo, web, vídeo corporativo y entrevistas donde el entorno importa. Aquí puedes mostrar dos personas en plano, el espacio del estudio o material de apoyo sin que se sienta apretado. Es el formato que mejor comunica contexto y producción cuidada.",
+      },
+      { type: "heading", level: 3, text: "Cómo grabar pensando en los dos formatos a la vez" },
+      {
+        type: "paragraph",
+        text: "En el estudio grabamos casi siempre en horizontal con margen de sobra alrededor del sujeto, pensando ya en el recorte vertical posterior. Eso significa encuadrar más abierto de lo que parece necesario y evitar que algo importante quede pegado a los bordes. Con ese margen, en edición se puede sacar un corte vertical limpio sin perder la composición.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-horizontal-vs-vertical-que-formato-usar/mid.webp",
+        alt: "Teléfono móvil sobre una superficie mostrando pantalla en formato vertical",
+        width: 1920,
+        height: 1257,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al elegir formato" },
+      {
+        type: "list",
+        items: [
+          "Grabar siempre en horizontal \"porque es lo normal\" y perder gran parte del plano al recortar a vertical después.",
+          "Encuadrar demasiado ajustado en vertical, sin margen para subtítulos ni para los elementos de interfaz de la plataforma.",
+          "Subir el mismo corte, sin adaptar el encuadre, a plataformas que usan formatos distintos.",
+          "Decidir el formato en edición en vez de antes de grabar, cuando ya no se puede corregir el encuadre original.",
+          "Usar vertical para contenido que necesita mostrar contexto amplio, como un plano general de un evento o una entrevista a varias personas.",
+          "No avisar al equipo o invitado de qué formato se va a usar, así que nadie se coloca ni se mueve pensando en el encuadre final.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo grabar una sola vez y sacar horizontal y vertical del mismo material?",
+        answer:
+          "Sí, si se graba con margen suficiente alrededor del sujeto pensando en ambos recortes. Es lo que hacemos en la mayoría de sesiones del estudio.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato funciona mejor para reels o TikTok?",
+        answer: "Vertical, 9:16. Es el formato nativo de esas plataformas y el que mejor aprovecha la pantalla completa del móvil.",
+      },
+      {
+        type: "faq",
+        question: "¿Y para un vídeo corporativo o de web?",
+        answer: "Horizontal, 16:9. Da espacio para mostrar contexto, varias personas en plano y una composición más cuidada.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en multicámara para tener ambos formatos con mejor calidad?",
+        answer:
+          "Sí. Con dos cámaras, una encuadrada en horizontal y otra ya pensada en vertical, se evita depender solo del recorte y el resultado es más limpio en los dos formatos.",
+      },
+      {
+        type: "paragraph",
+        text: "El formato se decide antes de encender la cámara, no en la mesa de edición. Si tienes dudas sobre qué formato necesita tu próxima pieza, escríbeme desde /#contacto y lo planeamos juntos antes de la sesión.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
