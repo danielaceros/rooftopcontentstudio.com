@@ -4442,6 +4442,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-pitch-inversores-como-grabarlo",
+    title: "Vídeo pitch para inversores: cómo grabarlo para que se vea profesional",
+    description:
+      "Cómo grabar un vídeo pitch para inversores que transmita seriedad, sin sonar ensayado ni caer en los errores que hacen dudar de la seriedad del proyecto.",
+    publishedAt: "2026-07-24",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["video pitch inversores", "founders", "producción audiovisual", "vídeo corporativo", "Madrid"],
+    keyword: "video pitch para inversores",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo pitch mal grabado puede hundir una buena idea antes de la primera llamada. Cómo prepararlo, qué evitar y cómo estructurarlo para que transmita seriedad.",
+    seoTitle: "Vídeo Pitch para Inversores: Cómo Grabarlo | RCS Madrid",
+    metaDescription:
+      "Vídeo pitch para inversores: cómo grabarlo para transmitir seriedad y claridad sin sonar ensayado. Guía práctica desde nuestro estudio en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un pitch a inversores se juega mucho antes de entrar en la sala. Si mandas un vídeo de presentación, ese vídeo es lo primero que ve el fondo o el business angel antes de decidir si te da quince minutos de su tiempo. Y ahí no vale grabarlo con el móvil apoyado en una pila de libros, con eco de habitación vacía y la luz del techo dejándote media cara en sombra.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos bastantes vídeos de este tipo: founders que necesitan una pieza para un demo day, una ronda seed o simplemente para tener algo que mandar por email sin depender de agendar una llamada. La producción no arregla una idea floja, pero sí puede hundir una buena si se ve amateur, y eso es lo que más nos piden evitar.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-pitch-inversores-como-grabarlo/hero.webp",
+        alt: "Persona presentando un pitch frente a una pantalla ante una sala",
+        width: 1920,
+        height: 1372,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué el vídeo pitch pesa más de lo que crees" },
+      {
+        type: "paragraph",
+        text: "Un inversor ve decenas de propuestas a la semana. Antes de leer el deck entero, muchos primero ven el vídeo, porque tarda dos minutos y da una idea rápida de si merece la pena seguir. Si el audio suena mal o la imagen está mal iluminada, la sensación que transmite es de poco cuidado, aunque el negocio detrás sea sólido y los números aguanten cualquier pregunta.",
+      },
+      {
+        type: "paragraph",
+        text: "El vídeo también hace un trabajo que el deck no puede hacer solo: te pone cara, tono y ritmo. Un inversor confía en personas, no solo en números. Cómo hablas, cómo te mueves y si transmites seguridad pesa en la decisión tanto como el tamaño del mercado o el modelo de ingresos.",
+      },
+      {
+        type: "paragraph",
+        text: "Y hay un tercer motivo, más práctico: el vídeo circula solo. Un socio del fondo se lo reenvía a otro sin necesidad de agendar nada, y ese reenvío suele decidir si tu propuesta llega al comité o se queda en la bandeja de entrada.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      {
+        type: "paragraph",
+        text: "No hace falta un equipo de rodaje completo para que un vídeo pitch funcione. Hace falta cuidar tres cosas: el guion, la entrega delante de cámara y el entorno donde grabas.",
+      },
+      { type: "heading", level: 3, text: "Guion corto y sin relleno" },
+      {
+        type: "paragraph",
+        text: "El pitch grabado no es el pitch completo de quince minutos. Va de 90 segundos a 3 minutos como máximo. Empieza por el problema, no por quién eres: nadie necesita tu biografía en el segundo cero. Un guion de tres o cuatro bloques, problema, solución, tracción, ronda, funciona mejor que uno que intenta meterlo todo, incluidas las excepciones y los matices que sí tienen sitio en la llamada de seguimiento.",
+      },
+      { type: "heading", level: 3, text: "Habla a cámara, no leas" },
+      {
+        type: "paragraph",
+        text: "Usamos teleprompter para fijar la estructura, no la palabra exacta. Leer texto palabra por palabra se nota, y se nota mal: el ritmo se vuelve plano y la mirada se queda fija en el mismo punto. Lo que funciona es tener claros los puntos y decirlos con tus palabras, con pausas naturales. Grabamos varias tomas y nos quedamos con la que suena más tuya, no con la más perfecta.",
+      },
+      { type: "heading", level: 3, text: "Cuida el fondo y el sonido más que la careta" },
+      {
+        type: "paragraph",
+        text: "Un fondo neutro, con algo de profundidad pero sin distraer, funciona mejor que un logo gigante detrás. Y el audio limpio importa más que cualquier gráfico animado: si el sonido se entiende mal, el inversor apaga el vídeo a los diez segundos. Micro de solapa o de mano, sin eco de sala vacía, es la base, y merece más atención que cualquier transición o efecto de edición.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-pitch-inversores-como-grabarlo/mid.webp",
+        alt: "Cámara de vídeo profesional sobre trípode grabando en estudio",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "paragraph",
+        text: "Los mismos fallos se repiten en la mayoría de vídeos pitch grabados por cuenta propia:",
+      },
+      {
+        type: "list",
+        items: [
+          "Grabar con la ventana de fondo, que deja tu cara en sombra.",
+          "Leer el pitch deck entero en voz alta encima del vídeo.",
+          "Quedarse con la primera toma aunque no sea la mejor, por no repetir.",
+          "Meter música de fondo que compite con la voz.",
+          "Alargarse más de tres minutos porque hay que explicarlo todo.",
+          "No cerrar con una llamada a la acción clara: qué ronda, cuánto y cómo contactar.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo pitch para inversores?",
+        answer:
+          "Entre 90 segundos y 3 minutos. Si necesitas más tiempo para explicar el negocio, ese contenido va en el deck o en una llamada, no en el vídeo de primer contacto.",
+      },
+      {
+        type: "faq",
+        question: "¿Tengo que memorizar el guion palabra por palabra?",
+        answer:
+          "No, y de hecho es mejor que no lo hagas. Con teleprompter trabajamos la estructura y las ideas clave, pero la entrega suena más natural si dejas margen para decirlo con tus palabras en cada toma.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo grabarlo yo mismo con el móvil?",
+        answer:
+          "Puedes, pero se nota la diferencia en cuanto alguien te compara con otro founder que grabó en condiciones. Producir un vídeo pitch bien suele costar mucho menos que el riesgo de que un fondo lo descarte antes de la llamada.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si somos varios cofundadores y todos queremos salir?",
+        answer:
+          "Funciona, pero hay que repartir bien quién dice qué para no repetir información ni alargar el vídeo. Normalmente uno lleva el hilo principal y el resto entra en momentos puntuales: tracción, producto, visión.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás preparando una ronda y necesitas un vídeo pitch que esté a la altura de lo que has construido, en RCS lo grabamos en una sesión de mañana o tarde, con el guion trabajado antes de pisar el estudio y sin alargar el proceso más de la cuenta. Escríbenos desde /#contacto y lo planeamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

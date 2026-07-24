@@ -343,6 +343,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 15 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre elección de formato horizontal vs vertical al grabar. Imágenes Unsplash.",
   },
+  {
+    slug: "video-pitch-inversores-como-grabarlo",
+    keyword: "video pitch para inversores",
+    intent: "informacional",
+    createdAt: "2026-07-24",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 16 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre grabación de vídeo pitch para inversores. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
