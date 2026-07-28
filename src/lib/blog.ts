@@ -4563,6 +4563,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-onboarding-empleados-nuevos",
+    title: "Cómo grabar un vídeo de onboarding para nuevos empleados",
+    description:
+      "Cómo grabar un vídeo de onboarding que ordene la bienvenida a nuevos empleados, ahorre horas de RRHH repetidas y transmita cultura desde el primer día.",
+    publishedAt: "2026-07-28",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["onboarding", "vídeo corporativo", "recursos humanos", "empleados nuevos", "Madrid"],
+    keyword: "video de onboarding para empleados nuevos",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de onboarding bien hecho ahorra horas de RRHH repetidas y hace que la bienvenida no dependa de quién esté libre esa semana. Cómo estructurarlo y grabarlo.",
+    seoTitle: "Vídeo de Onboarding para Empleados | RCS Madrid",
+    metaDescription:
+      "Vídeo de onboarding para empleados nuevos: qué contar, quién debe salir y cómo grabarlo bien en un estudio de Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "El primer día de un empleado nuevo suele ser una mezcla de bienvenida amable e información suelta: el manual en PDF que nadie termina de leer, la charla de veinte minutos que se repite con cada persona que se incorpora, y el recorrido por la oficina donde a la media hora ya no te acuerdas de la mitad de los nombres. Un vídeo de onboarding no sustituye a las personas, pero ordena la parte que sí se puede grabar una vez y reutilizar con cada incorporación.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS nos piden cada vez más este tipo de piezas: empresas que quieren dar una bienvenida consistente sin que dependa de que la persona de RRHH tenga la agenda libre esa semana. Un buen vídeo de onboarding ahorra horas de explicación repetida y hace que la primera impresión no dependa de quién esté disponible ese día en la oficina.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-onboarding-empleados-nuevos/hero.webp",
+        alt: "Persona sonriente en una oficina moderna el primer día de trabajo",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de onboarding y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de onboarding es una pieza pensada para alguien que ya ha firmado el contrato, no para atraer talento nuevo. Ahí está la diferencia con un vídeo de employer branding: ese busca que alguien de fuera quiera unirse, este busca que alguien que ya se ha unido entienda rápido cómo funciona la empresa, quién es quién y qué se espera de su primera semana.",
+      },
+      {
+        type: "paragraph",
+        text: "La ventaja frente a una charla en directo es que se graba una vez y sirve para todas las incorporaciones que vengan después, sin que el mensaje varíe según quién lo cuente ese día. Y frente a un manual escrito, un vídeo transmite tono, cultura y caras reales de una forma que un PDF no consigue por muy bien maquetado que esté.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Qué contar y qué dejar para el manual" },
+      {
+        type: "paragraph",
+        text: "El vídeo debe llevar lo que un documento no transmite bien: quiénes son los responsables de cada equipo, cómo se habla dentro de la empresa, qué se valora de verdad en el día a día. Lo puramente operativo, cómo pedir vacaciones, qué herramienta usar para fichar, dónde está el botiquín, funciona mejor en un documento que se pueda consultar y buscar, no en un vídeo que hay que rebobinar.",
+      },
+      { type: "heading", level: 3, text: "Quién sale en cámara" },
+      {
+        type: "paragraph",
+        text: "Un único directivo hablando ocho minutos seguidos se hace largo y se olvida rápido. Funciona mejor repartir: una intervención corta del fundador o CEO, algo breve de cada responsable de equipo presentando qué hace su área, y alguien de RRHH cerrando con lo práctico. Tres o cuatro caras distintas, cada una con quince o treinta segundos, se recuerda mejor que una sola persona con un monólogo largo.",
+      },
+      { type: "heading", level: 3, text: "Formato y duración" },
+      {
+        type: "paragraph",
+        text: "Lo que mejor funciona es un vídeo modular, dividido en capítulos cortos, dos o tres minutos por bloque, en vez de una pieza única de veinte minutos que nadie termina de ver entera. Así, si cambia el responsable de un equipo, regrabas solo ese bloque sin tocar el resto del vídeo.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-onboarding-empleados-nuevos/mid.webp",
+        alt: "Cámara de vídeo grabando una entrevista en estudio",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "paragraph",
+        text: "Los mismos fallos aparecen una y otra vez en los vídeos de onboarding grabados sin plan previo:",
+      },
+      {
+        type: "list",
+        items: [
+          "Grabar un único vídeo de veinte minutos que nadie termina de ver.",
+          "Dejar que hable solo un directivo, sin ejemplos ni caras de los equipos reales.",
+          "No actualizarlo cuando cambia el equipo o la oficina, así que queda desfasado en meses.",
+          "Grabarlo con el móvil en una sala de reuniones con eco y mala luz.",
+          "Mezclar contenido de onboarding con contenido de employer branding pensado para fuera.",
+          "Meter todo el contenido operativo dentro del vídeo en lugar de dejarlo en un documento consultable.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de onboarding?",
+        answer:
+          "Entre dos y cinco minutos en total, mejor dividido en capítulos cortos de veinte o treinta segundos por bloque que en una pieza única y larga.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debe salir en el vídeo?",
+        answer:
+          "Una mezcla: una intervención breve del fundador o CEO, algo corto de cada responsable de equipo y alguien de RRHH cerrando con la parte práctica.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que regrabarlo entero cada vez que cambia el equipo?",
+        answer:
+          "No, si se graba en bloques modulares desde el principio. Solo regrabas el capítulo de la persona o el equipo que ha cambiado, sin tocar el resto.",
+      },
+      {
+        type: "faq",
+        question: "¿Es lo mismo que un vídeo de employer branding?",
+        answer:
+          "No. El de employer branding busca atraer talento que todavía no trabaja contigo. El de onboarding es para alguien que ya ha firmado y necesita integrarse rápido.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás pensando en dar de alta un proceso de onboarding en vídeo para tu empresa, en RCS lo planteamos en bloques modulares desde el primer día de grabación, para que actualizarlo más adelante no suponga rehacer nada. Escríbenos desde /#contacto y lo vemos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

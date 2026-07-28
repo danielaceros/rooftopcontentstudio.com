@@ -352,6 +352,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 16 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre grabación de vídeo pitch para inversores. Imágenes Unsplash.",
   },
+  {
+    slug: "video-onboarding-empleados-nuevos",
+    keyword: "video de onboarding para empleados nuevos",
+    intent: "informacional",
+    createdAt: "2026-07-28",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 17 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo de onboarding para empleados nuevos, distinto de employer branding (ya cubierto). Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
