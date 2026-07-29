@@ -361,6 +361,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 17 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo de onboarding para empleados nuevos, distinto de employer branding (ya cubierto). Imágenes Unsplash.",
   },
+  {
+    slug: "video-explicativo-producto-como-grabarlo",
+    keyword: "video explicativo de producto",
+    intent: "informacional",
+    createdAt: "2026-07-29",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 18 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo explicativo de producto (demo/explainer), distinto de vídeo de producto en estudio (fotografía/b-roll de producto físico, ya cubierto). Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

@@ -4676,6 +4676,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-explicativo-producto-como-grabarlo",
+    title: "Vídeo explicativo de producto: cómo grabarlo sin que parezca un anuncio",
+    description:
+      "Cómo estructurar y grabar un vídeo explicativo de producto que resuelva dudas reales en lugar de vender a gritos, con guion, ritmo y planos que funcionan.",
+    publishedAt: "2026-07-29",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["vídeo explicativo", "producto", "SaaS", "estudio de grabación", "Madrid"],
+    keyword: "video explicativo de producto",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo explicativo de producto bien grabado convence enseñando, no vendiendo. Cómo estructurarlo, qué mostrar en pantalla y qué evitar para que no suene a anuncio.",
+    seoTitle: "Vídeo explicativo de producto: cómo grabarlo | RCS Madrid",
+    metaDescription:
+      "Cómo grabar un vídeo explicativo de producto en Madrid que enganche y no suene a anuncio: guion, ritmo, planos y errores que evitar.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un vídeo explicativo de producto tiene un trabajo muy concreto: que alguien que no conoce tu producto entienda en dos minutos qué hace, para quién es y por qué debería importarle. No es un anuncio, aunque muchas empresas lo graban como si lo fuera, con música épica y frases vacías que no explican nada en concreto. Cuanto más se parece a un anuncio, menos confía en él quien lo está viendo por primera vez.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS nos lo piden sobre todo founders de SaaS y equipos de producto: necesitan una pieza que puedan poner en la home, en una demo comercial o en un email de onboarding, y que haga el trabajo de explicar sin que un comercial tenga que estar presente. Cuando funciona bien, ese vídeo responde preguntas antes de que las hagan y filtra a quien no encaja con el producto.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-explicativo-producto-como-grabarlo/hero.webp",
+        alt: "Persona grabando un vídeo explicativo de producto frente a una cámara en un espacio con estantería de fondo",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo explicativo de producto y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un explicativo de producto combina dos cosas que casi nunca conviven bien en un mismo vídeo: una persona explicando y una pantalla mostrando cómo funciona de verdad. La parte de cara sirve para generar confianza y marcar el ritmo; la parte de pantalla sirve para que quien mira vea el producto real, no una animación bonita que promete más de lo que hay.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia con un vídeo puramente publicitario es el objetivo: el anuncio busca generar interés y emoción en pocos segundos, el explicativo busca resolver dudas concretas de alguien que ya está considerando comprar o probar el producto. Si el espectador termina el vídeo sin saber exactamente qué hace el producto, ha fallado, por muy bonito que sea. Y esa métrica de éxito es distinta a la de un anuncio: no importa cuánta gente lo comparte, importa cuánta gente entiende el producto después de verlo y cuánta deja de tener dudas antes de escribir a soporte o pedir una demo comercial.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El guion: problema, solución, demo" },
+      {
+        type: "paragraph",
+        text: "La estructura que mejor funciona empieza nombrando un problema concreto que la audiencia reconozca en los primeros diez segundos, no una frase genérica de las que sirven para cualquier producto. Después se presenta el producto como respuesta directa a ese problema, y el resto del tiempo se dedica a enseñarlo funcionando, no a describirlo con adjetivos. Menos \"revolucionario\" y \"innovador\", más \"así se hace esto en tres pasos\".",
+      },
+      { type: "heading", level: 3, text: "Pantalla y cara: cuándo usar cada una" },
+      {
+        type: "paragraph",
+        text: "La cara funciona mejor al principio, para presentar el problema y generar cercanía, y al final, para el cierre y la llamada a la acción. La pantalla debe llevar el peso de la parte central, donde se demuestra el producto: un flujo real, con datos reales o de ejemplo verosímiles, sin rellenar formularios en directo ni buscar un botón que no se encuentra a la primera. Eso se graba aparte y con calma, no en una sola toma continua. Grabar la pantalla en varias tomas cortas, una por cada paso del flujo, permite montar después la que quede más limpia de cada una sin tener que repetir la demo entera si falla un solo paso.",
+      },
+      { type: "heading", level: 3, text: "Ritmo y duración" },
+      {
+        type: "paragraph",
+        text: "Entre 60 y 120 segundos suele ser el punto justo para un explicativo de producto pensado para la home o para una campaña; una demo más completa para un email de ventas puede llegar a los tres o cuatro minutos, pero rara vez tiene sentido superar eso sin cortar en capítulos. El ritmo se sostiene cortando cada cuatro o seis segundos entre plano de cara, pantalla y algún recurso de apoyo, para que la vista nunca se quede fija demasiado tiempo en el mismo encuadre.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-explicativo-producto-como-grabarlo/mid.webp",
+        alt: "Pantalla de ordenador en negro preparada para grabar una demo de producto",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "paragraph",
+        text: "Los mismos fallos se repiten en la mayoría de explicativos que no funcionan:",
+      },
+      {
+        type: "list",
+        items: [
+          "Empezar con la historia de la empresa en vez de con el problema que resuelve.",
+          "Grabar la pantalla en una sola toma continua, sin poder cortar los errores o dudas al navegar.",
+          "Usar música de anuncio que compite con la voz en vez de acompañarla.",
+          "Explicar funciones que casi nadie usa en vez de las tres que de verdad importan.",
+          "No incluir ninguna llamada a la acción clara al final, dejando el vídeo sin destino.",
+          "Grabar la voz con el micrófono del portátil mientras se enseña la pantalla en pantalla completa.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo explicativo de producto?",
+        answer:
+          "Entre 60 y 120 segundos para la home o una campaña. Una demo más completa para ventas puede llegar a tres o cuatro minutos si se divide en bloques claros.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta salir en cámara o basta con grabar la pantalla?",
+        answer:
+          "Basta con la pantalla si el producto se explica solo, pero una cara al principio y al final ayuda a generar confianza y deja claro quién habla.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar la pantalla y la cara el mismo día?",
+        answer:
+          "Sí, pero por separado: primero la parte de cara en el estudio con buena luz y audio, y luego la captura de pantalla con calma, sin la presión de estar hablando a la vez.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué diferencia hay con un vídeo publicitario del producto?",
+        answer:
+          "El publicitario busca generar interés en pocos segundos con emoción. El explicativo busca resolver dudas concretas de alguien que ya está considerando el producto, enseñando cómo funciona de verdad.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un producto que explicar y quieres que el vídeo resuelva dudas en vez de sonar a anuncio, en RCS grabamos la parte de cara y montamos la de pantalla en el mismo flujo de edición. Escríbenos desde /#contacto y lo planteamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
