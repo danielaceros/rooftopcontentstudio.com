@@ -370,6 +370,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 18 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo explicativo de producto (demo/explainer), distinto de vídeo de producto en estudio (fotografía/b-roll de producto físico, ya cubierto). Imágenes Unsplash.",
   },
+  {
+    slug: "video-anuncios-pago-vs-contenido-organico",
+    keyword: "video para anuncios de pago",
+    intent: "informacional",
+    createdAt: "2026-07-30",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 19 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo para anuncios de pago (Meta/TikTok Ads) frente a contenido orgánico, distinto de reels/contenido orgánico ya cubiertos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

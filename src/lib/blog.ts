@@ -4789,6 +4789,123 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-anuncios-pago-vs-contenido-organico",
+    title: "Vídeo para anuncios de pago: qué cambia frente al contenido orgánico",
+    description:
+      "Cómo grabar vídeo para anuncios de pago en Meta y TikTok, qué diferencias reales hay frente al contenido orgánico y qué errores lo hunden antes de arrancar.",
+    publishedAt: "2026-07-30",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo publicitario", "anuncios de pago", "Meta Ads", "TikTok Ads", "estudio de grabación", "Madrid"],
+    keyword: "video para anuncios de pago",
+    intent: "informacional",
+    excerpt:
+      "Un anuncio grabado como si fuera contenido orgánico rinde mejor que uno con pinta de spot. Qué cambia realmente entre grabar para pauta y grabar para feed.",
+    seoTitle: "Vídeo para anuncios de pago: qué cambia | RCS Madrid",
+    metaDescription:
+      "Cómo grabar vídeo para anuncios de pago (Meta y TikTok) que no parezca un anuncio genérico y qué cambia frente al contenido orgánico.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando un equipo de marketing nos pide grabar vídeo para pauta, casi siempre llega con la misma duda: ¿esto se graba distinto a un reel normal? La respuesta corta es que sí, pero no en la forma en que la mayoría espera. No hace falta más producción ni un plató más grande. Hace falta pensar distinto desde el guion, porque el objetivo no es el mismo y el algoritmo tampoco premia lo mismo.",
+      },
+      {
+        type: "paragraph",
+        text: "El contenido orgánico compite por retención dentro de un feed que la persona ya está consumiendo por gusto. El anuncio compite por sobrevivir los primeros dos segundos antes de que alguien haga scroll sobre algo que sabe, aunque sea a nivel inconsciente, que es un anuncio. Esa diferencia de contexto cambia el guion, el ritmo y hasta la forma de grabar, aunque el equipo técnico sea idéntico.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-anuncios-pago-vs-contenido-organico/hero.webp",
+        alt: "Persona grabando vídeo vertical para redes sociales con smartphone en estudio",
+        width: 1920,
+        height: 1013,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué un anuncio no se graba como un vídeo orgánico" },
+      {
+        type: "paragraph",
+        text: "Un vídeo orgánico se puede permitir un arranque suave, porque quien lo ve ya sigue la cuenta o llegó por una búsqueda. Un anuncio no tiene ese margen: aparece entre contenido que nadie pidió ver, compitiendo con perfiles que la persona sí eligió seguir. Si los primeros dos segundos no dan una razón para quedarse, el resto del vídeo no importa, por bien grabado que esté.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso no significa que el anuncio tenga que parecer un anuncio. De hecho, el patrón que mejor funciona en Meta y TikTok es el contrario: cuanto más se parece a algo que la persona grabaría o vería de forma natural en su feed, menos genera rechazo. Un plano fijo, testimonio o demo grabados con estética de contenido orgánico suele rendir mejor que un spot con música de producción y voz en off corporativa.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto es justo lo que en RCS llamamos vídeo con estética nativa: se graba en el mismo ático, con la misma cámara y la misma luz que un reel cualquiera, pero el guion está pensado para pauta desde el primer segundo, no adaptado después con un corte de audio.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "El hook: los dos primeros segundos" },
+      {
+        type: "paragraph",
+        text: "El hook no es una frase de bienvenida ni el logo de la marca. Es una imagen, una pregunta o una afirmación que interrumpe el scroll de alguien que no te conoce. Funciona mejor cuando nombra directamente el problema o la duda que ya tiene la audiencia objetivo, no cuando presenta la empresa. Grabamos siempre varias versiones del hook en la misma sesión, porque es la parte que más se testea y la que decide si el resto del vídeo se llega a ver.",
+      },
+      { type: "heading", level: 3, text: "Formatos que hacen falta según la plataforma" },
+      {
+        type: "paragraph",
+        text: "Meta y TikTok no piden el mismo formato exacto, aunque ambos priorizan vertical 9:16. TikTok tolera peor la estética corporativa y premia el ritmo rápido con cortes cada dos o tres segundos. Meta acepta mejor un ritmo algo más pausado, sobre todo en formatos de testimonio o demo de producto. En una misma sesión grabamos variantes de plano y ritmo para poder montar versiones distintas por plataforma sin repetir la grabación.",
+      },
+      { type: "heading", level: 3, text: "Cuántas variantes grabar por sesión" },
+      {
+        type: "paragraph",
+        text: "Para una campaña con presupuesto real conviene salir de la sesión con entre cuatro y seis variantes de anuncio: distintos hooks, algún testimonio, alguna demo y alguna pieza más directa de oferta. No hace falta grabar seis guiones distintos desde cero, basta con variar el arranque y el CTA sobre el mismo cuerpo central. Eso da margen para testear sin depender de una sola pieza que puede fatigarse en días si el presupuesto diario es alto.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-anuncios-pago-vs-contenido-organico/mid.webp",
+        alt: "Persona grabando vídeo vertical con cámara para anuncios en redes sociales",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "paragraph",
+        text: "Los mismos fallos aparecen una y otra vez en anuncios que no rinden, aunque estén bien grabados técnicamente:",
+      },
+      {
+        type: "list",
+        items: [
+          "Empezar con el logo o el nombre de la empresa en vez de con el problema o el hook.",
+          "Usar el mismo vídeo orgánico tal cual, sin adaptar el arranque a un contexto de scroll frío.",
+          "Grabar una sola variante y esperar que aguante semanas de pauta sin fatigarse.",
+          "Meter música de librería genérica que suena a anuncio de televisión.",
+          "Dejar el CTA solo en texto superpuesto sin decirlo también en voz.",
+          "Grabar horizontal cuando la campaña se va a servir casi entera en feed vertical.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Un anuncio necesita más producción que un vídeo orgánico?",
+        answer:
+          "No necesariamente. Lo que cambia es el guion y el número de variantes, no la calidad técnica. Muchas veces un anuncio con estética nativa rinde mejor que uno con producción muy cuidada pero con pinta de spot.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas variantes de anuncio hay que grabar por campaña?",
+        answer:
+          "Entre cuatro y seis suele ser suficiente para empezar a testear: distintos hooks y algún cambio de formato (testimonio, demo, directo) sobre el mismo cuerpo central del mensaje.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve el mismo vídeo para Meta y para TikTok?",
+        answer:
+          "El cuerpo del vídeo puede compartirse, pero el ritmo de corte y el tono suelen rendir mejor si se ajustan por plataforma: TikTok tolera peor la estética corporativa que Meta.",
+      },
+      {
+        type: "faq",
+        question: "¿Por qué un anuncio con estética casera funciona mejor que uno muy producido?",
+        answer:
+          "Porque genera menos rechazo al aparecer en un feed de contenido que la persona no pidió ver. Cuanto más se parece a algo que vería de forma natural, menos activa el filtro mental de \"esto es publicidad\".",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes una campaña en marcha y necesitas variantes de vídeo que aguanten la pauta sin fatigarse en una semana, en RCS grabamos varias versiones en la misma sesión pensadas desde el guion para Meta y TikTok. Escríbenos desde /#contacto y lo planteamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
