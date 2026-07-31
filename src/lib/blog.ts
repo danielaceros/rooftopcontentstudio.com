@@ -4906,6 +4906,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "roi-contenido-video-marca",
+    title: "Cómo calcular el ROI de grabar contenido en vídeo para tu marca",
+    description:
+      "Cómo medir si el contenido en vídeo está compensando la inversión: qué contar como coste, qué contar como retorno y en qué plazo empieza a verse.",
+    publishedAt: "2026-07-31",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["contenido en vídeo", "ROI", "marca personal", "estrategia de contenido", "Madrid"],
+    keyword: "roi de grabar contenido en video",
+    intent: "informacional",
+    excerpt:
+      "Grabar contenido es una inversión, no un gasto de marketing suelto. Así se calcula si de verdad está compensando y qué mirar antes de decidir cuánto meter cada mes.",
+    seoTitle: "Cómo calcular el ROI del vídeo | RCS Madrid",
+    metaDescription:
+      "Cómo calcular el ROI de grabar contenido en vídeo: qué contar como coste real, qué contar como retorno y en qué plazo se empieza a notar.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi todos los founders y equipos de marketing que llegan a RCS hacen la misma pregunta en algún momento, aunque no siempre en voz alta: ¿esto está compensando? Han grabado unas cuantas sesiones, tienen contenido publicado, y aun así no saben si el dinero y el tiempo invertidos están generando algo o si simplemente están alimentando un feed que se ve bien pero no mueve nada.",
+      },
+      {
+        type: "paragraph",
+        text: "La razón por la que cuesta responder no es falta de datos. Es que la mayoría mide el vídeo con métricas de vanidad (vistas, likes, alcance) cuando el ROI real se mide en otro sitio: leads, reuniones agendadas, ventas cerradas o tiempo que ya no hay que pagarle a una agencia. Si no se define eso desde el principio, cualquier cálculo de ROI es una sensación disfrazada de número.",
+      },
+      {
+        type: "image",
+        src: "/blog/roi-contenido-video-marca/hero.webp",
+        alt: "Panel de analítica de marketing abierto en un portátil sobre una mesa",
+        width: 1920,
+        height: 1368,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué significa el ROI cuando hablamos de contenido en vídeo" },
+      {
+        type: "paragraph",
+        text: "El ROI de contenido no es distinto en la fórmula al ROI de cualquier otra inversión: lo que has ganado menos lo que has gastado, dividido entre lo que has gastado. Lo que cambia es que en vídeo la parte de \"lo que has ganado\" tarda más en aparecer y es más fácil confundirla con ruido. Un reel puede tener buen alcance y cero impacto real en el negocio. Otro puede pasar casi desapercibido y traer un cliente que paga durante un año.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso el primer paso no es grabar más, es decidir qué vas a considerar retorno antes de encender la cámara. Si vendes servicios, probablemente sea leads cualificados o reuniones agendadas. Si vendes producto, ventas directas atribuibles. Si es marca personal sin venta directa todavía, puede ser autoridad medible: menciones, invitaciones a hablar, oportunidades que llegan solas. Sin esa definición previa, no hay cálculo posible, solo intuición.",
+      },
+      { type: "heading", level: 2, text: "Cómo se calcula bien" },
+      { type: "heading", level: 3, text: "Suma el coste real, no solo el precio de la sesión" },
+      {
+        type: "paragraph",
+        text: "El coste de una sesión de grabación no es solo lo que pagas por el estudio o el equipo. Incluye tu tiempo de preparación, el tiempo de quien sale delante de cámara, la edición si no va incluida y el tiempo de publicar y responder cuando el contenido empieza a moverse. Muchas veces el ROI parece malo simplemente porque solo se ha contado la factura de la sesión, no el coste total de sacar la pieza a la calle.",
+      },
+      { type: "heading", level: 3, text: "Define qué cuenta como retorno antes de grabar" },
+      {
+        type: "paragraph",
+        text: "Etiqueta el origen de cada lead o cliente que llega mencionando un vídeo, un reel o el podcast. No hace falta un sistema complejo: una pregunta en el formulario de contacto o en la primera llamada (\"¿cómo nos conociste?\") ya te da la trazabilidad mínima. Sin esa etiqueta, el contenido que sí está generando negocio se pierde entre el resto y parece que nada funciona.",
+      },
+      { type: "heading", level: 3, text: "Dale un plazo razonable, no midas a la semana" },
+      {
+        type: "paragraph",
+        text: "El vídeo compone. Un contenido publicado hace tres meses puede seguir trayendo tráfico y leads hoy, y eso no aparece si solo miras la semana en la que se publicó. Un plazo razonable para juzgar si una estrategia de contenido está funcionando es de tres a seis meses de publicación constante, no de una sesión suelta comparada contra el gasto de ese mismo mes.",
+      },
+      {
+        type: "image",
+        src: "/blog/roi-contenido-video-marca/mid.webp",
+        alt: "Editor de vídeo revisando una línea de tiempo en la pantalla",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al medir el ROI del vídeo" },
+      {
+        type: "list",
+        items: [
+          "Mirar vistas y likes en lugar de leads, reuniones o ventas atribuibles.",
+          "Comparar el coste de producción contra el de la pauta pagada sin contar el tiempo propio invertido.",
+          "No preguntar nunca de dónde vino el cliente, así que ningún vídeo se lleva el mérito.",
+          "Juzgar el resultado a los siete días de publicar en vez de a los tres o seis meses.",
+          "Dejar de repetir el formato que sí funcionó porque nadie hizo seguimiento de cuál era.",
+          "Tratar cada pieza como un evento aislado en lugar de como parte de un sistema que se acumula.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hay que esperar para ver ROI en contenido de vídeo?",
+        answer:
+          "Con publicación constante, entre tres y seis meses suele ser suficiente para empezar a ver una tendencia clara. Antes de eso hay señales, pero es pronto para sacar conclusiones firmes.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si no tengo forma de saber de dónde viene un cliente?",
+        answer:
+          "Añade una pregunta simple en el formulario de contacto o en la primera llamada: cómo te conoció. Es la trazabilidad mínima y cuesta cero implementarla.",
+      },
+      {
+        type: "faq",
+        question: "¿El ROI del vídeo se calcula igual si no vendo directamente por redes?",
+        answer:
+          "La fórmula es la misma, pero el retorno cambia de forma: en vez de ventas directas, cuentas autoridad medible, menciones, invitaciones o leads que llegan ya conociéndote.",
+      },
+      {
+        type: "faq",
+        question: "¿Vale la pena grabar si de momento no puedo medir bien el retorno?",
+        answer:
+          "Sí, pero con la condición de montar la trazabilidad cuanto antes. Grabar sin medir no es un problema del vídeo, es un problema de sistema de seguimiento que conviene resolver pronto.",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás decidiendo cuánto invertir en contenido este trimestre y quieres montar algo que sí puedas medir desde el primer mes, en RCS te ayudamos a definir qué grabar y cómo hacer seguimiento del resultado. Escríbenos desde /#contacto y lo hablamos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

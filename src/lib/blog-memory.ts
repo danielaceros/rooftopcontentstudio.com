@@ -379,6 +379,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 19 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre vídeo para anuncios de pago (Meta/TikTok Ads) frente a contenido orgánico, distinto de reels/contenido orgánico ya cubiertos. Imágenes Unsplash.",
   },
+  {
+    slug: "roi-contenido-video-marca",
+    keyword: "roi de grabar contenido en video",
+    intent: "informacional",
+    createdAt: "2026-07-31",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 20 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre cómo calcular el ROI de grabar contenido en vídeo, ángulo de decisión de inversión distinto de 'cuándo contratar producción completa' (ya cubierto). Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
