@@ -388,6 +388,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 20 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre cómo calcular el ROI de grabar contenido en vídeo, ángulo de decisión de inversión distinto de 'cuándo contratar producción completa' (ya cubierto). Imágenes Unsplash.",
   },
+  {
+    slug: "que-es-el-b-roll-video-marca",
+    keyword: "que es el b-roll",
+    intent: "informacional",
+    createdAt: "2026-08-03",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, 21 ejecuciones consecutivas, requiere reautorización manual urgente). Lista de fallback evergreen (25 temas) agotada — tema original nuevo sobre qué es el b-roll y cómo planificarlo en sesión, ángulo técnico de producción distinto de los ya cubiertos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

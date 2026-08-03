@@ -5015,6 +5015,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-es-el-b-roll-video-marca",
+    title: "Qué es el b-roll y por qué tu vídeo de marca lo necesita",
+    description:
+      "Qué es el b-roll, por qué separa un vídeo plano de uno que engancha y cómo planificarlo antes de una sesión de grabación de contenido de marca.",
+    publishedAt: "2026-08-03",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["b-roll", "producción de vídeo", "contenido de marca", "estudio de grabación", "Madrid"],
+    keyword: "que es el b-roll",
+    intent: "informacional",
+    excerpt:
+      "El b-roll es lo que separa un vídeo plano de uno que engancha. Qué es, cuándo grabarlo y cómo lo integramos en cada sesión de RCS.",
+    seoTitle: "Qué es el B-roll y por qué lo necesitas | RCS Madrid",
+    metaDescription:
+      "El b-roll es el material de apoyo que hace que tu vídeo de marca se vea profesional. Qué es, cuándo grabarlo y cómo lo usamos en RCS.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi todos los founders y marcas que graban con nosotros por primera vez piden lo mismo: un vídeo donde alguien hable a cámara. Y ahí se quedan, porque nadie les ha explicado que un vídeo entero de plano fijo a una persona hablando cansa a los treinta segundos, por muy bueno que sea el contenido. Lo que sostiene la atención no es solo la voz, es lo que se ve mientras esa voz habla.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso es el b-roll: el material de apoyo que se intercala con el plano principal para dar contexto, ritmo y respiro visual. Manos escribiendo, un detalle del espacio, un producto de cerca, una reacción de alguien en la sala. No es relleno, es lo que hace que el vídeo se vea producido y no grabado con el móvil apoyado en una pila de libros.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-es-el-b-roll-video-marca/hero.webp",
+        alt: "Persona sujetando una cámara réflex negra para grabar contenido",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el b-roll y por qué importa" },
+      {
+        type: "paragraph",
+        text: "El término viene del cine y la televisión, donde el \"a-roll\" es el material principal (la entrevista, la escena central) y el \"b-roll\" es todo lo que se graba alrededor para poder editar sin depender solo de ese plano fijo. En contenido de marca funciona igual: el a-roll es la persona hablando a cámara, y el b-roll es lo que el editor usa para cortar, ocultar un jump cut, ilustrar lo que se está diciendo o simplemente cambiar el ritmo visual cada pocos segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "Sin b-roll, cualquier corte de edición se nota, porque saltas de un plano de la cara a otro plano de la misma cara en un ángulo casi idéntico. Con b-roll, ese corte queda oculto detrás de una imagen que refuerza lo que se está contando: si hablas de tu equipo, cortas a gente trabajando; si hablas de un producto, cortas a un detalle del producto. El espectador no nota la edición, solo sigue la historia.",
+      },
+      {
+        type: "paragraph",
+        text: "También es lo que permite sacar más piezas de una sola sesión. Un vídeo largo con buen b-roll da clips cortos para redes sin que se note que vienen del mismo bloque de grabación, porque cada clip puede apoyarse en un plano distinto en vez de repetir siempre la misma cara en el mismo ángulo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Planifica el b-roll antes de la sesión" },
+      {
+        type: "paragraph",
+        text: "El error más común es dejarlo para el final, cuando ya no queda tiempo. Antes de grabar, repasa el guion o los puntos que vas a tocar y anota qué imagen de apoyo pega con cada uno: si mencionas el equipo, necesitas planos del equipo trabajando; si mencionas un proceso, necesitas planos de ese proceso ocurriendo. Diez minutos de planificación ahorran media hora de improvisar delante de la cámara buscando qué grabar.",
+      },
+      { type: "heading", level: 3, text: "Varía planos, distancias y ritmo" },
+      {
+        type: "paragraph",
+        text: "Un b-roll aburre igual que un plano fijo si todos los planos son iguales. Alterna distancias (general, medio, detalle), alterna movimiento (estático, paneo suave, un pequeño zoom) y alterna sujeto (personas, objetos, el espacio). En una sesión de una hora, con 15-20 planos de b-roll variados suele haber material de sobra para montar un vídeo de tres o cuatro minutos sin repetir imagen.",
+      },
+      { type: "heading", level: 3, text: "Graba de más, no de menos" },
+      {
+        type: "paragraph",
+        text: "El b-roll es barato de grabar y caro de echar en falta en edición. Cada plano dura pocos segundos en el montaje final, así que graba cada toma entre cinco y diez segundos, más de lo que crees que vas a necesitar. En DaVinci Resolve o CapCut siempre es más fácil recortar un clip largo que estirar uno que se quedó corto.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-es-el-b-roll-video-marca/mid.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes con el b-roll" },
+      {
+        type: "list",
+        items: [
+          "Grabarlo al final de la sesión con prisa, cuando ya no hay luz ni energía para hacerlo bien.",
+          "Repetir siempre el mismo tipo de plano (manos en teclado) en cada vídeo hasta que se vuelve una muletilla.",
+          "Grabar tomas demasiado cortas que luego no dan tiempo a usar en el montaje.",
+          "No relacionar el b-roll con lo que se está diciendo, así que el espectador nota el desajuste.",
+          "Usar banco de imágenes genérico en vez de b-roll propio, lo que resta autenticidad a contenido de marca.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto b-roll necesito para un vídeo de tres minutos?",
+        answer:
+          "Como referencia, entre 15 y 20 planos variados de cinco a diez segundos cada uno suelen ser suficientes para cubrir un vídeo de tres a cuatro minutos sin repetir imagen.",
+      },
+      {
+        type: "faq",
+        question: "¿El b-roll se graba con la misma cámara que el plano principal?",
+        answer:
+          "No hace falta. Muchas marcas graban el plano principal con una cámara fija tipo Sony A7 y el b-roll con una segunda cámara o incluso el móvil, siempre que la calidad de imagen sea consistente.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar banco de imágenes en vez de grabar mi propio b-roll?",
+        answer:
+          "Puedes, pero pierde autenticidad. El b-roll propio (tu equipo, tu espacio, tu producto) refuerza la marca; el banco de imágenes genérico se nota y resta credibilidad.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo de sesión hay que dedicar solo a grabar b-roll?",
+        answer:
+          "Para una sesión de una hora centrada en un vídeo principal, reservar entre 15 y 20 minutos solo para b-roll suele ser suficiente si vienes con la lista de planos ya pensada.",
+      },
+      {
+        type: "paragraph",
+        text: "Si vas a grabar contenido de marca y quieres que el resultado se note producido, no improvisado, en RCS planificamos el b-roll como parte de la sesión, no como un añadido de última hora. Escríbenos desde /#contacto y lo montamos juntos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
