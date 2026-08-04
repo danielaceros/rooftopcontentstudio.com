@@ -5127,6 +5127,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "aftermovie-evento-corporativo-como-se-produce",
+    title: "Qué es un aftermovie y cómo se produce para un evento corporativo",
+    description:
+      "Qué diferencia un aftermovie de la cobertura de un evento, cómo se planifica la grabación y qué hace que un aftermovie funcione en redes.",
+    publishedAt: "2026-08-04",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["aftermovie", "vídeo eventos", "producción audiovisual", "eventos corporativos", "Madrid"],
+    keyword: "aftermovie evento corporativo",
+    intent: "informacional",
+    excerpt:
+      "El aftermovie es la pieza que resume tu evento en menos de dos minutos de energía. Te contamos cómo se planifica la grabación y el montaje para que funcione.",
+    seoTitle: "Aftermovie de evento: cómo se produce | RCS Madrid",
+    metaDescription:
+      "Qué es un aftermovie, en qué se diferencia de la cobertura de un evento y cómo se planifica la grabación, la música y el montaje para que funcione en redes.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un evento corporativo dura unas horas. La sensación de que fue algo importante tiene que durar mucho más, y ahí es donde entra el aftermovie.",
+      },
+      {
+        type: "paragraph",
+        text: "Un aftermovie es un vídeo corto, editado a ritmo de música, que resume lo mejor del evento en menos de dos minutos. No es la cobertura completa ni el resumen de la ponencia principal: es la pieza que enseñas a quien no estuvo para que sienta que se lo perdió, y que enseñas al año siguiente para vender la próxima edición.",
+      },
+      {
+        type: "image",
+        src: "/blog/aftermovie-evento-corporativo-como-se-produce/hero.webp",
+        alt: "Público asistiendo a un evento corporativo en un auditorio",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un aftermovie y en qué se diferencia de la cobertura del evento" },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos coberturas de eventos corporativos completas: ponencias enteras, entrevistas, streaming en directo. El aftermovie es otra cosa. No busca informar, busca transmitir energía. Coge los mejores segundos del día — la sala llenándose, el aplauso al ponente, la gente hablando entre pausas, el momento en que se apagan las luces para empezar — y los monta en una pieza corta pensada para redes.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia se nota en el objetivo. La cobertura sirve para documentar y para quien no pudo asistir a una charla concreta. El aftermovie sirve para vender la marca del evento: a patrocinadores, a la próxima edición, a quien decide el presupuesto del año que viene. En eventos con formato tipo congreso o feria, como los que se organizan en recintos como IFEMA, el aftermovie suele ser la pieza que más se comparte después, por encima de cualquier ponencia suelta.",
+      },
+      { type: "heading", level: 2, text: "Cómo se produce un aftermovie que funcione" },
+      { type: "heading", level: 3, text: "Grabación multicámara del día" },
+      {
+        type: "paragraph",
+        text: "Un aftermovie se construye con planos variados, no con la grabación fija de una cámara al fondo de la sala. Solemos combinar una cámara fija en escenario, una cámara en mano para movernos entre el público y planos de detalle: manos aplaudiendo, tarjetas cambiando de mano, cafés en la pausa. Sin ese material variado, el montaje se queda corto de opciones y todos los aftermovies acaban pareciendo el mismo vídeo. Por eso preparamos antes una lista de planos con el organizador: qué momentos no se pueden perder y en qué orden probable van a pasar durante el día.",
+      },
+      { type: "heading", level: 3, text: "Selección de música y ritmo del montaje" },
+      {
+        type: "paragraph",
+        text: "La música manda en un aftermovie. El corte de cada plano va al compás de la canción, no al revés. Elegimos el tema antes de montar, no después, porque el ritmo condiciona qué planos se usan y cuánto dura cada uno. Trabajamos con librerías de licencia clara para evitar que el vídeo acabe silenciado o retirado en redes por derechos de autor. Un tema demasiado lento hace que un evento con energía parezca aburrido en pantalla; uno demasiado rápido no deja respirar los planos de escenario.",
+      },
+      { type: "heading", level: 3, text: "Tiempos de entrega" },
+      {
+        type: "paragraph",
+        text: "El aftermovie pierde fuerza cuanto más tarda en salir. Lo ideal es entregarlo entre tres y cinco días después del evento, mientras todavía hay conversación activa en redes sobre lo que pasó. En eventos grandes, a veces se pide además un adelanto de treinta segundos en las primeras veinticuatro horas, y el aftermovie definitivo unos días después con material ya seleccionado en DaVinci Resolve.",
+      },
+      {
+        type: "image",
+        src: "/blog/aftermovie-evento-corporativo-como-se-produce/mid.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al encargar un aftermovie" },
+      {
+        type: "list",
+        items: [
+          "No definir antes qué momentos son imprescindibles (apertura, ponente estrella, cierre) y dejar que el equipo improvise sobre la marcha.",
+          "Pedir un aftermovie de más de tres minutos: pierde el objetivo de pieza corta y nadie lo termina de ver.",
+          "Usar música sin licencia clara, lo que puede acabar en el vídeo silenciado o retirado en redes.",
+          "No avisar al equipo de grabación de los momentos de networking o pausas, que suelen dar los planos más humanos del vídeo.",
+          "Encargar el montaje semanas después del evento, cuando ya no hay conversación activa alrededor.",
+          "Centrar todo el material en el escenario y no dejar margen para grabar reacciones del público.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un aftermovie de un evento corporativo?",
+        answer:
+          "Entre 60 y 120 segundos es el rango que mejor funciona. Suficiente para transmitir energía sin perder la atención de quien lo ve en redes.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto se tarda en producir un aftermovie?",
+        answer:
+          "Entre tres y cinco días tras el evento, si el material está bien organizado. Para entregas más rápidas se puede montar un adelanto de 24-48 horas con menos planos.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta grabar con dron?",
+        answer:
+          "No es imprescindible, pero ayuda en eventos grandes o con espacios exteriores. Para eventos en sala, cámaras en mano y planos de detalle suelen aportar más que un plano aéreo.",
+      },
+      {
+        type: "faq",
+        question: "¿Un aftermovie tiene sentido para un evento interno, no solo para congresos grandes?",
+        answer:
+          "Sí. Sirve igual para un evento de empresa, un lanzamiento interno o una convención de equipo: el objetivo es el mismo, dejar constancia de que aquello importó.",
+      },
+      {
+        type: "paragraph",
+        text: "Si organizas un evento y quieres que quede algo más que fotos sueltas, en RCS planificamos el aftermovie como parte de la cobertura, no como un extra de última hora. Escríbenos desde /#contacto y lo preparamos juntos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
