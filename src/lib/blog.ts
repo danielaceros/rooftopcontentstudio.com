@@ -5236,6 +5236,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "podcast-invitados-remoto-estudio-videollamada",
+    title: "Podcast con invitados en remoto: cómo grabarlo bien combinando estudio y videollamada",
+    description:
+      "Cómo grabar un episodio con un invitado conectado por videollamada sin que se note la diferencia frente al estudio: herramientas, encuadre y montaje.",
+    publishedAt: "2026-08-06",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["podcast", "estudio de grabación", "Madrid", "producción audiovisual", "entrevistas"],
+    keyword: "podcast con invitados en remoto",
+    intent: "informacional",
+    excerpt:
+      "Grabar un podcast con un invitado conectado por videollamada no tiene que sonar peor que uno grabado en persona. Así lo montamos en RCS para que no se note la diferencia.",
+    seoTitle: "Podcast con invitado remoto: cómo grabarlo bien | RCS Madrid",
+    metaDescription:
+      "Podcast con invitados en remoto: cómo grabar audio y vídeo para que no se note la diferencia con el estudio. Herramientas, encuadre y montaje.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez es más habitual que un invitado de podcast no pueda venir físicamente al estudio: vive en otra ciudad, tiene la agenda apretada o simplemente prefiere conectarse desde su despacho. Eso no significa que el episodio tenga que sonar peor. Significa que hay que montarlo distinto.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos episodios con invitado presencial casi cada semana, pero cada vez llegan más peticiones para combinar a alguien en el estudio con alguien conectado por videollamada. Funciona bien si se prepara con el flujo correcto de audio y vídeo. Si se improvisa, se nota enseguida: eco, cortes, un invitado que suena a llamada de teléfono al lado de otro con calidad de estudio.",
+      },
+      {
+        type: "image",
+        src: "/blog/podcast-invitados-remoto-estudio-videollamada/hero.webp",
+        alt: "Cámara, micrófono y pantalla de edición en una configuración de grabación de podcast",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué un invitado remoto cambia cómo se graba el episodio" },
+      {
+        type: "paragraph",
+        text: "En el estudio, el micrófono capta la voz a pocos centímetros, sin pérdida ni compresión. En una videollamada, el audio del invitado viaja por internet, se comprime para no cortarse y llega procesado por el propio sistema de la plataforma. Si grabas directamente lo que sale de Zoom o Meet, esa diferencia de calidad se escucha durante todo el episodio, y el oyente la nota aunque no sepa explicar por qué.",
+      },
+      {
+        type: "paragraph",
+        text: "Con el vídeo pasa algo parecido pero en lo visual: el invitado aparece dentro de una pantalla, dentro del plano del estudio. Si esa pantalla está mal colocada, mal iluminada o descuadrada, el resultado parece una videollamada grabada con el móvil, no un episodio de podcast cuidado. La solución no es complicada, pero hay que decidirla antes de darle a grabar, no en el montaje.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar un podcast con invitado remoto sin que se note" },
+      { type: "heading", level: 3, text: "Graba el audio remoto en local, no por la llamada" },
+      {
+        type: "paragraph",
+        text: "Las plataformas pensadas para esto, como Riverside o Zencastr, graban el audio y el vídeo de cada participante en local, en su propio dispositivo, y solo usan la llamada para que os veáis y os escuchéis mientras habláis. Al terminar la grabación, cada pista se sube en calidad completa y se sincroniza automáticamente con el resto. El resultado es una pista de calidad de estudio, aunque el invitado grabara desde su portátil en casa con un micrófono sencillo.",
+      },
+      { type: "heading", level: 3, text: "Cuida el encuadre de la pantalla con el invitado" },
+      {
+        type: "paragraph",
+        text: "Coloca la pantalla con la imagen del invitado justo al lado del objetivo de la cámara, a la altura de los ojos de quien presenta. Así, cuando mira a la pantalla para hablarle, la mirada queda casi alineada con la cámara y no se nota que está mirando a un lado. Baja el brillo de la pantalla para que no queme la imagen ni proyecte un reflejo azulado sobre la cara de quien presenta, y si el plano lo permite, dedica una segunda cámara solo a mostrar la pantalla completa como recurso extra de montaje.",
+      },
+      { type: "heading", level: 3, text: "Sincroniza y equilibra niveles en el montaje" },
+      {
+        type: "paragraph",
+        text: "Una vez grabadas las pistas por separado, hay que alinearlas en la línea de tiempo antes de nada, porque casi nunca arrancan en el mismo punto exacto. Después toca igualar niveles: la pista del estudio suele salir más rica y con más cuerpo que la del invitado remoto, grabada con auriculares o un micrófono de gama más sencilla. Un poco de compresión, ecualización y reducción de ruido en DaVinci Resolve o en el editor que uses ayuda a que las dos voces convivan en el mismo episodio sin que una suene a estudio y otra a llamada de trabajo.",
+      },
+      {
+        type: "image",
+        src: "/blog/podcast-invitados-remoto-estudio-videollamada/mid.webp",
+        alt: "Micrófono y auriculares junto a pantalla de edición de audio en estudio de podcast",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar con invitados en remoto" },
+      {
+        type: "list",
+        items: [
+          "Grabar solo lo que sale de la llamada en vez de pedir la pista local del invitado.",
+          "No hacer una prueba de sonido y conexión diez minutos antes de empezar a grabar.",
+          "Dejar el volumen del invitado remoto mucho más bajo o más alto que el del estudio.",
+          "No avisar al invitado de que use auriculares: sin ellos, su micrófono capta el eco de sus propios altavoces.",
+          "Colocar la pantalla del invitado como algo secundario en el plano, en vez de integrarla en la composición.",
+          "No tener un plan B si se corta la conexión a mitad de la grabación.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito equipo especial para grabar un invitado remoto?",
+        answer:
+          "No mucho más de lo habitual: una plataforma que grabe pistas locales por separado, como Riverside o Zencastr, buena conexión a internet y que el invitado use auriculares con un micrófono decente.",
+      },
+      {
+        type: "faq",
+        question: "¿El invitado remoto puede aparecer en vídeo o solo en audio?",
+        answer:
+          "Puede aparecer en vídeo sin problema. En RCS lo integramos en pantalla dentro del plano del estudio, como una entrevista con dos ubicaciones a la vez.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si el invitado tiene mala conexión a internet?",
+        answer:
+          "Por eso conviene grabar en local en su lado y usar la llamada solo para veros y coordinaros, no como fuente final de audio o vídeo. Aunque la llamada se corte, la grabación local sigue intacta.",
+      },
+      {
+        type: "faq",
+        question: "¿Se nota mucho la diferencia frente a grabar con los dos en el estudio?",
+        answer:
+          "Con el flujo correcto, apenas se nota en el resultado final. Se nota mucho más cuando se graba directamente desde la llamada, sin pistas separadas por participante.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un episodio con un invitado que no puede venir a Madrid, en RCS montamos la grabación híbrida para que suene como si estuviera en la sala. Escríbenos desde /#contacto y lo preparamos juntos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

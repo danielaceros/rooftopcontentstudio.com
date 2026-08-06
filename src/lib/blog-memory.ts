@@ -406,6 +406,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el aftermovie de evento corporativo, ángulo distinto de la cobertura audiovisual de eventos ya cubierta. Imágenes Unsplash.",
   },
+  {
+    slug: "podcast-invitados-remoto-estudio-videollamada",
+    keyword: "podcast con invitados en remoto",
+    intent: "informacional",
+    createdAt: "2026-08-06",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre grabación híbrida de podcast con invitado remoto por videollamada, ángulo distinto de multicámara/preparar invitado ya cubiertos. Imágenes Unsplash/Pexels.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
