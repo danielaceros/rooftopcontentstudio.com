@@ -5345,6 +5345,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "streaming-directo-estudio-que-necesitas",
+    title: "Streaming en directo desde el estudio: qué necesitas para hacerlo bien",
+    description:
+      "Qué hace falta en cámaras, audio y conexión para hacer streaming en directo desde un estudio sin sustos: guía práctica para lanzamientos, eventos y directos en redes.",
+    publishedAt: "2026-08-07",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["streaming", "estudio de grabación", "Madrid", "producción audiovisual", "directo"],
+    keyword: "streaming en directo desde estudio",
+    intent: "informacional",
+    excerpt:
+      "Un directo no da margen para repetir la toma. Así preparamos en RCS las cámaras, el audio y la conexión antes de salir en streaming.",
+    seoTitle: "Streaming en Directo desde Estudio | RCS Madrid",
+    metaDescription:
+      "Streaming en directo desde estudio: qué necesitas en cámaras, conexión y audio para que la retransmisión salga bien sin sustos.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez llegan más peticiones para algo distinto a grabar contenido para editar después: hacer un directo. Un lanzamiento de producto, una charla abierta al público, un evento de empresa retransmitido para quien no puede venir a la sala. La lógica cambia por completo en cuanto entra la palabra directo: no hay margen para repetir una toma.",
+      },
+      {
+        type: "paragraph",
+        text: "En streaming en directo no hay postproducción de por medio. Lo que sale por streaming es lo que ve la audiencia, en el momento, con sus errores incluidos si los hay. Eso obliga a preparar antes lo que en una grabación normal se puede arreglar después: encuadre, niveles de audio, transiciones entre cámaras, gráficos en pantalla. En RCS montamos directos con cierta frecuencia y la clave siempre es la misma: preparar el flujo completo antes de salir en directo, no improvisar sobre la marcha.",
+      },
+      {
+        type: "image",
+        src: "/blog/streaming-directo-estudio-que-necesitas/hero.webp",
+        alt: "Cámara grabando en directo con encuadre de varias personas en un plató de streaming",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué cambia entre grabar contenido y hacer streaming en directo" },
+      {
+        type: "paragraph",
+        text: "Grabar da margen de error. Si algo falla, cortas, repites o lo arreglas en el montaje. En un directo esa red de seguridad desaparece: el audio que suena mal suena mal para todo el mundo que está viendo en ese momento, y el corte de cámara torpe queda ahí, visible, sin posibilidad de deshacerlo.",
+      },
+      {
+        type: "paragraph",
+        text: "Por eso el streaming en directo pide más ensayo previo que una grabación normal, aunque dure menos. Antes de salir en directo conviene tener claro el guion de cámaras, probar el audio con los niveles reales de la sala, y comprobar que la conexión aguanta el bitrate que vas a necesitar. Nada de esto se improvisa bien en caliente.",
+      },
+      {
+        type: "paragraph",
+        text: "Los casos más habituales que nos llegan son lanzamientos de producto con público esperando verlo en el momento, sesiones abiertas de preguntas y respuestas, y eventos de empresa donde parte de la audiencia no puede estar físicamente en la sala pero quiere seguirlo en directo desde donde esté.",
+      },
+      { type: "heading", level: 2, text: "Cómo montar un directo que aguante bien" },
+      { type: "heading", level: 3, text: "Conexión a internet con respaldo" },
+      {
+        type: "paragraph",
+        text: "La conexión es lo primero que falla si no se prepara bien, y es lo único que no puedes arreglar en directo si se cae. Usa cable ethernet siempre que puedas, nunca wifi como única vía, y ten un router 4G o 5G como respaldo listo para conmutar si la línea principal se corta. Configura el bitrate de salida por debajo del máximo que soporta tu conexión de subida, no al límite: un directo a 6 Mbps sobre una línea de 8 Mbps aguanta mejor que uno a 8 Mbps justos.",
+      },
+      { type: "heading", level: 3, text: "Multicámara con mezclador en directo" },
+      {
+        type: "paragraph",
+        text: "Con una sola cámara el directo se queda plano enseguida. Un mezclador como un Blackmagic ATEM Mini, o un switcher por software como OBS Studio, te deja cortar entre varias cámaras en tiempo real, meter gráficos en pantalla y mandar la señal final a la plataforma sin depender de editar nada después. La clave es decidir antes qué plano usas para cada momento: uno general para el arranque, un plano cerrado para las partes con más contenido, y una cámara secundaria para pantalla compartida o invitados.",
+      },
+      { type: "heading", level: 3, text: "Audio limpio para directo, sin margen de arreglo" },
+      {
+        type: "paragraph",
+        text: "En una grabación normal, un audio algo bajo o con ruido de fondo se puede subir, limpiar o ecualizar en el montaje. En directo, lo que suena en el momento es lo que llega a la audiencia. Usa un mezclador de audio dedicado, no el micrófono integrado de la cámara, y haz una prueba de sonido con los niveles reales de la sala antes de empezar, no cinco minutos después de salir en directo.",
+      },
+      {
+        type: "image",
+        src: "/blog/streaming-directo-estudio-que-necesitas/mid.webp",
+        alt: "Monitor con vista multicámara y mezclador para dirigir un streaming en directo",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido hacer streaming en directo" },
+      {
+        type: "list",
+        items: [
+          "Lanzamiento de producto con público que quiere verlo suceder en el momento, no al día siguiente.",
+          "Evento de empresa donde parte de la audiencia no puede asistir físicamente pero sí seguirlo en directo.",
+          "Sesión de preguntas y respuestas donde el directo genera participación real de quien está viendo.",
+          "Entrevista o mesa redonda pensada para generar conversación en redes mientras ocurre.",
+          "Cuando lo que aporta el contenido es justamente que esté pasando ahora, no una versión editada después.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Qué necesito mínimo para hacer streaming en directo desde un estudio?",
+        answer:
+          "Una cámara con salida limpia (o una webcam decente para empezar), un mezclador de audio, conexión a internet estable con cable, y un software o hardware de switching como OBS o un ATEM Mini para mandar la señal a la plataforma.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo hacer streaming a varias plataformas a la vez?",
+        answer:
+          "Sí. Herramientas como Restream o StreamYard permiten mandar la misma señal a YouTube, LinkedIn e Instagram al mismo tiempo desde una sola configuración, sin montar el directo por separado en cada plataforma.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si se corta la conexión durante el directo?",
+        answer:
+          "Por eso conviene tener un router 4G o 5G de respaldo configurado y probado antes de empezar. Si la línea principal se cae, conmutas y sigues en directo con una interrupción mínima en vez de perder la retransmisión entera.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede editar y reutilizar el contenido del directo después?",
+        answer:
+          "Sí, si grabas en local además de emitir. La señal completa se puede recortar en clips para redes o dejar como vídeo íntegro, igual que cualquier otra grabación, aunque en el momento haya salido en directo sin margen de edición.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento o un lanzamiento que necesita salir en directo y no solo grabado, en RCS montamos el streaming con las cámaras, el audio y la conexión preparados para que aguante. Escríbenos desde /#contacto y lo planificamos juntos.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
