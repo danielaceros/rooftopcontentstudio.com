@@ -5457,6 +5457,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "subtitulos-video-por-que-importan-como-se-hacen",
+    title: "Subtítulos en vídeo: por qué son casi obligatorios y cómo se hacen bien",
+    description:
+      "La mayoría de tu audiencia ve vídeo sin sonido. Qué aportan los subtítulos, cómo se generan sin perder tiempo y qué errores tirar por tierra un vídeo bien grabado.",
+    publishedAt: "2026-08-10",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["subtítulos", "accesibilidad", "edición de vídeo", "redes sociales", "Madrid"],
+    keyword: "subtitulos en video",
+    intent: "informacional",
+    excerpt:
+      "En redes la mayoría ve el vídeo con el sonido apagado. Sin subtítulos, ese vídeo no comunica nada. Así los preparamos en RCS para que no se note el trabajo detrás.",
+    seoTitle: "Subtítulos en Vídeo: por qué importan | RCS Madrid",
+    metaDescription:
+      "Subtítulos en vídeo: por qué la mayoría de tu audiencia los necesita, cómo se generan bien y qué errores evitar para que no rompan el ritmo del vídeo.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Prueba esto: abre Instagram o LinkedIn ahora mismo y mira cuántos vídeos reproduces con el sonido puesto. Casi ninguno. La mayoría de tu audiencia consume vídeo en el metro, en la oficina o en la sala de espera, con el móvil en silencio. Si tu vídeo no lleva subtítulos, para esa persona no existe.",
+      },
+      {
+        type: "paragraph",
+        text: "No es un detalle de accesibilidad opcional, aunque también lo sea. Es la diferencia entre que alguien entienda tu mensaje en los primeros tres segundos o pase el dedo y siga scrolleando. En RCS metemos subtítulos en prácticamente todo lo que editamos, y no es capricho: es la parte del proceso que más impacto tiene en cuánto aguanta la gente viendo el vídeo.",
+      },
+      {
+        type: "image",
+        src: "/blog/subtitulos-video-por-que-importan-como-se-hacen/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo con pista de subtítulos en pantalla",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué los subtítulos ya no son opcionales" },
+      {
+        type: "paragraph",
+        text: "El dato que maneja cualquier editor de redes es simple: buena parte del vídeo en móvil se reproduce sin audio, sobre todo en el scroll inicial, antes de que alguien decida pararse y subir el volumen. Si el mensaje solo va en el audio, lo pierdes justo en el momento en que tienes que enganchar.",
+      },
+      {
+        type: "paragraph",
+        text: "Además, los subtítulos hacen algo que el audio solo no hace: refuerzan el mensaje. Alguien que sí tiene el sonido puesto lee y escucha a la vez, y eso ayuda a retener la idea principal, sobre todo en vídeos con datos, cifras o conceptos que no se captan a la primera.",
+      },
+      {
+        type: "paragraph",
+        text: "Y está la parte de accesibilidad real: personas con dificultad auditiva, gente viendo tu contenido en un idioma que no es el suyo, o simplemente alguien que no quiere activar el sonido en un espacio público. Todos esos casos dependen de que el subtítulo esté ahí y esté bien hecho.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hacen bien" },
+      { type: "heading", level: 3, text: "Generarlos a partir del audio, no a mano" },
+      {
+        type: "paragraph",
+        text: "Escribir subtítulos a mano, minuto a minuto, no tiene sentido con las herramientas actuales. En DaVinci Resolve o CapCut se generan automáticamente a partir del audio del vídeo, con un margen de error bajo si la grabación tiene buen sonido. El trabajo real está después: revisar, cortar frases donde toca y corregir lo que la transcripción automática entiende mal.",
+      },
+      { type: "heading", level: 3, text: "Sincronizarlos con el ritmo del corte, no con la frase completa" },
+      {
+        type: "paragraph",
+        text: "Un error habitual es dejar frases largas en pantalla durante seis o siete segundos. El ojo no lee así en redes. Cortamos cada bloque de subtítulo a dos o tres líneas cortas, sincronizadas con las pausas naturales del habla, para que se lean casi sin esfuerzo mientras el vídeo sigue avanzando.",
+      },
+      { type: "heading", level: 3, text: "Cuidar tipografía, tamaño y contraste" },
+      {
+        type: "paragraph",
+        text: "El subtítulo tiene que leerse en una pantalla de móvil de cinco pulgadas, con luz de sol o en el metro con poca luz. Tipografía gruesa, buen contraste con el fondo y tamaño generoso. Nada de letra fina sobre fondo claro que desaparece en cuanto hay una imagen con mucha luz detrás.",
+      },
+      {
+        type: "image",
+        src: "/blog/subtitulos-video-por-que-importan-como-se-hacen/mid.webp",
+        alt: "Persona viendo un vídeo vertical en el móvil con el sonido apagado",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al subtitular" },
+      {
+        type: "list",
+        items: [
+          "Dejar el subtítulo generado automáticamente sin revisar: nombres propios, cifras y tecnicismos casi siempre salen mal.",
+          "Frases demasiado largas en pantalla que obligan a releer y rompen el ritmo del vídeo.",
+          "Tipografía o color que se pierde sobre fondos claros o con mucho brillo.",
+          "Subtítulos quemados en el vídeo sin dejar margen para adaptarlos a otro idioma si el contenido se reutiliza.",
+          "No revisar la sincronización final tras exportar, sobre todo si el vídeo se recorta o se acelera después.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Los subtítulos automáticos son suficientes?",
+        answer:
+          "Como punto de partida sí, pero siempre hay que revisarlos a mano. La transcripción automática falla con nombres propios, cifras y palabras técnicas, y esos errores se notan mucho en pantalla.",
+      },
+      {
+        type: "faq",
+        question: "¿Debo quemar los subtítulos en el vídeo o dejarlos como archivo aparte?",
+        answer:
+          "Depende del uso. Para redes sociales conviene quemarlos directamente en el vídeo, porque la mayoría de plataformas no muestra bien los subtítulos externos. Para YouTube o contenido que se vaya a traducir, mejor mantener un archivo de subtítulos separado.",
+      },
+      {
+        type: "faq",
+        question: "¿Los subtítulos ayudan también al SEO del vídeo?",
+        answer:
+          "Sí, sobre todo en YouTube. La transcripción le da a la plataforma más contexto sobre el contenido del vídeo, lo que puede mejorar cómo se indexa y en qué búsquedas aparece.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo añade subtitular a la edición?",
+        answer:
+          "Con las herramientas actuales, poco. Generar y revisar los subtítulos de un vídeo de tres o cuatro minutos suele llevar entre 15 y 30 minutos, dependiendo de lo limpio que esté el audio original.",
+      },
+      {
+        type: "paragraph",
+        text: "Si grabas contenido en RCS, la edición incluye subtítulos revisados a mano, no solo el volcado automático. Si quieres que tu próximo vídeo se entienda también con el sonido apagado, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

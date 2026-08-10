@@ -424,6 +424,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre streaming en directo desde estudio (conexión, multicámara, audio en vivo), ángulo distinto de webinars/masterclasses grabados y multicámara de podcast ya cubiertos. Imágenes Unsplash.",
   },
+  {
+    slug: "subtitulos-video-por-que-importan-como-se-hacen",
+    keyword: "subtitulos en video",
+    intent: "informacional",
+    createdAt: "2026-08-10",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre subtítulos en vídeo (por qué importan, cómo se generan y errores comunes), ángulo de postproducción/accesibilidad no cubierto por los posts anteriores. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
