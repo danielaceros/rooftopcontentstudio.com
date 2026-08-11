@@ -433,6 +433,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre subtítulos en vídeo (por qué importan, cómo se generan y errores comunes), ángulo de postproducción/accesibilidad no cubierto por los posts anteriores. Imágenes Unsplash.",
   },
+  {
+    slug: "locucion-voz-en-off-grabacion-estudio",
+    keyword: "locucion y voz en off",
+    intent: "informacional",
+    createdAt: "2026-08-11",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre locución y voz en off (cuándo usarla frente a presentador y cómo prepararla), ángulo de producción de audio no cubierto por microfonos/audio profesional ni por los posts anteriores. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

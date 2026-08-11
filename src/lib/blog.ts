@@ -5569,6 +5569,138 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "locucion-voz-en-off-grabacion-estudio",
+    title: "Locución y voz en off: cuándo grabarla en estudio y cómo prepararla",
+    description:
+      "No todos los vídeos necesitan una cara delante de la cámara. Cuándo tiene sentido usar voz en off en lugar de presentador, y cómo preparar guion, voz y condiciones de grabación para que suene profesional.",
+    publishedAt: "2026-08-11",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["locución", "voz en off", "estudio de grabación", "audio", "Madrid", "contenido"],
+    keyword: "locucion y voz en off",
+    intent: "informacional",
+    excerpt:
+      "La voz en off puede salvar un vídeo corporativo o hundirlo. Cuándo tiene sentido grabarla en estudio y cómo preparar guion, voz y ritmo antes de sentarte delante del micro.",
+    seoTitle: "Locución y voz en off en estudio | RCS Madrid",
+    metaDescription:
+      "Voz en off: cuándo usarla en lugar de un presentador, cómo preparar el guion antes de grabar y qué hace que una locución suene profesional en vez de leída.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay vídeos que no necesitan una cara. Un explicativo de producto, un vídeo institucional, un tutorial o una pieza para anuncios muchas veces funcionan mejor con una voz en off bien grabada que con alguien hablando a cámara. El problema es que la mayoría de la gente que graba su propia locución en el móvil o con un micrófono de diadema suena exactamente a eso: alguien leyendo un texto en su casa.",
+      },
+      {
+        type: "paragraph",
+        text: "La diferencia entre una locución que suena profesional y una que no está casi siempre en tres sitios: el guion, la voz que la lee y las condiciones en las que se graba. Ninguno de los tres depende de tener un estudio carísimo, pero sí de hacerlo con cabeza.",
+      },
+      {
+        type: "paragraph",
+        text: "Lo curioso es que los tres fallos más habituales pasan casi siempre desapercibidos para quien graba, porque el oído se acostumbra rápido al eco de su propia habitación. Se nota luego, cuando el vídeo está montado y suena distinto a cualquier otra pieza profesional que hayas visto ese mismo día en redes.",
+      },
+      {
+        type: "image",
+        src: "/blog/locucion-voz-en-off-grabacion-estudio/hero.webp",
+        alt: "Micrófono de condensador en estudio de grabación preparado para locución",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es la voz en off y cuándo la necesitas" },
+      {
+        type: "paragraph",
+        text: "Voz en off es cualquier narración que acompaña a un vídeo sin que quien habla aparezca en pantalla. Se usa para explicar un proceso, dar contexto a imágenes de producto, narrar un caso de uso o simplemente sostener un vídeo que se apoya en b-roll y gráficos en lugar de en un presentador.",
+      },
+      {
+        type: "paragraph",
+        text: "Tiene sentido cuando el mensaje es más importante que la persona que lo dice: vídeos explicativos, anuncios, contenido institucional o piezas donde el protagonista real es el producto, el espacio o el dato. También cuando quien debería salir a cámara no se siente cómodo delante de un objetivo, pero sí puede narrar un guion con calma.",
+      },
+      {
+        type: "paragraph",
+        text: "No siempre es la mejor opción. Si el vídeo depende de generar confianza personal, como un vídeo de venta o un mensaje de fundador, una cara suele funcionar mejor que una voz sin rostro. La voz en off gana cuando el contenido es informativo y pierde cuando el contenido necesita conexión humana directa.",
+      },
+      {
+        type: "paragraph",
+        text: "Hay un punto intermedio que funciona muy bien y que en RCS usamos a menudo: grabar un explicativo apoyado en b-roll y gráficos, pero con la voz de alguien reconocible de la marca, no de un locutor genérico. Se mantiene la coherencia de marca sin necesitar horas de rodaje a cámara para cada actualización del vídeo.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Escribir el guion para el oído, no para la vista" },
+      {
+        type: "paragraph",
+        text: "Un guion que se lee bien en un documento no siempre suena bien en voz alta. Frases largas con varias subordinadas obligan a respirar en mitad de una idea y se nota. Escribimos frases cortas, con puntuación pensada para marcar dónde respirar, y leemos el texto en voz alta antes de grabar para detectar qué trabalengua se nos ha colado sin querer.",
+      },
+      {
+        type: "paragraph",
+        text: "También conviene marcar en el propio guion dónde va cada corte de vídeo o cada gráfico, aunque sea con una nota entre corchetes. Ayuda a leer con el ritmo correcto en cada bloque y evita que en montaje la voz avance más rápido o más lento que la imagen que la acompaña.",
+      },
+      { type: "heading", level: 3, text: "Elegir el ritmo y el tono según el uso final" },
+      {
+        type: "paragraph",
+        text: "No es lo mismo narrar un tutorial, donde el ritmo tiene que ser pausado para que se entienda cada paso, que narrar un anuncio de quince segundos, donde cada palabra cuenta y el tono tiene que empujar hacia la acción. Definir esto antes de grabar evita repetir tomas por un problema que era de dirección, no de técnica.",
+      },
+      {
+        type: "paragraph",
+        text: "Grabamos dos o tres tomas de referencia al principio de la sesión, cambiando ligeramente el ritmo, y las escuchamos antes de seguir con el resto del guion. Cuesta cinco minutos y evita descubrir en la edición que el tono elegido no encajaba con el vídeo.",
+      },
+      { type: "heading", level: 3, text: "Grabar en un espacio con el sonido controlado" },
+      {
+        type: "paragraph",
+        text: "Una locución grabada en una habitación sin tratamiento acústico se nota en el eco y en el ruido de fondo, aunque el micrófono sea bueno. En estudio grabamos con tratamiento acústico, sin reverberación ni ruido ambiente, y eso es lo que separa una voz en off que suena a producto terminado de una que suena a nota de voz.",
+      },
+      {
+        type: "paragraph",
+        text: "El micrófono también importa, pero menos de lo que la gente cree. Un condensador decente en una sala tratada suena mejor que un micrófono de gama alta grabado en un salón con eco. Si tienes que elegir dónde invertir primero, invierte en el espacio antes que en el equipo.",
+      },
+      {
+        type: "image",
+        src: "/blog/locucion-voz-en-off-grabacion-estudio/mid.webp",
+        alt: "Micrófono y auriculares preparados para grabar una locución",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar voz en off" },
+      {
+        type: "list",
+        items: [
+          "Grabar sin haber leído el guion en voz alta antes, lo que hace aflorar trabalenguas y frases mal construidas en plena toma.",
+          "Usar el micrófono del móvil o de unos auriculares en lugar de un micrófono de condensador en condiciones controladas.",
+          "Leer con un tono monótono porque no se ha definido antes qué ritmo y qué energía pide el vídeo.",
+          "No dejar silencios ni pausas naturales, lo que hace muy difícil editar y sincronizar la voz con las imágenes después.",
+          "Grabar todo el guion de un tirón sin repetir frases sueltas, así que un solo error obliga a repetir el bloque entero.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito una voz profesional o puedo grabarla yo mismo?",
+        answer:
+          "Depende del uso. Para contenido interno o explicativos sencillos, tu propia voz bien dirigida y bien grabada suele bastar. Para anuncios o piezas de marca con mucha exposición, una voz profesional marca una diferencia notable en cómo se percibe el vídeo.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura grabar una locución en estudio?",
+        answer:
+          "Para un guion de uno o dos minutos, entre 30 y 45 minutos suele ser suficiente, contando repeticiones de frases que no salen a la primera. Guiones más largos o con varios idiomas llevan más tiempo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede combinar voz en off con presentador en el mismo vídeo?",
+        answer:
+          "Sí, es habitual. Un presentador abre o cierra el vídeo a cámara y la voz en off narra las partes de proceso, datos o b-roll. Ayuda a mantener conexión humana sin depender de una sola persona todo el tiempo.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué formato de entrega necesito para usar la locución en edición?",
+        answer:
+          "Un archivo de audio sin comprimir, separado por bloques o frases si el guion es largo, para poder ajustar el ritmo en montaje sin tener que regrabar toda la pieza por un solo cambio.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu próximo vídeo necesita una voz en off que suene a estudio y no a nota de voz, en RCS grabamos con tratamiento acústico y dirección de guion incluida. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
