@@ -5701,6 +5701,126 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "talking-head-video-marca-cuando-funciona",
+    title: "Talking head en vídeo de marca: qué es y cuándo funciona",
+    description:
+      "El talking head es el formato más directo que existe: una persona hablando a cámara sin apenas apoyo visual. Cuándo funciona, cuándo no, y cómo grabarlo para que aguante la atención.",
+    publishedAt: "2026-08-12",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["talking head", "vídeo de marca", "estudio de grabación", "contenido", "Madrid", "presentador"],
+    keyword: "talking head video de marca",
+    intent: "informacional",
+    excerpt:
+      "El talking head no tiene montaje que lo salve: si la persona no sostiene la atención, el vídeo no funciona. Cuándo usarlo y cómo grabarlo para que no se note el esfuerzo.",
+    seoTitle: "Talking Head en Vídeo de Marca | RCS Madrid",
+    metaDescription:
+      "Talking head en vídeo: qué es, cuándo funciona mejor que un reel editado y cómo grabarlo en estudio para que sostenga la atención sin montaje de apoyo.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay formatos de vídeo que dependen de cortes rápidos, b-roll y música para sostener la atención. El talking head es justo lo contrario: una persona habla directamente a cámara durante buena parte de la pieza, con muy poco apoyo visual, y el vídeo funciona o no según si esa persona aguanta la atención por sí sola.",
+      },
+      {
+        type: "paragraph",
+        text: "Es también el formato más difícil de disimular. Un reel con quince cortes puede tapar un guion flojo con ritmo de montaje. Un talking head no tiene dónde esconderse: si no funciona, se nota en los primeros cinco segundos.",
+      },
+      {
+        type: "image",
+        src: "/blog/talking-head-video-marca-cuando-funciona/hero.webp",
+        alt: "Persona hablando directamente a cámara en formato talking head dentro de un estudio de grabación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el talking head y por qué se usa" },
+      {
+        type: "paragraph",
+        text: "Talking head es cualquier vídeo donde el protagonista habla mirando al objetivo, con la cámara fija o con muy poco movimiento, y el peso de la pieza recae en el discurso y en la persona, no en el montaje. Se opone a formatos como el reel con muchos cortes o el explicativo apoyado en b-roll y gráficos.",
+      },
+      {
+        type: "paragraph",
+        text: "Se diferencia de la voz en off en que aquí hay una cara delante del espectador todo el tiempo. Eso genera confianza y cercanía cuando la persona conecta bien con la cámara, pero también expone cualquier duda, tic o titubeo que en otro formato quedaría tapado por un corte.",
+      },
+      {
+        type: "paragraph",
+        text: "Funciona especialmente bien en contenido de fundador, vídeos de LinkedIn, mensajes directos a cliente y piezas donde lo que vende no es el producto sino la persona que lo explica. Es el formato que más rápido construye autoridad, y también el que más rápido la destruye si sale forzado.",
+      },
+      {
+        type: "paragraph",
+        text: "En redes suele generar más interacción real que un reel muy editado, precisamente porque parece menos publicidad y más conversación directa entre dos personas. Eso lo hace muy útil para posicionar a alguien como referente en su sector, no solo para promocionar un servicio puntual.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Encuadre y mirada a cámara" },
+      {
+        type: "paragraph",
+        text: "El encuadre habitual es plano medio corto, ojos a la altura del tercio superior del cuadro y objetivo a la altura de los ojos, no por debajo. Mirar directamente al objetivo, y no a un punto cercano en el monitor, es lo que hace que el espectador sienta que le están hablando a él y no a una pantalla.",
+      },
+      {
+        type: "paragraph",
+        text: "El fondo también importa, aunque se hable menos de él. Un fondo con algo de profundidad y desenfoque funciona mejor que una pared lisa sin ningún elemento, porque evita que la figura se aplane visualmente y le da al plano una sensación de espacio real, no de estudio de fotos.",
+      },
+      { type: "heading", level: 3, text: "Ritmo del discurso y pausas" },
+      {
+        type: "paragraph",
+        text: "El error más común es hablar como si se leyera un texto: ritmo constante, sin pausas, sin variación de energía. Grabamos con frases cortas y pausas reales entre idea e idea, porque una pausa bien puesta se edita fácil y un discurso plano no se arregla en montaje.",
+      },
+      { type: "heading", level: 3, text: "Duración según la plataforma" },
+      {
+        type: "paragraph",
+        text: "Un talking head para LinkedIn aguanta entre 60 y 90 segundos si va directo al grano desde el primer plano. Para YouTube, con contexto y desarrollo, puede sostenerse varios minutos siempre que haya cambios de ritmo cada 20-30 segundos. Grabar sin pensar en esto lleva a piezas que se alargan sin necesidad.",
+      },
+      {
+        type: "image",
+        src: "/blog/talking-head-video-marca-cuando-funciona/mid.webp",
+        alt: "Cámara de vídeo profesional enfocada durante una grabación de talking head en estudio",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido (y cuándo no)" },
+      {
+        type: "list",
+        items: [
+          "Funciona cuando el mensaje depende de quién lo dice: fundador, experto, portavoz de marca con autoridad real.",
+          "Funciona para vídeos cortos y directos donde el gancho tiene que salir en los tres primeros segundos.",
+          "No funciona si la persona no está entrenada para hablar a cámara y el resultado se nota rígido o leído.",
+          "No funciona para explicar procesos largos o datos complejos, donde el apoyo visual de b-roll o gráficos ayuda más.",
+          "Tiene mejor resultado combinado con algún corte de apoyo cada 20-30 segundos que sostenido puro más de dos minutos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Necesito teleprompter para grabar un talking head?",
+        answer:
+          "No es obligatorio, pero ayuda mucho si el guion es largo o si te pones nervioso improvisando. Para piezas cortas y con el mensaje bien interiorizado, hablar sin teleprompter suele salir más natural.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuántas tomas necesito grabar de media?",
+        answer:
+          "Para una pieza corta de 60-90 segundos, entre 3 y 5 tomas completas suele ser suficiente si el guion está bien ensayado antes de grabar. Menos ensayo significa más tomas y una sesión más larga.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor grabar de pie o sentado?",
+        answer:
+          "Depende del tono. De pie transmite más energía y funciona bien para mensajes cortos y directos. Sentado transmite más calma y funciona mejor para explicaciones más largas o tono cercano de conversación.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo combinar talking head con locución en off en el mismo vídeo?",
+        answer:
+          "Sí, es habitual. El talking head abre o cierra la pieza a cámara y la voz en off narra las partes de proceso o datos, apoyada en b-roll. Mantiene la conexión humana sin que toda la pieza dependa de sostener la mirada a cámara todo el tiempo.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu próxima pieza depende de que alguien sostenga la cámara con presencia real, en RCS grabamos con dirección de encuadre y de ritmo incluida, no solo con la cámara encendida. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

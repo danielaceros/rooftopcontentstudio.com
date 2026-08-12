@@ -442,6 +442,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre locución y voz en off (cuándo usarla frente a presentador y cómo prepararla), ángulo de producción de audio no cubierto por microfonos/audio profesional ni por los posts anteriores. Imágenes Unsplash.",
   },
+  {
+    slug: "talking-head-video-marca-cuando-funciona",
+    keyword: "talking head video de marca",
+    intent: "informacional",
+    createdAt: "2026-08-12",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 22ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el formato talking head (persona hablando directo a cámara sin apoyo de montaje), ángulo de dirección de encuadre/presencia distinto de teleprompter, voz en off y preparar invitado ya cubiertos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
