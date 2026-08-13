@@ -451,6 +451,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 22ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el formato talking head (persona hablando directo a cámara sin apoyo de montaje), ángulo de dirección de encuadre/presencia distinto de teleprompter, voz en off y preparar invitado ya cubiertos. Imágenes Unsplash.",
   },
+  {
+    slug: "croma-key-cuando-grabar-fondo-verde",
+    keyword: "croma key en video",
+    intent: "informacional",
+    createdAt: "2026-08-13",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 23ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre croma key (cuándo grabar con fondo verde compensa frente a un fondo real, e iluminación/vestuario para un recorte limpio), ángulo técnico de producción no cubierto por los posts anteriores. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

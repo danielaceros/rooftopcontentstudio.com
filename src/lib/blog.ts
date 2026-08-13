@@ -5821,6 +5821,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "croma-key-cuando-grabar-fondo-verde",
+    title: "Croma key: cuándo grabar con fondo verde y cuándo no",
+    description:
+      "El croma key permite meter a alguien en cualquier escenario sin salir del estudio, pero mal ejecutado se nota en dos segundos. Cuándo compensa usarlo, cuándo un fondo real da mejor resultado y cómo iluminarlo para que el recorte salga limpio.",
+    publishedAt: "2026-08-13",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["croma key", "fondo verde", "producción de vídeo", "estudio de grabación", "Madrid", "posproducción"],
+    keyword: "croma key en video",
+    intent: "informacional",
+    excerpt:
+      "El croma key no perdona: bien iluminado es invisible, mal iluminado deja un halo verde alrededor del pelo. Cuándo tiene sentido usarlo y cómo grabarlo para que el recorte salga limpio.",
+    seoTitle: "Croma Key en Vídeo: Cuándo Usarlo | RCS Madrid",
+    metaDescription:
+      "Croma key en vídeo: cuándo grabar con fondo verde compensa, cuándo no, y cómo iluminarlo bien en estudio para un recorte limpio.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "El croma key —grabar delante de un fondo verde o azul para sustituirlo en posproducción— es una de las herramientas más usadas y más mal entendidas en producción de vídeo. Bien hecho, permite meter a alguien en cualquier escenario sin moverse del estudio. Mal hecho, deja un contorno verde alrededor del pelo que delata el truco en dos segundos.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS lo montamos para clientes que necesitan fondos de marca, gráficos animados detrás del presentador o piezas donde el escenario cambia varias veces dentro del mismo vídeo. No es la solución para todo: hay sesiones donde un fondo real da mejor resultado que cualquier croma bien ejecutado. La clave está en saber cuándo conviene cada opción.",
+      },
+      {
+        type: "image",
+        src: "/blog/croma-key-cuando-grabar-fondo-verde/hero.webp",
+        alt: "Cámara de vídeo grabando a una persona delante de un fondo verde de croma key en estudio",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el croma key y por qué se usa" },
+      {
+        type: "paragraph",
+        text: "El croma key es una técnica de posproducción que sustituye un color uniforme del fondo —verde casi siempre, porque contamina menos el tono de piel— por otra imagen o vídeo. La cámara graba a la persona delante de esa tela y en edición se recorta ese color y se coloca detrás lo que haga falta: un escenario virtual, gráficos de marca, otra localización.",
+      },
+      {
+        type: "paragraph",
+        text: "Se usa sobre todo cuando el mensaje necesita apoyo visual que no existe físicamente en la sala: datos en pantalla, gráficos animados, un fondo de marca distinto en cada vídeo, o piezas donde el mismo presentador aparece en varios escenarios sin cambiar de ubicación real. También sirve para separar al sujeto del fondo y ganar flexibilidad en montaje, aunque el resultado final sea sencillo.",
+      },
+      {
+        type: "paragraph",
+        text: "No sustituye a un buen fondo real. Si lo único que necesitas es una pared limpia o una estantería con buena luz, grabar directamente ahí da un resultado más natural y ahorra horas de edición. El croma tiene sentido cuando el fondo final necesita ser algo que no existe en la sala.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Iluminación del fondo verde" },
+      {
+        type: "paragraph",
+        text: "El fallo más habitual es iluminar la tela igual que a la persona. El fondo necesita luz propia, uniforme, sin sombras ni pliegues marcados, separada de la iluminación del sujeto. Si el verde queda irregular, el recorte falla y aparecen esos bordes con halo que se notan en cualquier pantalla.",
+      },
+      { type: "heading", level: 3, text: "Distancia entre sujeto y fondo" },
+      {
+        type: "paragraph",
+        text: "Separar a la persona de la tela al menos metro y medio evita que el verde rebote sobre el pelo o la ropa clara, algo muy habitual cuando el sujeto está pegado al fondo. Esa distancia también desenfoca ligeramente el verde, lo que facilita el recorte limpio en edición.",
+      },
+      { type: "heading", level: 3, text: "Vestuario y colores a evitar" },
+      {
+        type: "paragraph",
+        text: "Verde, evidentemente, queda descartado, pero también conviene evitar tejidos brillantes o semitransparentes que reflejen el color del fondo. El pelo suelto o muy rizado es lo más difícil de recortar limpio: si hay margen, un peinado más controlado ahorra bastantes horas de retoque en posproducción.",
+      },
+      {
+        type: "image",
+        src: "/blog/croma-key-cuando-grabar-fondo-verde/mid.webp",
+        alt: "Pantalla de edición de vídeo con línea de tiempo y clips durante el proceso de posproducción",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido (y cuándo no)" },
+      {
+        type: "list",
+        items: [
+          "Tiene sentido cuando necesitas gráficos animados o datos detrás del presentador en tiempo real.",
+          "Tiene sentido cuando la misma pieza se repite con distintos fondos de marca sin cambiar de estudio.",
+          "Tiene sentido para vídeo educativo o explicativo con apoyo visual constante.",
+          "No tiene sentido si el fondo real del estudio ya transmite lo que necesitas: se pierde tiempo y naturalidad.",
+          "No tiene sentido para entrevistas o testimonios, donde la cercanía del espacio real aporta más que cualquier fondo virtual.",
+          "No compensa si no hay tiempo de posproducción para un recorte limpio: un croma mal editado se nota más que no usarlo.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Es mejor el verde o el azul para croma key?",
+        answer:
+          "El verde es el estándar en vídeo porque se aleja más del tono de piel humano y las cámaras digitales son más sensibles a ese canal. El azul se sigue usando en cine cuando el vestuario incluye verde, pero para contenido de marca el verde es la opción por defecto.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito un estudio con croma permanente o vale con una tela?",
+        answer:
+          "Una tela o panel bien tensado y bien iluminado es suficiente para la mayoría de piezas. Un ciclorama fijo ayuda cuando hay movimiento de cámara, pero para planos fijos con presentador no es imprescindible.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo añade el croma a la edición?",
+        answer:
+          "Depende de lo limpio que salga el recorte en grabación y de la complejidad del fondo final. Con buena iluminación, un recorte simple se resuelve rápido; con pelo suelto o bordes complicados, el ajuste fino se lleva bastante más tiempo.",
+      },
+      {
+        type: "faq",
+        question: "¿Puedo usar croma key con luz natural?",
+        answer:
+          "Es posible, pero complica el control porque la luz cambia durante el día y altera el balance de color del verde. Para un resultado consistente conviene iluminar el fondo con luz artificial controlada, aunque el resto de la escena tenga luz natural.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu próximo vídeo necesita un fondo que no existe en ningún estudio real, en RCS montamos croma con iluminación y recorte limpio incluidos en la sesión. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
