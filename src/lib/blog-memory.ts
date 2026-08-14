@@ -460,6 +460,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 23ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre croma key (cuándo grabar con fondo verde compensa frente a un fondo real, e iluminación/vestuario para un recorte limpio), ángulo técnico de producción no cubierto por los posts anteriores. Imágenes Unsplash.",
   },
+  {
+    slug: "duracion-ideal-video-segun-plataforma",
+    keyword: "duracion ideal de un video segun la plataforma",
+    intent: "informacional",
+    createdAt: "2026-08-14",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 24ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre duración ideal de vídeo por plataforma (Reels/TikTok, LinkedIn, YouTube, web propia) y por qué la retención importa más que el minutaje, ángulo de formato/estrategia no cubierto por los posts anteriores (distinto de horizontal vs vertical, que trata de orientación no de duración). Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

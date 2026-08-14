@@ -5934,6 +5934,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "duracion-ideal-video-segun-plataforma",
+    title: "Cuánto debe durar tu vídeo: guía de duración por plataforma",
+    description:
+      "La duración que funciona en Instagram no funciona en LinkedIn, ni la de LinkedIn en YouTube. Rangos reales por plataforma, por qué la retención importa más que el minutaje y cómo planificar una sola sesión para sacar varias duraciones.",
+    publishedAt: "2026-08-14",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["duración de vídeo", "contenido", "reels", "LinkedIn", "YouTube", "Madrid"],
+    keyword: "duracion ideal de un video segun la plataforma",
+    intent: "informacional",
+    excerpt:
+      "No hay una duración única que funcione en todas partes: un Reel y un vídeo de LinkedIn piden tiempos distintos. Rangos reales por plataforma y por objetivo.",
+    seoTitle: "Duración ideal de un vídeo por plataforma | RCS Madrid",
+    metaDescription:
+      "La duración ideal de un vídeo cambia según la plataforma: Reels, LinkedIn, YouTube o tu web. Rangos reales y por qué la retención importa más que el minutaje.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada vez que alguien me pregunta cuánto debe durar un vídeo, la respuesta es siempre la misma: depende de dónde va a vivir. Un vídeo pensado para Instagram no funciona igual en YouTube, y un vídeo de LinkedIn con la duración de un Reel se queda corto para explicar nada con profundidad.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos piezas para founders, marcas y equipos de marketing que después reparten ese contenido en varias plataformas a la vez. El error más habitual no es la calidad de imagen ni el guion: es tratar todas las plataformas igual cuando cada una premia un ritmo distinto.",
+      },
+      {
+        type: "image",
+        src: "/blog/duracion-ideal-video-segun-plataforma/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla durante el montaje de una pieza para redes",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la duración cambia tanto según la plataforma" },
+      {
+        type: "paragraph",
+        text: "Cada plataforma optimiza para que te quedes en ella, no en la tuya. Instagram y TikTok premian el porcentaje de gente que ve el vídeo completo, así que un clip corto con retención alta pesa más que uno largo que la mitad abandona a los diez segundos. YouTube, en cambio, mide tiempo total de visionado, y ahí una pieza de ocho minutos bien vista suma más que tres clips de un minuto.",
+      },
+      {
+        type: "paragraph",
+        text: "También cambia la intención de quien está al otro lado. En Reels y TikTok la gente descubre sin buscar nada en concreto. En LinkedIn busca autoridad y contexto profesional. En YouTube busca una respuesta o un tutorial. Y en tu propia web, el visitante ya está decidiendo si confía en ti, así que el vídeo tiene que transmitir eso rápido, no entretener.",
+      },
+      {
+        type: "paragraph",
+        text: "La duración no es el objetivo. Es una consecuencia de cuánto necesitas para cumplir ese objetivo sin perder al que está mirando por el camino.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Reels, Shorts y TikTok" },
+      {
+        type: "paragraph",
+        text: "En vertical corto la ventana real está entre 15 y 45 segundos. El gancho tiene que aparecer en los primeros 2-3 segundos o la mayoría no llega al segundo 10. Si el mensaje necesita más de 45 segundos para tener sentido, casi siempre es mejor partirlo en dos piezas que estirar una sola hasta el minuto.",
+      },
+      { type: "heading", level: 3, text: "LinkedIn y contenido B2B" },
+      {
+        type: "paragraph",
+        text: "En LinkedIn el rango que mejor funciona está entre 60 y 90 segundos para vídeo nativo sin apoyo externo, y puede llegar a 3 minutos si el contenido tiene un valor claro: un framework, un dato concreto, un caso explicado paso a paso. El formato vertical o cuadrado ocupa más espacio en el feed que el horizontal, y eso ayuda a retener.",
+      },
+      { type: "heading", level: 3, text: "YouTube y vídeo para tu propia web" },
+      {
+        type: "paragraph",
+        text: "En YouTube, piezas de 6 a 12 minutos con estructura clara —intro corta, desarrollo, cierre— suelen rendir mejor que clips sueltos, porque el algoritmo premia el tiempo de visionado acumulado. Para vídeo en tu propia web, en cambio, la lógica es la contraria: 20-40 segundos, sin sonido activado por defecto y el mensaje principal en los primeros 5 segundos, porque nadie llega a tu landing buscando entretenimiento.",
+      },
+      {
+        type: "image",
+        src: "/blog/duracion-ideal-video-segun-plataforma/mid.webp",
+        alt: "Persona grabando vídeo vertical con el móvil para redes sociales",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabar un único vídeo largo y cortarlo igual para todas las plataformas sin repensar el gancho de cada una.",
+          "Alargar un Reel a 90 segundos porque \"hay más que contar\" cuando la atención ya se perdió en el segundo 5.",
+          "Subir a LinkedIn un vídeo pensado para TikTok, con música y ritmo que no encajan en un feed profesional.",
+          "Medir el éxito solo en duración y no en retención: un vídeo corto con 80% de gente que lo ve entero vale más que uno largo que casi nadie termina.",
+          "No dejar tiempo en sesión para grabar tomas de apoyo que permitan sacar varias duraciones del mismo contenido.",
+          "Poner el dato o la conclusión al final del vídeo cuando la plataforma premia que aparezca en los primeros segundos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un Reel para Instagram?",
+        answer:
+          "Entre 15 y 45 segundos suele dar mejor resultado. Si el mensaje necesita más tiempo para tener sentido, casi siempre conviene partirlo en dos piezas en lugar de estirar una sola.",
+      },
+      {
+        type: "faq",
+        question: "¿Los vídeos largos de YouTube funcionan peor que los cortos?",
+        answer:
+          "No necesariamente. YouTube mide tiempo de visionado acumulado, así que una pieza de 8-10 minutos bien estructurada y con buena retención puede rendir mejor que varios clips cortos sueltos.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué duración funciona mejor en LinkedIn?",
+        answer:
+          "Entre 60 y 90 segundos para vídeo nativo sin apoyo externo, y hasta 3 minutos cuando el contenido aporta un valor claro y concreto, como un framework o un caso explicado paso a paso.",
+      },
+      {
+        type: "faq",
+        question: "¿Tengo que grabar una versión distinta del vídeo para cada plataforma?",
+        answer:
+          "No hace falta grabar varias veces, pero sí planificarlo en sesión: grabando tomas de apoyo y variaciones del gancho puedes sacar de una sola grabación un corte para Reels, otro para LinkedIn y otro más largo para YouTube.",
+      },
+      {
+        type: "paragraph",
+        text: "Si necesitas sacar de una sola sesión piezas para varias plataformas sin perder naturalidad en ninguna, en RCS lo planificamos así desde el guion. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
