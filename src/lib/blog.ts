@@ -6047,6 +6047,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "brief-antes-de-grabar-contenido",
+    title: "El brief antes de grabar: qué preguntar para no perder tiempo en sesión",
+    description:
+      "Qué información necesitamos antes de una sesión de grabación para no perder tiempo de estudio decidiendo en directo, y qué preguntas concretas evitan que la sesión se alargue sin necesidad.",
+    publishedAt: "2026-08-17",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["preparación de grabación", "brief creativo", "producción de contenido", "planificación", "estudio Madrid"],
+    keyword: "brief antes de grabar contenido",
+    intent: "informacional",
+    excerpt:
+      "Un brief bien hecho no es papeleo: es la diferencia entre grabar en dos horas lo que necesitas o alargarte a cuatro con material que no encaja. Qué preguntamos antes de cualquier sesión.",
+    seoTitle: "Brief antes de grabar contenido | RCS Madrid",
+    metaDescription:
+      "Qué preguntar antes de grabar contenido para no perder tiempo en sesión: objetivo, número de piezas, tono y quién sale delante de cámara.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada sesión que se retrasa en sala por falta de información cuesta dinero. En RCS vemos el mismo patrón casi cada semana: el cliente llega con una idea general de lo que quiere grabar, pero sin las respuestas concretas que necesitamos para montar el planning — cuántas piezas salen de la sesión, en qué formato, con qué tono. Eso se resuelve antes de encender las cámaras, no dentro de la sala.",
+      },
+      {
+        type: "paragraph",
+        text: "Un brief bien hecho no es un formulario burocrático ni una capa extra de trabajo. Es la diferencia entre grabar en dos horas lo que necesitas o alargarte a cuatro y volver a casa con material que no encaja con lo que en realidad querías publicar. Aquí te cuento qué preguntamos nosotros antes de cualquier sesión y por qué esas preguntas concretas ahorran tanto tiempo.",
+      },
+      {
+        type: "image",
+        src: "/blog/brief-antes-de-grabar-contenido/hero.webp",
+        alt: "Cuaderno abierto con anotaciones de planificación sobre una mesa de madera",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un brief y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un brief de grabación es la información mínima que necesitamos antes de empezar: para qué sirve el contenido, quién lo va a ver, cuántas piezas finales salen de la sesión y qué tono tiene que transmitir. Sin eso improvisamos en el momento, y improvisar en sala es lo más caro de toda la producción, porque el tiempo de estudio no se recupera.",
+      },
+      {
+        type: "paragraph",
+        text: "La mayoría de marcas y founders que llegan a RCS sin experiencia previa en grabación no tienen este documento preparado, y no pasa nada — para eso hacemos una llamada de unos 15 minutos antes de la sesión. Pero cuanto más resuelto llega el cliente, menos tiempo se pierde ajustando en directo decisiones que se podían haber tomado con calma una semana antes.",
+      },
+      {
+        type: "paragraph",
+        text: "No hace falta un documento de varias páginas. Cinco o seis preguntas bien respondidas bastan para que el equipo llegue con el planning cerrado: qué se graba primero, qué luz necesita cada bloque, cuántos cambios de vestuario o de fondo hay que prever durante la mañana.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Define el objetivo antes que el formato" },
+      {
+        type: "paragraph",
+        text: "Antes de decidir si es un reel, un vídeo largo o un episodio de podcast, hay que tener claro para qué sirve el contenido: captar leads, dar autoridad, vender un producto concreto o simplemente mantener presencia. El formato sale de ahí, no al revés. Muchas sesiones se alargan porque el cliente cambia de formato a mitad de grabación al darse cuenta de que lo que pedía no encajaba con lo que en realidad necesitaba.",
+      },
+      { type: "heading", level: 3, text: "Cierra el número de piezas antes de entrar en sala" },
+      {
+        type: "paragraph",
+        text: "No es lo mismo grabar para sacar un vídeo único que grabar para sacar quince clips de redes sociales. El número de piezas cambia el tiempo de grabación, el número de tomas por bloque y cómo se organiza el guion o la escaleta. Si no lo sabemos de antemano, grabamos de más —perdiendo tiempo de estudio— o de menos, y hay que volver a citar otra sesión para completar lo que faltó.",
+      },
+      { type: "heading", level: 3, text: "Ten claro quién habla y con qué tono" },
+      {
+        type: "paragraph",
+        text: "Si es un founder solo hablando a cámara, dos personas en formato conversación o un invitado externo entrevistado, la sala se monta de forma distinta. El tono también importa: no es lo mismo un vídeo corporativo institucional que un reel directo y desenfadado. Esa decisión afecta a la iluminación, al encuadre y hasta a las preguntas que preparamos antes de grabar una entrevista.",
+      },
+      {
+        type: "image",
+        src: "/blog/brief-antes-de-grabar-contenido/mid.webp",
+        alt: "Cámara sobre trípode preparada durante un rodaje de entrevista",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Llegar sin guion ni escaleta y decidir el orden de las piezas ya dentro de la sala.",
+          "No avisar de cambios de vestuario o de fondo hasta el mismo día de la grabación.",
+          "Pedir \"algo de contenido\" sin definir cuántas piezas hacen falta al final.",
+          "No compartir referencias visuales previas — cada persona entiende \"profesional\" de forma distinta.",
+          "Meter contenido de última hora sin ampliar el tiempo de sesión ya reservado.",
+          "Confundir el brief con el guion: uno define el objetivo, el otro el contenido exacto de cada pieza.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo antes de la sesión hay que enviar el brief?",
+        answer:
+          "Con 48-72 horas de antelación es suficiente. Así podemos preparar el planning de sala, la iluminación según el formato y avisar si algo no encaja con el tiempo que tienes reservado.",
+      },
+      {
+        type: "faq",
+        question: "¿Y si todavía no tengo claro el brief?",
+        answer:
+          "No pasa nada. Hacemos una llamada corta antes de la grabación para resolver las preguntas clave: objetivo, número de piezas, tono y quién sale delante de cámara.",
+      },
+      {
+        type: "faq",
+        question: "¿El brief cambia el precio de la sesión?",
+        answer:
+          "No directamente. El precio depende del servicio contratado —Solo Grabación, Grabación + Edición o Producción Completa—, pero un brief claro suele traducirse en sesiones más cortas y eficientes porque se pierde menos tiempo decidiendo en sala.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede improvisar parte del contenido aunque haya brief?",
+        answer:
+          "Sí, y de hecho conviene dejar margen para eso. El brief fija lo esencial —objetivo, número de piezas, tono— pero dentro de eso siempre hay espacio para ajustar en sala según cómo fluya la grabación.",
+      },
+      {
+        type: "paragraph",
+        text: "Un brief bien hecho no elimina la espontaneidad de grabar, la protege. Si tienes claro para qué necesitas el contenido y cuántas piezas quieres sacar de la sesión, dejamos que el tiempo en estudio se dedique a lo que de verdad importa: que salga bien delante de cámara. Si quieres que preparemos el brief juntos antes de tu próxima sesión, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
