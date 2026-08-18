@@ -6160,6 +6160,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "musica-video-marca-sin-copyright",
+    title: "Música para vídeo de marca: cómo elegirla sin líos de copyright",
+    description:
+      "Qué diferencia hay entre música libre, de librería y con derechos, y cómo elegir la pista correcta para un vídeo de marca sin arriesgarte a un aviso de copyright.",
+    publishedAt: "2026-08-18",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["música para vídeo", "copyright", "postproducción", "contenido de marca", "estudio Madrid"],
+    keyword: "musica para video de marca sin copyright",
+    intent: "informacional",
+    excerpt:
+      "Comprar la canción no te da derecho a usarla. Qué es una licencia de sincronización, qué bibliotecas usamos en RCS y los errores que meten a más marcas en un aviso de copyright.",
+    seoTitle: "Música para vídeo de marca sin copyright | RCS Madrid",
+    metaDescription:
+      "Cómo elegir música para vídeo de marca sin riesgo de copyright: qué es una licencia de sincronización, qué bibliotecas usar y los errores más comunes.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Nos ha pasado con varios clientes: graban un vídeo estupendo, lo suben a redes con una canción que les gusta y a los pocos días el audio aparece mudo, el alcance cae o reciben un aviso de copyright. La imagen es suya. La música casi nunca lo es, y ese detalle se paga después, no antes.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS elegimos música en casi cada sesión de edición, así que sabemos dónde se suele fallar. No hace falta entender de leyes de propiedad intelectual para hacerlo bien. Hace falta saber qué tipo de licencia necesitas según dónde vas a publicar el vídeo y quién eres cuando lo publicas.",
+      },
+      {
+        type: "image",
+        src: "/blog/musica-video-marca-sin-copyright/hero.webp",
+        alt: "Auriculares y teclado sobre mesa de escritorio en sesión de edición de audio",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué la música no es un detalle menor" },
+      {
+        type: "paragraph",
+        text: "Comprar una canción en Spotify o Apple Music te da derecho a escucharla. No te da derecho a usarla en un vídeo que publicas, y mucho menos si ese vídeo promociona un producto o servicio. Eso se llama licencia de sincronización, y es un permiso distinto al de escucha personal — casi siempre hay que pagarlo aparte, y casi nunca está incluido en lo que ya pagaste.",
+      },
+      {
+        type: "paragraph",
+        text: "Las plataformas detectan la coincidencia de audio de forma automática. Cuando eso pasa, lo normal es que silencien el vídeo, reduzcan su alcance o —si el titular de los derechos lo reclama de forma directa— retiren la pieza entera. En una cuenta de empresa, un aviso de copyright también puede afectar a la monetización o a la reputación de la cuenta si se repite.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema no es solo legal. Un vídeo mudo a mitad de campaña, justo cuando más tráfico está recibiendo, es tiempo y dinero de producción tirado. Evitarlo cuesta mucho menos que arreglarlo después.",
+      },
+      { type: "heading", level: 2, text: "Cómo elegir música sin arriesgarte" },
+      { type: "heading", level: 3, text: "Bibliotecas con licencia para uso comercial" },
+      {
+        type: "paragraph",
+        text: "La forma más simple es una biblioteca de música con licencia, tipo Epidemic Sound, Artlist o Musicbed. Pagas una suscripción mensual o anual y, mientras esté activa, puedes usar cualquier pista del catálogo en tus vídeos sin negociar nada pista por pista. Es lo que usamos en la mayoría de sesiones de edición en RCS: rapidez y cobertura legal en el mismo paso.",
+      },
+      { type: "heading", level: 3, text: "Qué cubre realmente una licencia" },
+      {
+        type: "paragraph",
+        text: "No todas las licencias son iguales. Algunas cubren redes sociales pero no anuncios de pago. Otras exigen mantener la suscripción activa mientras el vídeo siga publicado —si cancelas, pierdes el derecho de uso, aunque el vídeo lleve meses arriba—. Lee siempre qué canales cubre, si incluye monetización y si hace falta mantener algo activo después de publicar.",
+      },
+      { type: "heading", level: 3, text: "Cuándo conviene música original" },
+      {
+        type: "paragraph",
+        text: "Para una marca con presencia constante en vídeo, tener una identidad sonora propia —una pieza original o un jingle corto que se repite en cada publicación— ayuda a que el contenido se reconozca sin ver el logo. Tiene sentido cuando ya publicas con regularidad y quieres que la marca suene igual de reconocible que se ve.",
+      },
+      {
+        type: "image",
+        src: "/blog/musica-video-marca-sin-copyright/mid.webp",
+        alt: "Auriculares sobre monitor de ordenador durante una sesión de edición de vídeo",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores que veo repetirse" },
+      {
+        type: "list",
+        items: [
+          "Descargar música de un canal de YouTube \"libre de copyright\" sin comprobar la licencia real que ofrece.",
+          "Dar por hecho que \"sin copyright\" significa \"libre para uso comercial\" — no siempre es lo mismo.",
+          "Usar una pista descargada durante la prueba gratuita de una biblioteca y seguir publicando tras cancelar la suscripción.",
+          "No revisar si la licencia cubre anuncios de pago además de contenido orgánico.",
+          "Subir el volumen de la música por encima de la voz sin aplicar ducking en la mezcla.",
+          "Asumir que lo que vale para YouTube vale igual para Instagram o TikTok — cada plataforma gestiona la detección a su manera.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Puedo usar una canción que he comprado en una tienda digital?",
+        answer:
+          "No para un vídeo de marca. Comprar el archivo te da derecho de escucha personal, no de sincronización con vídeo ni de publicación. Necesitas una licencia distinta, casi siempre gestionada por otra vía.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si publico con música sin licencia y no me detectan nada?",
+        answer:
+          "Puede pasar semanas sin aviso y saltar de golpe cuando el sistema de la plataforma actualiza su base de coincidencias. No detectarlo al momento no significa que estés cubierto, solo que todavía no ha pasado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto cuesta una biblioteca de música con licencia?",
+        answer:
+          "Depende del proveedor y del plan, pero la mayoría se mueve en una suscripción mensual moderada con acceso ilimitado al catálogo mientras esté activa. Suele salir más barato que un solo aviso de copyright resuelto a mano.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS elige la música de mis vídeos?",
+        answer:
+          "Sí, en Grabación + Edición y Producción Completa proponemos música con licencia acorde al tono del vídeo como parte de la edición. Si ya tienes identidad sonora propia, la respetamos y la mantenemos consistente entre piezas.",
+      },
+      {
+        type: "paragraph",
+        text: "La música que acompaña un vídeo de marca merece la misma atención que la imagen, el guion o la luz. No es un detalle de última hora que se resuelve buscando \"música sin copyright\" cinco minutos antes de publicar. Si quieres que nos encarguemos de esa parte en tu próxima sesión, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

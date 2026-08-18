@@ -478,6 +478,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 25ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el brief de pre-producción (qué preguntar al cliente antes de grabar para no perder tiempo de sala), ángulo de preparación/proceso no cubierto por guion, day in studio ni preparar invitado. Imágenes Unsplash.",
   },
+  {
+    slug: "musica-video-marca-sin-copyright",
+    keyword: "musica para video de marca sin copyright",
+    intent: "informacional",
+    createdAt: "2026-08-18",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 26ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre licencias de música y copyright en vídeo de marca (bibliotecas, licencia de sincronización, música original), ángulo de postproducción legal no cubierto por locución/voz en off ni subtítulos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
