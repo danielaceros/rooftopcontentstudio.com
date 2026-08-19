@@ -487,6 +487,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 26ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre licencias de música y copyright en vídeo de marca (bibliotecas, licencia de sincronización, música original), ángulo de postproducción legal no cubierto por locución/voz en off ni subtítulos. Imágenes Unsplash.",
   },
+  {
+    slug: "hook-video-primeros-segundos",
+    keyword: "hook en video primeros segundos",
+    intent: "informacional",
+    createdAt: "2026-08-19",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 27ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el hook en vídeo (los primeros segundos que deciden retención), ángulo de estrategia de contenido/edición no cubierto por guion, duración por plataforma ni horizontal vs vertical. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

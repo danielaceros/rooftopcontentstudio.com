@@ -6273,6 +6273,127 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "hook-video-primeros-segundos",
+    title: "El hook en vídeo: cómo grabar los primeros 3 segundos para no perder al espectador",
+    description:
+      "Por qué el arranque de un vídeo decide si alguien se queda o se va, y cómo planificar y grabar un hook que funcione antes de encender la cámara.",
+    publishedAt: "2026-08-19",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["hook en vídeo", "retención", "contenido para redes", "grabación de contenido", "estudio Madrid"],
+    keyword: "hook en video primeros segundos",
+    intent: "informacional",
+    excerpt:
+      "El espectador decide si se queda o se va antes de que termines la primera frase. Cómo planificamos y grabamos el hook en RCS para que ese primer segundo no se pierda.",
+    seoTitle: "El hook en vídeo: primeros 3 segundos | RCS Madrid",
+    metaDescription:
+      "Cómo grabar el hook de un vídeo: los primeros segundos que deciden si el espectador se queda, y cómo planificarlos antes de grabar en RCS Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "En RCS grabamos varios vídeos por semana para marcas y creators, y hay un patrón que se repite en los que funcionan y no está en los que no: los primeros que enganchan lo hacen desde el primer segundo, no desde el minuto uno. El espectador no espera a que el vídeo \"arranque de verdad\". Decide quedarse o saltar casi de inmediato.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso cambia cómo hay que grabar. No sirve tener el mejor contenido a partir del segundo diez si nadie llega hasta ahí. El hook —la frase, la imagen o la acción que engancha al principio— se planifica antes de encender la cámara, no se improvisa delante de ella.",
+      },
+      {
+        type: "image",
+        src: "/blog/hook-video-primeros-segundos/hero.webp",
+        alt: "Cámara de cine sobre trípode lista para grabar en set de rodaje",
+        width: 1920,
+        height: 1080,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un hook y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un hook es el arranque del vídeo diseñado para que la persona que lo está viendo decida quedarse. No es una presentación ni una intro de marca: es una promesa, una pregunta, una imagen inesperada o una acción a media marcha que corta con lo que el espectador esperaba encontrar al deslizar.",
+      },
+      {
+        type: "paragraph",
+        text: "Las plataformas miden cuánto tiempo se queda la gente viendo antes de saltar al siguiente vídeo, y ese dato pesa en si el algoritmo sigue enseñando tu contenido o lo entierra. Un buen guion, una buena luz y una buena edición no sirven de mucho si nadie pasa del primer segundo para verlos.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto no es solo cosa de redes verticales. En YouTube, en un webinar grabado o en la portada de un vídeo corporativo en la web pasa lo mismo: el arranque decide si el resto del contenido tiene oportunidad de demostrar lo que vale.",
+      },
+      {
+        type: "paragraph",
+        text: "Tampoco es un problema que se resuelva solo en edición. Un hook fuerte necesita que en sala ya se haya grabado el plano, la frase y el gesto correctos. Si en el momento de grabar no hay una toma con esa fuerza, en montaje no hay manera de inventarla a partir de material genérico.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Empieza por la acción, no por la presentación" },
+      {
+        type: "paragraph",
+        text: "\"Hola, soy Fulano y hoy os voy a hablar de...\" es la forma más rápida de perder a alguien. Empieza en medio de la acción, con la frase más fuerte del vídeo, o con la pregunta que resuelve el contenido. La presentación, si hace falta, va después de haber ganado la atención, no antes.",
+      },
+      { type: "heading", level: 3, text: "Haz una promesa concreta, no genérica" },
+      {
+        type: "paragraph",
+        text: "\"Te voy a contar algo interesante\" no promete nada. \"Así es como grabamos 15 clips en una sola mañana\" sí. Cuanto más concreto sea lo que vas a entregar, más motivo tiene el espectador para quedarse a comprobarlo. El hook funciona porque genera una expectativa clara, no porque suene misterioso.",
+      },
+      { type: "heading", level: 3, text: "Corta el aire visual y sonoro desde el primer fotograma" },
+      {
+        type: "paragraph",
+        text: "Nada de logo animado de tres segundos, nada de silencio de cámara buscando encuadre, nada de \"a ver, vamos a empezar\". En edición, el primer corte limpia cualquier segundo muerto antes del contenido real. Si al revisar el montaje dudas si algo aporta en los primeros dos segundos, corta.",
+      },
+      {
+        type: "paragraph",
+        text: "Un texto en pantalla que refuerza la primera frase también ayuda, sobre todo si alguien va a ver el vídeo sin sonido, como pasa en gran parte del scroll en redes. No hace falta subtitular todo el vídeo desde el primer segundo, pero sí que la idea central del hook se entienda igual con el audio apagado.",
+      },
+      {
+        type: "image",
+        src: "/blog/hook-video-primeros-segundos/mid.webp",
+        alt: "Persona grabando vídeo vertical con el móvil en la mano",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Abrir con intro animada o logo de marca antes de mostrar contenido.",
+          "Presentarte a ti o a la empresa antes de dar algo de valor.",
+          "Grabar el hook con el mismo plano y la misma energía que el resto del vídeo.",
+          "Dejar el audio plano los primeros segundos, sin remate visual ni texto en pantalla.",
+          "No grabar varias tomas del arranque para elegir la más fuerte en montaje.",
+          "Usar una pregunta genérica que no promete nada concreto al espectador.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿El hook tiene que ser hablado o puede ser solo visual?",
+        answer:
+          "Puede ser cualquiera de los dos, o los dos a la vez. Lo que importa es que corte con lo que la persona esperaba ver al deslizar, ya sea con una frase, un movimiento de cámara o un cambio de plano inesperado.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar exactamente el hook?",
+        answer:
+          "En formato vertical, entre 1 y 3 segundos. En vídeo más largo hay algo más de margen, pero la idea es la misma: cuanto antes remates la promesa, menos gente pierdes por el camino.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que grabar el hook aparte del resto del vídeo?",
+        answer:
+          "En RCS solemos grabar varias tomas del arranque por separado, sueltas de contexto, para tener margen de elegir la mejor en la sala de edición sin repetir toda la sesión.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS ayuda a escribir el hook antes de grabar?",
+        answer:
+          "Sí. En Grabación + Edición y Producción Completa lo trabajamos como parte del guion previo a la sesión, para no perder tiempo de sala improvisando el arranque delante de la cámara.",
+      },
+      {
+        type: "paragraph",
+        text: "El hook no es un truco de redes sociales, es la parte del vídeo que decide si el resto se ve. Si vas a grabar contenido y quieres que el arranque esté trabajado antes de pisar el estudio, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
