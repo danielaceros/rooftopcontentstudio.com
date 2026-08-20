@@ -6394,6 +6394,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "color-grading-video-marca-que-es",
+    title: "Color grading en vídeo de marca: qué es y por qué cambia el resultado final",
+    description:
+      "Qué es el color grading, en qué se diferencia de la corrección de color y por qué puede ser la diferencia entre un vídeo que parece amateur y uno que parece de marca.",
+    publishedAt: "2026-08-20",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["color grading", "postproducción", "edición de vídeo", "vídeo de marca", "estudio Madrid"],
+    keyword: "color grading en video",
+    intent: "informacional",
+    excerpt:
+      "El color grading es lo que hace que un vídeo bien grabado se sienta terminado. Qué es, cuándo se aplica y qué diferencia real marca en el resultado final.",
+    seoTitle: "Color grading en vídeo: qué es y por qué importa | RCS Madrid",
+    metaDescription:
+      "Qué es el color grading en vídeo, en qué se diferencia de la corrección de color y por qué cambia el resultado final de un vídeo de marca grabado en estudio.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Hay vídeos bien grabados, bien iluminados y bien encuadrados que aun así se sienten a medio hacer. Casi siempre falta el mismo paso: el color grading. Es la parte del proceso que menos se nota cuando está bien hecha y la que más se echa en falta cuando no se ha hecho.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS lo aplicamos en Grabación + Edición y Producción Completa, y es de las cosas que más preguntan los clientes que vienen de grabar por su cuenta: por qué su vídeo, con buena cámara y buena luz, no se ve como el de una marca que sale en redes con aspecto cuidado. Casi siempre la respuesta está aquí.",
+      },
+      {
+        type: "image",
+        src: "/blog/color-grading-video-marca-que-es/hero.webp",
+        alt: "Monitor mostrando un programa de edición y color de vídeo con línea de tiempo",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el color grading" },
+      {
+        type: "paragraph",
+        text: "El color grading es el ajuste creativo del color de un vídeo en postproducción: contraste, temperatura, saturación, tonos de piel, look general de la imagen. No es maquillar un error de grabación, es decidir cómo se ve la pieza terminada y aplicar ese criterio de forma consistente en todos los planos.",
+      },
+      {
+        type: "paragraph",
+        text: "Se suele confundir con la corrección de color, que es un paso distinto y previo: igualar la exposición y el blanco entre planos grabados con distinta luz o distinta cámara, para que el material de partida sea uniforme. La corrección arregla, el grading decide el aspecto final.",
+      },
+      {
+        type: "paragraph",
+        text: "En DaVinci Resolve, que es lo que usamos en RCS para esta parte, ambos pasos van seguidos: primero se nivela el material bruto, después se aplica el look. Sin ese primer paso, el grading amplifica cualquier diferencia entre planos en lugar de disimularla.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Empieza por un look de referencia, no por probar filtros" },
+      {
+        type: "paragraph",
+        text: "El error más habitual es abrir la herramienta de color y empezar a mover sliders hasta que algo \"se vea bien\". Funciona mejor al revés: definir antes de grabar qué look busca la marca —más cálido, más neutro, más contrastado— y grabar ya pensando en ese resultado, no intentar arreglarlo todo después.",
+      },
+      { type: "heading", level: 3, text: "Cuida los tonos de piel antes que cualquier otra cosa" },
+      {
+        type: "paragraph",
+        text: "En vídeo de marca casi siempre hay una persona hablando a cámara. Si el grading deja la piel con un tono raro para conseguir un ambiente más cinematográfico, se ha perdido de vista lo importante. La piel se corrige primero y el resto del look se construye alrededor, no al contrario.",
+      },
+      { type: "heading", level: 3, text: "Aplica el mismo look a toda la pieza, no plano a plano" },
+      {
+        type: "paragraph",
+        text: "Un vídeo con planos que cambian de tono entre sí se nota, aunque el espectador no sepa explicar por qué. El grading se piensa como un look único que se aplica de forma consistente a toda la sesión, ajustando después cada plano lo mínimo necesario para que encajen entre ellos.",
+      },
+      {
+        type: "image",
+        src: "/blog/color-grading-video-marca-que-es/mid.webp",
+        alt: "Set de grabación con cámara y equipo de iluminación en estudio fotográfico",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Aplicar un LUT genérico descargado de internet sin ajustar a la escena real.",
+          "Saturar demasiado buscando que el vídeo \"destaque\" en redes.",
+          "No corregir el color entre planos antes de aplicar el look creativo.",
+          "Ignorar cómo se ve el grading en pantalla de móvil, donde se consume la mayoría del contenido.",
+          "Cambiar de look entre vídeos de la misma marca, perdiendo consistencia visual.",
+          "Grabar sin pensar en el grading y esperar que la edición arregle una imagen plana.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Todos los vídeos necesitan color grading?",
+        answer:
+          "No todos al mismo nivel. Un vídeo rápido para historias puede quedarse en una corrección básica. Pero un vídeo de marca, un vídeo corporativo o cualquier pieza que representa la imagen de una empresa se beneficia siempre de un grading cuidado.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede hacer buen color grading con un móvil?",
+        answer:
+          "Se puede corregir color con material de móvil, pero el margen es menor: menos rango dinámico y compresión más agresiva. Con cámara profesional grabando en un formato plano hay mucho más margen para el grading final.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS incluye color grading en la edición?",
+        answer:
+          "Sí. En Grabación + Edición y Producción Completa el grading forma parte del proceso de postproducción, no es un extra aparte. Se aplica un look consistente pensado para el tipo de contenido y la marca.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda el grading en el proceso de edición?",
+        answer:
+          "Depende del número de planos y de si es la primera vez que se define el look de la marca. Una vez definido, aplicarlo a nuevas piezas es rápido porque el criterio ya está establecido.",
+      },
+      {
+        type: "paragraph",
+        text: "El color grading no es un capricho estético, es lo que separa un vídeo bien grabado de un vídeo terminado. Si quieres que tu contenido tenga un look consistente y cuidado desde la primera sesión, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

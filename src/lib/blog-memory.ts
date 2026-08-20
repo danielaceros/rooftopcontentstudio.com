@@ -496,6 +496,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 27ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el hook en vídeo (los primeros segundos que deciden retención), ángulo de estrategia de contenido/edición no cubierto por guion, duración por plataforma ni horizontal vs vertical. Imágenes Unsplash.",
   },
+  {
+    slug: "color-grading-video-marca-que-es",
+    keyword: "color grading en video",
+    intent: "informacional",
+    createdAt: "2026-08-20",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 28ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre color grading (diferencia con corrección de color, tonos de piel, consistencia de look), ángulo de postproducción no cubierto por edición rápida vs que convierte, subtítulos, locución ni música. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
