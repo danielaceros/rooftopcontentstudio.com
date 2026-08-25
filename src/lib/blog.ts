@@ -6507,6 +6507,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "como-dar-feedback-editor-video-sin-perder-tiempo",
+    title: "Cómo dar feedback a un editor de vídeo sin perder tiempo en revisiones",
+    description:
+      "Cómo estructurar el feedback a un editor de vídeo para que las revisiones sean rápidas y claras, en lugar de convertirse en rondas de cambios que no terminan nunca.",
+    publishedAt: "2026-08-25",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["edición de vídeo", "postproducción", "feedback", "flujo de trabajo", "estudio Madrid"],
+    keyword: "feedback a un editor de video",
+    intent: "informacional",
+    excerpt:
+      "Un feedback claro cierra un vídeo en una ronda. Uno ambiguo lo alarga semanas. Cómo estructurar las revisiones de edición para que no se conviertan en un proceso sin fin.",
+    seoTitle: "Feedback a un editor de vídeo | RCS Madrid",
+    metaDescription:
+      "Cómo dar feedback a un editor de vídeo para que las revisiones sean rápidas y claras, sin rondas de cambios que no terminan nunca.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "La edición de un vídeo casi nunca falla en la grabación. Falla en las revisiones: feedback vago, rondas de cambios que se acumulan sin resolver nada y un vídeo que tarda semanas en salir cuando técnicamente estaba listo desde la primera entrega.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS gestionamos la edición de la mayoría de los proyectos que grabamos en Grabación + Edición y Producción Completa, y el cuello de botella casi nunca es el editor: es cómo se comunica lo que hay que cambiar. Un feedback mal dado multiplica las rondas de revisión sin mejorar el resultado final, y un feedback bien estructurado puede cerrar un proyecto en una sola vuelta.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-dar-feedback-editor-video-sin-perder-tiempo/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo en la pantalla de un ordenador",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué las revisiones se alargan tanto" },
+      {
+        type: "paragraph",
+        text: "Esto se nota sobre todo en clientes que graban contenido de forma recurrente: si cada vídeo tarda tres o cuatro rondas en cerrarse, el calendario de publicación se rompe cada vez, aunque el equipo de grabación y edición haga bien su trabajo.",
+      },
+      {
+        type: "paragraph",
+        text: "El problema no suele ser el número de cambios, sino la ambigüedad. Comentarios como \"no me convence el ritmo\" o \"que se sienta más profesional\" no le dicen al editor qué tiene que tocar exactamente. La siguiente entrega acierta a medias, aparecen comentarios nuevos sobre partes ya corregidas, y el proceso se alarga sin que el vídeo mejore al ritmo esperado.",
+      },
+      {
+        type: "paragraph",
+        text: "Cada ronda de revisión sin instrucciones claras añade días, no horas. Si el proyecto tiene fecha de publicación, ese margen se come el calendario de contenido completo, no solo el vídeo en cuestión: un retraso de una semana en un vídeo suele arrastrar los tres o cuatro que venían detrás en el plan de publicación.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Da el feedback con timestamps, no en general" },
+      {
+        type: "paragraph",
+        text: "Un comentario sin minuto asociado obliga al editor a revisar el vídeo entero buscando a qué te refieres. \"El corte del minuto 1:24 se siente brusco\" se soluciona en cinco minutos. \"El ritmo del principio no me gusta\" puede significar diez cosas distintas y ninguna de ellas queda clara sin más contexto ni ejemplo.",
+      },
+      { type: "heading", level: 3, text: "Separa lo que es gusto de lo que es error" },
+      {
+        type: "paragraph",
+        text: "No es lo mismo un fallo objetivo —un salto de audio, un logo mal colocado, una transición que no cuadra— que una preferencia de estilo. Márcalos por separado. Los errores se corrigen siempre; las preferencias se negocian, y está bien decir que no cuando rompen el ritmo o la coherencia del vídeo terminado, aunque el cliente insista en probarlo.",
+      },
+      { type: "heading", level: 3, text: "Cierra las rondas de revisión con un número" },
+      {
+        type: "paragraph",
+        text: "Define de antemano cuántas rondas de cambios incluye el proyecto —en RCS solemos trabajar con dos— y comunícalo así a todo el equipo que va a dar feedback antes de que empiece la revisión. Sin ese límite claro, es fácil que el proceso se convierta en una revisión abierta que no termina nunca y que desgasta tanto al editor como al cliente.",
+      },
+      {
+        type: "image",
+        src: "/blog/como-dar-feedback-editor-video-sin-perder-tiempo/mid.webp",
+        alt: "Editor de vídeo trabajando en un portátil con software de postproducción",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Mandar el feedback de varias personas sin unificarlo antes: el editor recibe instrucciones contradictorias y no sabe cuál priorizar.",
+          "Pedir cambios por mensajes sueltos en vez de una lista cerrada de puntos numerados.",
+          "No indicar el minuto exacto del vídeo y esperar que el editor lo localice por su cuenta.",
+          "Cambiar de opinión sobre algo que ya se había aprobado en una ronda anterior.",
+          "Dar feedback sin haber visto el vídeo entero, solo el primer minuto.",
+          "No fijar un límite de rondas de revisión desde el principio del proyecto.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas rondas de revisión son razonables en un vídeo de marca?",
+        answer:
+          "Dos suele ser suficiente si el feedback llega claro y unificado desde el principio. Más de tres rondas casi siempre indica que el problema no es la edición en sí, sino que el brief inicial no estaba lo bastante definido antes de empezar a grabar.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debería dar el feedback si hay varias personas implicadas?",
+        answer:
+          "Idealmente una sola persona que unifique los comentarios del equipo antes de mandarlos al editor. Si el editor recibe feedback directo de cinco personas distintas, es casi seguro que va a encontrar contradicciones entre ellas y perderá tiempo decidiendo cuál seguir.",
+      },
+      {
+        type: "faq",
+        question: "¿Cómo se comparte el feedback con timestamps en la práctica?",
+        answer:
+          "Con herramientas como Frame.io o incluso comentarios con marca de tiempo en un enlace de Google Drive. Lo importante no es la herramienta concreta, es que cada comentario apunte a un minuto exacto del vídeo, no a una sensación general sobre el conjunto.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS incluye rondas de revisión en la edición?",
+        answer:
+          "Sí. En Grabación + Edición y Producción Completa el precio ya incluye rondas de ajustes acordadas de antemano, y ayudamos a estructurar el feedback del cliente para que esas rondas se resuelvan rápido y sin fricción.",
+      },
+      {
+        type: "paragraph",
+        text: "Un buen feedback no acelera solo la edición, acelera todo el calendario de contenido que depende de ese vídeo. Si quieres que tus piezas salgan de revisión a la primera sin rondas eternas, escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
