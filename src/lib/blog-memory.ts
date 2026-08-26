@@ -514,6 +514,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 29ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre cómo dar feedback a un editor de vídeo (timestamps, separar error de gusto, límite de rondas), ángulo de flujo de trabajo cliente-editor no cubierto por edición rápida vs que convierte ni ningún otro post existente. Imágenes Unsplash.",
   },
+  {
+    slug: "que-es-un-sizzle-reel-cuando-grabarlo",
+    keyword: "que es un sizzle reel",
+    intent: "informacional",
+    createdAt: "2026-08-26",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 30ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el sizzle reel (highlight de evento/marca en menos de 2 minutos), ángulo de formato distinto del aftermovie de evento corporativo y de la cobertura audiovisual de eventos ya cubiertos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

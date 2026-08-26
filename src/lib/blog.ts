@@ -6620,6 +6620,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "que-es-un-sizzle-reel-cuando-grabarlo",
+    title: "Qué es un sizzle reel y cuándo tiene sentido grabarlo",
+    description:
+      "Qué es un sizzle reel, en qué se diferencia de un aftermovie y cuándo tiene sentido grabarlo para vender la energía de un evento, un lanzamiento o una marca en menos de dos minutos.",
+    publishedAt: "2026-08-26",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["sizzle reel", "vídeo corporativo", "eventos", "producción audiovisual", "Madrid"],
+    keyword: "que es un sizzle reel",
+    intent: "informacional",
+    excerpt:
+      "Un sizzle reel condensa lo mejor de un evento o una marca en menos de dos minutos. Cuándo tiene sentido grabarlo y en qué se diferencia de un aftermovie.",
+    seoTitle: "Qué es un sizzle reel y cuándo grabarlo | RCS Madrid",
+    metaDescription:
+      "Qué es un sizzle reel, en qué se diferencia de un aftermovie y cuándo grabarlo para tu marca o evento en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Un sizzle reel es un vídeo corto que condensa lo mejor de un evento, un producto o una marca en menos de dos minutos. No cuenta una historia lineal: engancha con ritmo, imagen y sonido para dejar una sensación concreta en quien lo ve, no una explicación completa de lo que pasó.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS lo grabamos sobre todo para agencias y equipos de marketing que necesitan mostrar la energía de un evento (una feria, una conferencia, un lanzamiento) sin esperar semanas a un vídeo largo. Es el formato que se pide cuando hay que enseñar algo al día siguiente, no al mes siguiente, y suele acabar en la home de una web, en un email a inversores o en la apertura de una propuesta comercial.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-es-un-sizzle-reel-cuando-grabarlo/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo en la pantalla de un ordenador",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un sizzle reel y para qué sirve" },
+      {
+        type: "paragraph",
+        text: "Un sizzle reel no es un aftermovie ni un resumen editorial. El aftermovie explica qué pasó en un evento con cierta narrativa y suele durar tres o cuatro minutos, con testimonios y contexto. El sizzle reel vende una sensación en 30 a 90 segundos, con cortes rápidos, música con pegada y planos que priorizan el impacto visual sobre la explicación.",
+      },
+      {
+        type: "paragraph",
+        text: "Se usa para pitches comerciales, para la home de una web, para redes el mismo día del evento o para abrir una presentación interna. La clave es que no necesita contexto previo: alguien que no estuvo ahí tiene que entender de qué va en los primeros diez segundos, sin depender de un locutor que se lo explique.",
+      },
+      {
+        type: "paragraph",
+        text: "Muchas marcas graban varios eventos al año y terminan con horas de metraje que nadie vuelve a abrir. Un sizzle reel resuelve eso: convierte ese material en una pieza de 60-90 segundos que se puede reutilizar en redes, en una propuesta comercial o en la memoria anual, sin tener que producir un vídeo nuevo desde cero cada vez.",
+      },
+      { type: "heading", level: 2, text: "Cómo grabar un sizzle reel que funcione" },
+      { type: "heading", level: 3, text: "Define primero para qué canal es" },
+      {
+        type: "paragraph",
+        text: "Un sizzle reel para redes dura entre 30 y 45 segundos y va en vertical. Uno pensado para abrir una presentación de ventas puede llegar a 90 segundos y va en horizontal. Decidir esto antes de grabar cambia los planos que necesitas: si vas a cortar rápido para redes, necesitas más variedad de ángulos por minuto de grabación real.",
+      },
+      { type: "heading", level: 3, text: "Piensa en el montaje antes de grabar" },
+      {
+        type: "paragraph",
+        text: "En una sesión de sizzle reel grabamos pensando en la línea de tiempo final, no al revés. Eso significa pedir también planos de recurso (b-roll): manos, detalles, reacciones del público, transiciones entre espacios. En montaje trabajamos con DaVinci Resolve precisamente porque permite cortar al ritmo de la música con precisión de fotograma. Sin ese material de apoyo grabado de antemano, el editor no tiene con qué cortar rápido sin que se note el pegamento.",
+      },
+      { type: "heading", level: 3, text: "Prioriza momentos con energía, no explicaciones" },
+      {
+        type: "paragraph",
+        text: "Un ponente terminando una frase con fuerza vale más que dos minutos de contexto previo. En estudio o en evento, buscamos los momentos donde pasa algo (una reacción, un aplauso, un gesto) porque son los que sostienen el ritmo de corte que pide este formato. Si solo hay planos estáticos de gente hablando, el reel se siente plano por mucho que se corte rápido.",
+      },
+      {
+        type: "image",
+        src: "/blog/que-es-un-sizzle-reel-cuando-grabarlo/mid.webp",
+        alt: "Público asistiendo a un evento corporativo en directo",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al grabar un sizzle reel" },
+      {
+        type: "list",
+        items: [
+          "Grabar solo el contenido principal, sin planos de recurso para cortar entre ellos.",
+          "Elegir la música después de grabar, en vez de definir el ritmo de corte desde el guion o desde el brief inicial.",
+          "Alargarlo hasta los tres o cuatro minutos: deja de ser un sizzle reel y pasa a ser un resumen que nadie termina de ver entero.",
+          "No adaptar el formato (vertical, horizontal, cuadrado) al canal donde se va a publicar primero.",
+          "Cerrar con un mensaje de marca tan largo que rompe el ritmo construido durante todo el vídeo.",
+          "Grabar con una sola cámara fija y esperar que el montaje disimule la falta de ángulos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un sizzle reel?",
+        answer:
+          "Entre 30 y 90 segundos. Si necesitas más tiempo para explicar algo con contexto, probablemente lo que buscas es un aftermovie o un vídeo corporativo, no un sizzle reel.",
+      },
+      {
+        type: "faq",
+        question: "¿Un sizzle reel sirve para algo que no sea un evento?",
+        answer:
+          "Sí. Funciona igual de bien para presentar un producto, abrir una propuesta comercial o resumir un año de contenido de marca en un solo vídeo de highlights, sin depender de que haya un evento de por medio.",
+      },
+      {
+        type: "faq",
+        question: "¿Necesito grabar todo el evento para hacer un buen sizzle reel?",
+        answer:
+          "No todo, pero sí lo suficiente para tener variedad: al menos dos ángulos de cámara durante los momentos clave, más planos de recurso del entorno, del público asistente y de los detalles del espacio.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tarda en entregarse un sizzle reel tras el evento?",
+        answer:
+          "En RCS con Producción Completa se puede entregar en 24-48 horas si el objetivo es publicarlo mientras el evento todavía tiene eco en redes. Para plazos más ajustados, lo hablamos antes de grabar para organizar el flujo de edición en consecuencia.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes un evento, un lanzamiento o una sesión de contenido y necesitas que se vea así de bien en menos de dos minutos, hablamos. Escríbenos desde /#contacto y te decimos si un sizzle reel es el formato que encaja con lo que necesitas.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
