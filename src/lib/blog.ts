@@ -6733,6 +6733,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "dirigir-talento-sin-experiencia-camara",
+    title: "Cómo dirigir a alguien sin experiencia delante de la cámara",
+    description:
+      "Cómo dirigir a un fundador, un empleado o un invitado que nunca ha grabado nada, para sacar una grabación natural sin que se note que es la primera vez.",
+    publishedAt: "2026-08-27",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["dirección de talento", "grabación de contenido", "producción de vídeo", "estudio Madrid", "presencia en cámara"],
+    keyword: "dirigir a alguien sin experiencia en camara",
+    intent: "informacional",
+    excerpt:
+      "La mayoría de las personas que grabamos en RCS no son actores ni presentadores. Cómo dirigirlas para que salgan naturales sin memorizar nada.",
+    seoTitle: "Cómo dirigir a alguien sin experiencia en cámara | RCS Madrid",
+    metaDescription:
+      "Cómo dirigir a alguien sin experiencia delante de la cámara para lograr una grabación natural, sin memorizar guiones ni parecer forzado.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "La mayoría de las personas que se sientan delante de nuestras cámaras en RCS no son actores ni presentadores. Son founders, responsables de marketing, empleados que van a salir en un vídeo de empresa o invitados de un podcast que nunca han grabado nada. Su primer instinto casi siempre es el mismo: ponerse rígidos, hablar más despacio de lo normal y buscar la palabra exacta en vez de la idea.",
+      },
+      {
+        type: "paragraph",
+        text: "Dirigir a alguien sin experiencia no consiste en darle un guion para que lo memorice. Consiste en quitarle presión hasta que vuelva a hablar como habla en una conversación normal. Esto es lo que hacemos en sesión para conseguirlo.",
+      },
+      {
+        type: "image",
+        src: "/blog/dirigir-talento-sin-experiencia-camara/hero.webp",
+        alt: "Persona con una cámara dirigiendo a alguien durante una grabación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué nadie suena natural a la primera" },
+      {
+        type: "paragraph",
+        text: "Cuando alguien ve una cámara apuntándole, dos cosas pasan a la vez: empieza a pensar en cómo se ve (postura, manos, cara) y en qué va a decir. Hacer las dos cosas bien al mismo tiempo es difícil incluso para gente con experiencia. El resultado típico es un tono más formal de lo normal, frases más largas de lo que diría en una charla real y pausas raras buscando la palabra perfecta.",
+      },
+      {
+        type: "paragraph",
+        text: "Esto no es un problema de la persona, es un problema de dirección. Si le damos un guion cerrado para que lo recite, empeoramos el problema: ahora además tiene que recordar texto. La solución no es exigir más disciplina, es cambiar cómo planteamos la sesión antes de que se siente delante del objetivo.",
+      },
+      { type: "heading", level: 2, text: "Cómo dirigir para conseguir naturalidad" },
+      { type: "heading", level: 3, text: "Da ideas, no frases" },
+      {
+        type: "paragraph",
+        text: "En vez de un guion palabra por palabra, damos una lista de 3-4 ideas que tiene que tocar, en el orden que le resulte más natural decirlas. Si la persona reformula con sus propias palabras, mejor: eso es exactamente lo que hace que suene como ella y no como un anuncio leído. El guion cerrado solo funciona si la persona ya está entrenada para sonar natural leyendo, y eso es raro fuera de locutores profesionales.",
+      },
+      { type: "heading", level: 3, text: "Graba una toma de calentamiento que no vas a usar" },
+      {
+        type: "paragraph",
+        text: "La primera toma casi nunca es la buena, y decírselo a la persona antes de empezar cambia todo. Si sabe que esa primera grabación no cuenta, se relaja porque no siente que tiene que salir perfecta. Solemos grabar dos o tres minutos de charla suelta al principio, sin cámara puesta en serio, solo para que se acostumbre al espacio y a nuestra voz antes de que empiece a importar el resultado.",
+      },
+      { type: "heading", level: 3, text: "Haz preguntas, no pidas discursos" },
+      {
+        type: "paragraph",
+        text: "Es más fácil responder a una pregunta que soltar un monólogo desde cero. Si necesitamos que alguien explique un tema en cámara, se lo planteamos como si estuviéramos charlando fuera de cámara: \"¿por qué decidisteis hacer esto así?\" en vez de \"cuéntame por qué decidimos hacer esto así\". La respuesta sale más suelta porque no está construyendo un discurso, está contestando algo que le acaban de preguntar.",
+      },
+      {
+        type: "image",
+        src: "/blog/dirigir-talento-sin-experiencia-camara/mid.webp",
+        alt: "Persona hablando con confianza frente a una cámara en un plató",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al dirigir a alguien sin experiencia" },
+      {
+        type: "list",
+        items: [
+          "Darle un guion cerrado y pedirle que lo memorice palabra por palabra.",
+          "Cortar la grabación cada vez que se traba, en vez de dejarle terminar la idea y repetir después.",
+          "Corregir en voz alta delante de todo el equipo, en lugar de dar el ajuste en privado entre tomas.",
+          "No avisar antes de grabar de cuánto va a durar la sesión: la incertidumbre pone más nerviosa a la persona.",
+          "Pedir energía o entusiasmo sin dar contexto de para qué canal es y quién lo va a ver.",
+          "Encadenar demasiadas tomas seguidas sin pausa: el cansancio se nota más que los nervios iniciales.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hay que dedicar a alguien sin experiencia antes de grabar en serio?",
+        answer:
+          "Con 10-15 minutos de charla y una toma de calentamiento suele ser suficiente para que la mayoría de personas se relajen. Si la sesión es larga o hay varios bloques de contenido, conviene repetir ese calentamiento breve al empezar cada bloque nuevo.",
+      },
+      {
+        type: "faq",
+        question: "¿Es mejor usar teleprompter con alguien sin experiencia?",
+        answer:
+          "Depende del texto. Para datos concretos (cifras, nombres, una definición exacta) ayuda. Para explicar algo con sus propias palabras, el teleprompter suele sonar peor porque la persona lee en vez de pensar en voz alta.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué hago si la persona se pone más nerviosa cuantas más tomas grabamos?",
+        answer:
+          "Para y cambia de tema unos minutos. Seguir insistiendo sobre el mismo punto suele empeorarlo. Volver más tarde a esa parte, cuando ya lleva un rato hablando sueltos de otras cosas, casi siempre da mejor resultado que siete tomas seguidas del mismo párrafo.",
+      },
+      {
+        type: "faq",
+        question: "¿Se nota en el vídeo final que alguien no tiene experiencia en cámara?",
+        answer:
+          "Solo si se le dirige mal. Con las ideas claras, tiempo de calentamiento y sin forzar un guion cerrado, la diferencia entre alguien con experiencia y alguien sin ella se reduce muchísimo en el resultado final.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tienes que grabar a alguien que nunca ha estado delante de una cámara y quieres que salga natural, en RCS dirigimos la sesión pensando en eso desde el minuto uno. Escríbenos desde /#contacto y lo preparamos juntos antes del día de grabación.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
