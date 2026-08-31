@@ -6842,6 +6842,114 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "grabar-exteriores-vs-estudio-cuando-compensa",
+    title: "Grabar en exteriores vs estudio: cuándo compensa salir del plató",
+    description:
+      "Qué se gana y qué se arriesga al grabar contenido de marca fuera del estudio, y cómo decidir entre plató y localización exterior antes de reservar sesión.",
+    publishedAt: "2026-08-31",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["grabación exteriores", "estudio de grabación", "producción de vídeo", "Madrid", "contenido de marca"],
+    keyword: "grabar en exteriores vs estudio",
+    intent: "informacional",
+    excerpt:
+      "Salir a grabar fuera del estudio parece más auténtico, pero trae variables que no controlas: luz, ruido, permisos. Cuándo compensa y cuándo no.",
+    seoTitle: "Grabar en exteriores vs estudio | RCS Madrid",
+    metaDescription:
+      "Grabar en exteriores vs estudio: cuándo la localización aporta más que el plató y cuándo juega en contra por luz, sonido o logística.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cada pocos meses nos preguntan si podemos grabar fuera del estudio: en una oficina, en la calle, en una terraza con vistas a Madrid. La respuesta corta es sí, pero no siempre es la mejor opción para el vídeo que se quiere conseguir.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos la mayoría de las sesiones en plató porque ahí controlamos luz, sonido y tiempo. Salir fuera añade valor visual, pero también variables que no dependen de nosotros. Antes de decidir, conviene entender qué se gana y qué se arriesga con cada opción.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-exteriores-vs-estudio-cuando-compensa/hero.webp",
+        alt: "Azotea urbana con vistas al perfil de una ciudad, como localización para grabar contenido en exteriores",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué esta decisión importa antes de grabar" },
+      {
+        type: "paragraph",
+        text: "Elegir plató o exterior no es una cuestión estética, es una cuestión de riesgo. Un rodaje en estudio es repetible: si algo sale mal, se repite el plano sin depender de nada externo. Un rodaje en exterior depende de la luz del día, del ruido de la calle, de si llueve o de si alguien aparca delante del encuadre.",
+      },
+      {
+        type: "paragraph",
+        text: "Eso no significa que el exterior sea peor. Una terraza con el skyline de Madrid, una oficina real con el equipo trabajando de fondo o una calle con contexto añaden autenticidad que un fondo de estudio no da. El problema aparece cuando se elige la localización solo por estética, sin planificar la parte técnica.",
+      },
+      { type: "heading", level: 2, text: "Cómo decidir entre exteriores y estudio" },
+      { type: "heading", level: 3, text: "Luz y condiciones climáticas" },
+      {
+        type: "paragraph",
+        text: "La luz natural cambia cada 20-30 minutos. Grabar al mediodía deja sombras duras; grabar a las 18:00 en invierno puede dejar sin luz a media sesión. En plató controlamos la luz con paneles LED y no dependemos de la meteorología. Si la sesión es en exteriores, conviene reservar una hora extra de margen y tener un plan B bajo techo por si llueve.",
+      },
+      { type: "heading", level: 3, text: "Sonido y control del entorno" },
+      {
+        type: "paragraph",
+        text: "El ruido de fondo es el problema número uno de grabar fuera del estudio: tráfico, obras, aire acondicionado, gente hablando. Un micrófono de corbata inalámbrico ayuda, pero no arregla un local con eco ni una terraza con viento. En plató tratamos la sala acústicamente y grabamos limpio a la primera toma.",
+      },
+      { type: "heading", level: 3, text: "Logística, tiempo y permisos" },
+      {
+        type: "paragraph",
+        text: "Grabar en un espacio público o en la oficina de un cliente añade tiempo que no está en el guion: montar y desmontar equipo, esperar a que se libere una sala, o pedir permiso si el equipo de grabación supera dos o tres personas con cámara. En una jornada de estudio se entra, se graba y se sale sin depender de terceros.",
+      },
+      {
+        type: "image",
+        src: "/blog/grabar-exteriores-vs-estudio-cuando-compensa/mid.webp",
+        alt: "Persona grabando con cámara en una calle concurrida de la ciudad",
+        width: 1920,
+        height: 1299,
+      },
+      { type: "heading", level: 2, text: "Cuándo sí compensa salir del plató" },
+      {
+        type: "list",
+        items: [
+          "El espacio de la marca es parte del mensaje: mostrar la oficina real de una empresa en un vídeo de employer branding aporta más que un fondo neutro.",
+          "El vídeo necesita contexto urbano reconocible: una entrevista con Madrid de fondo comunica algo que el plató no puede simular.",
+          "El presupuesto permite un día completo de rodaje con margen para imprevistos de luz y sonido.",
+          "El contenido es puntual (un evento, una inauguración, una feria) y no se puede repetir en otro sitio.",
+          "Hay equipo de sonido de refuerzo, como una grabadora externa o micros de corbata, y alguien dedicado solo a vigilar el audio.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en exteriores con la misma calidad que en estudio?",
+        answer:
+          "Con el equipo adecuado sí, pero exige más tiempo de preparación y un plan B si falla la luz o el sonido. En estudio esa variable desaparece porque las condiciones se controlan de antemano.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo extra hay que calcular para un rodaje en exterior?",
+        answer:
+          "Al menos una hora más que en plató, entre montaje, desplazamientos y margen por climatología o ruido imprevisto.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si llueve el día del rodaje en exterior?",
+        answer:
+          "Si no hay plan B bajo techo, se reprograma. Por eso en RCS solemos combinar: parte de la sesión en plató y solo los planos que necesitan contexto real fuera.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS graba fuera del estudio de Ronda de Atocha?",
+        answer:
+          "Sí, cuando el proyecto lo pide: oficinas de cliente, eventos, exteriores en Madrid. Aun así recomendamos evaluarlo caso por caso antes de descartar el plató.",
+      },
+      {
+        type: "paragraph",
+        text: "Si no sabes si tu próximo vídeo pide plató o calle, cuéntanos qué quieres grabar y te decimos qué opción tiene menos riesgo. Escríbenos desde /#contacto.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

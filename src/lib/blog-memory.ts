@@ -532,6 +532,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 31ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre cómo dirigir a talento sin experiencia frente a cámara (founders, empleados, invitados), ángulo de dirección/coaching en sesión distinto de teleprompter, talking head y preparar invitado ya cubiertos. Imágenes Unsplash.",
   },
+  {
+    slug: "grabar-exteriores-vs-estudio-cuando-compensa",
+    keyword: "grabar en exteriores vs estudio",
+    intent: "informacional",
+    createdAt: "2026-08-31",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 32ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre grabar en exteriores/localización frente a plató (luz, sonido, logística y permisos), ángulo distinto de estudio vs oficina y de cobertura de eventos ya cubiertos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
