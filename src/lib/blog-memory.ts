@@ -541,6 +541,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 32ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre grabar en exteriores/localización frente a plató (luz, sonido, logística y permisos), ángulo distinto de estudio vs oficina y de cobertura de eventos ya cubiertos. Imágenes Unsplash.",
   },
+  {
+    slug: "perder-miedo-camara-primera-grabacion",
+    keyword: "perder el miedo a la camara",
+    intent: "informacional",
+    createdAt: "2026-09-01",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 33ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre perder el miedo a la cámara en la primera grabación (por qué se traba la voz y cómo prepararse), ángulo psicológico/de confianza distinto de dirigir talento sin experiencia (que trata de dirigir a otros) y de teleprompter/talking head ya cubiertos. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

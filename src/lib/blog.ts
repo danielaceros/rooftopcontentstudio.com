@@ -6950,6 +6950,115 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "perder-miedo-camara-primera-grabacion",
+    title: "Cómo perder el miedo a la cámara: consejos para tu primera grabación",
+    description:
+      "Por qué se traba la voz delante de una cámara, qué se puede preparar antes de grabar y cómo pierden el miedo founders y equipos que graban por primera vez en RCS.",
+    publishedAt: "2026-09-01",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["miedo a la camara", "grabación de vídeo", "marca personal", "Madrid", "presencia en cámara"],
+    keyword: "perder el miedo a la camara",
+    intent: "informacional",
+    excerpt:
+      "Casi nadie llega a su primera grabación relajado. Qué pasa realmente delante de una cámara y qué hacemos en RCS para que la sesión no se note forzada.",
+    seoTitle: "Cómo perder el miedo a la cámara | RCS Madrid",
+    metaDescription:
+      "Perder el miedo a la cámara: por qué se traba la voz al grabar y cómo prepararte antes de tu primera sesión para que salga natural.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Casi todos los founders y equipos que vienen a grabar por primera vez a RCS dicen lo mismo antes de empezar: \"a ver cómo salgo, no se me da bien esto\". Es la reacción más normal que hay. Hablar delante de una cámara no es lo mismo que hablar delante de una persona, aunque el cerebro tarde un rato en entenderlo.",
+      },
+      {
+        type: "paragraph",
+        text: "El miedo a la cámara no se quita leyendo consejos la noche antes. Se reduce con preparación concreta y con unos primeros minutos de sesión bien gestionados. Esto es lo que hacemos en RCS con quien graba por primera vez, y lo que puedes preparar tú antes de sentarte delante del objetivo.",
+      },
+      {
+        type: "image",
+        src: "/blog/perder-miedo-camara-primera-grabacion/hero.webp",
+        alt: "Persona hablando con seguridad frente a cámara durante una grabación",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Por qué se nos traba la voz delante de una cámara" },
+      {
+        type: "paragraph",
+        text: "Cuando hablas con una persona, recibes señales todo el rato: asiente, sonríe, frunce el ceño si no entiende algo. Delante de una cámara esas señales desaparecen. El cerebro interpreta ese silencio como una amenaza social y activa la misma respuesta que ante cualquier situación de exposición: se acelera el pulso, se seca la boca, la voz sube de tono.",
+      },
+      {
+        type: "paragraph",
+        text: "A eso se suma la autoconsciencia: mientras hablas, una parte de tu atención está evaluando cómo te ves en lugar de centrarse en lo que estás diciendo. Es la razón por la que alguien que se explica de maravilla en una reunión se queda en blanco en cuanto ve la luz roja de grabación encendida.",
+      },
+      { type: "heading", level: 2, text: "Cómo perder el miedo a la cámara paso a paso" },
+      { type: "heading", level: 3, text: "Prepara el contenido, no el guion palabra por palabra" },
+      {
+        type: "paragraph",
+        text: "Memorizar un guion cierra la puerta a hablar con naturalidad: en cuanto se te olvida una palabra, se nota el corte. Funciona mejor preparar 3-4 ideas clave por bloque y dejar que la frase salga distinta cada vez. En RCS trabajamos con guion técnico en teleprompter solo para la estructura, no para memorizar de forma literal.",
+      },
+      { type: "heading", level: 3, text: "Graba antes de grabar" },
+      {
+        type: "paragraph",
+        text: "El primer take casi nunca es el bueno, y eso está bien. Antes de la toma que se queda, grabamos una o dos de calentamiento sin presión, solo para que el cuerpo se acostumbre a la cámara encendida. Ese primer minuto de nervios hay que gastarlo antes de la toma que importa, no durante ella.",
+      },
+      { type: "heading", level: 3, text: "Habla con una persona, no con un objetivo" },
+      {
+        type: "paragraph",
+        text: "En sesión, ponemos a alguien del equipo justo al lado del objetivo para que mires a una persona real mientras hablas, no a un círculo de cristal. Cambia por completo el tono: la voz baja, el ritmo se vuelve conversacional y desaparece ese acento artificial de \"estoy leyendo algo\".",
+      },
+      {
+        type: "image",
+        src: "/blog/perder-miedo-camara-primera-grabacion/mid.webp",
+        alt: "Persona ajustando una cámara de vídeo antes de una grabación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes que empeoran el miedo a la cámara" },
+      {
+        type: "list",
+        items: [
+          "Intentar grabar la toma perfecta a la primera en vez de aceptar que las dos primeras son de calentamiento.",
+          "Memorizar el guion palabra por palabra en lugar de tener claras las ideas y dejar salir la frase de forma natural.",
+          "Grabar cansado o con hambre justo antes de una reunión importante, sin margen para respirar antes de empezar.",
+          "Mirar el monitor de vuelta en lugar de mirar al objetivo o a la persona que hace de referencia.",
+          "No parar cuando algo sale mal: seguir forzando la toma tensa la voz y se nota en el resultado final.",
+          "Ir solo a grabar sin nadie que dé indicaciones ni feedback en el momento entre toma y toma.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Es normal tener miedo a la cámara aunque sea buen comunicador en persona?",
+        answer:
+          "Sí, es de lo más común que vemos en sesión. Hablar en público y hablar a una cámara activan mecanismos distintos porque desaparece el feedback en tiempo real de la otra persona.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo se tarda en perder el miedo a la cámara?",
+        answer:
+          "La mayoría de personas nota un cambio claro entre la primera y la tercera toma de la misma sesión. Con varias sesiones grabadas, la soltura se vuelve prácticamente automática.",
+      },
+      {
+        type: "faq",
+        question: "¿Sirve practicar delante del móvil antes de la sesión?",
+        answer:
+          "Ayuda a perder la sorpresa inicial de verte hablando, pero no sustituye la sesión real: en RCS cuidamos la luz, el encuadre y la dirección para que ese primer nerviosismo no dependa solo de ti.",
+      },
+      {
+        type: "faq",
+        question: "¿Qué pasa si me quedo en blanco durante la grabación?",
+        answer:
+          "Se para, se respira y se repite el bloque. Es parte normal de cualquier sesión y no cuesta tiempo real: cortar y retomar lleva segundos, forzar una toma tensa cuesta mucho más en edición.",
+      },
+      {
+        type: "paragraph",
+        text: "Si tu primera grabación te da respeto, es la señal de que vas en serio con tu contenido, no de que no vales para esto. Cuéntanos qué quieres grabar desde /#contacto y preparamos la sesión para que el miedo se quede fuera de plano.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
