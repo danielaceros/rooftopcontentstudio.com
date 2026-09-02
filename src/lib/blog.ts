@@ -7059,6 +7059,118 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "repurposing-video-contenido-ya-grabado",
+    title: "Repurposing de vídeo: cómo sacar más contenido del que ya has grabado",
+    description:
+      "Cómo convertir una sola sesión de grabación en semanas de contenido para redes sin volver a encender las cámaras. Cómo planteamos el repurposing en RCS.",
+    publishedAt: "2026-09-02",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["repurposing de contenido", "estrategia de contenido", "edición de vídeo", "redes sociales", "Madrid"],
+    keyword: "repurposing de video",
+    intent: "informacional",
+    excerpt:
+      "Una sola sesión bien planteada puede dar clips, citas y fragmentos de audio para semanas. Así pensamos el repurposing de vídeo en RCS.",
+    seoTitle: "Repurposing de vídeo: saca más contenido | RCS Madrid",
+    metaDescription:
+      "Repurposing de vídeo: convierte una sola sesión en semanas de contenido para redes sin volver a grabar. Así lo hacemos en RCS.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "En RCS grabamos muchas sesiones donde el cliente llega pensando en una sola pieza: un vídeo para LinkedIn, un episodio de podcast, un vídeo de producto. Y se va con eso. Pero de una sesión bien planteada se puede sacar bastante más: clips para redes, citas para carrusel, un fragmento de audio para podcast, hasta ideas para el siguiente guion. A eso lo llamamos repurposing de vídeo.",
+      },
+      {
+        type: "paragraph",
+        text: "No es cortar el mismo vídeo en trozos y subirlo tal cual. Es pensar antes de grabar en los distintos formatos que puede dar esa sesión, para no depender de volver a grabar cada semana. Así lo planteamos en sesión y así puedes aplicarlo aunque grabes por tu cuenta.",
+      },
+      {
+        type: "image",
+        src: "/blog/repurposing-video-contenido-ya-grabado/hero.webp",
+        alt: "Línea de tiempo de edición de vídeo en pantalla con varios clips",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es el repurposing de vídeo y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Repurposing es reutilizar el material de una grabación para producir varias piezas distintas, no solo recortar la misma una y otra vez. Un vídeo de entrevista de 30 minutos puede dar un reel de 30 segundos, tres clips de un minuto para LinkedIn, un fragmento de audio para podcast y dos o tres citas para publicar como imagen.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque grabar cuesta tiempo: montar equipo, preparar sala, coordinar agendas. Si cada pieza de contenido necesita una sesión nueva, el ritmo de publicación depende de cuántas veces puedas volver a grabar. Con repurposing, una sola sesión bien aprovechada alimenta semanas de contenido en vez de un solo día.",
+      },
+      {
+        type: "paragraph",
+        text: "Además cada plataforma tiene su propio lenguaje: lo que funciona en LinkedIn no funciona igual en Instagram, y un podcast completo no se consume como un clip de 40 segundos. Repurposing bien hecho no es recortar y listo. Es adaptar el mismo contenido a cómo consume cada audiencia.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Piensa en formatos antes de grabar, no después" },
+      {
+        type: "paragraph",
+        text: "El repurposing empieza en el guion, no en la sala de edición. Si sabes que quieres sacar clips para LinkedIn, pide a quien habla que remate cada idea con una frase cerrada, sin dejarla a medias enlazando con la siguiente. Eso facilita cortar sin que el clip empiece o acabe a mitad de frase.",
+      },
+      { type: "heading", level: 3, text: "Un bloque de 30-40 minutos puede dar diez piezas" },
+      {
+        type: "paragraph",
+        text: "De una entrevista o podcast de 30-40 minutos suelen salir 3-4 clips verticales para reels, 2-3 clips horizontales para LinkedIn, un fragmento de audio para plataformas de podcast y varias citas textuales para carrusel o imagen. No hace falta que el vídeo original sea perfecto de principio a fin: basta con identificar bien 5-6 momentos fuertes.",
+      },
+      { type: "heading", level: 3, text: "Adapta el formato, no repitas el mismo corte" },
+      {
+        type: "paragraph",
+        text: "Subir el mismo clip vertical en todas las plataformas es el error más habitual. LinkedIn no penaliza vídeos algo más largos y con contexto escrito; Instagram premia lo directo desde el primer segundo. Reescribe el texto de acompañamiento y ajusta encuadre, subtítulos y duración según dónde publiques cada pieza.",
+      },
+      {
+        type: "image",
+        src: "/blog/repurposing-video-contenido-ya-grabado/mid.webp",
+        alt: "Equipo alrededor de una cámara preparando una grabación",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes al reutilizar contenido" },
+      {
+        type: "list",
+        items: [
+          "Grabar sin pensar en los cortes: si el vídeo no tiene momentos claros, cortar cuesta el doble en edición.",
+          "Publicar el mismo clip en todas las redes sin adaptar el texto ni el formato.",
+          "Esperar a acabar la sesión para decidir qué se puede recortar, en lugar de anotarlo en el momento.",
+          "No etiquetar ni organizar los brutos: sin carpetas claras, encontrar el momento bueno lleva más tiempo que grabarlo de nuevo.",
+          "Sacar tantas piezas de una sesión que se pierde calidad: mejor seis piezas buenas que veinte mediocres.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuántas piezas se pueden sacar de una sola sesión de grabación?",
+        answer:
+          "Depende del formato original, pero de una entrevista o podcast de 30-40 minutos suelen salir entre 6 y 10 piezas distintas: clips cortos, un fragmento de audio y varias citas para imagen.",
+      },
+      {
+        type: "faq",
+        question: "¿El repurposing sirve para cualquier tipo de contenido?",
+        answer:
+          "Funciona mejor con contenido conversacional: entrevistas, podcast, charlas, talking head. Un vídeo de producto muy dirigido da menos margen, porque cada plano cumple una función concreta.",
+      },
+      {
+        type: "faq",
+        question: "¿Hay que editar cada clip por separado?",
+        answer:
+          "Sí, aunque partan del mismo bruto. Cada plataforma pide su propio formato, subtítulos y duración, así que el corte base cambia aunque el momento grabado sea el mismo.",
+      },
+      {
+        type: "faq",
+        question: "¿En RCS incluís el repurposing dentro de la edición?",
+        answer:
+          "Con Producción Completa sí: planteamos desde la sesión qué piezas queremos sacar y entregamos el paquete completo de formatos, no solo el vídeo principal.",
+      },
+      {
+        type: "paragraph",
+        text: "Si ya grabas contenido pero sientes que cada pieza cuesta una sesión nueva, seguramente el problema no es el tiempo en cámara, sino cómo se está planteando la sesión. Cuéntanos qué grabas normalmente desde /#contacto y vemos cuántas piezas más puede dar.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

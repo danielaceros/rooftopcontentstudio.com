@@ -550,6 +550,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 33ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre perder el miedo a la cámara en la primera grabación (por qué se traba la voz y cómo prepararse), ángulo psicológico/de confianza distinto de dirigir talento sin experiencia (que trata de dirigir a otros) y de teleprompter/talking head ya cubiertos. Imágenes Unsplash.",
   },
+  {
+    slug: "repurposing-video-contenido-ya-grabado",
+    keyword: "repurposing de video",
+    intent: "informacional",
+    createdAt: "2026-09-02",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 34ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre repurposing de vídeo (cómo sacar varias piezas de una sola sesión grabada), ángulo de estrategia/reutilización de contenido no cubierto por content day, jornada intensiva ni edición rápida vs que convierte. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
