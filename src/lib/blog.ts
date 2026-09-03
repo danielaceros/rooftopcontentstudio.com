@@ -7171,6 +7171,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "documental-de-marca-que-es-cuando-grabarlo",
+    title: "Documental de marca: qué es y cuándo tiene sentido grabarlo",
+    description:
+      "Un documental de marca no es un vídeo corporativo ni un aftermovie: es una pieza narrativa sobre la historia y las personas de un proyecto. Cómo lo planteamos en RCS.",
+    publishedAt: "2026-09-03",
+    readingTime: "4 min",
+    category: "Guía",
+    tags: ["documental de marca", "branded content", "producción audiovisual", "storytelling", "Madrid"],
+    keyword: "documental de marca",
+    intent: "informacional",
+    excerpt:
+      "Un documental de marca no es un vídeo corporativo ni un aftermovie: es una pieza narrativa sobre la historia y las personas detrás de un proyecto. Cuándo tiene sentido grabarlo y cómo lo hacemos en RCS.",
+    seoTitle: "Documental de marca: qué es y cuándo grabarlo | RCS Madrid",
+    metaDescription:
+      "Documental de marca: qué es, en qué se diferencia de un aftermovie y cuándo tiene sentido grabarlo en RCS.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "En RCS nos llega bastante gente pidiendo un 'documental de marca' cuando en realidad quiere un aftermovie, un vídeo corporativo o un sizzle reel. No es un problema de vocabulario: son piezas distintas, con objetivos distintos y con un proceso de grabación que no se parece en nada. Un documental de marca es la más exigente de las tres, y también la que mejor envejece.",
+      },
+      {
+        type: "paragraph",
+        text: "Un vídeo corporativo vende lo que haces. Un aftermovie resume un evento. Un documental de marca cuenta por qué existes: la decisión que llevó a montar el proyecto, las personas detrás, lo que se hizo mal antes de hacerlo bien. Eso solo tiene sentido cuando hay una historia real que sostener, no un logo que vestir.",
+      },
+      {
+        type: "image",
+        src: "/blog/documental-de-marca-que-es-cuando-grabarlo/hero.webp",
+        alt: "Equipo de grabación preparando cámaras en plató para una pieza documental",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un documental de marca y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Un documental de marca es una pieza narrativa, con arco y con conflicto, construida a partir de entrevistas y material real, no de un guion publicitario. No vende un producto en los primeros cinco segundos. Deja que la historia haga el trabajo de convencer, y eso es precisamente lo que lo diferencia de casi todo lo demás que se graba con fines comerciales.",
+      },
+      {
+        type: "paragraph",
+        text: "Importa porque genera un tipo de confianza que un anuncio no puede fabricar. Un espectador nota enseguida cuándo una marca está vendiendo y cuándo está contando algo de verdad. El documental funciona porque baja la guardia: se ve como contenido, no como publicidad, aunque detrás haya una intención comercial clara.",
+      },
+      {
+        type: "paragraph",
+        text: "No todas las marcas tienen material para esto. Hace falta una historia con tensión real: un problema que se resolvió mal antes de resolverse bien, una decisión arriesgada, un cambio de rumbo. Si la historia es 'fundamos la empresa y todo fue creciendo sin sobresaltos', probablemente el formato correcto sea otro, no un documental.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Encuentra el conflicto antes de encender la cámara" },
+      {
+        type: "paragraph",
+        text: "Antes de grabar nada, hacemos una entrevista previa sin cámara para encontrar el hilo real: qué estuvo a punto de no salir bien, qué decisión costó tomar, qué se haría diferente. Sin ese conflicto no hay historia, solo una sucesión de datos bonitos que nadie termina de ver hasta el final.",
+      },
+      { type: "heading", level: 3, text: "Graba como entrevista, no como spot" },
+      {
+        type: "paragraph",
+        text: "El documental se construye en la sala de edición a partir de entrevistas largas, no de frases cortadas para encajar en un guion cerrado. Grabamos conversaciones de 30-45 minutos por persona, con preguntas abiertas, y dejamos que el ritmo del montaje salga de las respuestas, no al revés.",
+      },
+      { type: "heading", level: 3, text: "Deja que la edición respire" },
+      {
+        type: "paragraph",
+        text: "Un documental de marca no necesita el ritmo frenético de un reel. Los silencios, las pausas y los planos de recurso (b-roll del día a día, del equipo, del espacio) construyen tanto como las palabras. Cortar demasiado rápido mata la sensación de autenticidad que es, precisamente, lo que hace funcionar el formato.",
+      },
+      {
+        type: "image",
+        src: "/blog/documental-de-marca-que-es-cuando-grabarlo/mid.webp",
+        alt: "Cámara de cine grabando una entrevista para una pieza documental",
+        width: 1920,
+        height: 1080,
+      },
+      { type: "heading", level: 2, text: "Cuándo tiene sentido grabar uno" },
+      {
+        type: "list",
+        items: [
+          "Cuando hay una historia de fundación o de cambio de rumbo con tensión real detrás.",
+          "Para presentaciones a inversores donde el equipo importa tanto como las métricas.",
+          "Cuando quieres contenido de marca que dure años, no una campaña de temporada.",
+          "Para procesos de contratación donde necesitas transmitir cultura, no solo beneficios.",
+          "Cuando el aftermovie de un evento se queda corto porque la historia empezó mucho antes.",
+          "No tiene sentido si solo buscas un vídeo de ventas: para eso hay formatos más rápidos y más baratos.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿En qué se diferencia un documental de marca de un vídeo corporativo?",
+        answer:
+          "El vídeo corporativo presenta la empresa y sus servicios de forma directa. El documental de marca cuenta una historia con conflicto y arco narrativo, y deja que el espectador saque sus propias conclusiones sobre la marca.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto dura un documental de marca?",
+        answer:
+          "Depende del canal de distribución, pero suele moverse entre 4 y 12 minutos. Menos y no da tiempo a construir el arco; más y pierdes a la mayoría de la audiencia fuera de un evento presencial.",
+      },
+      {
+        type: "faq",
+        question: "¿Cuánto tiempo hace falta para grabarlo?",
+        answer:
+          "Entre la entrevista previa, la sesión de grabación y el b-roll de apoyo, suele necesitar más de un día de sesión. La edición es la parte que más tiempo se lleva: construir el arco narrativo requiere varias pasadas de montaje.",
+      },
+      {
+        type: "faq",
+        question: "¿RCS produce documentales de marca completos?",
+        answer:
+          "Sí, dentro de Producción Completa: entrevista previa, grabación con equipo dedicado, b-roll y montaje narrativo. No es un servicio exprés, así que lo planteamos siempre con una llamada previa para valorar si la historia sostiene el formato.",
+      },
+      {
+        type: "paragraph",
+        text: "Si crees que tu marca tiene una historia real detrás y no solo un producto que enseñar, hablemos antes de reservar sesión. Cuéntanos el contexto desde /#contacto y te decimos con franqueza si el formato encaja o si te conviene algo más sencillo.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {

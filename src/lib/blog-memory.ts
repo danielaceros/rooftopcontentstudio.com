@@ -559,6 +559,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 34ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre repurposing de vídeo (cómo sacar varias piezas de una sola sesión grabada), ángulo de estrategia/reutilización de contenido no cubierto por content day, jornada intensiva ni edición rápida vs que convierte. Imágenes Unsplash.",
   },
+  {
+    slug: "documental-de-marca-que-es-cuando-grabarlo",
+    keyword: "documental de marca",
+    intent: "informacional",
+    createdAt: "2026-09-03",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 35ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el documental de marca (formato narrativo con conflicto real, distinto del aftermovie de evento y del sizzle reel), ángulo de storytelling largo no cubierto por ningún post anterior. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {
