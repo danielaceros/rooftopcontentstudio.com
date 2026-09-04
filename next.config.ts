@@ -40,6 +40,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Rebranding: Rooftop Content Studio -> A0 Studios (a0studios.es).
+  // Redirige cada URL vieja a su equivalente exacta en el dominio nuevo
+  // (permanent: true = HTTP 308, tratado por Google como 301) para
+  // conservar el posicionamiento y las páginas de blog ya indexadas.
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        destination: "https://www.a0studios.es/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
