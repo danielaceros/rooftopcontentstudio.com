@@ -568,6 +568,15 @@ export const blogMemory: BlogMemoryEntry[] = [
     notes:
       "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 35ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el documental de marca (formato narrativo con conflicto real, distinto del aftermovie de evento y del sizzle reel), ángulo de storytelling largo no cubierto por ningún post anterior. Imágenes Unsplash.",
   },
+  {
+    slug: "video-bienvenida-clientes-como-grabarlo",
+    keyword: "video de bienvenida para clientes",
+    intent: "informacional",
+    createdAt: "2026-09-04",
+    status: "published",
+    notes:
+      "Auto-generado por blog-auto-rcs. SC: sin datos (refresh token OAuth invalid_grant persiste, confirmado de nuevo esta ejecución, sigue requiriendo reautorización manual — infra issue documentado, escalar a Dani, 36ª ejecución consecutiva con el mismo fallo). Lista de fallback evergreen (25 temas) sigue agotada — tema original nuevo sobre el vídeo de bienvenida para clientes tras firmar (distinto del vídeo de onboarding para empleados nuevos, que es interno), ángulo de experiencia de cliente/post-venta no cubierto por ningún post anterior. Imágenes Unsplash.",
+  },
 ];
 
 export function findSimilarTopic(term: string) {

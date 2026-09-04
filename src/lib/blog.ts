@@ -7284,6 +7284,119 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "video-bienvenida-clientes-como-grabarlo",
+    title: "Vídeo de bienvenida para clientes: qué debe tener y cómo grabarlo",
+    description:
+      "Un vídeo de bienvenida corto genera más confianza que cualquier email de onboarding. Qué debe incluir, quién debe salir en él y cómo grabarlo sin que parezca una plantilla.",
+    publishedAt: "2026-09-04",
+    readingTime: "5 min",
+    category: "Guía",
+    tags: ["vídeo de bienvenida", "experiencia de cliente", "vídeo corporativo", "onboarding de clientes", "Madrid"],
+    keyword: "video de bienvenida para clientes",
+    intent: "informacional",
+    excerpt:
+      "Un vídeo de bienvenida corto genera más confianza que cualquier email de onboarding. Qué debe llevar, quién debe aparecer y cómo grabarlo para que no parezca una plantilla.",
+    seoTitle: "Vídeo de bienvenida para clientes | RCS Madrid",
+    metaDescription:
+      "Vídeo de bienvenida para clientes: qué debe incluir, cuánto debe durar y cómo grabarlo bien. Guía práctica de RCS, estudio de grabación en Madrid.",
+    heroKicker: "Blog / RCS",
+    body: [
+      {
+        type: "paragraph",
+        text: "Cuando un cliente firma contigo, lo primero que recibe suele ser un contrato o un email de bienvenida con enlaces a herramientas. Pocas empresas se paran a grabar un vídeo corto de bienvenida, y es un error: ese primer minuto en vídeo genera más confianza que cualquier texto bien escrito, por bien redactado que esté.",
+      },
+      {
+        type: "paragraph",
+        text: "En RCS grabamos bastantes de estos vídeos para agencias, consultoras y SaaS que quieren que el cliente sienta que hay personas reales detrás del contrato desde el primer día. No es una pieza compleja de producir, pero si se graba con la cámara del portátil y luz de ventana a contraluz, transmite justo lo contrario de lo que se busca: descuido, en vez de cuidado.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-bienvenida-clientes-como-grabarlo/hero.webp",
+        alt: "Persona grabando un mensaje a cámara en estudio con iluminación profesional",
+        width: 1920,
+        height: 1280,
+        priority: true,
+      },
+      { type: "heading", level: 2, text: "Qué es un vídeo de bienvenida y por qué importa" },
+      {
+        type: "paragraph",
+        text: "Es la primera pieza audiovisual que ve un cliente nuevo después de firmar, antes incluso de la primera llamada de onboarding o del primer entregable. Sustituye, o acompaña, al email de bienvenida clásico con algo que se siente personal: una cara, una voz, un tono cercano en lugar de un párrafo genérico copiado de una plantilla.",
+      },
+      {
+        type: "paragraph",
+        text: "Reduce la sensación de vacío que aparece justo después de firmar, ese momento en el que el cliente se pregunta si ha tomado la decisión correcta. Un vídeo corto, bien grabado, con la persona de contacto real hablando a cámara, corta esa duda antes de que se instale y le da cara humana a lo que hasta entonces era solo un intercambio de emails.",
+      },
+      {
+        type: "paragraph",
+        text: "También filtra expectativas. Si en un minuto explicas qué va a pasar en los próximos días y quién va a acompañar el proceso, evitas buena parte de los mensajes de \"¿y ahora qué?\" que llegan en la primera semana, cuando el cliente todavía no tiene claro a quién escribir ni qué esperar del proceso.",
+      },
+      { type: "heading", level: 2, text: "Cómo se hace bien" },
+      { type: "heading", level: 3, text: "Un guion corto, no un speech corporativo" },
+      {
+        type: "paragraph",
+        text: "Sesenta a noventa segundos, tres bloques: gracias por confiar, qué va a pasar ahora, quién va a acompañar el proceso. Nada de frases de manual ni promesas genéricas del tipo \"estamos comprometidos con la excelencia\". Cuanto más se note que está leído palabra por palabra, menos funciona: mejor un guion de apoyo con las ideas clave que un texto cerrado para memorizar.",
+      },
+      { type: "heading", level: 3, text: "La persona de contacto real, no el CEO por defecto" },
+      {
+        type: "paragraph",
+        text: "Si el cliente va a hablar con un account manager durante los próximos meses, que sea esa persona quien aparezca, no el fundador que no va a volver a cruzarse con él. La cara del vídeo debe coincidir con la cara que responde al email tres días después, o el efecto de cercanía se rompe nada más empezar la relación real.",
+      },
+      { type: "heading", level: 3, text: "Dónde se envía importa tanto como el contenido" },
+      {
+        type: "paragraph",
+        text: "Un vídeo de bienvenida enterrado en un PDF de onboarding no lo ve nadie. Funciona mejor como primer mensaje en el canal donde va a vivir la relación: el email de kickoff, el primer mensaje de Slack o Teams compartido con el cliente, o el portal de cliente si existe uno.",
+      },
+      {
+        type: "image",
+        src: "/blog/video-bienvenida-clientes-como-grabarlo/mid.webp",
+        alt: "Cámara y monitor de referencia durante una grabación de entrevista en estudio",
+        width: 1920,
+        height: 1280,
+      },
+      { type: "heading", level: 2, text: "Errores comunes" },
+      {
+        type: "list",
+        items: [
+          "Grabarlo con la cámara del portátil y luz de ventana a contraluz.",
+          "Leer el guion palabra por palabra sin haber ensayado antes.",
+          "Usar el mismo vídeo genérico para todos los clientes sin ningún dato personalizado.",
+          "Alargarlo más de dos minutos: la atención cae rápido en un mensaje que no aporta nueva información.",
+          "No cerrar con próximos pasos claros, dejando al cliente sin saber qué hacer después de verlo.",
+          "Subirlo sin subtítulos, cuando buena parte de la gente lo ve primero sin sonido.",
+        ],
+      },
+      { type: "heading", level: 2, text: "Preguntas frecuentes" },
+      {
+        type: "faq",
+        question: "¿Cuánto debe durar un vídeo de bienvenida para clientes?",
+        answer:
+          "Entre 60 y 90 segundos. Es suficiente para agradecer, explicar los próximos pasos y presentar a la persona de contacto, sin que se convierta en otro vídeo corporativo que nadie termina de ver entero.",
+      },
+      {
+        type: "faq",
+        question: "¿Hace falta grabar uno distinto para cada cliente?",
+        answer:
+          "No. Un vídeo base grabado una vez, con una mención personalizada al nombre del cliente o del proyecto en el email que lo acompaña, funciona mejor que grabar uno desde cero por cada firma y evita que la pieza pierda calidad por las prisas.",
+      },
+      {
+        type: "faq",
+        question: "¿Quién debe salir en el vídeo, el fundador o el equipo de cuentas?",
+        answer:
+          "La persona con la que el cliente va a tratar en el día a día. Si el fundador no va a estar presente después de la venta, mejor que no sea la cara del vídeo de bienvenida: genera una expectativa que luego no se cumple.",
+      },
+      {
+        type: "faq",
+        question: "¿Se puede grabar en la misma sesión que otros vídeos de empresa?",
+        answer:
+          "Sí. En un content day grabamos el vídeo de bienvenida junto con testimonios, contenido para redes o vídeo de producto, aprovechando el mismo set, la misma luz y el mismo desplazamiento.",
+      },
+      {
+        type: "paragraph",
+        text: "Si crees que tu empresa necesita un vídeo de bienvenida que se vea como algo hecho por gente real y no como una plantilla más, cuéntanos el contexto desde /#contacto. En media hora de sesión sale de sobra, y normalmente lo combinamos con alguna otra pieza para aprovechar el desplazamiento.",
+      },
+    ],
+  },
 ];
 
 export function getAllPosts() {
